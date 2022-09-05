@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://mao-code.github.io/mao-code.github.io/2022/09/05/repository-pattern/repository-pattern/</loc>
+    
+    <lastmod>2022-09-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://mao-code.github.io/mao-code.github.io/categories/index.html</loc>
+    
+    <lastmod>2022-09-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://mao-code.github.io/mao-code.github.io/tags/index.html</loc>
+    
+    <lastmod>2022-09-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://mao-code.github.io/mao-code.github.io/about/index.html</loc>
+    
+    <lastmod>2022-09-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+
+  <url>
+    <loc>https://mao-code.github.io/mao-code.github.io</loc>
+    <lastmod>2022-09-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  
+  <url>
+    <loc>https://mao-code.github.io/mao-code.github.io/tags/design-pattern/</loc>
+    <lastmod>2022-09-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+
+  
+  <url>
+    <loc>https://mao-code.github.io/mao-code.github.io/categories/Design-Pattern/</loc>
+    <lastmod>2022-09-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+</urlset>
