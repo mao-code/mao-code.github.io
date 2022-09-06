@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-minimal.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"mao-code.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"mao-code.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content=".mypic       {           width: 90%;         margin: 15px auto;         border-radius: 30px;         box-shadow: 2px 2px 5px 0 #909090;       }     @media only screen and (min-width: 768px)">
 <meta property="og:type" content="website">
@@ -57,6 +57,7 @@
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
+<link rel="alternate" href="/atom.xml" title="Mao 勛哥's blog" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
@@ -92,7 +93,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>關於</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>關於</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔</a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>網站地圖</a></li><li class="menu-item menu-item-baidusitemap"><a href="/baidusitemap.xml" rel="section"><i class="fa fa-cloud fa-fw"></i>百度網站地圖</a></li>
   </ul>
 </nav>
 
@@ -129,8 +130,7 @@
 
         <div class="site-overview-wrap sidebar-panel">
           <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="Mao 勛哥"
-      src="/images/mypic.jpeg">
+    <img class="site-author-image" itemprop="image" alt="Mao 勛哥" src="/images/mypic.jpeg">
   <p class="site-author-name" itemprop="name">Mao 勛哥</p>
   <div class="site-description" itemprop="description">記錄在程式開發道路上的心得</div>
 </div>
@@ -154,6 +154,17 @@
       </div>
   </nav>
 </div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="/codingmaoxun@gmail.com" title="E-Mail → codingmaoxun@gmail.com"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS91cGNfbWFveHVuLz9obD16aC10dw==" title="Instagram → https:&#x2F;&#x2F;www.instagram.com&#x2F;upc_maoxun&#x2F;?hl&#x3D;zh-tw"><i class="fab fa-instagram fa-fw"></i>Instagram</span>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="rss → &#x2F;atom.xml">rss</a>
+      </span>
+  </div>
 
 
 
@@ -215,29 +226,25 @@
 
 <img src="/images/mypic.jpeg" class="mypic">
 
-<div
-    style="
+<div style="
         font-size: 2rem;
         font-weight: 900;
         text-align: center;
     ">黃茂勛 | Mao Xun Huang</div> 
-<div
-    style="
+<div style="
         margin: 10px 0;
         font-size: 1rem;
         font-weight: 600;
         text-align: center;
     ">Front-end Developer ．Backend-Developer</div> 
 
-<div
-    style="
+<div style="
         text-align: center;
         margin: 15px 0;
-    "
->擅長前端框架為Angular, 後端主要使用.NET C# </br>
-手下有多項作品與專案</br>
-致力於寫出符合SOLID原則的Clean Code</br>
-並活用Design Pattern與軟體架構</br>
+    ">擅長前端框架為Angular, 後端主要使用.NET C# <br>
+手下有多項作品與專案<br>
+致力於寫出符合SOLID原則的Clean Code<br>
+並活用Design Pattern與軟體架構<br>
 就讀國立政治大學-資訊管理學系</div>
 
 <hr>
@@ -305,17 +312,17 @@
 <li>擔任過數名學生與社會人士的程式家教</li>
 </ul>
 <h2 id="主要作品"><a href="#主要作品" class="headerlink" title="主要作品"></a>主要作品</h2><ul>
-<li><p>創新電商App(國科會計畫專案）— CC：<br> <a target="_blank" rel="noopener" href="http://140.119.19.32/tinder-like-app-gitlab">http://140.119.19.32/tinder-like-app-gitlab</a></p>
+<li><p>創新電商App(國科會計畫專案）— CC：<br> <span class="exturl" data-url="aHR0cDovLzE0MC4xMTkuMTkuMzIvdGluZGVyLWxpa2UtYXBwLWdpdGxhYg==">http://140.119.19.32/tinder-like-app-gitlab<i class="fa fa-external-link-alt"></i></span></p>
 </li>
-<li><p>民宿管理系統影片：<br> <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=AVRVzrmEFSs&amp;t=201s">https://www.youtube.com/watch?v=AVRVzrmEFSs&amp;t=201s</a></p>
+<li><p>民宿管理系統影片：<br> <span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1BVlJWenJtRUZTcyZ0PTIwMXM=">https://www.youtube.com/watch?v=AVRVzrmEFSs&amp;t=201s<i class="fa fa-external-link-alt"></i></span></p>
 </li>
-<li><p>民宿管理系統產品介紹書：<br> <a target="_blank" rel="noopener" href="https://reurl.cc/957yya">https://reurl.cc/957yya</a></p>
+<li><p>民宿管理系統產品介紹書：<br> <span class="exturl" data-url="aHR0cHM6Ly9yZXVybC5jYy85NTd5eWE=">https://reurl.cc/957yya<i class="fa fa-external-link-alt"></i></span></p>
 </li>
-<li><p>FunTalk聊天App：<br> <a target="_blank" rel="noopener" href="https://makatabar.com/FunTalk/SignIn.html">https://makatabar.com/FunTalk/SignIn.html</a></p>
+<li><p>FunTalk聊天App：<br> <span class="exturl" data-url="aHR0cHM6Ly9tYWthdGFiYXIuY29tL0Z1blRhbGsvU2lnbkluLmh0bWw=">https://makatabar.com/FunTalk/SignIn.html<i class="fa fa-external-link-alt"></i></span></p>
 </li>
-<li><p>PTT專案影片：<br> <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=PE8VX4eSK6g">https://www.youtube.com/watch?v=PE8VX4eSK6g</a></p>
+<li><p>PTT專案影片：<br> <span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1QRThWWDRlU0s2Zw==">https://www.youtube.com/watch?v=PE8VX4eSK6g<i class="fa fa-external-link-alt"></i></span></p>
 </li>
-<li><p>政大吃貨專案影片：<br> <a target="_blank" rel="noopener" href="https://youtu.be/OoPg_vYHgk8">https://youtu.be/OoPg_vYHgk8</a></p>
+<li><p>政大吃貨專案影片：<br> <span class="exturl" data-url="aHR0cHM6Ly95b3V0dS5iZS9Pb1BnX3ZZSGdrOA==">https://youtu.be/OoPg_vYHgk8<i class="fa fa-external-link-alt"></i></span></p>
 </li>
 </ul>
 
@@ -344,7 +351,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder">Mao 勛哥</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 強力驅動
+  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZw==">NexT.Gemini</span> 強力驅動
   </div>
 
     </div>

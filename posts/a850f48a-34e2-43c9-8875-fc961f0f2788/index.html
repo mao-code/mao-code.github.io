@@ -20,12 +20,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-minimal.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"mao-code.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"mao-code.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="前言這篇文章主要介紹何為Repository Pattern, 並如何在.NET C#中實作並結合Unit Of Work Pattern, 讓程式對Repository解耦這個design pattern可以說是踏入軟體架構的敲門磚也算是非常常用的pattern, 實用性非常高">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Repository Pattern">
-<meta property="og:url" content="https://mao-code.github.io/mao-code.github.io/2022/09/05/repository-pattern/repository-pattern/index.html">
+<meta property="og:url" content="https://mao-code.github.io/mao-code.github.io/posts/a850f48a-34e2-43c9-8875-fc961f0f2788/index.html">
 <meta property="og:site_name" content="Mao 勛哥&#39;s blog">
 <meta property="og:description" content="前言這篇文章主要介紹何為Repository Pattern, 並如何在.NET C#中實作並結合Unit Of Work Pattern, 讓程式對Repository解耦這個design pattern可以說是踏入軟體架構的敲門磚也算是非常常用的pattern, 實用性非常高">
 <meta property="og:locale" content="zh_TW">
@@ -33,18 +33,18 @@
 <meta property="og:image" content="https://mao-code.github.io/images/posts/repository-pattern/uml.jpg">
 <meta property="og:image" content="https://mao-code.github.io/images/posts/repository-pattern/structure.jpg">
 <meta property="article:published_time" content="2022-09-05T07:41:28.000Z">
-<meta property="article:modified_time" content="2022-09-05T14:57:14.914Z">
+<meta property="article:modified_time" content="2022-09-06T05:01:15.724Z">
 <meta property="article:author" content="Mao 勛哥">
 <meta property="article:tag" content="design-pattern">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://mao-code.github.io/images/posts/repository-pattern/benifits.jpg">
 
 
-<link rel="canonical" href="https://mao-code.github.io/mao-code.github.io/2022/09/05/repository-pattern/repository-pattern/">
+<link rel="canonical" href="https://mao-code.github.io/mao-code.github.io/posts/a850f48a-34e2-43c9-8875-fc961f0f2788/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://mao-code.github.io/mao-code.github.io/2022/09/05/repository-pattern/repository-pattern/","path":"2022/09/05/repository-pattern/repository-pattern/","title":"Repository Pattern"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://mao-code.github.io/mao-code.github.io/posts/a850f48a-34e2-43c9-8875-fc961f0f2788/","path":"posts/a850f48a-34e2-43c9-8875-fc961f0f2788/","title":"Repository Pattern"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>Repository Pattern | Mao 勛哥's blog</title>
@@ -58,6 +58,7 @@
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
+<link rel="alternate" href="/atom.xml" title="Mao 勛哥's blog" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
@@ -93,7 +94,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>關於</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>關於</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔</a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>網站地圖</a></li><li class="menu-item menu-item-baidusitemap"><a href="/baidusitemap.xml" rel="section"><i class="fa fa-cloud fa-fw"></i>百度網站地圖</a></li>
   </ul>
 </nav>
 
@@ -130,8 +131,7 @@
 
         <div class="site-overview-wrap sidebar-panel">
           <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="Mao 勛哥"
-      src="/images/mypic.jpeg">
+    <img class="site-author-image" itemprop="image" alt="Mao 勛哥" src="/images/mypic.jpeg">
   <p class="site-author-name" itemprop="name">Mao 勛哥</p>
   <div class="site-description" itemprop="description">記錄在程式開發道路上的心得</div>
 </div>
@@ -155,6 +155,17 @@
       </div>
   </nav>
 </div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="/codingmaoxun@gmail.com" title="E-Mail → codingmaoxun@gmail.com"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS91cGNfbWFveHVuLz9obD16aC10dw==" title="Instagram → https:&#x2F;&#x2F;www.instagram.com&#x2F;upc_maoxun&#x2F;?hl&#x3D;zh-tw"><i class="fab fa-instagram fa-fw"></i>Instagram</span>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="rss → &#x2F;atom.xml">rss</a>
+      </span>
+  </div>
 
 
 
@@ -189,7 +200,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://mao-code.github.io/mao-code.github.io/2022/09/05/repository-pattern/repository-pattern/">
+    <link itemprop="mainEntityOfPage" href="https://mao-code.github.io/mao-code.github.io/posts/a850f48a-34e2-43c9-8875-fc961f0f2788/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/mypic.jpeg">
@@ -203,7 +214,7 @@
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
       <meta itemprop="name" content="Repository Pattern | Mao 勛哥's blog">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -217,9 +228,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">發表於</span>
-      
 
-      <time title="創建時間：2022-09-05 15:41:28 / 修改時間：22:57:14" itemprop="dateCreated datePublished" datetime="2022-09-05T15:41:28+08:00">2022-09-05</time>
+      <time title="創建時間：2022-09-05 15:41:28" itemprop="dateCreated datePublished" datetime="2022-09-05T15:41:28+08:00">2022-09-05</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新於</span>
+      <time title="修改時間：2022-09-06 13:01:15" itemprop="dateModified" datetime="2022-09-06T13:01:15+08:00">2022-09-06</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -244,7 +261,7 @@
         <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>這篇文章主要介紹何為Repository Pattern, 並如何在.NET C#中實作<br>並結合Unit Of Work Pattern, 讓程式對Repository解耦<br>這個design pattern可以說是踏入軟體架構的敲門磚<br>也算是非常常用的pattern, 實用性非常高</p>
 <span id="more"></span>
 
-<h2 id="定義：Repository-Pattern-Unit-Of-Work-Pattern"><a href="#定義：Repository-Pattern-Unit-Of-Work-Pattern" class="headerlink" title="定義：Repository Pattern, Unit Of Work Pattern"></a>定義：Repository Pattern, Unit Of Work Pattern</h2><p>在我的IG上, 有對Repository Pattern做一篇貼文<br><a target="_blank" rel="noopener" href="https://www.instagram.com/p/CgZnS64h25m/?utm_source=ig_web_copy_link">https://www.instagram.com/p/CgZnS64h25m/?utm_source=ig_web_copy_link</a></p>
+<h2 id="定義：Repository-Pattern-Unit-Of-Work-Pattern"><a href="#定義：Repository-Pattern-Unit-Of-Work-Pattern" class="headerlink" title="定義：Repository Pattern, Unit Of Work Pattern"></a>定義：Repository Pattern, Unit Of Work Pattern</h2><p>在我的IG上, 有對Repository Pattern做一篇貼文<br><span class="exturl" data-url="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9wL0NnWm5TNjRoMjVtLz91dG1fc291cmNlPWlnX3dlYl9jb3B5X2xpbms=">https://www.instagram.com/p/CgZnS64h25m/?utm_source=ig_web_copy_link<i class="fa fa-external-link-alt"></i></span></p>
 <p>Repository Pattern主要就是由Repository這個元素所組成<br>我個人都會結合Unit Of Work Pattern一起使用</p>
 <ul>
 <li>Repository:<ul>
@@ -256,16 +273,13 @@
 </ul>
 </li>
 </ul>
-<p>以上是對兩個主要元素的定義<br>簡單來說 <ins>Repository就像是一群存在記憶體中的Objects</ins><br>而 <ins>Unit of work則是針對這些<strong>被改變</strong>的Objects, 統一在這裡做處理<ins></p>
+<p>以上是對兩個主要元素的定義<br>簡單來說 <ins>Repository就像是一群存在記憶體中的Objects</ins><br>而 <ins>Unit of work則是針對這些<strong>被改變</strong>的Objects, 統一在這裡做處理<ins></ins></ins></p>
 <h2 id="更簡單的解釋"><a href="#更簡單的解釋" class="headerlink" title="更簡單的解釋"></a>更簡單的解釋</h2><p><strong>UnitOfWork在這裡就像是DB, Repository就像是Table.</strong><br><strong>入果以EntityFramework來看, 就是Context和Entity的關係.</strong><br>EF本身也有做Repository和UnitOfWork.</p>
 <p><strong>把每一次的operation看作一個unit of work, 等到operation結束才Complete.</strong><br>這樣一來, <strong>當我們的Controller或Service需要很多Repository來操作時, 就只需要依賴UnitOfWork, 簡化程式碼與依賴.</strong><br><strong>另一個好處是可以管理Repository之間之間的情況, 做到DB的Atomic operation.</strong><br>舉例來說, 當Repository1儲存成功, 而Repository2儲存失敗, 以一個完整的Atomic operation來說, 一個失敗, operation就算是失敗.<br>但在這裡, Repository之間是沒有聯繫的, 因此資料會處於一種dirty state, 就是一個進去, 但一個失敗了.<br>沒辦法回到最初的狀況再debug, UnitOfWork就是來處理這種問題, 當Complete時失敗, 並不會真的動到DB, 而是只動到Repository. 可以整個roll back處理</p>
 <h2 id="好處"><a href="#好處" class="headerlink" title="好處"></a>好處</h2><p>使用Repository主要是可以<strong>對ORM的框架解耦</strong>, 對Context和Entities的依賴度不會太高.<br>舉例來說我今天使用Entity Framework, 開發了幾個月, 老闆突然要使用ADO.NET<br>這時如果沒有使用Repository, 而是在程式碼裡面大量使用Context與Entity<br>那麼要修改程式碼就是一件大工程了….<br>下面引用我在IG上的照片, 裡面還有提到一個好處是更好做單元測試.</p>
-<p><img src="/images/posts/repository-pattern/benifits.jpg" 
-style="width: 70%; margin: 15px auto;"><br>可以看到, repository是存放在unit of work內, 我們的程式是去依賴unit of work,<br>unit of work再透過repository去操作ORM, ORM再去操作我們的資料庫.</p>
-<h2 id="實作"><a href="#實作" class="headerlink" title="實作"></a>實作</h2><p>先附上UML<br><img src="/images/posts/repository-pattern/uml.jpg" 
-style="width: 70%; margin: 15px auto;"><br>稍微解釋一下, 這裡會有一個generic的repository, 負責處理基本的Get, Find, Romove等.<br>而其他concrete的repository再去繼承和實作, 內部就針對自己的repository做特殊的query.</p>
-<p>接下來會使用.NET去實作裡面的各個細節<br>先附上專案結構和ERD<br><img src="/images/posts/repository-pattern/structure.jpg" 
-style="width: 70%; margin: 15px auto;"><br>這裡主要是以書本和作者為範例</p>
+<p><img src="/images/posts/repository-pattern/benifits.jpg" style="width: 70%; margin: 15px auto;"><br>可以看到, repository是存放在unit of work內, 我們的程式是去依賴unit of work,<br>unit of work再透過repository去操作ORM, ORM再去操作我們的資料庫.</p>
+<h2 id="實作"><a href="#實作" class="headerlink" title="實作"></a>實作</h2><p>先附上UML<br><img src="/images/posts/repository-pattern/uml.jpg" style="width: 70%; margin: 15px auto;"><br>稍微解釋一下, 這裡會有一個generic的repository, 負責處理基本的Get, Find, Romove等.<br>而其他concrete的repository再去繼承和實作, 內部就針對自己的repository做特殊的query.</p>
+<p>接下來會使用.NET去實作裡面的各個細節<br>先附上專案結構和ERD<br><img src="/images/posts/repository-pattern/structure.jpg" style="width: 70%; margin: 15px auto;"><br>這裡主要是以書本和作者為範例</p>
 <p>Models裡面是用EntityFramework migration過來的Context和Entities model<br>我們主要實作Repository和UnitOfWork的部分</p>
 <h3 id="IRepository-Repository"><a href="#IRepository-Repository" class="headerlink" title="IRepository, Repository"></a>IRepository, Repository</h3><p><strong>這裡是generic的repository</strong></p>
 <figure class="highlight c#"><figcaption><span>IRepository</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> System.Linq.Expressions;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">RepositoryPatternPractice.Repositories</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="comment">//Interface here act like a protocol or a license</span></span><br><span class="line">	<span class="comment">//Generic Interface -&gt; Interface&lt;T&gt;</span></span><br><span class="line">	<span class="comment">//where keyword can set some restriction on the generic</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">IRepository</span>&lt;<span class="title">TEntity</span>&gt; <span class="keyword">where</span> <span class="title">TEntity</span>: <span class="keyword">class</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="comment">//Three main group of functions</span></span><br><span class="line"></span><br><span class="line">		<span class="comment">//Finding objects</span></span><br><span class="line">		<span class="function">TEntity <span class="title">Get</span>(<span class="params"><span class="built_in">int</span> id</span>)</span>;</span><br><span class="line">		<span class="function">IEnumerable&lt;TEntity&gt; <span class="title">GetAll</span>()</span>;</span><br><span class="line">		<span class="function">IEnumerable&lt;TEntity&gt; <span class="title">Find</span>(<span class="params">Expression&lt;Func&lt;TEntity, <span class="built_in">bool</span>&gt;&gt; predicate</span>)</span>;</span><br><span class="line"></span><br><span class="line">		<span class="comment">/*</span></span><br><span class="line"><span class="comment">			Func&lt;input, output&gt; -&gt; 委派物件(將函數當作物件的容器)</span></span><br><span class="line"><span class="comment">				eg. Func&lt;int, int&gt; fn = n=&gt;n*n;</span></span><br><span class="line"><span class="comment">			Expression (eg. LINQ)</span></span><br><span class="line"><span class="comment">				turn an lambda to an expression tree</span></span><br><span class="line"><span class="comment">				and the LINQ can input a lambda expression (put in a generic delegate)</span></span><br><span class="line"><span class="comment">		 */</span></span><br><span class="line"></span><br><span class="line">		<span class="comment">//Adding object</span></span><br><span class="line">		<span class="function"><span class="keyword">void</span> <span class="title">Add</span>(<span class="params">TEntity entity</span>)</span>;</span><br><span class="line">		<span class="function"><span class="keyword">void</span> <span class="title">AddRange</span>(<span class="params">IEnumerable&lt;TEntity&gt; entities</span>)</span>;</span><br><span class="line"></span><br><span class="line">		<span class="comment">//Removing object</span></span><br><span class="line">		<span class="function"><span class="keyword">void</span> <span class="title">Remove</span>(<span class="params">TEntity entity</span>)</span>;</span><br><span class="line">		<span class="function"><span class="keyword">void</span> <span class="title">RemoveRange</span>(<span class="params">IEnumerable&lt;TEntity&gt; entities</span>)</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -329,7 +343,7 @@ style="width: 70%; margin: 15px auto;"><br>這裡主要是以書本和作者為�
   </span>
   <span class="author" itemprop="copyrightHolder">Mao 勛哥</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 強力驅動
+  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZw==">NexT.Gemini</span> 強力驅動
   </div>
 
     </div>

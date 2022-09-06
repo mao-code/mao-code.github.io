@@ -7,5 +7,5 @@ Disallow: /vendors/
 Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
-Sitemap: https://hsiangfeng.github.io/sitemap.xml
-Sitemap: https://hsiangfeng.github.io/baidusitemap.xml
+Sitemap: https://mao-code.github.io/sitemap.xml
+Sitemap: https://mao-code.github.io/baidusitemap.xml
