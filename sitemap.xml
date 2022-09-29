@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://mao-code.github.io/mao-code.github.io/about/index.html</loc>
+    <loc>https://mao-code.github.io/about/index.html</loc>
     
     <lastmod>2022-09-23</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://mao-code.github.io/mao-code.github.io/posts/2304c3d6-acbd-4c10-8319-26b73c00f4f5/</loc>
+    <loc>https://mao-code.github.io/posts/2304c3d6-acbd-4c10-8319-26b73c00f4f5/</loc>
     
     <lastmod>2022-09-07</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://mao-code.github.io/mao-code.github.io/posts/a850f48a-34e2-43c9-8875-fc961f0f2788/</loc>
+    <loc>https://mao-code.github.io/posts/a850f48a-34e2-43c9-8875-fc961f0f2788/</loc>
     
     <lastmod>2022-09-07</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://mao-code.github.io/mao-code.github.io/categories/index.html</loc>
+    <loc>https://mao-code.github.io/categories/index.html</loc>
     
     <lastmod>2022-09-05</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://mao-code.github.io/mao-code.github.io/tags/index.html</loc>
+    <loc>https://mao-code.github.io/tags/index.html</loc>
     
     <lastmod>2022-09-05</lastmod>
     
@@ -48,16 +48,16 @@
   
 
   <url>
-    <loc>https://mao-code.github.io/mao-code.github.io</loc>
-    <lastmod>2022-09-23</lastmod>
+    <loc>https://mao-code.github.io/</loc>
+    <lastmod>2022-09-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://mao-code.github.io/mao-code.github.io/tags/design-pattern/</loc>
-    <lastmod>2022-09-23</lastmod>
+    <loc>https://mao-code.github.io/tags/design-pattern/</loc>
+    <lastmod>2022-09-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -65,8 +65,8 @@
 
   
   <url>
-    <loc>https://mao-code.github.io/mao-code.github.io/categories/Design-Pattern/</loc>
-    <lastmod>2022-09-23</lastmod>
+    <loc>https://mao-code.github.io/categories/Design-Pattern/</loc>
+    <lastmod>2022-09-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
