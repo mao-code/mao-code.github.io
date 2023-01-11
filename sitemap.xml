@@ -2,27 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://mao-code.github.io/posts/534426495/</loc>
+    
+    <lastmod>2023-01-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://mao-code.github.io/about/index.html</loc>
     
-    <lastmod>2023-01-10</lastmod>
+    <lastmod>2023-01-11</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://mao-code.github.io/posts/2304c3d6-acbd-4c10-8319-26b73c00f4f5/</loc>
+    <loc>https://mao-code.github.io/posts/1822258245/</loc>
     
-    <lastmod>2023-01-10</lastmod>
+    <lastmod>2023-01-11</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://mao-code.github.io/posts/a850f48a-34e2-43c9-8875-fc961f0f2788/</loc>
+    <loc>https://mao-code.github.io/posts/4072203086/</loc>
     
-    <lastmod>2022-12-27</lastmod>
+    <lastmod>2023-01-11</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -49,15 +58,29 @@
 
   <url>
     <loc>https://mao-code.github.io/</loc>
-    <lastmod>2023-01-10</lastmod>
+    <lastmod>2023-01-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
+    <loc>https://mao-code.github.io/tags/%E5%BF%83%E5%BE%97/</loc>
+    <lastmod>2023-01-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://mao-code.github.io/tags/%E6%AF%94%E8%B3%BD/</loc>
+    <lastmod>2023-01-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://mao-code.github.io/tags/design-pattern/</loc>
-    <lastmod>2023-01-10</lastmod>
+    <lastmod>2023-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -65,8 +88,22 @@
 
   
   <url>
+    <loc>https://mao-code.github.io/categories/%E5%BF%83%E5%BE%97/</loc>
+    <lastmod>2023-01-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://mao-code.github.io/categories/Design-Pattern/</loc>
-    <lastmod>2023-01-10</lastmod>
+    <lastmod>2023-01-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://mao-code.github.io/categories/%E6%AF%94%E8%B3%BD/</loc>
+    <lastmod>2023-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
