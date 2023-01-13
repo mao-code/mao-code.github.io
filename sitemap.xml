@@ -81,6 +81,20 @@
   </url>
   
   <url>
+    <loc>https://mao-code.github.io/tags/%E5%BF%83%E5%BE%97/</loc>
+    <lastmod>2023-01-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://mao-code.github.io/tags/%E6%AF%94%E8%B3%BD/</loc>
+    <lastmod>2023-01-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://mao-code.github.io/tags/GDSC/</loc>
     <lastmod>2023-01-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -101,24 +115,17 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://mao-code.github.io/tags/%E5%BF%83%E5%BE%97/</loc>
-    <lastmod>2023-01-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://mao-code.github.io/tags/%E6%AF%94%E8%B3%BD/</loc>
-    <lastmod>2023-01-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
     <loc>https://mao-code.github.io/categories/%E5%B0%88%E6%A1%88/</loc>
+    <lastmod>2023-01-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://mao-code.github.io/categories/%E5%BF%83%E5%BE%97/</loc>
     <lastmod>2023-01-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -139,13 +146,6 @@
   </url>
   
   <url>
-    <loc>https://mao-code.github.io/categories/%E5%BF%83%E5%BE%97/</loc>
-    <lastmod>2023-01-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://mao-code.github.io/categories/%E5%B0%88%E6%A1%88/side-project/</loc>
     <lastmod>2023-01-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -153,14 +153,14 @@
   </url>
   
   <url>
-    <loc>https://mao-code.github.io/categories/GDSC/NCCUPass/</loc>
+    <loc>https://mao-code.github.io/categories/%E6%AF%94%E8%B3%BD/</loc>
     <lastmod>2023-01-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://mao-code.github.io/categories/%E6%AF%94%E8%B3%BD/</loc>
+    <loc>https://mao-code.github.io/categories/GDSC/NCCUPass/</loc>
     <lastmod>2023-01-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
