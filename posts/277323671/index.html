@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="google-site-verification" content="fggWQJk_fNEY8zNXGPdahkvrmr8J_2PN4HN7HU0ik2Q">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-minimal.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"mao-code.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="前言在剛上大二時，除了手邊和學長的專案，我也參加了政大的Google學生開發者社群。主要是希望透過提案，利用科技來解決問題，在這裡我也深深感受到Google的文化，那就是不會怕去嘗試、不怕去解決問題，我也認識在這個社群中的各個人才。在這個社群中，我除了擔任自己專案領導人的角色外，我也身兼後端技術長的任務，也是想要發揮我目前所學到的、最成熟的後端知識。除了技術面，如何管理一個團隊、一項專案，也是一門">
+<meta property="og:type" content="article">
+<meta property="og:title" content="政大Google學生開發者社群-心得（第一學期）">
+<meta property="og:url" content="https://mao-code.github.io/posts/277323671/index.html">
+<meta property="og:site_name" content="Mao 勛哥&#39;s blog">
+<meta property="og:description" content="前言在剛上大二時，除了手邊和學長的專案，我也參加了政大的Google學生開發者社群。主要是希望透過提案，利用科技來解決問題，在這裡我也深深感受到Google的文化，那就是不會怕去嘗試、不怕去解決問題，我也認識在這個社群中的各個人才。在這個社群中，我除了擔任自己專案領導人的角色外，我也身兼後端技術長的任務，也是想要發揮我目前所學到的、最成熟的後端知識。除了技術面，如何管理一個團隊、一項專案，也是一門">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://mao-code.github.io/images/posts/GDSC-NCCUPass-experience-1/poster.jpg">
+<meta property="og:image" content="https://mao-code.github.io/images/posts/GDSC-NCCUPass-experience-1/img4.jpg">
+<meta property="og:image" content="https://mao-code.github.io/images/posts/GDSC-NCCUPass-experience-1/img2.JPG">
+<meta property="og:image" content="https://mao-code.github.io/images/posts/GDSC-NCCUPass-experience-1/img1.JPG">
+<meta property="og:image" content="https://mao-code.github.io/images/posts/GDSC-NCCUPass-experience-1/NCCUPass-Structure.jpg">
+<meta property="article:published_time" content="2023-01-11T13:05:29.000Z">
+<meta property="article:modified_time" content="2023-01-13T16:00:36.025Z">
+<meta property="article:author" content="Mao 勛哥">
+<meta property="article:tag" content="專案">
+<meta property="article:tag" content="GDSC">
+<meta property="article:tag" content="NCCUPass">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://mao-code.github.io/images/posts/GDSC-NCCUPass-experience-1/poster.jpg">
+
+
+<link rel="canonical" href="https://mao-code.github.io/posts/277323671/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://mao-code.github.io/posts/277323671/","path":"posts/277323671/","title":"政大Google學生開發者社群-心得（第一學期）"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>政大Google學生開發者社群-心得（第一學期） | Mao 勛哥's blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="Mao 勛哥's blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Mao 勛哥's blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">程式技術交流</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>關於</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9A%E4%BD%8D%E8%88%87%E8%81%B7%E4%BD%8D"><span class="nav-number">2.</span> <span class="nav-text">定位與職位</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B0%88%E6%A1%88%E5%AE%9A%E4%BD%8D"><span class="nav-number">2.1.</span> <span class="nav-text">專案定位</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%81%B7%E4%BD%8D"><span class="nav-number">2.2.</span> <span class="nav-text">職位</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8A%80%E8%A1%93"><span class="nav-number">3.</span> <span class="nav-text">技術</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B%E5%9C%96"><span class="nav-number">3.1.</span> <span class="nav-text">系統架構圖</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BE%8C%E7%AB%AF%E6%8A%80%E8%A1%93%E7%B4%B0%E7%AF%80"><span class="nav-number">3.2.</span> <span class="nav-text">後端技術細節</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B5%90%E8%AA%9E"><span class="nav-number">4.</span> <span class="nav-text">結語</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Mao 勛哥" src="/images/mypic.jpeg">
+  <p class="site-author-name" itemprop="name">Mao 勛哥</p>
+  <div class="site-description" itemprop="description">記錄在程式開發道路上的心得</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL21hby1jb2Rl" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;mao-code"><i class="fab fa-github fa-fw"></i>GitHub</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRsYWIuY29tL01hb1h1bg==" title="GitLab → https:&#x2F;&#x2F;gitlab.com&#x2F;MaoXun"><i class="fab fa-gitlab fa-fw"></i>GitLab</span>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/codingmaoxun@gmail.com" title="E-Mail → codingmaoxun@gmail.com"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS91cGNfbWFveHVuLz9obD16aC10dw==" title="Instagram → https:&#x2F;&#x2F;www.instagram.com&#x2F;upc_maoxun&#x2F;?hl&#x3D;zh-tw"><i class="fab fa-instagram fa-fw"></i>Instagram</span>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="rss → &#x2F;atom.xml">rss</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="回到頂端">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://mao-code.github.io/posts/277323671/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/mypic.jpeg">
+      <meta itemprop="name" content="Mao 勛哥">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mao 勛哥's blog">
+      <meta itemprop="description" content="記錄在程式開發道路上的心得">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="政大Google學生開發者社群-心得（第一學期） | Mao 勛哥's blog">
+      <meta itemprop="description" content>
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          政大Google學生開發者社群-心得（第一學期）
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+
+      <time title="創建時間：2023-01-11 21:05:29" itemprop="dateCreated datePublished" datetime="2023-01-11T21:05:29+08:00">2023-01-11</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新於</span>
+      <time title="修改時間：2023-01-14 00:00:36" itemprop="dateModified" datetime="2023-01-14T00:00:36+08:00">2023-01-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%B0%88%E6%A1%88/" itemprop="url" rel="index"><span itemprop="name">專案</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/GDSC/" itemprop="url" rel="index"><span itemprop="name">GDSC</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%B0%88%E6%A1%88/side-project/" itemprop="url" rel="index"><span itemprop="name">side project</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/GDSC/NCCUPass/" itemprop="url" rel="index"><span itemprop="name">NCCUPass</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/posts/277323671/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="posts/277323671/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在剛上大二時，除了手邊和學長的專案，我也參加了政大的Google學生開發者社群。主要是希望透過提案，<strong>利用科技來解決問題</strong>，在這裡我也深深感受到Google的文化，那就是<strong>不會怕去嘗試、不怕去解決問題</strong>，我也認識在這個社群中的各個人才。在這個社群中，我除了擔任自己<strong>專案領導人</strong>的角色外，我也身兼<strong>後端技術長</strong>的任務，也是想要發揮我目前所學到的、最成熟的後端知識。除了技術面，如何管理一個團隊、一項專案，也是一門很大的課題。希望在未來可以繼續把自己的這項專案做到完善，解決真正的問題！</p>
+<span id="more"></span>
+
+<h2 id="定位與職位"><a href="#定位與職位" class="headerlink" title="定位與職位"></a>定位與職位</h2><ul>
+<li><h3 id="專案定位"><a href="#專案定位" class="headerlink" title="專案定位"></a>專案定位</h3>我這次的提案叫做「政大通NCCUPass」，以<strong>政大校園生活為出發點</strong>，想要做一款能夠解決政大學生生活上不便的APP，透過專案組的討論與調查，帶來<strong>更便利、聰明與數位化</strong>的校園生活，讓校園內的需求能夠即時被滿足，也讓這款APP融入政大學生的生活中，成為政大校園內不可或缺的一部分，因此，「政大通-NCCUPass」的提案就此誕生</li>
+</ul>
+<hr>
+<p>下面是我們第一次期末發表的海報和照片<br>海報內呈現的是我們規劃、也正在開發的功能<br><img src="/images/posts/GDSC-NCCUPass-experience-1/poster.jpg" style="width: 70%; margin: 15px auto;"></p>
+<hr>
+<p>這個是期末發表當天的攤位介紹照片<br><img src="/images/posts/GDSC-NCCUPass-experience-1/img4.jpg" style="width: 70%; margin: 15px auto;"></p>
+<p><img src="/images/posts/GDSC-NCCUPass-experience-1/img2.JPG" style="width: 70%; margin: 15px auto;"></p>
+<p><img src="/images/posts/GDSC-NCCUPass-experience-1/img1.JPG" style="width: 70%; margin: 15px auto;"></p>
+<hr>
+<ul>
+<li><h3 id="職位"><a href="#職位" class="headerlink" title="職位"></a>職位</h3>在這個專案中，我擔任<strong>Project Leader(專案主持人)<strong>，與</strong>Backend Tech-Lead(後端技術長)<strong>的身份，帶領總共</strong>11人的團隊</strong>，在我們這個團隊中，主要分成四組，前端、後端、UI&#x2F;UX、文書，除了負責主要的後端技術，也要帶領後端的組員們提升實力、協調與規劃。以專案領導人的角度來看，除了需要<strong>規劃整個專案的進度與走向外，也要監督進度、協調各組、人際溝通等等</strong>，除了利用各種專案管理的工具外，也要撰寫各種文件與流程圖，老實說滿累的XD。但也是遇到一群願意跟隨我的隊友們，一起成長，真的非常得感謝他們🙏</li>
+</ul>
+<h2 id="技術"><a href="#技術" class="headerlink" title="技術"></a>技術</h2><ul>
+<li><h3 id="系統架構圖"><a href="#系統架構圖" class="headerlink" title="系統架構圖"></a>系統架構圖</h3><p>下面是我們的系統架構圖，因為我是負責後端的部分，所以會著重畫後端的架構<br><img src="/images/posts/GDSC-NCCUPass-experience-1/NCCUPass-Structure.jpg" style="width: 70%; margin: 15px auto;"></p>
+</li>
+<li><h3 id="後端技術細節"><a href="#後端技術細節" class="headerlink" title="後端技術細節"></a>後端技術細節</h3><p>根據上面的架構圖，我們的專案主要部署在Ubuntu的主機上，所有的服務利用Docker Compose統一建立，另外還有利用GitLab Runner做到自動化整合與自動化部屬的功能。後端程式是由.NET C#撰寫，這邊我使用的是Software Layer Architecture Pattern(軟體分層架構)，結合各種Design Pattern再加上自己的一些變形，資料庫是使用MongoDB的Replica-Set，也有使用Redis做快取，照片和一些公開的檔案主要放在我們的File Server上。其他技術細節我就列在下面，想看的人可以參考一下XD</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">- Software Layer Architecture pattern (多層)</span><br><span class="line">- Repository pattern</span><br><span class="line">- Unit of Work pattern</span><br><span class="line">- Mediator pattern &amp; CQRS</span><br><span class="line">- JWT &amp; RBAC</span><br><span class="line">- Automapper</span><br><span class="line">- Exception handler抽離</span><br><span class="line">- Dapper &amp; EF combination</span><br><span class="line">- Redis (Cache)</span><br><span class="line">- Docker Networking</span><br><span class="line">- Docker Volume</span><br><span class="line">- Docker hub</span><br><span class="line">- appsettings 組態切換</span><br><span class="line">- MongoDB replica-set</span><br><span class="line">- Git 多人協作</span><br><span class="line">- Swagger / OpenAPI</span><br><span class="line">- Docker File Server</span><br><span class="line">- Docker mongoDB backup daily</span><br><span class="line">- Docker Compose</span><br></pre></td></tr></table></figure>
+<p>之後也會一直新增，因為現在處於專案開發的初期。</p>
+</li>
+</ul>
+<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>最後，這個專案雖然只是在發展初期，但我希望未來可以發展到我預想的樣子，也非常感謝一路願意跟隨我、幫助我的隊友們，單打獨鬥真的比不上團隊合作👍，也希望各位未來也可以繼續幫助我啦，現在打分享文可能還太早，但我就是想要趁學期末趕快記錄一下哈哈</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%B0%88%E6%A1%88/" rel="tag"><i class="fa fa-tag"></i> 專案</a>
+              <a href="/tags/GDSC/" rel="tag"><i class="fa fa-tag"></i> GDSC</a>
+              <a href="/tags/NCCUPass/" rel="tag"><i class="fa fa-tag"></i> NCCUPass</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/posts/534426495/" rel="prev" title="大一大二參加畢業專案與程式比賽心得分享">
+                  <i class="fa fa-chevron-left"></i> 大一大二參加畢業專案與程式比賽心得分享
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Mao 勛哥</span>
+</div>
+  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZw==">NexT.Gemini</span> 強力驅動
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.5.0/pjax.min.js" integrity="sha256-3NkoLDrmHLTYj7csHIZSr0MHAFTXth7Ua/DDt4MRUAg=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  
+
+
+
+
+  <script src="/js/third-party/pace.js"></script>
+
+  
+
+
+
+
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"mao-code","count":true,"i18n":{"disqus":"disqus"}}</script>
+<script src="/js/third-party/comments/disqus.js"></script>
+
+</body>
+</html>
