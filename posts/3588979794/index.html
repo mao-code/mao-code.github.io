@@ -23,42 +23,29 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"mao-code.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="前言接續上一篇的文章，這篇文章會著重介紹這個系統以下是我在YouTube上對這個專案的介紹與Demo：    這篇文章的內容會與影片很像，主要分為動機與介紹、重點功能簡介、系統架構與技術的順序介紹系統功能Demo, 還請觀看影片介紹">
+    <meta name="description" content="前言">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CC-沈浸式線上逛街APP-系統與技術介紹">
-<meta property="og:url" content="https://mao-code.github.io/posts/2012237495/index.html">
+<meta property="og:title" content="[.NET][C#][SOLID] DI &amp; IoC (依賴注入與控制反轉)">
+<meta property="og:url" content="https://mao-code.github.io/posts/3588979794/index.html">
 <meta property="og:site_name" content="Mao 勛哥&#39;s blog">
-<meta property="og:description" content="前言接續上一篇的文章，這篇文章會著重介紹這個系統以下是我在YouTube上對這個專案的介紹與Demo：    這篇文章的內容會與影片很像，主要分為動機與介紹、重點功能簡介、系統架構與技術的順序介紹系統功能Demo, 還請觀看影片介紹">
+<meta property="og:description" content="前言">
 <meta property="og:locale" content="zh_TW">
-<meta property="og:image" content="https://mao-code.github.io/images/posts/CC-project-demo/1.png">
-<meta property="og:image" content="https://mao-code.github.io/images/posts/CC-project-demo/2.png">
-<meta property="og:image" content="https://mao-code.github.io/images/posts/CC-project-demo/3.png">
-<meta property="og:image" content="https://mao-code.github.io/images/posts/CC-project-demo/4.png">
-<meta property="og:image" content="https://mao-code.github.io/images/posts/CC-project-demo/5.png">
-<meta property="og:image" content="https://mao-code.github.io/images/posts/CC-project-demo/6.png">
-<meta property="og:image" content="https://mao-code.github.io/images/posts/CC-project-demo/7.png">
-<meta property="og:image" content="https://mao-code.github.io/images/posts/CC-project-demo/8.png">
-<meta property="og:image" content="https://mao-code.github.io/images/posts/CC-project-demo/9.png">
-<meta property="og:image" content="https://mao-code.github.io/images/posts/CC-project-demo/10.png">
-<meta property="og:image" content="https://mao-code.github.io/images/posts/CC-project-demo/CC_structure.jpeg">
-<meta property="article:published_time" content="2023-01-11T12:58:33.000Z">
-<meta property="article:modified_time" content="2023-01-24T14:04:20.573Z">
+<meta property="article:published_time" content="2023-02-06T13:08:39.000Z">
+<meta property="article:modified_time" content="2023-02-06T13:14:46.184Z">
 <meta property="article:author" content="Mao 勛哥">
-<meta property="article:tag" content="專案">
-<meta property="article:tag" content="作品">
-<meta property="article:tag" content="side project">
+<meta property="article:tag" content="OOP">
+<meta property="article:tag" content="SOLID">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://mao-code.github.io/images/posts/CC-project-demo/1.png">
 
 
-<link rel="canonical" href="https://mao-code.github.io/posts/2012237495/">
+<link rel="canonical" href="https://mao-code.github.io/posts/3588979794/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://mao-code.github.io/posts/2012237495/","path":"posts/2012237495/","title":"CC-沈浸式線上逛街APP-系統與技術介紹"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://mao-code.github.io/posts/3588979794/","path":"posts/3588979794/","title":"[.NET][C#][SOLID] DI & IoC (依賴注入與控制反轉)"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>CC-沈浸式線上逛街APP-系統與技術介紹 | Mao 勛哥's blog</title>
+<title>[.NET][C#][SOLID] DI & IoC (依賴注入與控制反轉) | Mao 勛哥's blog</title>
   
 
 
@@ -163,7 +150,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8B%95%E6%A9%9F%E8%88%87%E4%BB%8B%E7%B4%B9"><span class="nav-number">2.</span> <span class="nav-text">動機與介紹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%87%8D%E9%BB%9E%E5%8A%9F%E8%83%BD%E7%B0%A1%E4%BB%8B"><span class="nav-number">3.</span> <span class="nav-text">重點功能簡介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B%E8%88%87%E6%8A%80%E8%A1%93"><span class="nav-number">4.</span> <span class="nav-text">系統架構與技術</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -248,7 +235,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://mao-code.github.io/posts/2012237495/">
+    <link itemprop="mainEntityOfPage" href="https://mao-code.github.io/posts/3588979794/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/mypic.jpeg">
@@ -261,12 +248,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="CC-沈浸式線上逛街APP-系統與技術介紹 | Mao 勛哥's blog">
+      <meta itemprop="name" content="[.NET][C#][SOLID] DI & IoC (依賴注入與控制反轉) | Mao 勛哥's blog">
       <meta itemprop="description" content>
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          CC-沈浸式線上逛街APP-系統與技術介紹
+          [.NET][C#][SOLID] DI & IoC (依賴注入與控制反轉)
         </h1>
 
         <div class="post-meta-container">
@@ -276,15 +263,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">發表於</span>
+      
 
-      <time title="創建時間：2023-01-11 20:58:33" itemprop="dateCreated datePublished" datetime="2023-01-11T20:58:33+08:00">2023-01-11</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新於</span>
-      <time title="修改時間：2023-01-24 22:04:20" itemprop="dateModified" datetime="2023-01-24T22:04:20+08:00">2023-01-24</time>
+      <time title="創建時間：2023-02-06 21:08:39 / 修改時間：21:14:46" itemprop="dateCreated datePublished" datetime="2023-02-06T21:08:39+08:00">2023-02-06</time>
     </span>
 
   
@@ -301,14 +282,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">文章字數：</span>
-      <span>1.8k</span>
+      <span>2</span>
     </span>
     <span class="post-meta-item" title="所需閱讀時間">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">所需閱讀時間 &asymp;</span>
-      <span>2 分鐘</span>
+      <span>1 分鐘</span>
     </span>
 </div>
 
@@ -319,40 +300,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>接續上一篇的文章，這篇文章會著重介紹這個系統<br>以下是我在YouTube上對這個專案的介紹與Demo：</p>
-<iframe src="https://www.youtube.com/embed/aMGnyI2Xe04">
-</iframe>
-
-<p>這篇文章的內容會與影片很像，主要分為<strong>動機與介紹、重點功能簡介、系統架構與技術</strong>的順序介紹<br>系統功能Demo, 還請觀看影片介紹</p>
-<span id="more"></span>
-<p><img src="/images/posts/CC-project-demo/1.png" style="width: 90%; margin: 15px auto;"></p>
-<h2 id="動機與介紹"><a href="#動機與介紹" class="headerlink" title="動機與介紹"></a>動機與介紹</h2><p><img src="/images/posts/CC-project-demo/2.png" style="width: 70%; margin: 15px auto;"><br>首先我們主要的TA之一是線上逛街族, 針對這個族群我們統整出簡單的兩點：第一, 他們在線上瀏覽或滑商品時, 通常沒有特定的消費目的, 只是想要滑滑看看, 無目的的瀏覽行為, 第二, 這種行為主要是以消遣、獲得樂趣為目的, 而不一定是真的想要買商品</p>
-<hr>
-<p><img src="/images/posts/CC-project-demo/3.png" style="width: 70%; margin: 15px auto;"><br>根據上面的族群設定, 我們的專案主要會focus在解決或滿足下面的問題, 第一, 我們是針對無目的性的消費情境底下的需求, 第二, 我們希望帶給使用者沈浸式的體驗, 所謂的沈浸式體驗, 就是在舒服且不受干擾的狀態下, 接收自己有興趣的資訊, 以此讓使用者能在我們這個APP上做消遣、殺時間的動作, 這麼做的目的很大一部分是為了捕捉使用者的微時刻, 這些微時刻的數據可以代表使用者不同時刻的喜好或者決策, 第四，我們這個APP也會瞄準直播的市場與直播平台合作，而這些直播主的煩惱，便是下播後無法持續創造收入，因此我們除了希望能延長商品的生命週期外，也可以透過捕捉使用者行為來提供直播主缺乏的Consumer Insight</p>
-<hr>
-<p><img src="/images/posts/CC-project-demo/4.png" style="width: 70%; margin: 15px auto;"><br>為了達成以上的目的，我們主要有這幾項手段，第一, 研究推薦演算法與捕捉使用者行為，透過使用者不同時刻的行為數據來作為推薦的依據，而非傳統的電商使用歷史紀錄來做推薦，以次讓使用者能夠在每時每刻接收有興趣的資訊，達到沈浸式的體驗。第二，透過簡潔的介面，降低使用者瀏覽時的壓力，讓使用者更願意停留在APP上，第三，透過分享貼文、追蹤、評論等等的社群機制，讓使用者能夠了解親朋好友們有興趣或者好評的商品，也能夠享受社群的樂趣，增加APP的黏著度，最後，透過APP上種種捕捉使用者行為數據的機制，可以將這些數據提供給與我們合作的第三方廠商，讓廠商更了解使用者的喜好</p>
-<h2 id="重點功能簡介"><a href="#重點功能簡介" class="headerlink" title="重點功能簡介"></a>重點功能簡介</h2><p><img src="/images/posts/CC-project-demo/5.png" style="width: 70%; margin: 15px auto;"><br>再來介紹一些重點功能的簡短敘述，首先第一個是我們的商品貼文，也是商品的主體，貼文特色主要以滿板設計與資訊收合來達到雜訊最小化的目的，另外後面Demo也會呈現推薦商品的形式，與現在短影音的方式很像，透過推薦與給人耳目一新的商品，帶給使用者殺時間的樂趣，另外，透過商品貼文，也可以成為直播主下播後銷售的利器，與一般電商不同的是，我們主動推薦商家商品，而且是透過使用者當前的行為喜好，而不是被動等待使用者搜尋或是透過購買紀錄來做推薦</p>
-<hr>
-<p><img src="/images/posts/CC-project-demo/6.png" style="width: 70%; margin: 15px auto;"><br>再來是我們的主頁面，透過滑卡的機制增加互動感，也可以同時捕捉使用者行為，以做到即時推薦，這麼做除了可以增加沈浸體驗，也可以更廣泛的推薦商品，提高曝光程度</p>
-<hr>
-<p><img src="/images/posts/CC-project-demo/7.png" style="width: 70%; margin: 15px auto;"><br>主頁面與探索頁面都可以透過使用者的滑卡行為、停留時間與點擊率，來彼此優化推薦內容，做到雙向推薦的功能</p>
-<hr>
-<p><img src="/images/posts/CC-project-demo/8.png" style="width: 70%; margin: 15px auto;"><br>探索頁面除了會推薦使用者感興趣的商品，也會隨機推薦相關商品，增加新奇度，其中最大塊的貼文則為推薦分數最高的商品，透過矩陣式樹狀結構，帶給使用者簡潔與大量瀏覽的感受</p>
-<hr>
-<p><img src="/images/posts/CC-project-demo/9.png" style="width: 70%; margin: 15px auto;"><br>CC提供商城、買家、直播主追蹤的機制，加上個人化自己的動態牆與留言區，增加社群互動性，以社群的力量增加APP的黏著度</p>
-<hr>
-<p><img src="/images/posts/CC-project-demo/10.png" style="width: 70%; margin: 15px auto;"><br>分享貼文除了可以增加互動的樂趣，也是提供消費者洞見的大平台<br>最重要的是，可以藉由社群的力量，一傳十十傳百，來行銷商品</p>
-<h2 id="系統架構與技術"><a href="#系統架構與技術" class="headerlink" title="系統架構與技術"></a>系統架構與技術</h2><p>先附上系統架構圖：<br><img src="/images/posts/CC-project-demo/CC_structure.jpeg" style="width: 70%; margin: 15px auto;"></p>
-<p>首先前端主要由Angular寫成，搭配<strong>模組化與物件導向設計，增加程式的可維護性</strong>，最後透過PWA包裝成跨平台的APP<br>藉由Angular能夠模組化與元件化的特性，我們將各個功能切分成不同模組，提升程式低耦合高內聚的特性，另外，Token驗證、路由保護、API攔截器、資料格式化Pipeline等等，也都抽離出來實作，其中，核心的商業邏輯切分在我們的Service模組，與畫面邏輯分離，再藉由依賴注入讓各模組使用，這樣的設計，讓我們的專案在未來更改與維護擴充時非常省時與省力。</p>
-<p>這裡也是我第一次使用前端框架，來寫一個比較完整的專案，由於我是後端出身，所以選擇一個自己寫起來最舒服的Angular框架，有種在寫後端的親切感XD。</p>
-<p>後端主要由NodeJS寫成，資料庫則為MongoDB，一樣是將各個功能進行模組化的拆分，與資料庫索引的優化。</p>
-<p>另外WebServer的部分則是由IIS代理，加上GitLab CI&#x2F;CD &amp; GitLab Runner做到自動化整合與部屬的功能</p>
-<style>
-.video-container
-{
-    padding-top: 60% !important;
-}
-</style>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><span id="more"></span>
     </div>
 
     
@@ -363,23 +311,19 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E5%B0%88%E6%A1%88/" rel="tag"><i class="fa fa-tag"></i> 專案</a>
-              <a href="/tags/%E4%BD%9C%E5%93%81/" rel="tag"><i class="fa fa-tag"></i> 作品</a>
-              <a href="/tags/side-project/" rel="tag"><i class="fa fa-tag"></i> side project</a>
+              <a href="/tags/OOP/" rel="tag"><i class="fa fa-tag"></i> OOP</a>
+              <a href="/tags/SOLID/" rel="tag"><i class="fa fa-tag"></i> SOLID</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/posts/534426495/" rel="prev" title="大一大二參加畢業專案與程式比賽心得分享">
-                  <i class="fa fa-chevron-left"></i> 大一大二參加畢業專案與程式比賽心得分享
+                <a href="/posts/277323671/" rel="prev" title="政大Google學生開發者社群-心得（第一學期）">
+                  <i class="fa fa-chevron-left"></i> 政大Google學生開發者社群-心得（第一學期）
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/posts/277323671/" rel="next" title="政大Google學生開發者社群-心得（第一學期）">
-                  政大Google學生開發者社群-心得（第一學期） <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>

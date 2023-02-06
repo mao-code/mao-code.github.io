@@ -11,6 +11,15 @@
   </url>
   
   <url>
+    <loc>https://mao-code.github.io/posts/3588979794/</loc>
+    
+    <lastmod>2023-02-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://mao-code.github.io/posts/4072203086/</loc>
     
     <lastmod>2023-02-06</lastmod>
@@ -127,13 +136,6 @@
   </url>
   
   <url>
-    <loc>https://mao-code.github.io/tags/design-pattern/</loc>
-    <lastmod>2023-02-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://mao-code.github.io/tags/%E4%BD%9C%E5%93%81/</loc>
     <lastmod>2023-02-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -142,6 +144,27 @@
   
   <url>
     <loc>https://mao-code.github.io/tags/side-project/</loc>
+    <lastmod>2023-02-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://mao-code.github.io/tags/OOP/</loc>
+    <lastmod>2023-02-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://mao-code.github.io/tags/SOLID/</loc>
+    <lastmod>2023-02-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://mao-code.github.io/tags/design-pattern/</loc>
     <lastmod>2023-02-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -164,14 +187,14 @@
   </url>
   
   <url>
-    <loc>https://mao-code.github.io/categories/Design-Pattern/</loc>
+    <loc>https://mao-code.github.io/categories/%E5%B0%88%E6%A1%88/</loc>
     <lastmod>2023-02-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://mao-code.github.io/categories/%E5%B0%88%E6%A1%88/</loc>
+    <loc>https://mao-code.github.io/categories/OOP/</loc>
     <lastmod>2023-02-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -193,6 +216,20 @@
   
   <url>
     <loc>https://mao-code.github.io/categories/%E5%B0%88%E6%A1%88/side-project/</loc>
+    <lastmod>2023-02-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://mao-code.github.io/categories/OOP/SOLID/</loc>
+    <lastmod>2023-02-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://mao-code.github.io/categories/OOP/Design-Pattern/</loc>
     <lastmod>2023-02-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

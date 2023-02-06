@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
-<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.2.0">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
@@ -25,7 +25,7 @@
 
     <meta name="description" content="前言這篇文章主要介紹何為Repository Pattern, 並如何在.NET C#中實作並結合Unit Of Work Pattern, 讓程式對Repository解耦這個design pattern可以說是踏入軟體架構的敲門磚也算是非常常用的pattern, 實用性非常高">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[.NET][Design Pattern] Repository Pattern">
+<meta property="og:title" content="[.NET][C#][Design Pattern] Repository Pattern">
 <meta property="og:url" content="https://mao-code.github.io/posts/1822258245/index.html">
 <meta property="og:site_name" content="Mao 勛哥&#39;s blog">
 <meta property="og:description" content="前言這篇文章主要介紹何為Repository Pattern, 並如何在.NET C#中實作並結合Unit Of Work Pattern, 讓程式對Repository解耦這個design pattern可以說是踏入軟體架構的敲門磚也算是非常常用的pattern, 實用性非常高">
@@ -34,8 +34,9 @@
 <meta property="og:image" content="https://mao-code.github.io/images/posts/repository-pattern/uml.jpg">
 <meta property="og:image" content="https://mao-code.github.io/images/posts/repository-pattern/structure.jpg">
 <meta property="article:published_time" content="2022-09-04T16:00:00.000Z">
-<meta property="article:modified_time" content="2023-02-06T05:58:47.059Z">
+<meta property="article:modified_time" content="2023-02-06T13:18:18.579Z">
 <meta property="article:author" content="Mao 勛哥">
+<meta property="article:tag" content="OOP">
 <meta property="article:tag" content="design-pattern">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://mao-code.github.io/images/posts/repository-pattern/benifits.jpg">
@@ -45,10 +46,10 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://mao-code.github.io/posts/1822258245/","path":"posts/1822258245/","title":"[.NET][Design Pattern] Repository Pattern"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://mao-code.github.io/posts/1822258245/","path":"posts/1822258245/","title":"[.NET][C#][Design Pattern] Repository Pattern"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>[.NET][Design Pattern] Repository Pattern | Mao 勛哥's blog</title>
+<title>[.NET][C#][Design Pattern] Repository Pattern | Mao 勛哥's blog</title>
   
 
 
@@ -167,18 +168,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">分類</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
@@ -251,12 +252,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="[.NET][Design Pattern] Repository Pattern | Mao 勛哥's blog">
+      <meta itemprop="name" content="[.NET][C#][Design Pattern] Repository Pattern | Mao 勛哥's blog">
       <meta itemprop="description" content>
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          [.NET][Design Pattern] Repository Pattern
+          [.NET][C#][Design Pattern] Repository Pattern
         </h1>
 
         <div class="post-meta-container">
@@ -274,7 +275,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新於</span>
-      <time title="修改時間：2023-02-06 13:58:47" itemprop="dateModified" datetime="2023-02-06T13:58:47+08:00">2023-02-06</time>
+      <time title="修改時間：2023-02-06 21:18:18" itemprop="dateModified" datetime="2023-02-06T21:18:18+08:00">2023-02-06</time>
     </span>
 
   
@@ -315,16 +316,12 @@
 <h2 id="定義：Repository-Pattern-Unit-Of-Work-Pattern"><a href="#定義：Repository-Pattern-Unit-Of-Work-Pattern" class="headerlink" title="定義：Repository Pattern, Unit Of Work Pattern"></a>定義：Repository Pattern, Unit Of Work Pattern</h2><p>IG貼文<br><span class="exturl" data-url="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9wL0NnWm5TNjRoMjVtLz91dG1fc291cmNlPWlnX3dlYl9jb3B5X2xpbms=">Repository Pattern Post<i class="fa fa-external-link-alt"></i></span></p>
 <p>GitHub連結：<br><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL21hby1jb2RlL1JlcG9zaXRvcnlQYXR0ZXJu">Sample Code<i class="fa fa-external-link-alt"></i></span></p>
 <p>Repository Pattern主要就是由Repository這個元素所組成<br>我個人都會結合Unit Of Work Pattern一起使用</p>
-<ul>
-<li>Repository:<ul>
-<li><strong>Act like a collection of object in memory.</strong></li>
-</ul>
-</li>
-<li>Unit of work:<ul>
-<li>Maintain a list of objects affected by a business transaction and <strong>coordinate th writting out of changes.</strong></li>
-</ul>
-</li>
-</ul>
+<blockquote>
+<p><strong>[Repository]</strong> :<br>    Act like <strong>a collection of object in memory.</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>[Unit of work]</strong> :<br>    Maintain a list of objects affected by a business transaction and <strong>coordinate th writting out of changes.</strong></p>
+</blockquote>
 <p>以上是對兩個主要元素的定義<br>簡單來說 <ins>Repository就像是一群存在記憶體中的Objects</ins><br>而 <ins>Unit of work則是針對這些<strong>被改變</strong>的Objects, 統一在這裡做處理<ins></ins></ins></p>
 <h2 id="更簡單的解釋"><a href="#更簡單的解釋" class="headerlink" title="更簡單的解釋"></a>更簡單的解釋</h2><p><strong>UnitOfWork在這裡就像是DB, Repository就像是Table.</strong><br><strong>如果以EntityFramework來看, 就是Context和Entity的關係.</strong><br>EF本身也有做Repository和UnitOfWork.</p>
 <p><strong>把每一次的operation看作一個unit of work, 等到operation結束才Complete.</strong><br>這樣一來, <strong>當我們的Controller或Service需要很多Repository來操作時, 就只需要依賴UnitOfWork, 簡化程式碼與依賴.</strong><br><strong>另一個好處是可以管理Repository之間之間的情況, 做到DB的Atomic operation.</strong><br>舉例來說, 當Repository1儲存成功, 而Repository2儲存失敗, 以一個完整的Atomic operation來說, 一個失敗, operation就算是失敗.<br>但在這裡, Repository之間是沒有聯繫的, 因此資料會處於一種dirty state, 就是一個進去, 但一個失敗了.<br>沒辦法回到最初的狀況再debug, UnitOfWork就是來處理這種問題, 當Complete時失敗, 並不會真的動到DB, 而是只動到Repository. 可以整個<strong>roll back處理</strong></p>
@@ -377,9 +374,12 @@
     
     
     
+      
+
 
     <footer class="post-footer">
           <div class="post-tags">
+              <a href="/tags/OOP/" rel="tag"><i class="fa fa-tag"></i> OOP</a>
               <a href="/tags/design-pattern/" rel="tag"><i class="fa fa-tag"></i> design-pattern</a>
           </div>
 
@@ -389,8 +389,8 @@
             <div class="post-nav-item">
             </div>
             <div class="post-nav-item">
-                <a href="/posts/4072203086/" rel="next" title="[.NET][Design Pattern] Mediator Pattern (中介者模式)">
-                  [.NET][Design Pattern] Mediator Pattern (中介者模式) <i class="fa fa-chevron-right"></i>
+                <a href="/posts/4072203086/" rel="next" title="[.NET][C#][Design Pattern] Mediator Pattern (中介者模式)">
+                  [.NET][C#][Design Pattern] Mediator Pattern (中介者模式) <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
