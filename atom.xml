@@ -6,7 +6,7 @@
   <link href="https://mao-code.github.io/atom.xml" rel="self"/>
   
   <link href="https://mao-code.github.io/"/>
-  <updated>2023-02-06T13:14:46.184Z</updated>
+  <updated>2023-02-06T13:41:27.650Z</updated>
   <id>https://mao-code.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://mao-code.github.io/posts/3588979794/"/>
     <id>https://mao-code.github.io/posts/3588979794/</id>
     <published>2023-02-06T13:08:39.000Z</published>
-    <updated>2023-02-06T13:14:46.184Z</updated>
+    <updated>2023-02-06T13:41:27.650Z</updated>
     
     <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><span id="more"></span>]]></content>
     
@@ -57,20 +57,20 @@
     
     <category term="心得" scheme="https://mao-code.github.io/categories/%E5%BF%83%E5%BE%97/"/>
     
-    <category term="GDSC" scheme="https://mao-code.github.io/categories/GDSC/"/>
-    
     <category term="專案" scheme="https://mao-code.github.io/categories/%E5%B0%88%E6%A1%88/"/>
     
-    <category term="NCCUPass" scheme="https://mao-code.github.io/categories/GDSC/NCCUPass/"/>
+    <category term="GDSC" scheme="https://mao-code.github.io/categories/GDSC/"/>
     
     <category term="side project" scheme="https://mao-code.github.io/categories/%E5%B0%88%E6%A1%88/side-project/"/>
     
+    <category term="NCCUPass" scheme="https://mao-code.github.io/categories/GDSC/NCCUPass/"/>
+    
+    
+    <category term="專案" scheme="https://mao-code.github.io/tags/%E5%B0%88%E6%A1%88/"/>
     
     <category term="GDSC" scheme="https://mao-code.github.io/tags/GDSC/"/>
     
     <category term="NCCUPass" scheme="https://mao-code.github.io/tags/NCCUPass/"/>
-    
-    <category term="專案" scheme="https://mao-code.github.io/tags/%E5%B0%88%E6%A1%88/"/>
     
   </entry>
   
