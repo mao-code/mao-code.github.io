@@ -92,6 +92,20 @@
 
   
   <url>
+    <loc>https://mao-code.github.io/tags/OOP/</loc>
+    <lastmod>2023-02-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://mao-code.github.io/tags/design-pattern/</loc>
+    <lastmod>2023-02-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://mao-code.github.io/tags/%E5%BF%83%E5%BE%97/</loc>
     <lastmod>2023-02-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -140,21 +154,14 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://mao-code.github.io/tags/OOP/</loc>
-    <lastmod>2023-02-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://mao-code.github.io/tags/design-pattern/</loc>
-    <lastmod>2023-02-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
+  
+  <url>
+    <loc>https://mao-code.github.io/categories/OOP/</loc>
+    <lastmod>2023-02-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
   <url>
     <loc>https://mao-code.github.io/categories/%E5%BF%83%E5%BE%97/</loc>
@@ -178,7 +185,7 @@
   </url>
   
   <url>
-    <loc>https://mao-code.github.io/categories/OOP/</loc>
+    <loc>https://mao-code.github.io/categories/OOP/Design-Pattern/</loc>
     <lastmod>2023-02-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -200,13 +207,6 @@
   
   <url>
     <loc>https://mao-code.github.io/categories/GDSC/NCCUPass/</loc>
-    <lastmod>2023-02-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://mao-code.github.io/categories/OOP/Design-Pattern/</loc>
     <lastmod>2023-02-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
