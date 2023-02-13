@@ -63,6 +63,84 @@ CC提供商城、買家、直播主追蹤的機制，加上個人化自己的動
       </tags>
   </entry>
   <entry>
+    <title>大一大二參加畢業專案與程式比賽心得分享</title>
+    <url>/posts/534426495/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>小弟我在剛上大一沒多久，就私mail系上的程式老師，詢問是否可以參與更多的專案或研究，也一併把我的履歷給教授看。<br>沒想到教授大方地給我幾條路選，可以跟教授做研究，出去實習，或是和學長們做專案。<br>大一的我想要慢慢累積實力，於是決定先<strong>和學長們做專案</strong>，去比賽，累積經驗。<br>在歷經<strong>國科會專案、資訊競賽、畢業專案競賽等等</strong>後，我非常感謝教授和學長們給我這個機會，讓我可以擁有這些寶貴的經驗！<br>這篇文章主要著重在心得與分享，比較技術面的內容會在下篇文章詳細介紹。</p>
+<span id="more"></span>
+
+<h2 id="比賽心得與定位"><a href="#比賽心得與定位" class="headerlink" title="比賽心得與定位"></a>比賽心得與定位</h2><p>在這個Team內，我主要負責程式開發，包括<strong>前端、伺服器架設與管理和一部分的後端</strong>。<br>前前後後比了<strong>國科會大專生計畫、智慧創新、資訊服務和系上的畢業專案競賽</strong>，大約歷時1年多的時間，在這段時間裡，我們歷經<strong>發想、開發、維護、寫技術文件、UI&#x2F;UX設計到演算法研究等等</strong>，這也是我大一結束為止做過相對完整的專案。</p>
+<hr>
+<p>這是我們智慧創新和資訊服務競賽時的照片，我們直接把成品給評審滑XD，因為以我們的系統來說相對完整，也不怕噴Bug，雖然都只進到決賽，但我也更加知道這類型比賽的準備方向（基本上就是要對到當前流行的主題），<del>所以明年就準備AI吧</del><br><img data-src="/images/posts/CC-experience/智慧創新.JPG" 
+style="width: 70%; margin: 15px auto;"><br><img data-src="/images/posts/CC-experience/資服.jpg" 
+style="width: 70%; margin: 15px auto;"></p>
+<hr>
+<p>這是系上畢業專案的比賽，非常榮幸拿到第二名！當天還直接被其他資訊公司的主管遞名片，受寵若驚。<br><img data-src="/images/posts/CC-experience/畢業專案.JPG" 
+style="width: 70%; margin: 15px auto;"><br><img data-src="/images/posts/CC-experience/畢業專案得獎.JPG" 
+style="width: 70%; margin: 15px auto;"></p>
+<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>總的來說，這是我<strong>參與多人協作、實作一個完整專案的寶貴經驗</strong>，這也成為我日後開發其他專案的養分(Google學生開發者社群, 資訊競賽, etc.)，除了<strong>技術面的大幅成長，專案管理、人際互動、時間管理</strong>也都是成長的一部分，主動去尋找機會，得到的會比你想像的多，雖然有點辛苦就是了，但我覺得很值得！所以時間管理真的超重要，這也讓我在工程師這條路上變得更主動，相信只要努力，自己絕對值得更好的！</p>
+<p>比較技術面的內容會在之後的文章提及</p>
+]]></content>
+      <categories>
+        <category>心得</category>
+        <category>比賽</category>
+      </categories>
+      <tags>
+        <tag>心得</tag>
+        <tag>比賽</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>政大Google學生開發者社群-心得（第一學期）</title>
+    <url>/posts/277323671/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在剛上大二時，除了手邊和學長的專案，我也參加了政大的Google學生開發者社群。主要是希望透過提案，<strong>利用科技來解決問題</strong>，在這裡我也深深感受到Google的文化，那就是<strong>不會怕去嘗試、不怕去解決問題</strong>，我也認識在這個社群中的各個人才。在這個社群中，我除了擔任自己<strong>專案領導人</strong>的角色外，我也身兼<strong>後端技術長</strong>的任務，也是想要發揮我目前所學到的、最成熟的後端知識。除了技術面，如何管理一個團隊、一項專案，也是一門很大的課題。希望在未來可以繼續把自己的這項專案做到完善，解決真正的問題！</p>
+<span id="more"></span>
+
+<h2 id="定位與職位"><a href="#定位與職位" class="headerlink" title="定位與職位"></a>定位與職位</h2><ul>
+<li><h3 id="專案定位"><a href="#專案定位" class="headerlink" title="專案定位"></a>專案定位</h3></li>
+</ul>
+<p>我這次的提案叫做「政大通NCCUPass」，以<strong>政大校園生活為出發點</strong>，想要做一款能夠解決政大學生生活上不便的APP，透過專案組的討論與調查，帶來<strong>更便利、聰明與數位化</strong>的校園生活，讓校園內的需求能夠即時被滿足，也讓這款APP融入政大學生的生活中，成為政大校園內不可或缺的一部分，因此，「政大通-NCCUPass」的提案就此誕生</p>
+<hr>
+<p>下面是我們第一次期末發表的海報和照片<br>海報內呈現的是我們規劃、也正在開發的功能<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/poster.jpg" 
+style="width: 70%; margin: 15px auto;"></p>
+<hr>
+<p>這個是期末發表當天的攤位介紹照片<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img4.jpg" 
+style="width: 70%; margin: 15px auto;"></p>
+<p><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img2.JPG" 
+style="width: 70%; margin: 15px auto;"></p>
+<p><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img1.JPG" 
+style="width: 70%; margin: 15px auto;"></p>
+<hr>
+<ul>
+<li><h3 id="職位"><a href="#職位" class="headerlink" title="職位"></a>職位</h3></li>
+</ul>
+<p>在這個專案中，我擔任<strong>Project Leader(專案主持人)<strong>，與</strong>Backend Tech-Lead(後端技術長)<strong>的身份，帶領總共</strong>11人的團隊</strong>，在我們這個團隊中，主要分成四組，前端、後端、UI&#x2F;UX、文書，除了負責主要的後端技術，也要帶領後端的組員們提升實力、協調與規劃。以專案領導人的角度來看，除了需要<strong>規劃整個專案的進度與走向外，也要監督進度、協調各組、人際溝通等等</strong>，除了利用各種專案管理的工具外，也要撰寫各種文件與流程圖，老實說滿累的XD。但也是遇到一群願意跟隨我的隊友們，一起成長，真的非常得感謝他們🙏</p>
+<h2 id="技術"><a href="#技術" class="headerlink" title="技術"></a>技術</h2><ul>
+<li><h3 id="系統架構圖"><a href="#系統架構圖" class="headerlink" title="系統架構圖"></a>系統架構圖</h3></li>
+</ul>
+<p>下面是我們的系統架構圖，因為我是負責後端的部分，所以會著重畫後端的架構<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/NCCUPass-Structure.jpg" 
+style="width: 70%; margin: 15px auto;"></p>
+<ul>
+<li><h3 id="後端技術細節"><a href="#後端技術細節" class="headerlink" title="後端技術細節"></a>後端技術細節</h3></li>
+</ul>
+<p>根據上面的架構圖，我們的專案主要部署在Ubuntu的主機上，所有的服務利用Docker Compose統一建立，另外還有利用GitLab Runner做到自動化整合與自動化部屬的功能。後端程式是由.NET C#撰寫，這邊我使用的是Software Layer Architecture Pattern(軟體分層架構)，結合各種Design Pattern再加上自己的一些變形，資料庫是使用MongoDB的Replica-Set，也有使用Redis做快取，照片和一些公開的檔案主要放在我們的File Server上。其他技術細節我就列在下面，想看的人可以參考一下XD</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">- Software Layer Architecture pattern (多層)</span><br><span class="line">- Repository pattern</span><br><span class="line">- Unit of Work pattern</span><br><span class="line">- Mediator pattern &amp; CQRS</span><br><span class="line">- JWT &amp; RBAC</span><br><span class="line">- Automapper</span><br><span class="line">- Exception handler抽離</span><br><span class="line">- Dapper &amp; EF combination</span><br><span class="line">- Redis (Cache)</span><br><span class="line">- Docker Networking</span><br><span class="line">- Docker Volume</span><br><span class="line">- Docker hub</span><br><span class="line">- appsettings 組態切換</span><br><span class="line">- MongoDB replica-set</span><br><span class="line">- Git 多人協作</span><br><span class="line">- Swagger / OpenAPI</span><br><span class="line">- Docker File Server</span><br><span class="line">- Docker mongoDB backup daily</span><br><span class="line">- Docker Compose</span><br></pre></td></tr></table></figure>
+<p>之後也會一直新增，因為現在處於專案開發的初期。</p>
+<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>最後，這個專案雖然只是在發展初期，但我希望未來可以發展到我預想的樣子，也非常感謝一路願意跟隨我、幫助我的隊友們，單打獨鬥真的比不上團隊合作👍，也希望各位未來也可以繼續幫助我啦，現在打分享文可能還太早，但我就是想要趁學期末趕快記錄一下哈哈</p>
+]]></content>
+      <categories>
+        <category>專案</category>
+        <category>心得</category>
+        <category>GDSC</category>
+        <category>side project</category>
+        <category>NCCUPass</category>
+      </categories>
+      <tags>
+        <tag>專案</tag>
+        <tag>GDSC</tag>
+        <tag>NCCUPass</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>[.NET][C#][SOLID] - DI &amp; IoC (依賴注入與控制反轉) 全面講解</title>
     <url>/posts/3588979794/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>IoC (Inversion of Control) 控制反轉，與OOP SOLID原則中的其中一種設計原則有關，也就是其中的DIP(Dependency Inversion Principle)，是OOP一個非常重要的程式設計思想，對於軟體開發來說十分重要，下面我將<strong>十分詳細的介紹何為DIP、IoC以及DI、為何要使用它們以及如何實作</strong>，相信大家閱讀完會對這個重要的思想了解的更加透徹。</p>
@@ -374,33 +452,6 @@ style="width: 70%; margin: 15px auto;"></p>
       </tags>
   </entry>
   <entry>
-    <title>大一大二參加畢業專案與程式比賽心得分享</title>
-    <url>/posts/534426495/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>小弟我在剛上大一沒多久，就私mail系上的程式老師，詢問是否可以參與更多的專案或研究，也一併把我的履歷給教授看。<br>沒想到教授大方地給我幾條路選，可以跟教授做研究，出去實習，或是和學長們做專案。<br>大一的我想要慢慢累積實力，於是決定先<strong>和學長們做專案</strong>，去比賽，累積經驗。<br>在歷經<strong>國科會專案、資訊競賽、畢業專案競賽等等</strong>後，我非常感謝教授和學長們給我這個機會，讓我可以擁有這些寶貴的經驗！<br>這篇文章主要著重在心得與分享，比較技術面的內容會在下篇文章詳細介紹。</p>
-<span id="more"></span>
-
-<h2 id="比賽心得與定位"><a href="#比賽心得與定位" class="headerlink" title="比賽心得與定位"></a>比賽心得與定位</h2><p>在這個Team內，我主要負責程式開發，包括<strong>前端、伺服器架設與管理和一部分的後端</strong>。<br>前前後後比了<strong>國科會大專生計畫、智慧創新、資訊服務和系上的畢業專案競賽</strong>，大約歷時1年多的時間，在這段時間裡，我們歷經<strong>發想、開發、維護、寫技術文件、UI&#x2F;UX設計到演算法研究等等</strong>，這也是我大一結束為止做過相對完整的專案。</p>
-<hr>
-<p>這是我們智慧創新和資訊服務競賽時的照片，我們直接把成品給評審滑XD，因為以我們的系統來說相對完整，也不怕噴Bug，雖然都只進到決賽，但我也更加知道這類型比賽的準備方向（基本上就是要對到當前流行的主題），<del>所以明年就準備AI吧</del><br><img data-src="/images/posts/CC-experience/智慧創新.JPG" 
-style="width: 70%; margin: 15px auto;"><br><img data-src="/images/posts/CC-experience/資服.jpg" 
-style="width: 70%; margin: 15px auto;"></p>
-<hr>
-<p>這是系上畢業專案的比賽，非常榮幸拿到第二名！當天還直接被其他資訊公司的主管遞名片，受寵若驚。<br><img data-src="/images/posts/CC-experience/畢業專案.JPG" 
-style="width: 70%; margin: 15px auto;"><br><img data-src="/images/posts/CC-experience/畢業專案得獎.JPG" 
-style="width: 70%; margin: 15px auto;"></p>
-<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>總的來說，這是我<strong>參與多人協作、實作一個完整專案的寶貴經驗</strong>，這也成為我日後開發其他專案的養分(Google學生開發者社群, 資訊競賽, etc.)，除了<strong>技術面的大幅成長，專案管理、人際互動、時間管理</strong>也都是成長的一部分，主動去尋找機會，得到的會比你想像的多，雖然有點辛苦就是了，但我覺得很值得！所以時間管理真的超重要，這也讓我在工程師這條路上變得更主動，相信只要努力，自己絕對值得更好的！</p>
-<p>比較技術面的內容會在之後的文章提及</p>
-]]></content>
-      <categories>
-        <category>心得</category>
-        <category>比賽</category>
-      </categories>
-      <tags>
-        <tag>心得</tag>
-        <tag>比賽</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>[.NET][C#][Design Pattern] - Repository Pattern</title>
     <url>/posts/1822258245/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>這篇文章主要介紹何為Repository Pattern, 並如何在.NET C#中實作<br>並結合Unit Of Work Pattern, 讓程式對Repository解耦<br>這個design pattern可以說是踏入軟體架構的敲門磚<br>也算是非常常用的pattern, 實用性非常高</p>
@@ -473,57 +524,6 @@ style="width: 70%; margin: 15px auto;"><br>這裡主要是以書本和作者為�
         <tag>OOP</tag>
         <tag>.NET C#</tag>
         <tag>design-pattern</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>政大Google學生開發者社群-心得（第一學期）</title>
-    <url>/posts/277323671/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在剛上大二時，除了手邊和學長的專案，我也參加了政大的Google學生開發者社群。主要是希望透過提案，<strong>利用科技來解決問題</strong>，在這裡我也深深感受到Google的文化，那就是<strong>不會怕去嘗試、不怕去解決問題</strong>，我也認識在這個社群中的各個人才。在這個社群中，我除了擔任自己<strong>專案領導人</strong>的角色外，我也身兼<strong>後端技術長</strong>的任務，也是想要發揮我目前所學到的、最成熟的後端知識。除了技術面，如何管理一個團隊、一項專案，也是一門很大的課題。希望在未來可以繼續把自己的這項專案做到完善，解決真正的問題！</p>
-<span id="more"></span>
-
-<h2 id="定位與職位"><a href="#定位與職位" class="headerlink" title="定位與職位"></a>定位與職位</h2><ul>
-<li><h3 id="專案定位"><a href="#專案定位" class="headerlink" title="專案定位"></a>專案定位</h3></li>
-</ul>
-<p>我這次的提案叫做「政大通NCCUPass」，以<strong>政大校園生活為出發點</strong>，想要做一款能夠解決政大學生生活上不便的APP，透過專案組的討論與調查，帶來<strong>更便利、聰明與數位化</strong>的校園生活，讓校園內的需求能夠即時被滿足，也讓這款APP融入政大學生的生活中，成為政大校園內不可或缺的一部分，因此，「政大通-NCCUPass」的提案就此誕生</p>
-<hr>
-<p>下面是我們第一次期末發表的海報和照片<br>海報內呈現的是我們規劃、也正在開發的功能<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/poster.jpg" 
-style="width: 70%; margin: 15px auto;"></p>
-<hr>
-<p>這個是期末發表當天的攤位介紹照片<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img4.jpg" 
-style="width: 70%; margin: 15px auto;"></p>
-<p><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img2.JPG" 
-style="width: 70%; margin: 15px auto;"></p>
-<p><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img1.JPG" 
-style="width: 70%; margin: 15px auto;"></p>
-<hr>
-<ul>
-<li><h3 id="職位"><a href="#職位" class="headerlink" title="職位"></a>職位</h3></li>
-</ul>
-<p>在這個專案中，我擔任<strong>Project Leader(專案主持人)<strong>，與</strong>Backend Tech-Lead(後端技術長)<strong>的身份，帶領總共</strong>11人的團隊</strong>，在我們這個團隊中，主要分成四組，前端、後端、UI&#x2F;UX、文書，除了負責主要的後端技術，也要帶領後端的組員們提升實力、協調與規劃。以專案領導人的角度來看，除了需要<strong>規劃整個專案的進度與走向外，也要監督進度、協調各組、人際溝通等等</strong>，除了利用各種專案管理的工具外，也要撰寫各種文件與流程圖，老實說滿累的XD。但也是遇到一群願意跟隨我的隊友們，一起成長，真的非常得感謝他們🙏</p>
-<h2 id="技術"><a href="#技術" class="headerlink" title="技術"></a>技術</h2><ul>
-<li><h3 id="系統架構圖"><a href="#系統架構圖" class="headerlink" title="系統架構圖"></a>系統架構圖</h3></li>
-</ul>
-<p>下面是我們的系統架構圖，因為我是負責後端的部分，所以會著重畫後端的架構<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/NCCUPass-Structure.jpg" 
-style="width: 70%; margin: 15px auto;"></p>
-<ul>
-<li><h3 id="後端技術細節"><a href="#後端技術細節" class="headerlink" title="後端技術細節"></a>後端技術細節</h3></li>
-</ul>
-<p>根據上面的架構圖，我們的專案主要部署在Ubuntu的主機上，所有的服務利用Docker Compose統一建立，另外還有利用GitLab Runner做到自動化整合與自動化部屬的功能。後端程式是由.NET C#撰寫，這邊我使用的是Software Layer Architecture Pattern(軟體分層架構)，結合各種Design Pattern再加上自己的一些變形，資料庫是使用MongoDB的Replica-Set，也有使用Redis做快取，照片和一些公開的檔案主要放在我們的File Server上。其他技術細節我就列在下面，想看的人可以參考一下XD</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">- Software Layer Architecture pattern (多層)</span><br><span class="line">- Repository pattern</span><br><span class="line">- Unit of Work pattern</span><br><span class="line">- Mediator pattern &amp; CQRS</span><br><span class="line">- JWT &amp; RBAC</span><br><span class="line">- Automapper</span><br><span class="line">- Exception handler抽離</span><br><span class="line">- Dapper &amp; EF combination</span><br><span class="line">- Redis (Cache)</span><br><span class="line">- Docker Networking</span><br><span class="line">- Docker Volume</span><br><span class="line">- Docker hub</span><br><span class="line">- appsettings 組態切換</span><br><span class="line">- MongoDB replica-set</span><br><span class="line">- Git 多人協作</span><br><span class="line">- Swagger / OpenAPI</span><br><span class="line">- Docker File Server</span><br><span class="line">- Docker mongoDB backup daily</span><br><span class="line">- Docker Compose</span><br></pre></td></tr></table></figure>
-<p>之後也會一直新增，因為現在處於專案開發的初期。</p>
-<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>最後，這個專案雖然只是在發展初期，但我希望未來可以發展到我預想的樣子，也非常感謝一路願意跟隨我、幫助我的隊友們，單打獨鬥真的比不上團隊合作👍，也希望各位未來也可以繼續幫助我啦，現在打分享文可能還太早，但我就是想要趁學期末趕快記錄一下哈哈</p>
-]]></content>
-      <categories>
-        <category>專案</category>
-        <category>side project</category>
-        <category>心得</category>
-        <category>GDSC</category>
-        <category>NCCUPass</category>
-      </categories>
-      <tags>
-        <tag>專案</tag>
-        <tag>GDSC</tag>
-        <tag>NCCUPass</tag>
       </tags>
   </entry>
 </search>
