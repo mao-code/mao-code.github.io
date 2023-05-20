@@ -6,7 +6,7 @@
   <link href="https://mao-code.github.io/atom.xml" rel="self"/>
   
   <link href="https://mao-code.github.io/"/>
-  <updated>2023-04-13T16:54:00.235Z</updated>
+  <updated>2023-05-20T07:01:10.293Z</updated>
   <id>https://mao-code.github.io/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[Git][Version Control] Git - Setup</title>
+    <link href="https://mao-code.github.io/posts/731175240/"/>
+    <id>https://mao-code.github.io/posts/731175240/</id>
+    <published>2023-05-20T06:02:19.000Z</published>
+    <updated>2023-05-20T07:01:10.293Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Setting up the environment of Git and some recommended GUI tools.</p><span id="more"></span><h1 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h1><ol><li><p>Install Git with the link below: (with your OS)<br><a href="%22https://git-scm.com/%22">Git official website</a></p></li><li><p>Type this command to check if it is installed successfully:</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure></li></ol><h1 id="Configure-Git-type-commands-in-your-shell"><a href="#Configure-Git-type-commands-in-your-shell" class="headerlink" title="Configure Git (type commands in your shell)"></a>Configure Git (type commands in your shell)</h1><ol><li><p>Set your user name by running the following command:</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br></pre></td></tr></table></figure></li><li><p>Set your email address by running the following command:</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email youremail@example.com</span><br></pre></td></tr></table></figure></li><li><p>Set up SSH key (for remote repository access. e.g. GitHub)</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure></li></ol><ul><li><p>Press Enter to accept the default file location and passphrase (or set your own if desired).<br>Once the key is generated, run the following command to add it to the SSH agent</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-add ~/.ssh/id_rsa</span><br></pre></td></tr></table></figure></li><li><p>Copy the public key to your clipboard by running the following command</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure></li><li><p>Add the copied public key to your Git hosting platform account (e.g., GitHub, GitLab) by following their documentation.</p></li><li><p>View your ssh keys</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd ~/.ssh</span><br></pre></td></tr></table></figure><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls</span><br></pre></td></tr></table></figure><ul><li>Use a text editor or command-line tools (such as cat or less) to view the contents of the .pub files and see the public key information: <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat id_rsa.pub</span><br></pre></td></tr></table></figure></li></ul></li></ul><ol start="4"><li>You can see your configuration by typing the following commands:<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --list</span><br></pre></td></tr></table></figure></li></ol><h1 id="Recommended-GUI-tools"><a href="#Recommended-GUI-tools" class="headerlink" title="Recommended GUI tools"></a>Recommended GUI tools</h1><p>Both commands and GUI tools are important to Git manupulation.<br>And Here are some recommended Git GUI tools that you can use.</p><ul><li><a href="%22https://www.sourcetreeapp.com/%22">Sourcetree</a></li><li><a href="%22https://www.gitkraken.com/%22">GitKraken</a></li></ul>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;Foreword&quot;&gt;&lt;a href=&quot;#Foreword&quot; class=&quot;headerlink&quot; title=&quot;Foreword&quot;&gt;&lt;/a&gt;Foreword&lt;/h1&gt;&lt;p&gt;Setting up the environment of Git and some recommended GUI tools.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Git 系列文" scheme="https://mao-code.github.io/categories/Git-%E7%B3%BB%E5%88%97%E6%96%87/"/>
+    
+    
+    <category term="Git" scheme="https://mao-code.github.io/tags/Git/"/>
+    
+    <category term="Version Control" scheme="https://mao-code.github.io/tags/Version-Control/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[Git][Version Control] Git - Introduction</title>
+    <link href="https://mao-code.github.io/posts/2571684277/"/>
+    <id>https://mao-code.github.io/posts/2571684277/</id>
+    <published>2023-05-20T05:57:21.000Z</published>
+    <updated>2023-05-20T06:39:02.300Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Here is the series of Git full tutorial. I will cover the important and advanced topics that you should know in git. By reading this series, you are able to know the basic(but important) concept of Git and the technique of using git. Hope you can gain a lot ! </p><span id="more"></span><h1 id="Series-Outline"><a href="#Series-Outline" class="headerlink" title="Series Outline"></a>Series Outline</h1><p>I will follow the outline below in this series.</p><ul><li>Introduction (this post)</li><li>Setup</li><li>Version Control &amp; Commands (Basics)</li><li>Branching &amp; Merging</li><li>Conflict</li><li>Collaboration &amp; GitHub</li><li>Advanced Topics</li></ul><hr><h1 id="Introduction-to-Git-A-Distributed-Version-Control-System"><a href="#Introduction-to-Git-A-Distributed-Version-Control-System" class="headerlink" title="Introduction to Git: A Distributed Version Control System"></a>Introduction to Git: A Distributed Version Control System</h1><p>Git is a powerful and widely used distributed version control system designed to track changes in software development projects. It provides developers with the ability to collaborate on projects efficiently, manage codebases effectively, and easily track and revert changes.</p><h2 id="Distributed-Version-Control-System"><a href="#Distributed-Version-Control-System" class="headerlink" title="Distributed Version Control System"></a>Distributed Version Control System</h2><p>In traditional software development, changes to a codebase were often managed through file-based systems or centralized version control systems. However, these approaches had limitations in terms of collaboration, scalability, and flexibility. Git emerged as a solution to these challenges, offering a distributed and decentralized approach to version control.</p><p>The special point of Git is that it supports distributed version control and can also easily share codes among multiple nodes.</p><p><img data-src="/images/posts/Git-Series/dist-ver-ctr.png" style="width: 70%; margin: 15px auto;"></p><h2 id="Branch"><a href="#Branch" class="headerlink" title="Branch"></a>Branch</h2><p>Git manages code based on a tree structure, allowing branches to be created, merged, and deleted, and code versions to be saved at any time.</p><p><img data-src="/images/posts/Git-Series/branch.png" style="width: 70%; margin: 15px auto;"></p><h2 id="Snapshot"><a href="#Snapshot" class="headerlink" title="Snapshot"></a>Snapshot</h2><p>Git saves full snapshots of files, rather than differences, making it easy to restore all historical versions of files.</p><p><img data-src="/images/posts/Git-Series/snapshot.jpeg" style="width: 70%; margin: 15px auto;"></p><hr><h1 id="Recommended-Resources"><a href="#Recommended-Resources" class="headerlink" title="Recommended Resources"></a>Recommended Resources</h1><p><a href="%22https://www.youtube.com/watch?v=8JJ101D3knE%22">Mosh Git Tutorail</a></p>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;Foreword&quot;&gt;&lt;a href=&quot;#Foreword&quot; class=&quot;headerlink&quot; title=&quot;Foreword&quot;&gt;&lt;/a&gt;Foreword&lt;/h1&gt;&lt;p&gt;Here is the series of Git full tutorial. I will cover the important and advanced topics that you should know in git. By reading this series, you are able to know the basic(but important) concept of Git and the technique of using git. Hope you can gain a lot ! &lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Git 系列文" scheme="https://mao-code.github.io/categories/Git-%E7%B3%BB%E5%88%97%E6%96%87/"/>
+    
+    
+    <category term="Git" scheme="https://mao-code.github.io/tags/Git/"/>
+    
+    <category term="Version Control" scheme="https://mao-code.github.io/tags/Version-Control/"/>
+    
+  </entry>
   
   <entry>
     <title>[ML][AI]Machine Learning &amp; AI Series - Introduction</title>
@@ -80,13 +126,13 @@
     
     
     
-    <category term="心得" scheme="https://mao-code.github.io/categories/%E5%BF%83%E5%BE%97/"/>
-    
     <category term="專案" scheme="https://mao-code.github.io/categories/%E5%B0%88%E6%A1%88/"/>
     
-    <category term="GDSC" scheme="https://mao-code.github.io/categories/GDSC/"/>
+    <category term="心得" scheme="https://mao-code.github.io/categories/%E5%BF%83%E5%BE%97/"/>
     
     <category term="side project" scheme="https://mao-code.github.io/categories/%E5%B0%88%E6%A1%88/side-project/"/>
+    
+    <category term="GDSC" scheme="https://mao-code.github.io/categories/GDSC/"/>
     
     <category term="NCCUPass" scheme="https://mao-code.github.io/categories/GDSC/NCCUPass/"/>
     
