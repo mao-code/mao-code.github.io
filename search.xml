@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>大一大二參加畢業專案與程式比賽心得分享</title>
+    <url>/posts/534426495/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>小弟我在剛上大一沒多久，就私mail系上的程式老師，詢問是否可以參與更多的專案或研究，也一併把我的履歷給教授看。<br>沒想到教授大方地給我幾條路選，可以跟教授做研究，出去實習，或是和學長們做專案。<br>大一的我想要慢慢累積實力，於是決定先<strong>和學長們做專案</strong>，去比賽，累積經驗。<br>在歷經<strong>國科會專案、資訊競賽、畢業專案競賽等等</strong>後，我非常感謝教授和學長們給我這個機會，讓我可以擁有這些寶貴的經驗！<br>這篇文章主要著重在心得與分享，比較技術面的內容會在下篇文章詳細介紹。</p>
+<span id="more"></span>
+
+<h2 id="比賽心得與定位"><a href="#比賽心得與定位" class="headerlink" title="比賽心得與定位"></a>比賽心得與定位</h2><p>在這個Team內，我主要負責程式開發，包括<strong>前端、伺服器架設與管理和一部分的後端</strong>。<br>前前後後比了<strong>國科會大專生計畫、智慧創新、資訊服務和系上的畢業專案競賽</strong>，大約歷時1年多的時間，在這段時間裡，我們歷經<strong>發想、開發、維護、寫技術文件、UI&#x2F;UX設計到演算法研究等等</strong>，這也是我大一結束為止做過相對完整的專案。</p>
+<hr>
+<p>這是我們智慧創新和資訊服務競賽時的照片，我們直接把成品給評審滑XD，因為以我們的系統來說相對完整，也不怕噴Bug，雖然都只進到決賽，但我也更加知道這類型比賽的準備方向（基本上就是要對到當前流行的主題），<del>所以明年就準備AI吧</del><br><img data-src="/images/posts/CC-experience/智慧創新.JPG" 
+style="width: 70%; margin: 15px auto;"><br><img data-src="/images/posts/CC-experience/資服.jpg" 
+style="width: 70%; margin: 15px auto;"></p>
+<hr>
+<p>這是系上畢業專案的比賽，非常榮幸拿到第二名！當天還直接被其他資訊公司的主管遞名片，受寵若驚。<br><img data-src="/images/posts/CC-experience/畢業專案.JPG" 
+style="width: 70%; margin: 15px auto;"><br><img data-src="/images/posts/CC-experience/畢業專案得獎.JPG" 
+style="width: 70%; margin: 15px auto;"></p>
+<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>總的來說，這是我<strong>參與多人協作、實作一個完整專案的寶貴經驗</strong>，這也成為我日後開發其他專案的養分(Google學生開發者社群, 資訊競賽, etc.)，除了<strong>技術面的大幅成長，專案管理、人際互動、時間管理</strong>也都是成長的一部分，主動去尋找機會，得到的會比你想像的多，雖然有點辛苦就是了，但我覺得很值得！所以時間管理真的超重要，這也讓我在工程師這條路上變得更主動，相信只要努力，自己絕對值得更好的！</p>
+<p>比較技術面的內容會在之後的文章提及</p>
+]]></content>
+      <categories>
+        <category>心得</category>
+        <category>比賽</category>
+      </categories>
+      <tags>
+        <tag>心得</tag>
+        <tag>比賽</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>政大Google學生開發者社群-心得（第一學期）</title>
     <url>/posts/277323671/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在剛上大二時，除了手邊和學長的專案，我也參加了政大的Google學生開發者社群。主要是希望透過提案，<strong>利用科技來解決問題</strong>，在這裡我也深深感受到Google的文化，那就是<strong>不會怕去嘗試、不怕去解決問題</strong>，我也認識在這個社群中的各個人才。在這個社群中，我除了擔任自己<strong>專案領導人</strong>的角色外，我也身兼<strong>後端技術長</strong>的任務，也是想要發揮我目前所學到的、最成熟的後端知識。除了技術面，如何管理一個團隊、一項專案，也是一門很大的課題。希望在未來可以繼續把自己的這項專案做到完善，解決真正的問題！</p>
@@ -39,137 +66,16 @@ style="width: 70%; margin: 15px auto;"></p>
 <h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>最後，這個專案雖然只是在發展初期，但我希望未來可以發展到我預想的樣子，也非常感謝一路願意跟隨我、幫助我的隊友們，單打獨鬥真的比不上團隊合作👍，也希望各位未來也可以繼續幫助我啦，現在打分享文可能還太早，但我就是想要趁學期末趕快記錄一下哈哈</p>
 ]]></content>
       <categories>
-        <category>GDSC</category>
         <category>心得</category>
-        <category>NCCUPass</category>
+        <category>GDSC</category>
         <category>專案</category>
+        <category>NCCUPass</category>
         <category>side project</category>
       </categories>
       <tags>
         <tag>GDSC</tag>
         <tag>NCCUPass</tag>
         <tag>專案</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>大一大二參加畢業專案與程式比賽心得分享</title>
-    <url>/posts/534426495/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>小弟我在剛上大一沒多久，就私mail系上的程式老師，詢問是否可以參與更多的專案或研究，也一併把我的履歷給教授看。<br>沒想到教授大方地給我幾條路選，可以跟教授做研究，出去實習，或是和學長們做專案。<br>大一的我想要慢慢累積實力，於是決定先<strong>和學長們做專案</strong>，去比賽，累積經驗。<br>在歷經<strong>國科會專案、資訊競賽、畢業專案競賽等等</strong>後，我非常感謝教授和學長們給我這個機會，讓我可以擁有這些寶貴的經驗！<br>這篇文章主要著重在心得與分享，比較技術面的內容會在下篇文章詳細介紹。</p>
-<span id="more"></span>
-
-<h2 id="比賽心得與定位"><a href="#比賽心得與定位" class="headerlink" title="比賽心得與定位"></a>比賽心得與定位</h2><p>在這個Team內，我主要負責程式開發，包括<strong>前端、伺服器架設與管理和一部分的後端</strong>。<br>前前後後比了<strong>國科會大專生計畫、智慧創新、資訊服務和系上的畢業專案競賽</strong>，大約歷時1年多的時間，在這段時間裡，我們歷經<strong>發想、開發、維護、寫技術文件、UI&#x2F;UX設計到演算法研究等等</strong>，這也是我大一結束為止做過相對完整的專案。</p>
-<hr>
-<p>這是我們智慧創新和資訊服務競賽時的照片，我們直接把成品給評審滑XD，因為以我們的系統來說相對完整，也不怕噴Bug，雖然都只進到決賽，但我也更加知道這類型比賽的準備方向（基本上就是要對到當前流行的主題），<del>所以明年就準備AI吧</del><br><img data-src="/images/posts/CC-experience/智慧創新.JPG" 
-style="width: 70%; margin: 15px auto;"><br><img data-src="/images/posts/CC-experience/資服.jpg" 
-style="width: 70%; margin: 15px auto;"></p>
-<hr>
-<p>這是系上畢業專案的比賽，非常榮幸拿到第二名！當天還直接被其他資訊公司的主管遞名片，受寵若驚。<br><img data-src="/images/posts/CC-experience/畢業專案.JPG" 
-style="width: 70%; margin: 15px auto;"><br><img data-src="/images/posts/CC-experience/畢業專案得獎.JPG" 
-style="width: 70%; margin: 15px auto;"></p>
-<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>總的來說，這是我<strong>參與多人協作、實作一個完整專案的寶貴經驗</strong>，這也成為我日後開發其他專案的養分(Google學生開發者社群, 資訊競賽, etc.)，除了<strong>技術面的大幅成長，專案管理、人際互動、時間管理</strong>也都是成長的一部分，主動去尋找機會，得到的會比你想像的多，雖然有點辛苦就是了，但我覺得很值得！所以時間管理真的超重要，這也讓我在工程師這條路上變得更主動，相信只要努力，自己絕對值得更好的！</p>
-<p>比較技術面的內容會在之後的文章提及</p>
-]]></content>
-      <categories>
-        <category>心得</category>
-        <category>比賽</category>
-      </categories>
-      <tags>
-        <tag>心得</tag>
-        <tag>比賽</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>[Git][Version Control] Git - Introduction</title>
-    <url>/posts/2571684277/</url>
-    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Here is the series of Git full tutorial. I will cover the important and advanced topics that you should know in git. By reading this series, you are able to know the basic(but important) concept of Git and the technique of using git. Hope you can gain a lot ! </p>
-<span id="more"></span>
-
-<h1 id="Series-Outline"><a href="#Series-Outline" class="headerlink" title="Series Outline"></a>Series Outline</h1><p>I will follow the outline below in this series.</p>
-<ul>
-<li>Introduction (this post)</li>
-<li>Setup</li>
-<li>Version Control &amp; Commands (Basics)</li>
-<li>Branching &amp; Merging</li>
-<li>Conflict</li>
-<li>Collaboration &amp; GitHub</li>
-<li>Advanced Topics</li>
-</ul>
-<hr>
-<h1 id="Introduction-to-Git-A-Distributed-Version-Control-System"><a href="#Introduction-to-Git-A-Distributed-Version-Control-System" class="headerlink" title="Introduction to Git: A Distributed Version Control System"></a>Introduction to Git: A Distributed Version Control System</h1><p>Git is a powerful and widely used distributed version control system designed to track changes in software development projects. It provides developers with the ability to collaborate on projects efficiently, manage codebases effectively, and easily track and revert changes.</p>
-<h2 id="Distributed-Version-Control-System"><a href="#Distributed-Version-Control-System" class="headerlink" title="Distributed Version Control System"></a>Distributed Version Control System</h2><p>In traditional software development, changes to a codebase were often managed through file-based systems or centralized version control systems. However, these approaches had limitations in terms of collaboration, scalability, and flexibility. Git emerged as a solution to these challenges, offering a distributed and decentralized approach to version control.</p>
-<p>The special point of Git is that it supports distributed version control and can also easily share codes among multiple nodes.</p>
-<p><img data-src="/images/posts/Git-Series/dist-ver-ctr.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<h2 id="Branch"><a href="#Branch" class="headerlink" title="Branch"></a>Branch</h2><p>Git manages code based on a tree structure, allowing branches to be created, merged, and deleted, and code versions to be saved at any time.</p>
-<p><img data-src="/images/posts/Git-Series/branch.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<h2 id="Snapshot"><a href="#Snapshot" class="headerlink" title="Snapshot"></a>Snapshot</h2><p>Git saves full snapshots of files, rather than differences, making it easy to restore all historical versions of files.</p>
-<p><img data-src="/images/posts/Git-Series/snapshot.jpeg" 
-style="width: 70%; margin: 15px auto;"></p>
-<hr>
-<h1 id="Recommended-Resources"><a href="#Recommended-Resources" class="headerlink" title="Recommended Resources"></a>Recommended Resources</h1><p><a href="%22https://www.youtube.com/watch?v=8JJ101D3knE%22">Mosh Git Tutorail</a></p>
-]]></content>
-      <categories>
-        <category>Git 系列文</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-        <tag>Version Control</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>[Git][Version Control] Git - Setup</title>
-    <url>/posts/731175240/</url>
-    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Setting up the environment of Git and some recommended GUI tools.</p>
-<span id="more"></span>
-
-<h1 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h1><ol>
-<li><p>Install Git with the link below: (with your OS)<br><a href="%22https://git-scm.com/%22">Git official website</a></p>
-</li>
-<li><p>Type this command to check if it is installed successfully:</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h1 id="Configure-Git-type-commands-in-your-shell"><a href="#Configure-Git-type-commands-in-your-shell" class="headerlink" title="Configure Git (type commands in your shell)"></a>Configure Git (type commands in your shell)</h1><ol>
-<li><p>Set your user name by running the following command:</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Set your email address by running the following command:</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.email youremail@example.com</span><br></pre></td></tr></table></figure></li>
-<li><p>Set up SSH key (for remote repository access. e.g. GitHub)</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure></li>
-</ol>
-<ul>
-<li><p>Press Enter to accept the default file location and passphrase (or set your own if desired).<br>Once the key is generated, run the following command to add it to the SSH agent</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-add ~/.ssh/id_rsa</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Copy the public key to your clipboard by running the following command</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Add the copied public key to your Git hosting platform account (e.g., GitHub, GitLab) by following their documentation.</p>
-</li>
-<li><p>View your ssh keys</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd ~/.ssh</span><br></pre></td></tr></table></figure>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ls</span><br></pre></td></tr></table></figure>
-<ul>
-<li>Use a text editor or command-line tools (such as cat or less) to view the contents of the .pub files and see the public key information: <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat id_rsa.pub</span><br></pre></td></tr></table></figure></li>
-</ul>
-</li>
-</ul>
-<ol start="4">
-<li>You can see your configuration by typing the following commands:<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --list</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h1 id="Recommended-GUI-tools"><a href="#Recommended-GUI-tools" class="headerlink" title="Recommended GUI tools"></a>Recommended GUI tools</h1><p>Both commands and GUI tools are important to Git manupulation.<br>And Here are some recommended Git GUI tools that you can use.</p>
-<ul>
-<li><a href="%22https://www.sourcetreeapp.com/%22">Sourcetree</a></li>
-<li><a href="%22https://www.gitkraken.com/%22">GitKraken</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>Git 系列文</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-        <tag>Version Control</tag>
       </tags>
   </entry>
   <entry>
@@ -240,6 +146,19 @@ CC提供商城、買家、直播主追蹤的機制，加上個人化自己的動
         <tag>專案</tag>
         <tag>作品</tag>
         <tag>side project</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[ML][AI]Machine Learning &amp; AI Series - Introduction</title>
+    <url>/posts/2366719958/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>這是一個關於Machine Learning與AI的系列文章，敬請期待…</p>
+<span id="more"></span>]]></content>
+      <categories>
+        <category>ML觀念與實作系列文</category>
+      </categories>
+      <tags>
+        <tag>ML</tag>
+        <tag>AI</tag>
       </tags>
   </entry>
   <entry>
@@ -452,16 +371,97 @@ img{
       </tags>
   </entry>
   <entry>
-    <title>[ML][AI]Machine Learning &amp; AI Series - Introduction</title>
-    <url>/posts/2366719958/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>這是一個關於Machine Learning與AI的系列文章，敬請期待…</p>
-<span id="more"></span>]]></content>
+    <title>[Git][Version Control] Git - Introduction</title>
+    <url>/posts/2571684277/</url>
+    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Here is the series of Git full tutorial. I will cover the important and advanced topics that you should know in git. By reading this series, you are able to know the basic(but important) concept of Git and the technique of using git. Hope you can gain a lot ! </p>
+<span id="more"></span>
+
+<h1 id="Series-Outline"><a href="#Series-Outline" class="headerlink" title="Series Outline"></a>Series Outline</h1><p>I will follow the outline below in this series.</p>
+<ul>
+<li>Introduction (this post)</li>
+<li>Setup</li>
+<li>Version Control &amp; Commands (Basics)</li>
+<li>Branching &amp; Merging</li>
+<li>Conflict</li>
+<li>Collaboration &amp; GitHub</li>
+<li>Advanced Topics</li>
+</ul>
+<hr>
+<h1 id="Introduction-to-Git-A-Distributed-Version-Control-System"><a href="#Introduction-to-Git-A-Distributed-Version-Control-System" class="headerlink" title="Introduction to Git: A Distributed Version Control System"></a>Introduction to Git: A Distributed Version Control System</h1><p>Git is a powerful and widely used distributed version control system designed to track changes in software development projects. It provides developers with the ability to collaborate on projects efficiently, manage codebases effectively, and easily track and revert changes.</p>
+<h2 id="Distributed-Version-Control-System"><a href="#Distributed-Version-Control-System" class="headerlink" title="Distributed Version Control System"></a>Distributed Version Control System</h2><p>In traditional software development, changes to a codebase were often managed through file-based systems or centralized version control systems. However, these approaches had limitations in terms of collaboration, scalability, and flexibility. Git emerged as a solution to these challenges, offering a distributed and decentralized approach to version control.</p>
+<p>The special point of Git is that it supports distributed version control and can also easily share codes among multiple nodes.</p>
+<p><img data-src="/images/posts/Git-Series/dist-ver-ctr.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<h2 id="Branch"><a href="#Branch" class="headerlink" title="Branch"></a>Branch</h2><p>Git manages code based on a tree structure, allowing branches to be created, merged, and deleted, and code versions to be saved at any time.</p>
+<p><img data-src="/images/posts/Git-Series/branch.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<h2 id="Snapshot"><a href="#Snapshot" class="headerlink" title="Snapshot"></a>Snapshot</h2><p>Git saves full snapshots of files, rather than differences, making it easy to restore all historical versions of files.</p>
+<p><img data-src="/images/posts/Git-Series/snapshot.jpeg" 
+style="width: 70%; margin: 15px auto;"></p>
+<hr>
+<h1 id="Recommended-Resources"><a href="#Recommended-Resources" class="headerlink" title="Recommended Resources"></a>Recommended Resources</h1><p><a href="%22https://www.youtube.com/watch?v=8JJ101D3knE%22">Mosh Git Tutorail</a></p>
+]]></content>
       <categories>
-        <category>ML觀念與實作系列文</category>
+        <category>Git 系列文</category>
       </categories>
       <tags>
-        <tag>ML</tag>
-        <tag>AI</tag>
+        <tag>Git</tag>
+        <tag>Version Control</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[Git][Version Control] Git - Setup</title>
+    <url>/posts/731175240/</url>
+    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Setting up the environment of Git and some recommended GUI tools.</p>
+<span id="more"></span>
+
+<h1 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h1><ol>
+<li><p>Install Git with the link below: (with your OS)<br><a href="%22https://git-scm.com/%22">Git official website</a></p>
+</li>
+<li><p>Type this command to check if it is installed successfully:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h1 id="Configure-Git-type-commands-in-your-shell"><a href="#Configure-Git-type-commands-in-your-shell" class="headerlink" title="Configure Git (type commands in your shell)"></a>Configure Git (type commands in your shell)</h1><ol>
+<li><p>Set your user name by running the following command:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Set your email address by running the following command:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.email youremail@example.com</span><br></pre></td></tr></table></figure></li>
+<li><p>Set up SSH key (for remote repository access. e.g. GitHub)</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<ul>
+<li><p>Press Enter to accept the default file location and passphrase (or set your own if desired).<br>Once the key is generated, run the following command to add it to the SSH agent</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-add ~/.ssh/id_rsa</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Copy the public key to your clipboard by running the following command</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Add the copied public key to your Git hosting platform account (e.g., GitHub, GitLab) by following their documentation.</p>
+</li>
+<li><p>View your ssh keys</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd ~/.ssh</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ls</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Use a text editor or command-line tools (such as cat or less) to view the contents of the .pub files and see the public key information: <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat id_rsa.pub</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<ol start="4">
+<li>You can see your configuration by typing the following commands:<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --list</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h1 id="Recommended-GUI-tools"><a href="#Recommended-GUI-tools" class="headerlink" title="Recommended GUI tools"></a>Recommended GUI tools</h1><p>Both commands and GUI tools are important to Git manupulation.<br>And Here are some recommended Git GUI tools that you can use.</p>
+<ul>
+<li><a href="%22https://www.sourcetreeapp.com/%22">Sourcetree</a></li>
+<li><a href="%22https://www.gitkraken.com/%22">GitKraken</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Git 系列文</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>Version Control</tag>
       </tags>
   </entry>
   <entry>
@@ -639,6 +639,216 @@ style="width: 70%; margin: 15px auto;"><br>這裡主要是以書本和作者為�
         <tag>OOP</tag>
         <tag>.NET C#</tag>
         <tag>design-pattern</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[NLP] MLLM(多模態LLM) 論文簡要欣賞</title>
+    <url>/posts/2312529159/</url>
+    <content><![CDATA[<h1 id="Abstract-amp-Overview"><a href="#Abstract-amp-Overview" class="headerlink" title="Abstract &amp; Overview"></a>Abstract &amp; Overview</h1><p>這篇文章我們來欣賞一下在arXiv上的一篇論文：<br><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzIzMDYuMTM1NDk=">A Servey on Multimodal Large Language Models<i class="fa fa-external-link-alt"></i></span><br>這篇論文主要在介紹與整理現行代表性的MLLM(Multimodal LLM)，並將其分類為4大體裁：<br>Multimodal Instruction Tuning(M-IT), Multimodal In-Context Learning(M-ICL), Multimodal Chain-of_Thought(M-CoT)以及LLM-Aided Visual Reasoning(LAVR)。<br>其中，前三者為MLLM的基礎，而最後一個則是以LLM為核心的multimodal system，類似於一個系統框架。</p>
+<p>MLLM指的是在LLM的基礎上，從單模態走向多模態，從人工智慧的角度來看，MLLM比LLM向前又跨出了一步，原因如下：</p>
+<ol>
+<li>MLLM更符合人的感官世界，自然地接受多感官輸入</li>
+<li>MLLM提供一個友好的介面，支持多模態輸入，使其易於與使用者交流</li>
+<li>MLLM是一個更全面的問題解決者，雖然LLM可以解決NLP的問題，但MLLM通常可以支持更大範圍的任務</li>
+</ol>
+<p>下面我將針對這篇論文中較為<strong>重要的部分做簡要的欣賞與分析</strong> ，其他細節部分可以自行閱讀這篇精彩的論文！</p>
+<span id="more"></span>
+<h1 id="Prerequest-amp-Note"><a href="#Prerequest-amp-Note" class="headerlink" title="Prerequest &amp; Note"></a>Prerequest &amp; Note</h1><p>在開始之前，先介紹在論文中常出現的一些基本名詞</p>
+<h2 id="IT-ICL-CoT"><a href="#IT-ICL-CoT" class="headerlink" title="IT, ICL, CoT"></a>IT, ICL, CoT</h2><p>讓我們先看一下這三者的定義：</p>
+<ol>
+<li><strong>Instruction Tuning:</strong><ul>
+<li>Instruction tuning involves fine-tuning a pre-trained language model by providing <strong>specific instructions during the training process.</strong></li>
+<li>These instructions can be in the form of <strong>prompts or demonstrations</strong>, guiding the model to generate responses in a desired manner.</li>
+<li>It allows for controlled language generation and can be useful for generating responses tailored to specific tasks or contexts.</li>
+</ul>
+</li>
+<li><strong>In Context Learning:</strong><ul>
+<li>In context learning refers to training a language model on a <strong>large dataset with diverse contexts and topics.</strong></li>
+<li>The model learns to <strong>understand</strong> and generate responses based on the context it is given, which allows for more <strong>contextually relevant and coherent responses.</strong></li>
+<li>This approach is suitable for applications where the model needs to <strong>understand and adapt to various contexts</strong> during language generation.</li>
+</ul>
+</li>
+<li><strong>Chain of Thought:</strong><ul>
+<li>Chain of thought is a concept in natural language generation where the model maintains <strong>coherence throughout a conversation by remembering past interactions.</strong></li>
+<li>The model keeps track of the conversation history, ensuring <strong>consistent</strong> responses and avoiding contradictions.</li>
+<li>This is especially valuable in chatbot applications to provide more human-like and coherent conversations.</li>
+</ul>
+</li>
+</ol>
+<p>簡單整理一下三者的差異：</p>
+<blockquote>
+<ul>
+<li>Instruction Tuning 著重於微調模型以遵循特定的指令或指導，使其更好地符合特定任務或需求的生成。</li>
+<li>In-Context Learning 強調理解上下文，確保生成的結果與上下文相關且連貫。</li>
+<li>Chain-of-Thought 強調模型生成文本時的連貫性，能夠記住過去的互動，使生成的文本像人類思維的連貫性一樣。<br>這三個方法或概念是獨立的，但可以搭配使用，創造更好的效果。</li>
+</ul>
+</blockquote>
+<h2 id="Zero-Shot-Few-Shot-Learning"><a href="#Zero-Shot-Few-Shot-Learning" class="headerlink" title="Zero-Shot, Few-Shot Learning"></a>Zero-Shot, Few-Shot Learning</h2><p>先看一下兩者的定義：</p>
+<ul>
+<li><p><strong>Zero-Shot Learning:</strong></p>
+<ul>
+<li>Zero-shot learning is a learning paradigm where a model is trained to perform a task for which <strong>it has never seen any examples during training.</strong> </li>
+<li>In other words, the model is expected to <strong>generalize its knowledge</strong> from the training data to <strong>new, unseen categories or tasks.</strong></li>
+</ul>
+</li>
+<li><p><strong>Few-Shot Learning:</strong></p>
+<ul>
+<li>Few-shot learning is a similar concept, but it allows a model to be trained on a very small number of examples for each new category or task it encounters. * </li>
+<li>Instead of needing a large amount of data per class, few-shot learning aims to generalize from a few examples. </li>
+<li>It’s like teaching a model to learn from just a handful of samples. This is particularly useful in scenarios where collecting a substantial amount of data for each new class is impractical.</li>
+</ul>
+</li>
+</ul>
+<h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><p>這邊整理了一些重要的專有名詞</p>
+<ul>
+<li>Learning Paradigm<ul>
+<li>A learning paradigm refers to a <strong>specific approach or framework used to train machine learning models.</strong> </li>
+<li>It encompasses the fundamental principles, methods, and strategies that guide how models are constructed, trained, and evaluated. </li>
+<li>Different learning paradigms offer distinct ways of addressing various types of problems and data.</li>
+<li>E.g. Supervised Learning, Semi-Supervised Learning, Reinforcement Learning, Transfer Learning, etc.</li>
+</ul>
+</li>
+</ul>
+<p>簡單整理一下兩者的差異：</p>
+<blockquote>
+<ul>
+<li>Zero-Shot Learning 利用先前學習的知識，執行全新、未看過的任務類別。</li>
+<li>Few-Shot Learning 利用少量的範例(有答案)，去適應新的任務類別。</li>
+</ul>
+</blockquote>
+<h1 id="M-IT"><a href="#M-IT" class="headerlink" title="M-IT"></a>M-IT</h1><p>Instruction指的是對於任務的描述，IT是一種利用instruction-formatted datasets來訓練LLM的技巧。利用這個技巧，LLM可以透過跟隨新的instruction來泛化未曾看過的新任務，進而實現zero-shot learning的成效。<br>下面是論文中引用來描繪instruction tuning與其他learning paradigms的圖示</p>
+<p><img data-src="/images/posts/paper-study/MLLM-1.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<hr>
+<p>為了要從unimodality到mutimodality，需要調整的部分主要 <strong>分為兩個：”Data” 和 “Model”。</strong></p>
+<ol>
+<li><p>在Data方面，我們常 <strong>調整現存的benchmark datasets來取得M-IT datasets，或是使用self-instruction。</strong><br>下面的圖簡單呈現了M-IT data的模板<br><img data-src="/images/posts/paper-study/MLLM-2.png" 
+style="width: 70%; margin: 15px auto;"></p>
+</li>
+<li><p>在Model方面，一個常見的做法是將 <strong>其他modalities的資訊注入進LLM，並把LLM當成是一個強大的推理者。</strong> 其他相關的著作常會直接將理解外來modality的能力嵌入進LLM；或是使用expert model把外來的modality轉換成LLM可以理解的natural language。</p>
+</li>
+</ol>
+<hr>
+<h2 id="Formulation-M-IT-amp-M-IT-sample"><a href="#Formulation-M-IT-amp-M-IT-sample" class="headerlink" title="Formulation M-IT &amp; M-IT sample"></a>Formulation M-IT &amp; M-IT sample</h2><p>這邊我簡單把論文中提到有關M-IT以及其目標函數的內容拉出來<br>M-IT sample其實可以被標示為三元素的數組：<br>$$(I, M, R)$$<br>分別代表instruction, multimodal input以及ground-truth response</p>
+<p>MLLM利用給予的instruction和multimodal input預測answer<br>$$ A &#x3D; f(I, M; \theta)$$<br>其中，A代表預測的答案(answer)，$\theta$ 則代表模型中的parameters</p>
+<p>而訓練的目標是要最小化loss function，而MLLM的目標是要預測下一個response的token，基於這點，loss function可以這麼表示：<br>$$\begin{equation}<br>    L(\theta) &#x3D; -\sum_{i&#x3D;1}^N\log{}p(R_i|I,R_{&lt;i};\theta)<br>\end{equation}$$<br>其中，</p>
+<ul>
+<li>N為ground-truth response的長度</li>
+<li>使用log是因為將機率連乘轉為連加，以避免underflow</li>
+<li>因為是loss function，所以加個負號，最小化loss function同時最大化預測下個token的機率</li>
+<li>利用instruction與前i-1個ground truth response token預測第i個token</li>
+</ul>
+<hr>
+<h2 id="Bridgin-the-gap-between-different-modalities"><a href="#Bridgin-the-gap-between-different-modalities" class="headerlink" title="Bridgin the gap between different modalities"></a>Bridgin the gap between different modalities</h2><p>在這篇論文中提到一個非常重要的問題：該怎麼連結不同的modalities？<br>主要有兩種方法：</p>
+<ol>
+<li>Learnable Interface: <ul>
+<li>在LLM的其中一個模組或權重下去做調整，並插入在pre-trained visual encoder與LLM之間。</li>
+<li>連結不同的modalities的同時，凍結pre-trained model的parameters。</li>
+</ul>
+</li>
+<li>Expert model: <ul>
+<li>利用其他模型，轉換外來的modality成LLM能處理的語言。(不用訓練)</li>
+<li>可能不像learnable interface那樣彈性，且有information loss的風險</li>
+</ul>
+</li>
+</ol>
+<h1 id="M-ICL"><a href="#M-ICL" class="headerlink" title="M-ICL"></a>M-ICL</h1><p>先介紹兩個ICL的特點：</p>
+<ol>
+<li>supervised learning是從大量的資料中學習資料背後的模式，與傳統supervised learning不同的是，ICL的關鍵是”類推”，從少量的資料搭配一些選填的instruction，去外推新的問題與任務，因此使用few-shot learning的方式解決全新的問題。</li>
+<li>ICL常常使用training-free的方式實作，因此可以在inference stage，很容易地整合進不同的框架。</li>
+<li>IT與ICL十分相關，IT常常被拿來加強模型的ICL能力。</li>
+</ol>
+<hr>
+<p>下面的圖示描繪了簡化過後的M-ICL query模板，其中，使用了兩個in-context範例和一個query，兩者用虛線隔開，模型的目的是要完成這個request。<br><img data-src="/images/posts/paper-study/MLLM-3.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<h1 id="M-CoT"><a href="#M-CoT" class="headerlink" title="M-CoT"></a>M-CoT</h1><blockquote>
+<p>CoT is “a series of intermediate reasoning steps”, which has been proven to be effective in complex reasoning tasks.</p>
+</blockquote>
+<ul>
+<li>CoT主要是想讓我們在prompt LLMs時，讓他生成不只是最後的答案，而是要有推理的過程而引導到最終解答。</li>
+<li>在M-CoT中有幾個重要的概念：modality bridging(解決modality gap), learning paradigms, chain configuration以及generation patterns。</li>
+</ul>
+<hr>
+<h2 id="Modality-Bridging"><a href="#Modality-Bridging" class="headerlink" title="Modality Bridging"></a>Modality Bridging</h2><ol>
+<li>使用Learnable Interface：<ul>
+<li>這個方法使用一個learnable interface把visual embedding mapping到word embedding空間。</li>
+<li>這個mapped embedding可以被視為是一個prompt，進而傳遞給LLMs，引出其M-CoT的能力</li>
+<li>舉例來說，CoT-PT使用多個Meta-Net來作prompt tuning，Meta-Net將visual features轉換成階段性的prompt，其中，可以把Meta-Net想像為CoT-PT的其中一個模組。</li>
+<li>Multimodal-CoT使用shared Transformer-based 架構，visual與textual特徵通過cross-attention進行交互。</li>
+</ul>
+</li>
+<li>使用Expert Model：<ul>
+<li>引用expert models來將visual input翻譯為texual description</li>
+<li>儘管其非常直接且簡單，但在轉換的過程中可能會遇到information loss的問題</li>
+</ul>
+</li>
+</ol>
+<h2 id="Learning-Paradigms"><a href="#Learning-Paradigms" class="headerlink" title="Learning Paradigms"></a>Learning Paradigms</h2><p>learning paradigms也可以解釋為模型如何從資訊中獲取知識。大致可以分為 <strong>三種方式來習得M-CoT的能力</strong></p>
+<ol>
+<li>fintuning：<br>通常需要針對M-CoT的datasets</li>
+<li>training-free few-shot learning：<br>同常需要手作一些in-context的範例讓模型去學如何推理</li>
+<li>training-free zero-shot learning：<br>直接prompt就可以，不需要其他明顯的指引，舉例來說”Let’s think frame by frame”</li>
+</ol>
+<p>其中對於sample size的要求由上而下遞減</p>
+<h2 id="Chain-Configuration"><a href="#Chain-Configuration" class="headerlink" title="Chain Configuration"></a>Chain Configuration</h2><p>簡單來說就是要什麼時後該停止推裡，主要有adaptive和pre-defined formation兩種方法。</p>
+<ul>
+<li>Adaptive:<br>要求LLMs自己決定何時該停止reasoing chains</li>
+<li>Pre-defined formation<br>使用者事先設定好reasoning chains的長度</li>
+</ul>
+<h2 id="Generation-Pattern"><a href="#Generation-Pattern" class="headerlink" title="Generation Pattern"></a>Generation Pattern</h2><p>Reasoning chain是如何建構的？<br>主要有兩種可能</p>
+<ol>
+<li>Infilling-based pattern：<br>需要在上下文中去做演繹(前幾步與後幾步)，去填補邏輯漏洞</li>
+<li>predicting-based pattern：<br>利用已知的條件、instruction以及過去推理的資訊去擴充reasoning chain<br>不管是哪種模式，都必須要求生成的文本必須是連續且正確的</li>
+</ol>
+<h1 id="LAVR"><a href="#LAVR" class="headerlink" title="LAVR"></a>LAVR</h1><p>將LLMs作為helpers，以及其他不同的角色，建構出一個支持特定任務或genral-purpose的visual reasoning system<br>跟傳統的visual reasoning system相比，LAVR有一些更好的特點：</p>
+<ol>
+<li>Strong generalization ability：<br>擁有眾多知識並以大量資料及訓練的模型，可以容易地泛化未看過的任務，並在zero-shot&#x2F;few-shot擁有不錯的性能。</li>
+<li>Emergent abilities：<br>其定義為，在小的模型不會出現，而在大模型會出現的能力，當模型到一定的scale會湧現的能力，例如能夠看到圖片表面下的意義，像是能夠理解會和一個迷因是好笑的。</li>
+<li>Better interactvity and control：<br>LLM-based system提供一個更好使用與控制的使用者介面，例如使用自然語言的query進行互動。<br>下面我將介紹論文中提到的，LAVR不同的training paradigm以及LLM在這個系統中扮演的角色</li>
+</ol>
+<h2 id="Training-Paradigms"><a href="#Training-Paradigms" class="headerlink" title="Training Paradigms"></a>Training Paradigms</h2><p>主要有兩種：</p>
+<ol>
+<li>training-free：<ul>
+<li>few-shot models：<br>   需要少量的hand-crafted in-context sample，去指引LLMs產生程式或一連串的執行步驟， <strong>這些程式或執行步驟是作為其他對應模型或外部工具與模組的instructions</strong></li>
+<li>zero-shot models：<br>   依賴LLMs的語言相關知識與推理能力，例如CAT使用LLMs去refine影像的caption，使其更符合使用者的需求</li>
+</ul>
+</li>
+<li>finetuning：<br>主要是想要激活LLMs在LAVR中的planning abilities(對應到工具的使用)，以及instruction-following abilities。</li>
+</ol>
+<h2 id="Functions"><a href="#Functions" class="headerlink" title="Functions"></a>Functions</h2><p>LLMs在LAVR system中扮演的主要角色，主要有三種</p>
+<blockquote>
+<ol>
+<li>LLM as a Controller</li>
+<li>LLM as a Decision Maker</li>
+<li>LLM as a Semantics Refiner</li>
+</ol>
+</blockquote>
+<p>前兩者(controller &amp; decision maker)與CoT相關，因為複雜的任務需要被拆解為intermediate simpler tasks。</p>
+<p>當LLMs作為controller時，任務常常是在single round完成的，而multi-round更常見於decision maker</p>
+<h3 id="LLM-as-a-Controller"><a href="#LLM-as-a-Controller" class="headerlink" title="LLM as a Controller"></a>LLM as a Controller</h3><ol>
+<li>Break down a complex task into simpler sub-tasks<br>常運用LLMs的CoT能力</li>
+<li>Assigns these tasks to appropriate tools&#x2F;modules</li>
+</ol>
+<h3 id="LLM-as-a-Decision-Maker"><a href="#LLM-as-a-Decision-Maker" class="headerlink" title="LLM as a Decision Maker"></a>LLM as a Decision Maker</h3><p>在這個case中，複雜的任務會以multi-round的方式被解決，decision maker通常要滿足以下能力</p>
+<ol>
+<li>總結目前的上下文以及歷史資訊，並判斷目前的資訊是否足夠推導出最終解答</li>
+<li>整理並總結答案，並且用user-friendly的方式呈現給使用者</li>
+</ol>
+<h3 id="LLM-as-a-Semantics-Refiner"><a href="#LLM-as-a-Semantics-Refiner" class="headerlink" title="LLM as a Semantics Refiner"></a>LLM as a Semantics Refiner</h3><p>使用LLMs豐富的語言與語義知識，去對最終解答做加強</p>
+<h1 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h1><p>這篇論文整理的現行MLLM的資訊，並給出了主要的幾個方向，包括包括3個常見的技巧(M-IT, M-ICL, M-CoT)，和一個task-solving systems的廣泛框架(LAVR)。<br>論文中還有許多evaluation的方式，以及現在研究需要被填充的gap，其他更詳細的內容還有待讀者親自去欣賞這篇論文！</p>
+<h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzIzMDYuMTM1NDk=">https://arxiv.org/abs/2306.13549<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC82Mzk2NjQ2MTU=">https://zhuanlan.zhihu.com/p/639664615<i class="fa fa-external-link-alt"></i></span></li>
+</ul>
+]]></content>
+      <categories>
+        <category>論文欣賞</category>
+        <category>paper-study</category>
+      </categories>
+      <tags>
+        <tag>ML</tag>
+        <tag>AI</tag>
+        <tag>NLP</tag>
       </tags>
   </entry>
 </search>

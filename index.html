@@ -160,18 +160,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-count">10</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-count">14</span>
         <span class="site-state-item-name">分類</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-count">16</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
@@ -221,6 +221,114 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang>
+    <link itemprop="mainEntityOfPage" href="https://mao-code.github.io/posts/2312529159/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/mypic.jpeg">
+      <meta itemprop="name" content="Mao 勛哥">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mao 勛哥's blog">
+      <meta itemprop="description" content="記錄在程式開發道路上的心得">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Mao 勛哥's blog">
+      <meta itemprop="description" content>
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/posts/2312529159/" class="post-title-link" itemprop="url">[NLP] MLLM(多模態LLM) 論文簡要欣賞</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+
+      <time title="創建時間：2023-08-07 21:51:00" itemprop="dateCreated datePublished" datetime="2023-08-07T21:51:00+08:00">2023-08-07</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新於</span>
+      <time title="修改時間：2023-08-10 12:04:41" itemprop="dateModified" datetime="2023-08-10T12:04:41+08:00">2023-08-10</time>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="文章字數">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">文章字數：</span>
+      <span>7.6k</span>
+    </span>
+    <span class="post-meta-item" title="所需閱讀時間">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">所需閱讀時間 &asymp;</span>
+      <span>7 分鐘</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="Abstract-amp-Overview"><a href="#Abstract-amp-Overview" class="headerlink" title="Abstract &amp; Overview"></a>Abstract &amp; Overview</h1><p>這篇文章我們來欣賞一下在arXiv上的一篇論文：<br><a target="_blank" rel="external nofollow noopener noreferrer" href="https://arxiv.org/abs/2306.13549">A Servey on Multimodal Large Language Models</a><br>這篇論文主要在介紹與整理現行代表性的MLLM(Multimodal LLM)，並將其分類為4大體裁：<br>Multimodal Instruction Tuning(M-IT), Multimodal In-Context Learning(M-ICL), Multimodal Chain-of_Thought(M-CoT)以及LLM-Aided Visual Reasoning(LAVR)。<br>其中，前三者為MLLM的基礎，而最後一個則是以LLM為核心的multimodal system，類似於一個系統框架。</p>
+<p>MLLM指的是在LLM的基礎上，從單模態走向多模態，從人工智慧的角度來看，MLLM比LLM向前又跨出了一步，原因如下：</p>
+<ol>
+<li>MLLM更符合人的感官世界，自然地接受多感官輸入</li>
+<li>MLLM提供一個友好的介面，支持多模態輸入，使其易於與使用者交流</li>
+<li>MLLM是一個更全面的問題解決者，雖然LLM可以解決NLP的問題，但MLLM通常可以支持更大範圍的任務</li>
+</ol>
+<p>下面我將針對這篇論文中較為<strong>重要的部分做簡要的欣賞與分析</strong> ，其他細節部分可以自行閱讀這篇精彩的論文！</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/posts/2312529159/#more" rel="contents">
+                閱讀全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+
+    </div>
+      
+
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1123,24 +1231,6 @@
 
   <footer class="footer">
     <div class="footer-inner">
-  <div class="languages">
-    <label class="lang-select-label">
-      <i class="fa fa-language"></i>
-      <span>繁體中文</span>
-      <i class="fa fa-angle-up" aria-hidden="true"></i>
-    </label>
-    <select class="lang-select" data-canonical aria-label="選擇語言">
-      
-        <option value="zh-TW" data-href="/index.html" selected>
-          繁體中文
-        </option>
-      
-        <option value="en" data-href="/en/index.html" selected>
-          English
-        </option>
-      
-    </select>
-  </div>
 
 
 <div class="copyright">
@@ -1157,14 +1247,14 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">32k</span>
+    <span title="總字數">40k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>所需總閱讀時間 &asymp;</span>
-    <span title="所需總閱讀時間">29 分鐘</span>
+    <span title="所需總閱讀時間">36 分鐘</span>
   </span>
 </div>
 <div class="busuanzi-count">
@@ -1208,6 +1298,12 @@
   <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
 
 
 <script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"mao-code","count":false,"i18n":{"disqus":"disqus"}}</script>
