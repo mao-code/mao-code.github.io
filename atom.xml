@@ -140,9 +140,9 @@
     
     <category term="OOP" scheme="https://mao-code.github.io/tags/OOP/"/>
     
-    <category term="SOLID" scheme="https://mao-code.github.io/tags/SOLID/"/>
-    
     <category term=".NET C#" scheme="https://mao-code.github.io/tags/NET-C/"/>
+    
+    <category term="SOLID" scheme="https://mao-code.github.io/tags/SOLID/"/>
     
   </entry>
   
@@ -160,9 +160,9 @@
     
     
     
-    <category term="GDSC" scheme="https://mao-code.github.io/categories/GDSC/"/>
-    
     <category term="心得" scheme="https://mao-code.github.io/categories/%E5%BF%83%E5%BE%97/"/>
+    
+    <category term="GDSC" scheme="https://mao-code.github.io/categories/GDSC/"/>
     
     <category term="專案" scheme="https://mao-code.github.io/categories/%E5%B0%88%E6%A1%88/"/>
     
@@ -257,11 +257,11 @@
     <category term="Design Pattern" scheme="https://mao-code.github.io/categories/OOP/Design-Pattern/"/>
     
     
+    <category term="design-pattern" scheme="https://mao-code.github.io/tags/design-pattern/"/>
+    
     <category term="OOP" scheme="https://mao-code.github.io/tags/OOP/"/>
     
     <category term=".NET C#" scheme="https://mao-code.github.io/tags/NET-C/"/>
-    
-    <category term="design-pattern" scheme="https://mao-code.github.io/tags/design-pattern/"/>
     
   </entry>
   
@@ -284,11 +284,11 @@
     <category term="Design Pattern" scheme="https://mao-code.github.io/categories/OOP/Design-Pattern/"/>
     
     
+    <category term="design-pattern" scheme="https://mao-code.github.io/tags/design-pattern/"/>
+    
     <category term="OOP" scheme="https://mao-code.github.io/tags/OOP/"/>
     
     <category term=".NET C#" scheme="https://mao-code.github.io/tags/NET-C/"/>
-    
-    <category term="design-pattern" scheme="https://mao-code.github.io/tags/design-pattern/"/>
     
   </entry>
   
