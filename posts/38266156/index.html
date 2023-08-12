@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="google-site-verification" content="fggWQJk_fNEY8zNXGPdahkvrmr8J_2PN4HN7HU0ik2Q">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-minimal.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"mao-code.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="OverviewIn this article, I will provide an introduction to adapters and LoRA, including their definitions, purposes, and functions. I will also explore their various applications and, lastly, delve in">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[NLP][ML] Adapters &amp; LoRA">
+<meta property="og:url" content="https://mao-code.github.io/posts/38266156/index.html">
+<meta property="og:site_name" content="Mao 勛哥&#39;s blog">
+<meta property="og:description" content="OverviewIn this article, I will provide an introduction to adapters and LoRA, including their definitions, purposes, and functions. I will also explore their various applications and, lastly, delve in">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://mao-code.github.io/images/posts/NLP-series/adapter.gif">
+<meta property="og:image" content="https://mao-code.github.io/images/posts/NLP-series/LLM-fintune.png">
+<meta property="og:image" content="https://mao-code.github.io/images/posts/NLP-series/LoRA-1.png">
+<meta property="og:image" content="https://mao-code.github.io/images/posts/NLP-series/LoRA-2.png">
+<meta property="og:image" content="https://mao-code.github.io/images/posts/NLP-series/LoRA-3.png">
+<meta property="article:published_time" content="2023-08-10T07:45:59.000Z">
+<meta property="article:modified_time" content="2023-08-12T17:48:36.410Z">
+<meta property="article:author" content="Mao 勛哥">
+<meta property="article:tag" content="ML">
+<meta property="article:tag" content="AI">
+<meta property="article:tag" content="NLP">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://mao-code.github.io/images/posts/NLP-series/adapter.gif">
+
+
+<link rel="canonical" href="https://mao-code.github.io/posts/38266156/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://mao-code.github.io/posts/38266156/","path":"posts/38266156/","title":"[NLP][ML] Adapters & LoRA"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>[NLP][ML] Adapters & LoRA | Mao 勛哥's blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="Mao 勛哥's blog" type="application/atom+xml">
+</head>
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband">
+    <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/mao-code" class="github-corner" aria-label="View source on GitHub">
+      <svg width="80" height="80" viewbox="0 0 250 250" style="fill:#222; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+  </div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Mao 勛哥's blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">程式技術交流</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>關於</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80" placeholder="搜尋..." spellcheck="false" type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Overview"><span class="nav-number">1.</span> <span class="nav-text">Overview</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Adapter"><span class="nav-number">2.</span> <span class="nav-text">Adapter</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#What-are-Adapters"><span class="nav-number">2.1.</span> <span class="nav-text">What are Adapters?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What-is-the-purpose-and-function-of-adapters"><span class="nav-number">2.2.</span> <span class="nav-text">What is the purpose and function of adapters?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#The-applications-of-adapters"><span class="nav-number">2.3.</span> <span class="nav-text">The applications of adapters</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#LoRA-Low-Rank-Adaptation"><span class="nav-number">3.</span> <span class="nav-text">LoRA (Low-Rank Adaptation)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#What-is-LoRA"><span class="nav-number">3.1.</span> <span class="nav-text">What is LoRA?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#How-does-fine-tuning-LLMs-work"><span class="nav-number">3.1.1.</span> <span class="nav-text">How does fine-tuning LLMs work?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#The-idea-of-LoRA"><span class="nav-number">3.1.2.</span> <span class="nav-text">The idea of LoRA</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Low-rank-adaptation"><span class="nav-number">3.1.2.1.</span> <span class="nav-text">Low-rank adaptation</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#More-detail"><span class="nav-number">3.1.2.2.</span> <span class="nav-text">More detail</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What-is-the-purpose-and-function-of-LoRA"><span class="nav-number">3.2.</span> <span class="nav-text">What is the purpose and function of LoRA?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#The-applications-of-LoRA"><span class="nav-number">3.3.</span> <span class="nav-text">The applications of LoRA</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Differences-between-adapter-and-LoRA"><span class="nav-number">4.</span> <span class="nav-text">Differences between adapter and LoRA</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#References"><span class="nav-number">5.</span> <span class="nav-text">References</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Mao 勛哥" src="/images/mypic.jpeg">
+  <p class="site-author-name" itemprop="name">Mao 勛哥</p>
+  <div class="site-description" itemprop="description">記錄在程式開發道路上的心得</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL21hby1jb2Rl" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;mao-code"><i class="fab fa-github fa-fw"></i>GitHub</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRsYWIuY29tL01hb1h1bg==" title="GitLab → https:&#x2F;&#x2F;gitlab.com&#x2F;MaoXun"><i class="fab fa-gitlab fa-fw"></i>GitLab</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2luL21hb3h1bi1odWFuZy1hNzc5MTMyNjg=" title="LinkedIn → https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;maoxun-huang-a77913268"><i class="fab fa-linkedin fa-fw"></i>LinkedIn</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQ0JsdHlGY2dzTDVjMURJQktIMERTaFE=" title="YouTube → https:&#x2F;&#x2F;www.youtube.com&#x2F;channel&#x2F;UCBltyFcgsL5c1DIBKH0DShQ"><i class="fab fa-youtube fa-fw"></i>YouTube</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS91cGNfbWFveHVuLz9obD16aC10dw==" title="Instagram → https:&#x2F;&#x2F;www.instagram.com&#x2F;upc_maoxun&#x2F;?hl&#x3D;zh-tw"><i class="fab fa-instagram fa-fw"></i>Instagram</span>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="rss → &#x2F;atom.xml">rss</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="回到頂端">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://mao-code.github.io/posts/38266156/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/mypic.jpeg">
+      <meta itemprop="name" content="Mao 勛哥">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mao 勛哥's blog">
+      <meta itemprop="description" content="記錄在程式開發道路上的心得">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="[NLP][ML] Adapters & LoRA | Mao 勛哥's blog">
+      <meta itemprop="description" content>
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          [NLP][ML] Adapters & LoRA
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+
+      <time title="創建時間：2023-08-10 15:45:59" itemprop="dateCreated datePublished" datetime="2023-08-10T15:45:59+08:00">2023-08-10</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新於</span>
+      <time title="修改時間：2023-08-13 01:48:36" itemprop="dateModified" datetime="2023-08-13T01:48:36+08:00">2023-08-13</time>
+    </span>
+
+  
+    <span class="post-meta-item" title="閱讀次數" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">閱讀次數：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="文章字數">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">文章字數：</span>
+      <span>9.9k</span>
+    </span>
+    <span class="post-meta-item" title="所需閱讀時間">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">所需閱讀時間 &asymp;</span>
+      <span>9 分鐘</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>In this article, I will provide an introduction to adapters and LoRA, including their <strong>definitions, purposes, and functions.</strong> I will also explore their various <strong>applications</strong> and, lastly, delve into the distinctions that set them apart(the <strong>differences between them</strong>).</p>
+<span id="more"></span>
+
+<h1 id="Adapter"><a href="#Adapter" class="headerlink" title="Adapter"></a>Adapter</h1><h2 id="What-are-Adapters"><a href="#What-are-Adapters" class="headerlink" title="What are Adapters?"></a>What are Adapters?</h2><p>According to <span class="exturl" data-url="aHR0cHM6Ly93d3cuYW5hbHl0aWNzdmlkaHlhLmNvbS9ibG9nLzIwMjMvMDQvdHJhaW5pbmctYW4tYWRhcHRlci1mb3Itcm9iZXJ0YS1tb2RlbC1mb3Itc2VxdWVuY2UtY2xhc3NpZmljYXRpb24tdGFzay8jOn46dGV4dD1BZGFwdGVycyUyMGFyZSUyMGxpZ2h0d2VpZ2h0JTIwYWx0ZXJuYXRpdmVzJTIwdG8sbW9kdWxhciUyMGFwcHJvYWNoJTIwdG8lMjB0cmFuc2ZlciUyMGxlYXJuaW5nLg==">this article<i class="fa fa-external-link-alt"></i></span><br>We can give the definition of adapters:</p>
+<blockquote>
+<p><strong>Adapters are lightweight alternatives to fully fine-tuned pre-trained models.</strong><br>Currently, <strong>adapters are implemented as small feedforward neural networks</strong> that are <strong>inserted between layers of a pre-trained model.</strong><br>They provide a <strong>parameter-efficient, computationally efficient, and modular approach</strong> to transfer learning. The following image shows added adapter.</p>
+</blockquote>
+<p>The image below clearly shows the usage flow of apadters<br>(Source: <span class="exturl" data-url="aHR0cHM6Ly9hZGFwdGVyaHViLm1sLw==">AdapterHub<i class="fa fa-external-link-alt"></i></span>)<br><img data-src="/images/posts/NLP-series/adapter.gif" style="width: 70%; margin: 15px auto;"></p>
+<blockquote>
+<p>During training, <strong>all the weights of the pre-trained model are frozen</strong> such that only the adapter weights<br>are updated, resulting in <strong>modular knowledge representations</strong>. They can be easily <strong>extracted, interchanged,</strong><br><strong>independently distributed, and dynamically plugged</strong> into a language model. These properties highlight the<br>potential of adapters in advancing the NLP field astronomically.</p>
+</blockquote>
+<h2 id="What-is-the-purpose-and-function-of-adapters"><a href="#What-is-the-purpose-and-function-of-adapters" class="headerlink" title="What is the purpose and function of adapters?"></a>What is the purpose and function of adapters?</h2><ol>
+<li>Purpose:<br>Large Language Models are computationally expensive and memory-intensive. <strong>Fine-tuning the entire model for each specific task</strong> can be impractical due to resource constraints. Adapters provide a solution by allowing for more efficient and <strong>targeted modifications</strong> to the model for different tasks. This approach <strong>saves both computational power and memory</strong>, enabling the deployment of a single pre-trained model for multiple tasks.</li>
+<li>Functions:<ol>
+<li><p>Efficient Fine-tuning: Instead of fine-tuning the entire model, adapters enable <strong>fine-tuning only a small subset of parameters</strong> related to a specific task. This fine-tuning process is faster and requires fewer resources.</p>
+</li>
+<li><p>Task-specific Modifications: Adapters allow you to add <strong>task-specific layers or modifications</strong> to the pre-trained model without altering the core architecture. This makes it easier to adapt the model for various tasks like text classification, named entity recognition, sentiment analysis, etc.</p>
+</li>
+<li><p>Versatility: With adapters, a single pre-trained LLM can be <strong>adapted for a wide range of tasks.</strong> This versatility is beneficial in scenarios where deploying and maintaining separate models for each task might be impractical.</p>
+</li>
+<li><p>Interoperability: Adapters enable the combination of pre-trained models with task-specific modifications in a standardized way. This facilitates sharing, collaboration, and research in the NLP community.</p>
+</li>
+<li><p>Transfer Learning: Adapters enhance the <strong>effectiveness of transfer learning.</strong> Models pre-trained on <strong>large and diverse datasets can be fine-tuned on smaller</strong>, task-specific datasets using adapters, improving performance on specific tasks.</p>
+</li>
+<li><p>Incremental Updates: Adapters allow for easy updates to the model. Instead of retraining the entire model, only the adapters related to a specific task need to be fine-tuned when new data or requirements arise.</p>
+</li>
+</ol>
+</li>
+</ol>
+<p>Overall, adapters are a <strong>mechanism that strikes a balance between the benefits of fine-tuning for specific tasks and the efficiency of reusing pre-trained LLMs.</strong> They enable the NLP community to leverage the power of these large models while tailoring them to a diverse set of applications.</p>
+<h2 id="The-applications-of-adapters"><a href="#The-applications-of-adapters" class="headerlink" title="The applications of adapters"></a>The applications of adapters</h2><p>I list some practical applications that can use adapters to enhance.</p>
+<ol>
+<li><p>Efficient Task Adaptation: Adapters make it possible to fine-tune a pretrained model for specific tasks with minimal computational resources and time. This is particularly useful for industries that require quick adaptation to changing trends or requirements.</p>
+</li>
+<li><p>Multilingual Applications: Adapters can be used to enable a pretrained model to perform tasks in multiple languages. This is valuable for businesses operating in global markets.</p>
+</li>
+<li><p>Domain-Specific NLP: Adapting models with domain-specific adapters (e.g., medical, legal, financial) enhances their performance on tasks specific to those domains.</p>
+</li>
+<li><p>Personalization: Adapters can be used to personalize a general-purpose model for individual users or contexts, leading to more relevant and tailored responses.</p>
+</li>
+</ol>
+<h1 id="LoRA-Low-Rank-Adaptation"><a href="#LoRA-Low-Rank-Adaptation" class="headerlink" title="LoRA (Low-Rank Adaptation)"></a>LoRA (Low-Rank Adaptation)</h1><h2 id="What-is-LoRA"><a href="#What-is-LoRA" class="headerlink" title="What is LoRA?"></a>What is LoRA?</h2><ul>
+<li>Low-Rank Adaptation, or LoRA, is proposed, which <strong>freezes the pre-trained model weights</strong> and <strong>injects trainable rank decomposition matrices into each layer</strong> of the <strong>Transformer</strong> architecture, greatly <strong>reducing the number of trainable parameters</strong> for downstream tasks.</li>
+</ul>
+<p>And let’s see the full fine-tuning definition:</p>
+<ul>
+<li>Full fine-tuning LLM, which <strong>retrains all model parameters</strong>, becomes less feasible. Using GPT-3 175B as an example — deploying independent instances of fine-tuned models, each with 175B parameters, is prohibitively expensive.</li>
+</ul>
+<p>In <span class="exturl" data-url="aHR0cHM6Ly9iZHRlY2h0YWxrcy5jb20vMjAyMy8wNS8yMi93aGF0LWlzLWxvcmEv">this article<i class="fa fa-external-link-alt"></i></span>, it clearly compare the fine-tuning and LoRA approaches. And in <span class="exturl" data-url="aHR0cHM6Ly9zaC10c2FuZy5tZWRpdW0uY29tL2JyaWVmLXJldmlldy1sb3JhLWxvdy1yYW5rLWFkYXB0YXRpb24tb2YtbGFyZ2UtbGFuZ3VhZ2UtbW9kZWxzLWZhZjVkZGQ1ODAyZiM6fjp0ZXh0PUxvUkElMkMlMjBMb3clMkRSYW5rJTIwTExNJTIwRmluZSUyRFR1bmluZyUyQyUyMFJlZHVjZSUyMFJlcXVpcmVkJTIwTWVtb3J5JnRleHQ9TG93JTJEUmFuayUyMEFkYXB0YXRpb24lMkMlMjBvciUyMExvUkEsdHJhaW5hYmxlJTIwcGFyYW1ldGVycyUyMGZvciUyMGRvd25zdHJlYW0lMjB0YXNrcy4=">this article<i class="fa fa-external-link-alt"></i></span>, it dives more into the machanism of LoRA. If you wnat to know the full knowledge, you can refer to <span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzIxMDYuMDk2ODU=">the paper of LoRA<i class="fa fa-external-link-alt"></i></span>.<br>In the next sections, I will introduce more ideas of LoRA based on these references. Note that I only organize the contents of these articles and add some mark and note on my own.</p>
+<hr>
+<h3 id="How-does-fine-tuning-LLMs-work"><a href="#How-does-fine-tuning-LLMs-work" class="headerlink" title="How does fine-tuning LLMs work?"></a>How does fine-tuning LLMs work?</h3><p>Open-source LLMs such as LLaMA,Vicuna are foundation models that <strong>have been pre-trained on hundreds of billions of words.</strong> Developers and machine learning engineers can download the model with the <strong>pre-trained weights</strong> and <strong>fine-tune it for downstream tasks</strong> such as <span class="exturl" data-url="aHR0cHM6Ly9iZHRlY2h0YWxrcy5jb20vMjAyMy8wMS8xNi93aGF0LWlzLXJsaGYv">instruction following<i class="fa fa-external-link-alt"></i></span>.</p>
+<p>The model is provided input from the <strong>fine-tuning dataset</strong>. It then <strong>predicts the next tokens and compares its output with the ground truth.</strong> It then <strong>adjusts the weights(gradient)</strong> to correct its predictions. By doing this over and over, the LLM becomes fine-tuned to the downstream task.</p>
+<p><img data-src="/images/posts/NLP-series/LLM-fintune.png" style="width: 70%; margin: 15px auto;"></p>
+<p>(Source: <span class="exturl" data-url="aHR0cHM6Ly9iZHRlY2h0YWxrcy5jb20vMjAyMy8wNS8yMi93aGF0LWlzLWxvcmEv">What is low-rank adaptation (LoRA)?<i class="fa fa-external-link-alt"></i></span>)</p>
+<h3 id="The-idea-of-LoRA"><a href="#The-idea-of-LoRA" class="headerlink" title="The idea of LoRA"></a>The idea of LoRA</h3><p>Now, let’s make a small modification to the fine-tuning process. In this new method, we <strong>freeze the original weights of the model and don’t modify them during the fine-tuning process.</strong> Instead, we apply the modifications to a <strong>separate set of weights</strong> and we add their new values to the original parameters. Let’s call these two sets <strong>“pre-trained” and “fine-tuned” weights</strong>.</p>
+<blockquote>
+<p><strong>Separating the pre-trained and fine-tuned parameters is an important part of LoRA.</strong><br><img data-src="/images/posts/NLP-series/LoRA-1.png" style="width: 70%; margin: 15px auto;"></p>
+</blockquote>
+<h4 id="Low-rank-adaptation"><a href="#Low-rank-adaptation" class="headerlink" title="Low-rank adaptation"></a>Low-rank adaptation</h4><p>Before moving on to LoRA, let’s think about our <strong>model parameters as very large matrices</strong>. If you remember your linear algebra class, <strong>matrices can form vector spaces</strong>. In this case, we’re talking about a <strong>very large vector space with many dimensions</strong> that models language.</p>
+<p>Every matrix has a <strong>“rank”</strong>, which is <strong>the number of linearly independent columns it has</strong>. If a column is linearly independent, it means that <strong>it can’t be represented as a combination of other columns in the matrix</strong>. On the other hand, a dependent column is one that can be represented as a combination of one or more columns in the same matrix. You can remove dependent columns from a matrix without losing information.</p>
+<p>LoRA, proposed in a <span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzIxMDYuMDk2ODU=">paper<i class="fa fa-external-link-alt"></i></span> by researchers at Microsoft, suggests that when fine-tuning an LLM for a downstream task, <strong>you don’t need the full-rank weight matrix.</strong> They proposed that you could preserve most of the learning capacity of the model while <strong>reducing the dimension of the downstream parameters.</strong> (This is why it makes sense to separate the pre-trained and fine-tuned weights.)</p>
+<hr>
+<p><img data-src="/images/posts/NLP-series/LoRA-2.png" style="width: 70%; margin: 15px auto;"></p>
+<p>Basically, in LoRA, you create <strong>two downstream weight matrices</strong>. One <strong>transforms the input parameters from the original dimension to the low-rank dimension</strong>. And the second matrix <strong>transforms the low-rank data to the output dimensions of the original model</strong>.</p>
+<p>During training, <strong>modifications are made to the LoRA parameters</strong>, which are now much fewer than the original weights. This is why they can be trained much faster and at a fraction of the cost of doing full fine-tuning. <strong>At inference time, the output of LoRA is added to the pre-trained parameters to calculate the final values.</strong></p>
+<h4 id="More-detail"><a href="#More-detail" class="headerlink" title="More detail"></a>More detail</h4><p><img data-src="/images/posts/NLP-series/LoRA-3.png" style="width: 70%; margin: 15px auto;"></p>
+<ul>
+<li>For a pre-trained weight matrix $W_0$, its update is constrained by representing the latter with a low-rank decomposition:</li>
+</ul>
+<p>$$\begin{equation}<br>   W_0 + \Delta{W} &#x3D; W_0 + BA<br>\end{equation}$$</p>
+<ul>
+<li>During training, <strong>$W_0$ is frozen</strong> and does not receive gradient updates, while <strong>A and B contain trainable parameters</strong>.</li>
+<li>For $h&#x3D;W_0$, the modified forward pass yields:</li>
+</ul>
+<p>$$\begin{equation}<br>   h &#x3D; W_0x + \Delta{W} &#x3D; W_0x + BAx<br>\end{equation}$$</p>
+<ul>
+<li><p>A random <strong>Gaussian initialization is used for A</strong> and <strong>zero is used for B</strong>, so $\Delta{W}&#x3D;BA$ is zero at the beginning of training. (The method of initializing the weights)</p>
+</li>
+<li><p>One of the advantages is that when deployed in production, we can <strong>explicitly compute and store $W&#x3D;W_0+BA$</strong> and perform inference as usual. <strong>No additional latency</strong> compared to other methods, such as appending more layers.</p>
+</li>
+</ul>
+<p>You can see the implementation and more detail of LoRA in <span class="exturl" data-url="aHR0cHM6Ly95b3V0dS5iZS9kQS1OaEN0cnJWRQ==">this video<i class="fa fa-external-link-alt"></i></span><br>and <span class="exturl" data-url="aHR0cHM6Ly9ibG9nLm1sNi5ldS9sb3ctcmFuay1hZGFwdGF0aW9uLWEtdGVjaG5pY2FsLWRlZXAtZGl2ZS03ODJkZWM5OTU3NzI=">this article<i class="fa fa-external-link-alt"></i></span>.</p>
+<h2 id="What-is-the-purpose-and-function-of-LoRA"><a href="#What-is-the-purpose-and-function-of-LoRA" class="headerlink" title="What is the purpose and function of LoRA?"></a>What is the purpose and function of LoRA?</h2><ul>
+<li>Purpose<ul>
+<li>The purpose of LoRA is to make it easier and more efficient to fine-tune LLMs for downstream tasks.</li>
+</ul>
+</li>
+<li>Function<ul>
+<li>The function of LoRA is to decompose the LLM into a low-rank representation and then adapt this representation to the target task.</li>
+<li>Here are the benefits:</li>
+</ul>
+</li>
+<li>Reduced number of parameters: The low-rank representation has a much smaller number of parameters than the original LLM, which can make it faster to train and easier to deploy.</li>
+<li>Improved performance: The low-rank representation is able to capture the most important features of the LLM, which can lead to improved performance on the downstream task.</li>
+</ul>
+<h2 id="The-applications-of-LoRA"><a href="#The-applications-of-LoRA" class="headerlink" title="The applications of LoRA"></a>The applications of LoRA</h2><ul>
+<li>Fine-tuning large language models for downstream tasks:<br>LoRA can be used to fine-tune large language models (LLMs) for a variety of downstream tasks, such as question answering, summarization, and translation. This can <strong>make LLMs more accessible and easier to use for a wider range of applications.</strong></li>
+<li>Improving the efficiency of machine learning models:<br> LoRA can be used to improve the efficiency of machine learning models by reducing the number of parameters. This can <strong>make models faster to train and easier to deploy</strong>.</li>
+<li>Compressing large datasets:<br>LoRA can be used to <strong>compress large datasets by representing them in a low-rank format</strong>. This can make datasets easier to <strong>store and transmit</strong>.</li>
+<li>Improving the security of machine learning models:<br>LoRA can be used to improve the security of machine learning models by making them more resistant to adversarial attacks.</li>
+</ul>
+<h1 id="Differences-between-adapter-and-LoRA"><a href="#Differences-between-adapter-and-LoRA" class="headerlink" title="Differences between adapter and LoRA"></a>Differences between adapter and LoRA</h1><table>
+   <thead>
+      <th>Feature</th>
+      <th>Adapter</th>
+      <th>LoRA</th>
+   </thead>
+   <tbody>
+      <tr>
+         <td>Approach</td>
+         <td>Adds additional layers to the pretrained model	</td>
+         <td>Decomposes the pretrained model into a low-rank representation
+</td>
+      </tr>
+      <tr>
+         <td>Parameters</td>
+         <td>Adds a small number of parameters to the pretrained model</td>
+         <td>Reduces the number of parameters in the pretrained model</td>
+      </tr>
+      <tr>
+         <td>Performance</td>
+         <td>Effective for a variety of downstream tasks</td>
+         <td>Particularly effective for tasks that require a large number of parameters</td>
+      </tr>
+      <tr>
+         <td>Speed</td>
+         <td>Can be faster to train than LoRA</td>
+         <td>Can be faster at inference time</td>
+      </tr>
+      <tr>
+         <td>Memory usage</td>
+         <td>Can use more memory than LoRA</td>
+         <td></td>
+      </tr>
+   </tbody>
+</table>
+
+<p>In general, adapters are a good choice for tasks that require a small number of parameters and can be trained quickly, while LoRA is a good choice for tasks that require a large number of parameters and need to be fast at inference time.</p>
+<h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuYW5hbHl0aWNzdmlkaHlhLmNvbS9ibG9nLzIwMjMvMDQvdHJhaW5pbmctYW4tYWRhcHRlci1mb3Itcm9iZXJ0YS1tb2RlbC1mb3Itc2VxdWVuY2UtY2xhc3NpZmljYXRpb24tdGFzay8jOn46dGV4dD1BZGFwdGVycyUyMGFyZSUyMGxpZ2h0d2VpZ2h0JTIwYWx0ZXJuYXRpdmVzJTIwdG8sbW9kdWxhciUyMGFwcHJvYWNoJTIwdG8lMjB0cmFuc2ZlciUyMGxlYXJuaW5nLg==">(Recommend) Training an Adapter for RoBERTa Model for Sequence Classification Task<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9hZGFwdGVyaHViLm1sLw==">AdapterHub<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9kb2NzL2RpZmZ1c2Vycy90cmFpbmluZy9sb3JhIzp+OnRleHQ9TG93JTJEUmFuayUyMEFkYXB0YXRpb24lMjBvZiUyMExhcmdlJTIwTGFuZ3VhZ2UlMjBNb2RlbHMlMjAoTG9SQSklMjBpcyx0cmFpbnMlMjB0aG9zZSUyMG5ld2x5JTIwYWRkZWQlMjB3ZWlnaHRzLg==">Low-Rank Adaptation of Large Language Models (LoRA) (Huggingface)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9zaC10c2FuZy5tZWRpdW0uY29tL2JyaWVmLXJldmlldy1sb3JhLWxvdy1yYW5rLWFkYXB0YXRpb24tb2YtbGFyZ2UtbGFuZ3VhZ2UtbW9kZWxzLWZhZjVkZGQ1ODAyZiM6fjp0ZXh0PUxvUkElMkMlMjBMb3clMkRSYW5rJTIwTExNJTIwRmluZSUyRFR1bmluZyUyQyUyMFJlZHVjZSUyMFJlcXVpcmVkJTIwTWVtb3J5JnRleHQ9TG93JTJEUmFuayUyMEFkYXB0YXRpb24lMkMlMjBvciUyMExvUkEsdHJhaW5hYmxlJTIwcGFyYW1ldGVycyUyMGZvciUyMGRvd25zdHJlYW0lMjB0YXNrcy4=">Brief Review — LoRA: Low-Rank Adaptation of Large Language Models<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9iZHRlY2h0YWxrcy5jb20vMjAyMy8wNS8yMi93aGF0LWlzLWxvcmEv">What is low-rank adaptation (LoRA)?<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzIxMDYuMDk2ODU=">LoRA: Low-Rank Adaptation of Large Language Models (Paper)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9ibG9nLm1sNi5ldS9sb3ctcmFuay1hZGFwdGF0aW9uLWEtdGVjaG5pY2FsLWRlZXAtZGl2ZS03ODJkZWM5OTU3NzI=">(Recommend) Low Rank Adaptation: A Technical Deep Dive<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly95b3V0dS5iZS9kQS1OaEN0cnJWRQ==">Low-rank Adaption of Large Language Models: Explaining the Key Concepts Behind LoRA (Video)<i class="fa fa-external-link-alt"></i></span></li>
+</ul>
+
+
+    </div>
+      
+  <div class="popular-posts-header">相關文章</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/posts/2312529159/" rel="bookmark">[NLP] MLLM(多模態LLM) 論文簡要欣賞</a></div>
+    </li>
+  </ul>
+
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/ML/" rel="tag"><i class="fa fa-tag"></i> ML</a>
+              <a href="/tags/AI/" rel="tag"><i class="fa fa-tag"></i> AI</a>
+              <a href="/tags/NLP/" rel="tag"><i class="fa fa-tag"></i> NLP</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/posts/2312529159/" rel="prev" title="[NLP] MLLM(多模態LLM) 論文簡要欣賞">
+                  <i class="fa fa-chevron-left"></i> [NLP] MLLM(多模態LLM) 論文簡要欣賞
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Mao 勛哥</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+      <span>總字數：</span>
+    <span title="總字數">50k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span>所需總閱讀時間 &asymp;</span>
+    <span title="所需總閱讀時間">45 分鐘</span>
+  </span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="訪客總數">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="總瀏覽次數">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.5.0/pjax.min.js" integrity="sha256-3NkoLDrmHLTYj7csHIZSr0MHAFTXth7Ua/DDt4MRUAg=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.0/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  <script src="/js/third-party/pace.js"></script>
+
+  
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"mao-code","count":false,"i18n":{"disqus":"disqus"}}</script>
+<script src="/js/third-party/comments/disqus.js"></script>
+
+</body>
+</html>
