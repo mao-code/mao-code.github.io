@@ -1,84 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>大一大二參加畢業專案與程式比賽心得分享</title>
-    <url>/posts/534426495/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>小弟我在剛上大一沒多久，就私mail系上的程式老師，詢問是否可以參與更多的專案或研究，也一併把我的履歷給教授看。<br>沒想到教授大方地給我幾條路選，可以跟教授做研究，出去實習，或是和學長們做專案。<br>大一的我想要慢慢累積實力，於是決定先<strong>和學長們做專案</strong>，去比賽，累積經驗。<br>在歷經<strong>國科會專案、資訊競賽、畢業專案競賽等等</strong>後，我非常感謝教授和學長們給我這個機會，讓我可以擁有這些寶貴的經驗！<br>這篇文章主要著重在心得與分享，比較技術面的內容會在下篇文章詳細介紹。</p>
-<span id="more"></span>
-
-<h2 id="比賽心得與定位"><a href="#比賽心得與定位" class="headerlink" title="比賽心得與定位"></a>比賽心得與定位</h2><p>在這個Team內，我主要負責程式開發，包括<strong>前端、伺服器架設與管理和一部分的後端</strong>。<br>前前後後比了<strong>國科會大專生計畫、智慧創新、資訊服務和系上的畢業專案競賽</strong>，大約歷時1年多的時間，在這段時間裡，我們歷經<strong>發想、開發、維護、寫技術文件、UI&#x2F;UX設計到演算法研究等等</strong>，這也是我大一結束為止做過相對完整的專案。</p>
-<hr>
-<p>這是我們智慧創新和資訊服務競賽時的照片，我們直接把成品給評審滑XD，因為以我們的系統來說相對完整，也不怕噴Bug，雖然都只進到決賽，但我也更加知道這類型比賽的準備方向（基本上就是要對到當前流行的主題），<del>所以明年就準備AI吧</del><br><img data-src="/images/posts/CC-experience/智慧創新.JPG" 
-style="width: 70%; margin: 15px auto;"><br><img data-src="/images/posts/CC-experience/資服.jpg" 
-style="width: 70%; margin: 15px auto;"></p>
-<hr>
-<p>這是系上畢業專案的比賽，非常榮幸拿到第二名！當天還直接被其他資訊公司的主管遞名片，受寵若驚。<br><img data-src="/images/posts/CC-experience/畢業專案.JPG" 
-style="width: 70%; margin: 15px auto;"><br><img data-src="/images/posts/CC-experience/畢業專案得獎.JPG" 
-style="width: 70%; margin: 15px auto;"></p>
-<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>總的來說，這是我<strong>參與多人協作、實作一個完整專案的寶貴經驗</strong>，這也成為我日後開發其他專案的養分(Google學生開發者社群, 資訊競賽, etc.)，除了<strong>技術面的大幅成長，專案管理、人際互動、時間管理</strong>也都是成長的一部分，主動去尋找機會，得到的會比你想像的多，雖然有點辛苦就是了，但我覺得很值得！所以時間管理真的超重要，這也讓我在工程師這條路上變得更主動，相信只要努力，自己絕對值得更好的！</p>
-<p>比較技術面的內容會在之後的文章提及</p>
-]]></content>
-      <categories>
-        <category>心得</category>
-        <category>比賽</category>
-      </categories>
-      <tags>
-        <tag>心得</tag>
-        <tag>比賽</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>政大Google學生開發者社群-心得（第一學期）</title>
-    <url>/posts/277323671/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在剛上大二時，除了手邊和學長的專案，我也參加了政大的Google學生開發者社群。主要是希望透過提案，<strong>利用科技來解決問題</strong>，在這裡我也深深感受到Google的文化，那就是<strong>不會怕去嘗試、不怕去解決問題</strong>，我也認識在這個社群中的各個人才。在這個社群中，我除了擔任自己<strong>專案領導人</strong>的角色外，我也身兼<strong>後端技術長</strong>的任務，也是想要發揮我目前所學到的、最成熟的後端知識。除了技術面，如何管理一個團隊、一項專案，也是一門很大的課題。希望在未來可以繼續把自己的這項專案做到完善，解決真正的問題！</p>
-<span id="more"></span>
-
-<h2 id="定位與職位"><a href="#定位與職位" class="headerlink" title="定位與職位"></a>定位與職位</h2><ul>
-<li><h3 id="專案定位"><a href="#專案定位" class="headerlink" title="專案定位"></a>專案定位</h3></li>
-</ul>
-<p>我這次的提案叫做「政大通NCCUPass」，以<strong>政大校園生活為出發點</strong>，想要做一款能夠解決政大學生生活上不便的APP，透過專案組的討論與調查，帶來<strong>更便利、聰明與數位化</strong>的校園生活，讓校園內的需求能夠即時被滿足，也讓這款APP融入政大學生的生活中，成為政大校園內不可或缺的一部分，因此，「政大通-NCCUPass」的提案就此誕生</p>
-<hr>
-<p>下面是我們第一次期末發表的海報和照片<br>海報內呈現的是我們規劃、也正在開發的功能<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/poster.jpg" 
-style="width: 70%; margin: 15px auto;"></p>
-<hr>
-<p>這個是期末發表當天的攤位介紹照片<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img4.jpg" 
-style="width: 70%; margin: 15px auto;"></p>
-<p><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img2.JPG" 
-style="width: 70%; margin: 15px auto;"></p>
-<p><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img1.JPG" 
-style="width: 70%; margin: 15px auto;"></p>
-<hr>
-<ul>
-<li><h3 id="職位"><a href="#職位" class="headerlink" title="職位"></a>職位</h3></li>
-</ul>
-<p>在這個專案中，我擔任<strong>Project Leader(專案主持人)<strong>，與</strong>Backend Tech-Lead(後端技術長)<strong>的身份，帶領總共</strong>11人的團隊</strong>，在我們這個團隊中，主要分成四組，前端、後端、UI&#x2F;UX、文書，除了負責主要的後端技術，也要帶領後端的組員們提升實力、協調與規劃。以專案領導人的角度來看，除了需要<strong>規劃整個專案的進度與走向外，也要監督進度、協調各組、人際溝通等等</strong>，除了利用各種專案管理的工具外，也要撰寫各種文件與流程圖，老實說滿累的XD。但也是遇到一群願意跟隨我的隊友們，一起成長，真的非常得感謝他們🙏</p>
-<h2 id="技術"><a href="#技術" class="headerlink" title="技術"></a>技術</h2><ul>
-<li><h3 id="系統架構圖"><a href="#系統架構圖" class="headerlink" title="系統架構圖"></a>系統架構圖</h3></li>
-</ul>
-<p>下面是我們的系統架構圖，因為我是負責後端的部分，所以會著重畫後端的架構<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/NCCUPass-Structure.jpg" 
-style="width: 70%; margin: 15px auto;"></p>
-<ul>
-<li><h3 id="後端技術細節"><a href="#後端技術細節" class="headerlink" title="後端技術細節"></a>後端技術細節</h3></li>
-</ul>
-<p>根據上面的架構圖，我們的專案主要部署在Ubuntu的主機上，所有的服務利用Docker Compose統一建立，另外還有利用GitLab Runner做到自動化整合與自動化部屬的功能。後端程式是由.NET C#撰寫，這邊我使用的是Software Layer Architecture Pattern(軟體分層架構)，結合各種Design Pattern再加上自己的一些變形，資料庫是使用MongoDB的Replica-Set，也有使用Redis做快取，照片和一些公開的檔案主要放在我們的File Server上。其他技術細節我就列在下面，想看的人可以參考一下XD</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">- Software Layer Architecture pattern (多層)</span><br><span class="line">- Repository pattern</span><br><span class="line">- Unit of Work pattern</span><br><span class="line">- Mediator pattern &amp; CQRS</span><br><span class="line">- Password Salting and Encryption</span><br><span class="line">- JWT &amp; RBAC</span><br><span class="line">- Automapper</span><br><span class="line">- Exception handler抽離</span><br><span class="line">- Dapper &amp; EF combination</span><br><span class="line">- Redis (Cache)</span><br><span class="line">- Docker Networking</span><br><span class="line">- Docker Volume</span><br><span class="line">- Docker hub</span><br><span class="line">- appsettings 組態切換</span><br><span class="line">- MongoDB replica-set</span><br><span class="line">    - key-file (internal authentication)</span><br><span class="line">- Git 多人協作</span><br><span class="line">- Swagger / OpenAPI</span><br><span class="line">- Docker File Server</span><br><span class="line">- Docker mongoDB backup daily</span><br><span class="line">- Docker Compose</span><br><span class="line">- JMeter壓力測試</span><br><span class="line">- GC mode區別(Workstation, Server)</span><br><span class="line">- SignalR 雙向溝通</span><br><span class="line">- 測試 (K6 stress testing, )</span><br><span class="line">- 自動化發送Email (python selenium)</span><br><span class="line">- SSH with Linux server</span><br><span class="line">- FCM (to push device notification)</span><br><span class="line">- Linux server</span><br><span class="line">- Cloudflare domain and SSL/TLS</span><br><span class="line">- Nginx  (on server and on docker)</span><br><span class="line">    - redirect (setting files)</span><br><span class="line">    - ssl setting(certificate, key)</span><br><span class="line">- Shell script自動備份資料庫</span><br></pre></td></tr></table></figure>
-<p>之後也會一直新增，因為現在處於專案開發的初期。</p>
-<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>最後，這個專案雖然只是在發展初期，但我希望未來可以發展到我預想的樣子，也非常感謝一路願意跟隨我、幫助我的隊友們，單打獨鬥真的比不上團隊合作👍，也希望各位未來也可以繼續幫助我啦，現在打分享文可能還太早，但我就是想要趁學期末趕快記錄一下哈哈</p>
-]]></content>
-      <categories>
-        <category>心得</category>
-        <category>GDSC</category>
-        <category>專案</category>
-        <category>NCCUPass</category>
-        <category>side project</category>
-      </categories>
-      <tags>
-        <tag>GDSC</tag>
-        <tag>NCCUPass</tag>
-        <tag>專案</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>CC-沈浸式線上逛街APP-系統與技術介紹</title>
     <url>/posts/2012237495/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>接續上一篇的文章，這篇文章會著重介紹這個系統<br>以下是我在YouTube上對這個專案的介紹與Demo：</p>
@@ -146,6 +68,84 @@ CC提供商城、買家、直播主追蹤的機制，加上個人化自己的動
         <tag>專案</tag>
         <tag>作品</tag>
         <tag>side project</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>大一大二參加畢業專案與程式比賽心得分享</title>
+    <url>/posts/534426495/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>小弟我在剛上大一沒多久，就私mail系上的程式老師，詢問是否可以參與更多的專案或研究，也一併把我的履歷給教授看。<br>沒想到教授大方地給我幾條路選，可以跟教授做研究，出去實習，或是和學長們做專案。<br>大一的我想要慢慢累積實力，於是決定先<strong>和學長們做專案</strong>，去比賽，累積經驗。<br>在歷經<strong>國科會專案、資訊競賽、畢業專案競賽等等</strong>後，我非常感謝教授和學長們給我這個機會，讓我可以擁有這些寶貴的經驗！<br>這篇文章主要著重在心得與分享，比較技術面的內容會在下篇文章詳細介紹。</p>
+<span id="more"></span>
+
+<h2 id="比賽心得與定位"><a href="#比賽心得與定位" class="headerlink" title="比賽心得與定位"></a>比賽心得與定位</h2><p>在這個Team內，我主要負責程式開發，包括<strong>前端、伺服器架設與管理和一部分的後端</strong>。<br>前前後後比了<strong>國科會大專生計畫、智慧創新、資訊服務和系上的畢業專案競賽</strong>，大約歷時1年多的時間，在這段時間裡，我們歷經<strong>發想、開發、維護、寫技術文件、UI&#x2F;UX設計到演算法研究等等</strong>，這也是我大一結束為止做過相對完整的專案。</p>
+<hr>
+<p>這是我們智慧創新和資訊服務競賽時的照片，我們直接把成品給評審滑XD，因為以我們的系統來說相對完整，也不怕噴Bug，雖然都只進到決賽，但我也更加知道這類型比賽的準備方向（基本上就是要對到當前流行的主題），<del>所以明年就準備AI吧</del><br><img data-src="/images/posts/CC-experience/智慧創新.JPG" 
+style="width: 70%; margin: 15px auto;"><br><img data-src="/images/posts/CC-experience/資服.jpg" 
+style="width: 70%; margin: 15px auto;"></p>
+<hr>
+<p>這是系上畢業專案的比賽，非常榮幸拿到第二名！當天還直接被其他資訊公司的主管遞名片，受寵若驚。<br><img data-src="/images/posts/CC-experience/畢業專案.JPG" 
+style="width: 70%; margin: 15px auto;"><br><img data-src="/images/posts/CC-experience/畢業專案得獎.JPG" 
+style="width: 70%; margin: 15px auto;"></p>
+<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>總的來說，這是我<strong>參與多人協作、實作一個完整專案的寶貴經驗</strong>，這也成為我日後開發其他專案的養分(Google學生開發者社群, 資訊競賽, etc.)，除了<strong>技術面的大幅成長，專案管理、人際互動、時間管理</strong>也都是成長的一部分，主動去尋找機會，得到的會比你想像的多，雖然有點辛苦就是了，但我覺得很值得！所以時間管理真的超重要，這也讓我在工程師這條路上變得更主動，相信只要努力，自己絕對值得更好的！</p>
+<p>比較技術面的內容會在之後的文章提及</p>
+]]></content>
+      <categories>
+        <category>心得</category>
+        <category>比賽</category>
+      </categories>
+      <tags>
+        <tag>心得</tag>
+        <tag>比賽</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>政大Google學生開發者社群-心得（第一學期）</title>
+    <url>/posts/277323671/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在剛上大二時，除了手邊和學長的專案，我也參加了政大的Google學生開發者社群。主要是希望透過提案，<strong>利用科技來解決問題</strong>，在這裡我也深深感受到Google的文化，那就是<strong>不會怕去嘗試、不怕去解決問題</strong>，我也認識在這個社群中的各個人才。在這個社群中，我除了擔任自己<strong>專案領導人</strong>的角色外，我也身兼<strong>後端技術長</strong>的任務，也是想要發揮我目前所學到的、最成熟的後端知識。除了技術面，如何管理一個團隊、一項專案，也是一門很大的課題。希望在未來可以繼續把自己的這項專案做到完善，解決真正的問題！</p>
+<span id="more"></span>
+
+<h2 id="定位與職位"><a href="#定位與職位" class="headerlink" title="定位與職位"></a>定位與職位</h2><ul>
+<li><h3 id="專案定位"><a href="#專案定位" class="headerlink" title="專案定位"></a>專案定位</h3></li>
+</ul>
+<p>我這次的提案叫做「政大通NCCUPass」，以<strong>政大校園生活為出發點</strong>，想要做一款能夠解決政大學生生活上不便的APP，透過專案組的討論與調查，帶來<strong>更便利、聰明與數位化</strong>的校園生活，讓校園內的需求能夠即時被滿足，也讓這款APP融入政大學生的生活中，成為政大校園內不可或缺的一部分，因此，「政大通-NCCUPass」的提案就此誕生</p>
+<hr>
+<p>下面是我們第一次期末發表的海報和照片<br>海報內呈現的是我們規劃、也正在開發的功能<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/poster.jpg" 
+style="width: 70%; margin: 15px auto;"></p>
+<hr>
+<p>這個是期末發表當天的攤位介紹照片<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img4.jpg" 
+style="width: 70%; margin: 15px auto;"></p>
+<p><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img2.JPG" 
+style="width: 70%; margin: 15px auto;"></p>
+<p><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img1.JPG" 
+style="width: 70%; margin: 15px auto;"></p>
+<hr>
+<ul>
+<li><h3 id="職位"><a href="#職位" class="headerlink" title="職位"></a>職位</h3></li>
+</ul>
+<p>在這個專案中，我擔任<strong>Project Leader(專案主持人)<strong>，與</strong>Backend Tech-Lead(後端技術長)<strong>的身份，帶領總共</strong>11人的團隊</strong>，在我們這個團隊中，主要分成四組，前端、後端、UI&#x2F;UX、文書，除了負責主要的後端技術，也要帶領後端的組員們提升實力、協調與規劃。以專案領導人的角度來看，除了需要<strong>規劃整個專案的進度與走向外，也要監督進度、協調各組、人際溝通等等</strong>，除了利用各種專案管理的工具外，也要撰寫各種文件與流程圖，老實說滿累的XD。但也是遇到一群願意跟隨我的隊友們，一起成長，真的非常得感謝他們🙏</p>
+<h2 id="技術"><a href="#技術" class="headerlink" title="技術"></a>技術</h2><ul>
+<li><h3 id="系統架構圖"><a href="#系統架構圖" class="headerlink" title="系統架構圖"></a>系統架構圖</h3></li>
+</ul>
+<p>下面是我們的系統架構圖，因為我是負責後端的部分，所以會著重畫後端的架構<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/NCCUPass-Structure.jpg" 
+style="width: 70%; margin: 15px auto;"></p>
+<ul>
+<li><h3 id="後端技術細節"><a href="#後端技術細節" class="headerlink" title="後端技術細節"></a>後端技術細節</h3></li>
+</ul>
+<p>根據上面的架構圖，我們的專案主要部署在Ubuntu的主機上，所有的服務利用Docker Compose統一建立，另外還有利用GitLab Runner做到自動化整合與自動化部屬的功能。後端程式是由.NET C#撰寫，這邊我使用的是Software Layer Architecture Pattern(軟體分層架構)，結合各種Design Pattern再加上自己的一些變形，資料庫是使用MongoDB的Replica-Set，也有使用Redis做快取，照片和一些公開的檔案主要放在我們的File Server上。其他技術細節我就列在下面，想看的人可以參考一下XD</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">- Software Layer Architecture pattern (多層)</span><br><span class="line">- Repository pattern</span><br><span class="line">- Unit of Work pattern</span><br><span class="line">- Mediator pattern &amp; CQRS</span><br><span class="line">- Password Salting and Encryption</span><br><span class="line">- JWT &amp; RBAC</span><br><span class="line">- Automapper</span><br><span class="line">- Exception handler抽離</span><br><span class="line">- Dapper &amp; EF combination</span><br><span class="line">- Redis (Cache)</span><br><span class="line">- Docker Networking</span><br><span class="line">- Docker Volume</span><br><span class="line">- Docker hub</span><br><span class="line">- appsettings 組態切換</span><br><span class="line">- MongoDB replica-set</span><br><span class="line">    - key-file (internal authentication)</span><br><span class="line">- Git 多人協作</span><br><span class="line">- Swagger / OpenAPI</span><br><span class="line">- Docker File Server</span><br><span class="line">- Docker mongoDB backup daily</span><br><span class="line">- Docker Compose</span><br><span class="line">- JMeter壓力測試</span><br><span class="line">- GC mode區別(Workstation, Server)</span><br><span class="line">- SignalR 雙向溝通</span><br><span class="line">- 測試 (K6 stress testing, )</span><br><span class="line">- 自動化發送Email (python selenium)</span><br><span class="line">- SSH with Linux server</span><br><span class="line">- FCM (to push device notification)</span><br><span class="line">- Linux server</span><br><span class="line">- Cloudflare domain and SSL/TLS</span><br><span class="line">- Nginx  (on server and on docker)</span><br><span class="line">    - redirect (setting files)</span><br><span class="line">    - ssl setting(certificate, key)</span><br><span class="line">- Shell script自動備份資料庫</span><br></pre></td></tr></table></figure>
+<p>之後也會一直新增，因為現在處於專案開發的初期。</p>
+<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>最後，這個專案雖然只是在發展初期，但我希望未來可以發展到我預想的樣子，也非常感謝一路願意跟隨我、幫助我的隊友們，單打獨鬥真的比不上團隊合作👍，也希望各位未來也可以繼續幫助我啦，現在打分享文可能還太早，但我就是想要趁學期末趕快記錄一下哈哈</p>
+]]></content>
+      <categories>
+        <category>專案</category>
+        <category>心得</category>
+        <category>GDSC</category>
+        <category>side project</category>
+        <category>NCCUPass</category>
+      </categories>
+      <tags>
+        <tag>專案</tag>
+        <tag>GDSC</tag>
+        <tag>NCCUPass</tag>
       </tags>
   </entry>
   <entry>
@@ -243,6 +243,215 @@ style="width: 70%; margin: 15px auto;"></p>
       </tags>
   </entry>
   <entry>
+    <title>[.NET][C#][SOLID] - DI &amp; IoC (依賴注入與控制反轉) 全面講解</title>
+    <url>/posts/3588979794/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>IoC (Inversion of Control) 控制反轉，與OOP SOLID原則中的其中一種設計原則有關，也就是其中的DIP(Dependency Inversion Principle)，是OOP一個非常重要的程式設計思想，對於軟體開發來說十分重要，下面我將<strong>十分詳細的介紹何為DIP、IoC以及DI、為何要使用它們以及如何實作</strong>，相信大家閱讀完會對這個重要的思想了解的更加透徹。</p>
+<span id="more"></span>
+<h2 id="定義"><a href="#定義" class="headerlink" title="定義"></a>定義</h2><p>DIP以簡單的一句話說明就是</p>
+<blockquote>
+<p><strong>DIP - Dependency Inversion Principle (依賴倒轉原則)</strong></p>
+<ul>
+<li>一種原則、思想</li>
+<li>高層次的模組不應該依賴低層的模組，低層次的模組也不應該依賴高層次的模組<br><strong>兩者都應該依賴抽象</strong></li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>IoC - Inversion of Control (控制反轉)</strong></p>
+<ul>
+<li>一種思想</li>
+<li>把對於某個物件的<strong>控制權</strong>移轉給<strong>第三方容器 (IoC Container)</strong></li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>DI - Dependency Injection (依賴注入)</strong></p>
+<ul>
+<li>一種設計模式</li>
+<li>將依賴通過<strong>注入</strong>的方式提供給需要的模組，是 IoC 與 DIP 的具體表現</li>
+<li>把被依賴物件注入被動接收物件中</li>
+</ul>
+</blockquote>
+<p>DIP的定義非常重要，請大家牢記在心。<br>也就是說，程式應該依賴抽象，而不是實作的實體，這可以幫助我們對程式之間解耦，能夠被更好地維護。<br>DI是為了實現DIP和IoC而誕生的實現方式，因此大家在使用物件導向的技巧時，<strong>務必清楚自己在做什麼，和為何這樣做</strong>。</p>
+<h2 id="好處-x2F-為什麼要使用？"><a href="#好處-x2F-為什麼要使用？" class="headerlink" title="好處&#x2F;為什麼要使用？"></a>好處&#x2F;為什麼要使用？</h2><p>在針對各個名詞解釋與實作之前，我想先讓各位了解DIP以及IoC帶來的好處。</p>
+<blockquote>
+<ol>
+<li>可維護性 (maintainability)</li>
+<li>寬鬆耦合 (loose coupling)</li>
+</ol>
+</blockquote>
+<ul>
+<li>所謂的<strong>可維護性</strong>，就是你在日<strong>後需要修改或更新程式的時候，所花費的時間和精力</strong>，如果修改起來很費時費力，那我們就說他可維護性低。</li>
+<li>所謂的耦合度，就是物件與物件間的依賴、相關程度，如果在A類內去new B，B類內又去new C，彼此相互直接依賴，這樣類別之間相互呼叫令彼此有所牽連，便是耦合(coupling)，物件關係越緊密，耦合度越高，耦合度高的程式碼，一旦有任何變動，容易發生<strong>連鎖反應，牽一髮動全身</strong>，因此龐大的軟體更應該考慮<strong>低耦合高內聚</strong>的設計方式。</li>
+</ul>
+<p>而DIP, IoC和DI可以<strong>讓程式之間解耦</strong>，提高程式的可維護性。<br>基本上「可維護性」和「寬鬆耦合」就是我們學習DIP, IoC和DI的原因</p>
+<p>下面我會一一介紹DIP, IoC以及DI，最後附上實際應用，即最後組合出來的結果。</p>
+<h2 id="DIP"><a href="#DIP" class="headerlink" title="DIP"></a>DIP</h2><blockquote>
+<p><strong>DIP - Dependency Inversion Principle(依賴倒轉原則)</strong></p>
+<ul>
+<li>一種原則、思想</li>
+<li>高層次的模組不應該依賴低層的模組，低層次的模組也不應該依賴高層次的模組<br><strong>兩者都應該依賴抽象</strong></li>
+</ul>
+</blockquote>
+<p>什麼意思呢？讓我們看看下面的範例：</p>
+<h3 id="簡單範例"><a href="#簡單範例" class="headerlink" title="簡單範例"></a>簡單範例</h3><figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Database</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Connect</span>()</span> &#123; <span class="comment">/* database connect logic */</span> &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Disconnect</span>()</span> &#123; <span class="comment">/* database disconnect logic */</span> &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">SaveData</span>(<span class="params"><span class="built_in">string</span> data</span>)</span> &#123; <span class="comment">/* database save data logic */</span> &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">DataAccess</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> Database _database = <span class="keyword">new</span> Database();</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">SaveData</span>(<span class="params"><span class="built_in">string</span> data</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _database.Connect();</span><br><span class="line">        _database.SaveData(data);</span><br><span class="line">        _database.Disconnect();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>上面的程式碼違反了DIP，因為DataAccess<strong>直接依賴</strong>了’Database’類別，如果Database做了任何變動，DataAccess也需要跟著變動，所有有用到關於Database的class也都需要跟著變動，因此，’DataAccess’ class應該依賴抽象的Interface，而不是具體的實作。</p>
+<hr>
+<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">IDatabase</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Connect</span>()</span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Disconnect</span>()</span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">SaveData</span>(<span class="params"><span class="built_in">string</span> data</span>)</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">SqlServerDatabase</span> : <span class="title">IDatabase</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Connect</span>()</span> &#123; <span class="comment">/* SQL Server database connect logic */</span> &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Disconnect</span>()</span> &#123; <span class="comment">/* SQL Server database disconnect logic */</span> &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">SaveData</span>(<span class="params"><span class="built_in">string</span> data</span>)</span> &#123; <span class="comment">/* SQL Server database save data logic */</span> &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">OracleDatabase</span> : <span class="title">IDatabase</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Connect</span>()</span> &#123; <span class="comment">/* Oracle database connect logic */</span> &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Disconnect</span>()</span> &#123; <span class="comment">/* Oracle database disconnect logic */</span> &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">SaveData</span>(<span class="params"><span class="built_in">string</span> data</span>)</span> &#123; <span class="comment">/* Oracle database save data logic */</span> &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">DataAccess</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> IDatabase _database;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">DataAccess</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        _database = <span class="keyword">new</span> SqlServerDatabase();</span><br><span class="line">        <span class="comment">//_database = new OracleDatabase(); 在這裡抽換</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">SaveData</span>(<span class="params"><span class="built_in">string</span> data</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _database.Connect();</span><br><span class="line">        _database.SaveData(data);</span><br><span class="line">        _database.Disconnect();</span><br><span class="line">    &#125;</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+<p>由上面的範例可知，我們定義了一個IDatabase，規範所有資料庫應該有的action，讓不同的實體Database去實作，而Program本身(DataAccess)，只需要去依賴、使用IDatabase，這樣一來就算未來我從SQL-Server DB遷移到Oracle DB，我<strong>只需要抽換IDatabase的實作實體</strong>(_database指標指向的實際記憶體)，DataAccess內部使用到IDatabase的程式碼一行都不用更改。</p>
+<p>但是，可以發現到，雖然透過依賴倒轉，可以改變為依賴抽象，<strong>但程式(DataAccess)本身還是需要new 出instance</strong>，也就是說程式本身(呼叫者)，對於依賴的控制流程具有主導權，這時就需要<strong>控制反轉</strong>。</p>
+<h2 id="IoC"><a href="#IoC" class="headerlink" title="IoC"></a>IoC</h2><blockquote>
+<ul>
+<li>把對於某個物件的<strong>控制權</strong>移轉給<strong>第三方容器 (IoC Container)</strong></li>
+</ul>
+</blockquote>
+<p>IoC 是一種設計原則或思想，它建議我們反轉物件導向設計中的各種控制，以達到各個類別間的解耦。這裡的 <strong>“控制”指的是除了一個類別本身的職責之外的其它所有工作</strong>，如整個軟體的流程控制，物件的依賴或創建等等。</p>
+<blockquote>
+<ul>
+<li>其實意思就是，一個類別本身除了<strong>本身的職責外，不應該擁有太多其他的工作 (SRP)</strong></li>
+<li>所以建議將這些對於物件的<strong>控制權(創建、實作實體抽換等等)<strong>，交給</strong>第三方容器</strong> (Framework or Library)。</li>
+<li>獲取資源的行為由”主動”轉為”被動”</li>
+<li><strong>程式(Application) 依賴物件的「控制流程 (Control Flow)」，由「主動」變成「被動」。就是「控制反轉」</strong></li>
+</ul>
+</blockquote>
+<p>下面這兩張圖簡單解釋了使用IoC後的依賴關係</p>
+<ul>
+<li><p>這是還沒使用IoC前，我們的應用程式直接依賴於實體類別<br><img data-src="/images/posts/DI-IoC/IoC1.png"></img></p>
+</li>
+<li><p>這個則是使用IoC後，透過IoC Container，將依賴實體注入至程式中，程式由原來主動的依賴變成被動的接收<br><img data-src="/images/posts/DI-IoC/IoC2.png"></img></p>
+</li>
+</ul>
+<p>好萊塢原則也很貼切的說明了控制反轉的情境</p>
+<blockquote>
+<p>Don’t call me, I’ll call you.</p>
+</blockquote>
+<h3 id="IoC-Container"><a href="#IoC-Container" class="headerlink" title="IoC Container"></a>IoC Container</h3><p>廣義上來說， IoC 容器，就是有進行「依賴注入」的地方，<br>你隨便寫一個類別，透過它將所需元件注入給高階模組，便可說是容器。<br>但現在所說的容器通常泛指那些<strong>強大的IoC框架所提供的容器</strong>。</p>
+<p>各位可以把IoC容器想像成是儲存一堆使用者<strong>註冊的依賴實體</strong>，IoC Container透過這些使用者註冊的資訊，知道程式需要這個instance並賦予給他，達到不需要修改高階模組的目的。<br>程式在<strong>執行的期間(Runtime)<strong>，需要依賴物件的實體，需要透過IoC Container注入給程式，使用的是</strong>反射原理(Reflection)</strong>-也就是透過程式碼的中間編譯檔，去讀取程式碼內部的資訊。</p>
+<p>下面這兩張圖則解釋了IoC如何利用IoC Container做到控制反轉的示意圖</p>
+<ul>
+<li><p>這個是沒有使用IoC框架時，高階模組主動的去建立所需要的低階模組 (資源)<br><img data-src="/images/posts/DI-IoC/IoC4.png"></img></p>
+</li>
+<li><p>這個則是使用了IoC框架，透過 <strong>「註冊 (Register)」</strong> 所需要的模組進IoC Container，藉由容器<strong>主動注入依賴實體</strong>進入高階模組<br><img data-src="/images/posts/DI-IoC/IoC3.png"></img></p>
+</li>
+</ul>
+<h3 id="簡單範例-1"><a href="#簡單範例-1" class="headerlink" title="簡單範例"></a>簡單範例</h3><p>這邊提供的簡單範例中，IoC Container用簡單的方式實作，實際上這些工作會交給第三方套件或框架完成，這邊使用簡單的方式實作給大家理解</p>
+<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">ILogger</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Log</span>(<span class="params"><span class="built_in">string</span> message</span>)</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ConsoleLogger</span> : <span class="title">ILogger</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Log</span>(<span class="params"><span class="built_in">string</span> message</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">$&quot;Log: <span class="subst">&#123;message&#125;</span>&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">UserService</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">readonly</span> ILogger _logger;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">UserService</span>(<span class="params">ILogger logger</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _logger = logger;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">CreateUser</span>(<span class="params"><span class="built_in">string</span> username, <span class="built_in">string</span> password</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _logger.Log(<span class="string">$&quot;Creating user <span class="subst">&#123;username&#125;</span>&quot;</span>);</span><br><span class="line">        <span class="comment">// Implementation to create a user</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="built_in">string</span>[] args</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        ILogger logger = <span class="keyword">new</span> ConsoleLogger();</span><br><span class="line">        UserService userService = <span class="keyword">new</span> UserService(logger);</span><br><span class="line">        userService.CreateUser(<span class="string">&quot;johndoe&quot;</span>, <span class="string">&quot;secret&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在這裡，<strong>Program就是我們的IoC Container</strong>，UserService依賴ILogger抽象，而透過註冊在Program中的資訊，讓<strong>Program主動將實際的依賴實體(ConsoleLogger物件)，注入到UserService的建構元中</strong>，也就是建構元注入，後面講到DI會再提到。<br><strong>之後如果有需要新的Logger，只需要創建並實作ILogger，再透過Program注入給UserService，UserService內部程式碼一行都不用更改。</strong></p>
+<h3 id="IoC與DIP的差別"><a href="#IoC與DIP的差別" class="headerlink" title="IoC與DIP的差別"></a>IoC與DIP的差別</h3><p>控制反轉(IoC)與依賴倒轉(DIP)兩者不相等！</p>
+<blockquote>
+<p>依賴倒轉，倒轉的是「依賴關係」<br>控制反轉，反轉的是程式依賴物件的「控制流程」</p>
+</blockquote>
+<h2 id="DI"><a href="#DI" class="headerlink" title="DI"></a>DI</h2><blockquote>
+<p>將依賴通過<strong>注入</strong>的方式提供給需要的模組，是 IoC 與 DIP 的具體表現<br>把被依賴物件注入被動接收物件中</p>
+</blockquote>
+<blockquote>
+<p><strong>程式或者開發者不必理會物件是如何產生、保持、至銷毀的生命週期</strong><br>在.NET的DI框架中，生命週期有三種，Transient、Scoped、Singleton，後面講解實作時會再談到。</p>
+</blockquote>
+<p>DI的背後思想主要是：</p>
+<blockquote>
+<ol>
+<li>為了保證DIP，一個類別應該只依賴抽象</li>
+<li>於是具體的實現必須透過某種方式”注入”到這個類別</li>
+<li>那麼依據IoC原則，最好透過第三方容器來做到這件事</li>
+</ol>
+</blockquote>
+<p>而DI又有主要的三種形式：</p>
+<blockquote>
+<ol>
+<li>建構元注入 (Constructor Injection)</li>
+<li>設值方法注入 (Setter Injection)</li>
+<li>介面注入 (Interface Injection)</li>
+</ol>
+</blockquote>
+<p>下面舉個簡單的範例</p>
+<h3 id="簡單範例-2"><a href="#簡單範例-2" class="headerlink" title="簡單範例"></a>簡單範例</h3><ol>
+<li>建構元注入 (Constructor Injection)<br>屬於最常見的注入方式，IoC Container將實體DI到呼叫者的建構元中，當呼叫者被new(建立)時，就會自動注入相關實體進入建構元。<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">ILogger</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Log</span>(<span class="params"><span class="built_in">string</span> message</span>)</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Logger</span> : <span class="title">ILogger</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Log</span>(<span class="params"><span class="built_in">string</span> message</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;Log: &quot;</span> + message);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">UserService</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">readonly</span> ILogger _logger;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">UserService</span>(<span class="params">ILogger logger</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _logger = logger;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">AddUser</span>(<span class="params"><span class="built_in">string</span> userName</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _logger.Log(<span class="string">&quot;User Added: &quot;</span> + userName);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+在這裡，當有人去new UserService時，IoC Container就會自動注入當初註冊的實體進入UserService的建構元。</li>
+</ol>
+<hr>
+<ol start="2">
+<li><p>設值方法注入 (Setter Injection)<br>透過setter method注入實體，他允許我們在呼叫者實體被創建後(instantiated)，才注入相關依賴實體。</p>
+<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">UserService</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> ILogger _logger;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> ILogger Logger</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">set</span> &#123; _logger = <span class="keyword">value</span>; &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">AddUser</span>(<span class="params"><span class="built_in">string</span> userName</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _logger.Log(<span class="string">&quot;User Added: &quot;</span> + userName);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>介面注入 (Interface Injection)<br>依賴透過Interface注入近實例中，這個Interface必須定義一個方法來注入依賴，再藉由實例去實作此介面，來實現具體的DI</p>
+<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">IUserService</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">AddUser</span>(<span class="params"><span class="built_in">string</span> userName</span>)</span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">SetLogger</span>(<span class="params">ILogger logger</span>)</span>; <span class="comment">// 定義注入依賴的方法</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">UserService</span> : <span class="title">IUserService</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> ILogger _logger;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">AddUser</span>(<span class="params"><span class="built_in">string</span> userName</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _logger.Log(<span class="string">&quot;User Added: &quot;</span> + userName);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">SetLogger</span>(<span class="params">ILogger logger</span>) <span class="comment">// 實際注入依賴</span></span></span><br><span class="line">    &#123;</span><br><span class="line">        _logger = logger;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="DIP、IoC與DI的結合-實際應用"><a href="#DIP、IoC與DI的結合-實際應用" class="headerlink" title="DIP、IoC與DI的結合 - 實際應用"></a>DIP、IoC與DI的結合 - 實際應用</h2><p>為大家總結一下上面講的各種名詞，用這張圖簡單概括<br>先讓大家釐清，DIP, IoC, DI, IoC Container之間的關係<br><img data-src="/images/posts/DI-IoC/sumup.png"></img></p>
+<h3 id="生活範例"><a href="#生活範例" class="headerlink" title="生活範例"></a>生活範例</h3><p>讓我們用在「餐廳煮東西」來舉例</p>
+<blockquote>
+<p>DIP: High-level modules should not depend on low-level modules. Both should depend on abstractions.</p>
+</blockquote>
+<p>在我們的例子中，<strong>廚師就是高階模組</strong>，而<strong>食材是低階模組</strong>，<ins>廚師不應該依賴於特定的食材</ins>，而是應該依賴於可以<ins>用來煮各種餐點的食材的抽象概念</ins>。</p>
+<hr>
+<blockquote>
+<p>Inversion of Control (IoC): The control of the flow of a program is inverted.</p>
+</blockquote>
+<p>在我們例子中，顧客點餐，廚師備餐，對於餐點準備的控制流程，<ins>顧客不控制備餐的流程，而是接受最終完成的餐點</ins>。</p>
+<hr>
+<blockquote>
+<p>IoC Container: A container that manages and controls the creation and life cycle of objects, and also injects their dependencies.</p>
+</blockquote>
+<p>在我們的例子中，可以把廚房想像成是IoC容器，他主管了各個食材、廚房用具的生命週期，並確保能夠提供廚師需要的食材或工具。</p>
+<hr>
+<blockquote>
+<p>Dependency Injection (DI): A technique for achieving IoC, where the objects are given their dependencies instead of creating them themselves.</p>
+</blockquote>
+<p>在我們的例子中，廚師是被提供食材的人（由廚房提供），而不是自己去尋找食材。</p>
+<h3 id="結合舉例"><a href="#結合舉例" class="headerlink" title="結合舉例"></a>結合舉例</h3><p>接下來我們接續上面的例子，透過程式的方式來講解上面的所有概念(DIP, IoC, IoC Container, DI)</p>
+<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">IChef</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Cook</span>()</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Chef</span> : <span class="title">IChef</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">readonly</span> IIngredients _ingredients;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Chef</span>(<span class="params">IIngredients ingredients</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _ingredients = ingredients;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Cook</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;Cooking with &quot;</span> + _ingredients.GetIngredients());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">IIngredients</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="built_in">string</span> <span class="title">GetIngredients</span>()</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Ingredients</span> : <span class="title">IIngredients</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="built_in">string</span> <span class="title">GetIngredients</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;Tomatoes, Onions, Garlic, and Spices&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title">Kitchen</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> IChef _chef;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> IIngredients _ingredients;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="title">Kitchen</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        _ingredients = <span class="keyword">new</span> Ingredients();</span><br><span class="line">        _chef = <span class="keyword">new</span> Chef(_ingredients);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> IChef <span class="title">GetChef</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> _chef;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="built_in">string</span>[] args</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">var</span> chef = Kitchen.GetChef();</span><br><span class="line">        chef.Cook();</span><br><span class="line">        Console.ReadLine();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>在上面的例子中，’IChef’介面和’Chef’類別遵守了<strong>DIP</strong>，因為他們依賴於抽象的’IIngredients’，而不是特定的食材實體。</li>
+<li>而’Chef’類別透過 <strong>「建構元注入」</strong> 的方式，給予’IIngredients’的依賴，而不是自己主動直接創建一個實體。</li>
+<li>‘Kitchen’ class則扮演IoC Container的角色，他管理了’Chef’和’Ingredients’的創建與生命週期，並注入’Ingredients’實體進入’Chef’的建構元中。</li>
+<li>而Main method可以當成是我們的Application，透過’Kitchen’獲取’Chef’實體，並呼叫Cook() method。</li>
+</ul>
+<h2 id="NET-C-實現"><a href="#NET-C-實現" class="headerlink" title=".NET C#實現"></a>.NET C#實現</h2><p>下面我將簡單使用.NET預設的DI框架(Microsoft.Extensions.DependencyInjection)來實現註冊依賴實體，與依賴注入。<br>其中還有一些進階的用法，像是把<ins>註冊相關的邏輯抽提出來寫成擴充方法</ins>，還有使用<ins>Attribute與反射來解決建構元注入太多的問題</ins>，但在這篇教學中先使用最簡單的方法實作，為的是讓各位先理解基本的概念與用法，進階用法會在之後的文章詳細介紹。</p>
+<h3 id="DI生命週期與註冊"><a href="#DI生命週期與註冊" class="headerlink" title="DI生命週期與註冊"></a>DI生命週期與註冊</h3><p>在.NET的預設DI框架中，註冊實體物件時可以指定其生命週期，分為三種（重要！）</p>
+<blockquote>
+<ol>
+<li>Transient (一次性) : <strong>每次注入時</strong>，都建立一個新的實體。</li>
+<li>Scoped (作用域) : <strong>每次的Request</strong>，都建立一個新的實體，同一個Request下，重複利用同一個實體 (這裡的Request 常指Http Request)。</li>
+<li>Singleton (單例) : 使用單例模式(Singleton Pattern)，<strong>從程式開始到結束</strong>，只建立一個實體，每次都重複利用同一個，直到程式被終止。</li>
+</ol>
+</blockquote>
+<h3 id="實作"><a href="#實作" class="headerlink" title="實作"></a>實作</h3><p>讓我們繼續以上面餐廳的例子實作<br>首先定義好相關的class與Interface，其中使用DIP我這邊就不特別提了</p>
+<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">IChef</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Cook</span>()</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Chef</span> : <span class="title">IChef</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">readonly</span> IIngredients _ingredients;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Chef</span>(<span class="params">IIngredients ingredients</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _ingredients = ingredients;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Cook</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;Cooking with &quot;</span> + _ingredients.GetIngredients());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">IIngredients</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="built_in">string</span> <span class="title">GetIngredients</span>()</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Ingredients</span> : <span class="title">IIngredients</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="built_in">string</span> <span class="title">GetIngredients</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;Tomatoes, Onions, Garlic, and Spices&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>接著就是我們主要註冊DI實體的地方，在Program.cs的檔案中，我這邊只寫出關鍵的部分。</p>
+<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="comment">// ...</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> Microsoft.Extensions.DependencyInjection;</span><br><span class="line"></span><br><span class="line">builder.Services.AddScoped&lt;IChef, Chef&gt;();</span><br><span class="line">builder.Services.AddScoped&lt;IIngredients, Ingredients&gt;();</span><br><span class="line"></span><br><span class="line"><span class="comment">// ...</span></span><br></pre></td></tr></table></figure>
+<p>解釋一下，這邊的builder.Services屬於IServiceCollection類，一但呼叫’AddScoped&lt;IIngredients, Ingredients&gt;()’方法，IoC Container就知道要建立一個Ingredients實體，去對應到程式中的三種DI形式之一，並注入實體讓IIngredients指向，在我們的例子中是「建構元注入」，因此，DI框架透過「反射原理」，知道Chef class中的建構元有IIngredients，透過之前註冊的資訊，IoC Continaer主動建立一個Ingredients實體，並注入到Chef class的建構元中。</p>
+<p><strong>整理一下上面的流程</strong></p>
+<blockquote>
+<ol>
+<li>利用builder.Services.AddScoped&lt;IIngredients, Ingredients&gt;()註冊依賴資訊，以及生命週期給IoC Container</li>
+<li>IoC Container利用反射原理，得知Chef class中的建構元有IIngredients，並與之前註冊的依賴資訊做對應</li>
+<li>IoC Container建立一個Ingredients實體，並注入進Chef class的建構元中，讓建構元的IIngredients指標指向</li>
+<li>在建構元中，透過建構元參數指向的Ingredients實體，賦值給Chef class的內部欄位_ingredients</li>
+</ol>
+</blockquote>
+<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>這篇文章我十分詳細的介紹了DIP, IoC, DI的概念與實作，這些概念對於軟體開發來說非常重要，但大家也要清楚理解<strong>這些思想要解決的問題，以及使用它們的好處，清楚自己在做什麼，而不是為設計而設計</strong>，其實OOP很多的pattern，都會有其好處以及trade off，因此了解為何使用就顯得非常重要。</p>
+<p>P.S. : </p>
+<ul>
+<li>我自己很喜歡使用指標和記憶體的概念來理解物件與其值，這對於理解Pass by value&#x2F;reference和Stack, Heap的記憶體分配非常有用，十分建議大家使用。</li>
+<li>Microsoft.Extensions.DependencyInjection這個namespace，利用IServiceProvider來管理我們程式中中所註冊的依賴，我們也可以透過注入這個IServiceProvider來取得實體，這在之後的<strong>DI進化的文章會有著關鍵作用。</strong></li>
+</ul>
+<style>
+img{
+    width: 70%; 
+    margin: 15px auto;
+}
+
+</style>]]></content>
+      <categories>
+        <category>OOP</category>
+        <category>SOLID</category>
+      </categories>
+      <tags>
+        <tag>OOP</tag>
+        <tag>SOLID</tag>
+        <tag>.NET C#</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>[NLP][ML] Adapters &amp; LoRA</title>
     <url>/posts/38266156/</url>
     <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>In this article, I will provide an introduction to adapters and LoRA, including their <strong>definitions, purposes, and functions.</strong> I will also explore their various <strong>applications</strong> and, lastly, delve into the distinctions that set them apart(the <strong>differences between them</strong>).</p>
@@ -324,7 +533,7 @@ style="width: 70%; margin: 15px auto;"></p>
 <li>During training, <strong>$W_0$ is frozen</strong> and does not receive gradient updates, while <strong>A and B contain trainable parameters</strong>.</li>
 <li>For $h&#x3D;W_0$, the modified forward pass yields:</li>
 </ul>
-<p>$$\begin{equation}<br>   h &#x3D; W_0x + \Delta{W} &#x3D; W_0x + BAx<br>\end{equation}$$</p>
+<p>$$\begin{equation}<br>   h &#x3D; W_0x + \Delta{W}x &#x3D; W_0x + BAx<br>\end{equation}$$</p>
 <ul>
 <li><p>A random <strong>Gaussian initialization is used for A</strong> and <strong>zero is used for B</strong>, so $\Delta{W}&#x3D;BA$ is zero at the beginning of training. (The method of initializing the weights)</p>
 </li>
@@ -502,9 +711,9 @@ style="width: 70%; margin: 15px auto;"></p>
         <category>Design Pattern</category>
       </categories>
       <tags>
-        <tag>design-pattern</tag>
         <tag>OOP</tag>
         <tag>.NET C#</tag>
+        <tag>design-pattern</tag>
       </tags>
   </entry>
   <entry>
@@ -718,215 +927,6 @@ style="width: 70%; margin: 15px auto;"></p>
       </tags>
   </entry>
   <entry>
-    <title>[.NET][C#][SOLID] - DI &amp; IoC (依賴注入與控制反轉) 全面講解</title>
-    <url>/posts/3588979794/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>IoC (Inversion of Control) 控制反轉，與OOP SOLID原則中的其中一種設計原則有關，也就是其中的DIP(Dependency Inversion Principle)，是OOP一個非常重要的程式設計思想，對於軟體開發來說十分重要，下面我將<strong>十分詳細的介紹何為DIP、IoC以及DI、為何要使用它們以及如何實作</strong>，相信大家閱讀完會對這個重要的思想了解的更加透徹。</p>
-<span id="more"></span>
-<h2 id="定義"><a href="#定義" class="headerlink" title="定義"></a>定義</h2><p>DIP以簡單的一句話說明就是</p>
-<blockquote>
-<p><strong>DIP - Dependency Inversion Principle (依賴倒轉原則)</strong></p>
-<ul>
-<li>一種原則、思想</li>
-<li>高層次的模組不應該依賴低層的模組，低層次的模組也不應該依賴高層次的模組<br><strong>兩者都應該依賴抽象</strong></li>
-</ul>
-</blockquote>
-<blockquote>
-<p><strong>IoC - Inversion of Control (控制反轉)</strong></p>
-<ul>
-<li>一種思想</li>
-<li>把對於某個物件的<strong>控制權</strong>移轉給<strong>第三方容器 (IoC Container)</strong></li>
-</ul>
-</blockquote>
-<blockquote>
-<p><strong>DI - Dependency Injection (依賴注入)</strong></p>
-<ul>
-<li>一種設計模式</li>
-<li>將依賴通過<strong>注入</strong>的方式提供給需要的模組，是 IoC 與 DIP 的具體表現</li>
-<li>把被依賴物件注入被動接收物件中</li>
-</ul>
-</blockquote>
-<p>DIP的定義非常重要，請大家牢記在心。<br>也就是說，程式應該依賴抽象，而不是實作的實體，這可以幫助我們對程式之間解耦，能夠被更好地維護。<br>DI是為了實現DIP和IoC而誕生的實現方式，因此大家在使用物件導向的技巧時，<strong>務必清楚自己在做什麼，和為何這樣做</strong>。</p>
-<h2 id="好處-x2F-為什麼要使用？"><a href="#好處-x2F-為什麼要使用？" class="headerlink" title="好處&#x2F;為什麼要使用？"></a>好處&#x2F;為什麼要使用？</h2><p>在針對各個名詞解釋與實作之前，我想先讓各位了解DIP以及IoC帶來的好處。</p>
-<blockquote>
-<ol>
-<li>可維護性 (maintainability)</li>
-<li>寬鬆耦合 (loose coupling)</li>
-</ol>
-</blockquote>
-<ul>
-<li>所謂的<strong>可維護性</strong>，就是你在日<strong>後需要修改或更新程式的時候，所花費的時間和精力</strong>，如果修改起來很費時費力，那我們就說他可維護性低。</li>
-<li>所謂的耦合度，就是物件與物件間的依賴、相關程度，如果在A類內去new B，B類內又去new C，彼此相互直接依賴，這樣類別之間相互呼叫令彼此有所牽連，便是耦合(coupling)，物件關係越緊密，耦合度越高，耦合度高的程式碼，一旦有任何變動，容易發生<strong>連鎖反應，牽一髮動全身</strong>，因此龐大的軟體更應該考慮<strong>低耦合高內聚</strong>的設計方式。</li>
-</ul>
-<p>而DIP, IoC和DI可以<strong>讓程式之間解耦</strong>，提高程式的可維護性。<br>基本上「可維護性」和「寬鬆耦合」就是我們學習DIP, IoC和DI的原因</p>
-<p>下面我會一一介紹DIP, IoC以及DI，最後附上實際應用，即最後組合出來的結果。</p>
-<h2 id="DIP"><a href="#DIP" class="headerlink" title="DIP"></a>DIP</h2><blockquote>
-<p><strong>DIP - Dependency Inversion Principle(依賴倒轉原則)</strong></p>
-<ul>
-<li>一種原則、思想</li>
-<li>高層次的模組不應該依賴低層的模組，低層次的模組也不應該依賴高層次的模組<br><strong>兩者都應該依賴抽象</strong></li>
-</ul>
-</blockquote>
-<p>什麼意思呢？讓我們看看下面的範例：</p>
-<h3 id="簡單範例"><a href="#簡單範例" class="headerlink" title="簡單範例"></a>簡單範例</h3><figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Database</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Connect</span>()</span> &#123; <span class="comment">/* database connect logic */</span> &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Disconnect</span>()</span> &#123; <span class="comment">/* database disconnect logic */</span> &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">SaveData</span>(<span class="params"><span class="built_in">string</span> data</span>)</span> &#123; <span class="comment">/* database save data logic */</span> &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">DataAccess</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> Database _database = <span class="keyword">new</span> Database();</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">SaveData</span>(<span class="params"><span class="built_in">string</span> data</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _database.Connect();</span><br><span class="line">        _database.SaveData(data);</span><br><span class="line">        _database.Disconnect();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>上面的程式碼違反了DIP，因為DataAccess<strong>直接依賴</strong>了’Database’類別，如果Database做了任何變動，DataAccess也需要跟著變動，所有有用到關於Database的class也都需要跟著變動，因此，’DataAccess’ class應該依賴抽象的Interface，而不是具體的實作。</p>
-<hr>
-<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">IDatabase</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Connect</span>()</span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Disconnect</span>()</span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">SaveData</span>(<span class="params"><span class="built_in">string</span> data</span>)</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">SqlServerDatabase</span> : <span class="title">IDatabase</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Connect</span>()</span> &#123; <span class="comment">/* SQL Server database connect logic */</span> &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Disconnect</span>()</span> &#123; <span class="comment">/* SQL Server database disconnect logic */</span> &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">SaveData</span>(<span class="params"><span class="built_in">string</span> data</span>)</span> &#123; <span class="comment">/* SQL Server database save data logic */</span> &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">OracleDatabase</span> : <span class="title">IDatabase</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Connect</span>()</span> &#123; <span class="comment">/* Oracle database connect logic */</span> &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Disconnect</span>()</span> &#123; <span class="comment">/* Oracle database disconnect logic */</span> &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">SaveData</span>(<span class="params"><span class="built_in">string</span> data</span>)</span> &#123; <span class="comment">/* Oracle database save data logic */</span> &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">DataAccess</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> IDatabase _database;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">DataAccess</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        _database = <span class="keyword">new</span> SqlServerDatabase();</span><br><span class="line">        <span class="comment">//_database = new OracleDatabase(); 在這裡抽換</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">SaveData</span>(<span class="params"><span class="built_in">string</span> data</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _database.Connect();</span><br><span class="line">        _database.SaveData(data);</span><br><span class="line">        _database.Disconnect();</span><br><span class="line">    &#125;</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
-<p>由上面的範例可知，我們定義了一個IDatabase，規範所有資料庫應該有的action，讓不同的實體Database去實作，而Program本身(DataAccess)，只需要去依賴、使用IDatabase，這樣一來就算未來我從SQL-Server DB遷移到Oracle DB，我<strong>只需要抽換IDatabase的實作實體</strong>(_database指標指向的實際記憶體)，DataAccess內部使用到IDatabase的程式碼一行都不用更改。</p>
-<p>但是，可以發現到，雖然透過依賴倒轉，可以改變為依賴抽象，<strong>但程式(DataAccess)本身還是需要new 出instance</strong>，也就是說程式本身(呼叫者)，對於依賴的控制流程具有主導權，這時就需要<strong>控制反轉</strong>。</p>
-<h2 id="IoC"><a href="#IoC" class="headerlink" title="IoC"></a>IoC</h2><blockquote>
-<ul>
-<li>把對於某個物件的<strong>控制權</strong>移轉給<strong>第三方容器 (IoC Container)</strong></li>
-</ul>
-</blockquote>
-<p>IoC 是一種設計原則或思想，它建議我們反轉物件導向設計中的各種控制，以達到各個類別間的解耦。這裡的 <strong>“控制”指的是除了一個類別本身的職責之外的其它所有工作</strong>，如整個軟體的流程控制，物件的依賴或創建等等。</p>
-<blockquote>
-<ul>
-<li>其實意思就是，一個類別本身除了<strong>本身的職責外，不應該擁有太多其他的工作 (SRP)</strong></li>
-<li>所以建議將這些對於物件的<strong>控制權(創建、實作實體抽換等等)<strong>，交給</strong>第三方容器</strong> (Framework or Library)。</li>
-<li>獲取資源的行為由”主動”轉為”被動”</li>
-<li><strong>程式(Application) 依賴物件的「控制流程 (Control Flow)」，由「主動」變成「被動」。就是「控制反轉」</strong></li>
-</ul>
-</blockquote>
-<p>下面這兩張圖簡單解釋了使用IoC後的依賴關係</p>
-<ul>
-<li><p>這是還沒使用IoC前，我們的應用程式直接依賴於實體類別<br><img data-src="/images/posts/DI-IoC/IoC1.png"></img></p>
-</li>
-<li><p>這個則是使用IoC後，透過IoC Container，將依賴實體注入至程式中，程式由原來主動的依賴變成被動的接收<br><img data-src="/images/posts/DI-IoC/IoC2.png"></img></p>
-</li>
-</ul>
-<p>好萊塢原則也很貼切的說明了控制反轉的情境</p>
-<blockquote>
-<p>Don’t call me, I’ll call you.</p>
-</blockquote>
-<h3 id="IoC-Container"><a href="#IoC-Container" class="headerlink" title="IoC Container"></a>IoC Container</h3><p>廣義上來說， IoC 容器，就是有進行「依賴注入」的地方，<br>你隨便寫一個類別，透過它將所需元件注入給高階模組，便可說是容器。<br>但現在所說的容器通常泛指那些<strong>強大的IoC框架所提供的容器</strong>。</p>
-<p>各位可以把IoC容器想像成是儲存一堆使用者<strong>註冊的依賴實體</strong>，IoC Container透過這些使用者註冊的資訊，知道程式需要這個instance並賦予給他，達到不需要修改高階模組的目的。<br>程式在<strong>執行的期間(Runtime)<strong>，需要依賴物件的實體，需要透過IoC Container注入給程式，使用的是</strong>反射原理(Reflection)</strong>-也就是透過程式碼的中間編譯檔，去讀取程式碼內部的資訊。</p>
-<p>下面這兩張圖則解釋了IoC如何利用IoC Container做到控制反轉的示意圖</p>
-<ul>
-<li><p>這個是沒有使用IoC框架時，高階模組主動的去建立所需要的低階模組 (資源)<br><img data-src="/images/posts/DI-IoC/IoC4.png"></img></p>
-</li>
-<li><p>這個則是使用了IoC框架，透過 <strong>「註冊 (Register)」</strong> 所需要的模組進IoC Container，藉由容器<strong>主動注入依賴實體</strong>進入高階模組<br><img data-src="/images/posts/DI-IoC/IoC3.png"></img></p>
-</li>
-</ul>
-<h3 id="簡單範例-1"><a href="#簡單範例-1" class="headerlink" title="簡單範例"></a>簡單範例</h3><p>這邊提供的簡單範例中，IoC Container用簡單的方式實作，實際上這些工作會交給第三方套件或框架完成，這邊使用簡單的方式實作給大家理解</p>
-<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">ILogger</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Log</span>(<span class="params"><span class="built_in">string</span> message</span>)</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ConsoleLogger</span> : <span class="title">ILogger</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Log</span>(<span class="params"><span class="built_in">string</span> message</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">$&quot;Log: <span class="subst">&#123;message&#125;</span>&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">UserService</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">readonly</span> ILogger _logger;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">UserService</span>(<span class="params">ILogger logger</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _logger = logger;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">CreateUser</span>(<span class="params"><span class="built_in">string</span> username, <span class="built_in">string</span> password</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _logger.Log(<span class="string">$&quot;Creating user <span class="subst">&#123;username&#125;</span>&quot;</span>);</span><br><span class="line">        <span class="comment">// Implementation to create a user</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="built_in">string</span>[] args</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        ILogger logger = <span class="keyword">new</span> ConsoleLogger();</span><br><span class="line">        UserService userService = <span class="keyword">new</span> UserService(logger);</span><br><span class="line">        userService.CreateUser(<span class="string">&quot;johndoe&quot;</span>, <span class="string">&quot;secret&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>在這裡，<strong>Program就是我們的IoC Container</strong>，UserService依賴ILogger抽象，而透過註冊在Program中的資訊，讓<strong>Program主動將實際的依賴實體(ConsoleLogger物件)，注入到UserService的建構元中</strong>，也就是建構元注入，後面講到DI會再提到。<br><strong>之後如果有需要新的Logger，只需要創建並實作ILogger，再透過Program注入給UserService，UserService內部程式碼一行都不用更改。</strong></p>
-<h3 id="IoC與DIP的差別"><a href="#IoC與DIP的差別" class="headerlink" title="IoC與DIP的差別"></a>IoC與DIP的差別</h3><p>控制反轉(IoC)與依賴倒轉(DIP)兩者不相等！</p>
-<blockquote>
-<p>依賴倒轉，倒轉的是「依賴關係」<br>控制反轉，反轉的是程式依賴物件的「控制流程」</p>
-</blockquote>
-<h2 id="DI"><a href="#DI" class="headerlink" title="DI"></a>DI</h2><blockquote>
-<p>將依賴通過<strong>注入</strong>的方式提供給需要的模組，是 IoC 與 DIP 的具體表現<br>把被依賴物件注入被動接收物件中</p>
-</blockquote>
-<blockquote>
-<p><strong>程式或者開發者不必理會物件是如何產生、保持、至銷毀的生命週期</strong><br>在.NET的DI框架中，生命週期有三種，Transient、Scoped、Singleton，後面講解實作時會再談到。</p>
-</blockquote>
-<p>DI的背後思想主要是：</p>
-<blockquote>
-<ol>
-<li>為了保證DIP，一個類別應該只依賴抽象</li>
-<li>於是具體的實現必須透過某種方式”注入”到這個類別</li>
-<li>那麼依據IoC原則，最好透過第三方容器來做到這件事</li>
-</ol>
-</blockquote>
-<p>而DI又有主要的三種形式：</p>
-<blockquote>
-<ol>
-<li>建構元注入 (Constructor Injection)</li>
-<li>設值方法注入 (Setter Injection)</li>
-<li>介面注入 (Interface Injection)</li>
-</ol>
-</blockquote>
-<p>下面舉個簡單的範例</p>
-<h3 id="簡單範例-2"><a href="#簡單範例-2" class="headerlink" title="簡單範例"></a>簡單範例</h3><ol>
-<li>建構元注入 (Constructor Injection)<br>屬於最常見的注入方式，IoC Container將實體DI到呼叫者的建構元中，當呼叫者被new(建立)時，就會自動注入相關實體進入建構元。<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">ILogger</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Log</span>(<span class="params"><span class="built_in">string</span> message</span>)</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Logger</span> : <span class="title">ILogger</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Log</span>(<span class="params"><span class="built_in">string</span> message</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;Log: &quot;</span> + message);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">UserService</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">readonly</span> ILogger _logger;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">UserService</span>(<span class="params">ILogger logger</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _logger = logger;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">AddUser</span>(<span class="params"><span class="built_in">string</span> userName</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _logger.Log(<span class="string">&quot;User Added: &quot;</span> + userName);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-在這裡，當有人去new UserService時，IoC Container就會自動注入當初註冊的實體進入UserService的建構元。</li>
-</ol>
-<hr>
-<ol start="2">
-<li><p>設值方法注入 (Setter Injection)<br>透過setter method注入實體，他允許我們在呼叫者實體被創建後(instantiated)，才注入相關依賴實體。</p>
-<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">UserService</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> ILogger _logger;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> ILogger Logger</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">set</span> &#123; _logger = <span class="keyword">value</span>; &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">AddUser</span>(<span class="params"><span class="built_in">string</span> userName</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _logger.Log(<span class="string">&quot;User Added: &quot;</span> + userName);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>介面注入 (Interface Injection)<br>依賴透過Interface注入近實例中，這個Interface必須定義一個方法來注入依賴，再藉由實例去實作此介面，來實現具體的DI</p>
-<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">IUserService</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">AddUser</span>(<span class="params"><span class="built_in">string</span> userName</span>)</span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">SetLogger</span>(<span class="params">ILogger logger</span>)</span>; <span class="comment">// 定義注入依賴的方法</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">UserService</span> : <span class="title">IUserService</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> ILogger _logger;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">AddUser</span>(<span class="params"><span class="built_in">string</span> userName</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _logger.Log(<span class="string">&quot;User Added: &quot;</span> + userName);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">SetLogger</span>(<span class="params">ILogger logger</span>) <span class="comment">// 實際注入依賴</span></span></span><br><span class="line">    &#123;</span><br><span class="line">        _logger = logger;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h2 id="DIP、IoC與DI的結合-實際應用"><a href="#DIP、IoC與DI的結合-實際應用" class="headerlink" title="DIP、IoC與DI的結合 - 實際應用"></a>DIP、IoC與DI的結合 - 實際應用</h2><p>為大家總結一下上面講的各種名詞，用這張圖簡單概括<br>先讓大家釐清，DIP, IoC, DI, IoC Container之間的關係<br><img data-src="/images/posts/DI-IoC/sumup.png"></img></p>
-<h3 id="生活範例"><a href="#生活範例" class="headerlink" title="生活範例"></a>生活範例</h3><p>讓我們用在「餐廳煮東西」來舉例</p>
-<blockquote>
-<p>DIP: High-level modules should not depend on low-level modules. Both should depend on abstractions.</p>
-</blockquote>
-<p>在我們的例子中，<strong>廚師就是高階模組</strong>，而<strong>食材是低階模組</strong>，<ins>廚師不應該依賴於特定的食材</ins>，而是應該依賴於可以<ins>用來煮各種餐點的食材的抽象概念</ins>。</p>
-<hr>
-<blockquote>
-<p>Inversion of Control (IoC): The control of the flow of a program is inverted.</p>
-</blockquote>
-<p>在我們例子中，顧客點餐，廚師備餐，對於餐點準備的控制流程，<ins>顧客不控制備餐的流程，而是接受最終完成的餐點</ins>。</p>
-<hr>
-<blockquote>
-<p>IoC Container: A container that manages and controls the creation and life cycle of objects, and also injects their dependencies.</p>
-</blockquote>
-<p>在我們的例子中，可以把廚房想像成是IoC容器，他主管了各個食材、廚房用具的生命週期，並確保能夠提供廚師需要的食材或工具。</p>
-<hr>
-<blockquote>
-<p>Dependency Injection (DI): A technique for achieving IoC, where the objects are given their dependencies instead of creating them themselves.</p>
-</blockquote>
-<p>在我們的例子中，廚師是被提供食材的人（由廚房提供），而不是自己去尋找食材。</p>
-<h3 id="結合舉例"><a href="#結合舉例" class="headerlink" title="結合舉例"></a>結合舉例</h3><p>接下來我們接續上面的例子，透過程式的方式來講解上面的所有概念(DIP, IoC, IoC Container, DI)</p>
-<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">IChef</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Cook</span>()</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Chef</span> : <span class="title">IChef</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">readonly</span> IIngredients _ingredients;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Chef</span>(<span class="params">IIngredients ingredients</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _ingredients = ingredients;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Cook</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;Cooking with &quot;</span> + _ingredients.GetIngredients());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">IIngredients</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="built_in">string</span> <span class="title">GetIngredients</span>()</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Ingredients</span> : <span class="title">IIngredients</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="built_in">string</span> <span class="title">GetIngredients</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;Tomatoes, Onions, Garlic, and Spices&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title">Kitchen</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> IChef _chef;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> IIngredients _ingredients;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="title">Kitchen</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        _ingredients = <span class="keyword">new</span> Ingredients();</span><br><span class="line">        _chef = <span class="keyword">new</span> Chef(_ingredients);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> IChef <span class="title">GetChef</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> _chef;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="built_in">string</span>[] args</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">var</span> chef = Kitchen.GetChef();</span><br><span class="line">        chef.Cook();</span><br><span class="line">        Console.ReadLine();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>在上面的例子中，’IChef’介面和’Chef’類別遵守了<strong>DIP</strong>，因為他們依賴於抽象的’IIngredients’，而不是特定的食材實體。</li>
-<li>而’Chef’類別透過 <strong>「建構元注入」</strong> 的方式，給予’IIngredients’的依賴，而不是自己主動直接創建一個實體。</li>
-<li>‘Kitchen’ class則扮演IoC Container的角色，他管理了’Chef’和’Ingredients’的創建與生命週期，並注入’Ingredients’實體進入’Chef’的建構元中。</li>
-<li>而Main method可以當成是我們的Application，透過’Kitchen’獲取’Chef’實體，並呼叫Cook() method。</li>
-</ul>
-<h2 id="NET-C-實現"><a href="#NET-C-實現" class="headerlink" title=".NET C#實現"></a>.NET C#實現</h2><p>下面我將簡單使用.NET預設的DI框架(Microsoft.Extensions.DependencyInjection)來實現註冊依賴實體，與依賴注入。<br>其中還有一些進階的用法，像是把<ins>註冊相關的邏輯抽提出來寫成擴充方法</ins>，還有使用<ins>Attribute與反射來解決建構元注入太多的問題</ins>，但在這篇教學中先使用最簡單的方法實作，為的是讓各位先理解基本的概念與用法，進階用法會在之後的文章詳細介紹。</p>
-<h3 id="DI生命週期與註冊"><a href="#DI生命週期與註冊" class="headerlink" title="DI生命週期與註冊"></a>DI生命週期與註冊</h3><p>在.NET的預設DI框架中，註冊實體物件時可以指定其生命週期，分為三種（重要！）</p>
-<blockquote>
-<ol>
-<li>Transient (一次性) : <strong>每次注入時</strong>，都建立一個新的實體。</li>
-<li>Scoped (作用域) : <strong>每次的Request</strong>，都建立一個新的實體，同一個Request下，重複利用同一個實體 (這裡的Request 常指Http Request)。</li>
-<li>Singleton (單例) : 使用單例模式(Singleton Pattern)，<strong>從程式開始到結束</strong>，只建立一個實體，每次都重複利用同一個，直到程式被終止。</li>
-</ol>
-</blockquote>
-<h3 id="實作"><a href="#實作" class="headerlink" title="實作"></a>實作</h3><p>讓我們繼續以上面餐廳的例子實作<br>首先定義好相關的class與Interface，其中使用DIP我這邊就不特別提了</p>
-<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">IChef</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Cook</span>()</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Chef</span> : <span class="title">IChef</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">readonly</span> IIngredients _ingredients;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Chef</span>(<span class="params">IIngredients ingredients</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _ingredients = ingredients;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Cook</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;Cooking with &quot;</span> + _ingredients.GetIngredients());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">IIngredients</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="built_in">string</span> <span class="title">GetIngredients</span>()</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Ingredients</span> : <span class="title">IIngredients</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="built_in">string</span> <span class="title">GetIngredients</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;Tomatoes, Onions, Garlic, and Spices&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<p>接著就是我們主要註冊DI實體的地方，在Program.cs的檔案中，我這邊只寫出關鍵的部分。</p>
-<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="comment">// ...</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> Microsoft.Extensions.DependencyInjection;</span><br><span class="line"></span><br><span class="line">builder.Services.AddScoped&lt;IChef, Chef&gt;();</span><br><span class="line">builder.Services.AddScoped&lt;IIngredients, Ingredients&gt;();</span><br><span class="line"></span><br><span class="line"><span class="comment">// ...</span></span><br></pre></td></tr></table></figure>
-<p>解釋一下，這邊的builder.Services屬於IServiceCollection類，一但呼叫’AddScoped&lt;IIngredients, Ingredients&gt;()’方法，IoC Container就知道要建立一個Ingredients實體，去對應到程式中的三種DI形式之一，並注入實體讓IIngredients指向，在我們的例子中是「建構元注入」，因此，DI框架透過「反射原理」，知道Chef class中的建構元有IIngredients，透過之前註冊的資訊，IoC Continaer主動建立一個Ingredients實體，並注入到Chef class的建構元中。</p>
-<p><strong>整理一下上面的流程</strong></p>
-<blockquote>
-<ol>
-<li>利用builder.Services.AddScoped&lt;IIngredients, Ingredients&gt;()註冊依賴資訊，以及生命週期給IoC Container</li>
-<li>IoC Container利用反射原理，得知Chef class中的建構元有IIngredients，並與之前註冊的依賴資訊做對應</li>
-<li>IoC Container建立一個Ingredients實體，並注入進Chef class的建構元中，讓建構元的IIngredients指標指向</li>
-<li>在建構元中，透過建構元參數指向的Ingredients實體，賦值給Chef class的內部欄位_ingredients</li>
-</ol>
-</blockquote>
-<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>這篇文章我十分詳細的介紹了DIP, IoC, DI的概念與實作，這些概念對於軟體開發來說非常重要，但大家也要清楚理解<strong>這些思想要解決的問題，以及使用它們的好處，清楚自己在做什麼，而不是為設計而設計</strong>，其實OOP很多的pattern，都會有其好處以及trade off，因此了解為何使用就顯得非常重要。</p>
-<p>P.S. : </p>
-<ul>
-<li>我自己很喜歡使用指標和記憶體的概念來理解物件與其值，這對於理解Pass by value&#x2F;reference和Stack, Heap的記憶體分配非常有用，十分建議大家使用。</li>
-<li>Microsoft.Extensions.DependencyInjection這個namespace，利用IServiceProvider來管理我們程式中中所註冊的依賴，我們也可以透過注入這個IServiceProvider來取得實體，這在之後的<strong>DI進化的文章會有著關鍵作用。</strong></li>
-</ul>
-<style>
-img{
-    width: 70%; 
-    margin: 15px auto;
-}
-
-</style>]]></content>
-      <categories>
-        <category>OOP</category>
-        <category>SOLID</category>
-      </categories>
-      <tags>
-        <tag>OOP</tag>
-        <tag>.NET C#</tag>
-        <tag>SOLID</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>[.NET][C#][Design Pattern] - Repository Pattern</title>
     <url>/posts/1822258245/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>這篇文章主要介紹何為Repository Pattern, 並如何在.NET C#中實作<br>並結合Unit Of Work Pattern, 讓程式對Repository解耦<br>這個design pattern可以說是踏入軟體架構的敲門磚<br>也算是非常常用的pattern, 實用性非常高</p>
@@ -996,9 +996,9 @@ style="width: 70%; margin: 15px auto;"><br>這裡主要是以書本和作者為�
         <category>Design Pattern</category>
       </categories>
       <tags>
-        <tag>design-pattern</tag>
         <tag>OOP</tag>
         <tag>.NET C#</tag>
+        <tag>design-pattern</tag>
       </tags>
   </entry>
 </search>
