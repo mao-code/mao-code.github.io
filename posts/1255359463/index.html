@@ -23,20 +23,40 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"mao-code.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Overview">
+    <meta name="description" content="OverviewIn this article, I will focus more on the computing detail in transformer.It will cover self-attention, prallel processing, multi-head self-attention, positional encoding and so on.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[NLP][ML] Transformer (3) - More conputational detail">
 <meta property="og:url" content="https://mao-code.github.io/posts/1255359463/index.html">
 <meta property="og:site_name" content="Mao 勛哥&#39;s blog">
-<meta property="og:description" content="Overview">
+<meta property="og:description" content="OverviewIn this article, I will focus more on the computing detail in transformer.It will cover self-attention, prallel processing, multi-head self-attention, positional encoding and so on.">
 <meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://mao-code.github.io/images/posts/NLP-series/transformer-2.png">
+<meta property="og:image" content="https://mao-code.github.io/images/posts/NLP-series/transformer-6.png">
+<meta property="og:image" content="https://mao-code.github.io/images/posts/NLP-series/transformer-7.png">
+<meta property="og:image" content="https://mao-code.github.io/images/posts/NLP-series/transformer-8.png">
+<meta property="og:image" content="https://mao-code.github.io/images/posts/NLP-series/transformer-9.png">
+<meta property="og:image" content="https://mao-code.github.io/images/posts/NLP-series/transformer-10.png">
+<meta property="og:image" content="https://mao-code.github.io/images/posts/NLP-series/transformer-11-1.png">
+<meta property="og:image" content="https://mao-code.github.io/images/posts/NLP-series/transformer-11-2.png">
+<meta property="og:image" content="https://mao-code.github.io/images/posts/NLP-series/transformer-12.png">
+<meta property="og:image" content="https://mao-code.github.io/images/posts/NLP-series/transformer-13.png">
+<meta property="og:image" content="https://mao-code.github.io/images/posts/NLP-series/transformer-14.png">
+<meta property="og:image" content="https://mao-code.github.io/images/posts/NLP-series/transformer-15.png">
+<meta property="og:image" content="https://mao-code.github.io/images/posts/NLP-series/transformer-16.png">
+<meta property="og:image" content="https://mao-code.github.io/images/posts/NLP-series/transformer-2.png">
+<meta property="og:image" content="https://mao-code.github.io/images/posts/NLP-series/transformer-17.png">
+<meta property="og:image" content="https://mao-code.github.io/images/posts/NLP-series/transformer-18.png">
+<meta property="og:image" content="https://mao-code.github.io/images/posts/NLP-series/transformer-18-2.png">
+<meta property="og:image" content="https://mao-code.github.io/images/posts/NLP-series/transformer-19.png">
+<meta property="og:image" content="https://mao-code.github.io/images/posts/NLP-series/transformer-20.png">
 <meta property="article:published_time" content="2023-08-14T14:45:42.000Z">
-<meta property="article:modified_time" content="2023-08-14T14:46:40.636Z">
+<meta property="article:modified_time" content="2023-08-15T06:48:59.624Z">
 <meta property="article:author" content="Mao 勛哥">
 <meta property="article:tag" content="ML">
 <meta property="article:tag" content="AI">
 <meta property="article:tag" content="NLP">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://mao-code.github.io/images/posts/NLP-series/transformer-2.png">
 
 
 <link rel="canonical" href="https://mao-code.github.io/posts/1255359463/">
@@ -46,7 +66,7 @@
 <script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://mao-code.github.io/posts/1255359463/","path":"posts/1255359463/","title":"[NLP][ML] Transformer (3) - More conputational detail"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>[NLP][ML] Transformer (3) - More conputational detail | Mao 勛哥's blog</title><meta name="robots" content="noindex">
+<title>[NLP][ML] Transformer (3) - More conputational detail | Mao 勛哥's blog</title>
   
 
 
@@ -151,7 +171,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Overview"><span class="nav-number">1.</span> <span class="nav-text">Overview</span></a></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">2.</span> <span class="nav-text"></span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Overview"><span class="nav-number">1.</span> <span class="nav-text">Overview</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Self-Attention"><span class="nav-number">2.</span> <span class="nav-text">Self-Attention</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Idea"><span class="nav-number">2.1.</span> <span class="nav-text">Idea</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Method"><span class="nav-number">2.2.</span> <span class="nav-text">Method</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Prallel-Processing"><span class="nav-number">3.</span> <span class="nav-text">Prallel Processing</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#What-self-attention-layer-do"><span class="nav-number">3.1.</span> <span class="nav-text">What self-attention layer do</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Multi-head-Self-attention"><span class="nav-number">4.</span> <span class="nav-text">Multi-head Self-attention</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Positional-Encoding"><span class="nav-number">5.</span> <span class="nav-text">Positional Encoding</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Seq2seq-with-Attention"><span class="nav-number">6.</span> <span class="nav-text">Seq2seq with Attention</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Look-into-the-detail-of-Transformer-Model"><span class="nav-number">7.</span> <span class="nav-text">Look into the detail of Transformer Model</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Encoder-Part"><span class="nav-number">7.1.</span> <span class="nav-text">Encoder Part:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Decoder-Part"><span class="nav-number">7.2.</span> <span class="nav-text">Decoder Part</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Attention-Visualization"><span class="nav-number">8.</span> <span class="nav-text">Attention Visualization</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#single-head"><span class="nav-number">8.1.</span> <span class="nav-text">single-head</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#multi-head"><span class="nav-number">8.2.</span> <span class="nav-text">multi-head</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Reference"><span class="nav-number">9.</span> <span class="nav-text">Reference</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -165,7 +185,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-count">13</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
@@ -264,9 +284,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">發表於</span>
-      
 
-      <time title="創建時間：2023-08-14 22:45:42 / 修改時間：22:46:40" itemprop="dateCreated datePublished" datetime="2023-08-14T22:45:42+08:00">2023-08-14</time>
+      <time title="創建時間：2023-08-14 22:45:42" itemprop="dateCreated datePublished" datetime="2023-08-14T22:45:42+08:00">2023-08-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新於</span>
+      <time title="修改時間：2023-08-15 14:48:59" itemprop="dateModified" datetime="2023-08-15T14:48:59+08:00">2023-08-15</time>
     </span>
 
   
@@ -283,14 +309,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">文章字數：</span>
-      <span>8</span>
+      <span>5.5k</span>
     </span>
     <span class="post-meta-item" title="所需閱讀時間">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">所需閱讀時間 &asymp;</span>
-      <span>1 分鐘</span>
+      <span>5 分鐘</span>
     </span>
 </div>
 
@@ -301,9 +327,127 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><span id="more"></span>
+        <h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>In this article, I will focus more on the computing detail in transformer.<br>It will cover self-attention, prallel processing, multi-head self-attention, positional encoding and so on.</p>
+<p><img data-src="/images/posts/NLP-series/transformer-2.png" style="width: 70%; margin: 15px auto;"></p>
+<span id="more"></span>
 
-<h1 id><a href="#" class="headerlink" title></a></h1><!-- flag of hidden posts -->
+<h1 id="Self-Attention"><a href="#Self-Attention" class="headerlink" title="Self-Attention"></a>Self-Attention</h1><h2 id="Idea"><a href="#Idea" class="headerlink" title="Idea"></a>Idea</h2><ul>
+<li>Input:<ul>
+<li>$x_1$, …, $x_4$, is a sequence.</li>
+<li>Each input first goes through an <strong>embedding(convert to vectors)</strong>, multiplied by a weight matrix to become $a_1$, …, $a_4$. These $a_1$, …, $a_4$ are then passed into a Self-attention layer</li>
+</ul>
+</li>
+<li>Each input is multiplied by different vectors:<ul>
+<li>$q$: query (to match against others)<ul>
+<li>$q_i$ &#x3D; $W^qa_i$</li>
+</ul>
+</li>
+<li>$k$: key (to be matched)<ul>
+<li>$k_i$ &#x3D; $W^ka_i$</li>
+</ul>
+</li>
+<li>$v$: value, information to be extracted<ul>
+<li>$v_i$ &#x3D; $W^va_i$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>The weights $W^q$, $W^k$, $W^v$ are <strong>learned, initially randomly initialized</strong>.</li>
+</ul>
+<h2 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h2><p><img data-src="/images/posts/NLP-series/transformer-6.png" style="width: 70%; margin: 15px auto;"></p>
+<p><img data-src="/images/posts/NLP-series/transformer-7.png" style="width: 70%; margin: 15px auto;"></p>
+<ol>
+<li>Take each query <strong>$q$ and perform attention on each key $k$</strong> (using two vectors to output a score(attention score)), which is essentially calculating the <strong>similarity of $q$ and $k$ (Similarity)</strong>.<ul>
+<li>Scaled Dot-Product: $S(q_1, k_1)$ yields $\alpha_{1,1}$, $S(q_1, k_2)$ yields $\alpha_{1,2}$, and so on.</li>
+<li>$\alpha_{1,i}$ &#x3D; $  q_1 \cdot k_i &#x2F; \sqrt{d}$ </li>
+<li>$d$ represents the <strong>dimensions of $q$ and $k$</strong>. This is a <strong>trick used by the authors in the paper</strong>.</li>
+</ul>
+</li>
+<li>Followed by <strong>Softmax normalization to normalize the values</strong>.</li>
+<li>Multiply the obtained $\hat{\alpha}$ with $v$ to get $b$, which is <strong>equivalent to a weighted sum</strong>.</li>
+<li>The obtained $b_1$ in the figure is the <strong>first vector (word or character)</strong> of the sought sequence.</li>
+<li>Each output vector incorporates information from the <strong>entire sequence</strong>.</li>
+</ol>
+<h1 id="Prallel-Processing"><a href="#Prallel-Processing" class="headerlink" title="Prallel Processing"></a>Prallel Processing</h1><p><img data-src="/images/posts/NLP-series/transformer-8.png" style="width: 70%; margin: 15px auto;"></p>
+<p>$$q_i &#x3D; W^qa_i$$<br>$$k_i &#x3D; W^ka_i$$<br>$$v_i &#x3D; W^va_i$$</p>
+<hr>
+<p><img data-src="/images/posts/NLP-series/transformer-9.png" style="width: 70%; margin: 15px auto;"></p>
+<ol>
+<li>Consider $a_1$, …, $a_4$ as a matrix $I$. Multiply it by the weight matrix $W^q$ to obtain $q_1$, …, $q_4$, forming another matrix $Q$. </li>
+<li>The same process applies to matrices $K$ and $V$, formed by multiplying $q$, $k$, and $a$ to get<br>$\alpha_{1,1}$ &#x3D; $k^T_1 \cdot q_1$,<br>$\alpha_{1,2}$ &#x3D; $k^T_2 \cdot q_1$,<br>…<br>Stack $k_1$, …, $k_4$ to form matrix $K$, then multiply it by $q_1$ stacked with $q_2$, …, $q_4$ to form matrix $Q$, resulting in a matrix $A$ composed of $\alpha$ values, which is the <strong>Attention</strong>. </li>
+<li>After applying Softmax, it becomes $\hat{A}$. In each time step, attention exists between each pair of vectors.</li>
+</ol>
+<hr>
+<p><img data-src="/images/posts/NLP-series/transformer-10.png" style="width: 70%; margin: 15px auto;"></p>
+<p>By calculating the <strong>weighted sum of $V$ and $\hat{A}$</strong>, you obtain $b$, and the matrix composed of b forms the <strong>output matrix $O$</strong>.”</p>
+<hr>
+<h2 id="What-self-attention-layer-do"><a href="#What-self-attention-layer-do" class="headerlink" title="What self-attention layer do"></a>What self-attention layer do</h2><p><img data-src="/images/posts/NLP-series/transformer-11-1.png" style="width: 70%; margin: 15px auto;"></p>
+<p><img data-src="/images/posts/NLP-series/transformer-11-2.png" style="width: 70%; margin: 15px auto;"></p>
+<p>By converting it into matrix multiplication, you can utilize the <strong>GPU to accelerate the computation</strong>.</p>
+<h1 id="Multi-head-Self-attention"><a href="#Multi-head-Self-attention" class="headerlink" title="Multi-head Self-attention"></a>Multi-head Self-attention</h1><p><img data-src="/images/posts/NLP-series/transformer-12.png" style="width: 70%; margin: 15px auto;"></p>
+<p>Taking 2 heads as an example:</p>
+<ul>
+<li>Having <strong>2 heads</strong> means splitting $q, k, v$ into two sets of $q, k, v$. And $q_{i,1}$ will only be multiplied with $k_{i,1}$ to obtain $\alpha_{i,1}$, finally calculating $b_{i,1}$. </li>
+<li>Afterward, concatenate $b_{i,1}, b_{i,2}$, apply a transformation, and perform dimension reduction to obtain the final $b_i$.</li>
+<li><strong>Each head focuses on different information</strong>; some only care about local information (neighborhood data), while others concentrate on global (long-term) information, and so on.</li>
+</ul>
+<h1 id="Positional-Encoding"><a href="#Positional-Encoding" class="headerlink" title="Positional Encoding"></a>Positional Encoding</h1><p><img data-src="/images/posts/NLP-series/transformer-13.png" style="width: 40%; margin: 15px auto;"></p>
+<p>In the attention mechanism, the order of words in the input sentence doesn’t matter.</p>
+<hr>
+<p><img data-src="/images/posts/NLP-series/transformer-14.png" style="width: 70%; margin: 15px auto;"></p>
+<ul>
+<li>Without positional information &#x3D;&gt; Therefore, there is a <strong>unique position vector $e_i$</strong>, which is not learned but set by humans.</li>
+<li>Other methods: <strong>Using one-hot encoding</strong> to represent $p_i$ as $x_i$ to denote its position.</li>
+</ul>
+<h1 id="Seq2seq-with-Attention"><a href="#Seq2seq-with-Attention" class="headerlink" title="Seq2seq with Attention"></a>Seq2seq with Attention</h1><p><img data-src="/images/posts/NLP-series/transformer-15.png" style="width: 70%; margin: 15px auto;"></p>
+<p>The original seq2seq model consists of two RNNs, an Encoder and a Decoder, and can be applied to machine translation.</p>
+<p>In the diagram above, the Encoder originally contained bidirectional RNNs, while the Decoder contained a unidirectional RNN. In the diagram below, <strong>both(bi&#x2F;unidirectional RNN) have been replaced with Self-Attention layers</strong>, achieving the same purpose and enabling <strong>parallel processing</strong>.</p>
+<p><img data-src="/images/posts/NLP-series/transformer-16.png" style="width: 70%; margin: 15px auto;"></p>
+<h1 id="Look-into-the-detail-of-Transformer-Model"><a href="#Look-into-the-detail-of-Transformer-Model" class="headerlink" title="Look into the detail of Transformer Model"></a>Look into the detail of Transformer Model</h1><p><img data-src="/images/posts/NLP-series/transformer-2.png" style="width: 70%; margin: 15px auto;"></p>
+<p>Using Chinese to English translation for example.</p>
+<h2 id="Encoder-Part"><a href="#Encoder-Part" class="headerlink" title="Encoder Part:"></a>Encoder Part:</h2><ol>
+<li>The input goes through <strong>Input Embedding</strong>, which considers <strong>positional information</strong> and is augmented with manually set Positional Encoding. It then enters the block that <strong>repeats N times</strong>.</li>
+</ol>
+<hr>
+<p><img data-src="/images/posts/NLP-series/transformer-17.png" style="width: 70%; margin: 15px auto;"></p>
+<ol start="2">
+<li>Multi-head:<br>Within the Encoder, it utilizes <strong>Multi-head Attention,</strong> which means there <strong>are multiple sets of $q$, $k$, $z$</strong>. Inside this mechanism, individual $qkv$ multiplications with $a$ are performed, leading to the calculation of $\alpha$, ultimately resulting in $b$.</li>
+</ol>
+<hr>
+<p><img data-src="/images/posts/NLP-series/transformer-18.png" style="width: 70%; margin: 15px auto;"></p>
+<ol start="3">
+<li>Add &amp; Norm (residual connection):<br>The <strong>input</strong> of Multi-head Attention, denoted as <strong>$a$</strong>, is added to the <strong>output $b$</strong>, resulting in <strong>$b^’$</strong>. Following this, <strong>Layer Normalization</strong> is performed. </li>
+<li>Once the calculations are completed, the result is passed through the <strong>forward propagation</strong>, followed by another <strong>Add &amp; Norm</strong> step.</li>
+</ol>
+<h2 id="Decoder-Part"><a href="#Decoder-Part" class="headerlink" title="Decoder Part"></a>Decoder Part</h2><p><img data-src="/images/posts/NLP-series/transformer-18-2.png" style="width: 70%; margin: 15px auto;"></p>
+<ol>
+<li><p>The Decoder <strong>input is the output from the previous time step</strong>. It goes through output embedding, considering positional information, and is augmented with manually set positional encoding. It then enters the block that repeats n times.</p>
+</li>
+<li><p><strong>Masked Multi-head Attention</strong>:<br>Attention is performed, where <strong>“Masked” indicates attending only to the already generated sequence</strong>. This is followed by an Add &amp; Norm layer.</p>
+</li>
+<li><p>Next, it undergoes a Multi-head Attention layer, attending to the <strong>previous output of the Encoder</strong>, followed by another Add &amp; Norm layer.</p>
+</li>
+<li><p>After the computations, it is passed to the <strong>Feed Forward forward propagation</strong>. Subsequently, <strong>Linear and Softmax</strong> operations are applied to generate the <strong>final output</strong>.</p>
+</li>
+</ol>
+<hr>
+<p>Last but not least, I provide the definition and purpose of encoder and decoder (in the previous article):</p>
+<blockquote>
+<p>Encoder-Decoder Architecture:<br>   The Transformer’s architecture is divided into an <strong>encoder and a decoder</strong>. The <strong>encoder processes the input sequence, capturing its contextual information</strong>, while the <strong>decoder generates the output sequence</strong>. This architecture is widely used in tasks like machine translation.</p>
+</blockquote>
+<h1 id="Attention-Visualization"><a href="#Attention-Visualization" class="headerlink" title="Attention Visualization"></a>Attention Visualization</h1><h2 id="single-head"><a href="#single-head" class="headerlink" title="single-head"></a>single-head</h2><p><img data-src="/images/posts/NLP-series/transformer-19.png" style="width: 70%; margin: 15px auto;"></p>
+<p>The relationships between words. The thicker the line, the more related of these words.</p>
+<h2 id="multi-head"><a href="#multi-head" class="headerlink" title="multi-head"></a>multi-head</h2><p><img data-src="/images/posts/NLP-series/transformer-20.png" style="width: 70%; margin: 15px auto;"></p>
+<p>The results obtained by pairing different sets of $q$ and $k$ vectors differ, indicating that different sets of $q$ and $k$ possess distinct information. This signifies that various sets of $q$ and $k$ hold different types of information, with some focusing on local aspects (below) and others on global aspects (above).</p>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MDM5Mg==">iThome - Day 27 Transformer (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MTI0Mg==">iThome - Day 28 Self-Attention (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9oYWNrbWQuaW8vQGFibGl1L0JrWG16REJtcg==">Transformer 李宏毅深度學習 (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9zcGVlY2guZWUubnR1LmVkdS50dy9+aHlsZWUvbWwvbWwyMDIxLWNvdXJzZS1kYXRhL3NlcTJzZXFfdjkucGRm">Transformer 李宏毅老師簡報<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQzJnZ2p0dXVXdnhySEhIaWFESDFkbFE=">李宏毅老師YouTube channel<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzE3MDYuMDM3NjI=">Attention is all you need (paper)<i class="fa fa-external-link-alt"></i></span></li>
+</ul>
+
 
     </div>
       
@@ -337,6 +481,15 @@
 
         
 
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/posts/2443192075/" rel="prev" title="[NLP][ML] Transformer (2) - Attention & Summary">
+                  <i class="fa fa-chevron-left"></i> [NLP][ML] Transformer (2) - Attention & Summary
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
     </footer>
   </article>
 </div>
@@ -372,14 +525,14 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">61k</span>
+    <span title="總字數">66k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>所需總閱讀時間 &asymp;</span>
-    <span title="所需總閱讀時間">55 分鐘</span>
+    <span title="所需總閱讀時間">1:01</span>
   </span>
 </div>
 <div class="busuanzi-count">
