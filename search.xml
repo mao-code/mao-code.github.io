@@ -1,84 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>大一大二參加畢業專案與程式比賽心得分享</title>
-    <url>/posts/534426495/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>小弟我在剛上大一沒多久，就私mail系上的程式老師，詢問是否可以參與更多的專案或研究，也一併把我的履歷給教授看。<br>沒想到教授大方地給我幾條路選，可以跟教授做研究，出去實習，或是和學長們做專案。<br>大一的我想要慢慢累積實力，於是決定先<strong>和學長們做專案</strong>，去比賽，累積經驗。<br>在歷經<strong>國科會專案、資訊競賽、畢業專案競賽等等</strong>後，我非常感謝教授和學長們給我這個機會，讓我可以擁有這些寶貴的經驗！<br>這篇文章主要著重在心得與分享，比較技術面的內容會在下篇文章詳細介紹。</p>
-<span id="more"></span>
-
-<h2 id="比賽心得與定位"><a href="#比賽心得與定位" class="headerlink" title="比賽心得與定位"></a>比賽心得與定位</h2><p>在這個Team內，我主要負責程式開發，包括<strong>前端、伺服器架設與管理和一部分的後端</strong>。<br>前前後後比了<strong>國科會大專生計畫、智慧創新、資訊服務和系上的畢業專案競賽</strong>，大約歷時1年多的時間，在這段時間裡，我們歷經<strong>發想、開發、維護、寫技術文件、UI&#x2F;UX設計到演算法研究等等</strong>，這也是我大一結束為止做過相對完整的專案。</p>
-<hr>
-<p>這是我們智慧創新和資訊服務競賽時的照片，我們直接把成品給評審滑XD，因為以我們的系統來說相對完整，也不怕噴Bug，雖然都只進到決賽，但我也更加知道這類型比賽的準備方向（基本上就是要對到當前流行的主題），<del>所以明年就準備AI吧</del><br><img data-src="/images/posts/CC-experience/智慧創新.JPG" 
-style="width: 70%; margin: 15px auto;"><br><img data-src="/images/posts/CC-experience/資服.jpg" 
-style="width: 70%; margin: 15px auto;"></p>
-<hr>
-<p>這是系上畢業專案的比賽，非常榮幸拿到第二名！當天還直接被其他資訊公司的主管遞名片，受寵若驚。<br><img data-src="/images/posts/CC-experience/畢業專案.JPG" 
-style="width: 70%; margin: 15px auto;"><br><img data-src="/images/posts/CC-experience/畢業專案得獎.JPG" 
-style="width: 70%; margin: 15px auto;"></p>
-<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>總的來說，這是我<strong>參與多人協作、實作一個完整專案的寶貴經驗</strong>，這也成為我日後開發其他專案的養分(Google學生開發者社群, 資訊競賽, etc.)，除了<strong>技術面的大幅成長，專案管理、人際互動、時間管理</strong>也都是成長的一部分，主動去尋找機會，得到的會比你想像的多，雖然有點辛苦就是了，但我覺得很值得！所以時間管理真的超重要，這也讓我在工程師這條路上變得更主動，相信只要努力，自己絕對值得更好的！</p>
-<p>比較技術面的內容會在之後的文章提及</p>
-]]></content>
-      <categories>
-        <category>心得</category>
-        <category>比賽</category>
-      </categories>
-      <tags>
-        <tag>心得</tag>
-        <tag>比賽</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>政大Google學生開發者社群-心得（第一學期）</title>
-    <url>/posts/277323671/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在剛上大二時，除了手邊和學長的專案，我也參加了政大的Google學生開發者社群。主要是希望透過提案，<strong>利用科技來解決問題</strong>，在這裡我也深深感受到Google的文化，那就是<strong>不會怕去嘗試、不怕去解決問題</strong>，我也認識在這個社群中的各個人才。在這個社群中，我除了擔任自己<strong>專案領導人</strong>的角色外，我也身兼<strong>後端技術長</strong>的任務，也是想要發揮我目前所學到的、最成熟的後端知識。除了技術面，如何管理一個團隊、一項專案，也是一門很大的課題。希望在未來可以繼續把自己的這項專案做到完善，解決真正的問題！</p>
-<span id="more"></span>
-
-<h2 id="定位與職位"><a href="#定位與職位" class="headerlink" title="定位與職位"></a>定位與職位</h2><ul>
-<li><h3 id="專案定位"><a href="#專案定位" class="headerlink" title="專案定位"></a>專案定位</h3></li>
-</ul>
-<p>我這次的提案叫做「政大通NCCUPass」，以<strong>政大校園生活為出發點</strong>，想要做一款能夠解決政大學生生活上不便的APP，透過專案組的討論與調查，帶來<strong>更便利、聰明與數位化</strong>的校園生活，讓校園內的需求能夠即時被滿足，也讓這款APP融入政大學生的生活中，成為政大校園內不可或缺的一部分，因此，「政大通-NCCUPass」的提案就此誕生</p>
-<hr>
-<p>下面是我們第一次期末發表的海報和照片<br>海報內呈現的是我們規劃、也正在開發的功能<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/poster.jpg" 
-style="width: 70%; margin: 15px auto;"></p>
-<hr>
-<p>這個是期末發表當天的攤位介紹照片<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img4.jpg" 
-style="width: 70%; margin: 15px auto;"></p>
-<p><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img2.JPG" 
-style="width: 70%; margin: 15px auto;"></p>
-<p><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img1.JPG" 
-style="width: 70%; margin: 15px auto;"></p>
-<hr>
-<ul>
-<li><h3 id="職位"><a href="#職位" class="headerlink" title="職位"></a>職位</h3></li>
-</ul>
-<p>在這個專案中，我擔任<strong>Project Leader(專案主持人)<strong>，與</strong>Backend Tech-Lead(後端技術長)<strong>的身份，帶領總共</strong>11人的團隊</strong>，在我們這個團隊中，主要分成四組，前端、後端、UI&#x2F;UX、文書，除了負責主要的後端技術，也要帶領後端的組員們提升實力、協調與規劃。以專案領導人的角度來看，除了需要<strong>規劃整個專案的進度與走向外，也要監督進度、協調各組、人際溝通等等</strong>，除了利用各種專案管理的工具外，也要撰寫各種文件與流程圖，老實說滿累的XD。但也是遇到一群願意跟隨我的隊友們，一起成長，真的非常得感謝他們🙏</p>
-<h2 id="技術"><a href="#技術" class="headerlink" title="技術"></a>技術</h2><ul>
-<li><h3 id="系統架構圖"><a href="#系統架構圖" class="headerlink" title="系統架構圖"></a>系統架構圖</h3></li>
-</ul>
-<p>下面是我們的系統架構圖，因為我是負責後端的部分，所以會著重畫後端的架構<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/NCCUPass-Structure.jpg" 
-style="width: 70%; margin: 15px auto;"></p>
-<ul>
-<li><h3 id="後端技術細節"><a href="#後端技術細節" class="headerlink" title="後端技術細節"></a>後端技術細節</h3></li>
-</ul>
-<p>根據上面的架構圖，我們的專案主要部署在Ubuntu的主機上，所有的服務利用Docker Compose統一建立，另外還有利用GitLab Runner做到自動化整合與自動化部屬的功能。後端程式是由.NET C#撰寫，這邊我使用的是Software Layer Architecture Pattern(軟體分層架構)，結合各種Design Pattern再加上自己的一些變形，資料庫是使用MongoDB的Replica-Set，也有使用Redis做快取，照片和一些公開的檔案主要放在我們的File Server上。其他技術細節我就列在下面，想看的人可以參考一下XD</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">- Software Layer Architecture pattern (多層)</span><br><span class="line">- Repository pattern</span><br><span class="line">- Unit of Work pattern</span><br><span class="line">- Mediator pattern &amp; CQRS</span><br><span class="line">- Password Salting and Encryption</span><br><span class="line">- JWT &amp; RBAC</span><br><span class="line">- Automapper</span><br><span class="line">- Exception handler抽離</span><br><span class="line">- Dapper &amp; EF combination</span><br><span class="line">- Redis (Cache)</span><br><span class="line">- Docker Networking</span><br><span class="line">- Docker Volume</span><br><span class="line">- Docker hub</span><br><span class="line">- appsettings 組態切換</span><br><span class="line">- MongoDB replica-set</span><br><span class="line">    - key-file (internal authentication)</span><br><span class="line">- Git 多人協作</span><br><span class="line">- Swagger / OpenAPI</span><br><span class="line">- Docker File Server</span><br><span class="line">- Docker mongoDB backup daily</span><br><span class="line">- Docker Compose</span><br><span class="line">- JMeter壓力測試</span><br><span class="line">- GC mode區別(Workstation, Server)</span><br><span class="line">- SignalR 雙向溝通</span><br><span class="line">- 測試 (K6 stress testing, )</span><br><span class="line">- 自動化發送Email (python selenium)</span><br><span class="line">- SSH with Linux server</span><br><span class="line">- FCM (to push device notification)</span><br><span class="line">- Linux server</span><br><span class="line">- Cloudflare domain and SSL/TLS</span><br><span class="line">- Nginx  (on server and on docker)</span><br><span class="line">    - redirect (setting files)</span><br><span class="line">    - ssl setting(certificate, key)</span><br><span class="line">- Shell script自動備份資料庫</span><br></pre></td></tr></table></figure>
-<p>之後也會一直新增，因為現在處於專案開發的初期。</p>
-<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>最後，這個專案雖然只是在發展初期，但我希望未來可以發展到我預想的樣子，也非常感謝一路願意跟隨我、幫助我的隊友們，單打獨鬥真的比不上團隊合作👍，也希望各位未來也可以繼續幫助我啦，現在打分享文可能還太早，但我就是想要趁學期末趕快記錄一下哈哈</p>
-]]></content>
-      <categories>
-        <category>心得</category>
-        <category>GDSC</category>
-        <category>NCCUPass</category>
-        <category>專案</category>
-        <category>side project</category>
-      </categories>
-      <tags>
-        <tag>GDSC</tag>
-        <tag>NCCUPass</tag>
-        <tag>專案</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>[.NET][C#][SOLID] - DI &amp; IoC (依賴注入與控制反轉) 全面講解</title>
     <url>/posts/3588979794/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>IoC (Inversion of Control) 控制反轉，與OOP SOLID原則中的其中一種設計原則有關，也就是其中的DIP(Dependency Inversion Principle)，是OOP一個非常重要的程式設計思想，對於軟體開發來說十分重要，下面我將<strong>十分詳細的介紹何為DIP、IoC以及DI、為何要使用它們以及如何實作</strong>，相信大家閱讀完會對這個重要的思想了解的更加透徹。</p>
@@ -288,6 +210,178 @@ img{
       </tags>
   </entry>
   <entry>
+    <title>大一大二參加畢業專案與程式比賽心得分享</title>
+    <url>/posts/534426495/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>小弟我在剛上大一沒多久，就私mail系上的程式老師，詢問是否可以參與更多的專案或研究，也一併把我的履歷給教授看。<br>沒想到教授大方地給我幾條路選，可以跟教授做研究，出去實習，或是和學長們做專案。<br>大一的我想要慢慢累積實力，於是決定先<strong>和學長們做專案</strong>，去比賽，累積經驗。<br>在歷經<strong>國科會專案、資訊競賽、畢業專案競賽等等</strong>後，我非常感謝教授和學長們給我這個機會，讓我可以擁有這些寶貴的經驗！<br>這篇文章主要著重在心得與分享，比較技術面的內容會在下篇文章詳細介紹。</p>
+<span id="more"></span>
+
+<h2 id="比賽心得與定位"><a href="#比賽心得與定位" class="headerlink" title="比賽心得與定位"></a>比賽心得與定位</h2><p>在這個Team內，我主要負責程式開發，包括<strong>前端、伺服器架設與管理和一部分的後端</strong>。<br>前前後後比了<strong>國科會大專生計畫、智慧創新、資訊服務和系上的畢業專案競賽</strong>，大約歷時1年多的時間，在這段時間裡，我們歷經<strong>發想、開發、維護、寫技術文件、UI&#x2F;UX設計到演算法研究等等</strong>，這也是我大一結束為止做過相對完整的專案。</p>
+<hr>
+<p>這是我們智慧創新和資訊服務競賽時的照片，我們直接把成品給評審滑XD，因為以我們的系統來說相對完整，也不怕噴Bug，雖然都只進到決賽，但我也更加知道這類型比賽的準備方向（基本上就是要對到當前流行的主題），<del>所以明年就準備AI吧</del><br><img data-src="/images/posts/CC-experience/智慧創新.JPG" 
+style="width: 70%; margin: 15px auto;"><br><img data-src="/images/posts/CC-experience/資服.jpg" 
+style="width: 70%; margin: 15px auto;"></p>
+<hr>
+<p>這是系上畢業專案的比賽，非常榮幸拿到第二名！當天還直接被其他資訊公司的主管遞名片，受寵若驚。<br><img data-src="/images/posts/CC-experience/畢業專案.JPG" 
+style="width: 70%; margin: 15px auto;"><br><img data-src="/images/posts/CC-experience/畢業專案得獎.JPG" 
+style="width: 70%; margin: 15px auto;"></p>
+<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>總的來說，這是我<strong>參與多人協作、實作一個完整專案的寶貴經驗</strong>，這也成為我日後開發其他專案的養分(Google學生開發者社群, 資訊競賽, etc.)，除了<strong>技術面的大幅成長，專案管理、人際互動、時間管理</strong>也都是成長的一部分，主動去尋找機會，得到的會比你想像的多，雖然有點辛苦就是了，但我覺得很值得！所以時間管理真的超重要，這也讓我在工程師這條路上變得更主動，相信只要努力，自己絕對值得更好的！</p>
+<p>比較技術面的內容會在之後的文章提及</p>
+]]></content>
+      <categories>
+        <category>心得</category>
+        <category>比賽</category>
+      </categories>
+      <tags>
+        <tag>心得</tag>
+        <tag>比賽</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[Git][Version Control] Git - Introduction</title>
+    <url>/posts/2571684277/</url>
+    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Here is the series of Git full tutorial. I will cover the important and advanced topics that you should know in git. By reading this series, you are able to know the basic(but important) concept of Git and the technique of using git. Hope you can gain a lot ! </p>
+<span id="more"></span>
+
+<h1 id="Series-Outline"><a href="#Series-Outline" class="headerlink" title="Series Outline"></a>Series Outline</h1><p>I will follow the outline below in this series.</p>
+<ul>
+<li>Introduction (this post)</li>
+<li>Setup</li>
+<li>Version Control &amp; Commands (Basics)</li>
+<li>Branching &amp; Merging</li>
+<li>Conflict</li>
+<li>Collaboration &amp; GitHub</li>
+<li>Advanced Topics</li>
+</ul>
+<hr>
+<h1 id="Introduction-to-Git-A-Distributed-Version-Control-System"><a href="#Introduction-to-Git-A-Distributed-Version-Control-System" class="headerlink" title="Introduction to Git: A Distributed Version Control System"></a>Introduction to Git: A Distributed Version Control System</h1><p>Git is a powerful and widely used distributed version control system designed to track changes in software development projects. It provides developers with the ability to collaborate on projects efficiently, manage codebases effectively, and easily track and revert changes.</p>
+<h2 id="Distributed-Version-Control-System"><a href="#Distributed-Version-Control-System" class="headerlink" title="Distributed Version Control System"></a>Distributed Version Control System</h2><p>In traditional software development, changes to a codebase were often managed through file-based systems or centralized version control systems. However, these approaches had limitations in terms of collaboration, scalability, and flexibility. Git emerged as a solution to these challenges, offering a distributed and decentralized approach to version control.</p>
+<p>The special point of Git is that it supports distributed version control and can also easily share codes among multiple nodes.</p>
+<p><img data-src="/images/posts/Git-Series/dist-ver-ctr.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<h2 id="Branch"><a href="#Branch" class="headerlink" title="Branch"></a>Branch</h2><p>Git manages code based on a tree structure, allowing branches to be created, merged, and deleted, and code versions to be saved at any time.</p>
+<p><img data-src="/images/posts/Git-Series/branch.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<h2 id="Snapshot"><a href="#Snapshot" class="headerlink" title="Snapshot"></a>Snapshot</h2><p>Git saves full snapshots of files, rather than differences, making it easy to restore all historical versions of files.</p>
+<p><img data-src="/images/posts/Git-Series/snapshot.jpeg" 
+style="width: 70%; margin: 15px auto;"></p>
+<hr>
+<h1 id="Recommended-Resources"><a href="#Recommended-Resources" class="headerlink" title="Recommended Resources"></a>Recommended Resources</h1><p><a href="%22https://www.youtube.com/watch?v=8JJ101D3knE%22">Mosh Git Tutorail</a></p>
+]]></content>
+      <categories>
+        <category>Git 系列文</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>Version Control</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[Git][Version Control] Git - Setup</title>
+    <url>/posts/731175240/</url>
+    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Setting up the environment of Git and some recommended GUI tools.</p>
+<span id="more"></span>
+
+<h1 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h1><ol>
+<li><p>Install Git with the link below: (with your OS)<br><a href="%22https://git-scm.com/%22">Git official website</a></p>
+</li>
+<li><p>Type this command to check if it is installed successfully:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h1 id="Configure-Git-type-commands-in-your-shell"><a href="#Configure-Git-type-commands-in-your-shell" class="headerlink" title="Configure Git (type commands in your shell)"></a>Configure Git (type commands in your shell)</h1><ol>
+<li><p>Set your user name by running the following command:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Set your email address by running the following command:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.email youremail@example.com</span><br></pre></td></tr></table></figure></li>
+<li><p>Set up SSH key (for remote repository access. e.g. GitHub)</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<ul>
+<li><p>Press Enter to accept the default file location and passphrase (or set your own if desired).<br>Once the key is generated, run the following command to add it to the SSH agent</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-add ~/.ssh/id_rsa</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Copy the public key to your clipboard by running the following command</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Add the copied public key to your Git hosting platform account (e.g., GitHub, GitLab) by following their documentation.</p>
+</li>
+<li><p>View your ssh keys</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd ~/.ssh</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ls</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Use a text editor or command-line tools (such as cat or less) to view the contents of the .pub files and see the public key information: <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat id_rsa.pub</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<ol start="4">
+<li>You can see your configuration by typing the following commands:<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --list</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h1 id="Recommended-GUI-tools"><a href="#Recommended-GUI-tools" class="headerlink" title="Recommended GUI tools"></a>Recommended GUI tools</h1><p>Both commands and GUI tools are important to Git manupulation.<br>And Here are some recommended Git GUI tools that you can use.</p>
+<ul>
+<li><a href="%22https://www.sourcetreeapp.com/%22">Sourcetree</a></li>
+<li><a href="%22https://www.gitkraken.com/%22">GitKraken</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Git 系列文</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>Version Control</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>政大Google學生開發者社群-心得（第一學期）</title>
+    <url>/posts/277323671/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在剛上大二時，除了手邊和學長的專案，我也參加了政大的Google學生開發者社群。主要是希望透過提案，<strong>利用科技來解決問題</strong>，在這裡我也深深感受到Google的文化，那就是<strong>不會怕去嘗試、不怕去解決問題</strong>，我也認識在這個社群中的各個人才。在這個社群中，我除了擔任自己<strong>專案領導人</strong>的角色外，我也身兼<strong>後端技術長</strong>的任務，也是想要發揮我目前所學到的、最成熟的後端知識。除了技術面，如何管理一個團隊、一項專案，也是一門很大的課題。希望在未來可以繼續把自己的這項專案做到完善，解決真正的問題！</p>
+<span id="more"></span>
+
+<h2 id="定位與職位"><a href="#定位與職位" class="headerlink" title="定位與職位"></a>定位與職位</h2><ul>
+<li><h3 id="專案定位"><a href="#專案定位" class="headerlink" title="專案定位"></a>專案定位</h3></li>
+</ul>
+<p>我這次的提案叫做「政大通NCCUPass」，以<strong>政大校園生活為出發點</strong>，想要做一款能夠解決政大學生生活上不便的APP，透過專案組的討論與調查，帶來<strong>更便利、聰明與數位化</strong>的校園生活，讓校園內的需求能夠即時被滿足，也讓這款APP融入政大學生的生活中，成為政大校園內不可或缺的一部分，因此，「政大通-NCCUPass」的提案就此誕生</p>
+<hr>
+<p>下面是我們第一次期末發表的海報和照片<br>海報內呈現的是我們規劃、也正在開發的功能<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/poster.jpg" 
+style="width: 70%; margin: 15px auto;"></p>
+<hr>
+<p>這個是期末發表當天的攤位介紹照片<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img4.jpg" 
+style="width: 70%; margin: 15px auto;"></p>
+<p><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img2.JPG" 
+style="width: 70%; margin: 15px auto;"></p>
+<p><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img1.JPG" 
+style="width: 70%; margin: 15px auto;"></p>
+<hr>
+<ul>
+<li><h3 id="職位"><a href="#職位" class="headerlink" title="職位"></a>職位</h3></li>
+</ul>
+<p>在這個專案中，我擔任<strong>Project Leader(專案主持人)<strong>，與</strong>Backend Tech-Lead(後端技術長)<strong>的身份，帶領總共</strong>11人的團隊</strong>，在我們這個團隊中，主要分成四組，前端、後端、UI&#x2F;UX、文書，除了負責主要的後端技術，也要帶領後端的組員們提升實力、協調與規劃。以專案領導人的角度來看，除了需要<strong>規劃整個專案的進度與走向外，也要監督進度、協調各組、人際溝通等等</strong>，除了利用各種專案管理的工具外，也要撰寫各種文件與流程圖，老實說滿累的XD。但也是遇到一群願意跟隨我的隊友們，一起成長，真的非常得感謝他們🙏</p>
+<h2 id="技術"><a href="#技術" class="headerlink" title="技術"></a>技術</h2><ul>
+<li><h3 id="系統架構圖"><a href="#系統架構圖" class="headerlink" title="系統架構圖"></a>系統架構圖</h3></li>
+</ul>
+<p>下面是我們的系統架構圖，因為我是負責後端的部分，所以會著重畫後端的架構<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/NCCUPass-Structure.jpg" 
+style="width: 70%; margin: 15px auto;"></p>
+<ul>
+<li><h3 id="後端技術細節"><a href="#後端技術細節" class="headerlink" title="後端技術細節"></a>後端技術細節</h3></li>
+</ul>
+<p>根據上面的架構圖，我們的專案主要部署在Ubuntu的主機上，所有的服務利用Docker Compose統一建立，另外還有利用GitLab Runner做到自動化整合與自動化部屬的功能。後端程式是由.NET C#撰寫，這邊我使用的是Software Layer Architecture Pattern(軟體分層架構)，結合各種Design Pattern再加上自己的一些變形，資料庫是使用MongoDB的Replica-Set，也有使用Redis做快取，照片和一些公開的檔案主要放在我們的File Server上。其他技術細節我就列在下面，想看的人可以參考一下XD</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">- Software Layer Architecture pattern (多層)</span><br><span class="line">- Repository pattern</span><br><span class="line">- Unit of Work pattern</span><br><span class="line">- Mediator pattern &amp; CQRS</span><br><span class="line">- Password Salting and Encryption</span><br><span class="line">- JWT &amp; RBAC</span><br><span class="line">- Automapper</span><br><span class="line">- Exception handler抽離</span><br><span class="line">- Dapper &amp; EF combination</span><br><span class="line">- Redis (Cache)</span><br><span class="line">- Docker Networking</span><br><span class="line">- Docker Volume</span><br><span class="line">- Docker hub</span><br><span class="line">- appsettings 組態切換</span><br><span class="line">- MongoDB replica-set</span><br><span class="line">    - key-file (internal authentication)</span><br><span class="line">- Git 多人協作</span><br><span class="line">- Swagger / OpenAPI</span><br><span class="line">- Docker File Server</span><br><span class="line">- Docker mongoDB backup daily</span><br><span class="line">- Docker Compose</span><br><span class="line">- JMeter壓力測試</span><br><span class="line">- GC mode區別(Workstation, Server)</span><br><span class="line">- SignalR 雙向溝通</span><br><span class="line">- 測試 (K6 stress testing, )</span><br><span class="line">- 自動化發送Email (python selenium)</span><br><span class="line">- SSH with Linux server</span><br><span class="line">- FCM (to push device notification)</span><br><span class="line">- Linux server</span><br><span class="line">- Cloudflare domain and SSL/TLS</span><br><span class="line">- Nginx  (on server and on docker)</span><br><span class="line">    - redirect (setting files)</span><br><span class="line">    - ssl setting(certificate, key)</span><br><span class="line">- Shell script自動備份資料庫</span><br></pre></td></tr></table></figure>
+<p>之後也會一直新增，因為現在處於專案開發的初期。</p>
+<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>最後，這個專案雖然只是在發展初期，但我希望未來可以發展到我預想的樣子，也非常感謝一路願意跟隨我、幫助我的隊友們，單打獨鬥真的比不上團隊合作👍，也希望各位未來也可以繼續幫助我啦，現在打分享文可能還太早，但我就是想要趁學期末趕快記錄一下哈哈</p>
+]]></content>
+      <categories>
+        <category>心得</category>
+        <category>GDSC</category>
+        <category>專案</category>
+        <category>NCCUPass</category>
+        <category>side project</category>
+      </categories>
+      <tags>
+        <tag>GDSC</tag>
+        <tag>NCCUPass</tag>
+        <tag>專案</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>CC-沈浸式線上逛街APP-系統與技術介紹</title>
     <url>/posts/2012237495/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>接續上一篇的文章，這篇文章會著重介紹這個系統<br>以下是我在YouTube上對這個專案的介紹與Demo：</p>
@@ -355,150 +449,6 @@ CC提供商城、買家、直播主追蹤的機制，加上個人化自己的動
         <tag>專案</tag>
         <tag>作品</tag>
         <tag>side project</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>[NLP][ML] Transformer (2) - Attention &amp; Summary</title>
-    <url>/posts/2443192075/</url>
-    <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>Self-attention allows the model to <strong>weigh the importance of different parts of an input sequence against each other</strong>, capturing <strong>relationships</strong> and dependencies between elements within the sequence. This is particularly powerful for tasks involving sequential or contextual information, such as language translation, text generation, and more.</p>
-<p>What Self-Attention wants to do is to replace what RNN can do<br>Its output&#x2F;input is the same as RNN, and its biggest advantages are:</p>
-<ul>
-<li>Can parallelize operations</li>
-<li>Each output vector has seen the entire input sequence. So there is no need to stack several layers like CNN.</li>
-</ul>
-<span id="more"></span>
-<h1 id="Difference-between-attention-and-self-attention"><a href="#Difference-between-attention-and-self-attention" class="headerlink" title="Difference between attention and self-attention"></a>Difference between attention and self-attention</h1><p><strong>attention is a broader concept of selectively focusing on information</strong>, while <strong>self-attention is a specific implementation of this concept</strong> where elements within the same sequence are attended to. Self-attention is a fundamental building block of the Transformer architecture, allowing it to capture relationships and dependencies within sequences effectively.</p>
-<h1 id="Attention-Machanism"><a href="#Attention-Machanism" class="headerlink" title="Attention (Machanism)"></a>Attention (Machanism)</h1><p>main idea:<br>use <strong>triples</strong><br>$$&lt;Q,K,V&gt;$$</p>
-<p>Represents the <strong>attention mechanism</strong>, expresses the <strong>similarity between Query and Key</strong>, and then assigns the value of <strong>Value according to the similarity</strong><br><strong>formula</strong>:<br>$$Attention(Q,K,V) &#x3D; softmax(\frac{QK^T}{\sqrt{d_k}})V$$</p>
-<h1 id="Self-Attention-Layer-Key"><a href="#Self-Attention-Layer-Key" class="headerlink" title="Self-Attention(Layer) (Key)"></a>Self-Attention(Layer) (<strong>Key</strong>)</h1><h2 id="Computing-process"><a href="#Computing-process" class="headerlink" title="Computing process"></a>Computing process</h2><ol>
-<li><p>Now we suppose to enter $a_1$~$a_4$ Four vector, and Self-Attention needs to output another row of $b$ vectors, and each $b$ is generated after considering all $a$</p>
-</li>
-<li><p>To figure out $b_1$, the first step is based on $a_1$, find <strong>other vectors related to $a_1$</strong> in this sequence. We use the “$\alpha$” to represent the <strong>similarity</strong> of each vector related to $a_1$.</p>
-</li>
-<li><p>It must be mentioned here that there are <strong>3 very important values in the Self-Attention mechanism</strong>: <strong>Query, Key, Value</strong>. Respectively represent <strong>the value used to match, the value to be matched, and the extracted information</strong>.</p>
-</li>
-<li><p>As for determining the <strong>correlation between two vectors</strong>, the most commonly used method is the <strong>dot product (here is scaled dot product)</strong>. It takes two vectors as input and multiplies them with two different matrices. The left vector is multiplied by the matrix $W^q$ (Query matrix), and the right vector is multiplied by the matrix $W^k$ (Key matrix). The values of $W^q$ and $W^k$ are both <strong>randomly initialized and obtained through training</strong>.</p>
-</li>
-<li><p>Next, after obtaining the two vectors, $q$, $k$, the <strong>dot product is computed between them</strong>. After summing up all the dot products, a <strong>scalar (magnitude)</strong> is obtained. This scalar is represented as $\alpha$, which we consider as <strong>the degree of correlation between the two vectors.</strong></p>
-</li>
-</ol>
-<p><img data-src="/images/posts/NLP-series/transformer-6.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>Next, we apply what was just introduced to Self-Attention.</p>
-<ol>
-<li>First, we calculate the relationships “$\alpha$” between $a_1$ and $a_2$, $a_3$, $a_4$ individually. <ul>
-<li>We multiply $a_1$ by $W^q$ to obtain $q_1$. </li>
-<li>Then, we multiply $a_2$, $a_3$, $a_4$ by $W^k$ respectively and compute the inner products to determine the relationship “$\alpha$” between $a_1$ and each vector. </li>
-<li>Applying the Softmax function yields $\alpha’$. </li>
-<li>With this $\alpha’$, we can extract crucial information from this sequence!</li>
-</ul>
-</li>
-</ol>
-<hr>
-<p><img data-src="/images/posts/NLP-series/transformer-7.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<ol start="2">
-<li>How to extract important information using $\alpha’$? The steps are as follows:</li>
-</ol>
-<ul>
-<li>First, multiply $a_1$ ~ $a_4$ by $W^v$ to obtain new vectors, denoted as $v_1$, $v_2$, $v_3$ and $v_4$, respectively (where $W^v$ is the Value matrix).</li>
-<li>Next, multiply each vector here, $v_1$ ~ $v_4$, by $\alpha’$, and then sum them to obtain the output $b_1$ (formula written in the top-right corner of the image).</li>
-</ul>
-<p>If a certain vector receives a higher score - for instance, if the relationship between $a_1$ and $a_2$ is strong, leading to a large value for $\alpha_{1,2}’$ - then after performing the weighted sum, the value of $b_1$ obtained could be very close to $v_2$.</p>
-<p>Now that we know how to compute $b_1$, it naturally follows that we can deduce $b_1$, $b_2$, $b_3$, and $b_4$ using the same method. With this, we have completed the explanation of the internal computation process of Self-Attention.</p>
-<p>Last but not least, the <strong>similarity matrix($\alpha_{i,j}$)</strong> is just the <strong>attention</strong> in the self-attention layer, i.e. importance or relevance to other elements in the same sequence..</p>
-<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><h2 id="Key-Components-of-Transformers"><a href="#Key-Components-of-Transformers" class="headerlink" title="Key Components of Transformers"></a>Key Components of Transformers</h2><ol>
-<li><p>Self-Attention Mechanism:<br>The core innovation of the Transformer is the self-attention mechanism, which allows the model to <strong>weigh the importance of different words in a sequence relative to each other</strong>. It computes attention scores for each word by considering its <strong>relationships with all other words</strong> in the same sequence. Self-attention enables capturing context and dependencies between words <strong>regardless of their distance</strong>.</p>
-</li>
-<li><p>Multi-Head Attention:<br>To capture different types of relationships, the Transformer employs multi-head attention. <strong>Multiple sets of self-attention mechanisms (attention heads) run in parallel</strong>, and their outputs are concatenated and linearly transformed to create a more comprehensive representation.</p>
-</li>
-<li><p>Positional Encodings:<br>Since the Transformer does not inherently understand <strong>the order of words in a sequence</strong> (unlike recurrent networks(RNN)), positional encodings are added to the input embeddings. These encodings provide <strong>information about the positions of words within the sequence</strong>.</p>
-</li>
-<li><p>Encoder-Decoder Architecture:<br>The Transformer’s architecture is divided into an <strong>encoder and a decoder</strong>. The <strong>encoder processes the input sequence, capturing its contextual information</strong>, while the <strong>decoder generates the output sequence</strong>. This architecture is widely used in tasks like machine translation.</p>
-</li>
-<li><p>Residual Connections and Layer Normalization:<br>To address the <strong>vanishing gradient problem</strong>, residual connections (skip connections) are used around each sub-layer in the encoder and decoder. Layer normalization is also applied to <strong>stabilize</strong> the training process.</p>
-</li>
-<li><p>Position-wise Feed-Forward Networks:<br>After the self-attention layers, each position’s representation is passed through a position-wise feed-forward neural network, which <strong>adds non-linearity to the model</strong>.</p>
-</li>
-<li><p>Scaled Dot-Product Attention:<br>The self-attention mechanism involves computing the <strong>dot product of query, key, and value vectors</strong>. To control the scale of the dot products and <strong>avoid large gradients</strong>, the dot products are divided by the <strong>square root of the dimension of the key vectors</strong>.</p>
-</li>
-<li><p>Masked Self-Attention in Decoding:<br>During decoding, the self-attention mechanism is modified to <strong>ensure that each position can only attend to previous positions</strong>. This masking <strong>prevents the model from “cheating” by looking ahead in the output sequence</strong>.</p>
-</li>
-<li><p>Transformer Variants:<br> The original Transformer model has inspired various extensions and improvements, such as BERT, GPT, and more. BERT focuses on pretraining language representations, while GPT is designed for autoregressive text generation.</p>
-</li>
-</ol>
-<p>The Transformer architecture has become the foundation for many state-of-the-art NLP models due to its ability to <strong>capture context, parallelize computations, and handle long-range dependencies effectively</strong>. It has led to significant advancements in machine translation, text generation, sentiment analysis, and various other NLP tasks.</p>
-<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MDM5Mg==">iThome - Day 27 Transformer (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MTI0Mg==">iThome - Day 28 Self-Attention (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9oYWNrbWQuaW8vQGFibGl1L0JrWG16REJtcg==">Transformer 李宏毅深度學習 (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9zcGVlY2guZWUubnR1LmVkdS50dy9+aHlsZWUvbWwvbWwyMDIxLWNvdXJzZS1kYXRhL3NlcTJzZXFfdjkucGRm">Transformer 李宏毅老師簡報<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQzJnZ2p0dXVXdnhySEhIaWFESDFkbFE=">李宏毅老師YouTube channel<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzE3MDYuMDM3NjI=">Attention is all you need (paper)<i class="fa fa-external-link-alt"></i></span></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>ML</tag>
-        <tag>AI</tag>
-        <tag>NLP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>[NLP][ML] Transformer (1) - Structure</title>
-    <url>/posts/4283617483/</url>
-    <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>The Transformer is a <strong>deep learning architecture</strong> introduced in the paper “Attention Is All You Need” by Vaswani et al. in 2017. It revolutionized the field of natural language processing (NLP) and brought significant advancements in various <strong>sequence-to-sequence tasks</strong>. The Transformer architecture, thanks to its <strong>attention mechanisms</strong>, enables efficient processing of sequential data while <strong>capturing long-range dependencies</strong>.</p>
-<hr>
-<p>Transformer is a <strong>Seq2Seq(Sequence to Sequence) model</strong>. It uses <strong>Encoder-Decoder structure</strong><br>Below is a simple diagram：</p>
-<p><img data-src="/images/posts/NLP-series/transformer-1.gif" 
-style="width: 70%; margin: 15px auto;"><br>Source: <span class="exturl" data-url="aHR0cHM6Ly9haS5nb29nbGVibG9nLmNvbS8yMDE2LzA5L2EtbmV1cmFsLW5ldHdvcmstZm9yLW1hY2hpbmUuaHRtbA==">https://ai.googleblog.com/2016/09/a-neural-network-for-machine.html<i class="fa fa-external-link-alt"></i></span></p>
-<p>The line between Encoder and Decoder represents the “Attention”.<br>The thicker the line, the more the Decoder below pays more attention to some Chinese characters above when generating an English word.</p>
-<span id="more"></span>
-<p>In the below sections, I will introduce the structure of transformer and the attention machanism.<br>For the <strong>detail explaination of key components in transformer and the details of attention</strong>, you can refer to the <a href="https://mao-code.github.io/posts/2443192075/#more">next article</a>.</p>
-<h1 id="Structure"><a href="#Structure" class="headerlink" title="Structure"></a>Structure</h1><p>Below is the strucutre of Transformer.</p>
-<p><img data-src="/images/posts/NLP-series/transformer-2.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>The part <strong>on the left in the figure is the Encoder, and the part on the right is the Decoder</strong>.<br>You can notice that the structures of the left and right sides are actually quite similar.<br>The Encoder and Decoder usually contain many blocks with the same layer structure, and each layer will have <strong>multi-head attention and Feed Forward Network</strong>.</p>
-<h2 id="Encoder"><a href="#Encoder" class="headerlink" title="Encoder"></a>Encoder</h2><p><img data-src="/images/posts/NLP-series/transformer-3.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>We just mentioned that the Encoder will be divided into many blocks.<br>We will <strong>first convert a whole row of input sequence data into a whole row of vectors</strong>, and then the processing steps of each block are as follows:</p>
-<ol>
-<li>Firstly, after considering all the input information of the input vector through self-attention, output a row of vectors. (I will introduce how self-attention considers all input information later)</li>
-<li>Throw this row of vectors into the feed forward network of Fully Connected (FC).</li>
-<li>The final output vector is the output of the block.</li>
-</ol>
-<hr>
-<p>However, what the block does in the original Transformer is more complicated, the details are as follows:<br><img data-src="/images/posts/NLP-series/transformer-4.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>Suppose we will follow the method just now, and the <strong>output result of the input vector after self-attention is called a</strong>. we also need to <strong>pull the original input (we first call it b )</strong> and add it to a to get a+b . Such a network architecture is called a <strong>residual connection</strong>.</p>
-<p>After that, we will do <strong>layer normalization</strong> on the result of a+b. It will calculate the average $m$(mean) and standard deviation $\sigma$(standard deviation) of the input vector, and then calculate it according to the formula: divide the input minus the mean $m$ by the standard deviation $\sigma$. It’s here that we really get <strong>the input of the FC network</strong>.</p>
-<p>The <strong>FC network also has a residual architecture</strong>, so we will add the input of the FC network to its output to get a new output, and then do layer normalization again. This is the <strong>real output of a block in Transformer Encoder</strong>.</p>
-<hr>
-<p>Now, let’s look back at the structure diagram of Encoder:</p>
-<p><img data-src="/images/posts/NLP-series/transformer-5.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>First, in the place of input, <strong>convert the input into a vector through Embedding</strong>, and then add <strong>positional encoding</strong> (because if only self-attention is used, there will be a lack of unknown information)</p>
-<p>Next we see <strong>Multi-Head Attention</strong>, which is <strong>the block of self-attention and Add&amp;Norm means residual plus layer normalization</strong>.</p>
-<p>Finally, <strong>doing Add&amp;Norm again after FC’s feed forward network is the output of the whole block</strong>, and this block will be <strong>repeated n times</strong>.</p>
-<h2 id="Decoder"><a href="#Decoder" class="headerlink" title="Decoder"></a>Decoder</h2><p>Then let us look at the Decoder:</p>
-<p><img data-src="/images/posts/NLP-series/transformer-2.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p><strong>Input the sequence obtained at the previous time</strong>, and then perform the same Embedding and Positional Encoding and then enter the block repeated N times.<br>The difference is that there is an extra <strong>“Masked” (note the red box) in the Multi-Head Attention</strong> when we first entered. What does it mean?</p>
-<p>Masked means that the model will <strong>only pay attention to the part it has already generated</strong>, and <strong>will not accidentally pay attention to the words generated in the future</strong>. Since the output of the Decoder is generated <strong>one by one</strong>, it has no way to consider its future input. It seems a bit vague to say this, and I will make it clearer when I talk about self-attention in the next article.</p>
-<p>After repeating the block N times, after the <strong>Linear Layer and Softmax</strong>, we can get the output <strong>probability distribution</strong> we want, and we can sample according to this distribution or take the value with the highest probability to get the output sequence.</p>
-<p>There is still one of the most critical self-attention mechanisms that has not been explained in detail. Let’s introduce how it pays attention to all input sequences and performs parallel processing in the next article!</p>
-<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MDM5Mg==">iThome - Day 27 Transformer (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MTI0Mg==">iThome - Day 28 Self-Attention (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9oYWNrbWQuaW8vQGFibGl1L0JrWG16REJtcg==">Transformer 李宏毅深度學習 (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9zcGVlY2guZWUubnR1LmVkdS50dy9+aHlsZWUvbWwvbWwyMDIxLWNvdXJzZS1kYXRhL3NlcTJzZXFfdjkucGRm">Transformer 李宏毅老師簡報<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQzJnZ2p0dXVXdnhySEhIaWFESDFkbFE=">李宏毅老師YouTube channel<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzE3MDYuMDM3NjI=">Attention is all you need (paper)<i class="fa fa-external-link-alt"></i></span></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>ML</tag>
-        <tag>AI</tag>
-        <tag>NLP</tag>
       </tags>
   </entry>
   <entry>
@@ -665,6 +615,92 @@ style="width: 70%; margin: 15px auto;"></p>
       </tags>
   </entry>
   <entry>
+    <title>[NLP][ML] Transformer (2) - Attention &amp; Summary</title>
+    <url>/posts/2443192075/</url>
+    <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>Self-attention allows the model to <strong>weigh the importance of different parts of an input sequence against each other</strong>, capturing <strong>relationships</strong> and dependencies between elements within the sequence. This is particularly powerful for tasks involving sequential or contextual information, such as language translation, text generation, and more.</p>
+<p>What Self-Attention wants to do is to replace what RNN can do<br>Its output&#x2F;input is the same as RNN, and its biggest advantages are:</p>
+<ul>
+<li>Can parallelize operations</li>
+<li>Each output vector has seen the entire input sequence. So there is no need to stack several layers like CNN.</li>
+</ul>
+<span id="more"></span>
+<h1 id="Difference-between-attention-and-self-attention"><a href="#Difference-between-attention-and-self-attention" class="headerlink" title="Difference between attention and self-attention"></a>Difference between attention and self-attention</h1><p><strong>attention is a broader concept of selectively focusing on information</strong>, while <strong>self-attention is a specific implementation of this concept</strong> where elements within the same sequence are attended to. Self-attention is a fundamental building block of the Transformer architecture, allowing it to capture relationships and dependencies within sequences effectively.</p>
+<h1 id="Attention-Machanism"><a href="#Attention-Machanism" class="headerlink" title="Attention (Machanism)"></a>Attention (Machanism)</h1><p>main idea:<br>use <strong>triples</strong><br>$$&lt;Q,K,V&gt;$$</p>
+<p>Represents the <strong>attention mechanism</strong>, expresses the <strong>similarity between Query and Key</strong>, and then assigns the value of <strong>Value according to the similarity</strong><br><strong>formula</strong>:<br>$$Attention(Q,K,V) &#x3D; softmax(\frac{QK^T}{\sqrt{d_k}})V$$</p>
+<h1 id="Self-Attention-Layer-Key"><a href="#Self-Attention-Layer-Key" class="headerlink" title="Self-Attention(Layer) (Key)"></a>Self-Attention(Layer) (<strong>Key</strong>)</h1><h2 id="Computing-process"><a href="#Computing-process" class="headerlink" title="Computing process"></a>Computing process</h2><ol>
+<li><p>Now we suppose to enter $a_1$~$a_4$ Four vector, and Self-Attention needs to output another row of $b$ vectors, and each $b$ is generated after considering all $a$</p>
+</li>
+<li><p>To figure out $b_1$, the first step is based on $a_1$, find <strong>other vectors related to $a_1$</strong> in this sequence. We use the “$\alpha$” to represent the <strong>similarity</strong> of each vector related to $a_1$.</p>
+</li>
+<li><p>It must be mentioned here that there are <strong>3 very important values in the Self-Attention mechanism</strong>: <strong>Query, Key, Value</strong>. Respectively represent <strong>the value used to match, the value to be matched, and the extracted information</strong>.</p>
+</li>
+<li><p>As for determining the <strong>correlation between two vectors</strong>, the most commonly used method is the <strong>dot product (here is scaled dot product)</strong>. It takes two vectors as input and multiplies them with two different matrices. The left vector is multiplied by the matrix $W^q$ (Query matrix), and the right vector is multiplied by the matrix $W^k$ (Key matrix). The values of $W^q$ and $W^k$ are both <strong>randomly initialized and obtained through training</strong>.</p>
+</li>
+<li><p>Next, after obtaining the two vectors, $q$, $k$, the <strong>dot product is computed between them</strong>. After summing up all the dot products, a <strong>scalar (magnitude)</strong> is obtained. This scalar is represented as $\alpha$, which we consider as <strong>the degree of correlation between the two vectors.</strong></p>
+</li>
+</ol>
+<p><img data-src="/images/posts/NLP-series/transformer-6.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>Next, we apply what was just introduced to Self-Attention.</p>
+<ol>
+<li>First, we calculate the relationships “$\alpha$” between $a_1$ and $a_2$, $a_3$, $a_4$ individually. <ul>
+<li>We multiply $a_1$ by $W^q$ to obtain $q_1$. </li>
+<li>Then, we multiply $a_2$, $a_3$, $a_4$ by $W^k$ respectively and compute the inner products to determine the relationship “$\alpha$” between $a_1$ and each vector. </li>
+<li>Applying the Softmax function yields $\alpha’$. </li>
+<li>With this $\alpha’$, we can extract crucial information from this sequence!</li>
+</ul>
+</li>
+</ol>
+<hr>
+<p><img data-src="/images/posts/NLP-series/transformer-7.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<ol start="2">
+<li>How to extract important information using $\alpha’$? The steps are as follows:</li>
+</ol>
+<ul>
+<li>First, multiply $a_1$ ~ $a_4$ by $W^v$ to obtain new vectors, denoted as $v_1$, $v_2$, $v_3$ and $v_4$, respectively (where $W^v$ is the Value matrix).</li>
+<li>Next, multiply each vector here, $v_1$ ~ $v_4$, by $\alpha’$, and then sum them to obtain the output $b_1$ (formula written in the top-right corner of the image).</li>
+</ul>
+<p>If a certain vector receives a higher score - for instance, if the relationship between $a_1$ and $a_2$ is strong, leading to a large value for $\alpha_{1,2}’$ - then after performing the weighted sum, the value of $b_1$ obtained could be very close to $v_2$.</p>
+<p>Now that we know how to compute $b_1$, it naturally follows that we can deduce $b_1$, $b_2$, $b_3$, and $b_4$ using the same method. With this, we have completed the explanation of the internal computation process of Self-Attention.</p>
+<p>Last but not least, the <strong>similarity matrix($\alpha_{i,j}$)</strong> is just the <strong>attention</strong> in the self-attention layer, i.e. importance or relevance to other elements in the same sequence..</p>
+<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><h2 id="Key-Components-of-Transformers"><a href="#Key-Components-of-Transformers" class="headerlink" title="Key Components of Transformers"></a>Key Components of Transformers</h2><ol>
+<li><p>Self-Attention Mechanism:<br>The core innovation of the Transformer is the self-attention mechanism, which allows the model to <strong>weigh the importance of different words in a sequence relative to each other</strong>. It computes attention scores for each word by considering its <strong>relationships with all other words</strong> in the same sequence. Self-attention enables capturing context and dependencies between words <strong>regardless of their distance</strong>.</p>
+</li>
+<li><p>Multi-Head Attention:<br>To capture different types of relationships, the Transformer employs multi-head attention. <strong>Multiple sets of self-attention mechanisms (attention heads) run in parallel</strong>, and their outputs are concatenated and linearly transformed to create a more comprehensive representation.</p>
+</li>
+<li><p>Positional Encodings:<br>Since the Transformer does not inherently understand <strong>the order of words in a sequence</strong> (unlike recurrent networks(RNN)), positional encodings are added to the input embeddings. These encodings provide <strong>information about the positions of words within the sequence</strong>.</p>
+</li>
+<li><p>Encoder-Decoder Architecture:<br>The Transformer’s architecture is divided into an <strong>encoder and a decoder</strong>. The <strong>encoder processes the input sequence, capturing its contextual information</strong>, while the <strong>decoder generates the output sequence</strong>. This architecture is widely used in tasks like machine translation.</p>
+</li>
+<li><p>Residual Connections and Layer Normalization:<br>To address the <strong>vanishing gradient problem</strong>, residual connections (skip connections) are used around each sub-layer in the encoder and decoder. Layer normalization is also applied to <strong>stabilize</strong> the training process.</p>
+</li>
+<li><p>Position-wise Feed-Forward Networks:<br>After the self-attention layers, each position’s representation is passed through a position-wise feed-forward neural network, which <strong>adds non-linearity to the model</strong>.</p>
+</li>
+<li><p>Scaled Dot-Product Attention:<br>The self-attention mechanism involves computing the <strong>dot product of query, key, and value vectors</strong>. To control the scale of the dot products and <strong>avoid large gradients</strong>, the dot products are divided by the <strong>square root of the dimension of the key vectors</strong>.</p>
+</li>
+<li><p>Masked Self-Attention in Decoding:<br>During decoding, the self-attention mechanism is modified to <strong>ensure that each position can only attend to previous positions</strong>. This masking <strong>prevents the model from “cheating” by looking ahead in the output sequence</strong>.</p>
+</li>
+<li><p>Transformer Variants:<br> The original Transformer model has inspired various extensions and improvements, such as BERT, GPT, and more. BERT focuses on pretraining language representations, while GPT is designed for autoregressive text generation.</p>
+</li>
+</ol>
+<p>The Transformer architecture has become the foundation for many state-of-the-art NLP models due to its ability to <strong>capture context, parallelize computations, and handle long-range dependencies effectively</strong>. It has led to significant advancements in machine translation, text generation, sentiment analysis, and various other NLP tasks.</p>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MDM5Mg==">iThome - Day 27 Transformer (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MTI0Mg==">iThome - Day 28 Self-Attention (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9oYWNrbWQuaW8vQGFibGl1L0JrWG16REJtcg==">Transformer 李宏毅深度學習 (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9zcGVlY2guZWUubnR1LmVkdS50dy9+aHlsZWUvbWwvbWwyMDIxLWNvdXJzZS1kYXRhL3NlcTJzZXFfdjkucGRm">Transformer 李宏毅老師簡報<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQzJnZ2p0dXVXdnhySEhIaWFESDFkbFE=">李宏毅老師YouTube channel<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzE3MDYuMDM3NjI=">Attention is all you need (paper)<i class="fa fa-external-link-alt"></i></span></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>ML</tag>
+        <tag>AI</tag>
+        <tag>NLP</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>[NLP][ML] Transformer (3) - More conputational detail</title>
     <url>/posts/1255359463/</url>
     <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>In this article, I will focus more on the computing detail in transformer.<br>It will cover self-attention, prallel processing, multi-head self-attention, positional encoding and so on.</p>
@@ -772,7 +808,7 @@ style="width: 70%; margin: 15px auto;"></p>
 <p><img data-src="/images/posts/NLP-series/transformer-18.png" 
 style="width: 70%; margin: 15px auto;"></p>
 <ol start="3">
-<li>Add &amp; Norm (residual connection):<br>The <strong>input</strong> of Multi-head Attention, denoted as <strong>$a$</strong>, is added to the <strong>output $b$</strong>, resulting in <strong>$b^’$</strong>. Following this, <strong>Layer Normalization</strong> is performed. </li>
+<li>Add &amp; Norm (residual connection):<br>The <strong>input</strong> of Multi-head Attention, denoted as <strong>$a$</strong>, is added to the <strong>output $b$</strong>, resulting in <strong>$b^\prime$</strong>. Following this, <strong>Layer Normalization</strong> is performed. </li>
 <li>Once the calculations are completed, the result is passed through the <strong>forward propagation</strong>, followed by another <strong>Add &amp; Norm</strong> step.</li>
 </ol>
 <h2 id="Decoder-Part"><a href="#Decoder-Part" class="headerlink" title="Decoder Part"></a>Decoder Part</h2><p><img data-src="/images/posts/NLP-series/transformer-18-2.png" 
@@ -814,199 +850,61 @@ style="width: 70%; margin: 15px auto;"></p>
       </tags>
   </entry>
   <entry>
-    <title>[Git][Version Control] Git - Setup</title>
-    <url>/posts/731175240/</url>
-    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Setting up the environment of Git and some recommended GUI tools.</p>
-<span id="more"></span>
-
-<h1 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h1><ol>
-<li><p>Install Git with the link below: (with your OS)<br><a href="%22https://git-scm.com/%22">Git official website</a></p>
-</li>
-<li><p>Type this command to check if it is installed successfully:</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h1 id="Configure-Git-type-commands-in-your-shell"><a href="#Configure-Git-type-commands-in-your-shell" class="headerlink" title="Configure Git (type commands in your shell)"></a>Configure Git (type commands in your shell)</h1><ol>
-<li><p>Set your user name by running the following command:</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Set your email address by running the following command:</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.email youremail@example.com</span><br></pre></td></tr></table></figure></li>
-<li><p>Set up SSH key (for remote repository access. e.g. GitHub)</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure></li>
-</ol>
-<ul>
-<li><p>Press Enter to accept the default file location and passphrase (or set your own if desired).<br>Once the key is generated, run the following command to add it to the SSH agent</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-add ~/.ssh/id_rsa</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Copy the public key to your clipboard by running the following command</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Add the copied public key to your Git hosting platform account (e.g., GitHub, GitLab) by following their documentation.</p>
-</li>
-<li><p>View your ssh keys</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd ~/.ssh</span><br></pre></td></tr></table></figure>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ls</span><br></pre></td></tr></table></figure>
-<ul>
-<li>Use a text editor or command-line tools (such as cat or less) to view the contents of the .pub files and see the public key information: <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat id_rsa.pub</span><br></pre></td></tr></table></figure></li>
-</ul>
-</li>
-</ul>
-<ol start="4">
-<li>You can see your configuration by typing the following commands:<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --list</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h1 id="Recommended-GUI-tools"><a href="#Recommended-GUI-tools" class="headerlink" title="Recommended GUI tools"></a>Recommended GUI tools</h1><p>Both commands and GUI tools are important to Git manupulation.<br>And Here are some recommended Git GUI tools that you can use.</p>
-<ul>
-<li><a href="%22https://www.sourcetreeapp.com/%22">Sourcetree</a></li>
-<li><a href="%22https://www.gitkraken.com/%22">GitKraken</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>Git 系列文</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-        <tag>Version Control</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>[Git][Version Control] Git - Introduction</title>
-    <url>/posts/2571684277/</url>
-    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Here is the series of Git full tutorial. I will cover the important and advanced topics that you should know in git. By reading this series, you are able to know the basic(but important) concept of Git and the technique of using git. Hope you can gain a lot ! </p>
-<span id="more"></span>
-
-<h1 id="Series-Outline"><a href="#Series-Outline" class="headerlink" title="Series Outline"></a>Series Outline</h1><p>I will follow the outline below in this series.</p>
-<ul>
-<li>Introduction (this post)</li>
-<li>Setup</li>
-<li>Version Control &amp; Commands (Basics)</li>
-<li>Branching &amp; Merging</li>
-<li>Conflict</li>
-<li>Collaboration &amp; GitHub</li>
-<li>Advanced Topics</li>
-</ul>
+    <title>[NLP][ML] Transformer (1) - Structure</title>
+    <url>/posts/4283617483/</url>
+    <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>The Transformer is a <strong>deep learning architecture</strong> introduced in the paper “Attention Is All You Need” by Vaswani et al. in 2017. It revolutionized the field of natural language processing (NLP) and brought significant advancements in various <strong>sequence-to-sequence tasks</strong>. The Transformer architecture, thanks to its <strong>attention mechanisms</strong>, enables efficient processing of sequential data while <strong>capturing long-range dependencies</strong>.</p>
 <hr>
-<h1 id="Introduction-to-Git-A-Distributed-Version-Control-System"><a href="#Introduction-to-Git-A-Distributed-Version-Control-System" class="headerlink" title="Introduction to Git: A Distributed Version Control System"></a>Introduction to Git: A Distributed Version Control System</h1><p>Git is a powerful and widely used distributed version control system designed to track changes in software development projects. It provides developers with the ability to collaborate on projects efficiently, manage codebases effectively, and easily track and revert changes.</p>
-<h2 id="Distributed-Version-Control-System"><a href="#Distributed-Version-Control-System" class="headerlink" title="Distributed Version Control System"></a>Distributed Version Control System</h2><p>In traditional software development, changes to a codebase were often managed through file-based systems or centralized version control systems. However, these approaches had limitations in terms of collaboration, scalability, and flexibility. Git emerged as a solution to these challenges, offering a distributed and decentralized approach to version control.</p>
-<p>The special point of Git is that it supports distributed version control and can also easily share codes among multiple nodes.</p>
-<p><img data-src="/images/posts/Git-Series/dist-ver-ctr.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<h2 id="Branch"><a href="#Branch" class="headerlink" title="Branch"></a>Branch</h2><p>Git manages code based on a tree structure, allowing branches to be created, merged, and deleted, and code versions to be saved at any time.</p>
-<p><img data-src="/images/posts/Git-Series/branch.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<h2 id="Snapshot"><a href="#Snapshot" class="headerlink" title="Snapshot"></a>Snapshot</h2><p>Git saves full snapshots of files, rather than differences, making it easy to restore all historical versions of files.</p>
-<p><img data-src="/images/posts/Git-Series/snapshot.jpeg" 
-style="width: 70%; margin: 15px auto;"></p>
-<hr>
-<h1 id="Recommended-Resources"><a href="#Recommended-Resources" class="headerlink" title="Recommended Resources"></a>Recommended Resources</h1><p><a href="%22https://www.youtube.com/watch?v=8JJ101D3knE%22">Mosh Git Tutorail</a></p>
-]]></content>
-      <categories>
-        <category>Git 系列文</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-        <tag>Version Control</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>[.NET][C#][Design Pattern] - Mediator Pattern (中介者模式)</title>
-    <url>/posts/4072203086/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>這篇文章主要介紹Mediator Pattern的定義以及簡單實作<br>介紹使用Mediator Pattern的好處, 並提供範例<br>在軟體架構中Mediator Patternc和Repository Pattern都是常用的pattern<br>通常.NET專案中會結合MediatR套件使用</p>
+<p>Transformer is a <strong>Seq2Seq(Sequence to Sequence) model</strong>. It uses <strong>Encoder-Decoder structure</strong><br>Below is a simple diagram：</p>
+<p><img data-src="/images/posts/NLP-series/transformer-1.gif" 
+style="width: 70%; margin: 15px auto;"><br>Source: <span class="exturl" data-url="aHR0cHM6Ly9haS5nb29nbGVibG9nLmNvbS8yMDE2LzA5L2EtbmV1cmFsLW5ldHdvcmstZm9yLW1hY2hpbmUuaHRtbA==">https://ai.googleblog.com/2016/09/a-neural-network-for-machine.html<i class="fa fa-external-link-alt"></i></span></p>
+<p>The line between Encoder and Decoder represents the “Attention”.<br>The thicker the line, the more the Decoder below pays more attention to some Chinese characters above when generating an English word.</p>
 <span id="more"></span>
-
-<h2 id="定義-Mediator-Pattern"><a href="#定義-Mediator-Pattern" class="headerlink" title="定義 Mediator Pattern"></a>定義 Mediator Pattern</h2><p>IG貼文：<br><span class="exturl" data-url="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9wL0NpTTBlenBMTzR6Lz9obD16aC10dw==">Mediator Pattern Post<i class="fa fa-external-link-alt"></i></span></p>
-<p>GitHub連結：<br><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL21hby1jb2RlL01lZGlhdG9yUGF0dGVybg==">Sample Code<i class="fa fa-external-link-alt"></i></span></p>
-<p>定義一個 Mediator 物件用來<strong>封裝一組物件的互動方式</strong>。<br>Mediator 藉由<strong>避免物件間相互直接的引用</strong>，從而降低它們之間的耦合程度，並且可以讓我們獨立地改變這些物件間的互動方式。</p>
-<p>下面這兩張圖片可以簡單體現出Mediator Pattern在做的事</p>
-<p><strong>沒有使用中介者, 物件彼此之間直接調用</strong><br><img data-src="/images/posts/mediator-pattern/origin-graph.png" 
+<p>In the below sections, I will introduce the structure of transformer and the attention machanism.<br>For the <strong>detail explaination of key components in transformer and the details of attention</strong>, you can refer to the <a href="https://mao-code.github.io/posts/2443192075/#more">next article</a>.</p>
+<h1 id="Structure"><a href="#Structure" class="headerlink" title="Structure"></a>Structure</h1><p>Below is the strucutre of Transformer.</p>
+<p><img data-src="/images/posts/NLP-series/transformer-2.png" 
 style="width: 70%; margin: 15px auto;"></p>
-<p><strong>使用中介者, 物件只依賴mediator來與其他物件溝通</strong><br><img data-src="/images/posts/mediator-pattern/star.png" 
+<p>The part <strong>on the left in the figure is the Encoder, and the part on the right is the Decoder</strong>.<br>You can notice that the structures of the left and right sides are actually quite similar.<br>The Encoder and Decoder usually contain many blocks with the same layer structure, and each layer will have <strong>multi-head attention and Feed Forward Network</strong>.</p>
+<h2 id="Encoder"><a href="#Encoder" class="headerlink" title="Encoder"></a>Encoder</h2><p><img data-src="/images/posts/NLP-series/transformer-3.png" 
 style="width: 70%; margin: 15px auto;"></p>
-<p>可以發現使用中介者模式之後, 物件都只依賴中介者來傳遞訊息, 而不是直接調用彼此, 以此達到解耦。<br>在現實生活中, 也有類似的例子, 例如開發團隊, 客服團隊, 產銷團隊, 設計團隊, 若彼此之間沒有一個統一的溝通,<br>那麼各個團隊耦合度很高, 開發跟設計要協調介面, 又要和產銷和客服討論如何贏得如何符合市場, 這樣一來分工太複雜。<br>所以需要一個<strong>產品經理來當中介者</strong>, 協助溝通各個團隊。</p>
-<h2 id="優缺點"><a href="#優缺點" class="headerlink" title="優缺點"></a>優缺點</h2><ul>
-<li>優點 <ol>
-<li>降低物件之間的耦合性，讓物件容易重複使用。</li>
-<li>物件之間一對多的關聯性變成一對一，提高系統靈活性，也讓整體容易維護及擴充。</li>
+<p>We just mentioned that the Encoder will be divided into many blocks.<br>We will <strong>first convert a whole row of input sequence data into a whole row of vectors</strong>, and then the processing steps of each block are as follows:</p>
+<ol>
+<li>Firstly, after considering all the input information of the input vector through self-attention, output a row of vectors. (I will introduce how self-attention considers all input information later)</li>
+<li>Throw this row of vectors into the feed forward network of Fully Connected (FC).</li>
+<li>The final output vector is the output of the block.</li>
 </ol>
-</li>
-<li>缺點 (Trade-off)<ol>
-<li>同事類別過多時，中介者責任很大，會使系統提升一定程度的複雜性。</li>
-</ol>
-</li>
-</ul>
-<h2 id="UML與成員"><a href="#UML與成員" class="headerlink" title="UML與成員"></a>UML與成員</h2><p><img data-src="/images/posts/mediator-pattern/uml.png" 
+<hr>
+<p>However, what the block does in the original Transformer is more complicated, the details are as follows:<br><img data-src="/images/posts/NLP-series/transformer-4.png" 
 style="width: 70%; margin: 15px auto;"></p>
-<table>
-    <thead>
-        <th>成員</th>
-        <th>定義</th>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Mdiator</td>
-            <td>抽象中介者, 定義註冊進入mediator以及轉發的方法</td>
-        </tr>
-        <tr>
-            <td>ConcreteMediator</td>
-            <td>具體中介者, 定義一個集合來管理同事, 所以聚合Colleague</td>
-        </tr>
-        <tr>
-            <td>Colleague</td>
-            <td>抽象同事, 可以保存中介者, 調用內部方法, 所以聚合Mediator</td>
-        </tr>
-        <tr>
-            <td>ConcreteColleague</td>
-            <td>具體同事, 當要跟其他物件溝通時, 利用內部的中介者進行轉發</td>
-        </tr>
-    </tbody>
-</table>
-
-<h2 id="實作"><a href="#實作" class="headerlink" title="實作"></a>實作</h2><p><strong>專案結構</strong><br><img data-src="/images/posts/mediator-pattern/structure.png" 
+<p>Suppose we will follow the method just now, and the <strong>output result of the input vector after self-attention is called a</strong>. we also need to <strong>pull the original input (we first call it b )</strong> and add it to a to get a+b . Such a network architecture is called a <strong>residual connection</strong>.</p>
+<p>After that, we will do <strong>layer normalization</strong> on the result of a+b. It will calculate the average $m$(mean) and standard deviation $\sigma$(standard deviation) of the input vector, and then calculate it according to the formula: divide the input minus the mean $m$ by the standard deviation $\sigma$. It’s here that we really get <strong>the input of the FC network</strong>.</p>
+<p>The <strong>FC network also has a residual architecture</strong>, so we will add the input of the FC network to its output to get a new output, and then do layer normalization again. This is the <strong>real output of a block in Transformer Encoder</strong>.</p>
+<hr>
+<p>Now, let’s look back at the structure diagram of Encoder:</p>
+<p><img data-src="/images/posts/NLP-series/transformer-5.png" 
 style="width: 70%; margin: 15px auto;"></p>
-<p><strong>抽象Mediator</strong></p>
-<figure class="highlight c#"><figcaption><span>Mediator(抽象)</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MediatorPattern.mediator</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 團隊列舉</span></span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">enum</span> teamType</span><br><span class="line">    &#123;</span><br><span class="line">        ENGINEERING, DESIGN, SERVICE, MARKETING</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 抽象mediator</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title">Mediator</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">Register</span>(<span class="params">teamType type, Colleague colleague</span>)</span>; <span class="comment">//註冊進入mediator</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">Relay</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span>; <span class="comment">//轉發;傳遞</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>PackageManager(具體Mediator)</strong></p>
-<figure class="highlight c#"><figcaption><span>PackageManager(具體Mediator)</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MediatorPattern.mediator</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="comment">// 具體mediator</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ProductManager</span> : <span class="title">Mediator</span></span><br><span class="line">	&#123;</span><br><span class="line">        <span class="comment">// 聚合Colleague, 一個儲存colleague物件的dictionary</span></span><br><span class="line">        <span class="keyword">private</span> Dictionary&lt;teamType, Colleague&gt; colleagues = <span class="keyword">new</span> Dictionary&lt;teamType, Colleague&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">Register</span>(<span class="params">teamType type, Colleague colleague</span>)</span></span><br><span class="line">        &#123;</span><br><span class="line">            colleague.setMediator(<span class="keyword">this</span>);</span><br><span class="line">            <span class="keyword">this</span>.colleagues.Add(type, colleague);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">Relay</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">        &#123;</span><br><span class="line">            Colleague toColleague = <span class="keyword">this</span>.colleagues[type];</span><br><span class="line">            toColleague.receive(msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>抽象Colleague</strong></p>
-<figure class="highlight c#"><figcaption><span>Colleague(抽象)</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.mediator;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MediatorPattern.colleagues</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title">Colleague</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">protected</span> Mediator? Mediator &#123; <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; &#125;</span><br><span class="line"></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setMediator</span>(<span class="params">Mediator mediator</span>)</span></span><br><span class="line">		&#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator = mediator;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 接收訊息後如何反應</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span>;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 傳送訊息給特定物件</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>具體Colleague</strong></p>
-<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="comment">//具體colleague</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">DesignTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;設計團隊收到訊息: &quot;</span> + msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;設計團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">EngineeringTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;工程師團隊收到訊息: &quot;</span>+msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;工程師團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">MarketingTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;產銷團隊收到訊息: &quot;</span> + msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;產銷團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ServiceTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;客服團隊收到訊息: &quot;</span> + msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;客服團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>Client端使用</strong></p>
-<figure class="highlight c#"><figcaption><span>Program.cs</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.mediator;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 具體mediator</span></span><br><span class="line">ProductManager pm = <span class="keyword">new</span> ProductManager();</span><br><span class="line"></span><br><span class="line"><span class="comment">//具體colleague</span></span><br><span class="line">Colleague ds = <span class="keyword">new</span> DesignTeam();</span><br><span class="line">Colleague eg = <span class="keyword">new</span> EngineeringTeam();</span><br><span class="line">Colleague mk = <span class="keyword">new</span> MarketingTeam();</span><br><span class="line">Colleague sv = <span class="keyword">new</span> ServiceTeam();</span><br><span class="line"></span><br><span class="line"><span class="comment">//註冊進入mediator</span></span><br><span class="line">pm.Register(teamType.DESIGN, ds);</span><br><span class="line">pm.Register(teamType.ENGINEERING, eg);</span><br><span class="line">pm.Register(teamType.MARKETING, mk);</span><br><span class="line">pm.Register(teamType.SERVICE, sv);</span><br><span class="line"></span><br><span class="line"><span class="comment">//執行</span></span><br><span class="line">ds.send(teamType.ENGINEERING, <span class="string">&quot;UI設計稿完成&quot;</span>);</span><br><span class="line">Console.WriteLine(String.Concat(Enumerable.Repeat(<span class="string">&quot;-&quot;</span>, <span class="number">10</span>)));</span><br><span class="line"></span><br><span class="line">eg.send(teamType.MARKETING, <span class="string">&quot;軟體開發完成&quot;</span>);</span><br><span class="line">Console.WriteLine(String.Concat(Enumerable.Repeat(<span class="string">&quot;-&quot;</span>, <span class="number">10</span>)));</span><br><span class="line"></span><br><span class="line">Console.ReadKey();</span><br></pre></td></tr></table></figure>
-
-<p><strong>結果</strong><br><img data-src="/images/posts/mediator-pattern/result.png" 
+<p>First, in the place of input, <strong>convert the input into a vector through Embedding</strong>, and then add <strong>positional encoding</strong> (because if only self-attention is used, there will be a lack of unknown information)</p>
+<p>Next we see <strong>Multi-Head Attention</strong>, which is <strong>the block of self-attention and Add&amp;Norm means residual plus layer normalization</strong>.</p>
+<p>Finally, <strong>doing Add&amp;Norm again after FC’s feed forward network is the output of the whole block</strong>, and this block will be <strong>repeated n times</strong>.</p>
+<h2 id="Decoder"><a href="#Decoder" class="headerlink" title="Decoder"></a>Decoder</h2><p>Then let us look at the Decoder:</p>
+<p><img data-src="/images/posts/NLP-series/transformer-2.png" 
 style="width: 70%; margin: 15px auto;"></p>
-<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><ul>
-<li>定義:<br>  定義一個 Mediator 物件用來封裝一組物件的互動方式。Mediator 藉由避免物件間相互直接的引用，從而降低它們之間的耦合程度，並且可以讓我們獨立地改變這些物件間的互動方式。</li>
-<li>成員<ul>
-<li>抽象Mediator: 定義方法, 轉接訊息</li>
-<li>具體Mediator: 實作抽象Mediator, Colleague (擁有0~多個Colleague)</li>
-<li>抽象Colleague: 定義方法, 聚合抽象Mediator (Colleague擁有Mediator)</li>
-<li>具體Colleague: 實作抽象Mediator</li>
-</ul>
-</li>
-<li>優點 <ol>
-<li>降低物件之間的耦合性，讓物件容易重複使用。</li>
-<li>物件之間一對多的關聯性變成一對一，提高系統靈活性，也讓整體容易維護及擴充。</li>
-</ol>
-</li>
-<li>缺點 (Trade-off)<ol>
-<li>同事類別過多時，中介者責任很大，會使系統提升一定程度的複雜性。</li>
-</ol>
-</li>
+<p><strong>Input the sequence obtained at the previous time</strong>, and then perform the same Embedding and Positional Encoding and then enter the block repeated N times.<br>The difference is that there is an extra <strong>“Masked” (note the red box) in the Multi-Head Attention</strong> when we first entered. What does it mean?</p>
+<p>Masked means that the model will <strong>only pay attention to the part it has already generated</strong>, and <strong>will not accidentally pay attention to the words generated in the future</strong>. Since the output of the Decoder is generated <strong>one by one</strong>, it has no way to consider its future input. It seems a bit vague to say this, and I will make it clearer when I talk about self-attention in the next article.</p>
+<p>After repeating the block N times, after the <strong>Linear Layer and Softmax</strong>, we can get the output <strong>probability distribution</strong> we want, and we can sample according to this distribution or take the value with the highest probability to get the output sequence.</p>
+<p>There is still one of the most critical self-attention mechanisms that has not been explained in detail. Let’s introduce how it pays attention to all input sequences and performs parallel processing in the next article!</p>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MDM5Mg==">iThome - Day 27 Transformer (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MTI0Mg==">iThome - Day 28 Self-Attention (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9oYWNrbWQuaW8vQGFibGl1L0JrWG16REJtcg==">Transformer 李宏毅深度學習 (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9zcGVlY2guZWUubnR1LmVkdS50dy9+aHlsZWUvbWwvbWwyMDIxLWNvdXJzZS1kYXRhL3NlcTJzZXFfdjkucGRm">Transformer 李宏毅老師簡報<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQzJnZ2p0dXVXdnhySEhIaWFESDFkbFE=">李宏毅老師YouTube channel<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzE3MDYuMDM3NjI=">Attention is all you need (paper)<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
 ]]></content>
-      <categories>
-        <category>OOP</category>
-        <category>Design Pattern</category>
-      </categories>
       <tags>
-        <tag>OOP</tag>
-        <tag>.NET C#</tag>
-        <tag>design-pattern</tag>
+        <tag>ML</tag>
+        <tag>AI</tag>
+        <tag>NLP</tag>
       </tags>
   </entry>
   <entry>
@@ -1218,6 +1116,108 @@ style="width: 70%; margin: 15px auto;"></p>
         <tag>AI</tag>
         <tag>NLP</tag>
         <tag>paper-study</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[.NET][C#][Design Pattern] - Mediator Pattern (中介者模式)</title>
+    <url>/posts/4072203086/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>這篇文章主要介紹Mediator Pattern的定義以及簡單實作<br>介紹使用Mediator Pattern的好處, 並提供範例<br>在軟體架構中Mediator Patternc和Repository Pattern都是常用的pattern<br>通常.NET專案中會結合MediatR套件使用</p>
+<span id="more"></span>
+
+<h2 id="定義-Mediator-Pattern"><a href="#定義-Mediator-Pattern" class="headerlink" title="定義 Mediator Pattern"></a>定義 Mediator Pattern</h2><p>IG貼文：<br><span class="exturl" data-url="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9wL0NpTTBlenBMTzR6Lz9obD16aC10dw==">Mediator Pattern Post<i class="fa fa-external-link-alt"></i></span></p>
+<p>GitHub連結：<br><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL21hby1jb2RlL01lZGlhdG9yUGF0dGVybg==">Sample Code<i class="fa fa-external-link-alt"></i></span></p>
+<p>定義一個 Mediator 物件用來<strong>封裝一組物件的互動方式</strong>。<br>Mediator 藉由<strong>避免物件間相互直接的引用</strong>，從而降低它們之間的耦合程度，並且可以讓我們獨立地改變這些物件間的互動方式。</p>
+<p>下面這兩張圖片可以簡單體現出Mediator Pattern在做的事</p>
+<p><strong>沒有使用中介者, 物件彼此之間直接調用</strong><br><img data-src="/images/posts/mediator-pattern/origin-graph.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p><strong>使用中介者, 物件只依賴mediator來與其他物件溝通</strong><br><img data-src="/images/posts/mediator-pattern/star.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>可以發現使用中介者模式之後, 物件都只依賴中介者來傳遞訊息, 而不是直接調用彼此, 以此達到解耦。<br>在現實生活中, 也有類似的例子, 例如開發團隊, 客服團隊, 產銷團隊, 設計團隊, 若彼此之間沒有一個統一的溝通,<br>那麼各個團隊耦合度很高, 開發跟設計要協調介面, 又要和產銷和客服討論如何贏得如何符合市場, 這樣一來分工太複雜。<br>所以需要一個<strong>產品經理來當中介者</strong>, 協助溝通各個團隊。</p>
+<h2 id="優缺點"><a href="#優缺點" class="headerlink" title="優缺點"></a>優缺點</h2><ul>
+<li>優點 <ol>
+<li>降低物件之間的耦合性，讓物件容易重複使用。</li>
+<li>物件之間一對多的關聯性變成一對一，提高系統靈活性，也讓整體容易維護及擴充。</li>
+</ol>
+</li>
+<li>缺點 (Trade-off)<ol>
+<li>同事類別過多時，中介者責任很大，會使系統提升一定程度的複雜性。</li>
+</ol>
+</li>
+</ul>
+<h2 id="UML與成員"><a href="#UML與成員" class="headerlink" title="UML與成員"></a>UML與成員</h2><p><img data-src="/images/posts/mediator-pattern/uml.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<table>
+    <thead>
+        <th>成員</th>
+        <th>定義</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Mdiator</td>
+            <td>抽象中介者, 定義註冊進入mediator以及轉發的方法</td>
+        </tr>
+        <tr>
+            <td>ConcreteMediator</td>
+            <td>具體中介者, 定義一個集合來管理同事, 所以聚合Colleague</td>
+        </tr>
+        <tr>
+            <td>Colleague</td>
+            <td>抽象同事, 可以保存中介者, 調用內部方法, 所以聚合Mediator</td>
+        </tr>
+        <tr>
+            <td>ConcreteColleague</td>
+            <td>具體同事, 當要跟其他物件溝通時, 利用內部的中介者進行轉發</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2 id="實作"><a href="#實作" class="headerlink" title="實作"></a>實作</h2><p><strong>專案結構</strong><br><img data-src="/images/posts/mediator-pattern/structure.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p><strong>抽象Mediator</strong></p>
+<figure class="highlight c#"><figcaption><span>Mediator(抽象)</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MediatorPattern.mediator</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 團隊列舉</span></span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">enum</span> teamType</span><br><span class="line">    &#123;</span><br><span class="line">        ENGINEERING, DESIGN, SERVICE, MARKETING</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 抽象mediator</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title">Mediator</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">Register</span>(<span class="params">teamType type, Colleague colleague</span>)</span>; <span class="comment">//註冊進入mediator</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">Relay</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span>; <span class="comment">//轉發;傳遞</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>PackageManager(具體Mediator)</strong></p>
+<figure class="highlight c#"><figcaption><span>PackageManager(具體Mediator)</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MediatorPattern.mediator</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="comment">// 具體mediator</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ProductManager</span> : <span class="title">Mediator</span></span><br><span class="line">	&#123;</span><br><span class="line">        <span class="comment">// 聚合Colleague, 一個儲存colleague物件的dictionary</span></span><br><span class="line">        <span class="keyword">private</span> Dictionary&lt;teamType, Colleague&gt; colleagues = <span class="keyword">new</span> Dictionary&lt;teamType, Colleague&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">Register</span>(<span class="params">teamType type, Colleague colleague</span>)</span></span><br><span class="line">        &#123;</span><br><span class="line">            colleague.setMediator(<span class="keyword">this</span>);</span><br><span class="line">            <span class="keyword">this</span>.colleagues.Add(type, colleague);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">Relay</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">        &#123;</span><br><span class="line">            Colleague toColleague = <span class="keyword">this</span>.colleagues[type];</span><br><span class="line">            toColleague.receive(msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>抽象Colleague</strong></p>
+<figure class="highlight c#"><figcaption><span>Colleague(抽象)</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.mediator;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MediatorPattern.colleagues</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title">Colleague</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">protected</span> Mediator? Mediator &#123; <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; &#125;</span><br><span class="line"></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setMediator</span>(<span class="params">Mediator mediator</span>)</span></span><br><span class="line">		&#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator = mediator;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 接收訊息後如何反應</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span>;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 傳送訊息給特定物件</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>具體Colleague</strong></p>
+<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="comment">//具體colleague</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">DesignTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;設計團隊收到訊息: &quot;</span> + msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;設計團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">EngineeringTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;工程師團隊收到訊息: &quot;</span>+msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;工程師團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">MarketingTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;產銷團隊收到訊息: &quot;</span> + msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;產銷團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ServiceTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;客服團隊收到訊息: &quot;</span> + msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;客服團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>Client端使用</strong></p>
+<figure class="highlight c#"><figcaption><span>Program.cs</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.mediator;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 具體mediator</span></span><br><span class="line">ProductManager pm = <span class="keyword">new</span> ProductManager();</span><br><span class="line"></span><br><span class="line"><span class="comment">//具體colleague</span></span><br><span class="line">Colleague ds = <span class="keyword">new</span> DesignTeam();</span><br><span class="line">Colleague eg = <span class="keyword">new</span> EngineeringTeam();</span><br><span class="line">Colleague mk = <span class="keyword">new</span> MarketingTeam();</span><br><span class="line">Colleague sv = <span class="keyword">new</span> ServiceTeam();</span><br><span class="line"></span><br><span class="line"><span class="comment">//註冊進入mediator</span></span><br><span class="line">pm.Register(teamType.DESIGN, ds);</span><br><span class="line">pm.Register(teamType.ENGINEERING, eg);</span><br><span class="line">pm.Register(teamType.MARKETING, mk);</span><br><span class="line">pm.Register(teamType.SERVICE, sv);</span><br><span class="line"></span><br><span class="line"><span class="comment">//執行</span></span><br><span class="line">ds.send(teamType.ENGINEERING, <span class="string">&quot;UI設計稿完成&quot;</span>);</span><br><span class="line">Console.WriteLine(String.Concat(Enumerable.Repeat(<span class="string">&quot;-&quot;</span>, <span class="number">10</span>)));</span><br><span class="line"></span><br><span class="line">eg.send(teamType.MARKETING, <span class="string">&quot;軟體開發完成&quot;</span>);</span><br><span class="line">Console.WriteLine(String.Concat(Enumerable.Repeat(<span class="string">&quot;-&quot;</span>, <span class="number">10</span>)));</span><br><span class="line"></span><br><span class="line">Console.ReadKey();</span><br></pre></td></tr></table></figure>
+
+<p><strong>結果</strong><br><img data-src="/images/posts/mediator-pattern/result.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><ul>
+<li>定義:<br>  定義一個 Mediator 物件用來封裝一組物件的互動方式。Mediator 藉由避免物件間相互直接的引用，從而降低它們之間的耦合程度，並且可以讓我們獨立地改變這些物件間的互動方式。</li>
+<li>成員<ul>
+<li>抽象Mediator: 定義方法, 轉接訊息</li>
+<li>具體Mediator: 實作抽象Mediator, Colleague (擁有0~多個Colleague)</li>
+<li>抽象Colleague: 定義方法, 聚合抽象Mediator (Colleague擁有Mediator)</li>
+<li>具體Colleague: 實作抽象Mediator</li>
+</ul>
+</li>
+<li>優點 <ol>
+<li>降低物件之間的耦合性，讓物件容易重複使用。</li>
+<li>物件之間一對多的關聯性變成一對一，提高系統靈活性，也讓整體容易維護及擴充。</li>
+</ol>
+</li>
+<li>缺點 (Trade-off)<ol>
+<li>同事類別過多時，中介者責任很大，會使系統提升一定程度的複雜性。</li>
+</ol>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>OOP</category>
+        <category>Design Pattern</category>
+      </categories>
+      <tags>
+        <tag>OOP</tag>
+        <tag>.NET C#</tag>
+        <tag>design-pattern</tag>
       </tags>
   </entry>
   <entry>
