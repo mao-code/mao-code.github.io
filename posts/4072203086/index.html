@@ -37,7 +37,7 @@
 <meta property="og:image" content="https://mao-code.github.io/images/posts/mediator-pattern/structure.png">
 <meta property="og:image" content="https://mao-code.github.io/images/posts/mediator-pattern/result.png">
 <meta property="article:published_time" content="2022-09-06T16:00:00.000Z">
-<meta property="article:modified_time" content="2023-02-07T06:44:25.357Z">
+<meta property="article:modified_time" content="2023-09-27T16:01:55.071Z">
 <meta property="article:author" content="Mao 勛哥">
 <meta property="article:tag" content="OOP">
 <meta property="article:tag" content=".NET C#">
@@ -159,7 +159,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9A%E7%BE%A9-Mediator-Pattern"><span class="nav-number">2.</span> <span class="nav-text">定義 Mediator Pattern</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%84%AA%E7%BC%BA%E9%BB%9E"><span class="nav-number">3.</span> <span class="nav-text">優缺點</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#UML%E8%88%87%E6%88%90%E5%93%A1"><span class="nav-number">4.</span> <span class="nav-text">UML與成員</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%A6%E4%BD%9C"><span class="nav-number">5.</span> <span class="nav-text">實作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B5%90%E8%AA%9E"><span class="nav-number">6.</span> <span class="nav-text">結語</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9A%E7%BE%A9-Mediator-Pattern"><span class="nav-number">2.</span> <span class="nav-text">定義 Mediator Pattern</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%84%AA%E7%BC%BA%E9%BB%9E"><span class="nav-number">3.</span> <span class="nav-text">優缺點</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#UML%E8%88%87%E6%88%90%E5%93%A1"><span class="nav-number">4.</span> <span class="nav-text">UML與成員</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%A6%E4%BD%9C"><span class="nav-number">5.</span> <span class="nav-text">實作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%96%91%E5%95%8F"><span class="nav-number">6.</span> <span class="nav-text">疑問</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B5%90%E8%AA%9E"><span class="nav-number">7.</span> <span class="nav-text">結語</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -280,7 +280,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新於</span>
-      <time title="修改時間：2023-02-07 14:44:25" itemprop="dateModified" datetime="2023-02-07T14:44:25+08:00">2023-02-07</time>
+      <time title="修改時間：2023-09-28 00:01:55" itemprop="dateModified" datetime="2023-09-28T00:01:55+08:00">2023-09-28</time>
     </span>
 
   
@@ -297,14 +297,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">文章字數：</span>
-      <span>4.7k</span>
+      <span>5k</span>
     </span>
     <span class="post-meta-item" title="所需閱讀時間">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">所需閱讀時間 &asymp;</span>
-      <span>4 分鐘</span>
+      <span>5 分鐘</span>
     </span>
 </div>
 
@@ -379,6 +379,14 @@
 <figure class="highlight c#"><figcaption><span>Program.cs</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.mediator;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 具體mediator</span></span><br><span class="line">ProductManager pm = <span class="keyword">new</span> ProductManager();</span><br><span class="line"></span><br><span class="line"><span class="comment">//具體colleague</span></span><br><span class="line">Colleague ds = <span class="keyword">new</span> DesignTeam();</span><br><span class="line">Colleague eg = <span class="keyword">new</span> EngineeringTeam();</span><br><span class="line">Colleague mk = <span class="keyword">new</span> MarketingTeam();</span><br><span class="line">Colleague sv = <span class="keyword">new</span> ServiceTeam();</span><br><span class="line"></span><br><span class="line"><span class="comment">//註冊進入mediator</span></span><br><span class="line">pm.Register(teamType.DESIGN, ds);</span><br><span class="line">pm.Register(teamType.ENGINEERING, eg);</span><br><span class="line">pm.Register(teamType.MARKETING, mk);</span><br><span class="line">pm.Register(teamType.SERVICE, sv);</span><br><span class="line"></span><br><span class="line"><span class="comment">//執行</span></span><br><span class="line">ds.send(teamType.ENGINEERING, <span class="string">&quot;UI設計稿完成&quot;</span>);</span><br><span class="line">Console.WriteLine(String.Concat(Enumerable.Repeat(<span class="string">&quot;-&quot;</span>, <span class="number">10</span>)));</span><br><span class="line"></span><br><span class="line">eg.send(teamType.MARKETING, <span class="string">&quot;軟體開發完成&quot;</span>);</span><br><span class="line">Console.WriteLine(String.Concat(Enumerable.Repeat(<span class="string">&quot;-&quot;</span>, <span class="number">10</span>)));</span><br><span class="line"></span><br><span class="line">Console.ReadKey();</span><br></pre></td></tr></table></figure>
 
 <p><strong>結果</strong><br><img data-src="/images/posts/mediator-pattern/result.png" style="width: 70%; margin: 15px auto;"></p>
+<h2 id="疑問"><a href="#疑問" class="headerlink" title="疑問"></a>疑問</h2><ol>
+<li>DI不也是讓物件間解耦嗎？他們有什麼不同？<ol>
+<li>應用場景不同：Mediator模式主要用於解耦合多個相互協作的物件，特別是在複雜的互動場景中。DI則主要用於管理和注入依賴關係，以實現松耦合和可測試的程式碼。</li>
+<li>解決不同問題：Mediator解決的是物件之間的協作和通信問題，而DI解決的是依賴關係管理的問題。</li>
+<li>實現方式不同：Mediator需要一個中介者來協調物件之間的互動，通常由一個專門的Mediator類別來實現。DI則是一種設計模式，它可以與不同語言和框架一起使用，並不需要特定的中介者類別。</li>
+</ol>
+</li>
+</ol>
 <h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><ul>
 <li>定義:<br>  定義一個 Mediator 物件用來封裝一組物件的互動方式。Mediator 藉由避免物件間相互直接的引用，從而降低它們之間的耦合程度，並且可以讓我們獨立地改變這些物件間的互動方式。</li>
 <li>成員<ul>
@@ -480,7 +488,7 @@
       <i class="fa fa-coffee"></i>
     </span>
       <span>所需總閱讀時間 &asymp;</span>
-    <span title="所需總閱讀時間">1:01</span>
+    <span title="所需總閱讀時間">1:02</span>
   </span>
 </div>
 <div class="busuanzi-count">
