@@ -28,42 +28,73 @@ style="width: 70%; margin: 15px auto;"></p>
       </tags>
   </entry>
   <entry>
-    <title>[Git][Version Control] Git - Introduction</title>
-    <url>/posts/2571684277/</url>
-    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Here is the series of Git full tutorial. I will cover the important and advanced topics that you should know in git. By reading this series, you are able to know the basic(but important) concept of Git and the technique of using git. Hope you can gain a lot ! </p>
-<span id="more"></span>
+    <title>CC-沈浸式線上逛街APP-系統與技術介紹</title>
+    <url>/posts/2012237495/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>接續上一篇的文章，這篇文章會著重介紹這個系統<br>以下是我在YouTube上對這個專案的介紹與Demo：</p>
+<iframe
+    src="https://www.youtube.com/embed/aMGnyI2Xe04">
+</iframe>
 
-<h1 id="Series-Outline"><a href="#Series-Outline" class="headerlink" title="Series Outline"></a>Series Outline</h1><p>I will follow the outline below in this series.</p>
-<ul>
-<li>Introduction (this post)</li>
-<li>Setup</li>
-<li>Version Control &amp; Commands (Basics)</li>
-<li>Branching &amp; Merging</li>
-<li>Conflict</li>
-<li>Collaboration &amp; GitHub</li>
-<li>Advanced Topics</li>
-</ul>
+<p>這篇文章的內容會與影片很像，主要分為<strong>動機與介紹、重點功能簡介、系統架構與技術</strong>的順序介紹<br>系統功能Demo, 還請觀看影片介紹</p>
+<span id="more"></span>
+<p><img data-src="/images/posts/CC-project-demo/1.png" 
+style="width: 90%; margin: 15px auto;"></p>
+<h2 id="動機與介紹"><a href="#動機與介紹" class="headerlink" title="動機與介紹"></a>動機與介紹</h2><img data-src="/images/posts/CC-project-demo/2.png" style="width: 70%; margin: 15px auto;">
+首先我們主要的TA之一是線上逛街族, 針對這個族群我們統整出簡單的兩點：第一, 他們在線上瀏覽或滑商品時, 通常沒有特定的消費目的, 只是想要滑滑看看, 無目的的瀏覽行為, 第二, 這種行為主要是以消遣、獲得樂趣為目的, 而不一定是真的想要買商品
+
 <hr>
-<h1 id="Introduction-to-Git-A-Distributed-Version-Control-System"><a href="#Introduction-to-Git-A-Distributed-Version-Control-System" class="headerlink" title="Introduction to Git: A Distributed Version Control System"></a>Introduction to Git: A Distributed Version Control System</h1><p>Git is a powerful and widely used distributed version control system designed to track changes in software development projects. It provides developers with the ability to collaborate on projects efficiently, manage codebases effectively, and easily track and revert changes.</p>
-<h2 id="Distributed-Version-Control-System"><a href="#Distributed-Version-Control-System" class="headerlink" title="Distributed Version Control System"></a>Distributed Version Control System</h2><p>In traditional software development, changes to a codebase were often managed through file-based systems or centralized version control systems. However, these approaches had limitations in terms of collaboration, scalability, and flexibility. Git emerged as a solution to these challenges, offering a distributed and decentralized approach to version control.</p>
-<p>The special point of Git is that it supports distributed version control and can also easily share codes among multiple nodes.</p>
-<p><img data-src="/images/posts/Git-Series/dist-ver-ctr.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<h2 id="Branch"><a href="#Branch" class="headerlink" title="Branch"></a>Branch</h2><p>Git manages code based on a tree structure, allowing branches to be created, merged, and deleted, and code versions to be saved at any time.</p>
-<p><img data-src="/images/posts/Git-Series/branch.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<h2 id="Snapshot"><a href="#Snapshot" class="headerlink" title="Snapshot"></a>Snapshot</h2><p>Git saves full snapshots of files, rather than differences, making it easy to restore all historical versions of files.</p>
-<p><img data-src="/images/posts/Git-Series/snapshot.jpeg" 
-style="width: 70%; margin: 15px auto;"></p>
+<img data-src="/images/posts/CC-project-demo/3.png" style="width: 70%; margin: 15px auto;">
+根據上面的族群設定, 我們的專案主要會focus在解決或滿足下面的問題, 第一, 我們是針對無目的性的消費情境底下的需求, 第二, 我們希望帶給使用者沈浸式的體驗, 所謂的沈浸式體驗, 就是在舒服且不受干擾的狀態下, 接收自己有興趣的資訊, 以此讓使用者能在我們這個APP上做消遣、殺時間的動作, 這麼做的目的很大一部分是為了捕捉使用者的微時刻, 這些微時刻的數據可以代表使用者不同時刻的喜好或者決策, 第四，我們這個APP也會瞄準直播的市場與直播平台合作，而這些直播主的煩惱，便是下播後無法持續創造收入，因此我們除了希望能延長商品的生命週期外，也可以透過捕捉使用者行為來提供直播主缺乏的Consumer Insight
+
 <hr>
-<h1 id="Recommended-Resources"><a href="#Recommended-Resources" class="headerlink" title="Recommended Resources"></a>Recommended Resources</h1><p><a href="%22https://www.youtube.com/watch?v=8JJ101D3knE%22">Mosh Git Tutorail</a></p>
-]]></content>
+<img data-src="/images/posts/CC-project-demo/4.png" style="width: 70%; margin: 15px auto;">
+為了達成以上的目的，我們主要有這幾項手段，第一, 研究推薦演算法與捕捉使用者行為，透過使用者不同時刻的行為數據來作為推薦的依據，而非傳統的電商使用歷史紀錄來做推薦，以次讓使用者能夠在每時每刻接收有興趣的資訊，達到沈浸式的體驗。第二，透過簡潔的介面，降低使用者瀏覽時的壓力，讓使用者更願意停留在APP上，第三，透過分享貼文、追蹤、評論等等的社群機制，讓使用者能夠了解親朋好友們有興趣或者好評的商品，也能夠享受社群的樂趣，增加APP的黏著度，最後，透過APP上種種捕捉使用者行為數據的機制，可以將這些數據提供給與我們合作的第三方廠商，讓廠商更了解使用者的喜好
+
+<h2 id="重點功能簡介"><a href="#重點功能簡介" class="headerlink" title="重點功能簡介"></a>重點功能簡介</h2><img data-src="/images/posts/CC-project-demo/5.png" style="width: 70%; margin: 15px auto;">
+再來介紹一些重點功能的簡短敘述，首先第一個是我們的商品貼文，也是商品的主體，貼文特色主要以滿板設計與資訊收合來達到雜訊最小化的目的，另外後面Demo也會呈現推薦商品的形式，與現在短影音的方式很像，透過推薦與給人耳目一新的商品，帶給使用者殺時間的樂趣，另外，透過商品貼文，也可以成為直播主下播後銷售的利器，與一般電商不同的是，我們主動推薦商家商品，而且是透過使用者當前的行為喜好，而不是被動等待使用者搜尋或是透過購買紀錄來做推薦
+
+<hr>
+<img data-src="/images/posts/CC-project-demo/6.png" style="width: 70%; margin: 15px auto;">
+再來是我們的主頁面，透過滑卡的機制增加互動感，也可以同時捕捉使用者行為，以做到即時推薦，這麼做除了可以增加沈浸體驗，也可以更廣泛的推薦商品，提高曝光程度
+
+<hr>
+<img data-src="/images/posts/CC-project-demo/7.png" style="width: 70%; margin: 15px auto;">
+主頁面與探索頁面都可以透過使用者的滑卡行為、停留時間與點擊率，來彼此優化推薦內容，做到雙向推薦的功能
+
+<hr>
+<img data-src="/images/posts/CC-project-demo/8.png" style="width: 70%; margin: 15px auto;">
+探索頁面除了會推薦使用者感興趣的商品，也會隨機推薦相關商品，增加新奇度，其中最大塊的貼文則為推薦分數最高的商品，透過矩陣式樹狀結構，帶給使用者簡潔與大量瀏覽的感受
+
+<hr>
+<img data-src="/images/posts/CC-project-demo/9.png" style="width: 70%; margin: 15px auto;">
+CC提供商城、買家、直播主追蹤的機制，加上個人化自己的動態牆與留言區，增加社群互動性，以社群的力量增加APP的黏著度
+
+<hr>
+<img data-src="/images/posts/CC-project-demo/10.png" style="width: 70%; margin: 15px auto;">
+分享貼文除了可以增加互動的樂趣，也是提供消費者洞見的大平台
+最重要的是，可以藉由社群的力量，一傳十十傳百，來行銷商品
+
+<h2 id="系統架構與技術"><a href="#系統架構與技術" class="headerlink" title="系統架構與技術"></a>系統架構與技術</h2><p>先附上系統架構圖：<br><img data-src="/images/posts/CC-project-demo/CC_structure.jpeg" style="width: 70%; margin: 15px auto;"></p>
+<p>首先前端主要由Angular寫成，搭配<strong>模組化與物件導向設計，增加程式的可維護性</strong>，最後透過PWA包裝成跨平台的APP<br>藉由Angular能夠模組化與元件化的特性，我們將各個功能切分成不同模組，提升程式低耦合高內聚的特性，另外，Token驗證、路由保護、API攔截器、資料格式化Pipeline等等，也都抽離出來實作，其中，核心的商業邏輯切分在我們的Service模組，與畫面邏輯分離，再藉由依賴注入讓各模組使用，這樣的設計，讓我們的專案在未來更改與維護擴充時非常省時與省力。</p>
+<p>另外一個主要的功能是推薦演算法，我們透過標籤(label)與雅卡爾相似度(Jaccard Similarity)，做了一個Example Based的推薦引擎，主要是用MongoDB pipeline與後端演算構築而成。</p>
+<p>這裡也是我第一次使用前端框架，來寫一個比較完整的專案，由於我是後端出身，所以選擇一個自己寫起來最舒服的Angular框架，有種在寫後端的親切感XD。</p>
+<p>後端主要由NodeJS寫成，資料庫則為MongoDB，一樣是將各個功能進行模組化的拆分，與資料庫索引的優化，以及推薦演算法的實現。</p>
+<p>另外WebServer的部分則是由IIS代理，加上GitLab CI&#x2F;CD &amp; GitLab Runner做到自動化整合與部屬的功能</p>
+<style>
+.video-container
+{
+    padding-top: 60% !important;
+}
+</style>]]></content>
       <categories>
-        <category>Git 系列文</category>
+        <category>專案</category>
+        <category>side project</category>
+        <category>作品</category>
       </categories>
       <tags>
-        <tag>Git</tag>
-        <tag>Version Control</tag>
+        <tag>專案</tag>
+        <tag>作品</tag>
+        <tag>side project</tag>
       </tags>
   </entry>
   <entry>
@@ -276,186 +307,121 @@ img{
       </tags>
   </entry>
   <entry>
-    <title>[Git][Version Control] Git - Setup</title>
-    <url>/posts/731175240/</url>
-    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Setting up the environment of Git and some recommended GUI tools.</p>
+    <title>政大Google學生開發者社群-政大通NCCUPass-心得 (第二學期)</title>
+    <url>/posts/3042436019/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>繼上篇<a href="https://mao-code.github.io/posts/277323671/#more">GDSC的心得文</a>，這篇我會介紹我們下學期的開發經歷、得獎、專案簡介以及未來這個專案的走向，屬於一個小小的紀錄心得文！</p>
 <span id="more"></span>
 
-<h1 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h1><ol>
-<li><p>Install Git with the link below: (with your OS)<br><a href="%22https://git-scm.com/%22">Git official website</a></p>
+<h1 id="專案"><a href="#專案" class="headerlink" title="專案"></a>專案</h1><h2 id="簡介"><a href="#簡介" class="headerlink" title="簡介"></a>簡介</h2><p>政大通 - NCCUPass 團隊熱切懷抱著重塑校園體驗的夢想，點燃學生的熱情和創造力，以共同打造一個充滿活力、連結力和創新力的校園生活。經由深入校園的人際交流與觀察，我們發現學生面對著種種生活上的不便與困難，然而目前鮮少有專門為學生打造的解決方案。學生間的線下互動與真實聯繫日益減少，導致難以找到同學幫忙或組團合作的機會。此外，午晚餐時的人潮湧入校園周邊餐廳，更帶來了無法即時點餐的困擾。這些現況讓我們看到一個獨特的契機，我們決心以「政大通 - NCCUPass 」 APP 的形式來化解這些困境。</p>
+<p>「政大通 - NCCUPass 」不僅提供政大學生一個集社交、實用和創新於一身的平台，更是一個綜合性的應用程式，旨在加強他們的校園體驗。我們希望這個 APP 能成為解決校園生活難題的得力幫手！</p>
+<p>在社團「政大 Google 學生開發者社群」的擁護下，我們匯聚各領域的精英，凝聚開放分享的心態，攜手共創這個改變學生生活的嶄新 APP ！政大只是我們的第一塊版圖，我們的未來目標是影響全國的大學生，為他們帶來更加豐富、更加便利的校園體驗！</p>
+<h2 id="目前功能簡介"><a href="#目前功能簡介" class="headerlink" title="目前功能簡介"></a>目前功能簡介</h2><h3 id="學生任務功能-增強校園互動體驗"><a href="#學生任務功能-增強校園互動體驗" class="headerlink" title="學生任務功能 - 增強校園互動體驗"></a>學生任務功能 - 增強校園互動體驗</h3><ul>
+<li>動機發想<ul>
+<li>缺乏線下互動與真實聯繫：<br>我們注意到越來越多的大學生在日常生活中依賴數位平台和社交媒體，而非與人面對面的互動。這種現象在校園中尤為明顯，比起在現實中進行真實的互動，學生更傾向於在虛擬世界中建立社交連結。我們對大學生進行訪談、問卷調查和社交媒體分析，收集了大量的數據和反饋。這些數據揭示了大學生內心深處對面對面互動的渴望，以及更真實的交流，更深刻的情感，卻在線下互動中遇到了種種挑戰與限制。基於這些資訊，我們更加確定缺乏線下互動和真實聯繫的問題造成大學生的困擾，這些數據與心靈共鳴，激發了我們的靈感。我們深信，缺乏線下互動和真實聯繫的問題，不僅是個人的困擾，更是一種社會現象，需要我們攜手改變。於是，我們投入心血，開發了一個獨特的解決方案——一個能在現實世界中促進人與人之間有意義連結的奇妙工具。</li>
+</ul>
 </li>
-<li><p>Type this command to check if it is installed successfully:</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h1 id="Configure-Git-type-commands-in-your-shell"><a href="#Configure-Git-type-commands-in-your-shell" class="headerlink" title="Configure Git (type commands in your shell)"></a>Configure Git (type commands in your shell)</h1><ol>
-<li><p>Set your user name by running the following command:</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Set your email address by running the following command:</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.email youremail@example.com</span><br></pre></td></tr></table></figure></li>
-<li><p>Set up SSH key (for remote repository access. e.g. GitHub)</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure></li>
-</ol>
-<ul>
-<li><p>Press Enter to accept the default file location and passphrase (or set your own if desired).<br>Once the key is generated, run the following command to add it to the SSH agent</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-add ~/.ssh/id_rsa</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Copy the public key to your clipboard by running the following command</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Add the copied public key to your Git hosting platform account (e.g., GitHub, GitLab) by following their documentation.</p>
-</li>
-<li><p>View your ssh keys</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd ~/.ssh</span><br></pre></td></tr></table></figure>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ls</span><br></pre></td></tr></table></figure>
-<ul>
-<li>Use a text editor or command-line tools (such as cat or less) to view the contents of the .pub files and see the public key information: <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat id_rsa.pub</span><br></pre></td></tr></table></figure></li>
+<li>功能敘述<ul>
+<li>這個功能旨在促進學生之間的線下互動，並為他們提供一個自由而實用的平台，能以此完成各種有趣的任務。學生們可以發布任務，例如：幫忙帶宵夜、一起揪團出去玩等等。學生可以在我們的 APP 上自由發布任務，並尋找其他學生來接受挑戰，每一次的任務都是獨特的社交機會，讓學生們在校園中建立更多真實的聯繫和友誼。除此之外，這個功能還擁有相當多面的好處。首先，它鼓勵學生積極參與校園生活，擺脫線上世界的束縛。透過與其他學生一起完成任務，他們可以體驗到珍貴的團隊合作和互助精神。此外，如果同學對彼此的服務滿意，可以提供金錢或其他回饋，藉著小小賺外快的機會，也可以累積一定的金錢！相信這個制度能鼓勵學生發揮創意和努力工作，同時也建立相互尊重和價值交換的文化。</li>
 </ul>
 </li>
 </ul>
-<ol start="4">
-<li>You can see your configuration by typing the following commands:<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --list</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h1 id="Recommended-GUI-tools"><a href="#Recommended-GUI-tools" class="headerlink" title="Recommended GUI tools"></a>Recommended GUI tools</h1><p>Both commands and GUI tools are important to Git manupulation.<br>And Here are some recommended Git GUI tools that you can use.</p>
+<h3 id="預約外帶功能與午餐快選器-－-用餐省時無等待，專屬學生的美食提前預訂"><a href="#預約外帶功能與午餐快選器-－-用餐省時無等待，專屬學生的美食提前預訂" class="headerlink" title="預約外帶功能與午餐快選器 － 用餐省時無等待，專屬學生的美食提前預訂"></a>預約外帶功能與午餐快選器 － 用餐省時無等待，專屬學生的美食提前預訂</h3><ul>
+<li><p>動機發想</p>
 <ul>
-<li><a href="%22https://www.sourcetreeapp.com/%22">Sourcetree</a></li>
-<li><a href="%22https://www.gitkraken.com/%22">GitKraken</a></li>
+<li><p>餐點供應不足：<br>尤其在午晚餐尖峰時段，餐廳經常供不應求，學生需要花費大量的時間排隊等待。</p>
+</li>
+<li><p>用餐時間緊湊：<br>大學生的生活節奏快，經常要在短時間內完成吃飯等基本活動，而在繁忙的用餐時間內排隊等待餐點往往會浪費寶貴的時間。</p>
+</li>
+<li><p>無法預估用餐需求：<br>在繁忙的用餐時間內，無法預估用餐需求，可能需要長時間等待，或因時間太短而做了不太理想的食物選擇。</p>
+</li>
 </ul>
+</li>
+<li><p>功能敘述</p>
+<ul>
+<li>這個功能將為大學生們帶來極速、便利、無等待的用餐體驗！我們與學校附近的店家攜手合作，確保學生們不必等待太久。現在，同學只需要提前預約外帶，下課後直接前往店家，餐點早已準備好，輕鬆取走即可！不再浪費時間排隊，享受自由自在的用餐時光！這個預約外帶功能不僅是大學生們用餐的時尚選擇，更是忙碌學習生活的得力助手。在繁忙的用餐尖峰時段，可以輕鬆預訂心儀的美食，避免為了取餐而耽誤其他重要事務。</li>
+</ul>
+</li>
+</ul>
+<h2 id="連結"><a href="#連結" class="headerlink" title="連結"></a>連結</h2><ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly9uY2N1cGFzcy5jb20v">官方網站<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9uY2N1cGFzcy8=">IG粉專<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2NvbXBhbnkvbmNjdXBhc3M=">LinkedIn<i class="fa fa-external-link-alt"></i></span></li>
+</ul>
+<h1 id="得獎"><a href="#得獎" class="headerlink" title="得獎"></a>得獎</h1><p>NCCUPass在當天的期末發表會得到最佳人氣專案奬的殊榮！<br><img data-src="/images/posts/2023NCCUPass/GDSC_award.JPG" 
+style="width: 70%; margin: 15px auto;"></p>
+<p><img data-src="/images/posts/2023NCCUPass/GDSC_award_on_stage.JPG" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>當天的期末發表會：<br><img data-src="/images/posts/2023NCCUPass/GDSC_final.JPG" 
+style="width: 70%; margin: 15px auto;"></p>
+<h1 id="技術"><a href="#技術" class="headerlink" title="技術"></a>技術</h1><p>在經過一個學期後，我們也慢慢拓展技術範圍，未來也將因應需求機動地改變<br>在這邊就只放上系統架構圖，不贅述太多技術細節</p>
+<h2 id="系統架構圖"><a href="#系統架構圖" class="headerlink" title="系統架構圖"></a>系統架構圖</h2><p><img data-src="/images/posts/2023NCCUPass/NCCUPass_structure.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<h1 id="未來"><a href="#未來" class="headerlink" title="未來"></a>未來</h1><p>政大是我們的第一塊版圖，我們的目標是全台灣的大學，目前先穩紮穩打在政大站穩腳步，在此期間會積極地與其他組織或社團合作、參與各項競賽以及參加創投機構的活動，我們的理念是讓大學生們彼此間的關係更加密切與真實，使他們的生活更加數位化與便利！</p>
 ]]></content>
       <categories>
-        <category>Git 系列文</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-        <tag>Version Control</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CC-沈浸式線上逛街APP-系統與技術介紹</title>
-    <url>/posts/2012237495/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>接續上一篇的文章，這篇文章會著重介紹這個系統<br>以下是我在YouTube上對這個專案的介紹與Demo：</p>
-<iframe
-    src="https://www.youtube.com/embed/aMGnyI2Xe04">
-</iframe>
-
-<p>這篇文章的內容會與影片很像，主要分為<strong>動機與介紹、重點功能簡介、系統架構與技術</strong>的順序介紹<br>系統功能Demo, 還請觀看影片介紹</p>
-<span id="more"></span>
-<p><img data-src="/images/posts/CC-project-demo/1.png" 
-style="width: 90%; margin: 15px auto;"></p>
-<h2 id="動機與介紹"><a href="#動機與介紹" class="headerlink" title="動機與介紹"></a>動機與介紹</h2><img data-src="/images/posts/CC-project-demo/2.png" style="width: 70%; margin: 15px auto;">
-首先我們主要的TA之一是線上逛街族, 針對這個族群我們統整出簡單的兩點：第一, 他們在線上瀏覽或滑商品時, 通常沒有特定的消費目的, 只是想要滑滑看看, 無目的的瀏覽行為, 第二, 這種行為主要是以消遣、獲得樂趣為目的, 而不一定是真的想要買商品
-
-<hr>
-<img data-src="/images/posts/CC-project-demo/3.png" style="width: 70%; margin: 15px auto;">
-根據上面的族群設定, 我們的專案主要會focus在解決或滿足下面的問題, 第一, 我們是針對無目的性的消費情境底下的需求, 第二, 我們希望帶給使用者沈浸式的體驗, 所謂的沈浸式體驗, 就是在舒服且不受干擾的狀態下, 接收自己有興趣的資訊, 以此讓使用者能在我們這個APP上做消遣、殺時間的動作, 這麼做的目的很大一部分是為了捕捉使用者的微時刻, 這些微時刻的數據可以代表使用者不同時刻的喜好或者決策, 第四，我們這個APP也會瞄準直播的市場與直播平台合作，而這些直播主的煩惱，便是下播後無法持續創造收入，因此我們除了希望能延長商品的生命週期外，也可以透過捕捉使用者行為來提供直播主缺乏的Consumer Insight
-
-<hr>
-<img data-src="/images/posts/CC-project-demo/4.png" style="width: 70%; margin: 15px auto;">
-為了達成以上的目的，我們主要有這幾項手段，第一, 研究推薦演算法與捕捉使用者行為，透過使用者不同時刻的行為數據來作為推薦的依據，而非傳統的電商使用歷史紀錄來做推薦，以次讓使用者能夠在每時每刻接收有興趣的資訊，達到沈浸式的體驗。第二，透過簡潔的介面，降低使用者瀏覽時的壓力，讓使用者更願意停留在APP上，第三，透過分享貼文、追蹤、評論等等的社群機制，讓使用者能夠了解親朋好友們有興趣或者好評的商品，也能夠享受社群的樂趣，增加APP的黏著度，最後，透過APP上種種捕捉使用者行為數據的機制，可以將這些數據提供給與我們合作的第三方廠商，讓廠商更了解使用者的喜好
-
-<h2 id="重點功能簡介"><a href="#重點功能簡介" class="headerlink" title="重點功能簡介"></a>重點功能簡介</h2><img data-src="/images/posts/CC-project-demo/5.png" style="width: 70%; margin: 15px auto;">
-再來介紹一些重點功能的簡短敘述，首先第一個是我們的商品貼文，也是商品的主體，貼文特色主要以滿板設計與資訊收合來達到雜訊最小化的目的，另外後面Demo也會呈現推薦商品的形式，與現在短影音的方式很像，透過推薦與給人耳目一新的商品，帶給使用者殺時間的樂趣，另外，透過商品貼文，也可以成為直播主下播後銷售的利器，與一般電商不同的是，我們主動推薦商家商品，而且是透過使用者當前的行為喜好，而不是被動等待使用者搜尋或是透過購買紀錄來做推薦
-
-<hr>
-<img data-src="/images/posts/CC-project-demo/6.png" style="width: 70%; margin: 15px auto;">
-再來是我們的主頁面，透過滑卡的機制增加互動感，也可以同時捕捉使用者行為，以做到即時推薦，這麼做除了可以增加沈浸體驗，也可以更廣泛的推薦商品，提高曝光程度
-
-<hr>
-<img data-src="/images/posts/CC-project-demo/7.png" style="width: 70%; margin: 15px auto;">
-主頁面與探索頁面都可以透過使用者的滑卡行為、停留時間與點擊率，來彼此優化推薦內容，做到雙向推薦的功能
-
-<hr>
-<img data-src="/images/posts/CC-project-demo/8.png" style="width: 70%; margin: 15px auto;">
-探索頁面除了會推薦使用者感興趣的商品，也會隨機推薦相關商品，增加新奇度，其中最大塊的貼文則為推薦分數最高的商品，透過矩陣式樹狀結構，帶給使用者簡潔與大量瀏覽的感受
-
-<hr>
-<img data-src="/images/posts/CC-project-demo/9.png" style="width: 70%; margin: 15px auto;">
-CC提供商城、買家、直播主追蹤的機制，加上個人化自己的動態牆與留言區，增加社群互動性，以社群的力量增加APP的黏著度
-
-<hr>
-<img data-src="/images/posts/CC-project-demo/10.png" style="width: 70%; margin: 15px auto;">
-分享貼文除了可以增加互動的樂趣，也是提供消費者洞見的大平台
-最重要的是，可以藉由社群的力量，一傳十十傳百，來行銷商品
-
-<h2 id="系統架構與技術"><a href="#系統架構與技術" class="headerlink" title="系統架構與技術"></a>系統架構與技術</h2><p>先附上系統架構圖：<br><img data-src="/images/posts/CC-project-demo/CC_structure.jpeg" style="width: 70%; margin: 15px auto;"></p>
-<p>首先前端主要由Angular寫成，搭配<strong>模組化與物件導向設計，增加程式的可維護性</strong>，最後透過PWA包裝成跨平台的APP<br>藉由Angular能夠模組化與元件化的特性，我們將各個功能切分成不同模組，提升程式低耦合高內聚的特性，另外，Token驗證、路由保護、API攔截器、資料格式化Pipeline等等，也都抽離出來實作，其中，核心的商業邏輯切分在我們的Service模組，與畫面邏輯分離，再藉由依賴注入讓各模組使用，這樣的設計，讓我們的專案在未來更改與維護擴充時非常省時與省力。</p>
-<p>另外一個主要的功能是推薦演算法，我們透過標籤(label)與雅卡爾相似度(Jaccard Similarity)，做了一個Example Based的推薦引擎，主要是用MongoDB pipeline與後端演算構築而成。</p>
-<p>這裡也是我第一次使用前端框架，來寫一個比較完整的專案，由於我是後端出身，所以選擇一個自己寫起來最舒服的Angular框架，有種在寫後端的親切感XD。</p>
-<p>後端主要由NodeJS寫成，資料庫則為MongoDB，一樣是將各個功能進行模組化的拆分，與資料庫索引的優化，以及推薦演算法的實現。</p>
-<p>另外WebServer的部分則是由IIS代理，加上GitLab CI&#x2F;CD &amp; GitLab Runner做到自動化整合與部屬的功能</p>
-<style>
-.video-container
-{
-    padding-top: 60% !important;
-}
-</style>]]></content>
-      <categories>
+        <category>心得</category>
         <category>專案</category>
+        <category>GDSC</category>
         <category>side project</category>
-        <category>作品</category>
+        <category>NCCUPass</category>
       </categories>
       <tags>
         <tag>專案</tag>
-        <tag>作品</tag>
-        <tag>side project</tag>
+        <tag>GDSC</tag>
+        <tag>NCCUPass</tag>
       </tags>
   </entry>
   <entry>
-    <title>[NLP][ML] Transformer (1) - Structure</title>
-    <url>/posts/4283617483/</url>
-    <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>The Transformer is a <strong>deep learning architecture</strong> introduced in the paper “Attention Is All You Need” by Vaswani et al. in 2017. It revolutionized the field of natural language processing (NLP) and brought significant advancements in various <strong>sequence-to-sequence tasks</strong>. The Transformer architecture, thanks to its <strong>attention mechanisms</strong>, enables efficient processing of sequential data while <strong>capturing long-range dependencies</strong>.</p>
-<hr>
-<p>Transformer is a <strong>Seq2Seq(Sequence to Sequence) model</strong>. It uses <strong>Encoder-Decoder structure</strong><br>Below is a simple diagram：</p>
-<p><img data-src="/images/posts/NLP-series/transformer-1.gif" 
-style="width: 70%; margin: 15px auto;"><br>Source: <span class="exturl" data-url="aHR0cHM6Ly9haS5nb29nbGVibG9nLmNvbS8yMDE2LzA5L2EtbmV1cmFsLW5ldHdvcmstZm9yLW1hY2hpbmUuaHRtbA==">https://ai.googleblog.com/2016/09/a-neural-network-for-machine.html<i class="fa fa-external-link-alt"></i></span></p>
-<p>The line between Encoder and Decoder represents the “Attention”.<br>The thicker the line, the more the Decoder below pays more attention to some Chinese characters above when generating an English word.</p>
+    <title>政大Google學生開發者社群-心得（第一學期）</title>
+    <url>/posts/277323671/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在剛上大二時，除了手邊和學長的專案，我也參加了政大的Google學生開發者社群。主要是希望透過提案，<strong>利用科技來解決問題</strong>，在這裡我也深深感受到Google的文化，那就是<strong>不會怕去嘗試、不怕去解決問題</strong>，我也認識在這個社群中的各個人才。在這個社群中，我除了擔任自己<strong>專案領導人</strong>的角色外，我也身兼<strong>後端技術長</strong>的任務，也是想要發揮我目前所學到的、最成熟的後端知識。除了技術面，如何管理一個團隊、一項專案，也是一門很大的課題。希望在未來可以繼續把自己的這項專案做到完善，解決真正的問題！</p>
 <span id="more"></span>
-<p>In the below sections, I will introduce the structure of transformer and the attention machanism.<br>For the <strong>detail explaination of key components in transformer and the details of attention</strong>, you can refer to the <a href="https://mao-code.github.io/posts/2443192075/#more">next article</a>.</p>
-<h1 id="Structure"><a href="#Structure" class="headerlink" title="Structure"></a>Structure</h1><p>Below is the strucutre of Transformer.</p>
-<p><img data-src="/images/posts/NLP-series/transformer-2.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>The part <strong>on the left in the figure is the Encoder, and the part on the right is the Decoder</strong>.<br>You can notice that the structures of the left and right sides are actually quite similar.<br>The Encoder and Decoder usually contain many blocks with the same layer structure, and each layer will have <strong>multi-head attention and Feed Forward Network</strong>.</p>
-<h2 id="Encoder"><a href="#Encoder" class="headerlink" title="Encoder"></a>Encoder</h2><p><img data-src="/images/posts/NLP-series/transformer-3.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>We just mentioned that the Encoder will be divided into many blocks.<br>We will <strong>first convert a whole row of input sequence data into a whole row of vectors</strong>, and then the processing steps of each block are as follows:</p>
-<ol>
-<li>Firstly, after considering all the input information of the input vector through self-attention, output a row of vectors. (I will introduce how self-attention considers all input information later)</li>
-<li>Throw this row of vectors into the feed forward network of Fully Connected (FC).</li>
-<li>The final output vector is the output of the block.</li>
-</ol>
-<hr>
-<p>However, what the block does in the original Transformer is more complicated, the details are as follows:<br><img data-src="/images/posts/NLP-series/transformer-4.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>Suppose we will follow the method just now, and the <strong>output result of the input vector after self-attention is called a</strong>. we also need to <strong>pull the original input (we first call it b )</strong> and add it to a to get a+b . Such a network architecture is called a <strong>residual connection</strong>.</p>
-<p>After that, we will do <strong>layer normalization</strong> on the result of a+b. It will calculate the average $m$(mean) and standard deviation $\sigma$(standard deviation) of the input vector, and then calculate it according to the formula: divide the input minus the mean $m$ by the standard deviation $\sigma$. It’s here that we really get <strong>the input of the FC network</strong>.</p>
-<p>The <strong>FC network also has a residual architecture</strong>, so we will add the input of the FC network to its output to get a new output, and then do layer normalization again. This is the <strong>real output of a block in Transformer Encoder</strong>.</p>
-<hr>
-<p>Now, let’s look back at the structure diagram of Encoder:</p>
-<p><img data-src="/images/posts/NLP-series/transformer-5.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>First, in the place of input, <strong>convert the input into a vector through Embedding</strong>, and then add <strong>positional encoding</strong> (because if only self-attention is used, there will be a lack of unknown information)</p>
-<p>Next we see <strong>Multi-Head Attention</strong>, which is <strong>the block of self-attention and Add&amp;Norm means residual plus layer normalization</strong>.</p>
-<p>Finally, <strong>doing Add&amp;Norm again after FC’s feed forward network is the output of the whole block</strong>, and this block will be <strong>repeated n times</strong>.</p>
-<h2 id="Decoder"><a href="#Decoder" class="headerlink" title="Decoder"></a>Decoder</h2><p>Then let us look at the Decoder:</p>
-<p><img data-src="/images/posts/NLP-series/transformer-2.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p><strong>Input the sequence obtained at the previous time</strong>, and then perform the same Embedding and Positional Encoding and then enter the block repeated N times.<br>The difference is that there is an extra <strong>“Masked” (note the red box) in the Multi-Head Attention</strong> when we first entered. What does it mean?</p>
-<p>Masked means that the model will <strong>only pay attention to the part it has already generated</strong>, and <strong>will not accidentally pay attention to the words generated in the future</strong>. Since the output of the Decoder is generated <strong>one by one</strong>, it has no way to consider its future input. It seems a bit vague to say this, and I will make it clearer when I talk about self-attention in the next article.</p>
-<p>After repeating the block N times, after the <strong>Linear Layer and Softmax</strong>, we can get the output <strong>probability distribution</strong> we want, and we can sample according to this distribution or take the value with the highest probability to get the output sequence.</p>
-<p>There is still one of the most critical self-attention mechanisms that has not been explained in detail. Let’s introduce how it pays attention to all input sequences and performs parallel processing in the next article!</p>
-<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MDM5Mg==">iThome - Day 27 Transformer (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MTI0Mg==">iThome - Day 28 Self-Attention (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9oYWNrbWQuaW8vQGFibGl1L0JrWG16REJtcg==">Transformer 李宏毅深度學習 (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9zcGVlY2guZWUubnR1LmVkdS50dy9+aHlsZWUvbWwvbWwyMDIxLWNvdXJzZS1kYXRhL3NlcTJzZXFfdjkucGRm">Transformer 李宏毅老師簡報<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQzJnZ2p0dXVXdnhySEhIaWFESDFkbFE=">李宏毅老師YouTube channel<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzE3MDYuMDM3NjI=">Attention is all you need (paper)<i class="fa fa-external-link-alt"></i></span></li>
+
+<h2 id="定位與職位"><a href="#定位與職位" class="headerlink" title="定位與職位"></a>定位與職位</h2><ul>
+<li><h3 id="專案定位"><a href="#專案定位" class="headerlink" title="專案定位"></a>專案定位</h3></li>
 </ul>
+<p>我這次的提案叫做「政大通NCCUPass」，以<strong>政大校園生活為出發點</strong>，想要做一款能夠解決政大學生生活上不便的APP，透過專案組的討論與調查，帶來<strong>更便利、聰明與數位化</strong>的校園生活，讓校園內的需求能夠即時被滿足，也讓這款APP融入政大學生的生活中，成為政大校園內不可或缺的一部分，因此，「政大通-NCCUPass」的提案就此誕生</p>
+<hr>
+<p>下面是我們第一次期末發表的海報和照片<br>海報內呈現的是我們規劃、也正在開發的功能<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/poster.jpg" 
+style="width: 70%; margin: 15px auto;"></p>
+<hr>
+<p>這個是期末發表當天的攤位介紹照片<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img4.jpg" 
+style="width: 70%; margin: 15px auto;"></p>
+<p><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img2.JPG" 
+style="width: 70%; margin: 15px auto;"></p>
+<p><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img1.JPG" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>參與證書<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/GDSC_certificate.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<hr>
+<ul>
+<li><h3 id="職位"><a href="#職位" class="headerlink" title="職位"></a>職位</h3></li>
+</ul>
+<p>在這個專案中，我擔任<strong>Project Leader(專案主持人)<strong>，與</strong>Backend Tech-Lead(後端技術長)<strong>的身份，帶領總共</strong>11人的團隊</strong>，在我們這個團隊中，主要分成四組，前端、後端、UI&#x2F;UX、文書，除了負責主要的後端技術，也要帶領後端的組員們提升實力、協調與規劃。以專案領導人的角度來看，除了需要<strong>規劃整個專案的進度與走向外，也要監督進度、協調各組、人際溝通等等</strong>，除了利用各種專案管理的工具外，也要撰寫各種文件與流程圖，老實說滿累的XD。但也是遇到一群願意跟隨我的隊友們，一起成長，真的非常得感謝他們🙏</p>
+<h2 id="技術"><a href="#技術" class="headerlink" title="技術"></a>技術</h2><ul>
+<li><h3 id="系統架構圖"><a href="#系統架構圖" class="headerlink" title="系統架構圖"></a>系統架構圖</h3></li>
+</ul>
+<p>下面是我們的系統架構圖，因為我是負責後端的部分，所以會著重畫後端的架構<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/NCCUPass-Structure.jpg" 
+style="width: 70%; margin: 15px auto;"></p>
+<ul>
+<li><h3 id="後端技術細節"><a href="#後端技術細節" class="headerlink" title="後端技術細節"></a>後端技術細節</h3></li>
+</ul>
+<p>根據上面的架構圖，我們的專案主要部署在Ubuntu的主機上，所有的服務利用Docker Compose統一建立，另外還有利用GitLab Runner做到自動化整合與自動化部屬的功能。後端程式是由.NET C#撰寫，這邊我使用的是Software Layer Architecture Pattern(軟體分層架構)，結合各種Design Pattern再加上自己的一些變形，資料庫是使用MongoDB的Replica-Set，也有使用Redis做快取，照片和一些公開的檔案主要放在我們的File Server上。其他技術細節我就列在下面，想看的人可以參考一下XD</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">- Software Layer Architecture pattern (多層)</span><br><span class="line">- Repository pattern</span><br><span class="line">- Unit of Work pattern</span><br><span class="line">- Mediator pattern &amp; CQRS</span><br><span class="line">- Password Salting and Encryption</span><br><span class="line">- JWT &amp; RBAC</span><br><span class="line">- Automapper</span><br><span class="line">- Exception handler抽離</span><br><span class="line">- Dapper &amp; EF combination</span><br><span class="line">- Redis (Cache)</span><br><span class="line">- Docker Networking</span><br><span class="line">- Docker Volume</span><br><span class="line">- Docker hub</span><br><span class="line">- appsettings 組態切換</span><br><span class="line">- MongoDB replica-set</span><br><span class="line">    - key-file (internal authentication)</span><br><span class="line">- Git 多人協作</span><br><span class="line">- Swagger / OpenAPI</span><br><span class="line">- Docker File Server</span><br><span class="line">- Docker mongoDB backup daily</span><br><span class="line">- Docker Compose</span><br><span class="line">- JMeter壓力測試</span><br><span class="line">- GC mode區別(Workstation, Server)</span><br><span class="line">- SignalR 雙向溝通</span><br><span class="line">- 測試 (K6 stress testing, )</span><br><span class="line">- 自動化發送Email (python selenium)</span><br><span class="line">- SSH with Linux server</span><br><span class="line">- FCM (to push device notification)</span><br><span class="line">- Linux server</span><br><span class="line">- Cloudflare domain and SSL/TLS</span><br><span class="line">- Nginx  (on server and on docker)</span><br><span class="line">    - redirect (setting files)</span><br><span class="line">    - ssl setting(certificate, key)</span><br><span class="line">- Shell script自動備份資料庫</span><br></pre></td></tr></table></figure>
+<p>之後也會一直新增，因為現在處於專案開發的初期。</p>
+<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>最後，這個專案雖然只是在發展初期，但我希望未來可以發展到我預想的樣子，也非常感謝一路願意跟隨我、幫助我的隊友們，單打獨鬥真的比不上團隊合作👍，也希望各位未來也可以繼續幫助我啦，現在打分享文可能還太早，但我就是想要趁學期末趕快記錄一下哈哈</p>
 ]]></content>
+      <categories>
+        <category>心得</category>
+        <category>專案</category>
+        <category>GDSC</category>
+        <category>side project</category>
+        <category>NCCUPass</category>
+      </categories>
       <tags>
-        <tag>ML</tag>
-        <tag>AI</tag>
-        <tag>NLP</tag>
+        <tag>專案</tag>
+        <tag>GDSC</tag>
+        <tag>NCCUPass</tag>
       </tags>
   </entry>
   <entry>
@@ -624,6 +590,155 @@ style="width: 70%; margin: 15px auto;"></p>
       </tags>
   </entry>
   <entry>
+    <title>[NLP][ML] Transformer (1) - Structure</title>
+    <url>/posts/4283617483/</url>
+    <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>The Transformer is a <strong>deep learning architecture</strong> introduced in the paper “Attention Is All You Need” by Vaswani et al. in 2017. It revolutionized the field of natural language processing (NLP) and brought significant advancements in various <strong>sequence-to-sequence tasks</strong>. The Transformer architecture, thanks to its <strong>attention mechanisms</strong>, enables efficient processing of sequential data while <strong>capturing long-range dependencies</strong>.</p>
+<hr>
+<p>Transformer is a <strong>Seq2Seq(Sequence to Sequence) model</strong>. It uses <strong>Encoder-Decoder structure</strong><br>Below is a simple diagram：</p>
+<p><img data-src="/images/posts/NLP-series/transformer-1.gif" 
+style="width: 70%; margin: 15px auto;"><br>Source: <span class="exturl" data-url="aHR0cHM6Ly9haS5nb29nbGVibG9nLmNvbS8yMDE2LzA5L2EtbmV1cmFsLW5ldHdvcmstZm9yLW1hY2hpbmUuaHRtbA==">https://ai.googleblog.com/2016/09/a-neural-network-for-machine.html<i class="fa fa-external-link-alt"></i></span></p>
+<p>The line between Encoder and Decoder represents the “Attention”.<br>The thicker the line, the more the Decoder below pays more attention to some Chinese characters above when generating an English word.</p>
+<span id="more"></span>
+<p>In the below sections, I will introduce the structure of transformer and the attention machanism.<br>For the <strong>detail explaination of key components in transformer and the details of attention</strong>, you can refer to the <a href="https://mao-code.github.io/posts/2443192075/#more">next article</a>.</p>
+<h1 id="Structure"><a href="#Structure" class="headerlink" title="Structure"></a>Structure</h1><p>Below is the strucutre of Transformer.</p>
+<p><img data-src="/images/posts/NLP-series/transformer-2.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>The part <strong>on the left in the figure is the Encoder, and the part on the right is the Decoder</strong>.<br>You can notice that the structures of the left and right sides are actually quite similar.<br>The Encoder and Decoder usually contain many blocks with the same layer structure, and each layer will have <strong>multi-head attention and Feed Forward Network</strong>.</p>
+<h2 id="Encoder"><a href="#Encoder" class="headerlink" title="Encoder"></a>Encoder</h2><p><img data-src="/images/posts/NLP-series/transformer-3.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>We just mentioned that the Encoder will be divided into many blocks.<br>We will <strong>first convert a whole row of input sequence data into a whole row of vectors</strong>, and then the processing steps of each block are as follows:</p>
+<ol>
+<li>Firstly, after considering all the input information of the input vector through self-attention, output a row of vectors. (I will introduce how self-attention considers all input information later)</li>
+<li>Throw this row of vectors into the feed forward network of Fully Connected (FC).</li>
+<li>The final output vector is the output of the block.</li>
+</ol>
+<hr>
+<p>However, what the block does in the original Transformer is more complicated, the details are as follows:<br><img data-src="/images/posts/NLP-series/transformer-4.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>Suppose we will follow the method just now, and the <strong>output result of the input vector after self-attention is called a</strong>. we also need to <strong>pull the original input (we first call it b )</strong> and add it to a to get a+b . Such a network architecture is called a <strong>residual connection</strong>.</p>
+<p>After that, we will do <strong>layer normalization</strong> on the result of a+b. It will calculate the average $m$(mean) and standard deviation $\sigma$(standard deviation) of the input vector, and then calculate it according to the formula: divide the input minus the mean $m$ by the standard deviation $\sigma$. It’s here that we really get <strong>the input of the FC network</strong>.</p>
+<p>The <strong>FC network also has a residual architecture</strong>, so we will add the input of the FC network to its output to get a new output, and then do layer normalization again. This is the <strong>real output of a block in Transformer Encoder</strong>.</p>
+<hr>
+<p>Now, let’s look back at the structure diagram of Encoder:</p>
+<p><img data-src="/images/posts/NLP-series/transformer-5.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>First, in the place of input, <strong>convert the input into a vector through Embedding</strong>, and then add <strong>positional encoding</strong> (because if only self-attention is used, there will be a lack of unknown information)</p>
+<p>Next we see <strong>Multi-Head Attention</strong>, which is <strong>the block of self-attention and Add&amp;Norm means residual plus layer normalization</strong>.</p>
+<p>Finally, <strong>doing Add&amp;Norm again after FC’s feed forward network is the output of the whole block</strong>, and this block will be <strong>repeated n times</strong>.</p>
+<h2 id="Decoder"><a href="#Decoder" class="headerlink" title="Decoder"></a>Decoder</h2><p>Then let us look at the Decoder:</p>
+<p><img data-src="/images/posts/NLP-series/transformer-2.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p><strong>Input the sequence obtained at the previous time</strong>, and then perform the same Embedding and Positional Encoding and then enter the block repeated N times.<br>The difference is that there is an extra <strong>“Masked” (note the red box) in the Multi-Head Attention</strong> when we first entered. What does it mean?</p>
+<p>Masked means that the model will <strong>only pay attention to the part it has already generated</strong>, and <strong>will not accidentally pay attention to the words generated in the future</strong>. Since the output of the Decoder is generated <strong>one by one</strong>, it has no way to consider its future input. It seems a bit vague to say this, and I will make it clearer when I talk about self-attention in the next article.</p>
+<p>After repeating the block N times, after the <strong>Linear Layer and Softmax</strong>, we can get the output <strong>probability distribution</strong> we want, and we can sample according to this distribution or take the value with the highest probability to get the output sequence.</p>
+<p>There is still one of the most critical self-attention mechanisms that has not been explained in detail. Let’s introduce how it pays attention to all input sequences and performs parallel processing in the next article!</p>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MDM5Mg==">iThome - Day 27 Transformer (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MTI0Mg==">iThome - Day 28 Self-Attention (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9oYWNrbWQuaW8vQGFibGl1L0JrWG16REJtcg==">Transformer 李宏毅深度學習 (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9zcGVlY2guZWUubnR1LmVkdS50dy9+aHlsZWUvbWwvbWwyMDIxLWNvdXJzZS1kYXRhL3NlcTJzZXFfdjkucGRm">Transformer 李宏毅老師簡報<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQzJnZ2p0dXVXdnhySEhIaWFESDFkbFE=">李宏毅老師YouTube channel<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzE3MDYuMDM3NjI=">Attention is all you need (paper)<i class="fa fa-external-link-alt"></i></span></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>ML</tag>
+        <tag>AI</tag>
+        <tag>NLP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[NLP][ML] Transformer (2) - Attention &amp; Summary</title>
+    <url>/posts/2443192075/</url>
+    <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>Self-attention allows the model to <strong>weigh the importance of different parts of an input sequence against each other</strong>, capturing <strong>relationships</strong> and dependencies between elements within the sequence. This is particularly powerful for tasks involving sequential or contextual information, such as language translation, text generation, and more.</p>
+<p>What Self-Attention wants to do is to replace what RNN can do<br>Its output&#x2F;input is the same as RNN, and its biggest advantages are:</p>
+<ul>
+<li>Can parallelize operations</li>
+<li>Each output vector has seen the entire input sequence. So there is no need to stack several layers like CNN.</li>
+</ul>
+<span id="more"></span>
+<h1 id="Difference-between-attention-and-self-attention"><a href="#Difference-between-attention-and-self-attention" class="headerlink" title="Difference between attention and self-attention"></a>Difference between attention and self-attention</h1><p><strong>attention is a broader concept of selectively focusing on information</strong>, while <strong>self-attention is a specific implementation of this concept</strong> where elements within the same sequence are attended to. Self-attention is a fundamental building block of the Transformer architecture, allowing it to capture relationships and dependencies within sequences effectively.</p>
+<h1 id="Attention-Machanism"><a href="#Attention-Machanism" class="headerlink" title="Attention (Machanism)"></a>Attention (Machanism)</h1><p>main idea:<br>use <strong>triples</strong><br>$$&lt;Q,K,V&gt;$$</p>
+<p>Represents the <strong>attention mechanism</strong>, expresses the <strong>similarity between Query and Key</strong>, and then assigns the value of <strong>Value according to the similarity</strong><br><strong>formula</strong>:<br>$$Attention(Q,K,V) &#x3D; softmax(\frac{QK^T}{\sqrt{d_k}})V$$</p>
+<h1 id="Self-Attention-Layer-Key"><a href="#Self-Attention-Layer-Key" class="headerlink" title="Self-Attention(Layer) (Key)"></a>Self-Attention(Layer) (<strong>Key</strong>)</h1><h2 id="Computing-process"><a href="#Computing-process" class="headerlink" title="Computing process"></a>Computing process</h2><ol>
+<li><p>Now we suppose to enter $a_1$~$a_4$ Four vector, and Self-Attention needs to output another row of $b$ vectors, and each $b$ is generated after considering all $a$</p>
+</li>
+<li><p>To figure out $b_1$, the first step is based on $a_1$, find <strong>other vectors related to $a_1$</strong> in this sequence. We use the “$\alpha$” to represent the <strong>similarity</strong> of each vector related to $a_1$.</p>
+</li>
+<li><p>It must be mentioned here that there are <strong>3 very important values in the Self-Attention mechanism</strong>: <strong>Query, Key, Value</strong>. Respectively represent <strong>the value used to match, the value to be matched, and the extracted information</strong>.</p>
+</li>
+<li><p>As for determining the <strong>correlation between two vectors</strong>, the most commonly used method is the <strong>dot product (here is scaled dot product)</strong>. It takes two vectors as input and multiplies them with two different matrices. The left vector is multiplied by the matrix $W^q$ (Query matrix), and the right vector is multiplied by the matrix $W^k$ (Key matrix). The values of $W^q$ and $W^k$ are both <strong>randomly initialized and obtained through training</strong>.</p>
+</li>
+<li><p>Next, after obtaining the two vectors, $q$, $k$, the <strong>dot product is computed between them</strong>. After summing up all the dot products, a <strong>scalar (magnitude)</strong> is obtained. This scalar is represented as $\alpha$, which we consider as <strong>the degree of correlation between the two vectors.</strong></p>
+</li>
+</ol>
+<p><img data-src="/images/posts/NLP-series/transformer-6.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>Next, we apply what was just introduced to Self-Attention.</p>
+<ol>
+<li>First, we calculate the relationships “$\alpha$” between $a_1$ and $a_2$, $a_3$, $a_4$ individually. <ul>
+<li>We multiply $a_1$ by $W^q$ to obtain $q_1$. </li>
+<li>Then, we multiply $a_2$, $a_3$, $a_4$ by $W^k$ respectively and compute the inner products to determine the relationship “$\alpha$” between $a_1$ and each vector. </li>
+<li>Applying the Softmax function yields $\alpha’$. </li>
+<li>With this $\alpha’$, we can extract crucial information from this sequence!</li>
+</ul>
+</li>
+</ol>
+<hr>
+<p><img data-src="/images/posts/NLP-series/transformer-7.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<ol start="2">
+<li>How to extract important information using $\alpha’$? The steps are as follows:</li>
+</ol>
+<ul>
+<li>First, multiply $a_1$ ~ $a_4$ by $W^v$ to obtain new vectors, denoted as $v_1$, $v_2$, $v_3$ and $v_4$, respectively (where $W^v$ is the Value matrix).</li>
+<li>Next, multiply each vector here, $v_1$ ~ $v_4$, by $\alpha’$, and then sum them to obtain the output $b_1$ (formula written in the top-right corner of the image).</li>
+</ul>
+<p>If a certain vector receives a higher score - for instance, if the relationship between $a_1$ and $a_2$ is strong, leading to a large value for $\alpha_{1,2}’$ - then after performing the weighted sum, the value of $b_1$ obtained could be very close to $v_2$.</p>
+<p>Now that we know how to compute $b_1$, it naturally follows that we can deduce $b_1$, $b_2$, $b_3$, and $b_4$ using the same method. With this, we have completed the explanation of the internal computation process of Self-Attention.</p>
+<p>Last but not least, the <strong>similarity matrix($\alpha_{i,j}$)</strong> is just the <strong>attention</strong> in the self-attention layer, i.e. importance or relevance to other elements in the same sequence..</p>
+<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><h2 id="Attention-Score-Weight-and-Output"><a href="#Attention-Score-Weight-and-Output" class="headerlink" title="Attention (Score, Weight and Output)"></a>Attention (Score, Weight and Output)</h2><ul>
+<li>$ Attention Score &#x3D; QK^T $</li>
+<li>$ Attention Weights &#x3D; Softmax(\frac{Attention Score}{\sqrt{d_k}}) $</li>
+<li>$ Attention Output &#x3D; (Attention Weights)V $</li>
+</ul>
+<h2 id="Key-Components-of-Transformers"><a href="#Key-Components-of-Transformers" class="headerlink" title="Key Components of Transformers"></a>Key Components of Transformers</h2><ol>
+<li><p>Self-Attention Mechanism:<br>The core innovation of the Transformer is the self-attention mechanism, which allows the model to <strong>weigh the importance of different words in a sequence relative to each other</strong>. It computes attention scores for each word by considering its <strong>relationships with all other words</strong> in the same sequence. Self-attention enables capturing context and dependencies between words <strong>regardless of their distance</strong>.</p>
+</li>
+<li><p>Multi-Head Attention:<br>To capture different types of relationships, the Transformer employs multi-head attention. <strong>Multiple sets of self-attention mechanisms (attention heads) run in parallel</strong>, and their outputs are concatenated and linearly transformed to create a more comprehensive representation.</p>
+</li>
+<li><p>Positional Encodings:<br>Since the Transformer does not inherently understand <strong>the order of words in a sequence</strong> (unlike recurrent networks(RNN)), positional encodings are added to the input embeddings. These encodings provide <strong>information about the positions of words within the sequence</strong>.</p>
+</li>
+<li><p>Encoder-Decoder Architecture:<br>The Transformer’s architecture is divided into an <strong>encoder and a decoder</strong>. The <strong>encoder processes the input sequence, capturing its contextual information</strong>, while the <strong>decoder generates the output sequence</strong>. This architecture is widely used in tasks like machine translation.</p>
+</li>
+<li><p>Residual Connections and Layer Normalization:<br>To address the <strong>vanishing gradient problem</strong>, residual connections (skip connections) are used around each sub-layer in the encoder and decoder. Layer normalization is also applied to <strong>stabilize</strong> the training process.</p>
+</li>
+<li><p>Position-wise Feed-Forward Networks:<br>After the self-attention layers, each position’s representation is passed through a position-wise feed-forward neural network, which <strong>adds non-linearity to the model</strong>.</p>
+</li>
+<li><p>Scaled Dot-Product Attention:<br>The self-attention mechanism involves computing the <strong>dot product of query, key, and value vectors</strong>. To control the scale of the dot products and <strong>avoid large gradients</strong>, the dot products are divided by the <strong>square root of the dimension of the key vectors</strong>.</p>
+</li>
+<li><p>Masked Self-Attention in Decoding:<br>During decoding, the self-attention mechanism is modified to <strong>ensure that each position can only attend to previous positions</strong>. This masking <strong>prevents the model from “cheating” by looking ahead in the output sequence</strong>.</p>
+</li>
+<li><p>Transformer Variants:<br> The original Transformer model has inspired various extensions and improvements, such as BERT, GPT, and more. BERT focuses on pretraining language representations, while GPT is designed for autoregressive text generation.</p>
+</li>
+</ol>
+<p>The Transformer architecture has become the foundation for many state-of-the-art NLP models due to its ability to <strong>capture context, parallelize computations, and handle long-range dependencies effectively</strong>. It has led to significant advancements in machine translation, text generation, sentiment analysis, and various other NLP tasks.</p>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MDM5Mg==">iThome - Day 27 Transformer (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MTI0Mg==">iThome - Day 28 Self-Attention (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9oYWNrbWQuaW8vQGFibGl1L0JrWG16REJtcg==">Transformer 李宏毅深度學習 (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9zcGVlY2guZWUubnR1LmVkdS50dy9+aHlsZWUvbWwvbWwyMDIxLWNvdXJzZS1kYXRhL3NlcTJzZXFfdjkucGRm">Transformer 李宏毅老師簡報<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQzJnZ2p0dXVXdnhySEhIaWFESDFkbFE=">李宏毅老師YouTube channel<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzE3MDYuMDM3NjI=">Attention is all you need (paper)<i class="fa fa-external-link-alt"></i></span></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>ML</tag>
+        <tag>AI</tag>
+        <tag>NLP</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>[NLP][ML] Transformer (3) - More conputational detail</title>
     <url>/posts/1255359463/</url>
     <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>In this article, I will focus more on the computing detail in transformer.<br>It will cover self-attention, prallel processing, multi-head self-attention, positional encoding and so on.</p>
@@ -773,207 +888,97 @@ style="width: 70%; margin: 15px auto;"></p>
       </tags>
   </entry>
   <entry>
-    <title>[NLP][ML] Transformer (2) - Attention &amp; Summary</title>
-    <url>/posts/2443192075/</url>
-    <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>Self-attention allows the model to <strong>weigh the importance of different parts of an input sequence against each other</strong>, capturing <strong>relationships</strong> and dependencies between elements within the sequence. This is particularly powerful for tasks involving sequential or contextual information, such as language translation, text generation, and more.</p>
-<p>What Self-Attention wants to do is to replace what RNN can do<br>Its output&#x2F;input is the same as RNN, and its biggest advantages are:</p>
-<ul>
-<li>Can parallelize operations</li>
-<li>Each output vector has seen the entire input sequence. So there is no need to stack several layers like CNN.</li>
-</ul>
+    <title>[Git][Version Control] Git - Introduction</title>
+    <url>/posts/2571684277/</url>
+    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Here is the series of Git full tutorial. I will cover the important and advanced topics that you should know in git. By reading this series, you are able to know the basic(but important) concept of Git and the technique of using git. Hope you can gain a lot ! </p>
 <span id="more"></span>
-<h1 id="Difference-between-attention-and-self-attention"><a href="#Difference-between-attention-and-self-attention" class="headerlink" title="Difference between attention and self-attention"></a>Difference between attention and self-attention</h1><p><strong>attention is a broader concept of selectively focusing on information</strong>, while <strong>self-attention is a specific implementation of this concept</strong> where elements within the same sequence are attended to. Self-attention is a fundamental building block of the Transformer architecture, allowing it to capture relationships and dependencies within sequences effectively.</p>
-<h1 id="Attention-Machanism"><a href="#Attention-Machanism" class="headerlink" title="Attention (Machanism)"></a>Attention (Machanism)</h1><p>main idea:<br>use <strong>triples</strong><br>$$&lt;Q,K,V&gt;$$</p>
-<p>Represents the <strong>attention mechanism</strong>, expresses the <strong>similarity between Query and Key</strong>, and then assigns the value of <strong>Value according to the similarity</strong><br><strong>formula</strong>:<br>$$Attention(Q,K,V) &#x3D; softmax(\frac{QK^T}{\sqrt{d_k}})V$$</p>
-<h1 id="Self-Attention-Layer-Key"><a href="#Self-Attention-Layer-Key" class="headerlink" title="Self-Attention(Layer) (Key)"></a>Self-Attention(Layer) (<strong>Key</strong>)</h1><h2 id="Computing-process"><a href="#Computing-process" class="headerlink" title="Computing process"></a>Computing process</h2><ol>
-<li><p>Now we suppose to enter $a_1$~$a_4$ Four vector, and Self-Attention needs to output another row of $b$ vectors, and each $b$ is generated after considering all $a$</p>
-</li>
-<li><p>To figure out $b_1$, the first step is based on $a_1$, find <strong>other vectors related to $a_1$</strong> in this sequence. We use the “$\alpha$” to represent the <strong>similarity</strong> of each vector related to $a_1$.</p>
-</li>
-<li><p>It must be mentioned here that there are <strong>3 very important values in the Self-Attention mechanism</strong>: <strong>Query, Key, Value</strong>. Respectively represent <strong>the value used to match, the value to be matched, and the extracted information</strong>.</p>
-</li>
-<li><p>As for determining the <strong>correlation between two vectors</strong>, the most commonly used method is the <strong>dot product (here is scaled dot product)</strong>. It takes two vectors as input and multiplies them with two different matrices. The left vector is multiplied by the matrix $W^q$ (Query matrix), and the right vector is multiplied by the matrix $W^k$ (Key matrix). The values of $W^q$ and $W^k$ are both <strong>randomly initialized and obtained through training</strong>.</p>
-</li>
-<li><p>Next, after obtaining the two vectors, $q$, $k$, the <strong>dot product is computed between them</strong>. After summing up all the dot products, a <strong>scalar (magnitude)</strong> is obtained. This scalar is represented as $\alpha$, which we consider as <strong>the degree of correlation between the two vectors.</strong></p>
-</li>
-</ol>
-<p><img data-src="/images/posts/NLP-series/transformer-6.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>Next, we apply what was just introduced to Self-Attention.</p>
-<ol>
-<li>First, we calculate the relationships “$\alpha$” between $a_1$ and $a_2$, $a_3$, $a_4$ individually. <ul>
-<li>We multiply $a_1$ by $W^q$ to obtain $q_1$. </li>
-<li>Then, we multiply $a_2$, $a_3$, $a_4$ by $W^k$ respectively and compute the inner products to determine the relationship “$\alpha$” between $a_1$ and each vector. </li>
-<li>Applying the Softmax function yields $\alpha’$. </li>
-<li>With this $\alpha’$, we can extract crucial information from this sequence!</li>
-</ul>
-</li>
-</ol>
-<hr>
-<p><img data-src="/images/posts/NLP-series/transformer-7.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<ol start="2">
-<li>How to extract important information using $\alpha’$? The steps are as follows:</li>
-</ol>
+
+<h1 id="Series-Outline"><a href="#Series-Outline" class="headerlink" title="Series Outline"></a>Series Outline</h1><p>I will follow the outline below in this series.</p>
 <ul>
-<li>First, multiply $a_1$ ~ $a_4$ by $W^v$ to obtain new vectors, denoted as $v_1$, $v_2$, $v_3$ and $v_4$, respectively (where $W^v$ is the Value matrix).</li>
-<li>Next, multiply each vector here, $v_1$ ~ $v_4$, by $\alpha’$, and then sum them to obtain the output $b_1$ (formula written in the top-right corner of the image).</li>
+<li>Introduction (this post)</li>
+<li>Setup</li>
+<li>Version Control &amp; Commands (Basics)</li>
+<li>Branching &amp; Merging</li>
+<li>Conflict</li>
+<li>Collaboration &amp; GitHub</li>
+<li>Advanced Topics</li>
 </ul>
-<p>If a certain vector receives a higher score - for instance, if the relationship between $a_1$ and $a_2$ is strong, leading to a large value for $\alpha_{1,2}’$ - then after performing the weighted sum, the value of $b_1$ obtained could be very close to $v_2$.</p>
-<p>Now that we know how to compute $b_1$, it naturally follows that we can deduce $b_1$, $b_2$, $b_3$, and $b_4$ using the same method. With this, we have completed the explanation of the internal computation process of Self-Attention.</p>
-<p>Last but not least, the <strong>similarity matrix($\alpha_{i,j}$)</strong> is just the <strong>attention</strong> in the self-attention layer, i.e. importance or relevance to other elements in the same sequence..</p>
-<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><h2 id="Key-Components-of-Transformers"><a href="#Key-Components-of-Transformers" class="headerlink" title="Key Components of Transformers"></a>Key Components of Transformers</h2><ol>
-<li><p>Self-Attention Mechanism:<br>The core innovation of the Transformer is the self-attention mechanism, which allows the model to <strong>weigh the importance of different words in a sequence relative to each other</strong>. It computes attention scores for each word by considering its <strong>relationships with all other words</strong> in the same sequence. Self-attention enables capturing context and dependencies between words <strong>regardless of their distance</strong>.</p>
-</li>
-<li><p>Multi-Head Attention:<br>To capture different types of relationships, the Transformer employs multi-head attention. <strong>Multiple sets of self-attention mechanisms (attention heads) run in parallel</strong>, and their outputs are concatenated and linearly transformed to create a more comprehensive representation.</p>
-</li>
-<li><p>Positional Encodings:<br>Since the Transformer does not inherently understand <strong>the order of words in a sequence</strong> (unlike recurrent networks(RNN)), positional encodings are added to the input embeddings. These encodings provide <strong>information about the positions of words within the sequence</strong>.</p>
-</li>
-<li><p>Encoder-Decoder Architecture:<br>The Transformer’s architecture is divided into an <strong>encoder and a decoder</strong>. The <strong>encoder processes the input sequence, capturing its contextual information</strong>, while the <strong>decoder generates the output sequence</strong>. This architecture is widely used in tasks like machine translation.</p>
-</li>
-<li><p>Residual Connections and Layer Normalization:<br>To address the <strong>vanishing gradient problem</strong>, residual connections (skip connections) are used around each sub-layer in the encoder and decoder. Layer normalization is also applied to <strong>stabilize</strong> the training process.</p>
-</li>
-<li><p>Position-wise Feed-Forward Networks:<br>After the self-attention layers, each position’s representation is passed through a position-wise feed-forward neural network, which <strong>adds non-linearity to the model</strong>.</p>
-</li>
-<li><p>Scaled Dot-Product Attention:<br>The self-attention mechanism involves computing the <strong>dot product of query, key, and value vectors</strong>. To control the scale of the dot products and <strong>avoid large gradients</strong>, the dot products are divided by the <strong>square root of the dimension of the key vectors</strong>.</p>
-</li>
-<li><p>Masked Self-Attention in Decoding:<br>During decoding, the self-attention mechanism is modified to <strong>ensure that each position can only attend to previous positions</strong>. This masking <strong>prevents the model from “cheating” by looking ahead in the output sequence</strong>.</p>
-</li>
-<li><p>Transformer Variants:<br> The original Transformer model has inspired various extensions and improvements, such as BERT, GPT, and more. BERT focuses on pretraining language representations, while GPT is designed for autoregressive text generation.</p>
-</li>
-</ol>
-<p>The Transformer architecture has become the foundation for many state-of-the-art NLP models due to its ability to <strong>capture context, parallelize computations, and handle long-range dependencies effectively</strong>. It has led to significant advancements in machine translation, text generation, sentiment analysis, and various other NLP tasks.</p>
-<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MDM5Mg==">iThome - Day 27 Transformer (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MTI0Mg==">iThome - Day 28 Self-Attention (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9oYWNrbWQuaW8vQGFibGl1L0JrWG16REJtcg==">Transformer 李宏毅深度學習 (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9zcGVlY2guZWUubnR1LmVkdS50dy9+aHlsZWUvbWwvbWwyMDIxLWNvdXJzZS1kYXRhL3NlcTJzZXFfdjkucGRm">Transformer 李宏毅老師簡報<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQzJnZ2p0dXVXdnhySEhIaWFESDFkbFE=">李宏毅老師YouTube channel<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzE3MDYuMDM3NjI=">Attention is all you need (paper)<i class="fa fa-external-link-alt"></i></span></li>
-</ul>
+<hr>
+<h1 id="Introduction-to-Git-A-Distributed-Version-Control-System"><a href="#Introduction-to-Git-A-Distributed-Version-Control-System" class="headerlink" title="Introduction to Git: A Distributed Version Control System"></a>Introduction to Git: A Distributed Version Control System</h1><p>Git is a powerful and widely used distributed version control system designed to track changes in software development projects. It provides developers with the ability to collaborate on projects efficiently, manage codebases effectively, and easily track and revert changes.</p>
+<h2 id="Distributed-Version-Control-System"><a href="#Distributed-Version-Control-System" class="headerlink" title="Distributed Version Control System"></a>Distributed Version Control System</h2><p>In traditional software development, changes to a codebase were often managed through file-based systems or centralized version control systems. However, these approaches had limitations in terms of collaboration, scalability, and flexibility. Git emerged as a solution to these challenges, offering a distributed and decentralized approach to version control.</p>
+<p>The special point of Git is that it supports distributed version control and can also easily share codes among multiple nodes.</p>
+<p><img data-src="/images/posts/Git-Series/dist-ver-ctr.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<h2 id="Branch"><a href="#Branch" class="headerlink" title="Branch"></a>Branch</h2><p>Git manages code based on a tree structure, allowing branches to be created, merged, and deleted, and code versions to be saved at any time.</p>
+<p><img data-src="/images/posts/Git-Series/branch.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<h2 id="Snapshot"><a href="#Snapshot" class="headerlink" title="Snapshot"></a>Snapshot</h2><p>Git saves full snapshots of files, rather than differences, making it easy to restore all historical versions of files.</p>
+<p><img data-src="/images/posts/Git-Series/snapshot.jpeg" 
+style="width: 70%; margin: 15px auto;"></p>
+<hr>
+<h1 id="Recommended-Resources"><a href="#Recommended-Resources" class="headerlink" title="Recommended Resources"></a>Recommended Resources</h1><p><a href="%22https://www.youtube.com/watch?v=8JJ101D3knE%22">Mosh Git Tutorail</a></p>
 ]]></content>
+      <categories>
+        <category>Git 系列文</category>
+      </categories>
       <tags>
-        <tag>ML</tag>
-        <tag>AI</tag>
-        <tag>NLP</tag>
+        <tag>Git</tag>
+        <tag>Version Control</tag>
       </tags>
   </entry>
   <entry>
-    <title>政大Google學生開發者社群-政大通NCCUPass-心得 (第二學期)</title>
-    <url>/posts/3042436019/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>繼上篇<a href="https://mao-code.github.io/posts/277323671/#more">GDSC的心得文</a>，這篇我會介紹我們下學期的開發經歷、得獎、專案簡介以及未來這個專案的走向，屬於一個小小的紀錄心得文！</p>
+    <title>[Git][Version Control] Git - Setup</title>
+    <url>/posts/731175240/</url>
+    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Setting up the environment of Git and some recommended GUI tools.</p>
 <span id="more"></span>
 
-<h1 id="專案"><a href="#專案" class="headerlink" title="專案"></a>專案</h1><h2 id="簡介"><a href="#簡介" class="headerlink" title="簡介"></a>簡介</h2><p>政大通 - NCCUPass 團隊熱切懷抱著重塑校園體驗的夢想，點燃學生的熱情和創造力，以共同打造一個充滿活力、連結力和創新力的校園生活。經由深入校園的人際交流與觀察，我們發現學生面對著種種生活上的不便與困難，然而目前鮮少有專門為學生打造的解決方案。學生間的線下互動與真實聯繫日益減少，導致難以找到同學幫忙或組團合作的機會。此外，午晚餐時的人潮湧入校園周邊餐廳，更帶來了無法即時點餐的困擾。這些現況讓我們看到一個獨特的契機，我們決心以「政大通 - NCCUPass 」 APP 的形式來化解這些困境。</p>
-<p>「政大通 - NCCUPass 」不僅提供政大學生一個集社交、實用和創新於一身的平台，更是一個綜合性的應用程式，旨在加強他們的校園體驗。我們希望這個 APP 能成為解決校園生活難題的得力幫手！</p>
-<p>在社團「政大 Google 學生開發者社群」的擁護下，我們匯聚各領域的精英，凝聚開放分享的心態，攜手共創這個改變學生生活的嶄新 APP ！政大只是我們的第一塊版圖，我們的未來目標是影響全國的大學生，為他們帶來更加豐富、更加便利的校園體驗！</p>
-<h2 id="目前功能簡介"><a href="#目前功能簡介" class="headerlink" title="目前功能簡介"></a>目前功能簡介</h2><h3 id="學生任務功能-增強校園互動體驗"><a href="#學生任務功能-增強校園互動體驗" class="headerlink" title="學生任務功能 - 增強校園互動體驗"></a>學生任務功能 - 增強校園互動體驗</h3><ul>
-<li>動機發想<ul>
-<li>缺乏線下互動與真實聯繫：<br>我們注意到越來越多的大學生在日常生活中依賴數位平台和社交媒體，而非與人面對面的互動。這種現象在校園中尤為明顯，比起在現實中進行真實的互動，學生更傾向於在虛擬世界中建立社交連結。我們對大學生進行訪談、問卷調查和社交媒體分析，收集了大量的數據和反饋。這些數據揭示了大學生內心深處對面對面互動的渴望，以及更真實的交流，更深刻的情感，卻在線下互動中遇到了種種挑戰與限制。基於這些資訊，我們更加確定缺乏線下互動和真實聯繫的問題造成大學生的困擾，這些數據與心靈共鳴，激發了我們的靈感。我們深信，缺乏線下互動和真實聯繫的問題，不僅是個人的困擾，更是一種社會現象，需要我們攜手改變。於是，我們投入心血，開發了一個獨特的解決方案——一個能在現實世界中促進人與人之間有意義連結的奇妙工具。</li>
-</ul>
+<h1 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h1><ol>
+<li><p>Install Git with the link below: (with your OS)<br><a href="%22https://git-scm.com/%22">Git official website</a></p>
 </li>
-<li>功能敘述<ul>
-<li>這個功能旨在促進學生之間的線下互動，並為他們提供一個自由而實用的平台，能以此完成各種有趣的任務。學生們可以發布任務，例如：幫忙帶宵夜、一起揪團出去玩等等。學生可以在我們的 APP 上自由發布任務，並尋找其他學生來接受挑戰，每一次的任務都是獨特的社交機會，讓學生們在校園中建立更多真實的聯繫和友誼。除此之外，這個功能還擁有相當多面的好處。首先，它鼓勵學生積極參與校園生活，擺脫線上世界的束縛。透過與其他學生一起完成任務，他們可以體驗到珍貴的團隊合作和互助精神。此外，如果同學對彼此的服務滿意，可以提供金錢或其他回饋，藉著小小賺外快的機會，也可以累積一定的金錢！相信這個制度能鼓勵學生發揮創意和努力工作，同時也建立相互尊重和價值交換的文化。</li>
-</ul>
+<li><p>Type this command to check if it is installed successfully:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h1 id="Configure-Git-type-commands-in-your-shell"><a href="#Configure-Git-type-commands-in-your-shell" class="headerlink" title="Configure Git (type commands in your shell)"></a>Configure Git (type commands in your shell)</h1><ol>
+<li><p>Set your user name by running the following command:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br></pre></td></tr></table></figure>
 </li>
-</ul>
-<h3 id="預約外帶功能與午餐快選器-－-用餐省時無等待，專屬學生的美食提前預訂"><a href="#預約外帶功能與午餐快選器-－-用餐省時無等待，專屬學生的美食提前預訂" class="headerlink" title="預約外帶功能與午餐快選器 － 用餐省時無等待，專屬學生的美食提前預訂"></a>預約外帶功能與午餐快選器 － 用餐省時無等待，專屬學生的美食提前預訂</h3><ul>
-<li><p>動機發想</p>
+<li><p>Set your email address by running the following command:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.email youremail@example.com</span><br></pre></td></tr></table></figure></li>
+<li><p>Set up SSH key (for remote repository access. e.g. GitHub)</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure></li>
+</ol>
 <ul>
-<li><p>餐點供應不足：<br>尤其在午晚餐尖峰時段，餐廳經常供不應求，學生需要花費大量的時間排隊等待。</p>
+<li><p>Press Enter to accept the default file location and passphrase (or set your own if desired).<br>Once the key is generated, run the following command to add it to the SSH agent</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-add ~/.ssh/id_rsa</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>用餐時間緊湊：<br>大學生的生活節奏快，經常要在短時間內完成吃飯等基本活動，而在繁忙的用餐時間內排隊等待餐點往往會浪費寶貴的時間。</p>
+<li><p>Copy the public key to your clipboard by running the following command</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>無法預估用餐需求：<br>在繁忙的用餐時間內，無法預估用餐需求，可能需要長時間等待，或因時間太短而做了不太理想的食物選擇。</p>
+<li><p>Add the copied public key to your Git hosting platform account (e.g., GitHub, GitLab) by following their documentation.</p>
 </li>
-</ul>
-</li>
-<li><p>功能敘述</p>
+<li><p>View your ssh keys</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd ~/.ssh</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ls</span><br></pre></td></tr></table></figure>
 <ul>
-<li>這個功能將為大學生們帶來極速、便利、無等待的用餐體驗！我們與學校附近的店家攜手合作，確保學生們不必等待太久。現在，同學只需要提前預約外帶，下課後直接前往店家，餐點早已準備好，輕鬆取走即可！不再浪費時間排隊，享受自由自在的用餐時光！這個預約外帶功能不僅是大學生們用餐的時尚選擇，更是忙碌學習生活的得力助手。在繁忙的用餐尖峰時段，可以輕鬆預訂心儀的美食，避免為了取餐而耽誤其他重要事務。</li>
+<li>Use a text editor or command-line tools (such as cat or less) to view the contents of the .pub files and see the public key information: <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat id_rsa.pub</span><br></pre></td></tr></table></figure></li>
 </ul>
 </li>
 </ul>
-<h2 id="連結"><a href="#連結" class="headerlink" title="連結"></a>連結</h2><ul>
-<li><span class="exturl" data-url="aHR0cHM6Ly9uY2N1cGFzcy5jb20v">官方網站<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9uY2N1cGFzcy8=">IG粉專<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2NvbXBhbnkvbmNjdXBhc3M=">LinkedIn<i class="fa fa-external-link-alt"></i></span></li>
+<ol start="4">
+<li>You can see your configuration by typing the following commands:<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --list</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h1 id="Recommended-GUI-tools"><a href="#Recommended-GUI-tools" class="headerlink" title="Recommended GUI tools"></a>Recommended GUI tools</h1><p>Both commands and GUI tools are important to Git manupulation.<br>And Here are some recommended Git GUI tools that you can use.</p>
+<ul>
+<li><a href="%22https://www.sourcetreeapp.com/%22">Sourcetree</a></li>
+<li><a href="%22https://www.gitkraken.com/%22">GitKraken</a></li>
 </ul>
-<h1 id="得獎"><a href="#得獎" class="headerlink" title="得獎"></a>得獎</h1><p>NCCUPass在當天的期末發表會得到最佳人氣專案奬的殊榮！<br><img data-src="/images/posts/2023NCCUPass/GDSC_award.JPG" 
-style="width: 70%; margin: 15px auto;"></p>
-<p><img data-src="/images/posts/2023NCCUPass/GDSC_award_on_stage.JPG" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>當天的期末發表會：<br><img data-src="/images/posts/2023NCCUPass/GDSC_final.JPG" 
-style="width: 70%; margin: 15px auto;"></p>
-<h1 id="技術"><a href="#技術" class="headerlink" title="技術"></a>技術</h1><p>在經過一個學期後，我們也慢慢拓展技術範圍，未來也將因應需求機動地改變<br>在這邊就只放上系統架構圖，不贅述太多技術細節</p>
-<h2 id="系統架構圖"><a href="#系統架構圖" class="headerlink" title="系統架構圖"></a>系統架構圖</h2><p><img data-src="/images/posts/2023NCCUPass/NCCUPass_structure.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<h1 id="未來"><a href="#未來" class="headerlink" title="未來"></a>未來</h1><p>政大是我們的第一塊版圖，我們的目標是全台灣的大學，目前先穩紮穩打在政大站穩腳步，在此期間會積極地與其他組織或社團合作、參與各項競賽以及參加創投機構的活動，我們的理念是讓大學生們彼此間的關係更加密切與真實，使他們的生活更加數位化與便利！</p>
 ]]></content>
       <categories>
-        <category>心得</category>
-        <category>專案</category>
-        <category>side project</category>
-        <category>GDSC</category>
-        <category>NCCUPass</category>
+        <category>Git 系列文</category>
       </categories>
       <tags>
-        <tag>專案</tag>
-        <tag>GDSC</tag>
-        <tag>NCCUPass</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>政大Google學生開發者社群-心得（第一學期）</title>
-    <url>/posts/277323671/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在剛上大二時，除了手邊和學長的專案，我也參加了政大的Google學生開發者社群。主要是希望透過提案，<strong>利用科技來解決問題</strong>，在這裡我也深深感受到Google的文化，那就是<strong>不會怕去嘗試、不怕去解決問題</strong>，我也認識在這個社群中的各個人才。在這個社群中，我除了擔任自己<strong>專案領導人</strong>的角色外，我也身兼<strong>後端技術長</strong>的任務，也是想要發揮我目前所學到的、最成熟的後端知識。除了技術面，如何管理一個團隊、一項專案，也是一門很大的課題。希望在未來可以繼續把自己的這項專案做到完善，解決真正的問題！</p>
-<span id="more"></span>
-
-<h2 id="定位與職位"><a href="#定位與職位" class="headerlink" title="定位與職位"></a>定位與職位</h2><ul>
-<li><h3 id="專案定位"><a href="#專案定位" class="headerlink" title="專案定位"></a>專案定位</h3></li>
-</ul>
-<p>我這次的提案叫做「政大通NCCUPass」，以<strong>政大校園生活為出發點</strong>，想要做一款能夠解決政大學生生活上不便的APP，透過專案組的討論與調查，帶來<strong>更便利、聰明與數位化</strong>的校園生活，讓校園內的需求能夠即時被滿足，也讓這款APP融入政大學生的生活中，成為政大校園內不可或缺的一部分，因此，「政大通-NCCUPass」的提案就此誕生</p>
-<hr>
-<p>下面是我們第一次期末發表的海報和照片<br>海報內呈現的是我們規劃、也正在開發的功能<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/poster.jpg" 
-style="width: 70%; margin: 15px auto;"></p>
-<hr>
-<p>這個是期末發表當天的攤位介紹照片<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img4.jpg" 
-style="width: 70%; margin: 15px auto;"></p>
-<p><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img2.JPG" 
-style="width: 70%; margin: 15px auto;"></p>
-<p><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img1.JPG" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>參與證書<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/GDSC_certificate.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<hr>
-<ul>
-<li><h3 id="職位"><a href="#職位" class="headerlink" title="職位"></a>職位</h3></li>
-</ul>
-<p>在這個專案中，我擔任<strong>Project Leader(專案主持人)<strong>，與</strong>Backend Tech-Lead(後端技術長)<strong>的身份，帶領總共</strong>11人的團隊</strong>，在我們這個團隊中，主要分成四組，前端、後端、UI&#x2F;UX、文書，除了負責主要的後端技術，也要帶領後端的組員們提升實力、協調與規劃。以專案領導人的角度來看，除了需要<strong>規劃整個專案的進度與走向外，也要監督進度、協調各組、人際溝通等等</strong>，除了利用各種專案管理的工具外，也要撰寫各種文件與流程圖，老實說滿累的XD。但也是遇到一群願意跟隨我的隊友們，一起成長，真的非常得感謝他們🙏</p>
-<h2 id="技術"><a href="#技術" class="headerlink" title="技術"></a>技術</h2><ul>
-<li><h3 id="系統架構圖"><a href="#系統架構圖" class="headerlink" title="系統架構圖"></a>系統架構圖</h3></li>
-</ul>
-<p>下面是我們的系統架構圖，因為我是負責後端的部分，所以會著重畫後端的架構<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/NCCUPass-Structure.jpg" 
-style="width: 70%; margin: 15px auto;"></p>
-<ul>
-<li><h3 id="後端技術細節"><a href="#後端技術細節" class="headerlink" title="後端技術細節"></a>後端技術細節</h3></li>
-</ul>
-<p>根據上面的架構圖，我們的專案主要部署在Ubuntu的主機上，所有的服務利用Docker Compose統一建立，另外還有利用GitLab Runner做到自動化整合與自動化部屬的功能。後端程式是由.NET C#撰寫，這邊我使用的是Software Layer Architecture Pattern(軟體分層架構)，結合各種Design Pattern再加上自己的一些變形，資料庫是使用MongoDB的Replica-Set，也有使用Redis做快取，照片和一些公開的檔案主要放在我們的File Server上。其他技術細節我就列在下面，想看的人可以參考一下XD</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">- Software Layer Architecture pattern (多層)</span><br><span class="line">- Repository pattern</span><br><span class="line">- Unit of Work pattern</span><br><span class="line">- Mediator pattern &amp; CQRS</span><br><span class="line">- Password Salting and Encryption</span><br><span class="line">- JWT &amp; RBAC</span><br><span class="line">- Automapper</span><br><span class="line">- Exception handler抽離</span><br><span class="line">- Dapper &amp; EF combination</span><br><span class="line">- Redis (Cache)</span><br><span class="line">- Docker Networking</span><br><span class="line">- Docker Volume</span><br><span class="line">- Docker hub</span><br><span class="line">- appsettings 組態切換</span><br><span class="line">- MongoDB replica-set</span><br><span class="line">    - key-file (internal authentication)</span><br><span class="line">- Git 多人協作</span><br><span class="line">- Swagger / OpenAPI</span><br><span class="line">- Docker File Server</span><br><span class="line">- Docker mongoDB backup daily</span><br><span class="line">- Docker Compose</span><br><span class="line">- JMeter壓力測試</span><br><span class="line">- GC mode區別(Workstation, Server)</span><br><span class="line">- SignalR 雙向溝通</span><br><span class="line">- 測試 (K6 stress testing, )</span><br><span class="line">- 自動化發送Email (python selenium)</span><br><span class="line">- SSH with Linux server</span><br><span class="line">- FCM (to push device notification)</span><br><span class="line">- Linux server</span><br><span class="line">- Cloudflare domain and SSL/TLS</span><br><span class="line">- Nginx  (on server and on docker)</span><br><span class="line">    - redirect (setting files)</span><br><span class="line">    - ssl setting(certificate, key)</span><br><span class="line">- Shell script自動備份資料庫</span><br></pre></td></tr></table></figure>
-<p>之後也會一直新增，因為現在處於專案開發的初期。</p>
-<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>最後，這個專案雖然只是在發展初期，但我希望未來可以發展到我預想的樣子，也非常感謝一路願意跟隨我、幫助我的隊友們，單打獨鬥真的比不上團隊合作👍，也希望各位未來也可以繼續幫助我啦，現在打分享文可能還太早，但我就是想要趁學期末趕快記錄一下哈哈</p>
-]]></content>
-      <categories>
-        <category>心得</category>
-        <category>專案</category>
-        <category>side project</category>
-        <category>GDSC</category>
-        <category>NCCUPass</category>
-      </categories>
-      <tags>
-        <tag>專案</tag>
-        <tag>GDSC</tag>
-        <tag>NCCUPass</tag>
+        <tag>Git</tag>
+        <tag>Version Control</tag>
       </tags>
   </entry>
   <entry>

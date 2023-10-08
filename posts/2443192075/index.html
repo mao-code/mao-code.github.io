@@ -34,7 +34,7 @@
 <meta property="og:image" content="https://mao-code.github.io/images/posts/NLP-series/transformer-6.png">
 <meta property="og:image" content="https://mao-code.github.io/images/posts/NLP-series/transformer-7.png">
 <meta property="article:published_time" content="2023-08-14T07:21:21.000Z">
-<meta property="article:modified_time" content="2023-08-14T15:36:31.943Z">
+<meta property="article:modified_time" content="2023-10-08T14:28:08.734Z">
 <meta property="article:author" content="Mao 勛哥">
 <meta property="article:tag" content="ML">
 <meta property="article:tag" content="AI">
@@ -156,7 +156,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Overview"><span class="nav-number">1.</span> <span class="nav-text">Overview</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Difference-between-attention-and-self-attention"><span class="nav-number">2.</span> <span class="nav-text">Difference between attention and self-attention</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Attention-Machanism"><span class="nav-number">3.</span> <span class="nav-text">Attention (Machanism)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Self-Attention-Layer-Key"><span class="nav-number">4.</span> <span class="nav-text">Self-Attention(Layer) (Key)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Computing-process"><span class="nav-number">4.1.</span> <span class="nav-text">Computing process</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Summary"><span class="nav-number">5.</span> <span class="nav-text">Summary</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Key-Components-of-Transformers"><span class="nav-number">5.1.</span> <span class="nav-text">Key Components of Transformers</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Reference"><span class="nav-number">6.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Overview"><span class="nav-number">1.</span> <span class="nav-text">Overview</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Difference-between-attention-and-self-attention"><span class="nav-number">2.</span> <span class="nav-text">Difference between attention and self-attention</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Attention-Machanism"><span class="nav-number">3.</span> <span class="nav-text">Attention (Machanism)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Self-Attention-Layer-Key"><span class="nav-number">4.</span> <span class="nav-text">Self-Attention(Layer) (Key)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Computing-process"><span class="nav-number">4.1.</span> <span class="nav-text">Computing process</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Summary"><span class="nav-number">5.</span> <span class="nav-text">Summary</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Attention-Score-Weight-and-Output"><span class="nav-number">5.1.</span> <span class="nav-text">Attention (Score, Weight and Output)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Key-Components-of-Transformers"><span class="nav-number">5.2.</span> <span class="nav-text">Key Components of Transformers</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Reference"><span class="nav-number">6.</span> <span class="nav-text">Reference</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -269,9 +269,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">發表於</span>
-      
 
-      <time title="創建時間：2023-08-14 15:21:21 / 修改時間：23:36:31" itemprop="dateCreated datePublished" datetime="2023-08-14T15:21:21+08:00">2023-08-14</time>
+      <time title="創建時間：2023-08-14 15:21:21" itemprop="dateCreated datePublished" datetime="2023-08-14T15:21:21+08:00">2023-08-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新於</span>
+      <time title="修改時間：2023-10-08 22:28:08" itemprop="dateModified" datetime="2023-10-08T22:28:08+08:00">2023-10-08</time>
     </span>
 
   
@@ -288,7 +294,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">文章字數：</span>
-      <span>6.3k</span>
+      <span>6.4k</span>
     </span>
     <span class="post-meta-item" title="所需閱讀時間">
       <span class="post-meta-item-icon">
@@ -351,7 +357,12 @@
 <p>If a certain vector receives a higher score - for instance, if the relationship between $a_1$ and $a_2$ is strong, leading to a large value for $\alpha_{1,2}’$ - then after performing the weighted sum, the value of $b_1$ obtained could be very close to $v_2$.</p>
 <p>Now that we know how to compute $b_1$, it naturally follows that we can deduce $b_1$, $b_2$, $b_3$, and $b_4$ using the same method. With this, we have completed the explanation of the internal computation process of Self-Attention.</p>
 <p>Last but not least, the <strong>similarity matrix($\alpha_{i,j}$)</strong> is just the <strong>attention</strong> in the self-attention layer, i.e. importance or relevance to other elements in the same sequence..</p>
-<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><h2 id="Key-Components-of-Transformers"><a href="#Key-Components-of-Transformers" class="headerlink" title="Key Components of Transformers"></a>Key Components of Transformers</h2><ol>
+<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><h2 id="Attention-Score-Weight-and-Output"><a href="#Attention-Score-Weight-and-Output" class="headerlink" title="Attention (Score, Weight and Output)"></a>Attention (Score, Weight and Output)</h2><ul>
+<li>$ Attention Score &#x3D; QK^T $</li>
+<li>$ Attention Weights &#x3D; Softmax(\frac{Attention Score}{\sqrt{d_k}}) $</li>
+<li>$ Attention Output &#x3D; (Attention Weights)V $</li>
+</ul>
+<h2 id="Key-Components-of-Transformers"><a href="#Key-Components-of-Transformers" class="headerlink" title="Key Components of Transformers"></a>Key Components of Transformers</h2><ol>
 <li><p>Self-Attention Mechanism:<br>The core innovation of the Transformer is the self-attention mechanism, which allows the model to <strong>weigh the importance of different words in a sequence relative to each other</strong>. It computes attention scores for each word by considering its <strong>relationships with all other words</strong> in the same sequence. Self-attention enables capturing context and dependencies between words <strong>regardless of their distance</strong>.</p>
 </li>
 <li><p>Multi-Head Attention:<br>To capture different types of relationships, the Transformer employs multi-head attention. <strong>Multiple sets of self-attention mechanisms (attention heads) run in parallel</strong>, and their outputs are concatenated and linearly transformed to create a more comprehensive representation.</p>
@@ -387,10 +398,10 @@
   <div class="popular-posts-header">相關文章</div>
   <ul class="popular-posts">
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/4283617483/" rel="bookmark">[NLP][ML] Transformer (1) - Structure</a></div>
+      <div class="popular-posts-title"><a href="/posts/38266156/" rel="bookmark">[NLP][ML] Adapters & LoRA</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/38266156/" rel="bookmark">[NLP][ML] Adapters & LoRA</a></div>
+      <div class="popular-posts-title"><a href="/posts/4283617483/" rel="bookmark">[NLP][ML] Transformer (1) - Structure</a></div>
     </li>
     <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/posts/1255359463/" rel="bookmark">[NLP][ML] Transformer (3) - More conputational detail</a></div>
