@@ -98,218 +98,6 @@ CC提供商城、買家、直播主追蹤的機制，加上個人化自己的動
       </tags>
   </entry>
   <entry>
-    <title>政大Google學生開發者社群-政大通NCCUPass-心得 (第二學期)</title>
-    <url>/posts/3042436019/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>繼上篇<a href="https://mao-code.github.io/posts/277323671/#more">GDSC的心得文</a>，這篇我會介紹我們下學期的開發經歷、得獎、專案簡介以及未來這個專案的走向，屬於一個小小的紀錄心得文！</p>
-<span id="more"></span>
-
-<h1 id="專案"><a href="#專案" class="headerlink" title="專案"></a>專案</h1><h2 id="簡介"><a href="#簡介" class="headerlink" title="簡介"></a>簡介</h2><p>政大通 - NCCUPass 團隊熱切懷抱著重塑校園體驗的夢想，點燃學生的熱情和創造力，以共同打造一個充滿活力、連結力和創新力的校園生活。經由深入校園的人際交流與觀察，我們發現學生面對著種種生活上的不便與困難，然而目前鮮少有專門為學生打造的解決方案。學生間的線下互動與真實聯繫日益減少，導致難以找到同學幫忙或組團合作的機會。此外，午晚餐時的人潮湧入校園周邊餐廳，更帶來了無法即時點餐的困擾。這些現況讓我們看到一個獨特的契機，我們決心以「政大通 - NCCUPass 」 APP 的形式來化解這些困境。</p>
-<p>「政大通 - NCCUPass 」不僅提供政大學生一個集社交、實用和創新於一身的平台，更是一個綜合性的應用程式，旨在加強他們的校園體驗。我們希望這個 APP 能成為解決校園生活難題的得力幫手！</p>
-<p>在社團「政大 Google 學生開發者社群」的擁護下，我們匯聚各領域的精英，凝聚開放分享的心態，攜手共創這個改變學生生活的嶄新 APP ！政大只是我們的第一塊版圖，我們的未來目標是影響全國的大學生，為他們帶來更加豐富、更加便利的校園體驗！</p>
-<h2 id="目前功能簡介"><a href="#目前功能簡介" class="headerlink" title="目前功能簡介"></a>目前功能簡介</h2><h3 id="學生任務功能-增強校園互動體驗"><a href="#學生任務功能-增強校園互動體驗" class="headerlink" title="學生任務功能 - 增強校園互動體驗"></a>學生任務功能 - 增強校園互動體驗</h3><ul>
-<li>動機發想<ul>
-<li>缺乏線下互動與真實聯繫：<br>我們注意到越來越多的大學生在日常生活中依賴數位平台和社交媒體，而非與人面對面的互動。這種現象在校園中尤為明顯，比起在現實中進行真實的互動，學生更傾向於在虛擬世界中建立社交連結。我們對大學生進行訪談、問卷調查和社交媒體分析，收集了大量的數據和反饋。這些數據揭示了大學生內心深處對面對面互動的渴望，以及更真實的交流，更深刻的情感，卻在線下互動中遇到了種種挑戰與限制。基於這些資訊，我們更加確定缺乏線下互動和真實聯繫的問題造成大學生的困擾，這些數據與心靈共鳴，激發了我們的靈感。我們深信，缺乏線下互動和真實聯繫的問題，不僅是個人的困擾，更是一種社會現象，需要我們攜手改變。於是，我們投入心血，開發了一個獨特的解決方案——一個能在現實世界中促進人與人之間有意義連結的奇妙工具。</li>
-</ul>
-</li>
-<li>功能敘述<ul>
-<li>這個功能旨在促進學生之間的線下互動，並為他們提供一個自由而實用的平台，能以此完成各種有趣的任務。學生們可以發布任務，例如：幫忙帶宵夜、一起揪團出去玩等等。學生可以在我們的 APP 上自由發布任務，並尋找其他學生來接受挑戰，每一次的任務都是獨特的社交機會，讓學生們在校園中建立更多真實的聯繫和友誼。除此之外，這個功能還擁有相當多面的好處。首先，它鼓勵學生積極參與校園生活，擺脫線上世界的束縛。透過與其他學生一起完成任務，他們可以體驗到珍貴的團隊合作和互助精神。此外，如果同學對彼此的服務滿意，可以提供金錢或其他回饋，藉著小小賺外快的機會，也可以累積一定的金錢！相信這個制度能鼓勵學生發揮創意和努力工作，同時也建立相互尊重和價值交換的文化。</li>
-</ul>
-</li>
-</ul>
-<h3 id="預約外帶功能與午餐快選器-－-用餐省時無等待，專屬學生的美食提前預訂"><a href="#預約外帶功能與午餐快選器-－-用餐省時無等待，專屬學生的美食提前預訂" class="headerlink" title="預約外帶功能與午餐快選器 － 用餐省時無等待，專屬學生的美食提前預訂"></a>預約外帶功能與午餐快選器 － 用餐省時無等待，專屬學生的美食提前預訂</h3><ul>
-<li><p>動機發想</p>
-<ul>
-<li><p>餐點供應不足：<br>尤其在午晚餐尖峰時段，餐廳經常供不應求，學生需要花費大量的時間排隊等待。</p>
-</li>
-<li><p>用餐時間緊湊：<br>大學生的生活節奏快，經常要在短時間內完成吃飯等基本活動，而在繁忙的用餐時間內排隊等待餐點往往會浪費寶貴的時間。</p>
-</li>
-<li><p>無法預估用餐需求：<br>在繁忙的用餐時間內，無法預估用餐需求，可能需要長時間等待，或因時間太短而做了不太理想的食物選擇。</p>
-</li>
-</ul>
-</li>
-<li><p>功能敘述</p>
-<ul>
-<li>這個功能將為大學生們帶來極速、便利、無等待的用餐體驗！我們與學校附近的店家攜手合作，確保學生們不必等待太久。現在，同學只需要提前預約外帶，下課後直接前往店家，餐點早已準備好，輕鬆取走即可！不再浪費時間排隊，享受自由自在的用餐時光！這個預約外帶功能不僅是大學生們用餐的時尚選擇，更是忙碌學習生活的得力助手。在繁忙的用餐尖峰時段，可以輕鬆預訂心儀的美食，避免為了取餐而耽誤其他重要事務。</li>
-</ul>
-</li>
-</ul>
-<h2 id="連結"><a href="#連結" class="headerlink" title="連結"></a>連結</h2><ul>
-<li><span class="exturl" data-url="aHR0cHM6Ly9uY2N1cGFzcy5jb20v">官方網站<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9uY2N1cGFzcy8=">IG粉專<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2NvbXBhbnkvbmNjdXBhc3M=">LinkedIn<i class="fa fa-external-link-alt"></i></span></li>
-</ul>
-<h1 id="得獎"><a href="#得獎" class="headerlink" title="得獎"></a>得獎</h1><p>NCCUPass在當天的期末發表會得到最佳人氣專案奬的殊榮！<br><img data-src="/images/posts/2023NCCUPass/GDSC_award.JPG" 
-style="width: 70%; margin: 15px auto;"></p>
-<p><img data-src="/images/posts/2023NCCUPass/GDSC_award_on_stage.JPG" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>當天的期末發表會：<br><img data-src="/images/posts/2023NCCUPass/GDSC_final.JPG" 
-style="width: 70%; margin: 15px auto;"></p>
-<h1 id="技術"><a href="#技術" class="headerlink" title="技術"></a>技術</h1><p>在經過一個學期後，我們也慢慢拓展技術範圍，未來也將因應需求機動地改變<br>在這邊就只放上系統架構圖，不贅述太多技術細節</p>
-<h2 id="系統架構圖"><a href="#系統架構圖" class="headerlink" title="系統架構圖"></a>系統架構圖</h2><p><img data-src="/images/posts/2023NCCUPass/NCCUPass_structure.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<h1 id="未來"><a href="#未來" class="headerlink" title="未來"></a>未來</h1><p>政大是我們的第一塊版圖，我們的目標是全台灣的大學，目前先穩紮穩打在政大站穩腳步，在此期間會積極地與其他組織或社團合作、參與各項競賽以及參加創投機構的活動，我們的理念是讓大學生們彼此間的關係更加密切與真實，使他們的生活更加數位化與便利！</p>
-]]></content>
-      <categories>
-        <category>心得</category>
-        <category>專案</category>
-        <category>GDSC</category>
-        <category>side project</category>
-        <category>NCCUPass</category>
-      </categories>
-      <tags>
-        <tag>專案</tag>
-        <tag>GDSC</tag>
-        <tag>NCCUPass</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>政大Google學生開發者社群-心得（第一學期）</title>
-    <url>/posts/277323671/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在剛上大二時，除了手邊和學長的專案，我也參加了政大的Google學生開發者社群。主要是希望透過提案，<strong>利用科技來解決問題</strong>，在這裡我也深深感受到Google的文化，那就是<strong>不會怕去嘗試、不怕去解決問題</strong>，我也認識在這個社群中的各個人才。在這個社群中，我除了擔任自己<strong>專案領導人</strong>的角色外，我也身兼<strong>後端技術長</strong>的任務，也是想要發揮我目前所學到的、最成熟的後端知識。除了技術面，如何管理一個團隊、一項專案，也是一門很大的課題。希望在未來可以繼續把自己的這項專案做到完善，解決真正的問題！</p>
-<span id="more"></span>
-
-<h2 id="定位與職位"><a href="#定位與職位" class="headerlink" title="定位與職位"></a>定位與職位</h2><ul>
-<li><h3 id="專案定位"><a href="#專案定位" class="headerlink" title="專案定位"></a>專案定位</h3></li>
-</ul>
-<p>我這次的提案叫做「政大通NCCUPass」，以<strong>政大校園生活為出發點</strong>，想要做一款能夠解決政大學生生活上不便的APP，透過專案組的討論與調查，帶來<strong>更便利、聰明與數位化</strong>的校園生活，讓校園內的需求能夠即時被滿足，也讓這款APP融入政大學生的生活中，成為政大校園內不可或缺的一部分，因此，「政大通-NCCUPass」的提案就此誕生</p>
-<hr>
-<p>下面是我們第一次期末發表的海報和照片<br>海報內呈現的是我們規劃、也正在開發的功能<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/poster.jpg" 
-style="width: 70%; margin: 15px auto;"></p>
-<hr>
-<p>這個是期末發表當天的攤位介紹照片<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img4.jpg" 
-style="width: 70%; margin: 15px auto;"></p>
-<p><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img2.JPG" 
-style="width: 70%; margin: 15px auto;"></p>
-<p><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img1.JPG" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>參與證書<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/GDSC_certificate.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<hr>
-<ul>
-<li><h3 id="職位"><a href="#職位" class="headerlink" title="職位"></a>職位</h3></li>
-</ul>
-<p>在這個專案中，我擔任<strong>Project Leader(專案主持人)<strong>，與</strong>Backend Tech-Lead(後端技術長)<strong>的身份，帶領總共</strong>11人的團隊</strong>，在我們這個團隊中，主要分成四組，前端、後端、UI&#x2F;UX、文書，除了負責主要的後端技術，也要帶領後端的組員們提升實力、協調與規劃。以專案領導人的角度來看，除了需要<strong>規劃整個專案的進度與走向外，也要監督進度、協調各組、人際溝通等等</strong>，除了利用各種專案管理的工具外，也要撰寫各種文件與流程圖，老實說滿累的XD。但也是遇到一群願意跟隨我的隊友們，一起成長，真的非常得感謝他們🙏</p>
-<h2 id="技術"><a href="#技術" class="headerlink" title="技術"></a>技術</h2><ul>
-<li><h3 id="系統架構圖"><a href="#系統架構圖" class="headerlink" title="系統架構圖"></a>系統架構圖</h3></li>
-</ul>
-<p>下面是我們的系統架構圖，因為我是負責後端的部分，所以會著重畫後端的架構<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/NCCUPass-Structure.jpg" 
-style="width: 70%; margin: 15px auto;"></p>
-<ul>
-<li><h3 id="後端技術細節"><a href="#後端技術細節" class="headerlink" title="後端技術細節"></a>後端技術細節</h3></li>
-</ul>
-<p>根據上面的架構圖，我們的專案主要部署在Ubuntu的主機上，所有的服務利用Docker Compose統一建立，另外還有利用GitLab Runner做到自動化整合與自動化部屬的功能。後端程式是由.NET C#撰寫，這邊我使用的是Software Layer Architecture Pattern(軟體分層架構)，結合各種Design Pattern再加上自己的一些變形，資料庫是使用MongoDB的Replica-Set，也有使用Redis做快取，照片和一些公開的檔案主要放在我們的File Server上。其他技術細節我就列在下面，想看的人可以參考一下XD</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">- Software Layer Architecture pattern (多層)</span><br><span class="line">- Repository pattern</span><br><span class="line">- Unit of Work pattern</span><br><span class="line">- Mediator pattern &amp; CQRS</span><br><span class="line">- Password Salting and Encryption</span><br><span class="line">- JWT &amp; RBAC</span><br><span class="line">- Automapper</span><br><span class="line">- Exception handler抽離</span><br><span class="line">- Dapper &amp; EF combination</span><br><span class="line">- Redis (Cache)</span><br><span class="line">- Docker Networking</span><br><span class="line">- Docker Volume</span><br><span class="line">- Docker hub</span><br><span class="line">- appsettings 組態切換</span><br><span class="line">- MongoDB replica-set</span><br><span class="line">    - key-file (internal authentication)</span><br><span class="line">- Git 多人協作</span><br><span class="line">- Swagger / OpenAPI</span><br><span class="line">- Docker File Server</span><br><span class="line">- Docker mongoDB backup daily</span><br><span class="line">- Docker Compose</span><br><span class="line">- JMeter壓力測試</span><br><span class="line">- GC mode區別(Workstation, Server)</span><br><span class="line">- SignalR 雙向溝通</span><br><span class="line">- 測試 (K6 stress testing, )</span><br><span class="line">- 自動化發送Email (python selenium)</span><br><span class="line">- SSH with Linux server</span><br><span class="line">- FCM (to push device notification)</span><br><span class="line">- Linux server</span><br><span class="line">- Cloudflare domain and SSL/TLS</span><br><span class="line">- Nginx  (on server and on docker)</span><br><span class="line">    - redirect (setting files)</span><br><span class="line">    - ssl setting(certificate, key)</span><br><span class="line">- Shell script自動備份資料庫</span><br></pre></td></tr></table></figure>
-<p>之後也會一直新增，因為現在處於專案開發的初期。</p>
-<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>最後，這個專案雖然只是在發展初期，但我希望未來可以發展到我預想的樣子，也非常感謝一路願意跟隨我、幫助我的隊友們，單打獨鬥真的比不上團隊合作👍，也希望各位未來也可以繼續幫助我啦，現在打分享文可能還太早，但我就是想要趁學期末趕快記錄一下哈哈</p>
-]]></content>
-      <categories>
-        <category>心得</category>
-        <category>專案</category>
-        <category>GDSC</category>
-        <category>side project</category>
-        <category>NCCUPass</category>
-      </categories>
-      <tags>
-        <tag>專案</tag>
-        <tag>GDSC</tag>
-        <tag>NCCUPass</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>[Git][Version Control] Git - Setup</title>
-    <url>/posts/731175240/</url>
-    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Setting up the environment of Git and some recommended GUI tools.</p>
-<span id="more"></span>
-
-<h1 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h1><ol>
-<li><p>Install Git with the link below: (with your OS)<br><a href="%22https://git-scm.com/%22">Git official website</a></p>
-</li>
-<li><p>Type this command to check if it is installed successfully:</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h1 id="Configure-Git-type-commands-in-your-shell"><a href="#Configure-Git-type-commands-in-your-shell" class="headerlink" title="Configure Git (type commands in your shell)"></a>Configure Git (type commands in your shell)</h1><ol>
-<li><p>Set your user name by running the following command:</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Set your email address by running the following command:</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.email youremail@example.com</span><br></pre></td></tr></table></figure></li>
-<li><p>Set up SSH key (for remote repository access. e.g. GitHub)</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure></li>
-</ol>
-<ul>
-<li><p>Press Enter to accept the default file location and passphrase (or set your own if desired).<br>Once the key is generated, run the following command to add it to the SSH agent</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-add ~/.ssh/id_rsa</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Copy the public key to your clipboard by running the following command</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Add the copied public key to your Git hosting platform account (e.g., GitHub, GitLab) by following their documentation.</p>
-</li>
-<li><p>View your ssh keys</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd ~/.ssh</span><br></pre></td></tr></table></figure>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ls</span><br></pre></td></tr></table></figure>
-<ul>
-<li>Use a text editor or command-line tools (such as cat or less) to view the contents of the .pub files and see the public key information: <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat id_rsa.pub</span><br></pre></td></tr></table></figure></li>
-</ul>
-</li>
-</ul>
-<ol start="4">
-<li>You can see your configuration by typing the following commands:<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --list</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h1 id="Recommended-GUI-tools"><a href="#Recommended-GUI-tools" class="headerlink" title="Recommended GUI tools"></a>Recommended GUI tools</h1><p>Both commands and GUI tools are important to Git manupulation.<br>And Here are some recommended Git GUI tools that you can use.</p>
-<ul>
-<li><a href="%22https://www.sourcetreeapp.com/%22">Sourcetree</a></li>
-<li><a href="%22https://www.gitkraken.com/%22">GitKraken</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>Git 系列文</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-        <tag>Version Control</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>[Git][Version Control] Git - Introduction</title>
-    <url>/posts/2571684277/</url>
-    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Here is the series of Git full tutorial. I will cover the important and advanced topics that you should know in git. By reading this series, you are able to know the basic(but important) concept of Git and the technique of using git. Hope you can gain a lot ! </p>
-<span id="more"></span>
-
-<h1 id="Series-Outline"><a href="#Series-Outline" class="headerlink" title="Series Outline"></a>Series Outline</h1><p>I will follow the outline below in this series.</p>
-<ul>
-<li>Introduction (this post)</li>
-<li>Setup</li>
-<li>Version Control &amp; Commands (Basics)</li>
-<li>Branching &amp; Merging</li>
-<li>Conflict</li>
-<li>Collaboration &amp; GitHub</li>
-<li>Advanced Topics</li>
-</ul>
-<hr>
-<h1 id="Introduction-to-Git-A-Distributed-Version-Control-System"><a href="#Introduction-to-Git-A-Distributed-Version-Control-System" class="headerlink" title="Introduction to Git: A Distributed Version Control System"></a>Introduction to Git: A Distributed Version Control System</h1><p>Git is a powerful and widely used distributed version control system designed to track changes in software development projects. It provides developers with the ability to collaborate on projects efficiently, manage codebases effectively, and easily track and revert changes.</p>
-<h2 id="Distributed-Version-Control-System"><a href="#Distributed-Version-Control-System" class="headerlink" title="Distributed Version Control System"></a>Distributed Version Control System</h2><p>In traditional software development, changes to a codebase were often managed through file-based systems or centralized version control systems. However, these approaches had limitations in terms of collaboration, scalability, and flexibility. Git emerged as a solution to these challenges, offering a distributed and decentralized approach to version control.</p>
-<p>The special point of Git is that it supports distributed version control and can also easily share codes among multiple nodes.</p>
-<p><img data-src="/images/posts/Git-Series/dist-ver-ctr.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<h2 id="Branch"><a href="#Branch" class="headerlink" title="Branch"></a>Branch</h2><p>Git manages code based on a tree structure, allowing branches to be created, merged, and deleted, and code versions to be saved at any time.</p>
-<p><img data-src="/images/posts/Git-Series/branch.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<h2 id="Snapshot"><a href="#Snapshot" class="headerlink" title="Snapshot"></a>Snapshot</h2><p>Git saves full snapshots of files, rather than differences, making it easy to restore all historical versions of files.</p>
-<p><img data-src="/images/posts/Git-Series/snapshot.jpeg" 
-style="width: 70%; margin: 15px auto;"></p>
-<hr>
-<h1 id="Recommended-Resources"><a href="#Recommended-Resources" class="headerlink" title="Recommended Resources"></a>Recommended Resources</h1><p><a href="%22https://www.youtube.com/watch?v=8JJ101D3knE%22">Mosh Git Tutorail</a></p>
-]]></content>
-      <categories>
-        <category>Git 系列文</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-        <tag>Version Control</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>[.NET][C#][SOLID] - DI &amp; IoC (依賴注入與控制反轉) 全面講解</title>
     <url>/posts/3588979794/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>IoC (Inversion of Control) 控制反轉，與OOP SOLID原則中的其中一種設計原則有關，也就是其中的DIP(Dependency Inversion Principle)，是OOP一個非常重要的程式設計思想，對於軟體開發來說十分重要，下面我將<strong>十分詳細的介紹何為DIP、IoC以及DI、為何要使用它們以及如何實作</strong>，相信大家閱讀完會對這個重要的思想了解的更加透徹。</p>
@@ -519,466 +307,325 @@ img{
       </tags>
   </entry>
   <entry>
-    <title>[NLP][ML] Adapters &amp; LoRA</title>
-    <url>/posts/38266156/</url>
-    <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>In this article, I will provide an introduction to adapters and LoRA, including their <strong>definitions, purposes, and functions.</strong> I will also explore their various <strong>applications</strong> and, lastly, delve into the distinctions that set them apart(the <strong>differences between them</strong>).</p>
+    <title>政大Google學生開發者社群-政大通NCCUPass-心得 (第二學期)</title>
+    <url>/posts/3042436019/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>繼上篇<a href="https://mao-code.github.io/posts/277323671/#more">GDSC的心得文</a>，這篇我會介紹我們下學期的開發經歷、得獎、專案簡介以及未來這個專案的走向，屬於一個小小的紀錄心得文！</p>
 <span id="more"></span>
 
-<h1 id="Adapter"><a href="#Adapter" class="headerlink" title="Adapter"></a>Adapter</h1><h2 id="What-are-Adapters"><a href="#What-are-Adapters" class="headerlink" title="What are Adapters?"></a>What are Adapters?</h2><p>According to <span class="exturl" data-url="aHR0cHM6Ly93d3cuYW5hbHl0aWNzdmlkaHlhLmNvbS9ibG9nLzIwMjMvMDQvdHJhaW5pbmctYW4tYWRhcHRlci1mb3Itcm9iZXJ0YS1tb2RlbC1mb3Itc2VxdWVuY2UtY2xhc3NpZmljYXRpb24tdGFzay8jOn46dGV4dD1BZGFwdGVycyUyMGFyZSUyMGxpZ2h0d2VpZ2h0JTIwYWx0ZXJuYXRpdmVzJTIwdG8sbW9kdWxhciUyMGFwcHJvYWNoJTIwdG8lMjB0cmFuc2ZlciUyMGxlYXJuaW5nLg==">this article<i class="fa fa-external-link-alt"></i></span><br>We can give the definition of adapters:</p>
-<blockquote>
-<p><strong>Adapters are lightweight alternatives to fully fine-tuned pre-trained models.</strong><br>Currently, <strong>adapters are implemented as small feedforward neural networks</strong> that are <strong>inserted between layers of a pre-trained model.</strong><br>They provide a <strong>parameter-efficient, computationally efficient, and modular approach</strong> to transfer learning. The following image shows added adapter.</p>
-</blockquote>
-<p>The image below clearly shows the usage flow of apadters<br>(Source: <span class="exturl" data-url="aHR0cHM6Ly9hZGFwdGVyaHViLm1sLw==">AdapterHub<i class="fa fa-external-link-alt"></i></span>)<br><img data-src="/images/posts/NLP-series/adapter.gif" 
-style="width: 70%; margin: 15px auto;"></p>
-<blockquote>
-<p>During training, <strong>all the weights of the pre-trained model are frozen</strong> such that only the adapter weights<br>are updated, resulting in <strong>modular knowledge representations</strong>. They can be easily <strong>extracted, interchanged,</strong><br><strong>independently distributed, and dynamically plugged</strong> into a language model. These properties highlight the<br>potential of adapters in advancing the NLP field astronomically.</p>
-</blockquote>
-<h2 id="What-is-the-purpose-and-function-of-adapters"><a href="#What-is-the-purpose-and-function-of-adapters" class="headerlink" title="What is the purpose and function of adapters?"></a>What is the purpose and function of adapters?</h2><ol>
-<li>Purpose:<br>Large Language Models are computationally expensive and memory-intensive. <strong>Fine-tuning the entire model for each specific task</strong> can be impractical due to resource constraints. Adapters provide a solution by allowing for more efficient and <strong>targeted modifications</strong> to the model for different tasks. This approach <strong>saves both computational power and memory</strong>, enabling the deployment of a single pre-trained model for multiple tasks.</li>
-<li>Functions:<ol>
-<li><p>Efficient Fine-tuning: Instead of fine-tuning the entire model, adapters enable <strong>fine-tuning only a small subset of parameters</strong> related to a specific task. This fine-tuning process is faster and requires fewer resources.</p>
-</li>
-<li><p>Task-specific Modifications: Adapters allow you to add <strong>task-specific layers or modifications</strong> to the pre-trained model without altering the core architecture. This makes it easier to adapt the model for various tasks like text classification, named entity recognition, sentiment analysis, etc.</p>
-</li>
-<li><p>Versatility: With adapters, a single pre-trained LLM can be <strong>adapted for a wide range of tasks.</strong> This versatility is beneficial in scenarios where deploying and maintaining separate models for each task might be impractical.</p>
-</li>
-<li><p>Interoperability: Adapters enable the combination of pre-trained models with task-specific modifications in a standardized way. This facilitates sharing, collaboration, and research in the NLP community.</p>
-</li>
-<li><p>Transfer Learning: Adapters enhance the <strong>effectiveness of transfer learning.</strong> Models pre-trained on <strong>large and diverse datasets can be fine-tuned on smaller</strong>, task-specific datasets using adapters, improving performance on specific tasks.</p>
-</li>
-<li><p>Incremental Updates: Adapters allow for easy updates to the model. Instead of retraining the entire model, only the adapters related to a specific task need to be fine-tuned when new data or requirements arise.</p>
-</li>
-</ol>
-</li>
-</ol>
-<p>Overall, adapters are a <strong>mechanism that strikes a balance between the benefits of fine-tuning for specific tasks and the efficiency of reusing pre-trained LLMs.</strong> They enable the NLP community to leverage the power of these large models while tailoring them to a diverse set of applications.</p>
-<h2 id="The-applications-of-adapters"><a href="#The-applications-of-adapters" class="headerlink" title="The applications of adapters"></a>The applications of adapters</h2><p>I list some practical applications that can use adapters to enhance.</p>
-<ol>
-<li><p>Efficient Task Adaptation: Adapters make it possible to fine-tune a pretrained model for specific tasks with minimal computational resources and time. This is particularly useful for industries that require quick adaptation to changing trends or requirements.</p>
-</li>
-<li><p>Multilingual Applications: Adapters can be used to enable a pretrained model to perform tasks in multiple languages. This is valuable for businesses operating in global markets.</p>
-</li>
-<li><p>Domain-Specific NLP: Adapting models with domain-specific adapters (e.g., medical, legal, financial) enhances their performance on tasks specific to those domains.</p>
-</li>
-<li><p>Personalization: Adapters can be used to personalize a general-purpose model for individual users or contexts, leading to more relevant and tailored responses.</p>
-</li>
-</ol>
-<h1 id="LoRA-Low-Rank-Adaptation"><a href="#LoRA-Low-Rank-Adaptation" class="headerlink" title="LoRA (Low-Rank Adaptation)"></a>LoRA (Low-Rank Adaptation)</h1><h2 id="What-is-LoRA"><a href="#What-is-LoRA" class="headerlink" title="What is LoRA?"></a>What is LoRA?</h2><ul>
-<li>Low-Rank Adaptation, or LoRA, is proposed, which <strong>freezes the pre-trained model weights</strong> and <strong>injects trainable rank decomposition matrices into each layer</strong> of the <strong>Transformer</strong> architecture, greatly <strong>reducing the number of trainable parameters</strong> for downstream tasks.</li>
+<h1 id="專案"><a href="#專案" class="headerlink" title="專案"></a>專案</h1><h2 id="簡介"><a href="#簡介" class="headerlink" title="簡介"></a>簡介</h2><p>政大通 - NCCUPass 團隊熱切懷抱著重塑校園體驗的夢想，點燃學生的熱情和創造力，以共同打造一個充滿活力、連結力和創新力的校園生活。經由深入校園的人際交流與觀察，我們發現學生面對著種種生活上的不便與困難，然而目前鮮少有專門為學生打造的解決方案。學生間的線下互動與真實聯繫日益減少，導致難以找到同學幫忙或組團合作的機會。此外，午晚餐時的人潮湧入校園周邊餐廳，更帶來了無法即時點餐的困擾。這些現況讓我們看到一個獨特的契機，我們決心以「政大通 - NCCUPass 」 APP 的形式來化解這些困境。</p>
+<p>「政大通 - NCCUPass 」不僅提供政大學生一個集社交、實用和創新於一身的平台，更是一個綜合性的應用程式，旨在加強他們的校園體驗。我們希望這個 APP 能成為解決校園生活難題的得力幫手！</p>
+<p>在社團「政大 Google 學生開發者社群」的擁護下，我們匯聚各領域的精英，凝聚開放分享的心態，攜手共創這個改變學生生活的嶄新 APP ！政大只是我們的第一塊版圖，我們的未來目標是影響全國的大學生，為他們帶來更加豐富、更加便利的校園體驗！</p>
+<h2 id="目前功能簡介"><a href="#目前功能簡介" class="headerlink" title="目前功能簡介"></a>目前功能簡介</h2><h3 id="學生任務功能-增強校園互動體驗"><a href="#學生任務功能-增強校園互動體驗" class="headerlink" title="學生任務功能 - 增強校園互動體驗"></a>學生任務功能 - 增強校園互動體驗</h3><ul>
+<li>動機發想<ul>
+<li>缺乏線下互動與真實聯繫：<br>我們注意到越來越多的大學生在日常生活中依賴數位平台和社交媒體，而非與人面對面的互動。這種現象在校園中尤為明顯，比起在現實中進行真實的互動，學生更傾向於在虛擬世界中建立社交連結。我們對大學生進行訪談、問卷調查和社交媒體分析，收集了大量的數據和反饋。這些數據揭示了大學生內心深處對面對面互動的渴望，以及更真實的交流，更深刻的情感，卻在線下互動中遇到了種種挑戰與限制。基於這些資訊，我們更加確定缺乏線下互動和真實聯繫的問題造成大學生的困擾，這些數據與心靈共鳴，激發了我們的靈感。我們深信，缺乏線下互動和真實聯繫的問題，不僅是個人的困擾，更是一種社會現象，需要我們攜手改變。於是，我們投入心血，開發了一個獨特的解決方案——一個能在現實世界中促進人與人之間有意義連結的奇妙工具。</li>
 </ul>
-<p>And let’s see the full fine-tuning definition:</p>
+</li>
+<li>功能敘述<ul>
+<li>這個功能旨在促進學生之間的線下互動，並為他們提供一個自由而實用的平台，能以此完成各種有趣的任務。學生們可以發布任務，例如：幫忙帶宵夜、一起揪團出去玩等等。學生可以在我們的 APP 上自由發布任務，並尋找其他學生來接受挑戰，每一次的任務都是獨特的社交機會，讓學生們在校園中建立更多真實的聯繫和友誼。除此之外，這個功能還擁有相當多面的好處。首先，它鼓勵學生積極參與校園生活，擺脫線上世界的束縛。透過與其他學生一起完成任務，他們可以體驗到珍貴的團隊合作和互助精神。此外，如果同學對彼此的服務滿意，可以提供金錢或其他回饋，藉著小小賺外快的機會，也可以累積一定的金錢！相信這個制度能鼓勵學生發揮創意和努力工作，同時也建立相互尊重和價值交換的文化。</li>
+</ul>
+</li>
+</ul>
+<h3 id="預約外帶功能與午餐快選器-－-用餐省時無等待，專屬學生的美食提前預訂"><a href="#預約外帶功能與午餐快選器-－-用餐省時無等待，專屬學生的美食提前預訂" class="headerlink" title="預約外帶功能與午餐快選器 － 用餐省時無等待，專屬學生的美食提前預訂"></a>預約外帶功能與午餐快選器 － 用餐省時無等待，專屬學生的美食提前預訂</h3><ul>
+<li><p>動機發想</p>
 <ul>
-<li>Full fine-tuning LLM, which <strong>retrains all model parameters</strong>, becomes less feasible. Using GPT-3 175B as an example — deploying independent instances of fine-tuned models, each with 175B parameters, is prohibitively expensive.</li>
+<li><p>餐點供應不足：<br>尤其在午晚餐尖峰時段，餐廳經常供不應求，學生需要花費大量的時間排隊等待。</p>
+</li>
+<li><p>用餐時間緊湊：<br>大學生的生活節奏快，經常要在短時間內完成吃飯等基本活動，而在繁忙的用餐時間內排隊等待餐點往往會浪費寶貴的時間。</p>
+</li>
+<li><p>無法預估用餐需求：<br>在繁忙的用餐時間內，無法預估用餐需求，可能需要長時間等待，或因時間太短而做了不太理想的食物選擇。</p>
+</li>
 </ul>
-<p>In <span class="exturl" data-url="aHR0cHM6Ly9iZHRlY2h0YWxrcy5jb20vMjAyMy8wNS8yMi93aGF0LWlzLWxvcmEv">this article<i class="fa fa-external-link-alt"></i></span>, it clearly compare the fine-tuning and LoRA approaches. And in <span class="exturl" data-url="aHR0cHM6Ly9zaC10c2FuZy5tZWRpdW0uY29tL2JyaWVmLXJldmlldy1sb3JhLWxvdy1yYW5rLWFkYXB0YXRpb24tb2YtbGFyZ2UtbGFuZ3VhZ2UtbW9kZWxzLWZhZjVkZGQ1ODAyZiM6fjp0ZXh0PUxvUkElMkMlMjBMb3clMkRSYW5rJTIwTExNJTIwRmluZSUyRFR1bmluZyUyQyUyMFJlZHVjZSUyMFJlcXVpcmVkJTIwTWVtb3J5JnRleHQ9TG93JTJEUmFuayUyMEFkYXB0YXRpb24lMkMlMjBvciUyMExvUkEsdHJhaW5hYmxlJTIwcGFyYW1ldGVycyUyMGZvciUyMGRvd25zdHJlYW0lMjB0YXNrcy4=">this article<i class="fa fa-external-link-alt"></i></span>, it dives more into the machanism of LoRA. If you wnat to know the full knowledge, you can refer to <span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzIxMDYuMDk2ODU=">the paper of LoRA<i class="fa fa-external-link-alt"></i></span>.<br>In the next sections, I will introduce more ideas of LoRA based on these references. Note that I only organize the contents of these articles and add some mark and note on my own.</p>
+</li>
+<li><p>功能敘述</p>
+<ul>
+<li>這個功能將為大學生們帶來極速、便利、無等待的用餐體驗！我們與學校附近的店家攜手合作，確保學生們不必等待太久。現在，同學只需要提前預約外帶，下課後直接前往店家，餐點早已準備好，輕鬆取走即可！不再浪費時間排隊，享受自由自在的用餐時光！這個預約外帶功能不僅是大學生們用餐的時尚選擇，更是忙碌學習生活的得力助手。在繁忙的用餐尖峰時段，可以輕鬆預訂心儀的美食，避免為了取餐而耽誤其他重要事務。</li>
+</ul>
+</li>
+</ul>
+<h2 id="連結"><a href="#連結" class="headerlink" title="連結"></a>連結</h2><ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly9uY2N1cGFzcy5jb20v">官方網站<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9uY2N1cGFzcy8=">IG粉專<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2NvbXBhbnkvbmNjdXBhc3M=">LinkedIn<i class="fa fa-external-link-alt"></i></span></li>
+</ul>
+<h1 id="得獎"><a href="#得獎" class="headerlink" title="得獎"></a>得獎</h1><p>NCCUPass在當天的期末發表會得到最佳人氣專案奬的殊榮！<br><img data-src="/images/posts/2023NCCUPass/GDSC_award.JPG" 
+style="width: 70%; margin: 15px auto;"></p>
+<p><img data-src="/images/posts/2023NCCUPass/GDSC_award_on_stage.JPG" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>當天的期末發表會：<br><img data-src="/images/posts/2023NCCUPass/GDSC_final.JPG" 
+style="width: 70%; margin: 15px auto;"></p>
+<h1 id="技術"><a href="#技術" class="headerlink" title="技術"></a>技術</h1><p>在經過一個學期後，我們也慢慢拓展技術範圍，未來也將因應需求機動地改變<br>在這邊就只放上系統架構圖，不贅述太多技術細節</p>
+<h2 id="系統架構圖"><a href="#系統架構圖" class="headerlink" title="系統架構圖"></a>系統架構圖</h2><p><img data-src="/images/posts/2023NCCUPass/NCCUPass_structure.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<h1 id="未來"><a href="#未來" class="headerlink" title="未來"></a>未來</h1><p>政大是我們的第一塊版圖，我們的目標是全台灣的大學，目前先穩紮穩打在政大站穩腳步，在此期間會積極地與其他組織或社團合作、參與各項競賽以及參加創投機構的活動，我們的理念是讓大學生們彼此間的關係更加密切與真實，使他們的生活更加數位化與便利！</p>
+]]></content>
+      <categories>
+        <category>心得</category>
+        <category>專案</category>
+        <category>GDSC</category>
+        <category>side project</category>
+        <category>NCCUPass</category>
+      </categories>
+      <tags>
+        <tag>專案</tag>
+        <tag>GDSC</tag>
+        <tag>NCCUPass</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>政大Google學生開發者社群-心得（第一學期）</title>
+    <url>/posts/277323671/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在剛上大二時，除了手邊和學長的專案，我也參加了政大的Google學生開發者社群。主要是希望透過提案，<strong>利用科技來解決問題</strong>，在這裡我也深深感受到Google的文化，那就是<strong>不會怕去嘗試、不怕去解決問題</strong>，我也認識在這個社群中的各個人才。在這個社群中，我除了擔任自己<strong>專案領導人</strong>的角色外，我也身兼<strong>後端技術長</strong>的任務，也是想要發揮我目前所學到的、最成熟的後端知識。除了技術面，如何管理一個團隊、一項專案，也是一門很大的課題。希望在未來可以繼續把自己的這項專案做到完善，解決真正的問題！</p>
+<span id="more"></span>
+
+<h2 id="定位與職位"><a href="#定位與職位" class="headerlink" title="定位與職位"></a>定位與職位</h2><ul>
+<li><h3 id="專案定位"><a href="#專案定位" class="headerlink" title="專案定位"></a>專案定位</h3></li>
+</ul>
+<p>我這次的提案叫做「政大通NCCUPass」，以<strong>政大校園生活為出發點</strong>，想要做一款能夠解決政大學生生活上不便的APP，透過專案組的討論與調查，帶來<strong>更便利、聰明與數位化</strong>的校園生活，讓校園內的需求能夠即時被滿足，也讓這款APP融入政大學生的生活中，成為政大校園內不可或缺的一部分，因此，「政大通-NCCUPass」的提案就此誕生</p>
 <hr>
-<h3 id="How-does-fine-tuning-LLMs-work"><a href="#How-does-fine-tuning-LLMs-work" class="headerlink" title="How does fine-tuning LLMs work?"></a>How does fine-tuning LLMs work?</h3><p>Open-source LLMs such as LLaMA,Vicuna are foundation models that <strong>have been pre-trained on hundreds of billions of words.</strong> Developers and machine learning engineers can download the model with the <strong>pre-trained weights</strong> and <strong>fine-tune it for downstream tasks</strong> such as <span class="exturl" data-url="aHR0cHM6Ly9iZHRlY2h0YWxrcy5jb20vMjAyMy8wMS8xNi93aGF0LWlzLXJsaGYv">instruction following<i class="fa fa-external-link-alt"></i></span>.</p>
-<p>The model is provided input from the <strong>fine-tuning dataset</strong>. It then <strong>predicts the next tokens and compares its output with the ground truth.</strong> It then <strong>adjusts the weights(gradient)</strong> to correct its predictions. By doing this over and over, the LLM becomes fine-tuned to the downstream task.</p>
-<p><img data-src="/images/posts/NLP-series/LLM-fintune.png" 
+<p>下面是我們第一次期末發表的海報和照片<br>海報內呈現的是我們規劃、也正在開發的功能<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/poster.jpg" 
 style="width: 70%; margin: 15px auto;"></p>
-<p>(Source: <span class="exturl" data-url="aHR0cHM6Ly9iZHRlY2h0YWxrcy5jb20vMjAyMy8wNS8yMi93aGF0LWlzLWxvcmEv">What is low-rank adaptation (LoRA)?<i class="fa fa-external-link-alt"></i></span>)</p>
-<h3 id="The-idea-of-LoRA"><a href="#The-idea-of-LoRA" class="headerlink" title="The idea of LoRA"></a>The idea of LoRA</h3><p>Now, let’s make a small modification to the fine-tuning process. In this new method, we <strong>freeze the original weights of the model and don’t modify them during the fine-tuning process.</strong> Instead, we apply the modifications to a <strong>separate set of weights</strong> and we add their new values to the original parameters. Let’s call these two sets <strong>“pre-trained” and “fine-tuned” weights</strong>.</p>
-<blockquote>
-<p><strong>Separating the pre-trained and fine-tuned parameters is an important part of LoRA.</strong><br><img data-src="/images/posts/NLP-series/LoRA-1.png" 
-style="width: 70%; margin: 15px auto;"></p>
-</blockquote>
-<h4 id="Low-rank-adaptation"><a href="#Low-rank-adaptation" class="headerlink" title="Low-rank adaptation"></a>Low-rank adaptation</h4><p>Before moving on to LoRA, let’s think about our <strong>model parameters as very large matrices</strong>. If you remember your linear algebra class, <strong>matrices can form vector spaces</strong>. In this case, we’re talking about a <strong>very large vector space with many dimensions</strong> that models language.</p>
-<p>Every matrix has a <strong>“rank”</strong>, which is <strong>the number of linearly independent columns it has</strong>. If a column is linearly independent, it means that <strong>it can’t be represented as a combination of other columns in the matrix</strong>. On the other hand, a dependent column is one that can be represented as a combination of one or more columns in the same matrix. You can remove dependent columns from a matrix without losing information.</p>
-<p>LoRA, proposed in a <span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzIxMDYuMDk2ODU=">paper<i class="fa fa-external-link-alt"></i></span> by researchers at Microsoft, suggests that when fine-tuning an LLM for a downstream task, <strong>you don’t need the full-rank weight matrix.</strong> They proposed that you could preserve most of the learning capacity of the model while <strong>reducing the dimension of the downstream parameters.</strong> (This is why it makes sense to separate the pre-trained and fine-tuned weights.)</p>
 <hr>
-<p><img data-src="/images/posts/NLP-series/LoRA-2.png" 
+<p>這個是期末發表當天的攤位介紹照片<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img4.jpg" 
 style="width: 70%; margin: 15px auto;"></p>
-<p>Basically, in LoRA, you create <strong>two downstream weight matrices</strong>. One <strong>transforms the input parameters from the original dimension to the low-rank dimension</strong>. And the second matrix <strong>transforms the low-rank data to the output dimensions of the original model</strong>.</p>
-<p>During training, <strong>modifications are made to the LoRA parameters</strong>, which are now much fewer than the original weights. This is why they can be trained much faster and at a fraction of the cost of doing full fine-tuning. <strong>At inference time, the output of LoRA is added to the pre-trained parameters to calculate the final values.</strong></p>
-<h4 id="More-detail"><a href="#More-detail" class="headerlink" title="More detail"></a>More detail</h4><p><img data-src="/images/posts/NLP-series/LoRA-3.png" 
+<p><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img2.JPG" 
+style="width: 70%; margin: 15px auto;"></p>
+<p><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img1.JPG" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>參與證書<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/GDSC_certificate.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<hr>
+<ul>
+<li><h3 id="職位"><a href="#職位" class="headerlink" title="職位"></a>職位</h3></li>
+</ul>
+<p>在這個專案中，我擔任<strong>Project Leader(專案主持人)<strong>，與</strong>Backend Tech-Lead(後端技術長)<strong>的身份，帶領總共</strong>11人的團隊</strong>，在我們這個團隊中，主要分成四組，前端、後端、UI&#x2F;UX、文書，除了負責主要的後端技術，也要帶領後端的組員們提升實力、協調與規劃。以專案領導人的角度來看，除了需要<strong>規劃整個專案的進度與走向外，也要監督進度、協調各組、人際溝通等等</strong>，除了利用各種專案管理的工具外，也要撰寫各種文件與流程圖，老實說滿累的XD。但也是遇到一群願意跟隨我的隊友們，一起成長，真的非常得感謝他們🙏</p>
+<h2 id="技術"><a href="#技術" class="headerlink" title="技術"></a>技術</h2><ul>
+<li><h3 id="系統架構圖"><a href="#系統架構圖" class="headerlink" title="系統架構圖"></a>系統架構圖</h3></li>
+</ul>
+<p>下面是我們的系統架構圖，因為我是負責後端的部分，所以會著重畫後端的架構<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/NCCUPass-Structure.jpg" 
 style="width: 70%; margin: 15px auto;"></p>
 <ul>
-<li>For a pre-trained weight matrix $W_0$, its update is constrained by representing the latter with a low-rank decomposition:</li>
+<li><h3 id="後端技術細節"><a href="#後端技術細節" class="headerlink" title="後端技術細節"></a>後端技術細節</h3></li>
 </ul>
-<p>$$\begin{equation}<br>   W_0 + \Delta{W} &#x3D; W_0 + BA<br>\end{equation}$$</p>
+<p>根據上面的架構圖，我們的專案主要部署在Ubuntu的主機上，所有的服務利用Docker Compose統一建立，另外還有利用GitLab Runner做到自動化整合與自動化部屬的功能。後端程式是由.NET C#撰寫，這邊我使用的是Software Layer Architecture Pattern(軟體分層架構)，結合各種Design Pattern再加上自己的一些變形，資料庫是使用MongoDB的Replica-Set，也有使用Redis做快取，照片和一些公開的檔案主要放在我們的File Server上。其他技術細節我就列在下面，想看的人可以參考一下XD</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">- Software Layer Architecture pattern (多層)</span><br><span class="line">- Repository pattern</span><br><span class="line">- Unit of Work pattern</span><br><span class="line">- Mediator pattern &amp; CQRS</span><br><span class="line">- Password Salting and Encryption</span><br><span class="line">- JWT &amp; RBAC</span><br><span class="line">- Automapper</span><br><span class="line">- Exception handler抽離</span><br><span class="line">- Dapper &amp; EF combination</span><br><span class="line">- Redis (Cache)</span><br><span class="line">- Docker Networking</span><br><span class="line">- Docker Volume</span><br><span class="line">- Docker hub</span><br><span class="line">- appsettings 組態切換</span><br><span class="line">- MongoDB replica-set</span><br><span class="line">    - key-file (internal authentication)</span><br><span class="line">- Git 多人協作</span><br><span class="line">- Swagger / OpenAPI</span><br><span class="line">- Docker File Server</span><br><span class="line">- Docker mongoDB backup daily</span><br><span class="line">- Docker Compose</span><br><span class="line">- JMeter壓力測試</span><br><span class="line">- GC mode區別(Workstation, Server)</span><br><span class="line">- SignalR 雙向溝通</span><br><span class="line">- 測試 (K6 stress testing, )</span><br><span class="line">- 自動化發送Email (python selenium)</span><br><span class="line">- SSH with Linux server</span><br><span class="line">- FCM (to push device notification)</span><br><span class="line">- Linux server</span><br><span class="line">- Cloudflare domain and SSL/TLS</span><br><span class="line">- Nginx  (on server and on docker)</span><br><span class="line">    - redirect (setting files)</span><br><span class="line">    - ssl setting(certificate, key)</span><br><span class="line">- Shell script自動備份資料庫</span><br></pre></td></tr></table></figure>
+<p>之後也會一直新增，因為現在處於專案開發的初期。</p>
+<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>最後，這個專案雖然只是在發展初期，但我希望未來可以發展到我預想的樣子，也非常感謝一路願意跟隨我、幫助我的隊友們，單打獨鬥真的比不上團隊合作👍，也希望各位未來也可以繼續幫助我啦，現在打分享文可能還太早，但我就是想要趁學期末趕快記錄一下哈哈</p>
+]]></content>
+      <categories>
+        <category>心得</category>
+        <category>專案</category>
+        <category>GDSC</category>
+        <category>side project</category>
+        <category>NCCUPass</category>
+      </categories>
+      <tags>
+        <tag>專案</tag>
+        <tag>GDSC</tag>
+        <tag>NCCUPass</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[Git][Version Control] Git - Introduction</title>
+    <url>/posts/2571684277/</url>
+    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Here is the series of Git full tutorial. I will cover the important and advanced topics that you should know in git. By reading this series, you are able to know the basic(but important) concept of Git and the technique of using git. Hope you can gain a lot ! </p>
+<span id="more"></span>
+
+<h1 id="Series-Outline"><a href="#Series-Outline" class="headerlink" title="Series Outline"></a>Series Outline</h1><p>I will follow the outline below in this series.</p>
 <ul>
-<li>During training, <strong>$W_0$ is frozen</strong> and does not receive gradient updates, while <strong>A and B contain trainable parameters</strong>.</li>
-<li>For $h&#x3D;W_0$, the modified forward pass yields:</li>
+<li>Introduction (this post)</li>
+<li>Setup</li>
+<li>Version Control &amp; Commands (Basics)</li>
+<li>Branching &amp; Merging</li>
+<li>Conflict</li>
+<li>Collaboration &amp; GitHub</li>
+<li>Advanced Topics</li>
 </ul>
-<p>$$\begin{equation}<br>   h &#x3D; W_0x + \Delta{W}x &#x3D; W_0x + BAx<br>\end{equation}$$</p>
+<hr>
+<h1 id="Introduction-to-Git-A-Distributed-Version-Control-System"><a href="#Introduction-to-Git-A-Distributed-Version-Control-System" class="headerlink" title="Introduction to Git: A Distributed Version Control System"></a>Introduction to Git: A Distributed Version Control System</h1><p>Git is a powerful and widely used distributed version control system designed to track changes in software development projects. It provides developers with the ability to collaborate on projects efficiently, manage codebases effectively, and easily track and revert changes.</p>
+<h2 id="Distributed-Version-Control-System"><a href="#Distributed-Version-Control-System" class="headerlink" title="Distributed Version Control System"></a>Distributed Version Control System</h2><p>In traditional software development, changes to a codebase were often managed through file-based systems or centralized version control systems. However, these approaches had limitations in terms of collaboration, scalability, and flexibility. Git emerged as a solution to these challenges, offering a distributed and decentralized approach to version control.</p>
+<p>The special point of Git is that it supports distributed version control and can also easily share codes among multiple nodes.</p>
+<p><img data-src="/images/posts/Git-Series/dist-ver-ctr.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<h2 id="Branch"><a href="#Branch" class="headerlink" title="Branch"></a>Branch</h2><p>Git manages code based on a tree structure, allowing branches to be created, merged, and deleted, and code versions to be saved at any time.</p>
+<p><img data-src="/images/posts/Git-Series/branch.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<h2 id="Snapshot"><a href="#Snapshot" class="headerlink" title="Snapshot"></a>Snapshot</h2><p>Git saves full snapshots of files, rather than differences, making it easy to restore all historical versions of files.</p>
+<p><img data-src="/images/posts/Git-Series/snapshot.jpeg" 
+style="width: 70%; margin: 15px auto;"></p>
+<hr>
+<h1 id="Recommended-Resources"><a href="#Recommended-Resources" class="headerlink" title="Recommended Resources"></a>Recommended Resources</h1><p><a href="%22https://www.youtube.com/watch?v=8JJ101D3knE%22">Mosh Git Tutorail</a></p>
+]]></content>
+      <categories>
+        <category>Git 系列文</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>Version Control</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[Git][Version Control] Git - Setup</title>
+    <url>/posts/731175240/</url>
+    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Setting up the environment of Git and some recommended GUI tools.</p>
+<span id="more"></span>
+
+<h1 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h1><ol>
+<li><p>Install Git with the link below: (with your OS)<br><a href="%22https://git-scm.com/%22">Git official website</a></p>
+</li>
+<li><p>Type this command to check if it is installed successfully:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h1 id="Configure-Git-type-commands-in-your-shell"><a href="#Configure-Git-type-commands-in-your-shell" class="headerlink" title="Configure Git (type commands in your shell)"></a>Configure Git (type commands in your shell)</h1><ol>
+<li><p>Set your user name by running the following command:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Set your email address by running the following command:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.email youremail@example.com</span><br></pre></td></tr></table></figure></li>
+<li><p>Set up SSH key (for remote repository access. e.g. GitHub)</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure></li>
+</ol>
 <ul>
-<li><p>A random <strong>Gaussian initialization is used for A</strong> and <strong>zero is used for B</strong>, so $\Delta{W}&#x3D;BA$ is zero at the beginning of training. (The method of initializing the weights)</p>
+<li><p>Press Enter to accept the default file location and passphrase (or set your own if desired).<br>Once the key is generated, run the following command to add it to the SSH agent</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-add ~/.ssh/id_rsa</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>One of the advantages is that when deployed in production, we can <strong>explicitly compute and store $W&#x3D;W_0+BA$</strong> and perform inference as usual. <strong>No additional latency</strong> compared to other methods, such as appending more layers.</p>
+<li><p>Copy the public key to your clipboard by running the following command</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Add the copied public key to your Git hosting platform account (e.g., GitHub, GitLab) by following their documentation.</p>
+</li>
+<li><p>View your ssh keys</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd ~/.ssh</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ls</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Use a text editor or command-line tools (such as cat or less) to view the contents of the .pub files and see the public key information: <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat id_rsa.pub</span><br></pre></td></tr></table></figure></li>
+</ul>
 </li>
 </ul>
-<p>You can see the implementation and more detail of LoRA in <span class="exturl" data-url="aHR0cHM6Ly95b3V0dS5iZS9kQS1OaEN0cnJWRQ==">this video<i class="fa fa-external-link-alt"></i></span><br>and <span class="exturl" data-url="aHR0cHM6Ly9ibG9nLm1sNi5ldS9sb3ctcmFuay1hZGFwdGF0aW9uLWEtdGVjaG5pY2FsLWRlZXAtZGl2ZS03ODJkZWM5OTU3NzI=">this article<i class="fa fa-external-link-alt"></i></span>.</p>
-<h2 id="What-is-the-purpose-and-function-of-LoRA"><a href="#What-is-the-purpose-and-function-of-LoRA" class="headerlink" title="What is the purpose and function of LoRA?"></a>What is the purpose and function of LoRA?</h2><ul>
-<li>Purpose<ul>
-<li>The purpose of LoRA is to make it easier and more efficient to fine-tune LLMs for downstream tasks.</li>
+<ol start="4">
+<li>You can see your configuration by typing the following commands:<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --list</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h1 id="Recommended-GUI-tools"><a href="#Recommended-GUI-tools" class="headerlink" title="Recommended GUI tools"></a>Recommended GUI tools</h1><p>Both commands and GUI tools are important to Git manupulation.<br>And Here are some recommended Git GUI tools that you can use.</p>
+<ul>
+<li><a href="%22https://www.sourcetreeapp.com/%22">Sourcetree</a></li>
+<li><a href="%22https://www.gitkraken.com/%22">GitKraken</a></li>
 </ul>
+]]></content>
+      <categories>
+        <category>Git 系列文</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>Version Control</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[.NET][C#][Design Pattern] - Mediator Pattern (中介者模式)</title>
+    <url>/posts/4072203086/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>這篇文章主要介紹Mediator Pattern的定義以及簡單實作<br>介紹使用Mediator Pattern的好處, 並提供範例<br>在軟體架構中Mediator Patternc和Repository Pattern都是常用的pattern<br>通常.NET專案中會結合MediatR套件使用</p>
+<span id="more"></span>
+
+<h2 id="定義-Mediator-Pattern"><a href="#定義-Mediator-Pattern" class="headerlink" title="定義 Mediator Pattern"></a>定義 Mediator Pattern</h2><p>IG貼文：<br><span class="exturl" data-url="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9wL0NpTTBlenBMTzR6Lz9obD16aC10dw==">Mediator Pattern Post<i class="fa fa-external-link-alt"></i></span></p>
+<p>GitHub連結：<br><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL21hby1jb2RlL01lZGlhdG9yUGF0dGVybg==">Sample Code<i class="fa fa-external-link-alt"></i></span></p>
+<p>定義一個 Mediator 物件用來<strong>封裝一組物件的互動方式</strong>。<br>Mediator 藉由<strong>避免物件間相互直接的引用</strong>，從而降低它們之間的耦合程度，並且可以讓我們獨立地改變這些物件間的互動方式。</p>
+<p>下面這兩張圖片可以簡單體現出Mediator Pattern在做的事</p>
+<p><strong>沒有使用中介者, 物件彼此之間直接調用</strong><br><img data-src="/images/posts/mediator-pattern/origin-graph.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p><strong>使用中介者, 物件只依賴mediator來與其他物件溝通</strong><br><img data-src="/images/posts/mediator-pattern/star.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>可以發現使用中介者模式之後, 物件都只依賴中介者來傳遞訊息, 而不是直接調用彼此, 以此達到解耦。<br>在現實生活中, 也有類似的例子, 例如開發團隊, 客服團隊, 產銷團隊, 設計團隊, 若彼此之間沒有一個統一的溝通,<br>那麼各個團隊耦合度很高, 開發跟設計要協調介面, 又要和產銷和客服討論如何贏得如何符合市場, 這樣一來分工太複雜。<br>所以需要一個<strong>產品經理來當中介者</strong>, 協助溝通各個團隊。</p>
+<h2 id="優缺點"><a href="#優缺點" class="headerlink" title="優缺點"></a>優缺點</h2><ul>
+<li>優點 <ol>
+<li>降低物件之間的耦合性，讓物件容易重複使用。</li>
+<li>物件之間一對多的關聯性變成一對一，提高系統靈活性，也讓整體容易維護及擴充。</li>
+</ol>
 </li>
-<li>Function<ul>
-<li>The function of LoRA is to decompose the LLM into a low-rank representation and then adapt this representation to the target task.</li>
-<li>Here are the benefits:</li>
-</ul>
+<li>缺點 (Trade-off)<ol>
+<li>同事類別過多時，中介者責任很大，會使系統提升一定程度的複雜性。</li>
+</ol>
 </li>
-<li>Reduced number of parameters: The low-rank representation has a much smaller number of parameters than the original LLM, which can make it faster to train and easier to deploy.</li>
-<li>Improved performance: The low-rank representation is able to capture the most important features of the LLM, which can lead to improved performance on the downstream task.</li>
 </ul>
-<h2 id="The-applications-of-LoRA"><a href="#The-applications-of-LoRA" class="headerlink" title="The applications of LoRA"></a>The applications of LoRA</h2><ul>
-<li>Fine-tuning large language models for downstream tasks:<br>LoRA can be used to fine-tune large language models (LLMs) for a variety of downstream tasks, such as question answering, summarization, and translation. This can <strong>make LLMs more accessible and easier to use for a wider range of applications.</strong></li>
-<li>Improving the efficiency of machine learning models:<br> LoRA can be used to improve the efficiency of machine learning models by reducing the number of parameters. This can <strong>make models faster to train and easier to deploy</strong>.</li>
-<li>Compressing large datasets:<br>LoRA can be used to <strong>compress large datasets by representing them in a low-rank format</strong>. This can make datasets easier to <strong>store and transmit</strong>.</li>
-<li>Improving the security of machine learning models:<br>LoRA can be used to improve the security of machine learning models by making them more resistant to adversarial attacks.</li>
-</ul>
-<h1 id="Differences-between-adapter-and-LoRA"><a href="#Differences-between-adapter-and-LoRA" class="headerlink" title="Differences between adapter and LoRA"></a>Differences between adapter and LoRA</h1><table>
-   <thead>
-      <th>Feature</th>
-      <th>Adapter</th>
-      <th>LoRA</th>
-   </thead>
-   <tbody>
-      <tr>
-         <td>Approach</td>
-         <td>Adds additional layers to the pretrained model	</td>
-         <td>Decomposes the pretrained model into a low-rank representation
-</td>
-      </tr>
-      <tr>
-         <td>Parameters</td>
-         <td>Adds a small number of parameters to the pretrained model</td>
-         <td>Reduces the number of parameters in the pretrained model</td>
-      </tr>
-      <tr>
-         <td>Performance</td>
-         <td>Effective for a variety of downstream tasks</td>
-         <td>Particularly effective for tasks that require a large number of parameters</td>
-      </tr>
-      <tr>
-         <td>Speed</td>
-         <td>Can be faster to train than LoRA</td>
-         <td>Can be faster at inference time</td>
-      </tr>
-      <tr>
-         <td>Memory usage</td>
-         <td>Can use more memory than LoRA</td>
-         <td></td>
-      </tr>
-   </tbody>
+<h2 id="UML與成員"><a href="#UML與成員" class="headerlink" title="UML與成員"></a>UML與成員</h2><p><img data-src="/images/posts/mediator-pattern/uml.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<table>
+    <thead>
+        <th>成員</th>
+        <th>定義</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Mdiator</td>
+            <td>抽象中介者, 定義註冊進入mediator以及轉發的方法</td>
+        </tr>
+        <tr>
+            <td>ConcreteMediator</td>
+            <td>具體中介者, 定義一個集合來管理同事, 所以聚合Colleague</td>
+        </tr>
+        <tr>
+            <td>Colleague</td>
+            <td>抽象同事, 可以保存中介者, 調用內部方法, 所以聚合Mediator</td>
+        </tr>
+        <tr>
+            <td>ConcreteColleague</td>
+            <td>具體同事, 當要跟其他物件溝通時, 利用內部的中介者進行轉發</td>
+        </tr>
+    </tbody>
 </table>
 
-<p>In general, adapters are a good choice for tasks that require a small number of parameters and can be trained quickly, while LoRA is a good choice for tasks that require a large number of parameters and need to be fast at inference time.</p>
-<h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><ul>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuYW5hbHl0aWNzdmlkaHlhLmNvbS9ibG9nLzIwMjMvMDQvdHJhaW5pbmctYW4tYWRhcHRlci1mb3Itcm9iZXJ0YS1tb2RlbC1mb3Itc2VxdWVuY2UtY2xhc3NpZmljYXRpb24tdGFzay8jOn46dGV4dD1BZGFwdGVycyUyMGFyZSUyMGxpZ2h0d2VpZ2h0JTIwYWx0ZXJuYXRpdmVzJTIwdG8sbW9kdWxhciUyMGFwcHJvYWNoJTIwdG8lMjB0cmFuc2ZlciUyMGxlYXJuaW5nLg==">(Recommend) Training an Adapter for RoBERTa Model for Sequence Classification Task<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9hZGFwdGVyaHViLm1sLw==">AdapterHub<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9kb2NzL2RpZmZ1c2Vycy90cmFpbmluZy9sb3JhIzp+OnRleHQ9TG93JTJEUmFuayUyMEFkYXB0YXRpb24lMjBvZiUyMExhcmdlJTIwTGFuZ3VhZ2UlMjBNb2RlbHMlMjAoTG9SQSklMjBpcyx0cmFpbnMlMjB0aG9zZSUyMG5ld2x5JTIwYWRkZWQlMjB3ZWlnaHRzLg==">Low-Rank Adaptation of Large Language Models (LoRA) (Huggingface)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9zaC10c2FuZy5tZWRpdW0uY29tL2JyaWVmLXJldmlldy1sb3JhLWxvdy1yYW5rLWFkYXB0YXRpb24tb2YtbGFyZ2UtbGFuZ3VhZ2UtbW9kZWxzLWZhZjVkZGQ1ODAyZiM6fjp0ZXh0PUxvUkElMkMlMjBMb3clMkRSYW5rJTIwTExNJTIwRmluZSUyRFR1bmluZyUyQyUyMFJlZHVjZSUyMFJlcXVpcmVkJTIwTWVtb3J5JnRleHQ9TG93JTJEUmFuayUyMEFkYXB0YXRpb24lMkMlMjBvciUyMExvUkEsdHJhaW5hYmxlJTIwcGFyYW1ldGVycyUyMGZvciUyMGRvd25zdHJlYW0lMjB0YXNrcy4=">Brief Review — LoRA: Low-Rank Adaptation of Large Language Models<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9iZHRlY2h0YWxrcy5jb20vMjAyMy8wNS8yMi93aGF0LWlzLWxvcmEv">What is low-rank adaptation (LoRA)?<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzIxMDYuMDk2ODU=">LoRA: Low-Rank Adaptation of Large Language Models (Paper)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9ibG9nLm1sNi5ldS9sb3ctcmFuay1hZGFwdGF0aW9uLWEtdGVjaG5pY2FsLWRlZXAtZGl2ZS03ODJkZWM5OTU3NzI=">(Recommend) Low Rank Adaptation: A Technical Deep Dive<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly95b3V0dS5iZS9kQS1OaEN0cnJWRQ==">Low-rank Adaption of Large Language Models: Explaining the Key Concepts Behind LoRA (Video)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1VczVaRnAxNlBhVQ==">Fine-tuning LLMs with PEFT and LoRA<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9ibG9nL3BlZnQ=">PEFT: Parameter-Efficient Fine-Tuning of Billion-Scale Models on Low-Resource Hardware<i class="fa fa-external-link-alt"></i></span></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>ML</tag>
-        <tag>AI</tag>
-        <tag>NLP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>[NLP][ML] Transformer (1) - Structure</title>
-    <url>/posts/4283617483/</url>
-    <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>The Transformer is a <strong>deep learning architecture</strong> introduced in the paper “Attention Is All You Need” by Vaswani et al. in 2017. It revolutionized the field of natural language processing (NLP) and brought significant advancements in various <strong>sequence-to-sequence tasks</strong>. The Transformer architecture, thanks to its <strong>attention mechanisms</strong>, enables efficient processing of sequential data while <strong>capturing long-range dependencies</strong>.</p>
-<hr>
-<p>Transformer is a <strong>Seq2Seq(Sequence to Sequence) model</strong>. It uses <strong>Encoder-Decoder structure</strong><br>Below is a simple diagram：</p>
-<p><img data-src="/images/posts/NLP-series/transformer-1.gif" 
-style="width: 70%; margin: 15px auto;"><br>Source: <span class="exturl" data-url="aHR0cHM6Ly9haS5nb29nbGVibG9nLmNvbS8yMDE2LzA5L2EtbmV1cmFsLW5ldHdvcmstZm9yLW1hY2hpbmUuaHRtbA==">https://ai.googleblog.com/2016/09/a-neural-network-for-machine.html<i class="fa fa-external-link-alt"></i></span></p>
-<p>The line between Encoder and Decoder represents the “Attention”.<br>The thicker the line, the more the Decoder below pays more attention to some Chinese characters above when generating an English word.</p>
-<span id="more"></span>
-<p>In the below sections, I will introduce the structure of transformer and the attention machanism.<br>For the <strong>detail explaination of key components in transformer and the details of attention</strong>, you can refer to the <a href="https://mao-code.github.io/posts/2443192075/#more">next article</a>.</p>
-<h1 id="Structure"><a href="#Structure" class="headerlink" title="Structure"></a>Structure</h1><p>Below is the strucutre of Transformer.</p>
-<p><img data-src="/images/posts/NLP-series/transformer-2.png" 
+<h2 id="實作"><a href="#實作" class="headerlink" title="實作"></a>實作</h2><p><strong>專案結構</strong><br><img data-src="/images/posts/mediator-pattern/structure.png" 
 style="width: 70%; margin: 15px auto;"></p>
-<p>The part <strong>on the left in the figure is the Encoder, and the part on the right is the Decoder</strong>.<br>You can notice that the structures of the left and right sides are actually quite similar.<br>The Encoder and Decoder usually contain many blocks with the same layer structure, and each layer will have <strong>multi-head attention and Feed Forward Network</strong>.</p>
-<h2 id="Encoder"><a href="#Encoder" class="headerlink" title="Encoder"></a>Encoder</h2><p><img data-src="/images/posts/NLP-series/transformer-3.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>We just mentioned that the Encoder will be divided into many blocks.<br>We will <strong>first convert a whole row of input sequence data into a whole row of vectors</strong>, and then the processing steps of each block are as follows:</p>
-<ol>
-<li>Firstly, after considering all the input information of the input vector through self-attention, output a row of vectors. (I will introduce how self-attention considers all input information later)</li>
-<li>Throw this row of vectors into the feed forward network of Fully Connected (FC).</li>
-<li>The final output vector is the output of the block.</li>
-</ol>
-<hr>
-<p>However, what the block does in the original Transformer is more complicated, the details are as follows:<br><img data-src="/images/posts/NLP-series/transformer-4.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>Suppose we will follow the method just now, and the <strong>output result of the input vector after self-attention is called a</strong>. we also need to <strong>pull the original input (we first call it b )</strong> and add it to a to get a+b . Such a network architecture is called a <strong>residual connection</strong>.</p>
-<p>After that, we will do <strong>layer normalization</strong> on the result of a+b. It will calculate the average $m$(mean) and standard deviation $\sigma$(standard deviation) of the input vector, and then calculate it according to the formula: divide the input minus the mean $m$ by the standard deviation $\sigma$. It’s here that we really get <strong>the input of the FC network</strong>.</p>
-<p>The <strong>FC network also has a residual architecture</strong>, so we will add the input of the FC network to its output to get a new output, and then do layer normalization again. This is the <strong>real output of a block in Transformer Encoder</strong>.</p>
-<hr>
-<p>Now, let’s look back at the structure diagram of Encoder:</p>
-<p><img data-src="/images/posts/NLP-series/transformer-5.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>First, in the place of input, <strong>convert the input into a vector through Embedding</strong>, and then add <strong>positional encoding</strong> (because if only self-attention is used, there will be a lack of unknown information)</p>
-<p>Next we see <strong>Multi-Head Attention</strong>, which is <strong>the block of self-attention and Add&amp;Norm means residual plus layer normalization</strong>.</p>
-<p>Finally, <strong>doing Add&amp;Norm again after FC’s feed forward network is the output of the whole block</strong>, and this block will be <strong>repeated n times</strong>.</p>
-<h2 id="Decoder"><a href="#Decoder" class="headerlink" title="Decoder"></a>Decoder</h2><p>Then let us look at the Decoder:</p>
-<p><img data-src="/images/posts/NLP-series/transformer-2.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p><strong>Input the sequence obtained at the previous time</strong>, and then perform the same Embedding and Positional Encoding and then enter the block repeated N times.<br>The difference is that there is an extra <strong>“Masked” (note the red box) in the Multi-Head Attention</strong> when we first entered. What does it mean?</p>
-<p>Masked means that the model will <strong>only pay attention to the part it has already generated</strong>, and <strong>will not accidentally pay attention to the words generated in the future</strong>. Since the output of the Decoder is generated <strong>one by one</strong>, it has no way to consider its future input. It seems a bit vague to say this, and I will make it clearer when I talk about self-attention in the next article.</p>
-<p>After repeating the block N times, after the <strong>Linear Layer and Softmax</strong>, we can get the output <strong>probability distribution</strong> we want, and we can sample according to this distribution or take the value with the highest probability to get the output sequence.</p>
-<p>There is still one of the most critical self-attention mechanisms that has not been explained in detail. Let’s introduce how it pays attention to all input sequences and performs parallel processing in the next article!</p>
-<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MDM5Mg==">iThome - Day 27 Transformer (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MTI0Mg==">iThome - Day 28 Self-Attention (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9oYWNrbWQuaW8vQGFibGl1L0JrWG16REJtcg==">Transformer 李宏毅深度學習 (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9zcGVlY2guZWUubnR1LmVkdS50dy9+aHlsZWUvbWwvbWwyMDIxLWNvdXJzZS1kYXRhL3NlcTJzZXFfdjkucGRm">Transformer 李宏毅老師簡報<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQzJnZ2p0dXVXdnhySEhIaWFESDFkbFE=">李宏毅老師YouTube channel<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzE3MDYuMDM3NjI=">Attention is all you need (paper)<i class="fa fa-external-link-alt"></i></span></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>ML</tag>
-        <tag>AI</tag>
-        <tag>NLP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>[NLP][ML] Transformer (2) - Attention &amp; Summary</title>
-    <url>/posts/2443192075/</url>
-    <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>Self-attention allows the model to <strong>weigh the importance of different parts of an input sequence against each other</strong>, capturing <strong>relationships</strong> and dependencies between elements within the sequence. This is particularly powerful for tasks involving sequential or contextual information, such as language translation, text generation, and more.</p>
-<p>What Self-Attention wants to do is to replace what RNN can do<br>Its output&#x2F;input is the same as RNN, and its biggest advantages are:</p>
-<ul>
-<li>Can parallelize operations</li>
-<li>Each output vector has seen the entire input sequence. So there is no need to stack several layers like CNN.</li>
-</ul>
-<span id="more"></span>
-<h1 id="Difference-between-attention-and-self-attention"><a href="#Difference-between-attention-and-self-attention" class="headerlink" title="Difference between attention and self-attention"></a>Difference between attention and self-attention</h1><p><strong>attention is a broader concept of selectively focusing on information</strong>, while <strong>self-attention is a specific implementation of this concept</strong> where elements within the same sequence are attended to. Self-attention is a fundamental building block of the Transformer architecture, allowing it to capture relationships and dependencies within sequences effectively.</p>
-<h1 id="Attention-Machanism"><a href="#Attention-Machanism" class="headerlink" title="Attention (Machanism)"></a>Attention (Machanism)</h1><p>main idea:<br>use <strong>triples</strong><br>$$&lt;Q,K,V&gt;$$</p>
-<p>Represents the <strong>attention mechanism</strong>, expresses the <strong>similarity between Query and Key</strong>, and then assigns the value of <strong>Value according to the similarity</strong><br><strong>formula</strong>:<br>$$Attention(Q,K,V) &#x3D; softmax(\frac{QK^T}{\sqrt{d_k}})V$$</p>
-<h1 id="Self-Attention-Layer-Key"><a href="#Self-Attention-Layer-Key" class="headerlink" title="Self-Attention(Layer) (Key)"></a>Self-Attention(Layer) (<strong>Key</strong>)</h1><h2 id="Computing-process"><a href="#Computing-process" class="headerlink" title="Computing process"></a>Computing process</h2><ol>
-<li><p>Now we suppose to enter $a_1$~$a_4$ Four vector, and Self-Attention needs to output another row of $b$ vectors, and each $b$ is generated after considering all $a$</p>
-</li>
-<li><p>To figure out $b_1$, the first step is based on $a_1$, find <strong>other vectors related to $a_1$</strong> in this sequence. We use the “$\alpha$” to represent the <strong>similarity</strong> of each vector related to $a_1$.</p>
-</li>
-<li><p>It must be mentioned here that there are <strong>3 very important values in the Self-Attention mechanism</strong>: <strong>Query, Key, Value</strong>. Respectively represent <strong>the value used to match, the value to be matched, and the extracted information</strong>.</p>
-</li>
-<li><p>As for determining the <strong>correlation between two vectors</strong>, the most commonly used method is the <strong>dot product (here is scaled dot product)</strong>. It takes two vectors as input and multiplies them with two different matrices. The left vector is multiplied by the matrix $W^q$ (Query matrix), and the right vector is multiplied by the matrix $W^k$ (Key matrix). The values of $W^q$ and $W^k$ are both <strong>randomly initialized and obtained through training</strong>.</p>
-</li>
-<li><p>Next, after obtaining the two vectors, $q$, $k$, the <strong>dot product is computed between them</strong>. After summing up all the dot products, a <strong>scalar (magnitude)</strong> is obtained. This scalar is represented as $\alpha$, which we consider as <strong>the degree of correlation between the two vectors.</strong></p>
-</li>
-</ol>
-<p><img data-src="/images/posts/NLP-series/transformer-6.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>Next, we apply what was just introduced to Self-Attention.</p>
-<ol>
-<li>First, we calculate the relationships “$\alpha$” between $a_1$ and $a_2$, $a_3$, $a_4$ individually. <ul>
-<li>We multiply $a_1$ by $W^q$ to obtain $q_1$. </li>
-<li>Then, we multiply $a_2$, $a_3$, $a_4$ by $W^k$ respectively and compute the inner products to determine the relationship “$\alpha$” between $a_1$ and each vector. </li>
-<li>Applying the Softmax function yields $\alpha’$. </li>
-<li>With this $\alpha’$, we can extract crucial information from this sequence!</li>
-</ul>
-</li>
-</ol>
-<hr>
-<p><img data-src="/images/posts/NLP-series/transformer-7.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<ol start="2">
-<li>How to extract important information using $\alpha’$? The steps are as follows:</li>
-</ol>
-<ul>
-<li>First, multiply $a_1$ ~ $a_4$ by $W^v$ to obtain new vectors, denoted as $v_1$, $v_2$, $v_3$ and $v_4$, respectively (where $W^v$ is the Value matrix).</li>
-<li>Next, multiply each vector here, $v_1$ ~ $v_4$, by $\alpha’$, and then sum them to obtain the output $b_1$ (formula written in the top-right corner of the image).</li>
-</ul>
-<p>If a certain vector receives a higher score - for instance, if the relationship between $a_1$ and $a_2$ is strong, leading to a large value for $\alpha_{1,2}’$ - then after performing the weighted sum, the value of $b_1$ obtained could be very close to $v_2$.</p>
-<p>Now that we know how to compute $b_1$, it naturally follows that we can deduce $b_1$, $b_2$, $b_3$, and $b_4$ using the same method. With this, we have completed the explanation of the internal computation process of Self-Attention.</p>
-<p>Last but not least, the <strong>similarity matrix($\alpha_{i,j}$)</strong> is just the <strong>attention</strong> in the self-attention layer, i.e. importance or relevance to other elements in the same sequence..</p>
-<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><h2 id="Attention-Score-Weight-and-Output"><a href="#Attention-Score-Weight-and-Output" class="headerlink" title="Attention (Score, Weight and Output)"></a>Attention (Score, Weight and Output)</h2><ul>
-<li>$ Attention Score &#x3D; QK^T $</li>
-<li>$ Attention Weights &#x3D; Softmax(\frac{Attention Score}{\sqrt{d_k}}) $</li>
-<li>$ Attention Output &#x3D; (Attention Weights)V $</li>
-</ul>
-<h2 id="Key-Components-of-Transformers"><a href="#Key-Components-of-Transformers" class="headerlink" title="Key Components of Transformers"></a>Key Components of Transformers</h2><ol>
-<li><p>Self-Attention Mechanism:<br>The core innovation of the Transformer is the self-attention mechanism, which allows the model to <strong>weigh the importance of different words in a sequence relative to each other</strong>. It computes attention scores for each word by considering its <strong>relationships with all other words</strong> in the same sequence. Self-attention enables capturing context and dependencies between words <strong>regardless of their distance</strong>.</p>
-</li>
-<li><p>Multi-Head Attention:<br>To capture different types of relationships, the Transformer employs multi-head attention. <strong>Multiple sets of self-attention mechanisms (attention heads) run in parallel</strong>, and their outputs are concatenated and linearly transformed to create a more comprehensive representation.</p>
-</li>
-<li><p>Positional Encodings:<br>Since the Transformer does not inherently understand <strong>the order of words in a sequence</strong> (unlike recurrent networks(RNN)), positional encodings are added to the input embeddings. These encodings provide <strong>information about the positions of words within the sequence</strong>.</p>
-</li>
-<li><p>Encoder-Decoder Architecture:<br>The Transformer’s architecture is divided into an <strong>encoder and a decoder</strong>. The <strong>encoder processes the input sequence, capturing its contextual information</strong>, while the <strong>decoder generates the output sequence</strong>. This architecture is widely used in tasks like machine translation.</p>
-</li>
-<li><p>Residual Connections and Layer Normalization:<br>To address the <strong>vanishing gradient problem</strong>, residual connections (skip connections) are used around each sub-layer in the encoder and decoder. Layer normalization is also applied to <strong>stabilize</strong> the training process.</p>
-</li>
-<li><p>Position-wise Feed-Forward Networks:<br>After the self-attention layers, each position’s representation is passed through a position-wise feed-forward neural network, which <strong>adds non-linearity to the model</strong>.</p>
-</li>
-<li><p>Scaled Dot-Product Attention:<br>The self-attention mechanism involves computing the <strong>dot product of query, key, and value vectors</strong>. To control the scale of the dot products and <strong>avoid large gradients</strong>, the dot products are divided by the <strong>square root of the dimension of the key vectors</strong>.</p>
-</li>
-<li><p>Masked Self-Attention in Decoding:<br>During decoding, the self-attention mechanism is modified to <strong>ensure that each position can only attend to previous positions</strong>. This masking <strong>prevents the model from “cheating” by looking ahead in the output sequence</strong>.</p>
-</li>
-<li><p>Transformer Variants:<br> The original Transformer model has inspired various extensions and improvements, such as BERT, GPT, and more. BERT focuses on pretraining language representations, while GPT is designed for autoregressive text generation.</p>
-</li>
-</ol>
-<p>The Transformer architecture has become the foundation for many state-of-the-art NLP models due to its ability to <strong>capture context, parallelize computations, and handle long-range dependencies effectively</strong>. It has led to significant advancements in machine translation, text generation, sentiment analysis, and various other NLP tasks.</p>
-<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MDM5Mg==">iThome - Day 27 Transformer (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MTI0Mg==">iThome - Day 28 Self-Attention (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9oYWNrbWQuaW8vQGFibGl1L0JrWG16REJtcg==">Transformer 李宏毅深度學習 (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9zcGVlY2guZWUubnR1LmVkdS50dy9+aHlsZWUvbWwvbWwyMDIxLWNvdXJzZS1kYXRhL3NlcTJzZXFfdjkucGRm">Transformer 李宏毅老師簡報<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQzJnZ2p0dXVXdnhySEhIaWFESDFkbFE=">李宏毅老師YouTube channel<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzE3MDYuMDM3NjI=">Attention is all you need (paper)<i class="fa fa-external-link-alt"></i></span></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>ML</tag>
-        <tag>AI</tag>
-        <tag>NLP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>[NLP][ML] Transformer (3) - More conputational detail</title>
-    <url>/posts/1255359463/</url>
-    <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>In this article, I will focus more on the computing detail in transformer.<br>It will cover self-attention, prallel processing, multi-head self-attention, positional encoding and so on.</p>
-<p><img data-src="/images/posts/NLP-series/transformer-2.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<span id="more"></span>
+<p><strong>抽象Mediator</strong></p>
+<figure class="highlight c#"><figcaption><span>Mediator(抽象)</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MediatorPattern.mediator</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 團隊列舉</span></span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">enum</span> teamType</span><br><span class="line">    &#123;</span><br><span class="line">        ENGINEERING, DESIGN, SERVICE, MARKETING</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 抽象mediator</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title">Mediator</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">Register</span>(<span class="params">teamType type, Colleague colleague</span>)</span>; <span class="comment">//註冊進入mediator</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">Relay</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span>; <span class="comment">//轉發;傳遞</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h1 id="Self-Attention"><a href="#Self-Attention" class="headerlink" title="Self-Attention"></a>Self-Attention</h1><h2 id="Idea"><a href="#Idea" class="headerlink" title="Idea"></a>Idea</h2><ul>
-<li>Input:<ul>
-<li>$x_1$, …, $x_4$, is a sequence.</li>
-<li>Each input first goes through an <strong>embedding(convert to vectors)</strong>, multiplied by a weight matrix to become $a_1$, …, $a_4$. These $a_1$, …, $a_4$ are then passed into a Self-attention layer</li>
-</ul>
-</li>
-<li>Each input is multiplied by different vectors:<ul>
-<li>$q$: query (to match against others)<ul>
-<li>$q_i$ &#x3D; $W^qa_i$</li>
-</ul>
-</li>
-<li>$k$: key (to be matched)<ul>
-<li>$k_i$ &#x3D; $W^ka_i$</li>
-</ul>
-</li>
-<li>$v$: value, information to be extracted<ul>
-<li>$v_i$ &#x3D; $W^va_i$</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>The weights $W^q$, $W^k$, $W^v$ are <strong>learned, initially randomly initialized</strong>.</li>
-</ul>
-<h2 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h2><p><img data-src="/images/posts/NLP-series/transformer-6.png" 
+<p><strong>PackageManager(具體Mediator)</strong></p>
+<figure class="highlight c#"><figcaption><span>PackageManager(具體Mediator)</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MediatorPattern.mediator</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="comment">// 具體mediator</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ProductManager</span> : <span class="title">Mediator</span></span><br><span class="line">	&#123;</span><br><span class="line">        <span class="comment">// 聚合Colleague, 一個儲存colleague物件的dictionary</span></span><br><span class="line">        <span class="keyword">private</span> Dictionary&lt;teamType, Colleague&gt; colleagues = <span class="keyword">new</span> Dictionary&lt;teamType, Colleague&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">Register</span>(<span class="params">teamType type, Colleague colleague</span>)</span></span><br><span class="line">        &#123;</span><br><span class="line">            colleague.setMediator(<span class="keyword">this</span>);</span><br><span class="line">            <span class="keyword">this</span>.colleagues.Add(type, colleague);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">Relay</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">        &#123;</span><br><span class="line">            Colleague toColleague = <span class="keyword">this</span>.colleagues[type];</span><br><span class="line">            toColleague.receive(msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>抽象Colleague</strong></p>
+<figure class="highlight c#"><figcaption><span>Colleague(抽象)</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.mediator;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MediatorPattern.colleagues</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title">Colleague</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">protected</span> Mediator? Mediator &#123; <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; &#125;</span><br><span class="line"></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setMediator</span>(<span class="params">Mediator mediator</span>)</span></span><br><span class="line">		&#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator = mediator;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 接收訊息後如何反應</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span>;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 傳送訊息給特定物件</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>具體Colleague</strong></p>
+<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="comment">//具體colleague</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">DesignTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;設計團隊收到訊息: &quot;</span> + msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;設計團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">EngineeringTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;工程師團隊收到訊息: &quot;</span>+msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;工程師團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">MarketingTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;產銷團隊收到訊息: &quot;</span> + msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;產銷團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ServiceTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;客服團隊收到訊息: &quot;</span> + msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;客服團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>Client端使用</strong></p>
+<figure class="highlight c#"><figcaption><span>Program.cs</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.mediator;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 具體mediator</span></span><br><span class="line">ProductManager pm = <span class="keyword">new</span> ProductManager();</span><br><span class="line"></span><br><span class="line"><span class="comment">//具體colleague</span></span><br><span class="line">Colleague ds = <span class="keyword">new</span> DesignTeam();</span><br><span class="line">Colleague eg = <span class="keyword">new</span> EngineeringTeam();</span><br><span class="line">Colleague mk = <span class="keyword">new</span> MarketingTeam();</span><br><span class="line">Colleague sv = <span class="keyword">new</span> ServiceTeam();</span><br><span class="line"></span><br><span class="line"><span class="comment">//註冊進入mediator</span></span><br><span class="line">pm.Register(teamType.DESIGN, ds);</span><br><span class="line">pm.Register(teamType.ENGINEERING, eg);</span><br><span class="line">pm.Register(teamType.MARKETING, mk);</span><br><span class="line">pm.Register(teamType.SERVICE, sv);</span><br><span class="line"></span><br><span class="line"><span class="comment">//執行</span></span><br><span class="line">ds.send(teamType.ENGINEERING, <span class="string">&quot;UI設計稿完成&quot;</span>);</span><br><span class="line">Console.WriteLine(String.Concat(Enumerable.Repeat(<span class="string">&quot;-&quot;</span>, <span class="number">10</span>)));</span><br><span class="line"></span><br><span class="line">eg.send(teamType.MARKETING, <span class="string">&quot;軟體開發完成&quot;</span>);</span><br><span class="line">Console.WriteLine(String.Concat(Enumerable.Repeat(<span class="string">&quot;-&quot;</span>, <span class="number">10</span>)));</span><br><span class="line"></span><br><span class="line">Console.ReadKey();</span><br></pre></td></tr></table></figure>
+
+<p><strong>結果</strong><br><img data-src="/images/posts/mediator-pattern/result.png" 
 style="width: 70%; margin: 15px auto;"></p>
-<p><img data-src="/images/posts/NLP-series/transformer-7.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<ol>
-<li>Take each query <strong>$q$ and perform attention on each key $k$</strong> (using two vectors to output a score(attention score)), which is essentially calculating the <strong>similarity of $q$ and $k$ (Similarity)</strong>.<ul>
-<li>Scaled Dot-Product: $S(q_1, k_1)$ yields $\alpha_{1,1}$, $S(q_1, k_2)$ yields $\alpha_{1,2}$, and so on.</li>
-<li>$\alpha_{1,i}$ &#x3D; $  q_1 \cdot k_i &#x2F; \sqrt{d}$ </li>
-<li>$d$ represents the <strong>dimensions of $q$ and $k$</strong>. This is a <strong>trick used by the authors in the paper</strong>.</li>
-</ul>
-</li>
-<li>Followed by <strong>Softmax normalization to normalize the values</strong>.</li>
-<li>Multiply the obtained $\hat{\alpha}$ with $v$ to get $b$, which is <strong>equivalent to a weighted sum</strong>.</li>
-<li>The obtained $b_1$ in the figure is the <strong>first vector (word or character)</strong> of the sought sequence.</li>
-<li>Each output vector incorporates information from the <strong>entire sequence</strong>.</li>
+<h2 id="疑問"><a href="#疑問" class="headerlink" title="疑問"></a>疑問</h2><ol>
+<li>DI不也是讓物件間解耦嗎？他們有什麼不同？<ol>
+<li>應用場景不同：Mediator模式主要用於解耦合多個相互協作的物件，特別是在複雜的互動場景中。DI則主要用於管理和注入依賴關係，以實現鬆耦合和可測試的程式碼。</li>
+<li>解決不同問題：Mediator解決的是物件之間的協作和通信問題，而DI解決的是依賴關係管理的問題。</li>
+<li>實現方式不同：Mediator需要一個中介者來協調物件之間的互動，通常由一個專門的Mediator類別來實現。DI則是一種設計模式，它可以與不同語言和框架一起使用，並不需要特定的中介者類別。</li>
 </ol>
-<h1 id="Prallel-Processing"><a href="#Prallel-Processing" class="headerlink" title="Prallel Processing"></a>Prallel Processing</h1><p><img data-src="/images/posts/NLP-series/transformer-8.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>$$q_i &#x3D; W^qa_i$$<br>$$k_i &#x3D; W^ka_i$$<br>$$v_i &#x3D; W^va_i$$</p>
-<hr>
-<p><img data-src="/images/posts/NLP-series/transformer-9.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<ol>
-<li>Consider $a_1$, …, $a_4$ as a matrix $I$. Multiply it by the weight matrix $W^q$ to obtain $q_1$, …, $q_4$, forming another matrix $Q$. </li>
-<li>The same process applies to matrices $K$ and $V$, formed by multiplying $q$, $k$, and $a$ to get<br>$\alpha_{1,1}$ &#x3D; $k^T_1 \cdot q_1$,<br>$\alpha_{1,2}$ &#x3D; $k^T_2 \cdot q_1$,<br>…<br>Stack $k_1$, …, $k_4$ to form matrix $K$, then multiply it by $q_1$ stacked with $q_2$, …, $q_4$ to form matrix $Q$, resulting in a matrix $A$ composed of $\alpha$ values, which is the <strong>Attention</strong>. </li>
-<li>After applying Softmax, it becomes $\hat{A}$. In each time step, attention exists between each pair of vectors.</li>
-</ol>
-<hr>
-<p><img data-src="/images/posts/NLP-series/transformer-10.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>By calculating the <strong>weighted sum of $V$ and $\hat{A}$</strong>, you obtain $b$, and the matrix composed of b forms the <strong>output matrix $O$</strong>.”</p>
-<hr>
-<h2 id="What-self-attention-layer-do"><a href="#What-self-attention-layer-do" class="headerlink" title="What self-attention layer do"></a>What self-attention layer do</h2><p><img data-src="/images/posts/NLP-series/transformer-11-1.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p><img data-src="/images/posts/NLP-series/transformer-11-2.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>By converting it into matrix multiplication, you can utilize the <strong>GPU to accelerate the computation</strong>.</p>
-<h1 id="Multi-head-Self-attention"><a href="#Multi-head-Self-attention" class="headerlink" title="Multi-head Self-attention"></a>Multi-head Self-attention</h1><p><img data-src="/images/posts/NLP-series/transformer-12.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>Taking 2 heads as an example:</p>
-<ul>
-<li>Having <strong>2 heads</strong> means splitting $q, k, v$ into two sets of $q, k, v$. And $q_{i,1}$ will only be multiplied with $k_{i,1}$ to obtain $\alpha_{i,1}$, finally calculating $b_{i,1}$. </li>
-<li>Afterward, concatenate $b_{i,1}, b_{i,2}$, apply a transformation, and perform dimension reduction to obtain the final $b_i$.</li>
-<li><strong>Each head focuses on different information</strong>; some only care about local information (neighborhood data), while others concentrate on global (long-term) information, and so on.</li>
-</ul>
-<h1 id="Positional-Encoding"><a href="#Positional-Encoding" class="headerlink" title="Positional Encoding"></a>Positional Encoding</h1><p><img data-src="/images/posts/NLP-series/transformer-13.png" 
-style="width: 40%; margin: 15px auto;"></p>
-<p>In the attention mechanism, the order of words in the input sentence doesn’t matter.</p>
-<hr>
-<p><img data-src="/images/posts/NLP-series/transformer-14.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<ul>
-<li>Without positional information &#x3D;&gt; Therefore, there is a <strong>unique position vector $e_i$</strong>, which is not learned but set by humans.</li>
-<li>Other methods: <strong>Using one-hot encoding</strong> to represent $p_i$ as $x_i$ to denote its position.</li>
-</ul>
-<h1 id="Seq2seq-with-Attention"><a href="#Seq2seq-with-Attention" class="headerlink" title="Seq2seq with Attention"></a>Seq2seq with Attention</h1><p><img data-src="/images/posts/NLP-series/transformer-15.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>The original seq2seq model consists of two RNNs, an Encoder and a Decoder, and can be applied to machine translation.</p>
-<p>In the diagram above, the Encoder originally contained bidirectional RNNs, while the Decoder contained a unidirectional RNN. In the diagram below, <strong>both(bi&#x2F;unidirectional RNN) have been replaced with Self-Attention layers</strong>, achieving the same purpose and enabling <strong>parallel processing</strong>.</p>
-<p><img data-src="/images/posts/NLP-series/transformer-16.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<h1 id="Look-into-the-detail-of-Transformer-Model"><a href="#Look-into-the-detail-of-Transformer-Model" class="headerlink" title="Look into the detail of Transformer Model"></a>Look into the detail of Transformer Model</h1><p><img data-src="/images/posts/NLP-series/transformer-2.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>Using Chinese to English translation for example.</p>
-<h2 id="Encoder-Part"><a href="#Encoder-Part" class="headerlink" title="Encoder Part:"></a>Encoder Part:</h2><ol>
-<li>The input goes through <strong>Input Embedding</strong>, which considers <strong>positional information</strong> and is augmented with manually set Positional Encoding. It then enters the block that <strong>repeats N times</strong>.</li>
-</ol>
-<hr>
-<p><img data-src="/images/posts/NLP-series/transformer-17.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<ol start="2">
-<li>Multi-head:<br>Within the Encoder, it utilizes <strong>Multi-head Attention,</strong> which means there <strong>are multiple sets of $q$, $k$, $z$</strong>. Inside this mechanism, individual $qkv$ multiplications with $a$ are performed, leading to the calculation of $\alpha$, ultimately resulting in $b$.</li>
-</ol>
-<hr>
-<p><img data-src="/images/posts/NLP-series/transformer-18.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<ol start="3">
-<li>Add &amp; Norm (residual connection):<br>The <strong>input</strong> of Multi-head Attention, denoted as <strong>$a$</strong>, is added to the <strong>output $b$</strong>, resulting in <strong>$b^\prime$</strong>. Following this, <strong>Layer Normalization</strong> is performed. </li>
-<li>Once the calculations are completed, the result is passed through the <strong>forward propagation</strong>, followed by another <strong>Add &amp; Norm</strong> step.</li>
-</ol>
-<h2 id="Decoder-Part"><a href="#Decoder-Part" class="headerlink" title="Decoder Part"></a>Decoder Part</h2><p><img data-src="/images/posts/NLP-series/transformer-18-2.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<ol>
-<li><p>The Decoder <strong>input is the output from the previous time step</strong>. It goes through output embedding, considering positional information, and is augmented with manually set positional encoding. It then enters the block that repeats n times.</p>
-</li>
-<li><p><strong>Masked Multi-head Attention</strong>:<br>Attention is performed, where <strong>“Masked” indicates attending only to the already generated sequence</strong>. This is followed by an Add &amp; Norm layer.</p>
-</li>
-<li><p>Next, it undergoes a Multi-head Attention layer, attending to the <strong>previous output of the Encoder</strong>, followed by another Add &amp; Norm layer.</p>
-</li>
-<li><p>After the computations, it is passed to the <strong>Feed Forward forward propagation</strong>. Subsequently, <strong>Linear and Softmax</strong> operations are applied to generate the <strong>final output</strong>.</p>
 </li>
 </ol>
-<hr>
-<p>Last but not least, I provide the definition and purpose of encoder and decoder (in the previous article):</p>
-<blockquote>
-<p>Encoder-Decoder Architecture:<br>   The Transformer’s architecture is divided into an <strong>encoder and a decoder</strong>. The <strong>encoder processes the input sequence, capturing its contextual information</strong>, while the <strong>decoder generates the output sequence</strong>. This architecture is widely used in tasks like machine translation.</p>
-</blockquote>
-<h1 id="Attention-Visualization"><a href="#Attention-Visualization" class="headerlink" title="Attention Visualization"></a>Attention Visualization</h1><h2 id="single-head"><a href="#single-head" class="headerlink" title="single-head"></a>single-head</h2><p><img data-src="/images/posts/NLP-series/transformer-19.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>The relationships between words. The thicker the line, the more related of these words.</p>
-<h2 id="multi-head"><a href="#multi-head" class="headerlink" title="multi-head"></a>multi-head</h2><p><img data-src="/images/posts/NLP-series/transformer-20.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>The results obtained by pairing different sets of $q$ and $k$ vectors differ, indicating that different sets of $q$ and $k$ possess distinct information. This signifies that various sets of $q$ and $k$ hold different types of information, with some focusing on local aspects (below) and others on global aspects (above).</p>
-<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MDM5Mg==">iThome - Day 27 Transformer (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MTI0Mg==">iThome - Day 28 Self-Attention (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9oYWNrbWQuaW8vQGFibGl1L0JrWG16REJtcg==">Transformer 李宏毅深度學習 (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9zcGVlY2guZWUubnR1LmVkdS50dy9+aHlsZWUvbWwvbWwyMDIxLWNvdXJzZS1kYXRhL3NlcTJzZXFfdjkucGRm">Transformer 李宏毅老師簡報<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQzJnZ2p0dXVXdnhySEhIaWFESDFkbFE=">李宏毅老師YouTube channel<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzE3MDYuMDM3NjI=">Attention is all you need (paper)<i class="fa fa-external-link-alt"></i></span></li>
+<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><ul>
+<li>定義:<br>  定義一個 Mediator 物件用來封裝一組物件的互動方式。Mediator 藉由避免物件間相互直接的引用，從而降低它們之間的耦合程度，並且可以讓我們獨立地改變這些物件間的互動方式。</li>
+<li>成員<ul>
+<li>抽象Mediator: 定義方法, 轉接訊息</li>
+<li>具體Mediator: 實作抽象Mediator, Colleague (擁有0~多個Colleague)</li>
+<li>抽象Colleague: 定義方法, 聚合抽象Mediator (Colleague擁有Mediator)</li>
+<li>具體Colleague: 實作抽象Mediator</li>
+</ul>
+</li>
+<li>優點 <ol>
+<li>降低物件之間的耦合性，讓物件容易重複使用。</li>
+<li>物件之間一對多的關聯性變成一對一，提高系統靈活性，也讓整體容易維護及擴充。</li>
+</ol>
+</li>
+<li>缺點 (Trade-off)<ol>
+<li>同事類別過多時，中介者責任很大，會使系統提升一定程度的複雜性。</li>
+</ol>
+</li>
 </ul>
 ]]></content>
+      <categories>
+        <category>OOP</category>
+        <category>Design Pattern</category>
+      </categories>
       <tags>
-        <tag>ML</tag>
-        <tag>AI</tag>
-        <tag>NLP</tag>
+        <tag>OOP</tag>
+        <tag>.NET C#</tag>
+        <tag>design-pattern</tag>
       </tags>
   </entry>
   <entry>
@@ -1193,116 +840,6 @@ style="width: 70%; margin: 15px auto;"></p>
       </tags>
   </entry>
   <entry>
-    <title>[.NET][C#][Design Pattern] - Mediator Pattern (中介者模式)</title>
-    <url>/posts/4072203086/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>這篇文章主要介紹Mediator Pattern的定義以及簡單實作<br>介紹使用Mediator Pattern的好處, 並提供範例<br>在軟體架構中Mediator Patternc和Repository Pattern都是常用的pattern<br>通常.NET專案中會結合MediatR套件使用</p>
-<span id="more"></span>
-
-<h2 id="定義-Mediator-Pattern"><a href="#定義-Mediator-Pattern" class="headerlink" title="定義 Mediator Pattern"></a>定義 Mediator Pattern</h2><p>IG貼文：<br><span class="exturl" data-url="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9wL0NpTTBlenBMTzR6Lz9obD16aC10dw==">Mediator Pattern Post<i class="fa fa-external-link-alt"></i></span></p>
-<p>GitHub連結：<br><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL21hby1jb2RlL01lZGlhdG9yUGF0dGVybg==">Sample Code<i class="fa fa-external-link-alt"></i></span></p>
-<p>定義一個 Mediator 物件用來<strong>封裝一組物件的互動方式</strong>。<br>Mediator 藉由<strong>避免物件間相互直接的引用</strong>，從而降低它們之間的耦合程度，並且可以讓我們獨立地改變這些物件間的互動方式。</p>
-<p>下面這兩張圖片可以簡單體現出Mediator Pattern在做的事</p>
-<p><strong>沒有使用中介者, 物件彼此之間直接調用</strong><br><img data-src="/images/posts/mediator-pattern/origin-graph.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p><strong>使用中介者, 物件只依賴mediator來與其他物件溝通</strong><br><img data-src="/images/posts/mediator-pattern/star.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>可以發現使用中介者模式之後, 物件都只依賴中介者來傳遞訊息, 而不是直接調用彼此, 以此達到解耦。<br>在現實生活中, 也有類似的例子, 例如開發團隊, 客服團隊, 產銷團隊, 設計團隊, 若彼此之間沒有一個統一的溝通,<br>那麼各個團隊耦合度很高, 開發跟設計要協調介面, 又要和產銷和客服討論如何贏得如何符合市場, 這樣一來分工太複雜。<br>所以需要一個<strong>產品經理來當中介者</strong>, 協助溝通各個團隊。</p>
-<h2 id="優缺點"><a href="#優缺點" class="headerlink" title="優缺點"></a>優缺點</h2><ul>
-<li>優點 <ol>
-<li>降低物件之間的耦合性，讓物件容易重複使用。</li>
-<li>物件之間一對多的關聯性變成一對一，提高系統靈活性，也讓整體容易維護及擴充。</li>
-</ol>
-</li>
-<li>缺點 (Trade-off)<ol>
-<li>同事類別過多時，中介者責任很大，會使系統提升一定程度的複雜性。</li>
-</ol>
-</li>
-</ul>
-<h2 id="UML與成員"><a href="#UML與成員" class="headerlink" title="UML與成員"></a>UML與成員</h2><p><img data-src="/images/posts/mediator-pattern/uml.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<table>
-    <thead>
-        <th>成員</th>
-        <th>定義</th>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Mdiator</td>
-            <td>抽象中介者, 定義註冊進入mediator以及轉發的方法</td>
-        </tr>
-        <tr>
-            <td>ConcreteMediator</td>
-            <td>具體中介者, 定義一個集合來管理同事, 所以聚合Colleague</td>
-        </tr>
-        <tr>
-            <td>Colleague</td>
-            <td>抽象同事, 可以保存中介者, 調用內部方法, 所以聚合Mediator</td>
-        </tr>
-        <tr>
-            <td>ConcreteColleague</td>
-            <td>具體同事, 當要跟其他物件溝通時, 利用內部的中介者進行轉發</td>
-        </tr>
-    </tbody>
-</table>
-
-<h2 id="實作"><a href="#實作" class="headerlink" title="實作"></a>實作</h2><p><strong>專案結構</strong><br><img data-src="/images/posts/mediator-pattern/structure.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p><strong>抽象Mediator</strong></p>
-<figure class="highlight c#"><figcaption><span>Mediator(抽象)</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MediatorPattern.mediator</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 團隊列舉</span></span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">enum</span> teamType</span><br><span class="line">    &#123;</span><br><span class="line">        ENGINEERING, DESIGN, SERVICE, MARKETING</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 抽象mediator</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title">Mediator</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">Register</span>(<span class="params">teamType type, Colleague colleague</span>)</span>; <span class="comment">//註冊進入mediator</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">Relay</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span>; <span class="comment">//轉發;傳遞</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>PackageManager(具體Mediator)</strong></p>
-<figure class="highlight c#"><figcaption><span>PackageManager(具體Mediator)</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MediatorPattern.mediator</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="comment">// 具體mediator</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ProductManager</span> : <span class="title">Mediator</span></span><br><span class="line">	&#123;</span><br><span class="line">        <span class="comment">// 聚合Colleague, 一個儲存colleague物件的dictionary</span></span><br><span class="line">        <span class="keyword">private</span> Dictionary&lt;teamType, Colleague&gt; colleagues = <span class="keyword">new</span> Dictionary&lt;teamType, Colleague&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">Register</span>(<span class="params">teamType type, Colleague colleague</span>)</span></span><br><span class="line">        &#123;</span><br><span class="line">            colleague.setMediator(<span class="keyword">this</span>);</span><br><span class="line">            <span class="keyword">this</span>.colleagues.Add(type, colleague);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">Relay</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">        &#123;</span><br><span class="line">            Colleague toColleague = <span class="keyword">this</span>.colleagues[type];</span><br><span class="line">            toColleague.receive(msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>抽象Colleague</strong></p>
-<figure class="highlight c#"><figcaption><span>Colleague(抽象)</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.mediator;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MediatorPattern.colleagues</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title">Colleague</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">protected</span> Mediator? Mediator &#123; <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; &#125;</span><br><span class="line"></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setMediator</span>(<span class="params">Mediator mediator</span>)</span></span><br><span class="line">		&#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator = mediator;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 接收訊息後如何反應</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span>;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 傳送訊息給特定物件</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>具體Colleague</strong></p>
-<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="comment">//具體colleague</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">DesignTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;設計團隊收到訊息: &quot;</span> + msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;設計團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">EngineeringTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;工程師團隊收到訊息: &quot;</span>+msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;工程師團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">MarketingTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;產銷團隊收到訊息: &quot;</span> + msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;產銷團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ServiceTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;客服團隊收到訊息: &quot;</span> + msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;客服團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>Client端使用</strong></p>
-<figure class="highlight c#"><figcaption><span>Program.cs</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.mediator;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 具體mediator</span></span><br><span class="line">ProductManager pm = <span class="keyword">new</span> ProductManager();</span><br><span class="line"></span><br><span class="line"><span class="comment">//具體colleague</span></span><br><span class="line">Colleague ds = <span class="keyword">new</span> DesignTeam();</span><br><span class="line">Colleague eg = <span class="keyword">new</span> EngineeringTeam();</span><br><span class="line">Colleague mk = <span class="keyword">new</span> MarketingTeam();</span><br><span class="line">Colleague sv = <span class="keyword">new</span> ServiceTeam();</span><br><span class="line"></span><br><span class="line"><span class="comment">//註冊進入mediator</span></span><br><span class="line">pm.Register(teamType.DESIGN, ds);</span><br><span class="line">pm.Register(teamType.ENGINEERING, eg);</span><br><span class="line">pm.Register(teamType.MARKETING, mk);</span><br><span class="line">pm.Register(teamType.SERVICE, sv);</span><br><span class="line"></span><br><span class="line"><span class="comment">//執行</span></span><br><span class="line">ds.send(teamType.ENGINEERING, <span class="string">&quot;UI設計稿完成&quot;</span>);</span><br><span class="line">Console.WriteLine(String.Concat(Enumerable.Repeat(<span class="string">&quot;-&quot;</span>, <span class="number">10</span>)));</span><br><span class="line"></span><br><span class="line">eg.send(teamType.MARKETING, <span class="string">&quot;軟體開發完成&quot;</span>);</span><br><span class="line">Console.WriteLine(String.Concat(Enumerable.Repeat(<span class="string">&quot;-&quot;</span>, <span class="number">10</span>)));</span><br><span class="line"></span><br><span class="line">Console.ReadKey();</span><br></pre></td></tr></table></figure>
-
-<p><strong>結果</strong><br><img data-src="/images/posts/mediator-pattern/result.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<h2 id="疑問"><a href="#疑問" class="headerlink" title="疑問"></a>疑問</h2><ol>
-<li>DI不也是讓物件間解耦嗎？他們有什麼不同？<ol>
-<li>應用場景不同：Mediator模式主要用於解耦合多個相互協作的物件，特別是在複雜的互動場景中。DI則主要用於管理和注入依賴關係，以實現鬆耦合和可測試的程式碼。</li>
-<li>解決不同問題：Mediator解決的是物件之間的協作和通信問題，而DI解決的是依賴關係管理的問題。</li>
-<li>實現方式不同：Mediator需要一個中介者來協調物件之間的互動，通常由一個專門的Mediator類別來實現。DI則是一種設計模式，它可以與不同語言和框架一起使用，並不需要特定的中介者類別。</li>
-</ol>
-</li>
-</ol>
-<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><ul>
-<li>定義:<br>  定義一個 Mediator 物件用來封裝一組物件的互動方式。Mediator 藉由避免物件間相互直接的引用，從而降低它們之間的耦合程度，並且可以讓我們獨立地改變這些物件間的互動方式。</li>
-<li>成員<ul>
-<li>抽象Mediator: 定義方法, 轉接訊息</li>
-<li>具體Mediator: 實作抽象Mediator, Colleague (擁有0~多個Colleague)</li>
-<li>抽象Colleague: 定義方法, 聚合抽象Mediator (Colleague擁有Mediator)</li>
-<li>具體Colleague: 實作抽象Mediator</li>
-</ul>
-</li>
-<li>優點 <ol>
-<li>降低物件之間的耦合性，讓物件容易重複使用。</li>
-<li>物件之間一對多的關聯性變成一對一，提高系統靈活性，也讓整體容易維護及擴充。</li>
-</ol>
-</li>
-<li>缺點 (Trade-off)<ol>
-<li>同事類別過多時，中介者責任很大，會使系統提升一定程度的複雜性。</li>
-</ol>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>OOP</category>
-        <category>Design Pattern</category>
-      </categories>
-      <tags>
-        <tag>OOP</tag>
-        <tag>.NET C#</tag>
-        <tag>design-pattern</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>[.NET][C#][Design Pattern] - Repository Pattern</title>
     <url>/posts/1822258245/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>這篇文章主要介紹何為Repository Pattern, 並如何在.NET C#中實作<br>並結合Unit Of Work Pattern, 讓程式對Repository解耦<br>這個design pattern可以說是踏入軟體架構的敲門磚<br>也算是非常常用的pattern, 實用性非常高</p>
@@ -1375,6 +912,469 @@ style="width: 70%; margin: 15px auto;"><br>這裡主要是以書本和作者為�
         <tag>OOP</tag>
         <tag>.NET C#</tag>
         <tag>design-pattern</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[NLP][ML] Transformer (1) - Structure</title>
+    <url>/posts/4283617483/</url>
+    <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>The Transformer is a <strong>deep learning architecture</strong> introduced in the paper “Attention Is All You Need” by Vaswani et al. in 2017. It revolutionized the field of natural language processing (NLP) and brought significant advancements in various <strong>sequence-to-sequence tasks</strong>. The Transformer architecture, thanks to its <strong>attention mechanisms</strong>, enables efficient processing of sequential data while <strong>capturing long-range dependencies</strong>.</p>
+<hr>
+<p>Transformer is a <strong>Seq2Seq(Sequence to Sequence) model</strong>. It uses <strong>Encoder-Decoder structure</strong><br>Below is a simple diagram：</p>
+<p><img data-src="/images/posts/NLP-series/transformer-1.gif" 
+style="width: 70%; margin: 15px auto;"><br>Source: <span class="exturl" data-url="aHR0cHM6Ly9haS5nb29nbGVibG9nLmNvbS8yMDE2LzA5L2EtbmV1cmFsLW5ldHdvcmstZm9yLW1hY2hpbmUuaHRtbA==">https://ai.googleblog.com/2016/09/a-neural-network-for-machine.html<i class="fa fa-external-link-alt"></i></span></p>
+<p>The line between Encoder and Decoder represents the “Attention”.<br>The thicker the line, the more the Decoder below pays more attention to some Chinese characters above when generating an English word.</p>
+<span id="more"></span>
+<p>In the below sections, I will introduce the structure of transformer and the attention machanism.<br>For the <strong>detail explaination of key components in transformer and the details of attention</strong>, you can refer to the <a href="https://mao-code.github.io/posts/2443192075/#more">next article</a>.</p>
+<h1 id="Structure"><a href="#Structure" class="headerlink" title="Structure"></a>Structure</h1><p>Below is the strucutre of Transformer.</p>
+<p><img data-src="/images/posts/NLP-series/transformer-2.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>The part <strong>on the left in the figure is the Encoder, and the part on the right is the Decoder</strong>.<br>You can notice that the structures of the left and right sides are actually quite similar.<br>The Encoder and Decoder usually contain many blocks with the same layer structure, and each layer will have <strong>multi-head attention and Feed Forward Network</strong>.</p>
+<h2 id="Encoder"><a href="#Encoder" class="headerlink" title="Encoder"></a>Encoder</h2><p><img data-src="/images/posts/NLP-series/transformer-3.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>We just mentioned that the Encoder will be divided into many blocks.<br>We will <strong>first convert a whole row of input sequence data into a whole row of vectors</strong>, and then the processing steps of each block are as follows:</p>
+<ol>
+<li>Firstly, after considering all the input information of the input vector through self-attention, output a row of vectors. (I will introduce how self-attention considers all input information later)</li>
+<li>Throw this row of vectors into the feed forward network of Fully Connected (FC).</li>
+<li>The final output vector is the output of the block.</li>
+</ol>
+<hr>
+<p>However, what the block does in the original Transformer is more complicated, the details are as follows:<br><img data-src="/images/posts/NLP-series/transformer-4.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>Suppose we will follow the method just now, and the <strong>output result of the input vector after self-attention is called a</strong>. we also need to <strong>pull the original input (we first call it b )</strong> and add it to a to get a+b . Such a network architecture is called a <strong>residual connection</strong>.</p>
+<p>After that, we will do <strong>layer normalization</strong> on the result of a+b. It will calculate the average $m$(mean) and standard deviation $\sigma$(standard deviation) of the input vector, and then calculate it according to the formula: divide the input minus the mean $m$ by the standard deviation $\sigma$. It’s here that we really get <strong>the input of the FC network</strong>.</p>
+<p>The <strong>FC network also has a residual architecture</strong>, so we will add the input of the FC network to its output to get a new output, and then do layer normalization again. This is the <strong>real output of a block in Transformer Encoder</strong>.</p>
+<hr>
+<p>Now, let’s look back at the structure diagram of Encoder:</p>
+<p><img data-src="/images/posts/NLP-series/transformer-5.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>First, in the place of input, <strong>convert the input into a vector through Embedding</strong>, and then add <strong>positional encoding</strong> (because if only self-attention is used, there will be a lack of unknown information)</p>
+<p>Next we see <strong>Multi-Head Attention</strong>, which is <strong>the block of self-attention and Add&amp;Norm means residual plus layer normalization</strong>.</p>
+<p>Finally, <strong>doing Add&amp;Norm again after FC’s feed forward network is the output of the whole block</strong>, and this block will be <strong>repeated n times</strong>.</p>
+<h2 id="Decoder"><a href="#Decoder" class="headerlink" title="Decoder"></a>Decoder</h2><p>Then let us look at the Decoder:</p>
+<p><img data-src="/images/posts/NLP-series/transformer-2.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p><strong>Input the sequence obtained at the previous time</strong>, and then perform the same Embedding and Positional Encoding and then enter the block repeated N times.<br>The difference is that there is an extra <strong>“Masked” (note the red box) in the Multi-Head Attention</strong> when we first entered. What does it mean?</p>
+<p>Masked means that the model will <strong>only pay attention to the part it has already generated</strong>, and <strong>will not accidentally pay attention to the words generated in the future</strong>. Since the output of the Decoder is generated <strong>one by one</strong>, it has no way to consider its future input. It seems a bit vague to say this, and I will make it clearer when I talk about self-attention in the next article.</p>
+<p>After repeating the block N times, after the <strong>Linear Layer and Softmax</strong>, we can get the output <strong>probability distribution</strong> we want, and we can sample according to this distribution or take the value with the highest probability to get the output sequence.</p>
+<p>There is still one of the most critical self-attention mechanisms that has not been explained in detail. Let’s introduce how it pays attention to all input sequences and performs parallel processing in the next article!</p>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MDM5Mg==">iThome - Day 27 Transformer (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MTI0Mg==">iThome - Day 28 Self-Attention (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9oYWNrbWQuaW8vQGFibGl1L0JrWG16REJtcg==">Transformer 李宏毅深度學習 (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9zcGVlY2guZWUubnR1LmVkdS50dy9+aHlsZWUvbWwvbWwyMDIxLWNvdXJzZS1kYXRhL3NlcTJzZXFfdjkucGRm">Transformer 李宏毅老師簡報<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQzJnZ2p0dXVXdnhySEhIaWFESDFkbFE=">李宏毅老師YouTube channel<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzE3MDYuMDM3NjI=">Attention is all you need (paper)<i class="fa fa-external-link-alt"></i></span></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>ML</tag>
+        <tag>AI</tag>
+        <tag>NLP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[NLP][ML] Adapters &amp; LoRA</title>
+    <url>/posts/38266156/</url>
+    <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>In this article, I will provide an introduction to adapters and LoRA, including their <strong>definitions, purposes, and functions.</strong> I will also explore their various <strong>applications</strong> and, lastly, delve into the distinctions that set them apart(the <strong>differences between them</strong>).</p>
+<span id="more"></span>
+
+<h1 id="Adapter"><a href="#Adapter" class="headerlink" title="Adapter"></a>Adapter</h1><h2 id="What-are-Adapters"><a href="#What-are-Adapters" class="headerlink" title="What are Adapters?"></a>What are Adapters?</h2><p>According to <span class="exturl" data-url="aHR0cHM6Ly93d3cuYW5hbHl0aWNzdmlkaHlhLmNvbS9ibG9nLzIwMjMvMDQvdHJhaW5pbmctYW4tYWRhcHRlci1mb3Itcm9iZXJ0YS1tb2RlbC1mb3Itc2VxdWVuY2UtY2xhc3NpZmljYXRpb24tdGFzay8jOn46dGV4dD1BZGFwdGVycyUyMGFyZSUyMGxpZ2h0d2VpZ2h0JTIwYWx0ZXJuYXRpdmVzJTIwdG8sbW9kdWxhciUyMGFwcHJvYWNoJTIwdG8lMjB0cmFuc2ZlciUyMGxlYXJuaW5nLg==">this article<i class="fa fa-external-link-alt"></i></span><br>We can give the definition of adapters:</p>
+<blockquote>
+<p><strong>Adapters are lightweight alternatives to fully fine-tuned pre-trained models.</strong><br>Currently, <strong>adapters are implemented as small feedforward neural networks</strong> that are <strong>inserted between layers of a pre-trained model.</strong><br>They provide a <strong>parameter-efficient, computationally efficient, and modular approach</strong> to transfer learning. The following image shows added adapter.</p>
+</blockquote>
+<p>The image below clearly shows the usage flow of apadters<br>(Source: <span class="exturl" data-url="aHR0cHM6Ly9hZGFwdGVyaHViLm1sLw==">AdapterHub<i class="fa fa-external-link-alt"></i></span>)<br><img data-src="/images/posts/NLP-series/adapter.gif" 
+style="width: 70%; margin: 15px auto;"></p>
+<blockquote>
+<p>During training, <strong>all the weights of the pre-trained model are frozen</strong> such that only the adapter weights<br>are updated, resulting in <strong>modular knowledge representations</strong>. They can be easily <strong>extracted, interchanged,</strong><br><strong>independently distributed, and dynamically plugged</strong> into a language model. These properties highlight the<br>potential of adapters in advancing the NLP field astronomically.</p>
+</blockquote>
+<h2 id="What-is-the-purpose-and-function-of-adapters"><a href="#What-is-the-purpose-and-function-of-adapters" class="headerlink" title="What is the purpose and function of adapters?"></a>What is the purpose and function of adapters?</h2><ol>
+<li>Purpose:<br>Large Language Models are computationally expensive and memory-intensive. <strong>Fine-tuning the entire model for each specific task</strong> can be impractical due to resource constraints. Adapters provide a solution by allowing for more efficient and <strong>targeted modifications</strong> to the model for different tasks. This approach <strong>saves both computational power and memory</strong>, enabling the deployment of a single pre-trained model for multiple tasks.</li>
+<li>Functions:<ol>
+<li><p>Efficient Fine-tuning: Instead of fine-tuning the entire model, adapters enable <strong>fine-tuning only a small subset of parameters</strong> related to a specific task. This fine-tuning process is faster and requires fewer resources.</p>
+</li>
+<li><p>Task-specific Modifications: Adapters allow you to add <strong>task-specific layers or modifications</strong> to the pre-trained model without altering the core architecture. This makes it easier to adapt the model for various tasks like text classification, named entity recognition, sentiment analysis, etc.</p>
+</li>
+<li><p>Versatility: With adapters, a single pre-trained LLM can be <strong>adapted for a wide range of tasks.</strong> This versatility is beneficial in scenarios where deploying and maintaining separate models for each task might be impractical.</p>
+</li>
+<li><p>Interoperability: Adapters enable the combination of pre-trained models with task-specific modifications in a standardized way. This facilitates sharing, collaboration, and research in the NLP community.</p>
+</li>
+<li><p>Transfer Learning: Adapters enhance the <strong>effectiveness of transfer learning.</strong> Models pre-trained on <strong>large and diverse datasets can be fine-tuned on smaller</strong>, task-specific datasets using adapters, improving performance on specific tasks.</p>
+</li>
+<li><p>Incremental Updates: Adapters allow for easy updates to the model. Instead of retraining the entire model, only the adapters related to a specific task need to be fine-tuned when new data or requirements arise.</p>
+</li>
+</ol>
+</li>
+</ol>
+<p>Overall, adapters are a <strong>mechanism that strikes a balance between the benefits of fine-tuning for specific tasks and the efficiency of reusing pre-trained LLMs.</strong> They enable the NLP community to leverage the power of these large models while tailoring them to a diverse set of applications.</p>
+<h2 id="The-applications-of-adapters"><a href="#The-applications-of-adapters" class="headerlink" title="The applications of adapters"></a>The applications of adapters</h2><p>I list some practical applications that can use adapters to enhance.</p>
+<ol>
+<li><p>Efficient Task Adaptation: Adapters make it possible to fine-tune a pretrained model for specific tasks with minimal computational resources and time. This is particularly useful for industries that require quick adaptation to changing trends or requirements.</p>
+</li>
+<li><p>Multilingual Applications: Adapters can be used to enable a pretrained model to perform tasks in multiple languages. This is valuable for businesses operating in global markets.</p>
+</li>
+<li><p>Domain-Specific NLP: Adapting models with domain-specific adapters (e.g., medical, legal, financial) enhances their performance on tasks specific to those domains.</p>
+</li>
+<li><p>Personalization: Adapters can be used to personalize a general-purpose model for individual users or contexts, leading to more relevant and tailored responses.</p>
+</li>
+</ol>
+<h1 id="LoRA-Low-Rank-Adaptation"><a href="#LoRA-Low-Rank-Adaptation" class="headerlink" title="LoRA (Low-Rank Adaptation)"></a>LoRA (Low-Rank Adaptation)</h1><h2 id="What-is-LoRA"><a href="#What-is-LoRA" class="headerlink" title="What is LoRA?"></a>What is LoRA?</h2><ul>
+<li>Low-Rank Adaptation, or LoRA, is proposed, which <strong>freezes the pre-trained model weights</strong> and <strong>injects trainable rank decomposition matrices into each layer</strong> of the <strong>Transformer</strong> architecture, greatly <strong>reducing the number of trainable parameters</strong> for downstream tasks.</li>
+</ul>
+<p>And let’s see the full fine-tuning definition:</p>
+<ul>
+<li>Full fine-tuning LLM, which <strong>retrains all model parameters</strong>, becomes less feasible. Using GPT-3 175B as an example — deploying independent instances of fine-tuned models, each with 175B parameters, is prohibitively expensive.</li>
+</ul>
+<p>In <span class="exturl" data-url="aHR0cHM6Ly9iZHRlY2h0YWxrcy5jb20vMjAyMy8wNS8yMi93aGF0LWlzLWxvcmEv">this article<i class="fa fa-external-link-alt"></i></span>, it clearly compare the fine-tuning and LoRA approaches. And in <span class="exturl" data-url="aHR0cHM6Ly9zaC10c2FuZy5tZWRpdW0uY29tL2JyaWVmLXJldmlldy1sb3JhLWxvdy1yYW5rLWFkYXB0YXRpb24tb2YtbGFyZ2UtbGFuZ3VhZ2UtbW9kZWxzLWZhZjVkZGQ1ODAyZiM6fjp0ZXh0PUxvUkElMkMlMjBMb3clMkRSYW5rJTIwTExNJTIwRmluZSUyRFR1bmluZyUyQyUyMFJlZHVjZSUyMFJlcXVpcmVkJTIwTWVtb3J5JnRleHQ9TG93JTJEUmFuayUyMEFkYXB0YXRpb24lMkMlMjBvciUyMExvUkEsdHJhaW5hYmxlJTIwcGFyYW1ldGVycyUyMGZvciUyMGRvd25zdHJlYW0lMjB0YXNrcy4=">this article<i class="fa fa-external-link-alt"></i></span>, it dives more into the machanism of LoRA. If you wnat to know the full knowledge, you can refer to <span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzIxMDYuMDk2ODU=">the paper of LoRA<i class="fa fa-external-link-alt"></i></span>.<br>In the next sections, I will introduce more ideas of LoRA based on these references. Note that I only organize the contents of these articles and add some mark and note on my own.</p>
+<hr>
+<h3 id="How-does-fine-tuning-LLMs-work"><a href="#How-does-fine-tuning-LLMs-work" class="headerlink" title="How does fine-tuning LLMs work?"></a>How does fine-tuning LLMs work?</h3><p>Open-source LLMs such as LLaMA,Vicuna are foundation models that <strong>have been pre-trained on hundreds of billions of words.</strong> Developers and machine learning engineers can download the model with the <strong>pre-trained weights</strong> and <strong>fine-tune it for downstream tasks</strong> such as <span class="exturl" data-url="aHR0cHM6Ly9iZHRlY2h0YWxrcy5jb20vMjAyMy8wMS8xNi93aGF0LWlzLXJsaGYv">instruction following<i class="fa fa-external-link-alt"></i></span>.</p>
+<p>The model is provided input from the <strong>fine-tuning dataset</strong>. It then <strong>predicts the next tokens and compares its output with the ground truth.</strong> It then <strong>adjusts the weights(gradient)</strong> to correct its predictions. By doing this over and over, the LLM becomes fine-tuned to the downstream task.</p>
+<p><img data-src="/images/posts/NLP-series/LLM-fintune.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>(Source: <span class="exturl" data-url="aHR0cHM6Ly9iZHRlY2h0YWxrcy5jb20vMjAyMy8wNS8yMi93aGF0LWlzLWxvcmEv">What is low-rank adaptation (LoRA)?<i class="fa fa-external-link-alt"></i></span>)</p>
+<h3 id="The-idea-of-LoRA"><a href="#The-idea-of-LoRA" class="headerlink" title="The idea of LoRA"></a>The idea of LoRA</h3><p>Now, let’s make a small modification to the fine-tuning process. In this new method, we <strong>freeze the original weights of the model and don’t modify them during the fine-tuning process.</strong> Instead, we apply the modifications to a <strong>separate set of weights</strong> and we add their new values to the original parameters. Let’s call these two sets <strong>“pre-trained” and “fine-tuned” weights</strong>.</p>
+<blockquote>
+<p><strong>Separating the pre-trained and fine-tuned parameters is an important part of LoRA.</strong><br><img data-src="/images/posts/NLP-series/LoRA-1.png" 
+style="width: 70%; margin: 15px auto;"></p>
+</blockquote>
+<h4 id="Low-rank-adaptation"><a href="#Low-rank-adaptation" class="headerlink" title="Low-rank adaptation"></a>Low-rank adaptation</h4><p>Before moving on to LoRA, let’s think about our <strong>model parameters as very large matrices</strong>. If you remember your linear algebra class, <strong>matrices can form vector spaces</strong>. In this case, we’re talking about a <strong>very large vector space with many dimensions</strong> that models language.</p>
+<p>Every matrix has a <strong>“rank”</strong>, which is <strong>the number of linearly independent columns it has</strong>. If a column is linearly independent, it means that <strong>it can’t be represented as a combination of other columns in the matrix</strong>. On the other hand, a dependent column is one that can be represented as a combination of one or more columns in the same matrix. You can remove dependent columns from a matrix without losing information.</p>
+<p>LoRA, proposed in a <span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzIxMDYuMDk2ODU=">paper<i class="fa fa-external-link-alt"></i></span> by researchers at Microsoft, suggests that when fine-tuning an LLM for a downstream task, <strong>you don’t need the full-rank weight matrix.</strong> They proposed that you could preserve most of the learning capacity of the model while <strong>reducing the dimension of the downstream parameters.</strong> (This is why it makes sense to separate the pre-trained and fine-tuned weights.)</p>
+<hr>
+<p><img data-src="/images/posts/NLP-series/LoRA-2.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>Basically, in LoRA, you create <strong>two downstream weight matrices</strong>. One <strong>transforms the input parameters from the original dimension to the low-rank dimension</strong>. And the second matrix <strong>transforms the low-rank data to the output dimensions of the original model</strong>.</p>
+<p>During training, <strong>modifications are made to the LoRA parameters</strong>, which are now much fewer than the original weights. This is why they can be trained much faster and at a fraction of the cost of doing full fine-tuning. <strong>At inference time, the output of LoRA is added to the pre-trained parameters to calculate the final values.</strong></p>
+<h4 id="More-detail"><a href="#More-detail" class="headerlink" title="More detail"></a>More detail</h4><p><img data-src="/images/posts/NLP-series/LoRA-3.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<ul>
+<li>For a pre-trained weight matrix $W_0$, its update is constrained by representing the latter with a low-rank decomposition:</li>
+</ul>
+<p>$$\begin{equation}<br>   W_0 + \Delta{W} &#x3D; W_0 + BA<br>\end{equation}$$</p>
+<ul>
+<li>During training, <strong>$W_0$ is frozen</strong> and does not receive gradient updates, while <strong>A and B contain trainable parameters</strong>.</li>
+<li>For $h&#x3D;W_0$, the modified forward pass yields:</li>
+</ul>
+<p>$$\begin{equation}<br>   h &#x3D; W_0x + \Delta{W}x &#x3D; W_0x + BAx<br>\end{equation}$$</p>
+<ul>
+<li><p>A random <strong>Gaussian initialization is used for A</strong> and <strong>zero is used for B</strong>, so $\Delta{W}&#x3D;BA$ is zero at the beginning of training. (The method of initializing the weights)</p>
+</li>
+<li><p>One of the advantages is that when deployed in production, we can <strong>explicitly compute and store $W&#x3D;W_0+BA$</strong> and perform inference as usual. <strong>No additional latency</strong> compared to other methods, such as appending more layers.</p>
+</li>
+</ul>
+<p>You can see the implementation and more detail of LoRA in <span class="exturl" data-url="aHR0cHM6Ly95b3V0dS5iZS9kQS1OaEN0cnJWRQ==">this video<i class="fa fa-external-link-alt"></i></span><br>and <span class="exturl" data-url="aHR0cHM6Ly9ibG9nLm1sNi5ldS9sb3ctcmFuay1hZGFwdGF0aW9uLWEtdGVjaG5pY2FsLWRlZXAtZGl2ZS03ODJkZWM5OTU3NzI=">this article<i class="fa fa-external-link-alt"></i></span>.</p>
+<h2 id="What-is-the-purpose-and-function-of-LoRA"><a href="#What-is-the-purpose-and-function-of-LoRA" class="headerlink" title="What is the purpose and function of LoRA?"></a>What is the purpose and function of LoRA?</h2><ul>
+<li>Purpose<ul>
+<li>The purpose of LoRA is to make it easier and more efficient to fine-tune LLMs for downstream tasks.</li>
+</ul>
+</li>
+<li>Function<ul>
+<li>The function of LoRA is to decompose the LLM into a low-rank representation and then adapt this representation to the target task.</li>
+<li>Here are the benefits:</li>
+</ul>
+</li>
+<li>Reduced number of parameters: The low-rank representation has a much smaller number of parameters than the original LLM, which can make it faster to train and easier to deploy.</li>
+<li>Improved performance: The low-rank representation is able to capture the most important features of the LLM, which can lead to improved performance on the downstream task.</li>
+</ul>
+<h2 id="The-applications-of-LoRA"><a href="#The-applications-of-LoRA" class="headerlink" title="The applications of LoRA"></a>The applications of LoRA</h2><ul>
+<li>Fine-tuning large language models for downstream tasks:<br>LoRA can be used to fine-tune large language models (LLMs) for a variety of downstream tasks, such as question answering, summarization, and translation. This can <strong>make LLMs more accessible and easier to use for a wider range of applications.</strong></li>
+<li>Improving the efficiency of machine learning models:<br> LoRA can be used to improve the efficiency of machine learning models by reducing the number of parameters. This can <strong>make models faster to train and easier to deploy</strong>.</li>
+<li>Compressing large datasets:<br>LoRA can be used to <strong>compress large datasets by representing them in a low-rank format</strong>. This can make datasets easier to <strong>store and transmit</strong>.</li>
+<li>Improving the security of machine learning models:<br>LoRA can be used to improve the security of machine learning models by making them more resistant to adversarial attacks.</li>
+</ul>
+<h1 id="Differences-between-adapter-and-LoRA"><a href="#Differences-between-adapter-and-LoRA" class="headerlink" title="Differences between adapter and LoRA"></a>Differences between adapter and LoRA</h1><table>
+   <thead>
+      <th>Feature</th>
+      <th>Adapter</th>
+      <th>LoRA</th>
+   </thead>
+   <tbody>
+      <tr>
+         <td>Approach</td>
+         <td>Adds additional layers to the pretrained model	</td>
+         <td>Decomposes the pretrained model into a low-rank representation
+</td>
+      </tr>
+      <tr>
+         <td>Parameters</td>
+         <td>Adds a small number of parameters to the pretrained model</td>
+         <td>Reduces the number of parameters in the pretrained model</td>
+      </tr>
+      <tr>
+         <td>Performance</td>
+         <td>Effective for a variety of downstream tasks</td>
+         <td>Particularly effective for tasks that require a large number of parameters</td>
+      </tr>
+      <tr>
+         <td>Speed</td>
+         <td>Can be faster to train than LoRA</td>
+         <td>Can be faster at inference time</td>
+      </tr>
+      <tr>
+         <td>Memory usage</td>
+         <td>Can use more memory than LoRA</td>
+         <td></td>
+      </tr>
+   </tbody>
+</table>
+
+<p>In general, adapters are a good choice for tasks that require a small number of parameters and can be trained quickly, while LoRA is a good choice for tasks that require a large number of parameters and need to be fast at inference time.</p>
+<h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuYW5hbHl0aWNzdmlkaHlhLmNvbS9ibG9nLzIwMjMvMDQvdHJhaW5pbmctYW4tYWRhcHRlci1mb3Itcm9iZXJ0YS1tb2RlbC1mb3Itc2VxdWVuY2UtY2xhc3NpZmljYXRpb24tdGFzay8jOn46dGV4dD1BZGFwdGVycyUyMGFyZSUyMGxpZ2h0d2VpZ2h0JTIwYWx0ZXJuYXRpdmVzJTIwdG8sbW9kdWxhciUyMGFwcHJvYWNoJTIwdG8lMjB0cmFuc2ZlciUyMGxlYXJuaW5nLg==">(Recommend) Training an Adapter for RoBERTa Model for Sequence Classification Task<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9hZGFwdGVyaHViLm1sLw==">AdapterHub<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9kb2NzL2RpZmZ1c2Vycy90cmFpbmluZy9sb3JhIzp+OnRleHQ9TG93JTJEUmFuayUyMEFkYXB0YXRpb24lMjBvZiUyMExhcmdlJTIwTGFuZ3VhZ2UlMjBNb2RlbHMlMjAoTG9SQSklMjBpcyx0cmFpbnMlMjB0aG9zZSUyMG5ld2x5JTIwYWRkZWQlMjB3ZWlnaHRzLg==">Low-Rank Adaptation of Large Language Models (LoRA) (Huggingface)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9zaC10c2FuZy5tZWRpdW0uY29tL2JyaWVmLXJldmlldy1sb3JhLWxvdy1yYW5rLWFkYXB0YXRpb24tb2YtbGFyZ2UtbGFuZ3VhZ2UtbW9kZWxzLWZhZjVkZGQ1ODAyZiM6fjp0ZXh0PUxvUkElMkMlMjBMb3clMkRSYW5rJTIwTExNJTIwRmluZSUyRFR1bmluZyUyQyUyMFJlZHVjZSUyMFJlcXVpcmVkJTIwTWVtb3J5JnRleHQ9TG93JTJEUmFuayUyMEFkYXB0YXRpb24lMkMlMjBvciUyMExvUkEsdHJhaW5hYmxlJTIwcGFyYW1ldGVycyUyMGZvciUyMGRvd25zdHJlYW0lMjB0YXNrcy4=">Brief Review — LoRA: Low-Rank Adaptation of Large Language Models<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9iZHRlY2h0YWxrcy5jb20vMjAyMy8wNS8yMi93aGF0LWlzLWxvcmEv">What is low-rank adaptation (LoRA)?<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzIxMDYuMDk2ODU=">LoRA: Low-Rank Adaptation of Large Language Models (Paper)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9ibG9nLm1sNi5ldS9sb3ctcmFuay1hZGFwdGF0aW9uLWEtdGVjaG5pY2FsLWRlZXAtZGl2ZS03ODJkZWM5OTU3NzI=">(Recommend) Low Rank Adaptation: A Technical Deep Dive<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly95b3V0dS5iZS9kQS1OaEN0cnJWRQ==">Low-rank Adaption of Large Language Models: Explaining the Key Concepts Behind LoRA (Video)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1VczVaRnAxNlBhVQ==">Fine-tuning LLMs with PEFT and LoRA<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9ibG9nL3BlZnQ=">PEFT: Parameter-Efficient Fine-Tuning of Billion-Scale Models on Low-Resource Hardware<i class="fa fa-external-link-alt"></i></span></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>ML</tag>
+        <tag>AI</tag>
+        <tag>NLP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[NLP][ML] Transformer (3) - More conputational detail</title>
+    <url>/posts/1255359463/</url>
+    <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>In this article, I will focus more on the computing detail in transformer.<br>It will cover self-attention, prallel processing, multi-head self-attention, positional encoding and so on.</p>
+<p><img data-src="/images/posts/NLP-series/transformer-2.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<span id="more"></span>
+
+<h1 id="Self-Attention"><a href="#Self-Attention" class="headerlink" title="Self-Attention"></a>Self-Attention</h1><h2 id="Idea"><a href="#Idea" class="headerlink" title="Idea"></a>Idea</h2><ul>
+<li>Input:<ul>
+<li>$x_1$, …, $x_4$, is a sequence.</li>
+<li>Each input first goes through an <strong>embedding(convert to vectors)</strong>, multiplied by a weight matrix to become $a_1$, …, $a_4$. These $a_1$, …, $a_4$ are then passed into a Self-attention layer</li>
+</ul>
+</li>
+<li>Each input is multiplied by different vectors:<ul>
+<li>$q$: query (to match against others)<ul>
+<li>$q_i$ &#x3D; $W^qa_i$</li>
+</ul>
+</li>
+<li>$k$: key (to be matched)<ul>
+<li>$k_i$ &#x3D; $W^ka_i$</li>
+</ul>
+</li>
+<li>$v$: value, information to be extracted<ul>
+<li>$v_i$ &#x3D; $W^va_i$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>The weights $W^q$, $W^k$, $W^v$ are <strong>learned, initially randomly initialized</strong>.</li>
+</ul>
+<h2 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h2><p><img data-src="/images/posts/NLP-series/transformer-6.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p><img data-src="/images/posts/NLP-series/transformer-7.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<ol>
+<li>Take each query <strong>$q$ and perform attention on each key $k$</strong> (using two vectors to output a score(attention score)), which is essentially calculating the <strong>similarity of $q$ and $k$ (Similarity)</strong>.<ul>
+<li>Scaled Dot-Product: $S(q_1, k_1)$ yields $\alpha_{1,1}$, $S(q_1, k_2)$ yields $\alpha_{1,2}$, and so on.</li>
+<li>$\alpha_{1,i}$ &#x3D; $  q_1 \cdot k_i &#x2F; \sqrt{d}$ </li>
+<li>$d$ represents the <strong>dimensions of $q$ and $k$</strong>. This is a <strong>trick used by the authors in the paper</strong>.</li>
+</ul>
+</li>
+<li>Followed by <strong>Softmax normalization to normalize the values</strong>.</li>
+<li>Multiply the obtained $\hat{\alpha}$ with $v$ to get $b$, which is <strong>equivalent to a weighted sum</strong>.</li>
+<li>The obtained $b_1$ in the figure is the <strong>first vector (word or character)</strong> of the sought sequence.</li>
+<li>Each output vector incorporates information from the <strong>entire sequence</strong>.</li>
+</ol>
+<h1 id="Prallel-Processing"><a href="#Prallel-Processing" class="headerlink" title="Prallel Processing"></a>Prallel Processing</h1><p><img data-src="/images/posts/NLP-series/transformer-8.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>$$q_i &#x3D; W^qa_i$$<br>$$k_i &#x3D; W^ka_i$$<br>$$v_i &#x3D; W^va_i$$</p>
+<hr>
+<p><img data-src="/images/posts/NLP-series/transformer-9.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<ol>
+<li>Consider $a_1$, …, $a_4$ as a matrix $I$. Multiply it by the weight matrix $W^q$ to obtain $q_1$, …, $q_4$, forming another matrix $Q$. </li>
+<li>The same process applies to matrices $K$ and $V$, formed by multiplying $q$, $k$, and $a$ to get<br>$\alpha_{1,1}$ &#x3D; $k^T_1 \cdot q_1$,<br>$\alpha_{1,2}$ &#x3D; $k^T_2 \cdot q_1$,<br>…<br>Stack $k_1$, …, $k_4$ to form matrix $K$, then multiply it by $q_1$ stacked with $q_2$, …, $q_4$ to form matrix $Q$, resulting in a matrix $A$ composed of $\alpha$ values, which is the <strong>Attention</strong>. </li>
+<li>After applying Softmax, it becomes $\hat{A}$. In each time step, attention exists between each pair of vectors.</li>
+</ol>
+<hr>
+<p><img data-src="/images/posts/NLP-series/transformer-10.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>By calculating the <strong>weighted sum of $V$ and $\hat{A}$</strong>, you obtain $b$, and the matrix composed of b forms the <strong>output matrix $O$</strong>.”</p>
+<hr>
+<h2 id="What-self-attention-layer-do"><a href="#What-self-attention-layer-do" class="headerlink" title="What self-attention layer do"></a>What self-attention layer do</h2><p><img data-src="/images/posts/NLP-series/transformer-11-1.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p><img data-src="/images/posts/NLP-series/transformer-11-2.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>By converting it into matrix multiplication, you can utilize the <strong>GPU to accelerate the computation</strong>.</p>
+<h1 id="Multi-head-Self-attention"><a href="#Multi-head-Self-attention" class="headerlink" title="Multi-head Self-attention"></a>Multi-head Self-attention</h1><p><img data-src="/images/posts/NLP-series/transformer-12.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>Taking 2 heads as an example:</p>
+<ul>
+<li>Having <strong>2 heads</strong> means splitting $q, k, v$ into two sets of $q, k, v$. And $q_{i,1}$ will only be multiplied with $k_{i,1}$ to obtain $\alpha_{i,1}$, finally calculating $b_{i,1}$. </li>
+<li>Afterward, concatenate $b_{i,1}, b_{i,2}$, apply a transformation, and perform dimension reduction to obtain the final $b_i$.</li>
+<li><strong>Each head focuses on different information</strong>; some only care about local information (neighborhood data), while others concentrate on global (long-term) information, and so on.</li>
+</ul>
+<h1 id="Positional-Encoding"><a href="#Positional-Encoding" class="headerlink" title="Positional Encoding"></a>Positional Encoding</h1><p><img data-src="/images/posts/NLP-series/transformer-13.png" 
+style="width: 40%; margin: 15px auto;"></p>
+<p>In the attention mechanism, the order of words in the input sentence doesn’t matter.</p>
+<hr>
+<p><img data-src="/images/posts/NLP-series/transformer-14.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<ul>
+<li>Without positional information &#x3D;&gt; Therefore, there is a <strong>unique position vector $e_i$</strong>, which is not learned but set by humans.</li>
+<li>Other methods: <strong>Using one-hot encoding</strong> to represent $p_i$ as $x_i$ to denote its position.</li>
+</ul>
+<h1 id="Seq2seq-with-Attention"><a href="#Seq2seq-with-Attention" class="headerlink" title="Seq2seq with Attention"></a>Seq2seq with Attention</h1><p><img data-src="/images/posts/NLP-series/transformer-15.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>The original seq2seq model consists of two RNNs, an Encoder and a Decoder, and can be applied to machine translation.</p>
+<p>In the diagram above, the Encoder originally contained bidirectional RNNs, while the Decoder contained a unidirectional RNN. In the diagram below, <strong>both(bi&#x2F;unidirectional RNN) have been replaced with Self-Attention layers</strong>, achieving the same purpose and enabling <strong>parallel processing</strong>.</p>
+<p><img data-src="/images/posts/NLP-series/transformer-16.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<h1 id="Look-into-the-detail-of-Transformer-Model"><a href="#Look-into-the-detail-of-Transformer-Model" class="headerlink" title="Look into the detail of Transformer Model"></a>Look into the detail of Transformer Model</h1><p><img data-src="/images/posts/NLP-series/transformer-2.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>Using Chinese to English translation for example.</p>
+<h2 id="Encoder-Part"><a href="#Encoder-Part" class="headerlink" title="Encoder Part:"></a>Encoder Part:</h2><ol>
+<li>The input goes through <strong>Input Embedding</strong>, which considers <strong>positional information</strong> and is augmented with manually set Positional Encoding. It then enters the block that <strong>repeats N times</strong>.</li>
+</ol>
+<hr>
+<p><img data-src="/images/posts/NLP-series/transformer-17.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<ol start="2">
+<li>Multi-head:<br>Within the Encoder, it utilizes <strong>Multi-head Attention,</strong> which means there <strong>are multiple sets of $q$, $k$, $z$</strong>. Inside this mechanism, individual $qkv$ multiplications with $a$ are performed, leading to the calculation of $\alpha$, ultimately resulting in $b$.</li>
+</ol>
+<hr>
+<p><img data-src="/images/posts/NLP-series/transformer-18.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<ol start="3">
+<li>Add &amp; Norm (residual connection):<br>The <strong>input</strong> of Multi-head Attention, denoted as <strong>$a$</strong>, is added to the <strong>output $b$</strong>, resulting in <strong>$b^\prime$</strong>. Following this, <strong>Layer Normalization</strong> is performed. </li>
+<li>Once the calculations are completed, the result is passed through the <strong>forward propagation</strong>, followed by another <strong>Add &amp; Norm</strong> step.</li>
+</ol>
+<h2 id="Decoder-Part"><a href="#Decoder-Part" class="headerlink" title="Decoder Part"></a>Decoder Part</h2><p><img data-src="/images/posts/NLP-series/transformer-18-2.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<ol>
+<li><p>The Decoder <strong>input is the output from the previous time step</strong>. It goes through output embedding, considering positional information, and is augmented with manually set positional encoding. It then enters the block that repeats n times.</p>
+</li>
+<li><p><strong>Masked Multi-head Attention</strong>:<br>Attention is performed, where <strong>“Masked” indicates attending only to the already generated sequence</strong>. This is followed by an Add &amp; Norm layer.</p>
+</li>
+<li><p>Next, it undergoes a Multi-head Attention layer, attending to the <strong>previous output of the Encoder</strong>, followed by another Add &amp; Norm layer.</p>
+</li>
+<li><p>After the computations, it is passed to the <strong>Feed Forward forward propagation</strong>. Subsequently, <strong>Linear and Softmax</strong> operations are applied to generate the <strong>final output</strong>.</p>
+</li>
+</ol>
+<hr>
+<p>Last but not least, I provide the definition and purpose of encoder and decoder (in the previous article):</p>
+<blockquote>
+<p>Encoder-Decoder Architecture:<br>   The Transformer’s architecture is divided into an <strong>encoder and a decoder</strong>. The <strong>encoder processes the input sequence, capturing its contextual information</strong>, while the <strong>decoder generates the output sequence</strong>. This architecture is widely used in tasks like machine translation.</p>
+</blockquote>
+<h1 id="Attention-Visualization"><a href="#Attention-Visualization" class="headerlink" title="Attention Visualization"></a>Attention Visualization</h1><h2 id="single-head"><a href="#single-head" class="headerlink" title="single-head"></a>single-head</h2><p><img data-src="/images/posts/NLP-series/transformer-19.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>The relationships between words. The thicker the line, the more related of these words.</p>
+<h2 id="multi-head"><a href="#multi-head" class="headerlink" title="multi-head"></a>multi-head</h2><p><img data-src="/images/posts/NLP-series/transformer-20.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>The results obtained by pairing different sets of $q$ and $k$ vectors differ, indicating that different sets of $q$ and $k$ possess distinct information. This signifies that various sets of $q$ and $k$ hold different types of information, with some focusing on local aspects (below) and others on global aspects (above).</p>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MDM5Mg==">iThome - Day 27 Transformer (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MTI0Mg==">iThome - Day 28 Self-Attention (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9oYWNrbWQuaW8vQGFibGl1L0JrWG16REJtcg==">Transformer 李宏毅深度學習 (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9zcGVlY2guZWUubnR1LmVkdS50dy9+aHlsZWUvbWwvbWwyMDIxLWNvdXJzZS1kYXRhL3NlcTJzZXFfdjkucGRm">Transformer 李宏毅老師簡報<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQzJnZ2p0dXVXdnhySEhIaWFESDFkbFE=">李宏毅老師YouTube channel<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzE3MDYuMDM3NjI=">Attention is all you need (paper)<i class="fa fa-external-link-alt"></i></span></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>ML</tag>
+        <tag>AI</tag>
+        <tag>NLP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[NLP][ML] Transformer (2) - Attention &amp; Summary</title>
+    <url>/posts/2443192075/</url>
+    <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>Self-attention allows the model to <strong>weigh the importance of different parts of an input sequence against each other</strong>, capturing <strong>relationships</strong> and dependencies between elements within the sequence. This is particularly powerful for tasks involving sequential or contextual information, such as language translation, text generation, and more.</p>
+<p>What Self-Attention wants to do is to replace what RNN can do<br>Its output&#x2F;input is the same as RNN, and its biggest advantages are:</p>
+<ul>
+<li>Can parallelize operations</li>
+<li>Each output vector has seen the entire input sequence. So there is no need to stack several layers like CNN.</li>
+</ul>
+<span id="more"></span>
+<h1 id="Difference-between-attention-and-self-attention"><a href="#Difference-between-attention-and-self-attention" class="headerlink" title="Difference between attention and self-attention"></a>Difference between attention and self-attention</h1><p><strong>attention is a broader concept of selectively focusing on information</strong>, while <strong>self-attention is a specific implementation of this concept</strong> where elements within the same sequence are attended to. Self-attention is a fundamental building block of the Transformer architecture, allowing it to capture relationships and dependencies within sequences effectively.</p>
+<h1 id="Attention-Machanism"><a href="#Attention-Machanism" class="headerlink" title="Attention (Machanism)"></a>Attention (Machanism)</h1><p>main idea:<br>use <strong>triples</strong><br>$$&lt;Q,K,V&gt;$$</p>
+<p>Represents the <strong>attention mechanism</strong>, expresses the <strong>similarity between Query and Key</strong>, and then assigns the value of <strong>Value according to the similarity</strong><br><strong>formula</strong>:<br>$$Attention(Q,K,V) &#x3D; softmax(\frac{QK^T}{\sqrt{d_k}})V$$</p>
+<h1 id="Self-Attention-Layer-Key"><a href="#Self-Attention-Layer-Key" class="headerlink" title="Self-Attention(Layer) (Key)"></a>Self-Attention(Layer) (<strong>Key</strong>)</h1><h2 id="Computing-process"><a href="#Computing-process" class="headerlink" title="Computing process"></a>Computing process</h2><ol>
+<li><p>Now we suppose to enter $a_1$~$a_4$ Four vector, and Self-Attention needs to output another row of $b$ vectors, and each $b$ is generated after considering all $a$</p>
+</li>
+<li><p>To figure out $b_1$, the first step is based on $a_1$, find <strong>other vectors related to $a_1$</strong> in this sequence. We use the “$\alpha$” to represent the <strong>similarity</strong> of each vector related to $a_1$.</p>
+</li>
+<li><p>It must be mentioned here that there are <strong>3 very important values in the Self-Attention mechanism</strong>: <strong>Query, Key, Value</strong>. Respectively represent <strong>the value used to match, the value to be matched, and the extracted information</strong>.</p>
+</li>
+<li><p>As for determining the <strong>correlation between two vectors</strong>, the most commonly used method is the <strong>dot product (here is scaled dot product)</strong>. It takes two vectors as input and multiplies them with two different matrices. The left vector is multiplied by the matrix $W^q$ (Query matrix), and the right vector is multiplied by the matrix $W^k$ (Key matrix). The values of $W^q$ and $W^k$ are both <strong>randomly initialized and obtained through training</strong>.</p>
+</li>
+<li><p>Next, after obtaining the two vectors, $q$, $k$, the <strong>dot product is computed between them</strong>. After summing up all the dot products, a <strong>scalar (magnitude)</strong> is obtained. This scalar is represented as $\alpha$, which we consider as <strong>the degree of correlation between the two vectors.</strong></p>
+</li>
+</ol>
+<p><img data-src="/images/posts/NLP-series/transformer-6.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>Next, we apply what was just introduced to Self-Attention.</p>
+<ol>
+<li>First, we calculate the relationships “$\alpha$” between $a_1$ and $a_2$, $a_3$, $a_4$ individually. <ul>
+<li>We multiply $a_1$ by $W^q$ to obtain $q_1$. </li>
+<li>Then, we multiply $a_2$, $a_3$, $a_4$ by $W^k$ respectively and compute the inner products to determine the relationship “$\alpha$” between $a_1$ and each vector. </li>
+<li>Applying the Softmax function yields $\alpha’$. </li>
+<li>With this $\alpha’$, we can extract crucial information from this sequence!</li>
+</ul>
+</li>
+</ol>
+<hr>
+<p><img data-src="/images/posts/NLP-series/transformer-7.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<ol start="2">
+<li>How to extract important information using $\alpha’$? The steps are as follows:</li>
+</ol>
+<ul>
+<li>First, multiply $a_1$ ~ $a_4$ by $W^v$ to obtain new vectors, denoted as $v_1$, $v_2$, $v_3$ and $v_4$, respectively (where $W^v$ is the Value matrix).</li>
+<li>Next, multiply each vector here, $v_1$ ~ $v_4$, by $\alpha’$, and then sum them to obtain the output $b_1$ (formula written in the top-right corner of the image).</li>
+</ul>
+<p>If a certain vector receives a higher score - for instance, if the relationship between $a_1$ and $a_2$ is strong, leading to a large value for $\alpha_{1,2}’$ - then after performing the weighted sum, the value of $b_1$ obtained could be very close to $v_2$.</p>
+<p>Now that we know how to compute $b_1$, it naturally follows that we can deduce $b_1$, $b_2$, $b_3$, and $b_4$ using the same method. With this, we have completed the explanation of the internal computation process of Self-Attention.</p>
+<p>Last but not least, the <strong>similarity matrix($\alpha_{i,j}$)</strong> is just the <strong>attention</strong> in the self-attention layer, i.e. importance or relevance to other elements in the same sequence..</p>
+<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><h2 id="Attention-Score-Weight-and-Output"><a href="#Attention-Score-Weight-and-Output" class="headerlink" title="Attention (Score, Weight and Output)"></a>Attention (Score, Weight and Output)</h2><ul>
+<li>$ Attention Score &#x3D; QK^T $</li>
+<li>$ Attention Weights &#x3D; Softmax(\frac{Attention Score}{\sqrt{d_k}}) $</li>
+<li>$ Attention Output &#x3D; (Attention Weights)V $</li>
+</ul>
+<h2 id="Key-Components-of-Transformers"><a href="#Key-Components-of-Transformers" class="headerlink" title="Key Components of Transformers"></a>Key Components of Transformers</h2><ol>
+<li><p>Self-Attention Mechanism:<br>The core innovation of the Transformer is the self-attention mechanism, which allows the model to <strong>weigh the importance of different words in a sequence relative to each other</strong>. It computes attention scores for each word by considering its <strong>relationships with all other words</strong> in the same sequence. Self-attention enables capturing context and dependencies between words <strong>regardless of their distance</strong>.</p>
+</li>
+<li><p>Multi-Head Attention:<br>To capture different types of relationships, the Transformer employs multi-head attention. <strong>Multiple sets of self-attention mechanisms (attention heads) run in parallel</strong>, and their outputs are concatenated and linearly transformed to create a more comprehensive representation.</p>
+</li>
+<li><p>Positional Encodings:<br>Since the Transformer does not inherently understand <strong>the order of words in a sequence</strong> (unlike recurrent networks(RNN)), positional encodings are added to the input embeddings. These encodings provide <strong>information about the positions of words within the sequence</strong>.</p>
+</li>
+<li><p>Encoder-Decoder Architecture:<br>The Transformer’s architecture is divided into an <strong>encoder and a decoder</strong>. The <strong>encoder processes the input sequence, capturing its contextual information</strong>, while the <strong>decoder generates the output sequence</strong>. This architecture is widely used in tasks like machine translation.</p>
+</li>
+<li><p>Residual Connections and Layer Normalization:<br>To address the <strong>vanishing gradient problem</strong>, residual connections (skip connections) are used around each sub-layer in the encoder and decoder. Layer normalization is also applied to <strong>stabilize</strong> the training process.</p>
+</li>
+<li><p>Position-wise Feed-Forward Networks:<br>After the self-attention layers, each position’s representation is passed through a position-wise feed-forward neural network, which <strong>adds non-linearity to the model</strong>.</p>
+</li>
+<li><p>Scaled Dot-Product Attention:<br>The self-attention mechanism involves computing the <strong>dot product of query, key, and value vectors</strong>. To control the scale of the dot products and <strong>avoid large gradients</strong>, the dot products are divided by the <strong>square root of the dimension of the key vectors</strong>.</p>
+</li>
+<li><p>Masked Self-Attention in Decoding:<br>During decoding, the self-attention mechanism is modified to <strong>ensure that each position can only attend to previous positions</strong>. This masking <strong>prevents the model from “cheating” by looking ahead in the output sequence</strong>.</p>
+</li>
+<li><p>Transformer Variants:<br> The original Transformer model has inspired various extensions and improvements, such as BERT, GPT, and more. BERT focuses on pretraining language representations, while GPT is designed for autoregressive text generation.</p>
+</li>
+</ol>
+<p>The Transformer architecture has become the foundation for many state-of-the-art NLP models due to its ability to <strong>capture context, parallelize computations, and handle long-range dependencies effectively</strong>. It has led to significant advancements in machine translation, text generation, sentiment analysis, and various other NLP tasks.</p>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MDM5Mg==">iThome - Day 27 Transformer (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MTI0Mg==">iThome - Day 28 Self-Attention (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9oYWNrbWQuaW8vQGFibGl1L0JrWG16REJtcg==">Transformer 李宏毅深度學習 (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9zcGVlY2guZWUubnR1LmVkdS50dy9+aHlsZWUvbWwvbWwyMDIxLWNvdXJzZS1kYXRhL3NlcTJzZXFfdjkucGRm">Transformer 李宏毅老師簡報<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQzJnZ2p0dXVXdnhySEhIaWFESDFkbFE=">李宏毅老師YouTube channel<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzE3MDYuMDM3NjI=">Attention is all you need (paper)<i class="fa fa-external-link-alt"></i></span></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>ML</tag>
+        <tag>AI</tag>
+        <tag>NLP</tag>
       </tags>
   </entry>
 </search>
