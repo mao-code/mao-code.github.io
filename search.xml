@@ -1,30 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>大一大二參加畢業專案與程式比賽心得分享</title>
-    <url>/posts/534426495/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>小弟我在剛上大一沒多久，就私mail系上的程式老師，詢問是否可以參與更多的專案或研究，也一併把我的履歷給教授看。<br>沒想到教授大方地給我幾條路選，可以跟教授做研究，出去實習，或是和學長們做專案。<br>大一的我想要慢慢累積實力，於是決定先<strong>和學長們做專案</strong>，去比賽，累積經驗。<br>在歷經<strong>國科會專案、資訊競賽、畢業專案競賽等等</strong>後，我非常感謝教授和學長們給我這個機會，讓我可以擁有這些寶貴的經驗！<br>這篇文章主要著重在心得與分享，比較技術面的內容會在下篇文章詳細介紹。</p>
-<span id="more"></span>
+    <title>CC-沈浸式線上逛街APP-系統與技術介紹</title>
+    <url>/posts/2012237495/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>接續上一篇的文章，這篇文章會著重介紹這個系統<br>以下是我在YouTube上對這個專案的介紹與Demo：</p>
+<iframe
+    src="https://www.youtube.com/embed/aMGnyI2Xe04">
+</iframe>
 
-<h2 id="比賽心得與定位"><a href="#比賽心得與定位" class="headerlink" title="比賽心得與定位"></a>比賽心得與定位</h2><p>在這個Team內，我主要負責程式開發，包括<strong>前端、伺服器架設與管理和一部分的後端</strong>。<br>前前後後比了<strong>國科會大專生計畫、智慧創新、資訊服務和系上的畢業專案競賽</strong>，大約歷時1年多的時間，在這段時間裡，我們歷經<strong>發想、開發、維護、寫技術文件、UI&#x2F;UX設計到演算法研究等等</strong>，這也是我大一結束為止做過相對完整的專案。</p>
+<p>這篇文章的內容會與影片很像，主要分為<strong>動機與介紹、重點功能簡介、系統架構與技術</strong>的順序介紹<br>系統功能Demo, 還請觀看影片介紹</p>
+<span id="more"></span>
+<p><img data-src="/images/posts/CC-project-demo/1.png" 
+style="width: 90%; margin: 15px auto;"></p>
+<h2 id="動機與介紹"><a href="#動機與介紹" class="headerlink" title="動機與介紹"></a>動機與介紹</h2><img data-src="/images/posts/CC-project-demo/2.png" style="width: 70%; margin: 15px auto;">
+首先我們主要的TA之一是線上逛街族, 針對這個族群我們統整出簡單的兩點：第一, 他們在線上瀏覽或滑商品時, 通常沒有特定的消費目的, 只是想要滑滑看看, 無目的的瀏覽行為, 第二, 這種行為主要是以消遣、獲得樂趣為目的, 而不一定是真的想要買商品
+
 <hr>
-<p>這是我們智慧創新和資訊服務競賽時的照片，我們直接把成品給評審滑XD，因為以我們的系統來說相對完整，也不怕噴Bug，雖然都只進到決賽，但我也更加知道這類型比賽的準備方向（基本上就是要對到當前流行的主題），<del>所以明年就準備AI吧</del><br><img data-src="/images/posts/CC-experience/智慧創新.JPG" 
-style="width: 70%; margin: 15px auto;"><br><img data-src="/images/posts/CC-experience/資服.jpg" 
-style="width: 70%; margin: 15px auto;"></p>
+<img data-src="/images/posts/CC-project-demo/3.png" style="width: 70%; margin: 15px auto;">
+根據上面的族群設定, 我們的專案主要會focus在解決或滿足下面的問題, 第一, 我們是針對無目的性的消費情境底下的需求, 第二, 我們希望帶給使用者沈浸式的體驗, 所謂的沈浸式體驗, 就是在舒服且不受干擾的狀態下, 接收自己有興趣的資訊, 以此讓使用者能在我們這個APP上做消遣、殺時間的動作, 這麼做的目的很大一部分是為了捕捉使用者的微時刻, 這些微時刻的數據可以代表使用者不同時刻的喜好或者決策, 第四，我們這個APP也會瞄準直播的市場與直播平台合作，而這些直播主的煩惱，便是下播後無法持續創造收入，因此我們除了希望能延長商品的生命週期外，也可以透過捕捉使用者行為來提供直播主缺乏的Consumer Insight
+
 <hr>
-<p>這是系上畢業專案的比賽，非常榮幸拿到第二名！當天還直接被其他資訊公司的主管遞名片，受寵若驚。<br><img data-src="/images/posts/CC-experience/畢業專案.JPG" 
-style="width: 70%; margin: 15px auto;"><br><img data-src="/images/posts/CC-experience/畢業專案得獎.JPG" 
-style="width: 70%; margin: 15px auto;"></p>
-<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>總的來說，這是我<strong>參與多人協作、實作一個完整專案的寶貴經驗</strong>，這也成為我日後開發其他專案的養分(Google學生開發者社群, 資訊競賽, etc.)，除了<strong>技術面的大幅成長，專案管理、人際互動、時間管理</strong>也都是成長的一部分，主動去尋找機會，得到的會比你想像的多，雖然有點辛苦就是了，但我覺得很值得！所以時間管理真的超重要，這也讓我在工程師這條路上變得更主動，相信只要努力，自己絕對值得更好的！</p>
-<p>比較技術面的內容會在之後的文章提及</p>
-]]></content>
+<img data-src="/images/posts/CC-project-demo/4.png" style="width: 70%; margin: 15px auto;">
+為了達成以上的目的，我們主要有這幾項手段，第一, 研究推薦演算法與捕捉使用者行為，透過使用者不同時刻的行為數據來作為推薦的依據，而非傳統的電商使用歷史紀錄來做推薦，以次讓使用者能夠在每時每刻接收有興趣的資訊，達到沈浸式的體驗。第二，透過簡潔的介面，降低使用者瀏覽時的壓力，讓使用者更願意停留在APP上，第三，透過分享貼文、追蹤、評論等等的社群機制，讓使用者能夠了解親朋好友們有興趣或者好評的商品，也能夠享受社群的樂趣，增加APP的黏著度，最後，透過APP上種種捕捉使用者行為數據的機制，可以將這些數據提供給與我們合作的第三方廠商，讓廠商更了解使用者的喜好
+
+<h2 id="重點功能簡介"><a href="#重點功能簡介" class="headerlink" title="重點功能簡介"></a>重點功能簡介</h2><img data-src="/images/posts/CC-project-demo/5.png" style="width: 70%; margin: 15px auto;">
+再來介紹一些重點功能的簡短敘述，首先第一個是我們的商品貼文，也是商品的主體，貼文特色主要以滿板設計與資訊收合來達到雜訊最小化的目的，另外後面Demo也會呈現推薦商品的形式，與現在短影音的方式很像，透過推薦與給人耳目一新的商品，帶給使用者殺時間的樂趣，另外，透過商品貼文，也可以成為直播主下播後銷售的利器，與一般電商不同的是，我們主動推薦商家商品，而且是透過使用者當前的行為喜好，而不是被動等待使用者搜尋或是透過購買紀錄來做推薦
+
+<hr>
+<img data-src="/images/posts/CC-project-demo/6.png" style="width: 70%; margin: 15px auto;">
+再來是我們的主頁面，透過滑卡的機制增加互動感，也可以同時捕捉使用者行為，以做到即時推薦，這麼做除了可以增加沈浸體驗，也可以更廣泛的推薦商品，提高曝光程度
+
+<hr>
+<img data-src="/images/posts/CC-project-demo/7.png" style="width: 70%; margin: 15px auto;">
+主頁面與探索頁面都可以透過使用者的滑卡行為、停留時間與點擊率，來彼此優化推薦內容，做到雙向推薦的功能
+
+<hr>
+<img data-src="/images/posts/CC-project-demo/8.png" style="width: 70%; margin: 15px auto;">
+探索頁面除了會推薦使用者感興趣的商品，也會隨機推薦相關商品，增加新奇度，其中最大塊的貼文則為推薦分數最高的商品，透過矩陣式樹狀結構，帶給使用者簡潔與大量瀏覽的感受
+
+<hr>
+<img data-src="/images/posts/CC-project-demo/9.png" style="width: 70%; margin: 15px auto;">
+CC提供商城、買家、直播主追蹤的機制，加上個人化自己的動態牆與留言區，增加社群互動性，以社群的力量增加APP的黏著度
+
+<hr>
+<img data-src="/images/posts/CC-project-demo/10.png" style="width: 70%; margin: 15px auto;">
+分享貼文除了可以增加互動的樂趣，也是提供消費者洞見的大平台
+最重要的是，可以藉由社群的力量，一傳十十傳百，來行銷商品
+
+<h2 id="系統架構與技術"><a href="#系統架構與技術" class="headerlink" title="系統架構與技術"></a>系統架構與技術</h2><p>先附上系統架構圖：<br><img data-src="/images/posts/CC-project-demo/CC_structure.jpeg" style="width: 70%; margin: 15px auto;"></p>
+<p>首先前端主要由Angular寫成，搭配<strong>模組化與物件導向設計，增加程式的可維護性</strong>，最後透過PWA包裝成跨平台的APP<br>藉由Angular能夠模組化與元件化的特性，我們將各個功能切分成不同模組，提升程式低耦合高內聚的特性，另外，Token驗證、路由保護、API攔截器、資料格式化Pipeline等等，也都抽離出來實作，其中，核心的商業邏輯切分在我們的Service模組，與畫面邏輯分離，再藉由依賴注入讓各模組使用，這樣的設計，讓我們的專案在未來更改與維護擴充時非常省時與省力。</p>
+<p>另外一個主要的功能是推薦演算法，我們透過標籤(label)與雅卡爾相似度(Jaccard Similarity)，做了一個Example Based的推薦引擎，主要是用MongoDB pipeline與後端演算構築而成。</p>
+<p>這裡也是我第一次使用前端框架，來寫一個比較完整的專案，由於我是後端出身，所以選擇一個自己寫起來最舒服的Angular框架，有種在寫後端的親切感XD。</p>
+<p>後端主要由NodeJS寫成，資料庫則為MongoDB，一樣是將各個功能進行模組化的拆分，與資料庫索引的優化，以及推薦演算法的實現。</p>
+<p>另外WebServer的部分則是由IIS代理，加上GitLab CI&#x2F;CD &amp; GitLab Runner做到自動化整合與部屬的功能</p>
+<style>
+.video-container
+{
+    padding-top: 60% !important;
+}
+</style>]]></content>
       <categories>
-        <category>心得</category>
-        <category>比賽</category>
+        <category>專案</category>
+        <category>side project</category>
       </categories>
       <tags>
-        <tag>心得</tag>
-        <tag>比賽</tag>
+        <tag>專案</tag>
+        <tag>side project</tag>
       </tags>
   </entry>
   <entry>
@@ -80,16 +121,16 @@ style="width: 70%; margin: 15px auto;"></p>
 <h1 id="未來"><a href="#未來" class="headerlink" title="未來"></a>未來</h1><p>政大是我們的第一塊版圖，我們的目標是全台灣的大學，目前先穩紮穩打在政大站穩腳步，在此期間會積極地與其他組織或社團合作、參與各項競賽以及參加創投機構的活動，我們的理念是讓大學生們彼此間的關係更加密切與真實，使他們的生活更加數位化與便利！</p>
 ]]></content>
       <categories>
-        <category>心得</category>
-        <category>GDSC</category>
-        <category>NCCUPass</category>
         <category>專案</category>
+        <category>GDSC</category>
+        <category>心得</category>
         <category>side project</category>
+        <category>NCCUPass</category>
       </categories>
       <tags>
+        <tag>專案</tag>
         <tag>GDSC</tag>
         <tag>NCCUPass</tag>
-        <tag>專案</tag>
       </tags>
   </entry>
   <entry>
@@ -133,16 +174,43 @@ style="width: 70%; margin: 15px auto;"></p>
 <h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>最後，這個專案雖然只是在發展初期，但我希望未來可以發展到我預想的樣子，也非常感謝一路願意跟隨我、幫助我的隊友們，單打獨鬥真的比不上團隊合作👍，也希望各位未來也可以繼續幫助我啦，現在打分享文可能還太早，但我就是想要趁學期末趕快記錄一下哈哈</p>
 ]]></content>
       <categories>
-        <category>心得</category>
-        <category>GDSC</category>
-        <category>NCCUPass</category>
         <category>專案</category>
+        <category>GDSC</category>
+        <category>心得</category>
         <category>side project</category>
+        <category>NCCUPass</category>
       </categories>
       <tags>
+        <tag>專案</tag>
         <tag>GDSC</tag>
         <tag>NCCUPass</tag>
-        <tag>專案</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>大一大二參加畢業專案與程式比賽心得分享</title>
+    <url>/posts/534426495/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>小弟我在剛上大一沒多久，就私mail系上的程式老師，詢問是否可以參與更多的專案或研究，也一併把我的履歷給教授看。<br>沒想到教授大方地給我幾條路選，可以跟教授做研究，出去實習，或是和學長們做專案。<br>大一的我想要慢慢累積實力，於是決定先<strong>和學長們做專案</strong>，去比賽，累積經驗。<br>在歷經<strong>國科會專案、資訊競賽、畢業專案競賽等等</strong>後，我非常感謝教授和學長們給我這個機會，讓我可以擁有這些寶貴的經驗！<br>這篇文章主要著重在心得與分享，比較技術面的內容會在下篇文章詳細介紹。</p>
+<span id="more"></span>
+
+<h2 id="比賽心得與定位"><a href="#比賽心得與定位" class="headerlink" title="比賽心得與定位"></a>比賽心得與定位</h2><p>在這個Team內，我主要負責程式開發，包括<strong>前端、伺服器架設與管理和一部分的後端</strong>。<br>前前後後比了<strong>國科會大專生計畫、智慧創新、資訊服務和系上的畢業專案競賽</strong>，大約歷時1年多的時間，在這段時間裡，我們歷經<strong>發想、開發、維護、寫技術文件、UI&#x2F;UX設計到演算法研究等等</strong>，這也是我大一結束為止做過相對完整的專案。</p>
+<hr>
+<p>這是我們智慧創新和資訊服務競賽時的照片，我們直接把成品給評審滑XD，因為以我們的系統來說相對完整，也不怕噴Bug，雖然都只進到決賽，但我也更加知道這類型比賽的準備方向（基本上就是要對到當前流行的主題），<del>所以明年就準備AI吧</del><br><img data-src="/images/posts/CC-experience/智慧創新.JPG" 
+style="width: 70%; margin: 15px auto;"><br><img data-src="/images/posts/CC-experience/資服.jpg" 
+style="width: 70%; margin: 15px auto;"></p>
+<hr>
+<p>這是系上畢業專案的比賽，非常榮幸拿到第二名！當天還直接被其他資訊公司的主管遞名片，受寵若驚。<br><img data-src="/images/posts/CC-experience/畢業專案.JPG" 
+style="width: 70%; margin: 15px auto;"><br><img data-src="/images/posts/CC-experience/畢業專案得獎.JPG" 
+style="width: 70%; margin: 15px auto;"></p>
+<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>總的來說，這是我<strong>參與多人協作、實作一個完整專案的寶貴經驗</strong>，這也成為我日後開發其他專案的養分(Google學生開發者社群, 資訊競賽, etc.)，除了<strong>技術面的大幅成長，專案管理、人際互動、時間管理</strong>也都是成長的一部分，主動去尋找機會，得到的會比你想像的多，雖然有點辛苦就是了，但我覺得很值得！所以時間管理真的超重要，這也讓我在工程師這條路上變得更主動，相信只要努力，自己絕對值得更好的！</p>
+<p>比較技術面的內容會在之後的文章提及</p>
+]]></content>
+      <categories>
+        <category>心得</category>
+        <category>比賽</category>
+      </categories>
+      <tags>
+        <tag>心得</tag>
+        <tag>比賽</tag>
       </tags>
   </entry>
   <entry>
@@ -237,76 +305,6 @@ style="width: 70%; margin: 15px auto;"></p>
       <tags>
         <tag>Git</tag>
         <tag>Version Control</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CC-沈浸式線上逛街APP-系統與技術介紹</title>
-    <url>/posts/2012237495/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>接續上一篇的文章，這篇文章會著重介紹這個系統<br>以下是我在YouTube上對這個專案的介紹與Demo：</p>
-<iframe
-    src="https://www.youtube.com/embed/aMGnyI2Xe04">
-</iframe>
-
-<p>這篇文章的內容會與影片很像，主要分為<strong>動機與介紹、重點功能簡介、系統架構與技術</strong>的順序介紹<br>系統功能Demo, 還請觀看影片介紹</p>
-<span id="more"></span>
-<p><img data-src="/images/posts/CC-project-demo/1.png" 
-style="width: 90%; margin: 15px auto;"></p>
-<h2 id="動機與介紹"><a href="#動機與介紹" class="headerlink" title="動機與介紹"></a>動機與介紹</h2><img data-src="/images/posts/CC-project-demo/2.png" style="width: 70%; margin: 15px auto;">
-首先我們主要的TA之一是線上逛街族, 針對這個族群我們統整出簡單的兩點：第一, 他們在線上瀏覽或滑商品時, 通常沒有特定的消費目的, 只是想要滑滑看看, 無目的的瀏覽行為, 第二, 這種行為主要是以消遣、獲得樂趣為目的, 而不一定是真的想要買商品
-
-<hr>
-<img data-src="/images/posts/CC-project-demo/3.png" style="width: 70%; margin: 15px auto;">
-根據上面的族群設定, 我們的專案主要會focus在解決或滿足下面的問題, 第一, 我們是針對無目的性的消費情境底下的需求, 第二, 我們希望帶給使用者沈浸式的體驗, 所謂的沈浸式體驗, 就是在舒服且不受干擾的狀態下, 接收自己有興趣的資訊, 以此讓使用者能在我們這個APP上做消遣、殺時間的動作, 這麼做的目的很大一部分是為了捕捉使用者的微時刻, 這些微時刻的數據可以代表使用者不同時刻的喜好或者決策, 第四，我們這個APP也會瞄準直播的市場與直播平台合作，而這些直播主的煩惱，便是下播後無法持續創造收入，因此我們除了希望能延長商品的生命週期外，也可以透過捕捉使用者行為來提供直播主缺乏的Consumer Insight
-
-<hr>
-<img data-src="/images/posts/CC-project-demo/4.png" style="width: 70%; margin: 15px auto;">
-為了達成以上的目的，我們主要有這幾項手段，第一, 研究推薦演算法與捕捉使用者行為，透過使用者不同時刻的行為數據來作為推薦的依據，而非傳統的電商使用歷史紀錄來做推薦，以次讓使用者能夠在每時每刻接收有興趣的資訊，達到沈浸式的體驗。第二，透過簡潔的介面，降低使用者瀏覽時的壓力，讓使用者更願意停留在APP上，第三，透過分享貼文、追蹤、評論等等的社群機制，讓使用者能夠了解親朋好友們有興趣或者好評的商品，也能夠享受社群的樂趣，增加APP的黏著度，最後，透過APP上種種捕捉使用者行為數據的機制，可以將這些數據提供給與我們合作的第三方廠商，讓廠商更了解使用者的喜好
-
-<h2 id="重點功能簡介"><a href="#重點功能簡介" class="headerlink" title="重點功能簡介"></a>重點功能簡介</h2><img data-src="/images/posts/CC-project-demo/5.png" style="width: 70%; margin: 15px auto;">
-再來介紹一些重點功能的簡短敘述，首先第一個是我們的商品貼文，也是商品的主體，貼文特色主要以滿板設計與資訊收合來達到雜訊最小化的目的，另外後面Demo也會呈現推薦商品的形式，與現在短影音的方式很像，透過推薦與給人耳目一新的商品，帶給使用者殺時間的樂趣，另外，透過商品貼文，也可以成為直播主下播後銷售的利器，與一般電商不同的是，我們主動推薦商家商品，而且是透過使用者當前的行為喜好，而不是被動等待使用者搜尋或是透過購買紀錄來做推薦
-
-<hr>
-<img data-src="/images/posts/CC-project-demo/6.png" style="width: 70%; margin: 15px auto;">
-再來是我們的主頁面，透過滑卡的機制增加互動感，也可以同時捕捉使用者行為，以做到即時推薦，這麼做除了可以增加沈浸體驗，也可以更廣泛的推薦商品，提高曝光程度
-
-<hr>
-<img data-src="/images/posts/CC-project-demo/7.png" style="width: 70%; margin: 15px auto;">
-主頁面與探索頁面都可以透過使用者的滑卡行為、停留時間與點擊率，來彼此優化推薦內容，做到雙向推薦的功能
-
-<hr>
-<img data-src="/images/posts/CC-project-demo/8.png" style="width: 70%; margin: 15px auto;">
-探索頁面除了會推薦使用者感興趣的商品，也會隨機推薦相關商品，增加新奇度，其中最大塊的貼文則為推薦分數最高的商品，透過矩陣式樹狀結構，帶給使用者簡潔與大量瀏覽的感受
-
-<hr>
-<img data-src="/images/posts/CC-project-demo/9.png" style="width: 70%; margin: 15px auto;">
-CC提供商城、買家、直播主追蹤的機制，加上個人化自己的動態牆與留言區，增加社群互動性，以社群的力量增加APP的黏著度
-
-<hr>
-<img data-src="/images/posts/CC-project-demo/10.png" style="width: 70%; margin: 15px auto;">
-分享貼文除了可以增加互動的樂趣，也是提供消費者洞見的大平台
-最重要的是，可以藉由社群的力量，一傳十十傳百，來行銷商品
-
-<h2 id="系統架構與技術"><a href="#系統架構與技術" class="headerlink" title="系統架構與技術"></a>系統架構與技術</h2><p>先附上系統架構圖：<br><img data-src="/images/posts/CC-project-demo/CC_structure.jpeg" style="width: 70%; margin: 15px auto;"></p>
-<p>首先前端主要由Angular寫成，搭配<strong>模組化與物件導向設計，增加程式的可維護性</strong>，最後透過PWA包裝成跨平台的APP<br>藉由Angular能夠模組化與元件化的特性，我們將各個功能切分成不同模組，提升程式低耦合高內聚的特性，另外，Token驗證、路由保護、API攔截器、資料格式化Pipeline等等，也都抽離出來實作，其中，核心的商業邏輯切分在我們的Service模組，與畫面邏輯分離，再藉由依賴注入讓各模組使用，這樣的設計，讓我們的專案在未來更改與維護擴充時非常省時與省力。</p>
-<p>另外一個主要的功能是推薦演算法，我們透過標籤(label)與雅卡爾相似度(Jaccard Similarity)，做了一個Example Based的推薦引擎，主要是用MongoDB pipeline與後端演算構築而成。</p>
-<p>這裡也是我第一次使用前端框架，來寫一個比較完整的專案，由於我是後端出身，所以選擇一個自己寫起來最舒服的Angular框架，有種在寫後端的親切感XD。</p>
-<p>後端主要由NodeJS寫成，資料庫則為MongoDB，一樣是將各個功能進行模組化的拆分，與資料庫索引的優化，以及推薦演算法的實現。</p>
-<p>另外WebServer的部分則是由IIS代理，加上GitLab CI&#x2F;CD &amp; GitLab Runner做到自動化整合與部屬的功能</p>
-<style>
-.video-container
-{
-    padding-top: 60% !important;
-}
-</style>]]></content>
-      <categories>
-        <category>專案</category>
-        <category>side project</category>
-        <category>作品</category>
-      </categories>
-      <tags>
-        <tag>專案</tag>
-        <tag>作品</tag>
-        <tag>side project</tag>
       </tags>
   </entry>
   <entry>
@@ -982,6 +980,116 @@ style="width: 70%; margin: 15px auto;"></p>
       </tags>
   </entry>
   <entry>
+    <title>[.NET][C#][Design Pattern] - Mediator Pattern (中介者模式)</title>
+    <url>/posts/4072203086/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>這篇文章主要介紹Mediator Pattern的定義以及簡單實作<br>介紹使用Mediator Pattern的好處, 並提供範例<br>在軟體架構中Mediator Patternc和Repository Pattern都是常用的pattern<br>通常.NET專案中會結合MediatR套件使用</p>
+<span id="more"></span>
+
+<h2 id="定義-Mediator-Pattern"><a href="#定義-Mediator-Pattern" class="headerlink" title="定義 Mediator Pattern"></a>定義 Mediator Pattern</h2><p>IG貼文：<br><span class="exturl" data-url="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9wL0NpTTBlenBMTzR6Lz9obD16aC10dw==">Mediator Pattern Post<i class="fa fa-external-link-alt"></i></span></p>
+<p>GitHub連結：<br><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL21hby1jb2RlL01lZGlhdG9yUGF0dGVybg==">Sample Code<i class="fa fa-external-link-alt"></i></span></p>
+<p>定義一個 Mediator 物件用來<strong>封裝一組物件的互動方式</strong>。<br>Mediator 藉由<strong>避免物件間相互直接的引用</strong>，從而降低它們之間的耦合程度，並且可以讓我們獨立地改變這些物件間的互動方式。</p>
+<p>下面這兩張圖片可以簡單體現出Mediator Pattern在做的事</p>
+<p><strong>沒有使用中介者, 物件彼此之間直接調用</strong><br><img data-src="/images/posts/mediator-pattern/origin-graph.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p><strong>使用中介者, 物件只依賴mediator來與其他物件溝通</strong><br><img data-src="/images/posts/mediator-pattern/star.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>可以發現使用中介者模式之後, 物件都只依賴中介者來傳遞訊息, 而不是直接調用彼此, 以此達到解耦。<br>在現實生活中, 也有類似的例子, 例如開發團隊, 客服團隊, 產銷團隊, 設計團隊, 若彼此之間沒有一個統一的溝通,<br>那麼各個團隊耦合度很高, 開發跟設計要協調介面, 又要和產銷和客服討論如何贏得如何符合市場, 這樣一來分工太複雜。<br>所以需要一個<strong>產品經理來當中介者</strong>, 協助溝通各個團隊。</p>
+<h2 id="優缺點"><a href="#優缺點" class="headerlink" title="優缺點"></a>優缺點</h2><ul>
+<li>優點 <ol>
+<li>降低物件之間的耦合性，讓物件容易重複使用。</li>
+<li>物件之間一對多的關聯性變成一對一，提高系統靈活性，也讓整體容易維護及擴充。</li>
+</ol>
+</li>
+<li>缺點 (Trade-off)<ol>
+<li>同事類別過多時，中介者責任很大，會使系統提升一定程度的複雜性。</li>
+</ol>
+</li>
+</ul>
+<h2 id="UML與成員"><a href="#UML與成員" class="headerlink" title="UML與成員"></a>UML與成員</h2><p><img data-src="/images/posts/mediator-pattern/uml.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<table>
+    <thead>
+        <th>成員</th>
+        <th>定義</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Mdiator</td>
+            <td>抽象中介者, 定義註冊進入mediator以及轉發的方法</td>
+        </tr>
+        <tr>
+            <td>ConcreteMediator</td>
+            <td>具體中介者, 定義一個集合來管理同事, 所以聚合Colleague</td>
+        </tr>
+        <tr>
+            <td>Colleague</td>
+            <td>抽象同事, 可以保存中介者, 調用內部方法, 所以聚合Mediator</td>
+        </tr>
+        <tr>
+            <td>ConcreteColleague</td>
+            <td>具體同事, 當要跟其他物件溝通時, 利用內部的中介者進行轉發</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2 id="實作"><a href="#實作" class="headerlink" title="實作"></a>實作</h2><p><strong>專案結構</strong><br><img data-src="/images/posts/mediator-pattern/structure.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p><strong>抽象Mediator</strong></p>
+<figure class="highlight c#"><figcaption><span>Mediator(抽象)</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MediatorPattern.mediator</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 團隊列舉</span></span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">enum</span> teamType</span><br><span class="line">    &#123;</span><br><span class="line">        ENGINEERING, DESIGN, SERVICE, MARKETING</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 抽象mediator</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title">Mediator</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">Register</span>(<span class="params">teamType type, Colleague colleague</span>)</span>; <span class="comment">//註冊進入mediator</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">Relay</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span>; <span class="comment">//轉發;傳遞</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>PackageManager(具體Mediator)</strong></p>
+<figure class="highlight c#"><figcaption><span>PackageManager(具體Mediator)</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MediatorPattern.mediator</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="comment">// 具體mediator</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ProductManager</span> : <span class="title">Mediator</span></span><br><span class="line">	&#123;</span><br><span class="line">        <span class="comment">// 聚合Colleague, 一個儲存colleague物件的dictionary</span></span><br><span class="line">        <span class="keyword">private</span> Dictionary&lt;teamType, Colleague&gt; colleagues = <span class="keyword">new</span> Dictionary&lt;teamType, Colleague&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">Register</span>(<span class="params">teamType type, Colleague colleague</span>)</span></span><br><span class="line">        &#123;</span><br><span class="line">            colleague.setMediator(<span class="keyword">this</span>);</span><br><span class="line">            <span class="keyword">this</span>.colleagues.Add(type, colleague);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">Relay</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">        &#123;</span><br><span class="line">            Colleague toColleague = <span class="keyword">this</span>.colleagues[type];</span><br><span class="line">            toColleague.receive(msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>抽象Colleague</strong></p>
+<figure class="highlight c#"><figcaption><span>Colleague(抽象)</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.mediator;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MediatorPattern.colleagues</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title">Colleague</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">protected</span> Mediator? Mediator &#123; <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; &#125;</span><br><span class="line"></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setMediator</span>(<span class="params">Mediator mediator</span>)</span></span><br><span class="line">		&#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator = mediator;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 接收訊息後如何反應</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span>;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 傳送訊息給特定物件</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>具體Colleague</strong></p>
+<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="comment">//具體colleague</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">DesignTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;設計團隊收到訊息: &quot;</span> + msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;設計團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">EngineeringTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;工程師團隊收到訊息: &quot;</span>+msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;工程師團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">MarketingTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;產銷團隊收到訊息: &quot;</span> + msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;產銷團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ServiceTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;客服團隊收到訊息: &quot;</span> + msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;客服團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>Client端使用</strong></p>
+<figure class="highlight c#"><figcaption><span>Program.cs</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.mediator;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 具體mediator</span></span><br><span class="line">ProductManager pm = <span class="keyword">new</span> ProductManager();</span><br><span class="line"></span><br><span class="line"><span class="comment">//具體colleague</span></span><br><span class="line">Colleague ds = <span class="keyword">new</span> DesignTeam();</span><br><span class="line">Colleague eg = <span class="keyword">new</span> EngineeringTeam();</span><br><span class="line">Colleague mk = <span class="keyword">new</span> MarketingTeam();</span><br><span class="line">Colleague sv = <span class="keyword">new</span> ServiceTeam();</span><br><span class="line"></span><br><span class="line"><span class="comment">//註冊進入mediator</span></span><br><span class="line">pm.Register(teamType.DESIGN, ds);</span><br><span class="line">pm.Register(teamType.ENGINEERING, eg);</span><br><span class="line">pm.Register(teamType.MARKETING, mk);</span><br><span class="line">pm.Register(teamType.SERVICE, sv);</span><br><span class="line"></span><br><span class="line"><span class="comment">//執行</span></span><br><span class="line">ds.send(teamType.ENGINEERING, <span class="string">&quot;UI設計稿完成&quot;</span>);</span><br><span class="line">Console.WriteLine(String.Concat(Enumerable.Repeat(<span class="string">&quot;-&quot;</span>, <span class="number">10</span>)));</span><br><span class="line"></span><br><span class="line">eg.send(teamType.MARKETING, <span class="string">&quot;軟體開發完成&quot;</span>);</span><br><span class="line">Console.WriteLine(String.Concat(Enumerable.Repeat(<span class="string">&quot;-&quot;</span>, <span class="number">10</span>)));</span><br><span class="line"></span><br><span class="line">Console.ReadKey();</span><br></pre></td></tr></table></figure>
+
+<p><strong>結果</strong><br><img data-src="/images/posts/mediator-pattern/result.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<h2 id="疑問"><a href="#疑問" class="headerlink" title="疑問"></a>疑問</h2><ol>
+<li>DI不也是讓物件間解耦嗎？他們有什麼不同？<ol>
+<li>應用場景不同：Mediator模式主要用於解耦合多個相互協作的物件，特別是在複雜的互動場景中。DI則主要用於管理和注入依賴關係，以實現鬆耦合和可測試的程式碼。</li>
+<li>解決不同問題：Mediator解決的是物件之間的協作和通信問題，而DI解決的是依賴關係管理的問題。</li>
+<li>實現方式不同：Mediator需要一個中介者來協調物件之間的互動，通常由一個專門的Mediator類別來實現。DI則是一種設計模式，它可以與不同語言和框架一起使用，並不需要特定的中介者類別。</li>
+</ol>
+</li>
+</ol>
+<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><ul>
+<li>定義:<br>  定義一個 Mediator 物件用來封裝一組物件的互動方式。Mediator 藉由避免物件間相互直接的引用，從而降低它們之間的耦合程度，並且可以讓我們獨立地改變這些物件間的互動方式。</li>
+<li>成員<ul>
+<li>抽象Mediator: 定義方法, 轉接訊息</li>
+<li>具體Mediator: 實作抽象Mediator, Colleague (擁有0~多個Colleague)</li>
+<li>抽象Colleague: 定義方法, 聚合抽象Mediator (Colleague擁有Mediator)</li>
+<li>具體Colleague: 實作抽象Mediator</li>
+</ul>
+</li>
+<li>優點 <ol>
+<li>降低物件之間的耦合性，讓物件容易重複使用。</li>
+<li>物件之間一對多的關聯性變成一對一，提高系統靈活性，也讓整體容易維護及擴充。</li>
+</ol>
+</li>
+<li>缺點 (Trade-off)<ol>
+<li>同事類別過多時，中介者責任很大，會使系統提升一定程度的複雜性。</li>
+</ol>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>OOP</category>
+        <category>Design Pattern</category>
+      </categories>
+      <tags>
+        <tag>OOP</tag>
+        <tag>.NET C#</tag>
+        <tag>design-pattern</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>[NLP] MLLM(多模態LLM) 論文簡要欣賞</title>
     <url>/posts/2312529159/</url>
     <content><![CDATA[<h1 id="Abstract-amp-Overview"><a href="#Abstract-amp-Overview" class="headerlink" title="Abstract &amp; Overview"></a>Abstract &amp; Overview</h1><p>這篇文章我們來欣賞一下在arXiv上的一篇論文：<br><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzIzMDYuMTM1NDk=">A Servey on Multimodal Large Language Models<i class="fa fa-external-link-alt"></i></span><br>這篇論文主要在介紹與整理現行代表性的MLLM(Multimodal LLM)，並將其分類為4大體裁：<br>Multimodal Instruction Tuning(M-IT), Multimodal In-Context Learning(M-ICL), Multimodal Chain-of_Thought(M-CoT)以及LLM-Aided Visual Reasoning(LAVR)。<br>其中，前三者為MLLM的基礎，而最後一個則是以LLM為核心的multimodal system，類似於一個系統框架。</p>
@@ -1256,116 +1364,6 @@ style="width: 70%; margin: 15px auto;"><br>這裡主要是以書本和作者為�
 <figure class="highlight c#"><figcaption><span>使用範例</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> RepositoryPatternPractice.Models;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">RepositoryPatternPractice</span></span><br><span class="line">&#123;</span><br><span class="line">   <span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">   &#123;</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="built_in">string</span>[] args</span>)</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">//example of using these interfaces and classes</span></span><br><span class="line">            <span class="comment">//using block like try/finally and call Dispose()</span></span><br><span class="line">            <span class="keyword">using</span> ( <span class="keyword">var</span> unitOfWork = <span class="keyword">new</span> UnitOfWork(<span class="keyword">new</span> MypostgresContext()) )</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="comment">//Example 1</span></span><br><span class="line">                <span class="keyword">var</span> books = unitOfWork.Books.GetAll();</span><br><span class="line">                Console.WriteLine(<span class="string">&quot;Initial State: &quot;</span>);</span><br><span class="line">                <span class="keyword">foreach</span> (Book b <span class="keyword">in</span> books)</span><br><span class="line">                &#123;</span><br><span class="line">                    Console.WriteLine(<span class="string">$&quot;book: <span class="subst">&#123;b.BookName&#125;</span>, author: <span class="subst">&#123;unitOfWork.Authors.Get(b.AuthorId).AuthorName&#125;</span>&quot;</span>);</span><br><span class="line">                &#125;</span><br><span class="line">                Console.WriteLine();</span><br><span class="line"></span><br><span class="line">                <span class="comment">//Example 2</span></span><br><span class="line">                unitOfWork.Books.AddRange(<span class="keyword">new</span> List&lt;Book&gt;() &#123;</span><br><span class="line">                    <span class="keyword">new</span> Book() &#123; BookName=<span class="string">&quot;AIGuide&quot;</span>, Price=<span class="number">300</span>, Author=unitOfWork.Authors.GetAuthorByName(<span class="string">&quot;Xuan&quot;</span>)&#125;,</span><br><span class="line">                    <span class="keyword">new</span> Book() &#123; BookName=<span class="string">&quot;PSGuide&quot;</span>, Price=<span class="number">230</span>, Author=unitOfWork.Authors.GetAuthorByName(<span class="string">&quot;Xuan&quot;</span>)&#125;</span><br><span class="line">                &#125;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">                <span class="comment">//Example3</span></span><br><span class="line">                unitOfWork.Books.Get(<span class="number">2</span>).BookName = <span class="string">&quot;C#dotNETGuide&quot;</span>;</span><br><span class="line"></span><br><span class="line">                unitOfWork.Complete();</span><br><span class="line"></span><br><span class="line">                Console.WriteLine(<span class="string">&quot;After changes: &quot;</span>);</span><br><span class="line">                books = unitOfWork.Books.GetAll();</span><br><span class="line">                <span class="keyword">foreach</span> (Book b <span class="keyword">in</span> books)</span><br><span class="line">                &#123;</span><br><span class="line">                    Console.WriteLine(<span class="string">$&quot;book: <span class="subst">&#123;b.BookName&#125;</span>, author: <span class="subst">&#123;unitOfWork.Authors.Get(b.AuthorId).AuthorName&#125;</span>&quot;</span>);</span><br><span class="line">                &#125;</span><br><span class="line">                Console.WriteLine();</span><br><span class="line">            &#125;</span><br><span class="line">            Console.ReadKey();</span><br><span class="line">        &#125;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>如果想要做到非同步, 只要把Repository內部的實作改成非同步就好, 其餘都一樣.<br>其實Repository pattern, Unit of Work pattern很常會一起使用, 甚至搭配DI, 但這裡為求簡單就沒有使用DI了<br>希望大家看完這篇文章對於Repository Pattern和UnitOfWork Pattern更加理解</p>
-]]></content>
-      <categories>
-        <category>OOP</category>
-        <category>Design Pattern</category>
-      </categories>
-      <tags>
-        <tag>OOP</tag>
-        <tag>.NET C#</tag>
-        <tag>design-pattern</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>[.NET][C#][Design Pattern] - Mediator Pattern (中介者模式)</title>
-    <url>/posts/4072203086/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>這篇文章主要介紹Mediator Pattern的定義以及簡單實作<br>介紹使用Mediator Pattern的好處, 並提供範例<br>在軟體架構中Mediator Patternc和Repository Pattern都是常用的pattern<br>通常.NET專案中會結合MediatR套件使用</p>
-<span id="more"></span>
-
-<h2 id="定義-Mediator-Pattern"><a href="#定義-Mediator-Pattern" class="headerlink" title="定義 Mediator Pattern"></a>定義 Mediator Pattern</h2><p>IG貼文：<br><span class="exturl" data-url="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9wL0NpTTBlenBMTzR6Lz9obD16aC10dw==">Mediator Pattern Post<i class="fa fa-external-link-alt"></i></span></p>
-<p>GitHub連結：<br><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL21hby1jb2RlL01lZGlhdG9yUGF0dGVybg==">Sample Code<i class="fa fa-external-link-alt"></i></span></p>
-<p>定義一個 Mediator 物件用來<strong>封裝一組物件的互動方式</strong>。<br>Mediator 藉由<strong>避免物件間相互直接的引用</strong>，從而降低它們之間的耦合程度，並且可以讓我們獨立地改變這些物件間的互動方式。</p>
-<p>下面這兩張圖片可以簡單體現出Mediator Pattern在做的事</p>
-<p><strong>沒有使用中介者, 物件彼此之間直接調用</strong><br><img data-src="/images/posts/mediator-pattern/origin-graph.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p><strong>使用中介者, 物件只依賴mediator來與其他物件溝通</strong><br><img data-src="/images/posts/mediator-pattern/star.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>可以發現使用中介者模式之後, 物件都只依賴中介者來傳遞訊息, 而不是直接調用彼此, 以此達到解耦。<br>在現實生活中, 也有類似的例子, 例如開發團隊, 客服團隊, 產銷團隊, 設計團隊, 若彼此之間沒有一個統一的溝通,<br>那麼各個團隊耦合度很高, 開發跟設計要協調介面, 又要和產銷和客服討論如何贏得如何符合市場, 這樣一來分工太複雜。<br>所以需要一個<strong>產品經理來當中介者</strong>, 協助溝通各個團隊。</p>
-<h2 id="優缺點"><a href="#優缺點" class="headerlink" title="優缺點"></a>優缺點</h2><ul>
-<li>優點 <ol>
-<li>降低物件之間的耦合性，讓物件容易重複使用。</li>
-<li>物件之間一對多的關聯性變成一對一，提高系統靈活性，也讓整體容易維護及擴充。</li>
-</ol>
-</li>
-<li>缺點 (Trade-off)<ol>
-<li>同事類別過多時，中介者責任很大，會使系統提升一定程度的複雜性。</li>
-</ol>
-</li>
-</ul>
-<h2 id="UML與成員"><a href="#UML與成員" class="headerlink" title="UML與成員"></a>UML與成員</h2><p><img data-src="/images/posts/mediator-pattern/uml.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<table>
-    <thead>
-        <th>成員</th>
-        <th>定義</th>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Mdiator</td>
-            <td>抽象中介者, 定義註冊進入mediator以及轉發的方法</td>
-        </tr>
-        <tr>
-            <td>ConcreteMediator</td>
-            <td>具體中介者, 定義一個集合來管理同事, 所以聚合Colleague</td>
-        </tr>
-        <tr>
-            <td>Colleague</td>
-            <td>抽象同事, 可以保存中介者, 調用內部方法, 所以聚合Mediator</td>
-        </tr>
-        <tr>
-            <td>ConcreteColleague</td>
-            <td>具體同事, 當要跟其他物件溝通時, 利用內部的中介者進行轉發</td>
-        </tr>
-    </tbody>
-</table>
-
-<h2 id="實作"><a href="#實作" class="headerlink" title="實作"></a>實作</h2><p><strong>專案結構</strong><br><img data-src="/images/posts/mediator-pattern/structure.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p><strong>抽象Mediator</strong></p>
-<figure class="highlight c#"><figcaption><span>Mediator(抽象)</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MediatorPattern.mediator</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 團隊列舉</span></span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">enum</span> teamType</span><br><span class="line">    &#123;</span><br><span class="line">        ENGINEERING, DESIGN, SERVICE, MARKETING</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 抽象mediator</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title">Mediator</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">Register</span>(<span class="params">teamType type, Colleague colleague</span>)</span>; <span class="comment">//註冊進入mediator</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">Relay</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span>; <span class="comment">//轉發;傳遞</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>PackageManager(具體Mediator)</strong></p>
-<figure class="highlight c#"><figcaption><span>PackageManager(具體Mediator)</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MediatorPattern.mediator</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="comment">// 具體mediator</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ProductManager</span> : <span class="title">Mediator</span></span><br><span class="line">	&#123;</span><br><span class="line">        <span class="comment">// 聚合Colleague, 一個儲存colleague物件的dictionary</span></span><br><span class="line">        <span class="keyword">private</span> Dictionary&lt;teamType, Colleague&gt; colleagues = <span class="keyword">new</span> Dictionary&lt;teamType, Colleague&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">Register</span>(<span class="params">teamType type, Colleague colleague</span>)</span></span><br><span class="line">        &#123;</span><br><span class="line">            colleague.setMediator(<span class="keyword">this</span>);</span><br><span class="line">            <span class="keyword">this</span>.colleagues.Add(type, colleague);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">Relay</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">        &#123;</span><br><span class="line">            Colleague toColleague = <span class="keyword">this</span>.colleagues[type];</span><br><span class="line">            toColleague.receive(msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>抽象Colleague</strong></p>
-<figure class="highlight c#"><figcaption><span>Colleague(抽象)</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.mediator;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MediatorPattern.colleagues</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title">Colleague</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">protected</span> Mediator? Mediator &#123; <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; &#125;</span><br><span class="line"></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setMediator</span>(<span class="params">Mediator mediator</span>)</span></span><br><span class="line">		&#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator = mediator;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 接收訊息後如何反應</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span>;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 傳送訊息給特定物件</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>具體Colleague</strong></p>
-<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="comment">//具體colleague</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">DesignTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;設計團隊收到訊息: &quot;</span> + msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;設計團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">EngineeringTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;工程師團隊收到訊息: &quot;</span>+msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;工程師團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">MarketingTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;產銷團隊收到訊息: &quot;</span> + msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;產銷團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ServiceTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;客服團隊收到訊息: &quot;</span> + msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;客服團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>Client端使用</strong></p>
-<figure class="highlight c#"><figcaption><span>Program.cs</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.mediator;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 具體mediator</span></span><br><span class="line">ProductManager pm = <span class="keyword">new</span> ProductManager();</span><br><span class="line"></span><br><span class="line"><span class="comment">//具體colleague</span></span><br><span class="line">Colleague ds = <span class="keyword">new</span> DesignTeam();</span><br><span class="line">Colleague eg = <span class="keyword">new</span> EngineeringTeam();</span><br><span class="line">Colleague mk = <span class="keyword">new</span> MarketingTeam();</span><br><span class="line">Colleague sv = <span class="keyword">new</span> ServiceTeam();</span><br><span class="line"></span><br><span class="line"><span class="comment">//註冊進入mediator</span></span><br><span class="line">pm.Register(teamType.DESIGN, ds);</span><br><span class="line">pm.Register(teamType.ENGINEERING, eg);</span><br><span class="line">pm.Register(teamType.MARKETING, mk);</span><br><span class="line">pm.Register(teamType.SERVICE, sv);</span><br><span class="line"></span><br><span class="line"><span class="comment">//執行</span></span><br><span class="line">ds.send(teamType.ENGINEERING, <span class="string">&quot;UI設計稿完成&quot;</span>);</span><br><span class="line">Console.WriteLine(String.Concat(Enumerable.Repeat(<span class="string">&quot;-&quot;</span>, <span class="number">10</span>)));</span><br><span class="line"></span><br><span class="line">eg.send(teamType.MARKETING, <span class="string">&quot;軟體開發完成&quot;</span>);</span><br><span class="line">Console.WriteLine(String.Concat(Enumerable.Repeat(<span class="string">&quot;-&quot;</span>, <span class="number">10</span>)));</span><br><span class="line"></span><br><span class="line">Console.ReadKey();</span><br></pre></td></tr></table></figure>
-
-<p><strong>結果</strong><br><img data-src="/images/posts/mediator-pattern/result.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<h2 id="疑問"><a href="#疑問" class="headerlink" title="疑問"></a>疑問</h2><ol>
-<li>DI不也是讓物件間解耦嗎？他們有什麼不同？<ol>
-<li>應用場景不同：Mediator模式主要用於解耦合多個相互協作的物件，特別是在複雜的互動場景中。DI則主要用於管理和注入依賴關係，以實現鬆耦合和可測試的程式碼。</li>
-<li>解決不同問題：Mediator解決的是物件之間的協作和通信問題，而DI解決的是依賴關係管理的問題。</li>
-<li>實現方式不同：Mediator需要一個中介者來協調物件之間的互動，通常由一個專門的Mediator類別來實現。DI則是一種設計模式，它可以與不同語言和框架一起使用，並不需要特定的中介者類別。</li>
-</ol>
-</li>
-</ol>
-<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><ul>
-<li>定義:<br>  定義一個 Mediator 物件用來封裝一組物件的互動方式。Mediator 藉由避免物件間相互直接的引用，從而降低它們之間的耦合程度，並且可以讓我們獨立地改變這些物件間的互動方式。</li>
-<li>成員<ul>
-<li>抽象Mediator: 定義方法, 轉接訊息</li>
-<li>具體Mediator: 實作抽象Mediator, Colleague (擁有0~多個Colleague)</li>
-<li>抽象Colleague: 定義方法, 聚合抽象Mediator (Colleague擁有Mediator)</li>
-<li>具體Colleague: 實作抽象Mediator</li>
-</ul>
-</li>
-<li>優點 <ol>
-<li>降低物件之間的耦合性，讓物件容易重複使用。</li>
-<li>物件之間一對多的關聯性變成一對一，提高系統靈活性，也讓整體容易維護及擴充。</li>
-</ol>
-</li>
-<li>缺點 (Trade-off)<ol>
-<li>同事類別過多時，中介者責任很大，會使系統提升一定程度的複雜性。</li>
-</ol>
-</li>
-</ul>
 ]]></content>
       <categories>
         <category>OOP</category>
