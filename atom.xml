@@ -6,7 +6,7 @@
   <link href="https://mao-code.github.io/atom.xml" rel="self"/>
   
   <link href="https://mao-code.github.io/"/>
-  <updated>2023-09-08T11:09:04.942Z</updated>
+  <updated>2024-01-21T08:59:49.907Z</updated>
   <id>https://mao-code.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Basic OOP 基礎物件導向</title>
+    <link href="https://mao-code.github.io/posts/3787153742/"/>
+    <id>https://mao-code.github.io/posts/3787153742/</id>
+    <published>2024-01-21T08:21:22.000Z</published>
+    <updated>2024-01-21T08:59:49.907Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>物件導向（Object-Oriented Programming, OOP）是一種程式設計範式，強調使用包含數據（屬性）和方法（功能）的物件來設計和構建應用程序。提高軟體的重用性、靈活性和擴充性。</p><p>而對於物件導向，最基礎需要知道以下：</p><blockquote><p><strong>一個抽象</strong><br><strong>兩個目的</strong><br><strong>三個特性</strong><br><strong>五個原則</strong></p></blockquote><span id="more"></span><h1 id="一個抽象"><a href="#一個抽象" class="headerlink" title="一個抽象"></a>一個抽象</h1><h2 id="抽象-Abstraction"><a href="#抽象-Abstraction" class="headerlink" title="抽象 (Abstraction)"></a>抽象 (Abstraction)</h2><p>在OOP的背景下，抽象是指<strong>隱藏複雜的實作細節</strong>，僅展示物件的必要特性的能力。這簡化了與物件的互動，使編程更直觀、更高效。</p><p>例如想要使用交通工具的物件，只需要知道交通工具提供的介面，而不需要知道具體的交通工具是什麼，以及其實作細節<br><img data-src="/images/posts/OOP-basic/abstraction.png" style="width: 70%; margin: 15px auto;"></p><h1 id="兩個目的"><a href="#兩個目的" class="headerlink" title="兩個目的"></a>兩個目的</h1><h2 id="低耦合-Low-Coupling"><a href="#低耦合-Low-Coupling" class="headerlink" title="低耦合 (Low Coupling)"></a>低耦合 (Low Coupling)</h2><p>低耦合是指程式中<strong>不同的類別或模組之間應該有盡可能少的依賴關係</strong>。這使得<strong>一個類別或模組的變更不太可能影響到其他的類別或模組</strong>，從而使得程式更容易維護和擴展。</p><h2 id="高內聚（High-Cohesion）"><a href="#高內聚（High-Cohesion）" class="headerlink" title="高內聚（High Cohesion）"></a>高內聚（High Cohesion）</h2><p>高內聚是指一個類別或模組應該只<strong>專注於完成一項特定的任務或一組緊密相關的任務</strong>。這使得程式更有組織，更易於理解和維護。</p><p><img data-src="/images/posts/OOP-basic/CandC.png" style="width: 70%; margin: 15px auto;"></p><h1 id="三個特性"><a href="#三個特性" class="headerlink" title="三個特性"></a>三個特性</h1><h2 id="繼承-Inheritance"><a href="#繼承-Inheritance" class="headerlink" title="繼承 (Inheritance)"></a>繼承 (Inheritance)</h2><p>繼承允許新創建的類別（子類別）繼承一個或多個現有類別（父類別）的屬性和方法。這促進了程式碼重用和擴展性。</p><h2 id="封裝-Encapsulation"><a href="#封裝-Encapsulation" class="headerlink" title="封裝 (Encapsulation)"></a>封裝 (Encapsulation)</h2><p>封裝是將數據（屬性）和行為（方法）綁定到單個單位（類別）中，並<strong>限制對該單位內部的直接訪問</strong>。這有助於保護數據和隱藏實現細節。</p><h2 id="多型-Polymorphism"><a href="#多型-Polymorphism" class="headerlink" title="多型 (Polymorphism)"></a>多型 (Polymorphism)</h2><p>多型允許對<strong>不同類別的物件使用共同的接口</strong>。這意味著可以在不同類別的物件上執行同一操作，而每個類別可以以不同的方式響應相同的操作。</p><h1 id="五個原則-SOLID"><a href="#五個原則-SOLID" class="headerlink" title="五個原則 (SOLID)"></a>五個原則 (SOLID)</h1><h2 id="S-單一職責原則（Single-Responsibility-Principle）"><a href="#S-單一職責原則（Single-Responsibility-Principle）" class="headerlink" title="S - 單一職責原則（Single Responsibility Principle）:"></a>S - 單一職責原則（Single Responsibility Principle）:</h2><p>一個類別應該只有一個改變的理由，這意味著<strong>一個類別應該只做一件事</strong>。</p><h2 id="O-開放封閉原則（Open-x2F-Closed-Principle）"><a href="#O-開放封閉原則（Open-x2F-Closed-Principle）" class="headerlink" title="O - 開放封閉原則（Open&#x2F;Closed Principle）:"></a>O - 開放封閉原則（Open&#x2F;Closed Principle）:</h2><p>軟體實體（類別、模組、函數等）應該<strong>對擴展開放，對修改封閉</strong>。這意味著應該能夠在不修改現有代碼的情況下擴展其功能。</p><h2 id="L-里氏替換原則（Liskov-Substitution-Principle）"><a href="#L-里氏替換原則（Liskov-Substitution-Principle）" class="headerlink" title="L - 里氏替換原則（Liskov Substitution Principle）:"></a>L - 里氏替換原則（Liskov Substitution Principle）:</h2><p><strong>子類別應該能夠替換其父類別而不影響程序的正常運行</strong>。</p><h2 id="I-接口隔離原則（Interface-Segregation-Principle）"><a href="#I-接口隔離原則（Interface-Segregation-Principle）" class="headerlink" title="I - 接口隔離原則（Interface Segregation Principle）:"></a>I - 接口隔離原則（Interface Segregation Principle）:</h2><p>不應強迫客戶依賴於它們不使用的接口。換句話說，<strong>更小和更具體的接口優於大而通用的接口</strong>。</p><h2 id="D-依賴反轉原則（Dependency-Inversion-Principle）"><a href="#D-依賴反轉原則（Dependency-Inversion-Principle）" class="headerlink" title="D - 依賴反轉原則（Dependency Inversion Principle）:"></a>D - 依賴反轉原則（Dependency Inversion Principle）:</h2><p><strong>高層模組不應該依賴低層模組，兩者都應該依賴於抽象</strong>；抽象不應該依賴於細節，細節應該依賴於抽象。這有助於減少類別之間的直接依賴，從而提高系統的靈活性和可重用性。</p><h1 id="Design-Pattern概述"><a href="#Design-Pattern概述" class="headerlink" title="Design Pattern概述"></a>Design Pattern概述</h1><p>設計模式是一組作為最佳實踐的解決方案，用來解決特定類型的重複出現的設計問題。這些模式不是現成的程式碼，而是可以在許多不同情況下使用的模板。它們提高了代碼的可重用性、靈活性和維護性。</p><p>設計模式通常分為三大類：</p><ol><li>創建型模式（Creational Patterns）<br>這些模式與物件創建機制有關，幫助創建物件的方式使得系統獨立於物件的創建和組合方式。</li><li>結構型模式（Structural Patterns）<br>這些模式與物件的組合有關，通常用於形成大的物件結構</li><li>行為型模式（Behavioral Patterns）<br>這些模式關注物件間的通訊和責任分配</li></ol>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;物件導向（Object-Oriented Programming, OOP）是一種程式設計範式，強調使用包含數據（屬性）和方法（功能）的物件來設計和構建應用程序。提高軟體的重用性、靈活性和擴充性。&lt;/p&gt;
+&lt;p&gt;而對於物件導向，最基礎需要知道以下：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;一個抽象&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;兩個目的&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;三個特性&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;五個原則&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="OOP" scheme="https://mao-code.github.io/categories/OOP/"/>
+    
+    
+    <category term="OOP" scheme="https://mao-code.github.io/tags/OOP/"/>
+    
+  </entry>
   
   <entry>
     <title>政大Google學生開發者社群-政大通NCCUPass-心得 (第二學期)</title>
@@ -30,22 +55,22 @@
     
     
     
-    <category term="專案" scheme="https://mao-code.github.io/categories/%E5%B0%88%E6%A1%88/"/>
-    
     <category term="GDSC" scheme="https://mao-code.github.io/categories/GDSC/"/>
     
     <category term="心得" scheme="https://mao-code.github.io/categories/%E5%BF%83%E5%BE%97/"/>
     
-    <category term="side project" scheme="https://mao-code.github.io/categories/%E5%B0%88%E6%A1%88/side-project/"/>
-    
     <category term="NCCUPass" scheme="https://mao-code.github.io/categories/GDSC/NCCUPass/"/>
     
+    <category term="專案" scheme="https://mao-code.github.io/categories/%E5%B0%88%E6%A1%88/"/>
     
-    <category term="專案" scheme="https://mao-code.github.io/tags/%E5%B0%88%E6%A1%88/"/>
+    <category term="side project" scheme="https://mao-code.github.io/categories/%E5%B0%88%E6%A1%88/side-project/"/>
+    
     
     <category term="GDSC" scheme="https://mao-code.github.io/tags/GDSC/"/>
     
     <category term="NCCUPass" scheme="https://mao-code.github.io/tags/NCCUPass/"/>
+    
+    <category term="專案" scheme="https://mao-code.github.io/tags/%E5%B0%88%E6%A1%88/"/>
     
   </entry>
   
@@ -274,22 +299,22 @@ style=&quot;width: 70%; margin: 15px auto;&quot;&gt;&lt;br&gt;Source: &lt;a href
     
     
     
-    <category term="專案" scheme="https://mao-code.github.io/categories/%E5%B0%88%E6%A1%88/"/>
-    
     <category term="GDSC" scheme="https://mao-code.github.io/categories/GDSC/"/>
     
     <category term="心得" scheme="https://mao-code.github.io/categories/%E5%BF%83%E5%BE%97/"/>
     
-    <category term="side project" scheme="https://mao-code.github.io/categories/%E5%B0%88%E6%A1%88/side-project/"/>
-    
     <category term="NCCUPass" scheme="https://mao-code.github.io/categories/GDSC/NCCUPass/"/>
     
+    <category term="專案" scheme="https://mao-code.github.io/categories/%E5%B0%88%E6%A1%88/"/>
     
-    <category term="專案" scheme="https://mao-code.github.io/tags/%E5%B0%88%E6%A1%88/"/>
+    <category term="side project" scheme="https://mao-code.github.io/categories/%E5%B0%88%E6%A1%88/side-project/"/>
+    
     
     <category term="GDSC" scheme="https://mao-code.github.io/tags/GDSC/"/>
     
     <category term="NCCUPass" scheme="https://mao-code.github.io/tags/NCCUPass/"/>
+    
+    <category term="專案" scheme="https://mao-code.github.io/tags/%E5%B0%88%E6%A1%88/"/>
     
   </entry>
   

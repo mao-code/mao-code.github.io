@@ -1,74 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>CC-沈浸式線上逛街APP-系統與技術介紹</title>
-    <url>/posts/2012237495/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>接續上一篇的文章，這篇文章會著重介紹這個系統<br>以下是我在YouTube上對這個專案的介紹與Demo：</p>
-<iframe
-    src="https://www.youtube.com/embed/aMGnyI2Xe04">
-</iframe>
-
-<p>這篇文章的內容會與影片很像，主要分為<strong>動機與介紹、重點功能簡介、系統架構與技術</strong>的順序介紹<br>系統功能Demo, 還請觀看影片介紹</p>
-<span id="more"></span>
-<p><img data-src="/images/posts/CC-project-demo/1.png" 
-style="width: 90%; margin: 15px auto;"></p>
-<h2 id="動機與介紹"><a href="#動機與介紹" class="headerlink" title="動機與介紹"></a>動機與介紹</h2><img data-src="/images/posts/CC-project-demo/2.png" style="width: 70%; margin: 15px auto;">
-首先我們主要的TA之一是線上逛街族, 針對這個族群我們統整出簡單的兩點：第一, 他們在線上瀏覽或滑商品時, 通常沒有特定的消費目的, 只是想要滑滑看看, 無目的的瀏覽行為, 第二, 這種行為主要是以消遣、獲得樂趣為目的, 而不一定是真的想要買商品
-
-<hr>
-<img data-src="/images/posts/CC-project-demo/3.png" style="width: 70%; margin: 15px auto;">
-根據上面的族群設定, 我們的專案主要會focus在解決或滿足下面的問題, 第一, 我們是針對無目的性的消費情境底下的需求, 第二, 我們希望帶給使用者沈浸式的體驗, 所謂的沈浸式體驗, 就是在舒服且不受干擾的狀態下, 接收自己有興趣的資訊, 以此讓使用者能在我們這個APP上做消遣、殺時間的動作, 這麼做的目的很大一部分是為了捕捉使用者的微時刻, 這些微時刻的數據可以代表使用者不同時刻的喜好或者決策, 第四，我們這個APP也會瞄準直播的市場與直播平台合作，而這些直播主的煩惱，便是下播後無法持續創造收入，因此我們除了希望能延長商品的生命週期外，也可以透過捕捉使用者行為來提供直播主缺乏的Consumer Insight
-
-<hr>
-<img data-src="/images/posts/CC-project-demo/4.png" style="width: 70%; margin: 15px auto;">
-為了達成以上的目的，我們主要有這幾項手段，第一, 研究推薦演算法與捕捉使用者行為，透過使用者不同時刻的行為數據來作為推薦的依據，而非傳統的電商使用歷史紀錄來做推薦，以次讓使用者能夠在每時每刻接收有興趣的資訊，達到沈浸式的體驗。第二，透過簡潔的介面，降低使用者瀏覽時的壓力，讓使用者更願意停留在APP上，第三，透過分享貼文、追蹤、評論等等的社群機制，讓使用者能夠了解親朋好友們有興趣或者好評的商品，也能夠享受社群的樂趣，增加APP的黏著度，最後，透過APP上種種捕捉使用者行為數據的機制，可以將這些數據提供給與我們合作的第三方廠商，讓廠商更了解使用者的喜好
-
-<h2 id="重點功能簡介"><a href="#重點功能簡介" class="headerlink" title="重點功能簡介"></a>重點功能簡介</h2><img data-src="/images/posts/CC-project-demo/5.png" style="width: 70%; margin: 15px auto;">
-再來介紹一些重點功能的簡短敘述，首先第一個是我們的商品貼文，也是商品的主體，貼文特色主要以滿板設計與資訊收合來達到雜訊最小化的目的，另外後面Demo也會呈現推薦商品的形式，與現在短影音的方式很像，透過推薦與給人耳目一新的商品，帶給使用者殺時間的樂趣，另外，透過商品貼文，也可以成為直播主下播後銷售的利器，與一般電商不同的是，我們主動推薦商家商品，而且是透過使用者當前的行為喜好，而不是被動等待使用者搜尋或是透過購買紀錄來做推薦
-
-<hr>
-<img data-src="/images/posts/CC-project-demo/6.png" style="width: 70%; margin: 15px auto;">
-再來是我們的主頁面，透過滑卡的機制增加互動感，也可以同時捕捉使用者行為，以做到即時推薦，這麼做除了可以增加沈浸體驗，也可以更廣泛的推薦商品，提高曝光程度
-
-<hr>
-<img data-src="/images/posts/CC-project-demo/7.png" style="width: 70%; margin: 15px auto;">
-主頁面與探索頁面都可以透過使用者的滑卡行為、停留時間與點擊率，來彼此優化推薦內容，做到雙向推薦的功能
-
-<hr>
-<img data-src="/images/posts/CC-project-demo/8.png" style="width: 70%; margin: 15px auto;">
-探索頁面除了會推薦使用者感興趣的商品，也會隨機推薦相關商品，增加新奇度，其中最大塊的貼文則為推薦分數最高的商品，透過矩陣式樹狀結構，帶給使用者簡潔與大量瀏覽的感受
-
-<hr>
-<img data-src="/images/posts/CC-project-demo/9.png" style="width: 70%; margin: 15px auto;">
-CC提供商城、買家、直播主追蹤的機制，加上個人化自己的動態牆與留言區，增加社群互動性，以社群的力量增加APP的黏著度
-
-<hr>
-<img data-src="/images/posts/CC-project-demo/10.png" style="width: 70%; margin: 15px auto;">
-分享貼文除了可以增加互動的樂趣，也是提供消費者洞見的大平台
-最重要的是，可以藉由社群的力量，一傳十十傳百，來行銷商品
-
-<h2 id="系統架構與技術"><a href="#系統架構與技術" class="headerlink" title="系統架構與技術"></a>系統架構與技術</h2><p>先附上系統架構圖：<br><img data-src="/images/posts/CC-project-demo/CC_structure.jpeg" style="width: 70%; margin: 15px auto;"></p>
-<p>首先前端主要由Angular寫成，搭配<strong>模組化與物件導向設計，增加程式的可維護性</strong>，最後透過PWA包裝成跨平台的APP<br>藉由Angular能夠模組化與元件化的特性，我們將各個功能切分成不同模組，提升程式低耦合高內聚的特性，另外，Token驗證、路由保護、API攔截器、資料格式化Pipeline等等，也都抽離出來實作，其中，核心的商業邏輯切分在我們的Service模組，與畫面邏輯分離，再藉由依賴注入讓各模組使用，這樣的設計，讓我們的專案在未來更改與維護擴充時非常省時與省力。</p>
-<p>另外一個主要的功能是推薦演算法，我們透過標籤(label)與雅卡爾相似度(Jaccard Similarity)，做了一個Example Based的推薦引擎，主要是用MongoDB pipeline與後端演算構築而成。</p>
-<p>這裡也是我第一次使用前端框架，來寫一個比較完整的專案，由於我是後端出身，所以選擇一個自己寫起來最舒服的Angular框架，有種在寫後端的親切感XD。</p>
-<p>後端主要由NodeJS寫成，資料庫則為MongoDB，一樣是將各個功能進行模組化的拆分，與資料庫索引的優化，以及推薦演算法的實現。</p>
-<p>另外WebServer的部分則是由IIS代理，加上GitLab CI&#x2F;CD &amp; GitLab Runner做到自動化整合與部屬的功能</p>
-<style>
-.video-container
-{
-    padding-top: 60% !important;
-}
-</style>]]></content>
-      <categories>
-        <category>專案</category>
-        <category>side project</category>
-      </categories>
-      <tags>
-        <tag>專案</tag>
-        <tag>side project</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>政大Google學生開發者社群-政大通NCCUPass-心得 (第二學期)</title>
     <url>/posts/3042436019/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>繼上篇<a href="https://mao-code.github.io/posts/277323671/#more">GDSC的心得文</a>，這篇我會介紹我們下學期的開發經歷、得獎、專案簡介以及未來這個專案的走向，屬於一個小小的紀錄心得文！</p>
@@ -121,16 +53,16 @@ style="width: 70%; margin: 15px auto;"></p>
 <h1 id="未來"><a href="#未來" class="headerlink" title="未來"></a>未來</h1><p>政大是我們的第一塊版圖，我們的目標是全台灣的大學，目前先穩紮穩打在政大站穩腳步，在此期間會積極地與其他組織或社團合作、參與各項競賽以及參加創投機構的活動，我們的理念是讓大學生們彼此間的關係更加密切與真實，使他們的生活更加數位化與便利！</p>
 ]]></content>
       <categories>
-        <category>專案</category>
         <category>GDSC</category>
         <category>心得</category>
-        <category>side project</category>
         <category>NCCUPass</category>
+        <category>專案</category>
+        <category>side project</category>
       </categories>
       <tags>
-        <tag>專案</tag>
         <tag>GDSC</tag>
         <tag>NCCUPass</tag>
+        <tag>專案</tag>
       </tags>
   </entry>
   <entry>
@@ -174,16 +106,16 @@ style="width: 70%; margin: 15px auto;"></p>
 <h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>最後，這個專案雖然只是在發展初期，但我希望未來可以發展到我預想的樣子，也非常感謝一路願意跟隨我、幫助我的隊友們，單打獨鬥真的比不上團隊合作👍，也希望各位未來也可以繼續幫助我啦，現在打分享文可能還太早，但我就是想要趁學期末趕快記錄一下哈哈</p>
 ]]></content>
       <categories>
-        <category>專案</category>
         <category>GDSC</category>
         <category>心得</category>
-        <category>side project</category>
         <category>NCCUPass</category>
+        <category>專案</category>
+        <category>side project</category>
       </categories>
       <tags>
-        <tag>專案</tag>
         <tag>GDSC</tag>
         <tag>NCCUPass</tag>
+        <tag>專案</tag>
       </tags>
   </entry>
   <entry>
@@ -423,97 +355,574 @@ img{
       </tags>
   </entry>
   <entry>
-    <title>[Git][Version Control] Git - Setup</title>
-    <url>/posts/731175240/</url>
-    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Setting up the environment of Git and some recommended GUI tools.</p>
-<span id="more"></span>
+    <title>CC-沈浸式線上逛街APP-系統與技術介紹</title>
+    <url>/posts/2012237495/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>接續上一篇的文章，這篇文章會著重介紹這個系統<br>以下是我在YouTube上對這個專案的介紹與Demo：</p>
+<iframe
+    src="https://www.youtube.com/embed/aMGnyI2Xe04">
+</iframe>
 
-<h1 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h1><ol>
-<li><p>Install Git with the link below: (with your OS)<br><a href="%22https://git-scm.com/%22">Git official website</a></p>
-</li>
-<li><p>Type this command to check if it is installed successfully:</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h1 id="Configure-Git-type-commands-in-your-shell"><a href="#Configure-Git-type-commands-in-your-shell" class="headerlink" title="Configure Git (type commands in your shell)"></a>Configure Git (type commands in your shell)</h1><ol>
-<li><p>Set your user name by running the following command:</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Set your email address by running the following command:</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.email youremail@example.com</span><br></pre></td></tr></table></figure></li>
-<li><p>Set up SSH key (for remote repository access. e.g. GitHub)</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure></li>
-</ol>
-<ul>
-<li><p>Press Enter to accept the default file location and passphrase (or set your own if desired).<br>Once the key is generated, run the following command to add it to the SSH agent</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-add ~/.ssh/id_rsa</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Copy the public key to your clipboard by running the following command</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Add the copied public key to your Git hosting platform account (e.g., GitHub, GitLab) by following their documentation.</p>
-</li>
-<li><p>View your ssh keys</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd ~/.ssh</span><br></pre></td></tr></table></figure>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ls</span><br></pre></td></tr></table></figure>
-<ul>
-<li>Use a text editor or command-line tools (such as cat or less) to view the contents of the .pub files and see the public key information: <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat id_rsa.pub</span><br></pre></td></tr></table></figure></li>
-</ul>
-</li>
-</ul>
-<ol start="4">
-<li>You can see your configuration by typing the following commands:<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --list</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h1 id="Recommended-GUI-tools"><a href="#Recommended-GUI-tools" class="headerlink" title="Recommended GUI tools"></a>Recommended GUI tools</h1><p>Both commands and GUI tools are important to Git manupulation.<br>And Here are some recommended Git GUI tools that you can use.</p>
-<ul>
-<li><a href="%22https://www.sourcetreeapp.com/%22">Sourcetree</a></li>
-<li><a href="%22https://www.gitkraken.com/%22">GitKraken</a></li>
-</ul>
-]]></content>
+<p>這篇文章的內容會與影片很像，主要分為<strong>動機與介紹、重點功能簡介、系統架構與技術</strong>的順序介紹<br>系統功能Demo, 還請觀看影片介紹</p>
+<span id="more"></span>
+<p><img data-src="/images/posts/CC-project-demo/1.png" 
+style="width: 90%; margin: 15px auto;"></p>
+<h2 id="動機與介紹"><a href="#動機與介紹" class="headerlink" title="動機與介紹"></a>動機與介紹</h2><img data-src="/images/posts/CC-project-demo/2.png" style="width: 70%; margin: 15px auto;">
+首先我們主要的TA之一是線上逛街族, 針對這個族群我們統整出簡單的兩點：第一, 他們在線上瀏覽或滑商品時, 通常沒有特定的消費目的, 只是想要滑滑看看, 無目的的瀏覽行為, 第二, 這種行為主要是以消遣、獲得樂趣為目的, 而不一定是真的想要買商品
+
+<hr>
+<img data-src="/images/posts/CC-project-demo/3.png" style="width: 70%; margin: 15px auto;">
+根據上面的族群設定, 我們的專案主要會focus在解決或滿足下面的問題, 第一, 我們是針對無目的性的消費情境底下的需求, 第二, 我們希望帶給使用者沈浸式的體驗, 所謂的沈浸式體驗, 就是在舒服且不受干擾的狀態下, 接收自己有興趣的資訊, 以此讓使用者能在我們這個APP上做消遣、殺時間的動作, 這麼做的目的很大一部分是為了捕捉使用者的微時刻, 這些微時刻的數據可以代表使用者不同時刻的喜好或者決策, 第四，我們這個APP也會瞄準直播的市場與直播平台合作，而這些直播主的煩惱，便是下播後無法持續創造收入，因此我們除了希望能延長商品的生命週期外，也可以透過捕捉使用者行為來提供直播主缺乏的Consumer Insight
+
+<hr>
+<img data-src="/images/posts/CC-project-demo/4.png" style="width: 70%; margin: 15px auto;">
+為了達成以上的目的，我們主要有這幾項手段，第一, 研究推薦演算法與捕捉使用者行為，透過使用者不同時刻的行為數據來作為推薦的依據，而非傳統的電商使用歷史紀錄來做推薦，以次讓使用者能夠在每時每刻接收有興趣的資訊，達到沈浸式的體驗。第二，透過簡潔的介面，降低使用者瀏覽時的壓力，讓使用者更願意停留在APP上，第三，透過分享貼文、追蹤、評論等等的社群機制，讓使用者能夠了解親朋好友們有興趣或者好評的商品，也能夠享受社群的樂趣，增加APP的黏著度，最後，透過APP上種種捕捉使用者行為數據的機制，可以將這些數據提供給與我們合作的第三方廠商，讓廠商更了解使用者的喜好
+
+<h2 id="重點功能簡介"><a href="#重點功能簡介" class="headerlink" title="重點功能簡介"></a>重點功能簡介</h2><img data-src="/images/posts/CC-project-demo/5.png" style="width: 70%; margin: 15px auto;">
+再來介紹一些重點功能的簡短敘述，首先第一個是我們的商品貼文，也是商品的主體，貼文特色主要以滿板設計與資訊收合來達到雜訊最小化的目的，另外後面Demo也會呈現推薦商品的形式，與現在短影音的方式很像，透過推薦與給人耳目一新的商品，帶給使用者殺時間的樂趣，另外，透過商品貼文，也可以成為直播主下播後銷售的利器，與一般電商不同的是，我們主動推薦商家商品，而且是透過使用者當前的行為喜好，而不是被動等待使用者搜尋或是透過購買紀錄來做推薦
+
+<hr>
+<img data-src="/images/posts/CC-project-demo/6.png" style="width: 70%; margin: 15px auto;">
+再來是我們的主頁面，透過滑卡的機制增加互動感，也可以同時捕捉使用者行為，以做到即時推薦，這麼做除了可以增加沈浸體驗，也可以更廣泛的推薦商品，提高曝光程度
+
+<hr>
+<img data-src="/images/posts/CC-project-demo/7.png" style="width: 70%; margin: 15px auto;">
+主頁面與探索頁面都可以透過使用者的滑卡行為、停留時間與點擊率，來彼此優化推薦內容，做到雙向推薦的功能
+
+<hr>
+<img data-src="/images/posts/CC-project-demo/8.png" style="width: 70%; margin: 15px auto;">
+探索頁面除了會推薦使用者感興趣的商品，也會隨機推薦相關商品，增加新奇度，其中最大塊的貼文則為推薦分數最高的商品，透過矩陣式樹狀結構，帶給使用者簡潔與大量瀏覽的感受
+
+<hr>
+<img data-src="/images/posts/CC-project-demo/9.png" style="width: 70%; margin: 15px auto;">
+CC提供商城、買家、直播主追蹤的機制，加上個人化自己的動態牆與留言區，增加社群互動性，以社群的力量增加APP的黏著度
+
+<hr>
+<img data-src="/images/posts/CC-project-demo/10.png" style="width: 70%; margin: 15px auto;">
+分享貼文除了可以增加互動的樂趣，也是提供消費者洞見的大平台
+最重要的是，可以藉由社群的力量，一傳十十傳百，來行銷商品
+
+<h2 id="系統架構與技術"><a href="#系統架構與技術" class="headerlink" title="系統架構與技術"></a>系統架構與技術</h2><p>先附上系統架構圖：<br><img data-src="/images/posts/CC-project-demo/CC_structure.jpeg" style="width: 70%; margin: 15px auto;"></p>
+<p>首先前端主要由Angular寫成，搭配<strong>模組化與物件導向設計，增加程式的可維護性</strong>，最後透過PWA包裝成跨平台的APP<br>藉由Angular能夠模組化與元件化的特性，我們將各個功能切分成不同模組，提升程式低耦合高內聚的特性，另外，Token驗證、路由保護、API攔截器、資料格式化Pipeline等等，也都抽離出來實作，其中，核心的商業邏輯切分在我們的Service模組，與畫面邏輯分離，再藉由依賴注入讓各模組使用，這樣的設計，讓我們的專案在未來更改與維護擴充時非常省時與省力。</p>
+<p>另外一個主要的功能是推薦演算法，我們透過標籤(label)與雅卡爾相似度(Jaccard Similarity)，做了一個Example Based的推薦引擎，主要是用MongoDB pipeline與後端演算構築而成。</p>
+<p>這裡也是我第一次使用前端框架，來寫一個比較完整的專案，由於我是後端出身，所以選擇一個自己寫起來最舒服的Angular框架，有種在寫後端的親切感XD。</p>
+<p>後端主要由NodeJS寫成，資料庫則為MongoDB，一樣是將各個功能進行模組化的拆分，與資料庫索引的優化，以及推薦演算法的實現。</p>
+<p>另外WebServer的部分則是由IIS代理，加上GitLab CI&#x2F;CD &amp; GitLab Runner做到自動化整合與部屬的功能</p>
+<style>
+.video-container
+{
+    padding-top: 60% !important;
+}
+</style>]]></content>
       <categories>
-        <category>Git 系列文</category>
+        <category>專案</category>
+        <category>side project</category>
       </categories>
       <tags>
-        <tag>Git</tag>
-        <tag>Version Control</tag>
+        <tag>專案</tag>
+        <tag>side project</tag>
       </tags>
   </entry>
   <entry>
-    <title>[Git][Version Control] Git - Introduction</title>
-    <url>/posts/2571684277/</url>
-    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Here is the series of Git full tutorial. I will cover the important and advanced topics that you should know in git. By reading this series, you are able to know the basic(but important) concept of Git and the technique of using git. Hope you can gain a lot ! </p>
+    <title>[NLP][ML] Transformer (1) - Structure</title>
+    <url>/posts/4283617483/</url>
+    <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>The Transformer is a <strong>deep learning architecture</strong> introduced in the paper “Attention Is All You Need” by Vaswani et al. in 2017. It revolutionized the field of natural language processing (NLP) and brought significant advancements in various <strong>sequence-to-sequence tasks</strong>. The Transformer architecture, thanks to its <strong>attention mechanisms</strong>, enables efficient processing of sequential data while <strong>capturing long-range dependencies</strong>.</p>
+<hr>
+<p>Transformer is a <strong>Seq2Seq(Sequence to Sequence) model</strong>. It uses <strong>Encoder-Decoder structure</strong><br>Below is a simple diagram：</p>
+<p><img data-src="/images/posts/NLP-series/transformer-1.gif" 
+style="width: 70%; margin: 15px auto;"><br>Source: <span class="exturl" data-url="aHR0cHM6Ly9haS5nb29nbGVibG9nLmNvbS8yMDE2LzA5L2EtbmV1cmFsLW5ldHdvcmstZm9yLW1hY2hpbmUuaHRtbA==">https://ai.googleblog.com/2016/09/a-neural-network-for-machine.html<i class="fa fa-external-link-alt"></i></span></p>
+<p>The line between Encoder and Decoder represents the “Attention”.<br>The thicker the line, the more the Decoder below pays more attention to some Chinese characters above when generating an English word.</p>
+<span id="more"></span>
+<p>In the below sections, I will introduce the structure of transformer and the attention machanism.<br>For the <strong>detail explaination of key components in transformer and the details of attention</strong>, you can refer to the <a href="https://mao-code.github.io/posts/2443192075/#more">next article</a>.</p>
+<h1 id="Structure"><a href="#Structure" class="headerlink" title="Structure"></a>Structure</h1><p>Below is the strucutre of Transformer.</p>
+<p><img data-src="/images/posts/NLP-series/transformer-2.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>The part <strong>on the left in the figure is the Encoder, and the part on the right is the Decoder</strong>.<br>You can notice that the structures of the left and right sides are actually quite similar.<br>The Encoder and Decoder usually contain many blocks with the same layer structure, and each layer will have <strong>multi-head attention and Feed Forward Network</strong>.</p>
+<h2 id="Encoder"><a href="#Encoder" class="headerlink" title="Encoder"></a>Encoder</h2><p><img data-src="/images/posts/NLP-series/transformer-3.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>We just mentioned that the Encoder will be divided into many blocks.<br>We will <strong>first convert a whole row of input sequence data into a whole row of vectors</strong>, and then the processing steps of each block are as follows:</p>
+<ol>
+<li>Firstly, after considering all the input information of the input vector through self-attention, output a row of vectors. (I will introduce how self-attention considers all input information later)</li>
+<li>Throw this row of vectors into the feed forward network of Fully Connected (FC).</li>
+<li>The final output vector is the output of the block.</li>
+</ol>
+<hr>
+<p>However, what the block does in the original Transformer is more complicated, the details are as follows:<br><img data-src="/images/posts/NLP-series/transformer-4.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>Suppose we will follow the method just now, and the <strong>output result of the input vector after self-attention is called a</strong>. we also need to <strong>pull the original input (we first call it b )</strong> and add it to a to get a+b . Such a network architecture is called a <strong>residual connection</strong>.</p>
+<p>After that, we will do <strong>layer normalization</strong> on the result of a+b. It will calculate the average $m$(mean) and standard deviation $\sigma$(standard deviation) of the input vector, and then calculate it according to the formula: divide the input minus the mean $m$ by the standard deviation $\sigma$. It’s here that we really get <strong>the input of the FC network</strong>.</p>
+<p>The <strong>FC network also has a residual architecture</strong>, so we will add the input of the FC network to its output to get a new output, and then do layer normalization again. This is the <strong>real output of a block in Transformer Encoder</strong>.</p>
+<hr>
+<p>Now, let’s look back at the structure diagram of Encoder:</p>
+<p><img data-src="/images/posts/NLP-series/transformer-5.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>First, in the place of input, <strong>convert the input into a vector through Embedding</strong>, and then add <strong>positional encoding</strong> (because if only self-attention is used, there will be a lack of unknown information)</p>
+<p>Next we see <strong>Multi-Head Attention</strong>, which is <strong>the block of self-attention and Add&amp;Norm means residual plus layer normalization</strong>.</p>
+<p>Finally, <strong>doing Add&amp;Norm again after FC’s feed forward network is the output of the whole block</strong>, and this block will be <strong>repeated n times</strong>.</p>
+<h2 id="Decoder"><a href="#Decoder" class="headerlink" title="Decoder"></a>Decoder</h2><p>Then let us look at the Decoder:</p>
+<p><img data-src="/images/posts/NLP-series/transformer-2.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p><strong>Input the sequence obtained at the previous time</strong>, and then perform the same Embedding and Positional Encoding and then enter the block repeated N times.<br>The difference is that there is an extra <strong>“Masked” (note the red box) in the Multi-Head Attention</strong> when we first entered. What does it mean?</p>
+<p>Masked means that the model will <strong>only pay attention to the part it has already generated</strong>, and <strong>will not accidentally pay attention to the words generated in the future</strong>. Since the output of the Decoder is generated <strong>one by one</strong>, it has no way to consider its future input. It seems a bit vague to say this, and I will make it clearer when I talk about self-attention in the next article.</p>
+<p>After repeating the block N times, after the <strong>Linear Layer and Softmax</strong>, we can get the output <strong>probability distribution</strong> we want, and we can sample according to this distribution or take the value with the highest probability to get the output sequence.</p>
+<p>There is still one of the most critical self-attention mechanisms that has not been explained in detail. Let’s introduce how it pays attention to all input sequences and performs parallel processing in the next article!</p>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MDM5Mg==">iThome - Day 27 Transformer (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MTI0Mg==">iThome - Day 28 Self-Attention (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9oYWNrbWQuaW8vQGFibGl1L0JrWG16REJtcg==">Transformer 李宏毅深度學習 (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9zcGVlY2guZWUubnR1LmVkdS50dy9+aHlsZWUvbWwvbWwyMDIxLWNvdXJzZS1kYXRhL3NlcTJzZXFfdjkucGRm">Transformer 李宏毅老師簡報<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQzJnZ2p0dXVXdnhySEhIaWFESDFkbFE=">李宏毅老師YouTube channel<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzE3MDYuMDM3NjI=">Attention is all you need (paper)<i class="fa fa-external-link-alt"></i></span></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>ML</tag>
+        <tag>AI</tag>
+        <tag>NLP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[NLP][ML] Adapters &amp; LoRA</title>
+    <url>/posts/38266156/</url>
+    <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>In this article, I will provide an introduction to adapters and LoRA, including their <strong>definitions, purposes, and functions.</strong> I will also explore their various <strong>applications</strong> and, lastly, delve into the distinctions that set them apart(the <strong>differences between them</strong>).</p>
 <span id="more"></span>
 
-<h1 id="Series-Outline"><a href="#Series-Outline" class="headerlink" title="Series Outline"></a>Series Outline</h1><p>I will follow the outline below in this series.</p>
-<ul>
-<li>Introduction (this post)</li>
-<li>Setup</li>
-<li>Version Control &amp; Commands (Basics)</li>
-<li>Branching &amp; Merging</li>
-<li>Conflict</li>
-<li>Collaboration &amp; GitHub</li>
-<li>Advanced Topics</li>
+<h1 id="Adapter"><a href="#Adapter" class="headerlink" title="Adapter"></a>Adapter</h1><h2 id="What-are-Adapters"><a href="#What-are-Adapters" class="headerlink" title="What are Adapters?"></a>What are Adapters?</h2><p>According to <span class="exturl" data-url="aHR0cHM6Ly93d3cuYW5hbHl0aWNzdmlkaHlhLmNvbS9ibG9nLzIwMjMvMDQvdHJhaW5pbmctYW4tYWRhcHRlci1mb3Itcm9iZXJ0YS1tb2RlbC1mb3Itc2VxdWVuY2UtY2xhc3NpZmljYXRpb24tdGFzay8jOn46dGV4dD1BZGFwdGVycyUyMGFyZSUyMGxpZ2h0d2VpZ2h0JTIwYWx0ZXJuYXRpdmVzJTIwdG8sbW9kdWxhciUyMGFwcHJvYWNoJTIwdG8lMjB0cmFuc2ZlciUyMGxlYXJuaW5nLg==">this article<i class="fa fa-external-link-alt"></i></span><br>We can give the definition of adapters:</p>
+<blockquote>
+<p><strong>Adapters are lightweight alternatives to fully fine-tuned pre-trained models.</strong><br>Currently, <strong>adapters are implemented as small feedforward neural networks</strong> that are <strong>inserted between layers of a pre-trained model.</strong><br>They provide a <strong>parameter-efficient, computationally efficient, and modular approach</strong> to transfer learning. The following image shows added adapter.</p>
+</blockquote>
+<p>The image below clearly shows the usage flow of apadters<br>(Source: <span class="exturl" data-url="aHR0cHM6Ly9hZGFwdGVyaHViLm1sLw==">AdapterHub<i class="fa fa-external-link-alt"></i></span>)<br><img data-src="/images/posts/NLP-series/adapter.gif" 
+style="width: 70%; margin: 15px auto;"></p>
+<blockquote>
+<p>During training, <strong>all the weights of the pre-trained model are frozen</strong> such that only the adapter weights<br>are updated, resulting in <strong>modular knowledge representations</strong>. They can be easily <strong>extracted, interchanged,</strong><br><strong>independently distributed, and dynamically plugged</strong> into a language model. These properties highlight the<br>potential of adapters in advancing the NLP field astronomically.</p>
+</blockquote>
+<h2 id="What-is-the-purpose-and-function-of-adapters"><a href="#What-is-the-purpose-and-function-of-adapters" class="headerlink" title="What is the purpose and function of adapters?"></a>What is the purpose and function of adapters?</h2><ol>
+<li>Purpose:<br>Large Language Models are computationally expensive and memory-intensive. <strong>Fine-tuning the entire model for each specific task</strong> can be impractical due to resource constraints. Adapters provide a solution by allowing for more efficient and <strong>targeted modifications</strong> to the model for different tasks. This approach <strong>saves both computational power and memory</strong>, enabling the deployment of a single pre-trained model for multiple tasks.</li>
+<li>Functions:<ol>
+<li><p>Efficient Fine-tuning: Instead of fine-tuning the entire model, adapters enable <strong>fine-tuning only a small subset of parameters</strong> related to a specific task. This fine-tuning process is faster and requires fewer resources.</p>
+</li>
+<li><p>Task-specific Modifications: Adapters allow you to add <strong>task-specific layers or modifications</strong> to the pre-trained model without altering the core architecture. This makes it easier to adapt the model for various tasks like text classification, named entity recognition, sentiment analysis, etc.</p>
+</li>
+<li><p>Versatility: With adapters, a single pre-trained LLM can be <strong>adapted for a wide range of tasks.</strong> This versatility is beneficial in scenarios where deploying and maintaining separate models for each task might be impractical.</p>
+</li>
+<li><p>Interoperability: Adapters enable the combination of pre-trained models with task-specific modifications in a standardized way. This facilitates sharing, collaboration, and research in the NLP community.</p>
+</li>
+<li><p>Transfer Learning: Adapters enhance the <strong>effectiveness of transfer learning.</strong> Models pre-trained on <strong>large and diverse datasets can be fine-tuned on smaller</strong>, task-specific datasets using adapters, improving performance on specific tasks.</p>
+</li>
+<li><p>Incremental Updates: Adapters allow for easy updates to the model. Instead of retraining the entire model, only the adapters related to a specific task need to be fine-tuned when new data or requirements arise.</p>
+</li>
+</ol>
+</li>
+</ol>
+<p>Overall, adapters are a <strong>mechanism that strikes a balance between the benefits of fine-tuning for specific tasks and the efficiency of reusing pre-trained LLMs.</strong> They enable the NLP community to leverage the power of these large models while tailoring them to a diverse set of applications.</p>
+<h2 id="The-applications-of-adapters"><a href="#The-applications-of-adapters" class="headerlink" title="The applications of adapters"></a>The applications of adapters</h2><p>I list some practical applications that can use adapters to enhance.</p>
+<ol>
+<li><p>Efficient Task Adaptation: Adapters make it possible to fine-tune a pretrained model for specific tasks with minimal computational resources and time. This is particularly useful for industries that require quick adaptation to changing trends or requirements.</p>
+</li>
+<li><p>Multilingual Applications: Adapters can be used to enable a pretrained model to perform tasks in multiple languages. This is valuable for businesses operating in global markets.</p>
+</li>
+<li><p>Domain-Specific NLP: Adapting models with domain-specific adapters (e.g., medical, legal, financial) enhances their performance on tasks specific to those domains.</p>
+</li>
+<li><p>Personalization: Adapters can be used to personalize a general-purpose model for individual users or contexts, leading to more relevant and tailored responses.</p>
+</li>
+</ol>
+<h1 id="LoRA-Low-Rank-Adaptation"><a href="#LoRA-Low-Rank-Adaptation" class="headerlink" title="LoRA (Low-Rank Adaptation)"></a>LoRA (Low-Rank Adaptation)</h1><h2 id="What-is-LoRA"><a href="#What-is-LoRA" class="headerlink" title="What is LoRA?"></a>What is LoRA?</h2><ul>
+<li>Low-Rank Adaptation, or LoRA, is proposed, which <strong>freezes the pre-trained model weights</strong> and <strong>injects trainable rank decomposition matrices into each layer</strong> of the <strong>Transformer</strong> architecture, greatly <strong>reducing the number of trainable parameters</strong> for downstream tasks.</li>
 </ul>
+<p>And let’s see the full fine-tuning definition:</p>
+<ul>
+<li>Full fine-tuning LLM, which <strong>retrains all model parameters</strong>, becomes less feasible. Using GPT-3 175B as an example — deploying independent instances of fine-tuned models, each with 175B parameters, is prohibitively expensive.</li>
+</ul>
+<p>In <span class="exturl" data-url="aHR0cHM6Ly9iZHRlY2h0YWxrcy5jb20vMjAyMy8wNS8yMi93aGF0LWlzLWxvcmEv">this article<i class="fa fa-external-link-alt"></i></span>, it clearly compare the fine-tuning and LoRA approaches. And in <span class="exturl" data-url="aHR0cHM6Ly9zaC10c2FuZy5tZWRpdW0uY29tL2JyaWVmLXJldmlldy1sb3JhLWxvdy1yYW5rLWFkYXB0YXRpb24tb2YtbGFyZ2UtbGFuZ3VhZ2UtbW9kZWxzLWZhZjVkZGQ1ODAyZiM6fjp0ZXh0PUxvUkElMkMlMjBMb3clMkRSYW5rJTIwTExNJTIwRmluZSUyRFR1bmluZyUyQyUyMFJlZHVjZSUyMFJlcXVpcmVkJTIwTWVtb3J5JnRleHQ9TG93JTJEUmFuayUyMEFkYXB0YXRpb24lMkMlMjBvciUyMExvUkEsdHJhaW5hYmxlJTIwcGFyYW1ldGVycyUyMGZvciUyMGRvd25zdHJlYW0lMjB0YXNrcy4=">this article<i class="fa fa-external-link-alt"></i></span>, it dives more into the machanism of LoRA. If you wnat to know the full knowledge, you can refer to <span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzIxMDYuMDk2ODU=">the paper of LoRA<i class="fa fa-external-link-alt"></i></span>.<br>In the next sections, I will introduce more ideas of LoRA based on these references. Note that I only organize the contents of these articles and add some mark and note on my own.</p>
 <hr>
-<h1 id="Introduction-to-Git-A-Distributed-Version-Control-System"><a href="#Introduction-to-Git-A-Distributed-Version-Control-System" class="headerlink" title="Introduction to Git: A Distributed Version Control System"></a>Introduction to Git: A Distributed Version Control System</h1><p>Git is a powerful and widely used distributed version control system designed to track changes in software development projects. It provides developers with the ability to collaborate on projects efficiently, manage codebases effectively, and easily track and revert changes.</p>
-<h2 id="Distributed-Version-Control-System"><a href="#Distributed-Version-Control-System" class="headerlink" title="Distributed Version Control System"></a>Distributed Version Control System</h2><p>In traditional software development, changes to a codebase were often managed through file-based systems or centralized version control systems. However, these approaches had limitations in terms of collaboration, scalability, and flexibility. Git emerged as a solution to these challenges, offering a distributed and decentralized approach to version control.</p>
-<p>The special point of Git is that it supports distributed version control and can also easily share codes among multiple nodes.</p>
-<p><img data-src="/images/posts/Git-Series/dist-ver-ctr.png" 
+<h3 id="How-does-fine-tuning-LLMs-work"><a href="#How-does-fine-tuning-LLMs-work" class="headerlink" title="How does fine-tuning LLMs work?"></a>How does fine-tuning LLMs work?</h3><p>Open-source LLMs such as LLaMA,Vicuna are foundation models that <strong>have been pre-trained on hundreds of billions of words.</strong> Developers and machine learning engineers can download the model with the <strong>pre-trained weights</strong> and <strong>fine-tune it for downstream tasks</strong> such as <span class="exturl" data-url="aHR0cHM6Ly9iZHRlY2h0YWxrcy5jb20vMjAyMy8wMS8xNi93aGF0LWlzLXJsaGYv">instruction following<i class="fa fa-external-link-alt"></i></span>.</p>
+<p>The model is provided input from the <strong>fine-tuning dataset</strong>. It then <strong>predicts the next tokens and compares its output with the ground truth.</strong> It then <strong>adjusts the weights(gradient)</strong> to correct its predictions. By doing this over and over, the LLM becomes fine-tuned to the downstream task.</p>
+<p><img data-src="/images/posts/NLP-series/LLM-fintune.png" 
 style="width: 70%; margin: 15px auto;"></p>
-<h2 id="Branch"><a href="#Branch" class="headerlink" title="Branch"></a>Branch</h2><p>Git manages code based on a tree structure, allowing branches to be created, merged, and deleted, and code versions to be saved at any time.</p>
-<p><img data-src="/images/posts/Git-Series/branch.png" 
+<p>(Source: <span class="exturl" data-url="aHR0cHM6Ly9iZHRlY2h0YWxrcy5jb20vMjAyMy8wNS8yMi93aGF0LWlzLWxvcmEv">What is low-rank adaptation (LoRA)?<i class="fa fa-external-link-alt"></i></span>)</p>
+<h3 id="The-idea-of-LoRA"><a href="#The-idea-of-LoRA" class="headerlink" title="The idea of LoRA"></a>The idea of LoRA</h3><p>Now, let’s make a small modification to the fine-tuning process. In this new method, we <strong>freeze the original weights of the model and don’t modify them during the fine-tuning process.</strong> Instead, we apply the modifications to a <strong>separate set of weights</strong> and we add their new values to the original parameters. Let’s call these two sets <strong>“pre-trained” and “fine-tuned” weights</strong>.</p>
+<blockquote>
+<p><strong>Separating the pre-trained and fine-tuned parameters is an important part of LoRA.</strong><br><img data-src="/images/posts/NLP-series/LoRA-1.png" 
 style="width: 70%; margin: 15px auto;"></p>
-<h2 id="Snapshot"><a href="#Snapshot" class="headerlink" title="Snapshot"></a>Snapshot</h2><p>Git saves full snapshots of files, rather than differences, making it easy to restore all historical versions of files.</p>
-<p><img data-src="/images/posts/Git-Series/snapshot.jpeg" 
-style="width: 70%; margin: 15px auto;"></p>
+</blockquote>
+<h4 id="Low-rank-adaptation"><a href="#Low-rank-adaptation" class="headerlink" title="Low-rank adaptation"></a>Low-rank adaptation</h4><p>Before moving on to LoRA, let’s think about our <strong>model parameters as very large matrices</strong>. If you remember your linear algebra class, <strong>matrices can form vector spaces</strong>. In this case, we’re talking about a <strong>very large vector space with many dimensions</strong> that models language.</p>
+<p>Every matrix has a <strong>“rank”</strong>, which is <strong>the number of linearly independent columns it has</strong>. If a column is linearly independent, it means that <strong>it can’t be represented as a combination of other columns in the matrix</strong>. On the other hand, a dependent column is one that can be represented as a combination of one or more columns in the same matrix. You can remove dependent columns from a matrix without losing information.</p>
+<p>LoRA, proposed in a <span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzIxMDYuMDk2ODU=">paper<i class="fa fa-external-link-alt"></i></span> by researchers at Microsoft, suggests that when fine-tuning an LLM for a downstream task, <strong>you don’t need the full-rank weight matrix.</strong> They proposed that you could preserve most of the learning capacity of the model while <strong>reducing the dimension of the downstream parameters.</strong> (This is why it makes sense to separate the pre-trained and fine-tuned weights.)</p>
 <hr>
-<h1 id="Recommended-Resources"><a href="#Recommended-Resources" class="headerlink" title="Recommended Resources"></a>Recommended Resources</h1><p><a href="%22https://www.youtube.com/watch?v=8JJ101D3knE%22">Mosh Git Tutorail</a></p>
+<p><img data-src="/images/posts/NLP-series/LoRA-2.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>Basically, in LoRA, you create <strong>two downstream weight matrices</strong>. One <strong>transforms the input parameters from the original dimension to the low-rank dimension</strong>. And the second matrix <strong>transforms the low-rank data to the output dimensions of the original model</strong>.</p>
+<p>During training, <strong>modifications are made to the LoRA parameters</strong>, which are now much fewer than the original weights. This is why they can be trained much faster and at a fraction of the cost of doing full fine-tuning. <strong>At inference time, the output of LoRA is added to the pre-trained parameters to calculate the final values.</strong></p>
+<h4 id="More-detail"><a href="#More-detail" class="headerlink" title="More detail"></a>More detail</h4><p><img data-src="/images/posts/NLP-series/LoRA-3.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<ul>
+<li>For a pre-trained weight matrix $W_0$, its update is constrained by representing the latter with a low-rank decomposition:</li>
+</ul>
+<p>$$\begin{equation}<br>   W_0 + \Delta{W} &#x3D; W_0 + BA<br>\end{equation}$$</p>
+<ul>
+<li>During training, <strong>$W_0$ is frozen</strong> and does not receive gradient updates, while <strong>A and B contain trainable parameters</strong>.</li>
+<li>For $h&#x3D;W_0$, the modified forward pass yields:</li>
+</ul>
+<p>$$\begin{equation}<br>   h &#x3D; W_0x + \Delta{W}x &#x3D; W_0x + BAx<br>\end{equation}$$</p>
+<ul>
+<li><p>A random <strong>Gaussian initialization is used for A</strong> and <strong>zero is used for B</strong>, so $\Delta{W}&#x3D;BA$ is zero at the beginning of training. (The method of initializing the weights)</p>
+</li>
+<li><p>One of the advantages is that when deployed in production, we can <strong>explicitly compute and store $W&#x3D;W_0+BA$</strong> and perform inference as usual. <strong>No additional latency</strong> compared to other methods, such as appending more layers.</p>
+</li>
+</ul>
+<p>You can see the implementation and more detail of LoRA in <span class="exturl" data-url="aHR0cHM6Ly95b3V0dS5iZS9kQS1OaEN0cnJWRQ==">this video<i class="fa fa-external-link-alt"></i></span><br>and <span class="exturl" data-url="aHR0cHM6Ly9ibG9nLm1sNi5ldS9sb3ctcmFuay1hZGFwdGF0aW9uLWEtdGVjaG5pY2FsLWRlZXAtZGl2ZS03ODJkZWM5OTU3NzI=">this article<i class="fa fa-external-link-alt"></i></span>.</p>
+<h2 id="What-is-the-purpose-and-function-of-LoRA"><a href="#What-is-the-purpose-and-function-of-LoRA" class="headerlink" title="What is the purpose and function of LoRA?"></a>What is the purpose and function of LoRA?</h2><ul>
+<li>Purpose<ul>
+<li>The purpose of LoRA is to make it easier and more efficient to fine-tune LLMs for downstream tasks.</li>
+</ul>
+</li>
+<li>Function<ul>
+<li>The function of LoRA is to decompose the LLM into a low-rank representation and then adapt this representation to the target task.</li>
+<li>Here are the benefits:</li>
+</ul>
+</li>
+<li>Reduced number of parameters: The low-rank representation has a much smaller number of parameters than the original LLM, which can make it faster to train and easier to deploy.</li>
+<li>Improved performance: The low-rank representation is able to capture the most important features of the LLM, which can lead to improved performance on the downstream task.</li>
+</ul>
+<h2 id="The-applications-of-LoRA"><a href="#The-applications-of-LoRA" class="headerlink" title="The applications of LoRA"></a>The applications of LoRA</h2><ul>
+<li>Fine-tuning large language models for downstream tasks:<br>LoRA can be used to fine-tune large language models (LLMs) for a variety of downstream tasks, such as question answering, summarization, and translation. This can <strong>make LLMs more accessible and easier to use for a wider range of applications.</strong></li>
+<li>Improving the efficiency of machine learning models:<br> LoRA can be used to improve the efficiency of machine learning models by reducing the number of parameters. This can <strong>make models faster to train and easier to deploy</strong>.</li>
+<li>Compressing large datasets:<br>LoRA can be used to <strong>compress large datasets by representing them in a low-rank format</strong>. This can make datasets easier to <strong>store and transmit</strong>.</li>
+<li>Improving the security of machine learning models:<br>LoRA can be used to improve the security of machine learning models by making them more resistant to adversarial attacks.</li>
+</ul>
+<h1 id="Differences-between-adapter-and-LoRA"><a href="#Differences-between-adapter-and-LoRA" class="headerlink" title="Differences between adapter and LoRA"></a>Differences between adapter and LoRA</h1><table>
+   <thead>
+      <th>Feature</th>
+      <th>Adapter</th>
+      <th>LoRA</th>
+   </thead>
+   <tbody>
+      <tr>
+         <td>Approach</td>
+         <td>Adds additional layers to the pretrained model	</td>
+         <td>Decomposes the pretrained model into a low-rank representation
+</td>
+      </tr>
+      <tr>
+         <td>Parameters</td>
+         <td>Adds a small number of parameters to the pretrained model</td>
+         <td>Reduces the number of parameters in the pretrained model</td>
+      </tr>
+      <tr>
+         <td>Performance</td>
+         <td>Effective for a variety of downstream tasks</td>
+         <td>Particularly effective for tasks that require a large number of parameters</td>
+      </tr>
+      <tr>
+         <td>Speed</td>
+         <td>Can be faster to train than LoRA</td>
+         <td>Can be faster at inference time</td>
+      </tr>
+      <tr>
+         <td>Memory usage</td>
+         <td>Can use more memory than LoRA</td>
+         <td></td>
+      </tr>
+   </tbody>
+</table>
+
+<p>In general, adapters are a good choice for tasks that require a small number of parameters and can be trained quickly, while LoRA is a good choice for tasks that require a large number of parameters and need to be fast at inference time.</p>
+<h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuYW5hbHl0aWNzdmlkaHlhLmNvbS9ibG9nLzIwMjMvMDQvdHJhaW5pbmctYW4tYWRhcHRlci1mb3Itcm9iZXJ0YS1tb2RlbC1mb3Itc2VxdWVuY2UtY2xhc3NpZmljYXRpb24tdGFzay8jOn46dGV4dD1BZGFwdGVycyUyMGFyZSUyMGxpZ2h0d2VpZ2h0JTIwYWx0ZXJuYXRpdmVzJTIwdG8sbW9kdWxhciUyMGFwcHJvYWNoJTIwdG8lMjB0cmFuc2ZlciUyMGxlYXJuaW5nLg==">(Recommend) Training an Adapter for RoBERTa Model for Sequence Classification Task<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9hZGFwdGVyaHViLm1sLw==">AdapterHub<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9kb2NzL2RpZmZ1c2Vycy90cmFpbmluZy9sb3JhIzp+OnRleHQ9TG93JTJEUmFuayUyMEFkYXB0YXRpb24lMjBvZiUyMExhcmdlJTIwTGFuZ3VhZ2UlMjBNb2RlbHMlMjAoTG9SQSklMjBpcyx0cmFpbnMlMjB0aG9zZSUyMG5ld2x5JTIwYWRkZWQlMjB3ZWlnaHRzLg==">Low-Rank Adaptation of Large Language Models (LoRA) (Huggingface)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9zaC10c2FuZy5tZWRpdW0uY29tL2JyaWVmLXJldmlldy1sb3JhLWxvdy1yYW5rLWFkYXB0YXRpb24tb2YtbGFyZ2UtbGFuZ3VhZ2UtbW9kZWxzLWZhZjVkZGQ1ODAyZiM6fjp0ZXh0PUxvUkElMkMlMjBMb3clMkRSYW5rJTIwTExNJTIwRmluZSUyRFR1bmluZyUyQyUyMFJlZHVjZSUyMFJlcXVpcmVkJTIwTWVtb3J5JnRleHQ9TG93JTJEUmFuayUyMEFkYXB0YXRpb24lMkMlMjBvciUyMExvUkEsdHJhaW5hYmxlJTIwcGFyYW1ldGVycyUyMGZvciUyMGRvd25zdHJlYW0lMjB0YXNrcy4=">Brief Review — LoRA: Low-Rank Adaptation of Large Language Models<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9iZHRlY2h0YWxrcy5jb20vMjAyMy8wNS8yMi93aGF0LWlzLWxvcmEv">What is low-rank adaptation (LoRA)?<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzIxMDYuMDk2ODU=">LoRA: Low-Rank Adaptation of Large Language Models (Paper)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9ibG9nLm1sNi5ldS9sb3ctcmFuay1hZGFwdGF0aW9uLWEtdGVjaG5pY2FsLWRlZXAtZGl2ZS03ODJkZWM5OTU3NzI=">(Recommend) Low Rank Adaptation: A Technical Deep Dive<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly95b3V0dS5iZS9kQS1OaEN0cnJWRQ==">Low-rank Adaption of Large Language Models: Explaining the Key Concepts Behind LoRA (Video)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1VczVaRnAxNlBhVQ==">Fine-tuning LLMs with PEFT and LoRA<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9ibG9nL3BlZnQ=">PEFT: Parameter-Efficient Fine-Tuning of Billion-Scale Models on Low-Resource Hardware<i class="fa fa-external-link-alt"></i></span></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>ML</tag>
+        <tag>AI</tag>
+        <tag>NLP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[NLP][ML] Transformer (2) - Attention &amp; Summary</title>
+    <url>/posts/2443192075/</url>
+    <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>Self-attention allows the model to <strong>weigh the importance of different parts of an input sequence against each other</strong>, capturing <strong>relationships</strong> and dependencies between elements within the sequence. This is particularly powerful for tasks involving sequential or contextual information, such as language translation, text generation, and more.</p>
+<p>What Self-Attention wants to do is to replace what RNN can do<br>Its output&#x2F;input is the same as RNN, and its biggest advantages are:</p>
+<ul>
+<li>Can parallelize operations</li>
+<li>Each output vector has seen the entire input sequence. So there is no need to stack several layers like CNN.</li>
+</ul>
+<span id="more"></span>
+<h1 id="Difference-between-attention-and-self-attention"><a href="#Difference-between-attention-and-self-attention" class="headerlink" title="Difference between attention and self-attention"></a>Difference between attention and self-attention</h1><p><strong>attention is a broader concept of selectively focusing on information</strong>, while <strong>self-attention is a specific implementation of this concept</strong> where elements within the same sequence are attended to. Self-attention is a fundamental building block of the Transformer architecture, allowing it to capture relationships and dependencies within sequences effectively.</p>
+<h1 id="Attention-Machanism"><a href="#Attention-Machanism" class="headerlink" title="Attention (Machanism)"></a>Attention (Machanism)</h1><p>main idea:<br>use <strong>triples</strong><br>$$&lt;Q,K,V&gt;$$</p>
+<p>Represents the <strong>attention mechanism</strong>, expresses the <strong>similarity between Query and Key</strong>, and then assigns the value of <strong>Value according to the similarity</strong><br><strong>formula</strong>:<br>$$Attention(Q,K,V) &#x3D; softmax(\frac{QK^T}{\sqrt{d_k}})V$$</p>
+<h1 id="Self-Attention-Layer-Key"><a href="#Self-Attention-Layer-Key" class="headerlink" title="Self-Attention(Layer) (Key)"></a>Self-Attention(Layer) (<strong>Key</strong>)</h1><h2 id="Computing-process"><a href="#Computing-process" class="headerlink" title="Computing process"></a>Computing process</h2><ol>
+<li><p>Now we suppose to enter $a_1$~$a_4$ Four vector, and Self-Attention needs to output another row of $b$ vectors, and each $b$ is generated after considering all $a$</p>
+</li>
+<li><p>To figure out $b_1$, the first step is based on $a_1$, find <strong>other vectors related to $a_1$</strong> in this sequence. We use the “$\alpha$” to represent the <strong>similarity</strong> of each vector related to $a_1$.</p>
+</li>
+<li><p>It must be mentioned here that there are <strong>3 very important values in the Self-Attention mechanism</strong>: <strong>Query, Key, Value</strong>. Respectively represent <strong>the value used to match, the value to be matched, and the extracted information</strong>.</p>
+</li>
+<li><p>As for determining the <strong>correlation between two vectors</strong>, the most commonly used method is the <strong>dot product (here is scaled dot product)</strong>. It takes two vectors as input and multiplies them with two different matrices. The left vector is multiplied by the matrix $W^q$ (Query matrix), and the right vector is multiplied by the matrix $W^k$ (Key matrix). The values of $W^q$ and $W^k$ are both <strong>randomly initialized and obtained through training</strong>.</p>
+</li>
+<li><p>Next, after obtaining the two vectors, $q$, $k$, the <strong>dot product is computed between them</strong>. After summing up all the dot products, a <strong>scalar (magnitude)</strong> is obtained. This scalar is represented as $\alpha$, which we consider as <strong>the degree of correlation between the two vectors.</strong></p>
+</li>
+</ol>
+<p><img data-src="/images/posts/NLP-series/transformer-6.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>Next, we apply what was just introduced to Self-Attention.</p>
+<ol>
+<li>First, we calculate the relationships “$\alpha$” between $a_1$ and $a_2$, $a_3$, $a_4$ individually. <ul>
+<li>We multiply $a_1$ by $W^q$ to obtain $q_1$. </li>
+<li>Then, we multiply $a_2$, $a_3$, $a_4$ by $W^k$ respectively and compute the inner products to determine the relationship “$\alpha$” between $a_1$ and each vector. </li>
+<li>Applying the Softmax function yields $\alpha’$. </li>
+<li>With this $\alpha’$, we can extract crucial information from this sequence!</li>
+</ul>
+</li>
+</ol>
+<hr>
+<p><img data-src="/images/posts/NLP-series/transformer-7.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<ol start="2">
+<li>How to extract important information using $\alpha’$? The steps are as follows:</li>
+</ol>
+<ul>
+<li>First, multiply $a_1$ ~ $a_4$ by $W^v$ to obtain new vectors, denoted as $v_1$, $v_2$, $v_3$ and $v_4$, respectively (where $W^v$ is the Value matrix).</li>
+<li>Next, multiply each vector here, $v_1$ ~ $v_4$, by $\alpha’$, and then sum them to obtain the output $b_1$ (formula written in the top-right corner of the image).</li>
+</ul>
+<p>If a certain vector receives a higher score - for instance, if the relationship between $a_1$ and $a_2$ is strong, leading to a large value for $\alpha_{1,2}’$ - then after performing the weighted sum, the value of $b_1$ obtained could be very close to $v_2$.</p>
+<p>Now that we know how to compute $b_1$, it naturally follows that we can deduce $b_1$, $b_2$, $b_3$, and $b_4$ using the same method. With this, we have completed the explanation of the internal computation process of Self-Attention.</p>
+<p>Last but not least, the <strong>similarity matrix($\alpha_{i,j}$)</strong> is just the <strong>attention</strong> in the self-attention layer, i.e. importance or relevance to other elements in the same sequence..</p>
+<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><h2 id="Attention-Score-Weight-and-Output"><a href="#Attention-Score-Weight-and-Output" class="headerlink" title="Attention (Score, Weight and Output)"></a>Attention (Score, Weight and Output)</h2><ul>
+<li>$ Attention Score &#x3D; QK^T $</li>
+<li>$ Attention Weights &#x3D; Softmax(\frac{Attention Score}{\sqrt{d_k}}) $</li>
+<li>$ Attention Output &#x3D; (Attention Weights)V $</li>
+</ul>
+<h2 id="Key-Components-of-Transformers"><a href="#Key-Components-of-Transformers" class="headerlink" title="Key Components of Transformers"></a>Key Components of Transformers</h2><ol>
+<li><p>Self-Attention Mechanism:<br>The core innovation of the Transformer is the self-attention mechanism, which allows the model to <strong>weigh the importance of different words in a sequence relative to each other</strong>. It computes attention scores for each word by considering its <strong>relationships with all other words</strong> in the same sequence. Self-attention enables capturing context and dependencies between words <strong>regardless of their distance</strong>.</p>
+</li>
+<li><p>Multi-Head Attention:<br>To capture different types of relationships, the Transformer employs multi-head attention. <strong>Multiple sets of self-attention mechanisms (attention heads) run in parallel</strong>, and their outputs are concatenated and linearly transformed to create a more comprehensive representation.</p>
+</li>
+<li><p>Positional Encodings:<br>Since the Transformer does not inherently understand <strong>the order of words in a sequence</strong> (unlike recurrent networks(RNN)), positional encodings are added to the input embeddings. These encodings provide <strong>information about the positions of words within the sequence</strong>.</p>
+</li>
+<li><p>Encoder-Decoder Architecture:<br>The Transformer’s architecture is divided into an <strong>encoder and a decoder</strong>. The <strong>encoder processes the input sequence, capturing its contextual information</strong>, while the <strong>decoder generates the output sequence</strong>. This architecture is widely used in tasks like machine translation.</p>
+</li>
+<li><p>Residual Connections and Layer Normalization:<br>To address the <strong>vanishing gradient problem</strong>, residual connections (skip connections) are used around each sub-layer in the encoder and decoder. Layer normalization is also applied to <strong>stabilize</strong> the training process.</p>
+</li>
+<li><p>Position-wise Feed-Forward Networks:<br>After the self-attention layers, each position’s representation is passed through a position-wise feed-forward neural network, which <strong>adds non-linearity to the model</strong>.</p>
+</li>
+<li><p>Scaled Dot-Product Attention:<br>The self-attention mechanism involves computing the <strong>dot product of query, key, and value vectors</strong>. To control the scale of the dot products and <strong>avoid large gradients</strong>, the dot products are divided by the <strong>square root of the dimension of the key vectors</strong>.</p>
+</li>
+<li><p>Masked Self-Attention in Decoding:<br>During decoding, the self-attention mechanism is modified to <strong>ensure that each position can only attend to previous positions</strong>. This masking <strong>prevents the model from “cheating” by looking ahead in the output sequence</strong>.</p>
+</li>
+<li><p>Transformer Variants:<br> The original Transformer model has inspired various extensions and improvements, such as BERT, GPT, and more. BERT focuses on pretraining language representations, while GPT is designed for autoregressive text generation.</p>
+</li>
+</ol>
+<p>The Transformer architecture has become the foundation for many state-of-the-art NLP models due to its ability to <strong>capture context, parallelize computations, and handle long-range dependencies effectively</strong>. It has led to significant advancements in machine translation, text generation, sentiment analysis, and various other NLP tasks.</p>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MDM5Mg==">iThome - Day 27 Transformer (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MTI0Mg==">iThome - Day 28 Self-Attention (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9oYWNrbWQuaW8vQGFibGl1L0JrWG16REJtcg==">Transformer 李宏毅深度學習 (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9zcGVlY2guZWUubnR1LmVkdS50dy9+aHlsZWUvbWwvbWwyMDIxLWNvdXJzZS1kYXRhL3NlcTJzZXFfdjkucGRm">Transformer 李宏毅老師簡報<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQzJnZ2p0dXVXdnhySEhIaWFESDFkbFE=">李宏毅老師YouTube channel<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzE3MDYuMDM3NjI=">Attention is all you need (paper)<i class="fa fa-external-link-alt"></i></span></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>ML</tag>
+        <tag>AI</tag>
+        <tag>NLP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[NLP][ML] Transformer (3) - More conputational detail</title>
+    <url>/posts/1255359463/</url>
+    <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>In this article, I will focus more on the computing detail in transformer.<br>It will cover self-attention, prallel processing, multi-head self-attention, positional encoding and so on.</p>
+<p><img data-src="/images/posts/NLP-series/transformer-2.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<span id="more"></span>
+
+<h1 id="Self-Attention"><a href="#Self-Attention" class="headerlink" title="Self-Attention"></a>Self-Attention</h1><h2 id="Idea"><a href="#Idea" class="headerlink" title="Idea"></a>Idea</h2><ul>
+<li>Input:<ul>
+<li>$x_1$, …, $x_4$, is a sequence.</li>
+<li>Each input first goes through an <strong>embedding(convert to vectors)</strong>, multiplied by a weight matrix to become $a_1$, …, $a_4$. These $a_1$, …, $a_4$ are then passed into a Self-attention layer</li>
+</ul>
+</li>
+<li>Each input is multiplied by different vectors:<ul>
+<li>$q$: query (to match against others)<ul>
+<li>$q_i$ &#x3D; $W^qa_i$</li>
+</ul>
+</li>
+<li>$k$: key (to be matched)<ul>
+<li>$k_i$ &#x3D; $W^ka_i$</li>
+</ul>
+</li>
+<li>$v$: value, information to be extracted<ul>
+<li>$v_i$ &#x3D; $W^va_i$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>The weights $W^q$, $W^k$, $W^v$ are <strong>learned, initially randomly initialized</strong>.</li>
+</ul>
+<h2 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h2><p><img data-src="/images/posts/NLP-series/transformer-6.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p><img data-src="/images/posts/NLP-series/transformer-7.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<ol>
+<li>Take each query <strong>$q$ and perform attention on each key $k$</strong> (using two vectors to output a score(attention score)), which is essentially calculating the <strong>similarity of $q$ and $k$ (Similarity)</strong>.<ul>
+<li>Scaled Dot-Product: $S(q_1, k_1)$ yields $\alpha_{1,1}$, $S(q_1, k_2)$ yields $\alpha_{1,2}$, and so on.</li>
+<li>$\alpha_{1,i}$ &#x3D; $  q_1 \cdot k_i &#x2F; \sqrt{d}$ </li>
+<li>$d$ represents the <strong>dimensions of $q$ and $k$</strong>. This is a <strong>trick used by the authors in the paper</strong>.</li>
+</ul>
+</li>
+<li>Followed by <strong>Softmax normalization to normalize the values</strong>.</li>
+<li>Multiply the obtained $\hat{\alpha}$ with $v$ to get $b$, which is <strong>equivalent to a weighted sum</strong>.</li>
+<li>The obtained $b_1$ in the figure is the <strong>first vector (word or character)</strong> of the sought sequence.</li>
+<li>Each output vector incorporates information from the <strong>entire sequence</strong>.</li>
+</ol>
+<h1 id="Prallel-Processing"><a href="#Prallel-Processing" class="headerlink" title="Prallel Processing"></a>Prallel Processing</h1><p><img data-src="/images/posts/NLP-series/transformer-8.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>$$q_i &#x3D; W^qa_i$$<br>$$k_i &#x3D; W^ka_i$$<br>$$v_i &#x3D; W^va_i$$</p>
+<hr>
+<p><img data-src="/images/posts/NLP-series/transformer-9.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<ol>
+<li>Consider $a_1$, …, $a_4$ as a matrix $I$. Multiply it by the weight matrix $W^q$ to obtain $q_1$, …, $q_4$, forming another matrix $Q$. </li>
+<li>The same process applies to matrices $K$ and $V$, formed by multiplying $q$, $k$, and $a$ to get<br>$\alpha_{1,1}$ &#x3D; $k^T_1 \cdot q_1$,<br>$\alpha_{1,2}$ &#x3D; $k^T_2 \cdot q_1$,<br>…<br>Stack $k_1$, …, $k_4$ to form matrix $K$, then multiply it by $q_1$ stacked with $q_2$, …, $q_4$ to form matrix $Q$, resulting in a matrix $A$ composed of $\alpha$ values, which is the <strong>Attention</strong>. </li>
+<li>After applying Softmax, it becomes $\hat{A}$. In each time step, attention exists between each pair of vectors.</li>
+</ol>
+<hr>
+<p><img data-src="/images/posts/NLP-series/transformer-10.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>By calculating the <strong>weighted sum of $V$ and $\hat{A}$</strong>, you obtain $b$, and the matrix composed of b forms the <strong>output matrix $O$</strong>.”</p>
+<hr>
+<h2 id="What-self-attention-layer-do"><a href="#What-self-attention-layer-do" class="headerlink" title="What self-attention layer do"></a>What self-attention layer do</h2><p><img data-src="/images/posts/NLP-series/transformer-11-1.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p><img data-src="/images/posts/NLP-series/transformer-11-2.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>By converting it into matrix multiplication, you can utilize the <strong>GPU to accelerate the computation</strong>.</p>
+<h1 id="Multi-head-Self-attention"><a href="#Multi-head-Self-attention" class="headerlink" title="Multi-head Self-attention"></a>Multi-head Self-attention</h1><p><img data-src="/images/posts/NLP-series/transformer-12.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>Taking 2 heads as an example:</p>
+<ul>
+<li>Having <strong>2 heads</strong> means splitting $q, k, v$ into two sets of $q, k, v$. And $q_{i,1}$ will only be multiplied with $k_{i,1}$ to obtain $\alpha_{i,1}$, finally calculating $b_{i,1}$. </li>
+<li>Afterward, concatenate $b_{i,1}, b_{i,2}$, apply a transformation, and perform dimension reduction to obtain the final $b_i$.</li>
+<li><strong>Each head focuses on different information</strong>; some only care about local information (neighborhood data), while others concentrate on global (long-term) information, and so on.</li>
+</ul>
+<h1 id="Positional-Encoding"><a href="#Positional-Encoding" class="headerlink" title="Positional Encoding"></a>Positional Encoding</h1><p><img data-src="/images/posts/NLP-series/transformer-13.png" 
+style="width: 40%; margin: 15px auto;"></p>
+<p>In the attention mechanism, the order of words in the input sentence doesn’t matter.</p>
+<hr>
+<p><img data-src="/images/posts/NLP-series/transformer-14.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<ul>
+<li>Without positional information &#x3D;&gt; Therefore, there is a <strong>unique position vector $e_i$</strong>, which is not learned but set by humans.</li>
+<li>Other methods: <strong>Using one-hot encoding</strong> to represent $p_i$ as $x_i$ to denote its position.</li>
+</ul>
+<h1 id="Seq2seq-with-Attention"><a href="#Seq2seq-with-Attention" class="headerlink" title="Seq2seq with Attention"></a>Seq2seq with Attention</h1><p><img data-src="/images/posts/NLP-series/transformer-15.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>The original seq2seq model consists of two RNNs, an Encoder and a Decoder, and can be applied to machine translation.</p>
+<p>In the diagram above, the Encoder originally contained bidirectional RNNs, while the Decoder contained a unidirectional RNN. In the diagram below, <strong>both(bi&#x2F;unidirectional RNN) have been replaced with Self-Attention layers</strong>, achieving the same purpose and enabling <strong>parallel processing</strong>.</p>
+<p><img data-src="/images/posts/NLP-series/transformer-16.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<h1 id="Look-into-the-detail-of-Transformer-Model"><a href="#Look-into-the-detail-of-Transformer-Model" class="headerlink" title="Look into the detail of Transformer Model"></a>Look into the detail of Transformer Model</h1><p><img data-src="/images/posts/NLP-series/transformer-2.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>Using Chinese to English translation for example.</p>
+<h2 id="Encoder-Part"><a href="#Encoder-Part" class="headerlink" title="Encoder Part:"></a>Encoder Part:</h2><ol>
+<li>The input goes through <strong>Input Embedding</strong>, which considers <strong>positional information</strong> and is augmented with manually set Positional Encoding. It then enters the block that <strong>repeats N times</strong>.</li>
+</ol>
+<hr>
+<p><img data-src="/images/posts/NLP-series/transformer-17.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<ol start="2">
+<li>Multi-head:<br>Within the Encoder, it utilizes <strong>Multi-head Attention,</strong> which means there <strong>are multiple sets of $q$, $k$, $z$</strong>. Inside this mechanism, individual $qkv$ multiplications with $a$ are performed, leading to the calculation of $\alpha$, ultimately resulting in $b$.</li>
+</ol>
+<hr>
+<p><img data-src="/images/posts/NLP-series/transformer-18.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<ol start="3">
+<li>Add &amp; Norm (residual connection):<br>The <strong>input</strong> of Multi-head Attention, denoted as <strong>$a$</strong>, is added to the <strong>output $b$</strong>, resulting in <strong>$b^\prime$</strong>. Following this, <strong>Layer Normalization</strong> is performed. </li>
+<li>Once the calculations are completed, the result is passed through the <strong>forward propagation</strong>, followed by another <strong>Add &amp; Norm</strong> step.</li>
+</ol>
+<h2 id="Decoder-Part"><a href="#Decoder-Part" class="headerlink" title="Decoder Part"></a>Decoder Part</h2><p><img data-src="/images/posts/NLP-series/transformer-18-2.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<ol>
+<li><p>The Decoder <strong>input is the output from the previous time step</strong>. It goes through output embedding, considering positional information, and is augmented with manually set positional encoding. It then enters the block that repeats n times.</p>
+</li>
+<li><p><strong>Masked Multi-head Attention</strong>:<br>Attention is performed, where <strong>“Masked” indicates attending only to the already generated sequence</strong>. This is followed by an Add &amp; Norm layer.</p>
+</li>
+<li><p>Next, it undergoes a Multi-head Attention layer, attending to the <strong>previous output of the Encoder</strong>, followed by another Add &amp; Norm layer.</p>
+</li>
+<li><p>After the computations, it is passed to the <strong>Feed Forward forward propagation</strong>. Subsequently, <strong>Linear and Softmax</strong> operations are applied to generate the <strong>final output</strong>.</p>
+</li>
+</ol>
+<hr>
+<p>Last but not least, I provide the definition and purpose of encoder and decoder (in the previous article):</p>
+<blockquote>
+<p>Encoder-Decoder Architecture:<br>   The Transformer’s architecture is divided into an <strong>encoder and a decoder</strong>. The <strong>encoder processes the input sequence, capturing its contextual information</strong>, while the <strong>decoder generates the output sequence</strong>. This architecture is widely used in tasks like machine translation.</p>
+</blockquote>
+<h1 id="Attention-Visualization"><a href="#Attention-Visualization" class="headerlink" title="Attention Visualization"></a>Attention Visualization</h1><h2 id="single-head"><a href="#single-head" class="headerlink" title="single-head"></a>single-head</h2><p><img data-src="/images/posts/NLP-series/transformer-19.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>The relationships between words. The thicker the line, the more related of these words.</p>
+<h2 id="multi-head"><a href="#multi-head" class="headerlink" title="multi-head"></a>multi-head</h2><p><img data-src="/images/posts/NLP-series/transformer-20.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>The results obtained by pairing different sets of $q$ and $k$ vectors differ, indicating that different sets of $q$ and $k$ possess distinct information. This signifies that various sets of $q$ and $k$ hold different types of information, with some focusing on local aspects (below) and others on global aspects (above).</p>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MDM5Mg==">iThome - Day 27 Transformer (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MTI0Mg==">iThome - Day 28 Self-Attention (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9oYWNrbWQuaW8vQGFibGl1L0JrWG16REJtcg==">Transformer 李宏毅深度學習 (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9zcGVlY2guZWUubnR1LmVkdS50dy9+aHlsZWUvbWwvbWwyMDIxLWNvdXJzZS1kYXRhL3NlcTJzZXFfdjkucGRm">Transformer 李宏毅老師簡報<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQzJnZ2p0dXVXdnhySEhIaWFESDFkbFE=">李宏毅老師YouTube channel<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzE3MDYuMDM3NjI=">Attention is all you need (paper)<i class="fa fa-external-link-alt"></i></span></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>ML</tag>
+        <tag>AI</tag>
+        <tag>NLP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Basic OOP 基礎物件導向</title>
+    <url>/posts/3787153742/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>物件導向（Object-Oriented Programming, OOP）是一種程式設計範式，強調使用包含數據（屬性）和方法（功能）的物件來設計和構建應用程序。提高軟體的重用性、靈活性和擴充性。</p>
+<p>而對於物件導向，最基礎需要知道以下：</p>
+<blockquote>
+<p><strong>一個抽象</strong><br><strong>兩個目的</strong><br><strong>三個特性</strong><br><strong>五個原則</strong></p>
+</blockquote>
+<span id="more"></span>
+
+<h1 id="一個抽象"><a href="#一個抽象" class="headerlink" title="一個抽象"></a>一個抽象</h1><h2 id="抽象-Abstraction"><a href="#抽象-Abstraction" class="headerlink" title="抽象 (Abstraction)"></a>抽象 (Abstraction)</h2><p>在OOP的背景下，抽象是指<strong>隱藏複雜的實作細節</strong>，僅展示物件的必要特性的能力。這簡化了與物件的互動，使編程更直觀、更高效。</p>
+<p>例如想要使用交通工具的物件，只需要知道交通工具提供的介面，而不需要知道具體的交通工具是什麼，以及其實作細節<br><img data-src="/images/posts/OOP-basic/abstraction.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<h1 id="兩個目的"><a href="#兩個目的" class="headerlink" title="兩個目的"></a>兩個目的</h1><h2 id="低耦合-Low-Coupling"><a href="#低耦合-Low-Coupling" class="headerlink" title="低耦合 (Low Coupling)"></a>低耦合 (Low Coupling)</h2><p>低耦合是指程式中<strong>不同的類別或模組之間應該有盡可能少的依賴關係</strong>。這使得<strong>一個類別或模組的變更不太可能影響到其他的類別或模組</strong>，從而使得程式更容易維護和擴展。</p>
+<h2 id="高內聚（High-Cohesion）"><a href="#高內聚（High-Cohesion）" class="headerlink" title="高內聚（High Cohesion）"></a>高內聚（High Cohesion）</h2><p>高內聚是指一個類別或模組應該只<strong>專注於完成一項特定的任務或一組緊密相關的任務</strong>。這使得程式更有組織，更易於理解和維護。</p>
+<p><img data-src="/images/posts/OOP-basic/CandC.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<h1 id="三個特性"><a href="#三個特性" class="headerlink" title="三個特性"></a>三個特性</h1><h2 id="繼承-Inheritance"><a href="#繼承-Inheritance" class="headerlink" title="繼承 (Inheritance)"></a>繼承 (Inheritance)</h2><p>繼承允許新創建的類別（子類別）繼承一個或多個現有類別（父類別）的屬性和方法。這促進了程式碼重用和擴展性。</p>
+<h2 id="封裝-Encapsulation"><a href="#封裝-Encapsulation" class="headerlink" title="封裝 (Encapsulation)"></a>封裝 (Encapsulation)</h2><p>封裝是將數據（屬性）和行為（方法）綁定到單個單位（類別）中，並<strong>限制對該單位內部的直接訪問</strong>。這有助於保護數據和隱藏實現細節。</p>
+<h2 id="多型-Polymorphism"><a href="#多型-Polymorphism" class="headerlink" title="多型 (Polymorphism)"></a>多型 (Polymorphism)</h2><p>多型允許對<strong>不同類別的物件使用共同的接口</strong>。這意味著可以在不同類別的物件上執行同一操作，而每個類別可以以不同的方式響應相同的操作。</p>
+<h1 id="五個原則-SOLID"><a href="#五個原則-SOLID" class="headerlink" title="五個原則 (SOLID)"></a>五個原則 (SOLID)</h1><h2 id="S-單一職責原則（Single-Responsibility-Principle）"><a href="#S-單一職責原則（Single-Responsibility-Principle）" class="headerlink" title="S - 單一職責原則（Single Responsibility Principle）:"></a>S - 單一職責原則（Single Responsibility Principle）:</h2><p>一個類別應該只有一個改變的理由，這意味著<strong>一個類別應該只做一件事</strong>。</p>
+<h2 id="O-開放封閉原則（Open-x2F-Closed-Principle）"><a href="#O-開放封閉原則（Open-x2F-Closed-Principle）" class="headerlink" title="O - 開放封閉原則（Open&#x2F;Closed Principle）:"></a>O - 開放封閉原則（Open&#x2F;Closed Principle）:</h2><p>軟體實體（類別、模組、函數等）應該<strong>對擴展開放，對修改封閉</strong>。這意味著應該能夠在不修改現有代碼的情況下擴展其功能。</p>
+<h2 id="L-里氏替換原則（Liskov-Substitution-Principle）"><a href="#L-里氏替換原則（Liskov-Substitution-Principle）" class="headerlink" title="L - 里氏替換原則（Liskov Substitution Principle）:"></a>L - 里氏替換原則（Liskov Substitution Principle）:</h2><p><strong>子類別應該能夠替換其父類別而不影響程序的正常運行</strong>。</p>
+<h2 id="I-接口隔離原則（Interface-Segregation-Principle）"><a href="#I-接口隔離原則（Interface-Segregation-Principle）" class="headerlink" title="I - 接口隔離原則（Interface Segregation Principle）:"></a>I - 接口隔離原則（Interface Segregation Principle）:</h2><p>不應強迫客戶依賴於它們不使用的接口。換句話說，<strong>更小和更具體的接口優於大而通用的接口</strong>。</p>
+<h2 id="D-依賴反轉原則（Dependency-Inversion-Principle）"><a href="#D-依賴反轉原則（Dependency-Inversion-Principle）" class="headerlink" title="D - 依賴反轉原則（Dependency Inversion Principle）:"></a>D - 依賴反轉原則（Dependency Inversion Principle）:</h2><p><strong>高層模組不應該依賴低層模組，兩者都應該依賴於抽象</strong>；抽象不應該依賴於細節，細節應該依賴於抽象。這有助於減少類別之間的直接依賴，從而提高系統的靈活性和可重用性。</p>
+<h1 id="Design-Pattern概述"><a href="#Design-Pattern概述" class="headerlink" title="Design Pattern概述"></a>Design Pattern概述</h1><p>設計模式是一組作為最佳實踐的解決方案，用來解決特定類型的重複出現的設計問題。這些模式不是現成的程式碼，而是可以在許多不同情況下使用的模板。它們提高了代碼的可重用性、靈活性和維護性。</p>
+<p>設計模式通常分為三大類：</p>
+<ol>
+<li>創建型模式（Creational Patterns）<br>這些模式與物件創建機制有關，幫助創建物件的方式使得系統獨立於物件的創建和組合方式。</li>
+<li>結構型模式（Structural Patterns）<br>這些模式與物件的組合有關，通常用於形成大的物件結構</li>
+<li>行為型模式（Behavioral Patterns）<br>這些模式關注物件間的通訊和責任分配</li>
+</ol>
 ]]></content>
       <categories>
-        <category>Git 系列文</category>
+        <category>OOP</category>
       </categories>
       <tags>
-        <tag>Git</tag>
-        <tag>Version Control</tag>
+        <tag>OOP</tag>
       </tags>
   </entry>
   <entry>
@@ -728,466 +1137,97 @@ style="width: 70%; margin: 15px auto;"></p>
       </tags>
   </entry>
   <entry>
-    <title>[NLP][ML] Adapters &amp; LoRA</title>
-    <url>/posts/38266156/</url>
-    <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>In this article, I will provide an introduction to adapters and LoRA, including their <strong>definitions, purposes, and functions.</strong> I will also explore their various <strong>applications</strong> and, lastly, delve into the distinctions that set them apart(the <strong>differences between them</strong>).</p>
+    <title>[Git][Version Control] Git - Introduction</title>
+    <url>/posts/2571684277/</url>
+    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Here is the series of Git full tutorial. I will cover the important and advanced topics that you should know in git. By reading this series, you are able to know the basic(but important) concept of Git and the technique of using git. Hope you can gain a lot ! </p>
 <span id="more"></span>
 
-<h1 id="Adapter"><a href="#Adapter" class="headerlink" title="Adapter"></a>Adapter</h1><h2 id="What-are-Adapters"><a href="#What-are-Adapters" class="headerlink" title="What are Adapters?"></a>What are Adapters?</h2><p>According to <span class="exturl" data-url="aHR0cHM6Ly93d3cuYW5hbHl0aWNzdmlkaHlhLmNvbS9ibG9nLzIwMjMvMDQvdHJhaW5pbmctYW4tYWRhcHRlci1mb3Itcm9iZXJ0YS1tb2RlbC1mb3Itc2VxdWVuY2UtY2xhc3NpZmljYXRpb24tdGFzay8jOn46dGV4dD1BZGFwdGVycyUyMGFyZSUyMGxpZ2h0d2VpZ2h0JTIwYWx0ZXJuYXRpdmVzJTIwdG8sbW9kdWxhciUyMGFwcHJvYWNoJTIwdG8lMjB0cmFuc2ZlciUyMGxlYXJuaW5nLg==">this article<i class="fa fa-external-link-alt"></i></span><br>We can give the definition of adapters:</p>
-<blockquote>
-<p><strong>Adapters are lightweight alternatives to fully fine-tuned pre-trained models.</strong><br>Currently, <strong>adapters are implemented as small feedforward neural networks</strong> that are <strong>inserted between layers of a pre-trained model.</strong><br>They provide a <strong>parameter-efficient, computationally efficient, and modular approach</strong> to transfer learning. The following image shows added adapter.</p>
-</blockquote>
-<p>The image below clearly shows the usage flow of apadters<br>(Source: <span class="exturl" data-url="aHR0cHM6Ly9hZGFwdGVyaHViLm1sLw==">AdapterHub<i class="fa fa-external-link-alt"></i></span>)<br><img data-src="/images/posts/NLP-series/adapter.gif" 
-style="width: 70%; margin: 15px auto;"></p>
-<blockquote>
-<p>During training, <strong>all the weights of the pre-trained model are frozen</strong> such that only the adapter weights<br>are updated, resulting in <strong>modular knowledge representations</strong>. They can be easily <strong>extracted, interchanged,</strong><br><strong>independently distributed, and dynamically plugged</strong> into a language model. These properties highlight the<br>potential of adapters in advancing the NLP field astronomically.</p>
-</blockquote>
-<h2 id="What-is-the-purpose-and-function-of-adapters"><a href="#What-is-the-purpose-and-function-of-adapters" class="headerlink" title="What is the purpose and function of adapters?"></a>What is the purpose and function of adapters?</h2><ol>
-<li>Purpose:<br>Large Language Models are computationally expensive and memory-intensive. <strong>Fine-tuning the entire model for each specific task</strong> can be impractical due to resource constraints. Adapters provide a solution by allowing for more efficient and <strong>targeted modifications</strong> to the model for different tasks. This approach <strong>saves both computational power and memory</strong>, enabling the deployment of a single pre-trained model for multiple tasks.</li>
-<li>Functions:<ol>
-<li><p>Efficient Fine-tuning: Instead of fine-tuning the entire model, adapters enable <strong>fine-tuning only a small subset of parameters</strong> related to a specific task. This fine-tuning process is faster and requires fewer resources.</p>
-</li>
-<li><p>Task-specific Modifications: Adapters allow you to add <strong>task-specific layers or modifications</strong> to the pre-trained model without altering the core architecture. This makes it easier to adapt the model for various tasks like text classification, named entity recognition, sentiment analysis, etc.</p>
-</li>
-<li><p>Versatility: With adapters, a single pre-trained LLM can be <strong>adapted for a wide range of tasks.</strong> This versatility is beneficial in scenarios where deploying and maintaining separate models for each task might be impractical.</p>
-</li>
-<li><p>Interoperability: Adapters enable the combination of pre-trained models with task-specific modifications in a standardized way. This facilitates sharing, collaboration, and research in the NLP community.</p>
-</li>
-<li><p>Transfer Learning: Adapters enhance the <strong>effectiveness of transfer learning.</strong> Models pre-trained on <strong>large and diverse datasets can be fine-tuned on smaller</strong>, task-specific datasets using adapters, improving performance on specific tasks.</p>
-</li>
-<li><p>Incremental Updates: Adapters allow for easy updates to the model. Instead of retraining the entire model, only the adapters related to a specific task need to be fine-tuned when new data or requirements arise.</p>
-</li>
-</ol>
-</li>
-</ol>
-<p>Overall, adapters are a <strong>mechanism that strikes a balance between the benefits of fine-tuning for specific tasks and the efficiency of reusing pre-trained LLMs.</strong> They enable the NLP community to leverage the power of these large models while tailoring them to a diverse set of applications.</p>
-<h2 id="The-applications-of-adapters"><a href="#The-applications-of-adapters" class="headerlink" title="The applications of adapters"></a>The applications of adapters</h2><p>I list some practical applications that can use adapters to enhance.</p>
-<ol>
-<li><p>Efficient Task Adaptation: Adapters make it possible to fine-tune a pretrained model for specific tasks with minimal computational resources and time. This is particularly useful for industries that require quick adaptation to changing trends or requirements.</p>
-</li>
-<li><p>Multilingual Applications: Adapters can be used to enable a pretrained model to perform tasks in multiple languages. This is valuable for businesses operating in global markets.</p>
-</li>
-<li><p>Domain-Specific NLP: Adapting models with domain-specific adapters (e.g., medical, legal, financial) enhances their performance on tasks specific to those domains.</p>
-</li>
-<li><p>Personalization: Adapters can be used to personalize a general-purpose model for individual users or contexts, leading to more relevant and tailored responses.</p>
-</li>
-</ol>
-<h1 id="LoRA-Low-Rank-Adaptation"><a href="#LoRA-Low-Rank-Adaptation" class="headerlink" title="LoRA (Low-Rank Adaptation)"></a>LoRA (Low-Rank Adaptation)</h1><h2 id="What-is-LoRA"><a href="#What-is-LoRA" class="headerlink" title="What is LoRA?"></a>What is LoRA?</h2><ul>
-<li>Low-Rank Adaptation, or LoRA, is proposed, which <strong>freezes the pre-trained model weights</strong> and <strong>injects trainable rank decomposition matrices into each layer</strong> of the <strong>Transformer</strong> architecture, greatly <strong>reducing the number of trainable parameters</strong> for downstream tasks.</li>
-</ul>
-<p>And let’s see the full fine-tuning definition:</p>
+<h1 id="Series-Outline"><a href="#Series-Outline" class="headerlink" title="Series Outline"></a>Series Outline</h1><p>I will follow the outline below in this series.</p>
 <ul>
-<li>Full fine-tuning LLM, which <strong>retrains all model parameters</strong>, becomes less feasible. Using GPT-3 175B as an example — deploying independent instances of fine-tuned models, each with 175B parameters, is prohibitively expensive.</li>
+<li>Introduction (this post)</li>
+<li>Setup</li>
+<li>Version Control &amp; Commands (Basics)</li>
+<li>Branching &amp; Merging</li>
+<li>Conflict</li>
+<li>Collaboration &amp; GitHub</li>
+<li>Advanced Topics</li>
 </ul>
-<p>In <span class="exturl" data-url="aHR0cHM6Ly9iZHRlY2h0YWxrcy5jb20vMjAyMy8wNS8yMi93aGF0LWlzLWxvcmEv">this article<i class="fa fa-external-link-alt"></i></span>, it clearly compare the fine-tuning and LoRA approaches. And in <span class="exturl" data-url="aHR0cHM6Ly9zaC10c2FuZy5tZWRpdW0uY29tL2JyaWVmLXJldmlldy1sb3JhLWxvdy1yYW5rLWFkYXB0YXRpb24tb2YtbGFyZ2UtbGFuZ3VhZ2UtbW9kZWxzLWZhZjVkZGQ1ODAyZiM6fjp0ZXh0PUxvUkElMkMlMjBMb3clMkRSYW5rJTIwTExNJTIwRmluZSUyRFR1bmluZyUyQyUyMFJlZHVjZSUyMFJlcXVpcmVkJTIwTWVtb3J5JnRleHQ9TG93JTJEUmFuayUyMEFkYXB0YXRpb24lMkMlMjBvciUyMExvUkEsdHJhaW5hYmxlJTIwcGFyYW1ldGVycyUyMGZvciUyMGRvd25zdHJlYW0lMjB0YXNrcy4=">this article<i class="fa fa-external-link-alt"></i></span>, it dives more into the machanism of LoRA. If you wnat to know the full knowledge, you can refer to <span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzIxMDYuMDk2ODU=">the paper of LoRA<i class="fa fa-external-link-alt"></i></span>.<br>In the next sections, I will introduce more ideas of LoRA based on these references. Note that I only organize the contents of these articles and add some mark and note on my own.</p>
 <hr>
-<h3 id="How-does-fine-tuning-LLMs-work"><a href="#How-does-fine-tuning-LLMs-work" class="headerlink" title="How does fine-tuning LLMs work?"></a>How does fine-tuning LLMs work?</h3><p>Open-source LLMs such as LLaMA,Vicuna are foundation models that <strong>have been pre-trained on hundreds of billions of words.</strong> Developers and machine learning engineers can download the model with the <strong>pre-trained weights</strong> and <strong>fine-tune it for downstream tasks</strong> such as <span class="exturl" data-url="aHR0cHM6Ly9iZHRlY2h0YWxrcy5jb20vMjAyMy8wMS8xNi93aGF0LWlzLXJsaGYv">instruction following<i class="fa fa-external-link-alt"></i></span>.</p>
-<p>The model is provided input from the <strong>fine-tuning dataset</strong>. It then <strong>predicts the next tokens and compares its output with the ground truth.</strong> It then <strong>adjusts the weights(gradient)</strong> to correct its predictions. By doing this over and over, the LLM becomes fine-tuned to the downstream task.</p>
-<p><img data-src="/images/posts/NLP-series/LLM-fintune.png" 
+<h1 id="Introduction-to-Git-A-Distributed-Version-Control-System"><a href="#Introduction-to-Git-A-Distributed-Version-Control-System" class="headerlink" title="Introduction to Git: A Distributed Version Control System"></a>Introduction to Git: A Distributed Version Control System</h1><p>Git is a powerful and widely used distributed version control system designed to track changes in software development projects. It provides developers with the ability to collaborate on projects efficiently, manage codebases effectively, and easily track and revert changes.</p>
+<h2 id="Distributed-Version-Control-System"><a href="#Distributed-Version-Control-System" class="headerlink" title="Distributed Version Control System"></a>Distributed Version Control System</h2><p>In traditional software development, changes to a codebase were often managed through file-based systems or centralized version control systems. However, these approaches had limitations in terms of collaboration, scalability, and flexibility. Git emerged as a solution to these challenges, offering a distributed and decentralized approach to version control.</p>
+<p>The special point of Git is that it supports distributed version control and can also easily share codes among multiple nodes.</p>
+<p><img data-src="/images/posts/Git-Series/dist-ver-ctr.png" 
 style="width: 70%; margin: 15px auto;"></p>
-<p>(Source: <span class="exturl" data-url="aHR0cHM6Ly9iZHRlY2h0YWxrcy5jb20vMjAyMy8wNS8yMi93aGF0LWlzLWxvcmEv">What is low-rank adaptation (LoRA)?<i class="fa fa-external-link-alt"></i></span>)</p>
-<h3 id="The-idea-of-LoRA"><a href="#The-idea-of-LoRA" class="headerlink" title="The idea of LoRA"></a>The idea of LoRA</h3><p>Now, let’s make a small modification to the fine-tuning process. In this new method, we <strong>freeze the original weights of the model and don’t modify them during the fine-tuning process.</strong> Instead, we apply the modifications to a <strong>separate set of weights</strong> and we add their new values to the original parameters. Let’s call these two sets <strong>“pre-trained” and “fine-tuned” weights</strong>.</p>
-<blockquote>
-<p><strong>Separating the pre-trained and fine-tuned parameters is an important part of LoRA.</strong><br><img data-src="/images/posts/NLP-series/LoRA-1.png" 
+<h2 id="Branch"><a href="#Branch" class="headerlink" title="Branch"></a>Branch</h2><p>Git manages code based on a tree structure, allowing branches to be created, merged, and deleted, and code versions to be saved at any time.</p>
+<p><img data-src="/images/posts/Git-Series/branch.png" 
 style="width: 70%; margin: 15px auto;"></p>
-</blockquote>
-<h4 id="Low-rank-adaptation"><a href="#Low-rank-adaptation" class="headerlink" title="Low-rank adaptation"></a>Low-rank adaptation</h4><p>Before moving on to LoRA, let’s think about our <strong>model parameters as very large matrices</strong>. If you remember your linear algebra class, <strong>matrices can form vector spaces</strong>. In this case, we’re talking about a <strong>very large vector space with many dimensions</strong> that models language.</p>
-<p>Every matrix has a <strong>“rank”</strong>, which is <strong>the number of linearly independent columns it has</strong>. If a column is linearly independent, it means that <strong>it can’t be represented as a combination of other columns in the matrix</strong>. On the other hand, a dependent column is one that can be represented as a combination of one or more columns in the same matrix. You can remove dependent columns from a matrix without losing information.</p>
-<p>LoRA, proposed in a <span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzIxMDYuMDk2ODU=">paper<i class="fa fa-external-link-alt"></i></span> by researchers at Microsoft, suggests that when fine-tuning an LLM for a downstream task, <strong>you don’t need the full-rank weight matrix.</strong> They proposed that you could preserve most of the learning capacity of the model while <strong>reducing the dimension of the downstream parameters.</strong> (This is why it makes sense to separate the pre-trained and fine-tuned weights.)</p>
+<h2 id="Snapshot"><a href="#Snapshot" class="headerlink" title="Snapshot"></a>Snapshot</h2><p>Git saves full snapshots of files, rather than differences, making it easy to restore all historical versions of files.</p>
+<p><img data-src="/images/posts/Git-Series/snapshot.jpeg" 
+style="width: 70%; margin: 15px auto;"></p>
 <hr>
-<p><img data-src="/images/posts/NLP-series/LoRA-2.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>Basically, in LoRA, you create <strong>two downstream weight matrices</strong>. One <strong>transforms the input parameters from the original dimension to the low-rank dimension</strong>. And the second matrix <strong>transforms the low-rank data to the output dimensions of the original model</strong>.</p>
-<p>During training, <strong>modifications are made to the LoRA parameters</strong>, which are now much fewer than the original weights. This is why they can be trained much faster and at a fraction of the cost of doing full fine-tuning. <strong>At inference time, the output of LoRA is added to the pre-trained parameters to calculate the final values.</strong></p>
-<h4 id="More-detail"><a href="#More-detail" class="headerlink" title="More detail"></a>More detail</h4><p><img data-src="/images/posts/NLP-series/LoRA-3.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<ul>
-<li>For a pre-trained weight matrix $W_0$, its update is constrained by representing the latter with a low-rank decomposition:</li>
-</ul>
-<p>$$\begin{equation}<br>   W_0 + \Delta{W} &#x3D; W_0 + BA<br>\end{equation}$$</p>
-<ul>
-<li>During training, <strong>$W_0$ is frozen</strong> and does not receive gradient updates, while <strong>A and B contain trainable parameters</strong>.</li>
-<li>For $h&#x3D;W_0$, the modified forward pass yields:</li>
-</ul>
-<p>$$\begin{equation}<br>   h &#x3D; W_0x + \Delta{W}x &#x3D; W_0x + BAx<br>\end{equation}$$</p>
-<ul>
-<li><p>A random <strong>Gaussian initialization is used for A</strong> and <strong>zero is used for B</strong>, so $\Delta{W}&#x3D;BA$ is zero at the beginning of training. (The method of initializing the weights)</p>
-</li>
-<li><p>One of the advantages is that when deployed in production, we can <strong>explicitly compute and store $W&#x3D;W_0+BA$</strong> and perform inference as usual. <strong>No additional latency</strong> compared to other methods, such as appending more layers.</p>
-</li>
-</ul>
-<p>You can see the implementation and more detail of LoRA in <span class="exturl" data-url="aHR0cHM6Ly95b3V0dS5iZS9kQS1OaEN0cnJWRQ==">this video<i class="fa fa-external-link-alt"></i></span><br>and <span class="exturl" data-url="aHR0cHM6Ly9ibG9nLm1sNi5ldS9sb3ctcmFuay1hZGFwdGF0aW9uLWEtdGVjaG5pY2FsLWRlZXAtZGl2ZS03ODJkZWM5OTU3NzI=">this article<i class="fa fa-external-link-alt"></i></span>.</p>
-<h2 id="What-is-the-purpose-and-function-of-LoRA"><a href="#What-is-the-purpose-and-function-of-LoRA" class="headerlink" title="What is the purpose and function of LoRA?"></a>What is the purpose and function of LoRA?</h2><ul>
-<li>Purpose<ul>
-<li>The purpose of LoRA is to make it easier and more efficient to fine-tune LLMs for downstream tasks.</li>
-</ul>
-</li>
-<li>Function<ul>
-<li>The function of LoRA is to decompose the LLM into a low-rank representation and then adapt this representation to the target task.</li>
-<li>Here are the benefits:</li>
-</ul>
-</li>
-<li>Reduced number of parameters: The low-rank representation has a much smaller number of parameters than the original LLM, which can make it faster to train and easier to deploy.</li>
-<li>Improved performance: The low-rank representation is able to capture the most important features of the LLM, which can lead to improved performance on the downstream task.</li>
-</ul>
-<h2 id="The-applications-of-LoRA"><a href="#The-applications-of-LoRA" class="headerlink" title="The applications of LoRA"></a>The applications of LoRA</h2><ul>
-<li>Fine-tuning large language models for downstream tasks:<br>LoRA can be used to fine-tune large language models (LLMs) for a variety of downstream tasks, such as question answering, summarization, and translation. This can <strong>make LLMs more accessible and easier to use for a wider range of applications.</strong></li>
-<li>Improving the efficiency of machine learning models:<br> LoRA can be used to improve the efficiency of machine learning models by reducing the number of parameters. This can <strong>make models faster to train and easier to deploy</strong>.</li>
-<li>Compressing large datasets:<br>LoRA can be used to <strong>compress large datasets by representing them in a low-rank format</strong>. This can make datasets easier to <strong>store and transmit</strong>.</li>
-<li>Improving the security of machine learning models:<br>LoRA can be used to improve the security of machine learning models by making them more resistant to adversarial attacks.</li>
-</ul>
-<h1 id="Differences-between-adapter-and-LoRA"><a href="#Differences-between-adapter-and-LoRA" class="headerlink" title="Differences between adapter and LoRA"></a>Differences between adapter and LoRA</h1><table>
-   <thead>
-      <th>Feature</th>
-      <th>Adapter</th>
-      <th>LoRA</th>
-   </thead>
-   <tbody>
-      <tr>
-         <td>Approach</td>
-         <td>Adds additional layers to the pretrained model	</td>
-         <td>Decomposes the pretrained model into a low-rank representation
-</td>
-      </tr>
-      <tr>
-         <td>Parameters</td>
-         <td>Adds a small number of parameters to the pretrained model</td>
-         <td>Reduces the number of parameters in the pretrained model</td>
-      </tr>
-      <tr>
-         <td>Performance</td>
-         <td>Effective for a variety of downstream tasks</td>
-         <td>Particularly effective for tasks that require a large number of parameters</td>
-      </tr>
-      <tr>
-         <td>Speed</td>
-         <td>Can be faster to train than LoRA</td>
-         <td>Can be faster at inference time</td>
-      </tr>
-      <tr>
-         <td>Memory usage</td>
-         <td>Can use more memory than LoRA</td>
-         <td></td>
-      </tr>
-   </tbody>
-</table>
-
-<p>In general, adapters are a good choice for tasks that require a small number of parameters and can be trained quickly, while LoRA is a good choice for tasks that require a large number of parameters and need to be fast at inference time.</p>
-<h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><ul>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuYW5hbHl0aWNzdmlkaHlhLmNvbS9ibG9nLzIwMjMvMDQvdHJhaW5pbmctYW4tYWRhcHRlci1mb3Itcm9iZXJ0YS1tb2RlbC1mb3Itc2VxdWVuY2UtY2xhc3NpZmljYXRpb24tdGFzay8jOn46dGV4dD1BZGFwdGVycyUyMGFyZSUyMGxpZ2h0d2VpZ2h0JTIwYWx0ZXJuYXRpdmVzJTIwdG8sbW9kdWxhciUyMGFwcHJvYWNoJTIwdG8lMjB0cmFuc2ZlciUyMGxlYXJuaW5nLg==">(Recommend) Training an Adapter for RoBERTa Model for Sequence Classification Task<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9hZGFwdGVyaHViLm1sLw==">AdapterHub<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9kb2NzL2RpZmZ1c2Vycy90cmFpbmluZy9sb3JhIzp+OnRleHQ9TG93JTJEUmFuayUyMEFkYXB0YXRpb24lMjBvZiUyMExhcmdlJTIwTGFuZ3VhZ2UlMjBNb2RlbHMlMjAoTG9SQSklMjBpcyx0cmFpbnMlMjB0aG9zZSUyMG5ld2x5JTIwYWRkZWQlMjB3ZWlnaHRzLg==">Low-Rank Adaptation of Large Language Models (LoRA) (Huggingface)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9zaC10c2FuZy5tZWRpdW0uY29tL2JyaWVmLXJldmlldy1sb3JhLWxvdy1yYW5rLWFkYXB0YXRpb24tb2YtbGFyZ2UtbGFuZ3VhZ2UtbW9kZWxzLWZhZjVkZGQ1ODAyZiM6fjp0ZXh0PUxvUkElMkMlMjBMb3clMkRSYW5rJTIwTExNJTIwRmluZSUyRFR1bmluZyUyQyUyMFJlZHVjZSUyMFJlcXVpcmVkJTIwTWVtb3J5JnRleHQ9TG93JTJEUmFuayUyMEFkYXB0YXRpb24lMkMlMjBvciUyMExvUkEsdHJhaW5hYmxlJTIwcGFyYW1ldGVycyUyMGZvciUyMGRvd25zdHJlYW0lMjB0YXNrcy4=">Brief Review — LoRA: Low-Rank Adaptation of Large Language Models<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9iZHRlY2h0YWxrcy5jb20vMjAyMy8wNS8yMi93aGF0LWlzLWxvcmEv">What is low-rank adaptation (LoRA)?<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzIxMDYuMDk2ODU=">LoRA: Low-Rank Adaptation of Large Language Models (Paper)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9ibG9nLm1sNi5ldS9sb3ctcmFuay1hZGFwdGF0aW9uLWEtdGVjaG5pY2FsLWRlZXAtZGl2ZS03ODJkZWM5OTU3NzI=">(Recommend) Low Rank Adaptation: A Technical Deep Dive<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly95b3V0dS5iZS9kQS1OaEN0cnJWRQ==">Low-rank Adaption of Large Language Models: Explaining the Key Concepts Behind LoRA (Video)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1VczVaRnAxNlBhVQ==">Fine-tuning LLMs with PEFT and LoRA<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9ibG9nL3BlZnQ=">PEFT: Parameter-Efficient Fine-Tuning of Billion-Scale Models on Low-Resource Hardware<i class="fa fa-external-link-alt"></i></span></li>
-</ul>
+<h1 id="Recommended-Resources"><a href="#Recommended-Resources" class="headerlink" title="Recommended Resources"></a>Recommended Resources</h1><p><a href="%22https://www.youtube.com/watch?v=8JJ101D3knE%22">Mosh Git Tutorail</a></p>
 ]]></content>
+      <categories>
+        <category>Git 系列文</category>
+      </categories>
       <tags>
-        <tag>ML</tag>
-        <tag>AI</tag>
-        <tag>NLP</tag>
+        <tag>Git</tag>
+        <tag>Version Control</tag>
       </tags>
   </entry>
   <entry>
-    <title>[NLP][ML] Transformer (1) - Structure</title>
-    <url>/posts/4283617483/</url>
-    <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>The Transformer is a <strong>deep learning architecture</strong> introduced in the paper “Attention Is All You Need” by Vaswani et al. in 2017. It revolutionized the field of natural language processing (NLP) and brought significant advancements in various <strong>sequence-to-sequence tasks</strong>. The Transformer architecture, thanks to its <strong>attention mechanisms</strong>, enables efficient processing of sequential data while <strong>capturing long-range dependencies</strong>.</p>
-<hr>
-<p>Transformer is a <strong>Seq2Seq(Sequence to Sequence) model</strong>. It uses <strong>Encoder-Decoder structure</strong><br>Below is a simple diagram：</p>
-<p><img data-src="/images/posts/NLP-series/transformer-1.gif" 
-style="width: 70%; margin: 15px auto;"><br>Source: <span class="exturl" data-url="aHR0cHM6Ly9haS5nb29nbGVibG9nLmNvbS8yMDE2LzA5L2EtbmV1cmFsLW5ldHdvcmstZm9yLW1hY2hpbmUuaHRtbA==">https://ai.googleblog.com/2016/09/a-neural-network-for-machine.html<i class="fa fa-external-link-alt"></i></span></p>
-<p>The line between Encoder and Decoder represents the “Attention”.<br>The thicker the line, the more the Decoder below pays more attention to some Chinese characters above when generating an English word.</p>
-<span id="more"></span>
-<p>In the below sections, I will introduce the structure of transformer and the attention machanism.<br>For the <strong>detail explaination of key components in transformer and the details of attention</strong>, you can refer to the <a href="https://mao-code.github.io/posts/2443192075/#more">next article</a>.</p>
-<h1 id="Structure"><a href="#Structure" class="headerlink" title="Structure"></a>Structure</h1><p>Below is the strucutre of Transformer.</p>
-<p><img data-src="/images/posts/NLP-series/transformer-2.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>The part <strong>on the left in the figure is the Encoder, and the part on the right is the Decoder</strong>.<br>You can notice that the structures of the left and right sides are actually quite similar.<br>The Encoder and Decoder usually contain many blocks with the same layer structure, and each layer will have <strong>multi-head attention and Feed Forward Network</strong>.</p>
-<h2 id="Encoder"><a href="#Encoder" class="headerlink" title="Encoder"></a>Encoder</h2><p><img data-src="/images/posts/NLP-series/transformer-3.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>We just mentioned that the Encoder will be divided into many blocks.<br>We will <strong>first convert a whole row of input sequence data into a whole row of vectors</strong>, and then the processing steps of each block are as follows:</p>
-<ol>
-<li>Firstly, after considering all the input information of the input vector through self-attention, output a row of vectors. (I will introduce how self-attention considers all input information later)</li>
-<li>Throw this row of vectors into the feed forward network of Fully Connected (FC).</li>
-<li>The final output vector is the output of the block.</li>
-</ol>
-<hr>
-<p>However, what the block does in the original Transformer is more complicated, the details are as follows:<br><img data-src="/images/posts/NLP-series/transformer-4.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>Suppose we will follow the method just now, and the <strong>output result of the input vector after self-attention is called a</strong>. we also need to <strong>pull the original input (we first call it b )</strong> and add it to a to get a+b . Such a network architecture is called a <strong>residual connection</strong>.</p>
-<p>After that, we will do <strong>layer normalization</strong> on the result of a+b. It will calculate the average $m$(mean) and standard deviation $\sigma$(standard deviation) of the input vector, and then calculate it according to the formula: divide the input minus the mean $m$ by the standard deviation $\sigma$. It’s here that we really get <strong>the input of the FC network</strong>.</p>
-<p>The <strong>FC network also has a residual architecture</strong>, so we will add the input of the FC network to its output to get a new output, and then do layer normalization again. This is the <strong>real output of a block in Transformer Encoder</strong>.</p>
-<hr>
-<p>Now, let’s look back at the structure diagram of Encoder:</p>
-<p><img data-src="/images/posts/NLP-series/transformer-5.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>First, in the place of input, <strong>convert the input into a vector through Embedding</strong>, and then add <strong>positional encoding</strong> (because if only self-attention is used, there will be a lack of unknown information)</p>
-<p>Next we see <strong>Multi-Head Attention</strong>, which is <strong>the block of self-attention and Add&amp;Norm means residual plus layer normalization</strong>.</p>
-<p>Finally, <strong>doing Add&amp;Norm again after FC’s feed forward network is the output of the whole block</strong>, and this block will be <strong>repeated n times</strong>.</p>
-<h2 id="Decoder"><a href="#Decoder" class="headerlink" title="Decoder"></a>Decoder</h2><p>Then let us look at the Decoder:</p>
-<p><img data-src="/images/posts/NLP-series/transformer-2.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p><strong>Input the sequence obtained at the previous time</strong>, and then perform the same Embedding and Positional Encoding and then enter the block repeated N times.<br>The difference is that there is an extra <strong>“Masked” (note the red box) in the Multi-Head Attention</strong> when we first entered. What does it mean?</p>
-<p>Masked means that the model will <strong>only pay attention to the part it has already generated</strong>, and <strong>will not accidentally pay attention to the words generated in the future</strong>. Since the output of the Decoder is generated <strong>one by one</strong>, it has no way to consider its future input. It seems a bit vague to say this, and I will make it clearer when I talk about self-attention in the next article.</p>
-<p>After repeating the block N times, after the <strong>Linear Layer and Softmax</strong>, we can get the output <strong>probability distribution</strong> we want, and we can sample according to this distribution or take the value with the highest probability to get the output sequence.</p>
-<p>There is still one of the most critical self-attention mechanisms that has not been explained in detail. Let’s introduce how it pays attention to all input sequences and performs parallel processing in the next article!</p>
-<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MDM5Mg==">iThome - Day 27 Transformer (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MTI0Mg==">iThome - Day 28 Self-Attention (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9oYWNrbWQuaW8vQGFibGl1L0JrWG16REJtcg==">Transformer 李宏毅深度學習 (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9zcGVlY2guZWUubnR1LmVkdS50dy9+aHlsZWUvbWwvbWwyMDIxLWNvdXJzZS1kYXRhL3NlcTJzZXFfdjkucGRm">Transformer 李宏毅老師簡報<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQzJnZ2p0dXVXdnhySEhIaWFESDFkbFE=">李宏毅老師YouTube channel<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzE3MDYuMDM3NjI=">Attention is all you need (paper)<i class="fa fa-external-link-alt"></i></span></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>ML</tag>
-        <tag>AI</tag>
-        <tag>NLP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>[NLP][ML] Transformer (3) - More conputational detail</title>
-    <url>/posts/1255359463/</url>
-    <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>In this article, I will focus more on the computing detail in transformer.<br>It will cover self-attention, prallel processing, multi-head self-attention, positional encoding and so on.</p>
-<p><img data-src="/images/posts/NLP-series/transformer-2.png" 
-style="width: 70%; margin: 15px auto;"></p>
+    <title>[Git][Version Control] Git - Setup</title>
+    <url>/posts/731175240/</url>
+    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Setting up the environment of Git and some recommended GUI tools.</p>
 <span id="more"></span>
 
-<h1 id="Self-Attention"><a href="#Self-Attention" class="headerlink" title="Self-Attention"></a>Self-Attention</h1><h2 id="Idea"><a href="#Idea" class="headerlink" title="Idea"></a>Idea</h2><ul>
-<li>Input:<ul>
-<li>$x_1$, …, $x_4$, is a sequence.</li>
-<li>Each input first goes through an <strong>embedding(convert to vectors)</strong>, multiplied by a weight matrix to become $a_1$, …, $a_4$. These $a_1$, …, $a_4$ are then passed into a Self-attention layer</li>
-</ul>
+<h1 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h1><ol>
+<li><p>Install Git with the link below: (with your OS)<br><a href="%22https://git-scm.com/%22">Git official website</a></p>
 </li>
-<li>Each input is multiplied by different vectors:<ul>
-<li>$q$: query (to match against others)<ul>
-<li>$q_i$ &#x3D; $W^qa_i$</li>
-</ul>
-</li>
-<li>$k$: key (to be matched)<ul>
-<li>$k_i$ &#x3D; $W^ka_i$</li>
-</ul>
-</li>
-<li>$v$: value, information to be extracted<ul>
-<li>$v_i$ &#x3D; $W^va_i$</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>The weights $W^q$, $W^k$, $W^v$ are <strong>learned, initially randomly initialized</strong>.</li>
-</ul>
-<h2 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h2><p><img data-src="/images/posts/NLP-series/transformer-6.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p><img data-src="/images/posts/NLP-series/transformer-7.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<ol>
-<li>Take each query <strong>$q$ and perform attention on each key $k$</strong> (using two vectors to output a score(attention score)), which is essentially calculating the <strong>similarity of $q$ and $k$ (Similarity)</strong>.<ul>
-<li>Scaled Dot-Product: $S(q_1, k_1)$ yields $\alpha_{1,1}$, $S(q_1, k_2)$ yields $\alpha_{1,2}$, and so on.</li>
-<li>$\alpha_{1,i}$ &#x3D; $  q_1 \cdot k_i &#x2F; \sqrt{d}$ </li>
-<li>$d$ represents the <strong>dimensions of $q$ and $k$</strong>. This is a <strong>trick used by the authors in the paper</strong>.</li>
-</ul>
-</li>
-<li>Followed by <strong>Softmax normalization to normalize the values</strong>.</li>
-<li>Multiply the obtained $\hat{\alpha}$ with $v$ to get $b$, which is <strong>equivalent to a weighted sum</strong>.</li>
-<li>The obtained $b_1$ in the figure is the <strong>first vector (word or character)</strong> of the sought sequence.</li>
-<li>Each output vector incorporates information from the <strong>entire sequence</strong>.</li>
+<li><p>Type this command to check if it is installed successfully:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure></li>
 </ol>
-<h1 id="Prallel-Processing"><a href="#Prallel-Processing" class="headerlink" title="Prallel Processing"></a>Prallel Processing</h1><p><img data-src="/images/posts/NLP-series/transformer-8.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>$$q_i &#x3D; W^qa_i$$<br>$$k_i &#x3D; W^ka_i$$<br>$$v_i &#x3D; W^va_i$$</p>
-<hr>
-<p><img data-src="/images/posts/NLP-series/transformer-9.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<ol>
-<li>Consider $a_1$, …, $a_4$ as a matrix $I$. Multiply it by the weight matrix $W^q$ to obtain $q_1$, …, $q_4$, forming another matrix $Q$. </li>
-<li>The same process applies to matrices $K$ and $V$, formed by multiplying $q$, $k$, and $a$ to get<br>$\alpha_{1,1}$ &#x3D; $k^T_1 \cdot q_1$,<br>$\alpha_{1,2}$ &#x3D; $k^T_2 \cdot q_1$,<br>…<br>Stack $k_1$, …, $k_4$ to form matrix $K$, then multiply it by $q_1$ stacked with $q_2$, …, $q_4$ to form matrix $Q$, resulting in a matrix $A$ composed of $\alpha$ values, which is the <strong>Attention</strong>. </li>
-<li>After applying Softmax, it becomes $\hat{A}$. In each time step, attention exists between each pair of vectors.</li>
+<h1 id="Configure-Git-type-commands-in-your-shell"><a href="#Configure-Git-type-commands-in-your-shell" class="headerlink" title="Configure Git (type commands in your shell)"></a>Configure Git (type commands in your shell)</h1><ol>
+<li><p>Set your user name by running the following command:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Set your email address by running the following command:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.email youremail@example.com</span><br></pre></td></tr></table></figure></li>
+<li><p>Set up SSH key (for remote repository access. e.g. GitHub)</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure></li>
 </ol>
-<hr>
-<p><img data-src="/images/posts/NLP-series/transformer-10.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>By calculating the <strong>weighted sum of $V$ and $\hat{A}$</strong>, you obtain $b$, and the matrix composed of b forms the <strong>output matrix $O$</strong>.”</p>
-<hr>
-<h2 id="What-self-attention-layer-do"><a href="#What-self-attention-layer-do" class="headerlink" title="What self-attention layer do"></a>What self-attention layer do</h2><p><img data-src="/images/posts/NLP-series/transformer-11-1.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p><img data-src="/images/posts/NLP-series/transformer-11-2.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>By converting it into matrix multiplication, you can utilize the <strong>GPU to accelerate the computation</strong>.</p>
-<h1 id="Multi-head-Self-attention"><a href="#Multi-head-Self-attention" class="headerlink" title="Multi-head Self-attention"></a>Multi-head Self-attention</h1><p><img data-src="/images/posts/NLP-series/transformer-12.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>Taking 2 heads as an example:</p>
 <ul>
-<li>Having <strong>2 heads</strong> means splitting $q, k, v$ into two sets of $q, k, v$. And $q_{i,1}$ will only be multiplied with $k_{i,1}$ to obtain $\alpha_{i,1}$, finally calculating $b_{i,1}$. </li>
-<li>Afterward, concatenate $b_{i,1}, b_{i,2}$, apply a transformation, and perform dimension reduction to obtain the final $b_i$.</li>
-<li><strong>Each head focuses on different information</strong>; some only care about local information (neighborhood data), while others concentrate on global (long-term) information, and so on.</li>
-</ul>
-<h1 id="Positional-Encoding"><a href="#Positional-Encoding" class="headerlink" title="Positional Encoding"></a>Positional Encoding</h1><p><img data-src="/images/posts/NLP-series/transformer-13.png" 
-style="width: 40%; margin: 15px auto;"></p>
-<p>In the attention mechanism, the order of words in the input sentence doesn’t matter.</p>
-<hr>
-<p><img data-src="/images/posts/NLP-series/transformer-14.png" 
-style="width: 70%; margin: 15px auto;"></p>
+<li><p>Press Enter to accept the default file location and passphrase (or set your own if desired).<br>Once the key is generated, run the following command to add it to the SSH agent</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-add ~/.ssh/id_rsa</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Copy the public key to your clipboard by running the following command</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Add the copied public key to your Git hosting platform account (e.g., GitHub, GitLab) by following their documentation.</p>
+</li>
+<li><p>View your ssh keys</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd ~/.ssh</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ls</span><br></pre></td></tr></table></figure>
 <ul>
-<li>Without positional information &#x3D;&gt; Therefore, there is a <strong>unique position vector $e_i$</strong>, which is not learned but set by humans.</li>
-<li>Other methods: <strong>Using one-hot encoding</strong> to represent $p_i$ as $x_i$ to denote its position.</li>
+<li>Use a text editor or command-line tools (such as cat or less) to view the contents of the .pub files and see the public key information: <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat id_rsa.pub</span><br></pre></td></tr></table></figure></li>
 </ul>
-<h1 id="Seq2seq-with-Attention"><a href="#Seq2seq-with-Attention" class="headerlink" title="Seq2seq with Attention"></a>Seq2seq with Attention</h1><p><img data-src="/images/posts/NLP-series/transformer-15.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>The original seq2seq model consists of two RNNs, an Encoder and a Decoder, and can be applied to machine translation.</p>
-<p>In the diagram above, the Encoder originally contained bidirectional RNNs, while the Decoder contained a unidirectional RNN. In the diagram below, <strong>both(bi&#x2F;unidirectional RNN) have been replaced with Self-Attention layers</strong>, achieving the same purpose and enabling <strong>parallel processing</strong>.</p>
-<p><img data-src="/images/posts/NLP-series/transformer-16.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<h1 id="Look-into-the-detail-of-Transformer-Model"><a href="#Look-into-the-detail-of-Transformer-Model" class="headerlink" title="Look into the detail of Transformer Model"></a>Look into the detail of Transformer Model</h1><p><img data-src="/images/posts/NLP-series/transformer-2.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>Using Chinese to English translation for example.</p>
-<h2 id="Encoder-Part"><a href="#Encoder-Part" class="headerlink" title="Encoder Part:"></a>Encoder Part:</h2><ol>
-<li>The input goes through <strong>Input Embedding</strong>, which considers <strong>positional information</strong> and is augmented with manually set Positional Encoding. It then enters the block that <strong>repeats N times</strong>.</li>
-</ol>
-<hr>
-<p><img data-src="/images/posts/NLP-series/transformer-17.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<ol start="2">
-<li>Multi-head:<br>Within the Encoder, it utilizes <strong>Multi-head Attention,</strong> which means there <strong>are multiple sets of $q$, $k$, $z$</strong>. Inside this mechanism, individual $qkv$ multiplications with $a$ are performed, leading to the calculation of $\alpha$, ultimately resulting in $b$.</li>
-</ol>
-<hr>
-<p><img data-src="/images/posts/NLP-series/transformer-18.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<ol start="3">
-<li>Add &amp; Norm (residual connection):<br>The <strong>input</strong> of Multi-head Attention, denoted as <strong>$a$</strong>, is added to the <strong>output $b$</strong>, resulting in <strong>$b^\prime$</strong>. Following this, <strong>Layer Normalization</strong> is performed. </li>
-<li>Once the calculations are completed, the result is passed through the <strong>forward propagation</strong>, followed by another <strong>Add &amp; Norm</strong> step.</li>
-</ol>
-<h2 id="Decoder-Part"><a href="#Decoder-Part" class="headerlink" title="Decoder Part"></a>Decoder Part</h2><p><img data-src="/images/posts/NLP-series/transformer-18-2.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<ol>
-<li><p>The Decoder <strong>input is the output from the previous time step</strong>. It goes through output embedding, considering positional information, and is augmented with manually set positional encoding. It then enters the block that repeats n times.</p>
 </li>
-<li><p><strong>Masked Multi-head Attention</strong>:<br>Attention is performed, where <strong>“Masked” indicates attending only to the already generated sequence</strong>. This is followed by an Add &amp; Norm layer.</p>
-</li>
-<li><p>Next, it undergoes a Multi-head Attention layer, attending to the <strong>previous output of the Encoder</strong>, followed by another Add &amp; Norm layer.</p>
-</li>
-<li><p>After the computations, it is passed to the <strong>Feed Forward forward propagation</strong>. Subsequently, <strong>Linear and Softmax</strong> operations are applied to generate the <strong>final output</strong>.</p>
-</li>
+</ul>
+<ol start="4">
+<li>You can see your configuration by typing the following commands:<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --list</span><br></pre></td></tr></table></figure></li>
 </ol>
-<hr>
-<p>Last but not least, I provide the definition and purpose of encoder and decoder (in the previous article):</p>
-<blockquote>
-<p>Encoder-Decoder Architecture:<br>   The Transformer’s architecture is divided into an <strong>encoder and a decoder</strong>. The <strong>encoder processes the input sequence, capturing its contextual information</strong>, while the <strong>decoder generates the output sequence</strong>. This architecture is widely used in tasks like machine translation.</p>
-</blockquote>
-<h1 id="Attention-Visualization"><a href="#Attention-Visualization" class="headerlink" title="Attention Visualization"></a>Attention Visualization</h1><h2 id="single-head"><a href="#single-head" class="headerlink" title="single-head"></a>single-head</h2><p><img data-src="/images/posts/NLP-series/transformer-19.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>The relationships between words. The thicker the line, the more related of these words.</p>
-<h2 id="multi-head"><a href="#multi-head" class="headerlink" title="multi-head"></a>multi-head</h2><p><img data-src="/images/posts/NLP-series/transformer-20.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>The results obtained by pairing different sets of $q$ and $k$ vectors differ, indicating that different sets of $q$ and $k$ possess distinct information. This signifies that various sets of $q$ and $k$ hold different types of information, with some focusing on local aspects (below) and others on global aspects (above).</p>
-<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MDM5Mg==">iThome - Day 27 Transformer (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MTI0Mg==">iThome - Day 28 Self-Attention (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9oYWNrbWQuaW8vQGFibGl1L0JrWG16REJtcg==">Transformer 李宏毅深度學習 (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9zcGVlY2guZWUubnR1LmVkdS50dy9+aHlsZWUvbWwvbWwyMDIxLWNvdXJzZS1kYXRhL3NlcTJzZXFfdjkucGRm">Transformer 李宏毅老師簡報<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQzJnZ2p0dXVXdnhySEhIaWFESDFkbFE=">李宏毅老師YouTube channel<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzE3MDYuMDM3NjI=">Attention is all you need (paper)<i class="fa fa-external-link-alt"></i></span></li>
+<h1 id="Recommended-GUI-tools"><a href="#Recommended-GUI-tools" class="headerlink" title="Recommended GUI tools"></a>Recommended GUI tools</h1><p>Both commands and GUI tools are important to Git manupulation.<br>And Here are some recommended Git GUI tools that you can use.</p>
+<ul>
+<li><a href="%22https://www.sourcetreeapp.com/%22">Sourcetree</a></li>
+<li><a href="%22https://www.gitkraken.com/%22">GitKraken</a></li>
 </ul>
 ]]></content>
+      <categories>
+        <category>Git 系列文</category>
+      </categories>
       <tags>
-        <tag>ML</tag>
-        <tag>AI</tag>
-        <tag>NLP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>[NLP][ML] Transformer (2) - Attention &amp; Summary</title>
-    <url>/posts/2443192075/</url>
-    <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>Self-attention allows the model to <strong>weigh the importance of different parts of an input sequence against each other</strong>, capturing <strong>relationships</strong> and dependencies between elements within the sequence. This is particularly powerful for tasks involving sequential or contextual information, such as language translation, text generation, and more.</p>
-<p>What Self-Attention wants to do is to replace what RNN can do<br>Its output&#x2F;input is the same as RNN, and its biggest advantages are:</p>
-<ul>
-<li>Can parallelize operations</li>
-<li>Each output vector has seen the entire input sequence. So there is no need to stack several layers like CNN.</li>
-</ul>
-<span id="more"></span>
-<h1 id="Difference-between-attention-and-self-attention"><a href="#Difference-between-attention-and-self-attention" class="headerlink" title="Difference between attention and self-attention"></a>Difference between attention and self-attention</h1><p><strong>attention is a broader concept of selectively focusing on information</strong>, while <strong>self-attention is a specific implementation of this concept</strong> where elements within the same sequence are attended to. Self-attention is a fundamental building block of the Transformer architecture, allowing it to capture relationships and dependencies within sequences effectively.</p>
-<h1 id="Attention-Machanism"><a href="#Attention-Machanism" class="headerlink" title="Attention (Machanism)"></a>Attention (Machanism)</h1><p>main idea:<br>use <strong>triples</strong><br>$$&lt;Q,K,V&gt;$$</p>
-<p>Represents the <strong>attention mechanism</strong>, expresses the <strong>similarity between Query and Key</strong>, and then assigns the value of <strong>Value according to the similarity</strong><br><strong>formula</strong>:<br>$$Attention(Q,K,V) &#x3D; softmax(\frac{QK^T}{\sqrt{d_k}})V$$</p>
-<h1 id="Self-Attention-Layer-Key"><a href="#Self-Attention-Layer-Key" class="headerlink" title="Self-Attention(Layer) (Key)"></a>Self-Attention(Layer) (<strong>Key</strong>)</h1><h2 id="Computing-process"><a href="#Computing-process" class="headerlink" title="Computing process"></a>Computing process</h2><ol>
-<li><p>Now we suppose to enter $a_1$~$a_4$ Four vector, and Self-Attention needs to output another row of $b$ vectors, and each $b$ is generated after considering all $a$</p>
-</li>
-<li><p>To figure out $b_1$, the first step is based on $a_1$, find <strong>other vectors related to $a_1$</strong> in this sequence. We use the “$\alpha$” to represent the <strong>similarity</strong> of each vector related to $a_1$.</p>
-</li>
-<li><p>It must be mentioned here that there are <strong>3 very important values in the Self-Attention mechanism</strong>: <strong>Query, Key, Value</strong>. Respectively represent <strong>the value used to match, the value to be matched, and the extracted information</strong>.</p>
-</li>
-<li><p>As for determining the <strong>correlation between two vectors</strong>, the most commonly used method is the <strong>dot product (here is scaled dot product)</strong>. It takes two vectors as input and multiplies them with two different matrices. The left vector is multiplied by the matrix $W^q$ (Query matrix), and the right vector is multiplied by the matrix $W^k$ (Key matrix). The values of $W^q$ and $W^k$ are both <strong>randomly initialized and obtained through training</strong>.</p>
-</li>
-<li><p>Next, after obtaining the two vectors, $q$, $k$, the <strong>dot product is computed between them</strong>. After summing up all the dot products, a <strong>scalar (magnitude)</strong> is obtained. This scalar is represented as $\alpha$, which we consider as <strong>the degree of correlation between the two vectors.</strong></p>
-</li>
-</ol>
-<p><img data-src="/images/posts/NLP-series/transformer-6.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>Next, we apply what was just introduced to Self-Attention.</p>
-<ol>
-<li>First, we calculate the relationships “$\alpha$” between $a_1$ and $a_2$, $a_3$, $a_4$ individually. <ul>
-<li>We multiply $a_1$ by $W^q$ to obtain $q_1$. </li>
-<li>Then, we multiply $a_2$, $a_3$, $a_4$ by $W^k$ respectively and compute the inner products to determine the relationship “$\alpha$” between $a_1$ and each vector. </li>
-<li>Applying the Softmax function yields $\alpha’$. </li>
-<li>With this $\alpha’$, we can extract crucial information from this sequence!</li>
-</ul>
-</li>
-</ol>
-<hr>
-<p><img data-src="/images/posts/NLP-series/transformer-7.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<ol start="2">
-<li>How to extract important information using $\alpha’$? The steps are as follows:</li>
-</ol>
-<ul>
-<li>First, multiply $a_1$ ~ $a_4$ by $W^v$ to obtain new vectors, denoted as $v_1$, $v_2$, $v_3$ and $v_4$, respectively (where $W^v$ is the Value matrix).</li>
-<li>Next, multiply each vector here, $v_1$ ~ $v_4$, by $\alpha’$, and then sum them to obtain the output $b_1$ (formula written in the top-right corner of the image).</li>
-</ul>
-<p>If a certain vector receives a higher score - for instance, if the relationship between $a_1$ and $a_2$ is strong, leading to a large value for $\alpha_{1,2}’$ - then after performing the weighted sum, the value of $b_1$ obtained could be very close to $v_2$.</p>
-<p>Now that we know how to compute $b_1$, it naturally follows that we can deduce $b_1$, $b_2$, $b_3$, and $b_4$ using the same method. With this, we have completed the explanation of the internal computation process of Self-Attention.</p>
-<p>Last but not least, the <strong>similarity matrix($\alpha_{i,j}$)</strong> is just the <strong>attention</strong> in the self-attention layer, i.e. importance or relevance to other elements in the same sequence..</p>
-<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><h2 id="Attention-Score-Weight-and-Output"><a href="#Attention-Score-Weight-and-Output" class="headerlink" title="Attention (Score, Weight and Output)"></a>Attention (Score, Weight and Output)</h2><ul>
-<li>$ Attention Score &#x3D; QK^T $</li>
-<li>$ Attention Weights &#x3D; Softmax(\frac{Attention Score}{\sqrt{d_k}}) $</li>
-<li>$ Attention Output &#x3D; (Attention Weights)V $</li>
-</ul>
-<h2 id="Key-Components-of-Transformers"><a href="#Key-Components-of-Transformers" class="headerlink" title="Key Components of Transformers"></a>Key Components of Transformers</h2><ol>
-<li><p>Self-Attention Mechanism:<br>The core innovation of the Transformer is the self-attention mechanism, which allows the model to <strong>weigh the importance of different words in a sequence relative to each other</strong>. It computes attention scores for each word by considering its <strong>relationships with all other words</strong> in the same sequence. Self-attention enables capturing context and dependencies between words <strong>regardless of their distance</strong>.</p>
-</li>
-<li><p>Multi-Head Attention:<br>To capture different types of relationships, the Transformer employs multi-head attention. <strong>Multiple sets of self-attention mechanisms (attention heads) run in parallel</strong>, and their outputs are concatenated and linearly transformed to create a more comprehensive representation.</p>
-</li>
-<li><p>Positional Encodings:<br>Since the Transformer does not inherently understand <strong>the order of words in a sequence</strong> (unlike recurrent networks(RNN)), positional encodings are added to the input embeddings. These encodings provide <strong>information about the positions of words within the sequence</strong>.</p>
-</li>
-<li><p>Encoder-Decoder Architecture:<br>The Transformer’s architecture is divided into an <strong>encoder and a decoder</strong>. The <strong>encoder processes the input sequence, capturing its contextual information</strong>, while the <strong>decoder generates the output sequence</strong>. This architecture is widely used in tasks like machine translation.</p>
-</li>
-<li><p>Residual Connections and Layer Normalization:<br>To address the <strong>vanishing gradient problem</strong>, residual connections (skip connections) are used around each sub-layer in the encoder and decoder. Layer normalization is also applied to <strong>stabilize</strong> the training process.</p>
-</li>
-<li><p>Position-wise Feed-Forward Networks:<br>After the self-attention layers, each position’s representation is passed through a position-wise feed-forward neural network, which <strong>adds non-linearity to the model</strong>.</p>
-</li>
-<li><p>Scaled Dot-Product Attention:<br>The self-attention mechanism involves computing the <strong>dot product of query, key, and value vectors</strong>. To control the scale of the dot products and <strong>avoid large gradients</strong>, the dot products are divided by the <strong>square root of the dimension of the key vectors</strong>.</p>
-</li>
-<li><p>Masked Self-Attention in Decoding:<br>During decoding, the self-attention mechanism is modified to <strong>ensure that each position can only attend to previous positions</strong>. This masking <strong>prevents the model from “cheating” by looking ahead in the output sequence</strong>.</p>
-</li>
-<li><p>Transformer Variants:<br> The original Transformer model has inspired various extensions and improvements, such as BERT, GPT, and more. BERT focuses on pretraining language representations, while GPT is designed for autoregressive text generation.</p>
-</li>
-</ol>
-<p>The Transformer architecture has become the foundation for many state-of-the-art NLP models due to its ability to <strong>capture context, parallelize computations, and handle long-range dependencies effectively</strong>. It has led to significant advancements in machine translation, text generation, sentiment analysis, and various other NLP tasks.</p>
-<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MDM5Mg==">iThome - Day 27 Transformer (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MTI0Mg==">iThome - Day 28 Self-Attention (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9oYWNrbWQuaW8vQGFibGl1L0JrWG16REJtcg==">Transformer 李宏毅深度學習 (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9zcGVlY2guZWUubnR1LmVkdS50dy9+aHlsZWUvbWwvbWwyMDIxLWNvdXJzZS1kYXRhL3NlcTJzZXFfdjkucGRm">Transformer 李宏毅老師簡報<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQzJnZ2p0dXVXdnhySEhIaWFESDFkbFE=">李宏毅老師YouTube channel<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzE3MDYuMDM3NjI=">Attention is all you need (paper)<i class="fa fa-external-link-alt"></i></span></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>ML</tag>
-        <tag>AI</tag>
-        <tag>NLP</tag>
+        <tag>Git</tag>
+        <tag>Version Control</tag>
       </tags>
   </entry>
   <entry>
