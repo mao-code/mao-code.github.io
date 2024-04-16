@@ -6,7 +6,7 @@
   <link href="https://mao-code.github.io/atom.xml" rel="self"/>
   
   <link href="https://mao-code.github.io/"/>
-  <updated>2024-01-21T08:59:49.907Z</updated>
+  <updated>2024-04-16T05:45:17.309Z</updated>
   <id>https://mao-code.github.io/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Understanding Cloud Computing - Public, Private, and Hybrid Clouds</title>
+    <link href="https://mao-code.github.io/posts/3108822142/"/>
+    <id>https://mao-code.github.io/posts/3108822142/</id>
+    <published>2024-04-16T05:15:26.000Z</published>
+    <updated>2024-04-16T05:45:17.309Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Cloud computing has become a cornerstone for deploying modern IT solutions, offering scalable, efficient, and versatile options for businesses and individuals alike. With the evolution of cloud technology, three primary deployment models have emerged: public, private, and hybrid clouds. Each model offers distinct features, benefits, and considerations, making it crucial to understand their differences to choose the most suitable option for your needs. In this article, we’ll delve into the nuances of public, private, and hybrid clouds, helping you navigate the cloud landscape.</p><span id="more"></span><h1 id="Public-Cloud"><a href="#Public-Cloud" class="headerlink" title="Public Cloud"></a>Public Cloud</h1><p>The public cloud is a model where computing services are <strong>offered by third-party providers</strong> over the Internet, making them available to anyone who wants to use or purchase them. This model is characterized by its scalability, reliability, and flexibility, allowing users to access a wide range of resources and services on a pay-as-you-go basis. Public clouds are ideal for businesses that need to <strong>scale their computing resources up or down quickly</strong> or that do not want to invest in heavy upfront costs for infrastructure.</p><p>Below are the features of public cloud:</p><ul><li>Characteristics<ul><li>Multi-tenancy: Shared resources among multiple users.</li><li>Scalability: Easily adjusts to demand.</li><li>Cost-Effectiveness: Pay-as-you-go model reduces upfront investments.</li><li>Maintenance: Handled by the provider, reducing the workload on users.</li></ul></li><li>Benefits<ul><li>Quick, easy setup and scalability.</li><li>Access to a broad range of services and applications.</li><li>No need for physical hardware investments.</li></ul></li><li>Challenges<ul><li>Lesser control over security and privacy.</li><li>Performance may vary due to the shared resource model.</li></ul></li><li>Examples:<ul><li>Amazon Web Services (AWS)</li><li>Microsoft Azure</li><li>Google Cloud Platform (GCP)</li></ul></li></ul><h1 id="Private-Cloud"><a href="#Private-Cloud" class="headerlink" title="Private Cloud"></a>Private Cloud</h1><p>Private cloud refers to cloud computing resources used <strong>exclusively by a single business or organization.</strong> The private cloud can be hosted on the <strong>organization’s own premises or by a third-party service provider but remains within the control of the organization it serves.</strong> This model offers enhanced security and control, making it suitable for businesses with <strong>strict regulatory compliance requirements or those that handle sensitive data.</strong></p><p>Below are the features of private cloud:</p><ul><li>Characteristics<ul><li>Single-tenancy: Dedicated resources for a single organization.</li><li>Customization: Tailorable to specific business needs.</li><li>Control: More direct oversight over security and compliance.</li></ul></li><li>Benefits<ul><li>Enhanced security and privacy.</li><li>Full control over the cloud environment.</li><li>Potentially more cost-effective for steady, predictable workloads.</li></ul></li><li>Challenges<ul><li>Requires more significant initial investment and expertise.</li><li>Maintenance and management can be resource-intensive.</li></ul></li><li>Examples:<ul><li>VMware vSphere</li><li>OpenStack</li><li>Microsoft Azure Stack</li></ul></li></ul><blockquote><p>Note: The distinction between private cloud hosted by a third-party provider and public cloud lies in <strong>the architecture, resource allocation, and control</strong> rather than the physical location or ownership of the infrastructure. </p></blockquote><h1 id="Hybrid-Cloud"><a href="#Hybrid-Cloud" class="headerlink" title="Hybrid Cloud"></a>Hybrid Cloud</h1><p>Hybrid cloud combines public and private cloud elements, with technology enabling data and applications to be shared between them. This approach allows businesses to <strong>keep critical applications and sensitive data in a private cloud for security while leveraging the robust scalability and cost-efficiency of the public cloud for less sensitive operations.</strong> Hybrid cloud is ideal for organizations looking for flexibility, more deployment options, and optimization of their workloads across different environments.</p><p>Below are the features of hybrid cloud:</p><ul><li>Characteristics<ul><li>Interoperability: Smooth integration between public and private sectors.</li><li>Flexibility: Workloads are movable based on needs and costs.</li><li>Optimization: Places workloads in the best environment for performance, cost, and compliance.</li></ul></li><li>Benefits<ul><li>Merges the scalability of public clouds with the security of private clouds.</li><li>Supports dynamic or fluctuating workloads effectively.</li><li>Ideal for meeting both operational flexibility and compliance requirements.</li></ul></li><li>Challenges<ul><li>Complexity in setup and ongoing management.</li><li>Necessitates strategic planning for seamless operation across environments.</li></ul></li><li>Examples:<ul><li>IBM Cloud</li><li>Oracle Cloud at Customer</li><li>AWS Outposts</li></ul></li></ul><h1 id="Comparison"><a href="#Comparison" class="headerlink" title="Comparison"></a>Comparison</h1><table><thead><tr><th>Feature</th><th>Public Cloud</th><th>Private Cloud</th><th>Hybrid Cloud</th></tr></thead><tbody><tr><td><strong>Accessibility</strong></td><td>Over the Internet, available to all</td><td>Restricted to a single organization</td><td>Combination, with controlled access</td></tr><tr><td><strong>Cost</strong></td><td>Pay-as-you-go, less upfront cost</td><td>Higher initial cost and maintenance</td><td>Varies, can optimize cost based on usage</td></tr><tr><td><strong>Control</strong></td><td>Limited control over infrastructure</td><td>High control over resources</td><td>Balances control and flexibility</td></tr><tr><td><strong>Security</strong></td><td>Good, but shared with other tenants</td><td>Enhanced, as resources are not shared</td><td>Customizable, can be tailored for each part</td></tr><tr><td><strong>Scalability</strong></td><td>Highly scalable, on-demand resources</td><td>Scalable, but within private resources</td><td>Highly scalable, leverages both models</td></tr><tr><td><strong>Suitability</strong></td><td>Small to large businesses needing scalability</td><td>Businesses with strict data control needs</td><td>Businesses requiring flexibility and control</td></tr><tr><td><strong>Maintenance</strong></td><td>Managed by the provider</td><td>Managed by the organization or provider</td><td>Combination, depending on where hosted</td></tr></tbody></table><h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul><li><span class="exturl" data-url="aHR0cHM6Ly93d3cuYnVzaW5lc3N0ZWNod2Vla2x5LmNvbS9vcGVyYXRpb25hbC1lZmZpY2llbmN5L2Nsb3VkLWNvbXB1dGluZy9wcml2YXRlLWNsb3VkLXZzLXB1YmxpYy1jbG91ZC8=">Private Cloud vs Public Cloud: Which Cloud Computing deployment model is best for your business?<i class="fa fa-external-link-alt"></i></span></li></ul>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;Introduction&quot;&gt;&lt;a href=&quot;#Introduction&quot; class=&quot;headerlink&quot; title=&quot;Introduction&quot;&gt;&lt;/a&gt;Introduction&lt;/h1&gt;&lt;p&gt;Cloud computing has become a cornerstone for deploying modern IT solutions, offering scalable, efficient, and versatile options for businesses and individuals alike. With the evolution of cloud technology, three primary deployment models have emerged: public, private, and hybrid clouds. Each model offers distinct features, benefits, and considerations, making it crucial to understand their differences to choose the most suitable option for your needs. In this article, we’ll delve into the nuances of public, private, and hybrid clouds, helping you navigate the cloud landscape.&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="cloud computing" scheme="https://mao-code.github.io/tags/cloud-computing/"/>
+    
+  </entry>
   
   <entry>
     <title>Basic OOP 基礎物件導向</title>
@@ -59,9 +78,9 @@
     
     <category term="專案" scheme="https://mao-code.github.io/categories/%E5%B0%88%E6%A1%88/"/>
     
-    <category term="NCCUPass" scheme="https://mao-code.github.io/categories/GDSC/NCCUPass/"/>
-    
     <category term="心得" scheme="https://mao-code.github.io/categories/%E5%BF%83%E5%BE%97/"/>
+    
+    <category term="NCCUPass" scheme="https://mao-code.github.io/categories/GDSC/NCCUPass/"/>
     
     <category term="side project" scheme="https://mao-code.github.io/categories/%E5%B0%88%E6%A1%88/side-project/"/>
     
@@ -303,9 +322,9 @@ style=&quot;width: 70%; margin: 15px auto;&quot;&gt;&lt;br&gt;Source: &lt;a href
     
     <category term="專案" scheme="https://mao-code.github.io/categories/%E5%B0%88%E6%A1%88/"/>
     
-    <category term="NCCUPass" scheme="https://mao-code.github.io/categories/GDSC/NCCUPass/"/>
-    
     <category term="心得" scheme="https://mao-code.github.io/categories/%E5%BF%83%E5%BE%97/"/>
+    
+    <category term="NCCUPass" scheme="https://mao-code.github.io/categories/GDSC/NCCUPass/"/>
     
     <category term="side project" scheme="https://mao-code.github.io/categories/%E5%B0%88%E6%A1%88/side-project/"/>
     
