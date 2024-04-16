@@ -24,29 +24,29 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"mao-code.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="ForewordHere we start to learn the basic but very important concept of Git. This will affect the way you think in the future when you use Git.">
+    <meta name="description" content="ForewordClassless Inter-Domain Routing (CIDR) revolutionized IP address allocation and routing on the internet. By moving away from the rigid class-based system (Classes A, B, and C), CIDR introduced">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[Git][Version Control] Git - Basics [1]">
-<meta property="og:url" content="https://mao-code.github.io/posts/1858082052/index.html">
+<meta property="og:title" content="Understanding CIDR - A Guide to Classless Inter-Domain Routing">
+<meta property="og:url" content="https://mao-code.github.io/posts/1789986274/index.html">
 <meta property="og:site_name" content="Mao 勛哥&#39;s blog">
-<meta property="og:description" content="ForewordHere we start to learn the basic but very important concept of Git. This will affect the way you think in the future when you use Git.">
+<meta property="og:description" content="ForewordClassless Inter-Domain Routing (CIDR) revolutionized IP address allocation and routing on the internet. By moving away from the rigid class-based system (Classes A, B, and C), CIDR introduced">
 <meta property="og:locale" content="zh_TW">
-<meta property="article:published_time" content="2023-05-20T06:02:32.000Z">
-<meta property="article:modified_time" content="2023-05-24T05:00:08.905Z">
+<meta property="article:published_time" content="2024-04-16T05:53:44.000Z">
+<meta property="article:modified_time" content="2024-04-16T06:22:36.868Z">
 <meta property="article:author" content="Mao 勛哥">
-<meta property="article:tag" content="Git">
-<meta property="article:tag" content="Version Control">
+<meta property="article:tag" content="networking">
+<meta property="article:tag" content="cloud">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://mao-code.github.io/posts/1858082052/">
+<link rel="canonical" href="https://mao-code.github.io/posts/1789986274/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://mao-code.github.io/posts/1858082052/","path":"posts/1858082052/","title":"[Git][Version Control] Git - Basics [1]"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://mao-code.github.io/posts/1789986274/","path":"posts/1789986274/","title":"Understanding CIDR - A Guide to Classless Inter-Domain Routing"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>[Git][Version Control] Git - Basics [1] | Mao 勛哥's blog</title><meta name="robots" content="noindex">
+<title>Understanding CIDR - A Guide to Classless Inter-Domain Routing | Mao 勛哥's blog</title>
   
 
 
@@ -152,7 +152,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Foreword"><span class="nav-number">1.</span> <span class="nav-text">Foreword</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Foreword"><span class="nav-number">1.</span> <span class="nav-text">Foreword</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#What-is-CIDR"><span class="nav-number">2.</span> <span class="nav-text">What is CIDR?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Key-Concepts-of-CIDR"><span class="nav-number">3.</span> <span class="nav-text">Key Concepts of CIDR</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#How-CIDR-Works"><span class="nav-number">4.</span> <span class="nav-text">How CIDR Works</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Computing-CIDR"><span class="nav-number">5.</span> <span class="nav-text">Computing CIDR</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Example"><span class="nav-number">5.1.</span> <span class="nav-text">Example</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Calculating-Subnets-and-Hosts"><span class="nav-number">5.2.</span> <span class="nav-text">Calculating Subnets and Hosts</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Extra"><span class="nav-number">6.</span> <span class="nav-text">Extra</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Network-Address"><span class="nav-number">6.1.</span> <span class="nav-text">Network Address</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Broadcast-Address"><span class="nav-number">6.2.</span> <span class="nav-text">Broadcast Address</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Subnet-Masl"><span class="nav-number">6.3.</span> <span class="nav-text">Subnet Masl</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Detailed-Example"><span class="nav-number">6.3.1.</span> <span class="nav-text">Detailed Example</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Resources"><span class="nav-number">7.</span> <span class="nav-text">Resources</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -237,7 +237,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://mao-code.github.io/posts/1858082052/">
+    <link itemprop="mainEntityOfPage" href="https://mao-code.github.io/posts/1789986274/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/mypic.JPG">
@@ -250,12 +250,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="[Git][Version Control] Git - Basics [1] | Mao 勛哥's blog">
+      <meta itemprop="name" content="Understanding CIDR - A Guide to Classless Inter-Domain Routing | Mao 勛哥's blog">
       <meta itemprop="description" content>
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          [Git][Version Control] Git - Basics [1]
+          Understanding CIDR - A Guide to Classless Inter-Domain Routing
         </h1>
 
         <div class="post-meta-container">
@@ -265,15 +265,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">發表於</span>
+      
 
-      <time title="創建時間：2023-05-20 14:02:32" itemprop="dateCreated datePublished" datetime="2023-05-20T14:02:32+08:00">2023-05-20</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新於</span>
-      <time title="修改時間：2023-05-24 13:00:08" itemprop="dateModified" datetime="2023-05-24T13:00:08+08:00">2023-05-24</time>
+      <time title="創建時間：2024-04-16 13:53:44 / 修改時間：14:22:36" itemprop="dateCreated datePublished" datetime="2024-04-16T13:53:44+08:00">2024-04-16</time>
     </span>
 
   
@@ -290,14 +284,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">文章字數：</span>
-      <span>116</span>
+      <span>4.4k</span>
     </span>
     <span class="post-meta-item" title="所需閱讀時間">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">所需閱讀時間 &asymp;</span>
-      <span>1 分鐘</span>
+      <span>4 分鐘</span>
     </span>
 </div>
 
@@ -308,22 +302,53 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Here we start to learn the basic but very important concept of Git. This will affect the way you think in the future when you use Git. </p>
+        <h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Classless Inter-Domain Routing (CIDR) revolutionized IP address allocation and routing on the internet. By moving away from the rigid class-based system (Classes A, B, and C), CIDR introduced a more flexible and efficient method for managing IP spaces. This article delves into what CIDR is, how it works, and how to compute CIDR blocks for network planning.</p>
 <span id="more"></span>
 
-<!-- flag of hidden posts -->
+<h1 id="What-is-CIDR"><a href="#What-is-CIDR" class="headerlink" title="What is CIDR?"></a>What is CIDR?</h1><p>CIDR stands for <strong>Classless Inter-Domain Routing</strong>. It’s a method used for <strong>allocating IP addresses and routing Internet Protocol packets</strong>. CIDR allows for variable-length subnet masking which enables a more efficient allocation of IP addresses. It’s designed to replace the older system based on classes (A, B, C) to improve address space allocation and enhance routing scalability on the internet.</p>
+<h1 id="Key-Concepts-of-CIDR"><a href="#Key-Concepts-of-CIDR" class="headerlink" title="Key Concepts of CIDR"></a>Key Concepts of CIDR</h1><ul>
+<li>IP Address: A unique numerical label assigned to devices connected to a network that uses the Internet Protocol for communication. (e.g.192.168.1.0)</li>
+<li>Subnet Mask: Defines a <strong>range</strong> of IP addresses considered to be in <strong>the same network segment</strong>. (e.g. mask 255.255.255.0 is represented as &#x2F;24 in CIDR)</li>
+<li>CIDR Notation: A compact representation of an IP address and its associated routing prefix in a format like 192.168.1.0&#x2F;24.</li>
+</ul>
+<h1 id="How-CIDR-Works"><a href="#How-CIDR-Works" class="headerlink" title="How CIDR Works"></a>How CIDR Works</h1><p>CIDR introduces flexibility in the allocation of IP addresses by <strong>varying the length of the subnet portion of the address</strong>. Unlike the fixed subnet masks of the class-based system, CIDR notation allows the network boundary to be set anywhere, enabling both smaller and larger blocks of addresses to be allocated as needed.</p>
+<h1 id="Computing-CIDR"><a href="#Computing-CIDR" class="headerlink" title="Computing CIDR"></a>Computing CIDR</h1><p>To compute a CIDR block, you need the starting IP address and the size of the network (i.e., how many addresses you need).</p>
+<h2 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h2><p>Suppose you have an IP address of 192.168.1.0 and need to support 254 devices. You would start with the base IP address 192.168.1.0 and then use a <strong>subnet mask that supports 254 devices</strong>. The CIDR block 192.168.1.0&#x2F;24 uses a subnet mask of <strong>255.255.255.0</strong>, allowing for 256 addresses total (the last part bits), which after accounting for the <strong>network and broadcast addresses</strong>, leaves 254 usable addresses for devices.</p>
+<h2 id="Calculating-Subnets-and-Hosts"><a href="#Calculating-Subnets-and-Hosts" class="headerlink" title="Calculating Subnets and Hosts"></a>Calculating Subnets and Hosts</h2><ul>
+<li>Subnets: The number of available subnets can be calculated based on the number of bits borrowed for subnetting, with more bits allowing for more subnets.</li>
+<li>Hosts: The formula<br>$$ 2^{(32−\text{subnet mask length})}−2 $$</li>
+</ul>
+<p>calculates the number of usable host addresses in a subnet, subtracting 2 for the network and broadcast addresses.</p>
+<h1 id="Extra"><a href="#Extra" class="headerlink" title="Extra"></a>Extra</h1><h2 id="Network-Address"><a href="#Network-Address" class="headerlink" title="Network Address"></a>Network Address</h2><blockquote>
+<p>The network address represents the start of an IP address range assigned to a network. It is used to identify the network itself.</p>
+</blockquote>
+<p>The network address is calculated by applying the subnet mask to any IP address within the network, resulting in the lowest possible address in the range. In binary terms, the network address is formed by performing a bitwise AND operation between any IP address in the network and the subnet mask. This address is not assignable to any individual device within the network because it is used to identify the network as a whole.</p>
+<h2 id="Broadcast-Address"><a href="#Broadcast-Address" class="headerlink" title="Broadcast Address"></a>Broadcast Address</h2><blockquote>
+<p>The broadcast address is the last address in a network range and is used to send data to all devices within that network. </p>
+</blockquote>
+<p>When a packet is sent to the broadcast address, it is delivered to all hosts in the network rather than a single recipient. The broadcast address is determined by inverting the subnet mask (turning all subnet mask 0 bits into 1s) and performing a bitwise OR operation with the network address. Like the network address, the broadcast address is not assignable to any device, as its purpose is to facilitate the broadcasting of messages to all devices on the network.</p>
+<h2 id="Subnet-Masl"><a href="#Subnet-Masl" class="headerlink" title="Subnet Masl"></a>Subnet Masl</h2><p>A subnet mask is a 32-bit number that masks an IP address and divides the IP address into network address and host address. Subnet masks are made up of two parts:</p>
+<ol>
+<li>The network part, which identifies a particular network and is represented by the binary 1s in the mask.</li>
+<li>The host part, which identifies a specific device (host) on that network and is represented by the binary 0s in the mask.</li>
+</ol>
+<p>For example, in the subnet mask 255.255.255.0 or in CIDR notation &#x2F;24, the first 24 bits are the network part (all 1s in binary), and the last 8 bits are the host part (all 0s in binary). This means any IP address with the same first 24 bits belongs to the same network, and the last 8 bits can vary to represent different devices within that network.</p>
+<h3 id="Detailed-Example"><a href="#Detailed-Example" class="headerlink" title="Detailed Example"></a>Detailed Example</h3><p>Let’s consider the network 192.168.1.0&#x2F;24:</p>
+<ul>
+<li>IP Address Range: 192.168.1.0 to 192.168.1.255</li>
+<li>Subnet Mask: 255.255.255.0 or &#x2F;24 in CIDR notation</li>
+<li>Network Address: 192.168.1.0 (the first address in the range, represents the network itself)</li>
+<li>Broadcast Address: 192.168.1.255 (the last address in the range, used to broadcast to all devices on the network)</li>
+</ul>
+<p>In this case, the subnet mask &#x2F;24 indicates that the first 24 bits (the first three octets) are the network part, and the last 8 bits (the last octet) are for hosts. This allows for up to 256 IP addresses (from 192.168.1.0 to 192.168.1.255), but since the first and last addresses are reserved for the network and broadcast addresses, respectively, it leaves 254 addresses available for devices.</p>
+<h1 id="Resources"><a href="#Resources" class="headerlink" title="Resources"></a>Resources</h1><ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly96aC53aWtpcGVkaWEub3JnL3poLXR3LyVFNiU5NyVBMCVFNyVCMSVCQiVFNSU4OCVBQiVFNSU5RiU5RiVFOSU5NyVCNCVFOCVCNyVBRiVFNyU5NCVCMQ==">Wikipedia<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS90dy93aGF0LWlzL2NpZHIv">什麼是 CIDR？(AWS)<i class="fa fa-external-link-alt"></i></span></li>
+</ul>
+
 
     </div>
       
-  <div class="popular-posts-header">相關文章</div>
-  <ul class="popular-posts">
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/2571684277/" rel="bookmark">[Git][Version Control] Git - Introduction</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/731175240/" rel="bookmark">[Git][Version Control] Git - Setup</a></div>
-    </li>
-  </ul>
 
 
     
@@ -332,12 +357,21 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/Git/" rel="tag"><i class="fa fa-tag"></i> Git</a>
-              <a href="/tags/Version-Control/" rel="tag"><i class="fa fa-tag"></i> Version Control</a>
+              <a href="/tags/networking/" rel="tag"><i class="fa fa-tag"></i> networking</a>
+              <a href="/tags/cloud/" rel="tag"><i class="fa fa-tag"></i> cloud</a>
           </div>
 
         
 
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/posts/3108822142/" rel="prev" title="Understanding Cloud Computing - Public, Private, and Hybrid Clouds">
+                  <i class="fa fa-chevron-left"></i> Understanding Cloud Computing - Public, Private, and Hybrid Clouds
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
     </footer>
   </article>
 </div>
