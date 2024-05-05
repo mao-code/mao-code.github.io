@@ -6,7 +6,7 @@
   <link href="https://mao-code.github.io/atom.xml" rel="self"/>
   
   <link href="https://mao-code.github.io/"/>
-  <updated>2024-05-05T07:06:00.238Z</updated>
+  <updated>2024-05-05T09:39:20.103Z</updated>
   <id>https://mao-code.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[AWS-CPE] Monitoring and Analytics</title>
+    <link href="https://mao-code.github.io/posts/2332420025/"/>
+    <id>https://mao-code.github.io/posts/2332420025/</id>
+    <published>2024-05-05T09:11:51.000Z</published>
+    <updated>2024-05-05T09:39:20.103Z</updated>
+    
+    <content type="html"><![CDATA[<style>    img{        width: 70%;    }</style><h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Effective monitoring is crucial for managing any business, whether it’s overseeing a coffee shop or monitoring cloud-based resources in AWS. Below, we detail how monitoring functions as a critical component of both daily business operations and technology management.</p><span id="more"></span><h1 id="Objectives"><a href="#Objectives" class="headerlink" title="Objectives"></a>Objectives</h1><ul><li>Summarize approaches to monitoring your AWS environment.</li><li>Describe the benefits of Amazon CloudWatch.</li><li>Describe the benefits of AWS CloudTrail.</li><li>Describe the benefits of AWS Trusted Advisor.</li></ul><h1 id="Amazon-CloudWatch"><a href="#Amazon-CloudWatch" class="headerlink" title="Amazon CloudWatch"></a>Amazon CloudWatch</h1><p>(monitoring resources)<br>As business operations, such as a coffee shop, become more complex, maintaining visibility and proactive management of systems becomes crucial. Amazon CloudWatch provides an extensive solution for monitoring AWS resources and applications, analogous to keeping a coffee shop’s equipment and operations running smoothly.</p><h2 id="Key-Features-of-Amazon-CloudWatch"><a href="#Key-Features-of-Amazon-CloudWatch" class="headerlink" title="Key Features of Amazon CloudWatch"></a><strong>Key Features of Amazon CloudWatch</strong></h2><ul><li><p><strong>Real-Time Monitoring and Metrics</strong>:</p><ul><li>Tracks various metrics related to AWS resources and applications, similar to monitoring espresso counts in a coffee machine.</li><li><strong>Example</strong>: Monitoring the CPU utilization of an EC2 instance or tracking custom metrics like the number of espressos made.</li></ul></li><li><p><strong>Alerts and Alarms</strong>:</p><ul><li><strong>CloudWatch Alarms</strong>: Set thresholds that, when exceeded, trigger notifications or actions, such as alerting staff to clean an espresso machine after 100 uses.</li><li>Integrated with <strong>Amazon SNS</strong> for notifications, enabling actions like sending SMS messages to manage urgent tasks.</li></ul></li><li><p><strong>Dashboards</strong>:</p><ul><li>Visual displays that aggregate metrics in real-time, allowing for a comprehensive view of all monitored resources.</li><li>Useful for proactive monitoring and quick assessments of multiple resources at a glance.</li></ul></li></ul><p><img data-src="/images/posts/cloud/monitoring/cloud-watch.png"></img></p><h2 id="Benefits-of-Using-CloudWatch"><a href="#Benefits-of-Using-CloudWatch" class="headerlink" title="Benefits of Using CloudWatch"></a><strong>Benefits of Using CloudWatch</strong></h2><ul><li><p><strong>Centralized Metric Access</strong>:</p><ul><li>Gathers and displays metrics and logs from all AWS resources, applications, and on-premises servers in one location, enhancing system-wide visibility.</li></ul></li><li><p><strong>Insight Across Infrastructure</strong>:</p><ul><li>Correlates and visualizes metrics and logs, facilitating quick identification and resolution of issues.</li><li>Reduces mean time to resolution (MTTR) and improves total cost of ownership (TCO), analogous to optimizing machine maintenance in a coffee shop to free up resources for customer service.</li></ul></li><li><p><strong>Operational Optimization</strong>:</p><ul><li>Aggregates usage data across resources like EC2 instances to gain operational insights and optimize utilization.</li><li>Helps focus staff efforts on core activities rather than routine maintenance.</li></ul></li></ul><h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>Amazon CloudWatch equips businesses with the tools necessary to monitor, alert, and manage their AWS resources effectively. By analogizing with a coffee shop’s day-to-day operations, we can see how CloudWatch’s capabilities are essential for maintaining operational efficiency and ensuring resource optimization.</p><h1 id="AWS-CloudTrail"><a href="#AWS-CloudTrail" class="headerlink" title="AWS CloudTrail"></a>AWS CloudTrail</h1><p>(monitoring transactions)<br>AWS CloudTrail is a vital tool for auditing and compliance in cloud environments, similar to how a cash register tracks and records every transaction in a store. This service ensures that all actions taken within AWS are logged, providing a reliable means of monitoring and verifying all changes made to the resources.</p><h2 id="Key-Features-and-Benefits-of-AWS-CloudTrail"><a href="#Key-Features-and-Benefits-of-AWS-CloudTrail" class="headerlink" title="Key Features and Benefits of AWS CloudTrail"></a><strong>Key Features and Benefits of AWS CloudTrail</strong></h2><ul><li><p><strong>Comprehensive Auditing</strong>:</p><ul><li>Every API request made within AWS is logged by CloudTrail, whether it’s launching an EC2 instance, modifying a DynamoDB table, or altering user permissions.</li><li>Details recorded include the identity of the requester, the time of the API call, IP address, and both the response and new state of the system after the request.</li></ul></li><li><p><strong>Security and Compliance</strong>:</p><ul><li><strong>Root-Level Monitoring</strong>: Tracks changes made by high-level administrators, crucial for ensuring that critical settings, like security group configurations, remain unaltered.</li><li><strong>Audit Trails for Compliance</strong>: Provides auditors with definitive proof that no unauthorized changes have been made, especially to security settings.</li></ul></li><li><p><strong>Data Integrity and Storage</strong>:</p><ul><li>Logs are stored indefinitely in secure S3 buckets, utilizing tamper-proof features like Vault Lock to ensure data integrity and provide a clear lineage of all actions recorded.</li></ul></li></ul><p><img data-src="/images/posts/cloud/monitoring/cloud-trail.png"></img></p><h2 id="Conclusion-1"><a href="#Conclusion-1" class="headerlink" title="Conclusion"></a><strong>Conclusion</strong></h2><p>AWS CloudTrail is akin to a digital cash register for cloud environments, meticulously recording each transaction and ensuring that all data is accounted for and secure. This capability is essential for maintaining stringent compliance standards and proving system integrity to auditors, making it an indispensable tool for businesses operating in AWS.</p><h2 id="Quick-Quiz"><a href="#Quick-Quiz" class="headerlink" title="Quick Quiz"></a>Quick Quiz</h2><p><img data-src="/images/posts/cloud/monitoring/trail-quiz.png"></img></p><h1 id="AWS-Trusted-Advisor"><a href="#AWS-Trusted-Advisor" class="headerlink" title="AWS Trusted Advisor"></a>AWS Trusted Advisor</h1><p>AWS Trusted Advisor acts like an automated consultant for your AWS environment, analyzing your setup against best practices across five key areas. It provides insights and recommendations to enhance efficiency, security, and performance, much like an external advisor might offer suggestions to improve a business’s operations.</p><h2 id="Key-Features-of-AWS-Trusted-Advisor"><a href="#Key-Features-of-AWS-Trusted-Advisor" class="headerlink" title="Key Features of AWS Trusted Advisor"></a><strong>Key Features of AWS Trusted Advisor</strong></h2><ul><li><p><strong>Five Pillars of Evaluation</strong>:</p><ul><li><strong>Cost Optimization</strong>: Identifies underutilized resources to reduce expenses.</li><li><strong>Performance</strong>: Assesses configurations to ensure optimal performance.</li><li><strong>Security</strong>: Highlights security vulnerabilities like weak password policies or insufficient MFA.</li><li><strong>Fault Tolerance</strong>: Checks for adequate backup measures and balanced deployment across AZs.</li><li><strong>Service Limits</strong>: Alerts on approaching or reached AWS service limits.</li></ul></li><li><p><strong>Dashboard and Alerts</strong>:</p><ul><li><strong>Interface</strong>: Provides a dashboard that categorizes issues into three levels: action recommended (red), investigation recommended (orange), and no problems (green).</li><li><strong>Alert System</strong>: Can send email notifications to relevant contacts as issues are detected.</li></ul></li></ul><p><img data-src="/images/posts/cloud/monitoring/advisor.png"></img></p><h2 id="Practical-Examples-and-Recommendations"><a href="#Practical-Examples-and-Recommendations" class="headerlink" title="Practical Examples and Recommendations"></a><strong>Practical Examples and Recommendations</strong></h2><ul><li><p><strong>Cost Optimization Checks</strong>:</p><ul><li>Might indicate idle RDS instances or underutilized EC2 instances and EBS volumes, suggesting downsizing or termination to save costs.</li></ul></li><li><p><strong>Security Checks</strong>:</p><ul><li>May alert on urgent security issues like open security groups, advocating for immediate action to close vulnerabilities.</li></ul></li><li><p><strong>Fault Tolerance Advice</strong>:</p><ul><li>Could point out the absence of EBS volume snapshots, recommending creating backups to prevent data loss.</li></ul></li><li><p><strong>Handling Service Limits</strong>:</p><ul><li>Informs when nearing or hitting AWS service caps, advising when to request limit increases.</li></ul></li></ul><h2 id="Conclusion-2"><a href="#Conclusion-2" class="headerlink" title="Conclusion"></a><strong>Conclusion</strong></h2><p>AWS Trusted Advisor is a comprehensive tool that provides critical insights and actionable advice across multiple aspects of your AWS environment. By enabling Trusted Advisor and setting up its alert systems, you can proactively manage and optimize your resources, ensuring a secure, efficient, and reliable AWS infrastructure.</p><h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p>Effective management of cloud environments requires a deep understanding of system operations and resource usage. AWS provides several tools to help businesses maintain efficient, secure, and compliant applications by offering insights into system behavior, user actions, and resource optimization.</p><h2 id="Overview-of-Key-AWS-Monitoring-and-Analytical-Tools"><a href="#Overview-of-Key-AWS-Monitoring-and-Analytical-Tools" class="headerlink" title="Overview of Key AWS Monitoring and Analytical Tools"></a><strong>Overview of Key AWS Monitoring and Analytical Tools</strong></h2><ul><li><p><strong>Amazon CloudWatch</strong>:</p><ul><li>Provides near real-time monitoring of <strong>AWS resources and applications</strong>.</li><li>Allows tracking of metrics over time to optimize system performance.</li><li>Alerts users to conditions that require attention, enhancing proactive management.</li></ul></li><li><p><strong>AWS CloudTrail</strong>:</p><ul><li>Tracks <strong>user activities and API usage</strong> within AWS.</li><li>Offers comprehensive auditing capabilities by recording who accessed what, when, and from where.</li><li>Answers most auditing queries, except for the reasons behind the actions.</li></ul></li><li><p><strong>AWS Trusted Advisor</strong>:</p><ul><li>Delivers a dashboard summarizing over 40 common concerns related to cost, performance, security, and resilience.</li><li>Provides <strong>actionable insights</strong> to help optimize resource usage and improve system efficiency.</li></ul></li></ul><h2 id="Additional-Tools-and-Resources"><a href="#Additional-Tools-and-Resources" class="headerlink" title="Additional Tools and Resources"></a><strong>Additional Tools and Resources</strong></h2><ul><li>While CloudWatch, CloudTrail, and Trusted Advisor are fundamental, AWS offers a variety of other monitoring and analytical tools to suit diverse business needs.</li></ul><h2 id="Conclusion-3"><a href="#Conclusion-3" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>Understanding and utilizing AWS monitoring tools like CloudWatch, CloudTrail, and Trusted Advisor is crucial for any business looking to secure, optimize, and streamline their cloud operations. These tools not only provide valuable insights into system performance and user activities but also help in maintaining compliance and improving overall operational efficiency.</p><h1 id="Quiz"><a href="#Quiz" class="headerlink" title="Quiz"></a>Quiz</h1><ul><li><img data-src="/images/posts/cloud/monitoring/q1.png"></img></li><li><img data-src="/images/posts/cloud/monitoring/q2.png"></img></li><li><img data-src="/images/posts/cloud/monitoring/q3.png"></img></li></ul><h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul><li>AWS SkillBuilder CPE Module7</li></ul>]]></content>
+    
+    
+    <summary type="html">&lt;style&gt;
+    img{
+        width: 70%;
+    }
+&lt;/style&gt;
+
+&lt;h1 id=&quot;Introduction&quot;&gt;&lt;a href=&quot;#Introduction&quot; class=&quot;headerlink&quot; title=&quot;Introduction&quot;&gt;&lt;/a&gt;Introduction&lt;/h1&gt;&lt;p&gt;Effective monitoring is crucial for managing any business, whether it’s overseeing a coffee shop or monitoring cloud-based resources in AWS. Below, we detail how monitoring functions as a critical component of both daily business operations and technology management.&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="cloud" scheme="https://mao-code.github.io/tags/cloud/"/>
+    
+  </entry>
   
   <entry>
     <title>[AWS-CPE] Security</title>
@@ -142,20 +167,20 @@
     
     <category term="心得" scheme="https://mao-code.github.io/categories/%E5%BF%83%E5%BE%97/"/>
     
-    <category term="GDSC" scheme="https://mao-code.github.io/categories/GDSC/"/>
-    
     <category term="專案" scheme="https://mao-code.github.io/categories/%E5%B0%88%E6%A1%88/"/>
     
-    <category term="NCCUPass" scheme="https://mao-code.github.io/categories/GDSC/NCCUPass/"/>
+    <category term="GDSC" scheme="https://mao-code.github.io/categories/GDSC/"/>
     
     <category term="side project" scheme="https://mao-code.github.io/categories/%E5%B0%88%E6%A1%88/side-project/"/>
     
+    <category term="NCCUPass" scheme="https://mao-code.github.io/categories/GDSC/NCCUPass/"/>
+    
+    
+    <category term="專案" scheme="https://mao-code.github.io/tags/%E5%B0%88%E6%A1%88/"/>
     
     <category term="GDSC" scheme="https://mao-code.github.io/tags/GDSC/"/>
     
     <category term="NCCUPass" scheme="https://mao-code.github.io/tags/NCCUPass/"/>
-    
-    <category term="專案" scheme="https://mao-code.github.io/tags/%E5%B0%88%E6%A1%88/"/>
     
   </entry>
   
@@ -386,20 +411,20 @@ style=&quot;width: 70%; margin: 15px auto;&quot;&gt;&lt;br&gt;Source: &lt;a href
     
     <category term="心得" scheme="https://mao-code.github.io/categories/%E5%BF%83%E5%BE%97/"/>
     
-    <category term="GDSC" scheme="https://mao-code.github.io/categories/GDSC/"/>
-    
     <category term="專案" scheme="https://mao-code.github.io/categories/%E5%B0%88%E6%A1%88/"/>
     
-    <category term="NCCUPass" scheme="https://mao-code.github.io/categories/GDSC/NCCUPass/"/>
+    <category term="GDSC" scheme="https://mao-code.github.io/categories/GDSC/"/>
     
     <category term="side project" scheme="https://mao-code.github.io/categories/%E5%B0%88%E6%A1%88/side-project/"/>
     
+    <category term="NCCUPass" scheme="https://mao-code.github.io/categories/GDSC/NCCUPass/"/>
+    
+    
+    <category term="專案" scheme="https://mao-code.github.io/tags/%E5%B0%88%E6%A1%88/"/>
     
     <category term="GDSC" scheme="https://mao-code.github.io/tags/GDSC/"/>
     
     <category term="NCCUPass" scheme="https://mao-code.github.io/tags/NCCUPass/"/>
-    
-    <category term="專案" scheme="https://mao-code.github.io/tags/%E5%B0%88%E6%A1%88/"/>
     
   </entry>
   
