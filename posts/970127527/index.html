@@ -24,35 +24,30 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"mao-code.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="前言繼上篇GDSC的心得文，這篇我會介紹我們下學期的開發經歷、得獎、專案簡介以及未來這個專案的走向，屬於一個小小的紀錄心得文！">
+    <meta name="description" content="Understanding the Differences: Data Lake, Data Warehouse, and Data MartIn today’s data-driven world, organizations leverage various data management systems to harness their data effectively. Among the">
 <meta property="og:type" content="article">
-<meta property="og:title" content="政大Google學生開發者社群-政大通NCCUPass-心得 (第二學期)">
-<meta property="og:url" content="https://mao-code.github.io/posts/3042436019/index.html">
+<meta property="og:title" content="DataLake vs. Data Warehouse vs. Data Mart">
+<meta property="og:url" content="https://mao-code.github.io/posts/970127527/index.html">
 <meta property="og:site_name" content="Mao 勛哥&#39;s blog">
-<meta property="og:description" content="前言繼上篇GDSC的心得文，這篇我會介紹我們下學期的開發經歷、得獎、專案簡介以及未來這個專案的走向，屬於一個小小的紀錄心得文！">
+<meta property="og:description" content="Understanding the Differences: Data Lake, Data Warehouse, and Data MartIn today’s data-driven world, organizations leverage various data management systems to harness their data effectively. Among the">
 <meta property="og:locale" content="zh_TW">
-<meta property="og:image" content="https://mao-code.github.io/images/posts/2023NCCUPass/GDSC_award.JPG">
-<meta property="og:image" content="https://mao-code.github.io/images/posts/2023NCCUPass/GDSC_award_on_stage.JPG">
-<meta property="og:image" content="https://mao-code.github.io/images/posts/2023NCCUPass/GDSC_final.JPG">
-<meta property="og:image" content="https://mao-code.github.io/images/posts/2023NCCUPass/NCCUPass_structure.png">
-<meta property="article:published_time" content="2023-09-07T09:33:02.000Z">
-<meta property="article:modified_time" content="2023-09-08T11:09:04.942Z">
+<meta property="og:image" content="https://mao-code.github.io/images/posts/datascience/relation.png">
+<meta property="article:published_time" content="2024-05-10T05:15:46.000Z">
+<meta property="article:modified_time" content="2024-05-10T05:24:28.548Z">
 <meta property="article:author" content="Mao 勛哥">
-<meta property="article:tag" content="專案">
-<meta property="article:tag" content="GDSC">
-<meta property="article:tag" content="NCCUPass">
+<meta property="article:tag" content="datascience">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://mao-code.github.io/images/posts/2023NCCUPass/GDSC_award.JPG">
+<meta name="twitter:image" content="https://mao-code.github.io/images/posts/datascience/relation.png">
 
 
-<link rel="canonical" href="https://mao-code.github.io/posts/3042436019/">
+<link rel="canonical" href="https://mao-code.github.io/posts/970127527/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://mao-code.github.io/posts/3042436019/","path":"posts/3042436019/","title":"政大Google學生開發者社群-政大通NCCUPass-心得 (第二學期)"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://mao-code.github.io/posts/970127527/","path":"posts/970127527/","title":"DataLake vs. Data Warehouse vs. Data Mart"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>政大Google學生開發者社群-政大通NCCUPass-心得 (第二學期) | Mao 勛哥's blog</title>
+<title>DataLake vs. Data Warehouse vs. Data Mart | Mao 勛哥's blog</title>
   
 
 
@@ -158,7 +153,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B0%88%E6%A1%88"><span class="nav-number">2.</span> <span class="nav-text">專案</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B0%A1%E4%BB%8B"><span class="nav-number">2.1.</span> <span class="nav-text">簡介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9B%AE%E5%89%8D%E5%8A%9F%E8%83%BD%E7%B0%A1%E4%BB%8B"><span class="nav-number">2.2.</span> <span class="nav-text">目前功能簡介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%B8%E7%94%9F%E4%BB%BB%E5%8B%99%E5%8A%9F%E8%83%BD-%E5%A2%9E%E5%BC%B7%E6%A0%A1%E5%9C%92%E4%BA%92%E5%8B%95%E9%AB%94%E9%A9%97"><span class="nav-number">2.2.1.</span> <span class="nav-text">學生任務功能 - 增強校園互動體驗</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A0%90%E7%B4%84%E5%A4%96%E5%B8%B6%E5%8A%9F%E8%83%BD%E8%88%87%E5%8D%88%E9%A4%90%E5%BF%AB%E9%81%B8%E5%99%A8-%EF%BC%8D-%E7%94%A8%E9%A4%90%E7%9C%81%E6%99%82%E7%84%A1%E7%AD%89%E5%BE%85%EF%BC%8C%E5%B0%88%E5%B1%AC%E5%AD%B8%E7%94%9F%E7%9A%84%E7%BE%8E%E9%A3%9F%E6%8F%90%E5%89%8D%E9%A0%90%E8%A8%82"><span class="nav-number">2.2.2.</span> <span class="nav-text">預約外帶功能與午餐快選器 － 用餐省時無等待，專屬學生的美食提前預訂</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%A3%E7%B5%90"><span class="nav-number">2.3.</span> <span class="nav-text">連結</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BE%97%E7%8D%8E"><span class="nav-number">3.</span> <span class="nav-text">得獎</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8A%80%E8%A1%93"><span class="nav-number">4.</span> <span class="nav-text">技術</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B%E5%9C%96"><span class="nav-number">4.1.</span> <span class="nav-text">系統架構圖</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9C%AA%E4%BE%86"><span class="nav-number">5.</span> <span class="nav-text">未來</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Understanding-the-Differences-Data-Lake-Data-Warehouse-and-Data-Mart"><span class="nav-number">1.</span> <span class="nav-text">Understanding the Differences: Data Lake, Data Warehouse, and Data Mart</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#What-is-a-Data-Lake"><span class="nav-number">1.1.</span> <span class="nav-text">What is a Data Lake?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Characteristics-of-a-Data-Lake"><span class="nav-number">1.1.1.</span> <span class="nav-text">Characteristics of a Data Lake:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What-is-a-Data-Warehouse"><span class="nav-number">1.2.</span> <span class="nav-text">What is a Data Warehouse?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Characteristics-of-a-Data-Warehouse"><span class="nav-number">1.2.1.</span> <span class="nav-text">Characteristics of a Data Warehouse:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What-is-a-Data-Mart"><span class="nav-number">1.3.</span> <span class="nav-text">What is a Data Mart?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Characteristics-of-a-Data-Mart"><span class="nav-number">1.3.1.</span> <span class="nav-text">Characteristics of a Data Mart:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Comparative-Analysis"><span class="nav-number">1.4.</span> <span class="nav-text">Comparative Analysis</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Relationships-Among-Data-Lakes-Data-Warehouses-and-Data-Marts"><span class="nav-number">1.5.</span> <span class="nav-text">Relationships Among Data Lakes, Data Warehouses, and Data Marts</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Hierarchical-Relationship"><span class="nav-number">1.5.1.</span> <span class="nav-text">Hierarchical Relationship</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Use-Case-Relationship"><span class="nav-number">1.5.2.</span> <span class="nav-text">Use Case Relationship</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Operational-Efficiency"><span class="nav-number">1.5.3.</span> <span class="nav-text">Operational Efficiency</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Conclusion"><span class="nav-number">1.6.</span> <span class="nav-text">Conclusion</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -243,7 +238,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://mao-code.github.io/posts/3042436019/">
+    <link itemprop="mainEntityOfPage" href="https://mao-code.github.io/posts/970127527/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/mypic.JPG">
@@ -256,12 +251,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="政大Google學生開發者社群-政大通NCCUPass-心得 (第二學期) | Mao 勛哥's blog">
+      <meta itemprop="name" content="DataLake vs. Data Warehouse vs. Data Mart | Mao 勛哥's blog">
       <meta itemprop="description" content>
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          政大Google學生開發者社群-政大通NCCUPass-心得 (第二學期)
+          DataLake vs. Data Warehouse vs. Data Mart
         </h1>
 
         <div class="post-meta-container">
@@ -271,15 +266,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">發表於</span>
+      
 
-      <time title="創建時間：2023-09-07 17:33:02" itemprop="dateCreated datePublished" datetime="2023-09-07T17:33:02+08:00">2023-09-07</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新於</span>
-      <time title="修改時間：2023-09-08 19:09:04" itemprop="dateModified" datetime="2023-09-08T19:09:04+08:00">2023-09-08</time>
+      <time title="創建時間：2024-05-10 13:15:46 / 修改時間：13:24:28" itemprop="dateCreated datePublished" datetime="2024-05-10T13:15:46+08:00">2024-05-10</time>
     </span>
 
   
@@ -296,14 +285,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">文章字數：</span>
-      <span>1.8k</span>
+      <span>4.4k</span>
     </span>
     <span class="post-meta-item" title="所需閱讀時間">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">所需閱讀時間 &asymp;</span>
-      <span>2 分鐘</span>
+      <span>4 分鐘</span>
     </span>
 </div>
 
@@ -314,63 +303,113 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>繼上篇<a href="https://mao-code.github.io/posts/277323671/#more">GDSC的心得文</a>，這篇我會介紹我們下學期的開發經歷、得獎、專案簡介以及未來這個專案的走向，屬於一個小小的紀錄心得文！</p>
+        <h1 id="Understanding-the-Differences-Data-Lake-Data-Warehouse-and-Data-Mart"><a href="#Understanding-the-Differences-Data-Lake-Data-Warehouse-and-Data-Mart" class="headerlink" title="Understanding the Differences: Data Lake, Data Warehouse, and Data Mart"></a>Understanding the Differences: Data Lake, Data Warehouse, and Data Mart</h1><p>In today’s data-driven world, organizations leverage various data management systems to harness their data effectively. Among these systems, Data Lakes, Data Warehouses, and Data Marts are pivotal in supporting data storage, processing, and analysis. This article explores the key differences among these three systems, helping you understand their unique roles in data management.</p>
 <span id="more"></span>
 
-<h1 id="專案"><a href="#專案" class="headerlink" title="專案"></a>專案</h1><h2 id="簡介"><a href="#簡介" class="headerlink" title="簡介"></a>簡介</h2><p>政大通 - NCCUPass 團隊熱切懷抱著重塑校園體驗的夢想，點燃學生的熱情和創造力，以共同打造一個充滿活力、連結力和創新力的校園生活。經由深入校園的人際交流與觀察，我們發現學生面對著種種生活上的不便與困難，然而目前鮮少有專門為學生打造的解決方案。學生間的線下互動與真實聯繫日益減少，導致難以找到同學幫忙或組團合作的機會。此外，午晚餐時的人潮湧入校園周邊餐廳，更帶來了無法即時點餐的困擾。這些現況讓我們看到一個獨特的契機，我們決心以「政大通 - NCCUPass 」 APP 的形式來化解這些困境。</p>
-<p>「政大通 - NCCUPass 」不僅提供政大學生一個集社交、實用和創新於一身的平台，更是一個綜合性的應用程式，旨在加強他們的校園體驗。我們希望這個 APP 能成為解決校園生活難題的得力幫手！</p>
-<p>在社團「政大 Google 學生開發者社群」的擁護下，我們匯聚各領域的精英，凝聚開放分享的心態，攜手共創這個改變學生生活的嶄新 APP ！政大只是我們的第一塊版圖，我們的未來目標是影響全國的大學生，為他們帶來更加豐富、更加便利的校園體驗！</p>
-<h2 id="目前功能簡介"><a href="#目前功能簡介" class="headerlink" title="目前功能簡介"></a>目前功能簡介</h2><h3 id="學生任務功能-增強校園互動體驗"><a href="#學生任務功能-增強校園互動體驗" class="headerlink" title="學生任務功能 - 增強校園互動體驗"></a>學生任務功能 - 增強校園互動體驗</h3><ul>
-<li>動機發想<ul>
-<li>缺乏線下互動與真實聯繫：<br>我們注意到越來越多的大學生在日常生活中依賴數位平台和社交媒體，而非與人面對面的互動。這種現象在校園中尤為明顯，比起在現實中進行真實的互動，學生更傾向於在虛擬世界中建立社交連結。我們對大學生進行訪談、問卷調查和社交媒體分析，收集了大量的數據和反饋。這些數據揭示了大學生內心深處對面對面互動的渴望，以及更真實的交流，更深刻的情感，卻在線下互動中遇到了種種挑戰與限制。基於這些資訊，我們更加確定缺乏線下互動和真實聯繫的問題造成大學生的困擾，這些數據與心靈共鳴，激發了我們的靈感。我們深信，缺乏線下互動和真實聯繫的問題，不僅是個人的困擾，更是一種社會現象，需要我們攜手改變。於是，我們投入心血，開發了一個獨特的解決方案——一個能在現實世界中促進人與人之間有意義連結的奇妙工具。</li>
+<p><img data-src="/images/posts/datascience/relation.png"><br>source: <span class="exturl" data-url="aHR0cHM6Ly9tZWRpdW0uY29tL0BkYXZpZC5hbHZhcmVzLjYyL2RhdGFsYWtlLWRhdGF3YXJlaG91c2UtZGF0YW1hcnQtd2l0aC1iaWdxdWVyeS0zMmY2YzM3MzVhOWQ=">https://medium.com/@david.alvares.62/datalake-datawarehouse-datamart-with-bigquery-32f6c3735a9d<i class="fa fa-external-link-alt"></i></span></p>
+<h2 id="What-is-a-Data-Lake"><a href="#What-is-a-Data-Lake" class="headerlink" title="What is a Data Lake?"></a>What is a Data Lake?</h2><p>A Data Lake is a centralized repository designed to store a vast amount of raw data in its native format, including structured, semi-structured, and unstructured data. Data Lakes support high-scale elasticity and massive processing power, making them ideal for big data analytics where data exploration and discovery are required.</p>
+<h3 id="Characteristics-of-a-Data-Lake"><a href="#Characteristics-of-a-Data-Lake" class="headerlink" title="Characteristics of a Data Lake:"></a>Characteristics of a Data Lake:</h3><ul>
+<li><strong>Data Types:</strong> Supports all types of data (structured, semi-structured, unstructured).</li>
+<li><strong>Processing:</strong> Data is kept in its raw form, and transformation occurs when needed (schema-on-read).</li>
+<li><strong>Flexibility:</strong> Highly adaptable to changes and capable of storing vast amounts of data.</li>
+<li><strong>Use Cases:</strong> Big data processing, real-time analytics, machine learning.</li>
 </ul>
-</li>
-<li>功能敘述<ul>
-<li>這個功能旨在促進學生之間的線下互動，並為他們提供一個自由而實用的平台，能以此完成各種有趣的任務。學生們可以發布任務，例如：幫忙帶宵夜、一起揪團出去玩等等。學生可以在我們的 APP 上自由發布任務，並尋找其他學生來接受挑戰，每一次的任務都是獨特的社交機會，讓學生們在校園中建立更多真實的聯繫和友誼。除此之外，這個功能還擁有相當多面的好處。首先，它鼓勵學生積極參與校園生活，擺脫線上世界的束縛。透過與其他學生一起完成任務，他們可以體驗到珍貴的團隊合作和互助精神。此外，如果同學對彼此的服務滿意，可以提供金錢或其他回饋，藉著小小賺外快的機會，也可以累積一定的金錢！相信這個制度能鼓勵學生發揮創意和努力工作，同時也建立相互尊重和價值交換的文化。</li>
+<h2 id="What-is-a-Data-Warehouse"><a href="#What-is-a-Data-Warehouse" class="headerlink" title="What is a Data Warehouse?"></a>What is a Data Warehouse?</h2><p>A Data Warehouse is a system used for reporting and data analysis. It is a central repository for integrated data from one or more disparate sources. Data Warehouses store current and historical data in one single place, which is used for creating analytical reports for knowledge workers throughout the enterprise.</p>
+<h3 id="Characteristics-of-a-Data-Warehouse"><a href="#Characteristics-of-a-Data-Warehouse" class="headerlink" title="Characteristics of a Data Warehouse:"></a>Characteristics of a Data Warehouse:</h3><ul>
+<li><strong>Data Types:</strong> Primarily structured data.</li>
+<li><strong>Processing:</strong> Data is processed (ETL - Extract, Transform, Load) before entering the warehouse.</li>
+<li><strong>Performance:</strong> Optimized for fast query performance and complex analytical queries.</li>
+<li><strong>Use Cases:</strong> Business intelligence, reporting, complex queries.</li>
 </ul>
-</li>
+<h2 id="What-is-a-Data-Mart"><a href="#What-is-a-Data-Mart" class="headerlink" title="What is a Data Mart?"></a>What is a Data Mart?</h2><p>A Data Mart is a subset of a data warehouse and is oriented to a specific business line or team. Unlike a data warehouse, which covers the entire organization, a data mart is limited to certain aspects.</p>
+<h3 id="Characteristics-of-a-Data-Mart"><a href="#Characteristics-of-a-Data-Mart" class="headerlink" title="Characteristics of a Data Mart:"></a>Characteristics of a Data Mart:</h3><ul>
+<li><strong>Data Types:</strong> Structured data.</li>
+<li><strong>Scope:</strong> Focused on a specific department or business area.</li>
+<li><strong>Performance:</strong> Optimized for quick response times on specific queries.</li>
+<li><strong>Use Cases:</strong> Department-specific reporting and analysis.</li>
 </ul>
-<h3 id="預約外帶功能與午餐快選器-－-用餐省時無等待，專屬學生的美食提前預訂"><a href="#預約外帶功能與午餐快選器-－-用餐省時無等待，專屬學生的美食提前預訂" class="headerlink" title="預約外帶功能與午餐快選器 － 用餐省時無等待，專屬學生的美食提前預訂"></a>預約外帶功能與午餐快選器 － 用餐省時無等待，專屬學生的美食提前預訂</h3><ul>
-<li><p>動機發想</p>
+<h2 id="Comparative-Analysis"><a href="#Comparative-Analysis" class="headerlink" title="Comparative Analysis"></a>Comparative Analysis</h2><p>The table below provides a comparison to help delineate the differences among these three data architectures:</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Data Lake</th>
+<th>Data Warehouse</th>
+<th>Data Mart</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Purpose</strong></td>
+<td>Data exploration and large-scale analytics</td>
+<td>Structured data analysis and reporting</td>
+<td>Specific business function analysis</td>
+</tr>
+<tr>
+<td><strong>Data Types</strong></td>
+<td>All types (structured, semi, unstructured)</td>
+<td>Primarily structured data</td>
+<td>Structured data</td>
+</tr>
+<tr>
+<td><strong>Processing</strong></td>
+<td>Schema-on-read (transform on demand)</td>
+<td>Schema-on-write (pre-transformed)</td>
+<td>Typically pre-transformed data from a data warehouse</td>
+</tr>
+<tr>
+<td><strong>Scope</strong></td>
+<td>Enterprise-wide</td>
+<td>Enterprise-wide</td>
+<td>Department-specific</td>
+</tr>
+<tr>
+<td><strong>Storage Cost</strong></td>
+<td>Low</td>
+<td>High</td>
+<td>Moderate</td>
+</tr>
+<tr>
+<td><strong>Complexity</strong></td>
+<td>High (due to diverse data types)</td>
+<td>Moderate</td>
+<td>Low</td>
+</tr>
+<tr>
+<td><strong>Best For</strong></td>
+<td>Big data projects, ML, real-time analytics</td>
+<td>Historical data analysis, BI</td>
+<td>Focused BI tasks within departments</td>
+</tr>
+</tbody></table>
+<h2 id="Relationships-Among-Data-Lakes-Data-Warehouses-and-Data-Marts"><a href="#Relationships-Among-Data-Lakes-Data-Warehouses-and-Data-Marts" class="headerlink" title="Relationships Among Data Lakes, Data Warehouses, and Data Marts"></a>Relationships Among Data Lakes, Data Warehouses, and Data Marts</h2><p>Understanding the relationships among Data Lakes, Data Warehouses, and Data Marts is crucial for structuring an effective data strategy.</p>
+<h3 id="Hierarchical-Relationship"><a href="#Hierarchical-Relationship" class="headerlink" title="Hierarchical Relationship"></a>Hierarchical Relationship</h3><ol>
+<li><p><strong>Data Lake to Data Warehouse</strong>:</p>
 <ul>
-<li><p>餐點供應不足：<br>尤其在午晚餐尖峰時段，餐廳經常供不應求，學生需要花費大量的時間排隊等待。</p>
-</li>
-<li><p>用餐時間緊湊：<br>大學生的生活節奏快，經常要在短時間內完成吃飯等基本活動，而在繁忙的用餐時間內排隊等待餐點往往會浪費寶貴的時間。</p>
-</li>
-<li><p>無法預估用餐需求：<br>在繁忙的用餐時間內，無法預估用餐需求，可能需要長時間等待，或因時間太短而做了不太理想的食物選擇。</p>
-</li>
+<li>A <strong>Data Lake</strong> stores all raw data, both structured and unstructured. It is the initial repository for all incoming data.</li>
+<li>A <strong>Data Warehouse</strong> is curated from the data lake. Data here is cleaned and structured, optimized for efficient querying and analysis.</li>
 </ul>
 </li>
-<li><p>功能敘述</p>
+<li><p><strong>Data Warehouse to Data Mart</strong>:</p>
 <ul>
-<li>這個功能將為大學生們帶來極速、便利、無等待的用餐體驗！我們與學校附近的店家攜手合作，確保學生們不必等待太久。現在，同學只需要提前預約外帶，下課後直接前往店家，餐點早已準備好，輕鬆取走即可！不再浪費時間排隊，享受自由自在的用餐時光！這個預約外帶功能不僅是大學生們用餐的時尚選擇，更是忙碌學習生活的得力助手。在繁忙的用餐尖峰時段，可以輕鬆預訂心儀的美食，避免為了取餐而耽誤其他重要事務。</li>
+<li>A <strong>Data Warehouse</strong> contains integrated data from multiple sources for the entire organization.</li>
+<li><strong>Data Marts</strong> are subsets of data warehouses tailored to specific departments, facilitating faster and more relevant data access.</li>
 </ul>
 </li>
+</ol>
+<h3 id="Use-Case-Relationship"><a href="#Use-Case-Relationship" class="headerlink" title="Use Case Relationship"></a>Use Case Relationship</h3><ul>
+<li><strong>Data Lake</strong>: Ideal for massive, raw datasets used in data exploration and big data projects.</li>
+<li><strong>Data Warehouse</strong>: Best for regular, consistent reporting and structured data analysis across the organization.</li>
+<li><strong>Data Mart</strong>: Suited for targeted, department-specific analysis, enabling quick access to relevant data.</li>
 </ul>
-<h2 id="連結"><a href="#連結" class="headerlink" title="連結"></a>連結</h2><ul>
-<li><span class="exturl" data-url="aHR0cHM6Ly9uY2N1cGFzcy5jb20v">官方網站<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9uY2N1cGFzcy8=">IG粉專<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2NvbXBhbnkvbmNjdXBhc3M=">LinkedIn<i class="fa fa-external-link-alt"></i></span></li>
+<h3 id="Operational-Efficiency"><a href="#Operational-Efficiency" class="headerlink" title="Operational Efficiency"></a>Operational Efficiency</h3><ul>
+<li>Using all three—Data Lakes, Data Warehouses, and Data Marts—enhances data management across different levels, from raw data collection to specific business analytics.</li>
 </ul>
-<h1 id="得獎"><a href="#得獎" class="headerlink" title="得獎"></a>得獎</h1><p>NCCUPass在當天的期末發表會得到最佳人氣專案奬的殊榮！<br><img data-src="/images/posts/2023NCCUPass/GDSC_award.JPG" style="width: 70%; margin: 15px auto;"></p>
-<p><img data-src="/images/posts/2023NCCUPass/GDSC_award_on_stage.JPG" style="width: 70%; margin: 15px auto;"></p>
-<p>當天的期末發表會：<br><img data-src="/images/posts/2023NCCUPass/GDSC_final.JPG" style="width: 70%; margin: 15px auto;"></p>
-<h1 id="技術"><a href="#技術" class="headerlink" title="技術"></a>技術</h1><p>在經過一個學期後，我們也慢慢拓展技術範圍，未來也將因應需求機動地改變<br>在這邊就只放上系統架構圖，不贅述太多技術細節</p>
-<h2 id="系統架構圖"><a href="#系統架構圖" class="headerlink" title="系統架構圖"></a>系統架構圖</h2><p><img data-src="/images/posts/2023NCCUPass/NCCUPass_structure.png" style="width: 70%; margin: 15px auto;"></p>
-<h1 id="未來"><a href="#未來" class="headerlink" title="未來"></a>未來</h1><p>政大是我們的第一塊版圖，我們的目標是全台灣的大學，目前先穩紮穩打在政大站穩腳步，在此期間會積極地與其他組織或社團合作、參與各項競賽以及參加創投機構的活動，我們的理念是讓大學生們彼此間的關係更加密切與真實，使他們的生活更加數位化與便利！</p>
+<p>This structure ensures organizations can manage vast data efficiently, supporting diverse business needs from exploratory analytics to precise departmental reporting.</p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>Each of these systems serves distinct purposes and is best suited for different aspects of data management. A Data Lake is ideal for raw, large-scale data exploration, a Data Warehouse is suited for enterprise-wide insights from structured data, and a Data Mart is optimal for department-specific analysis. Understanding these differences can help organizations choose the right architecture to meet their data management and analytical needs.</p>
 
 
     </div>
       
-  <div class="popular-posts-header">相關文章</div>
-  <ul class="popular-posts">
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/277323671/" rel="bookmark">政大Google學生開發者社群-心得（第一學期）</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/2012237495/" rel="bookmark">CC-沈浸式線上逛街APP-系統與技術介紹</a></div>
-    </li>
-  </ul>
 
 
     
@@ -379,23 +418,18 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E5%B0%88%E6%A1%88/" rel="tag"><i class="fa fa-tag"></i> 專案</a>
-              <a href="/tags/GDSC/" rel="tag"><i class="fa fa-tag"></i> GDSC</a>
-              <a href="/tags/NCCUPass/" rel="tag"><i class="fa fa-tag"></i> NCCUPass</a>
+              <a href="/tags/datascience/" rel="tag"><i class="fa fa-tag"></i> datascience</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/posts/1255359463/" rel="prev" title="[NLP][ML] Transformer (3) - More conputational detail">
-                  <i class="fa fa-chevron-left"></i> [NLP][ML] Transformer (3) - More conputational detail
+                <a href="/posts/2332420025/" rel="prev" title="[AWS-CPE] Monitoring and Analytics">
+                  <i class="fa fa-chevron-left"></i> [AWS-CPE] Monitoring and Analytics
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/posts/3787153742/" rel="next" title="Basic OOP 基礎物件導向">
-                  Basic OOP 基礎物件導向 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>

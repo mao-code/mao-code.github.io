@@ -28,6 +28,45 @@ style="width: 70%; margin: 15px auto;"></p>
       </tags>
   </entry>
   <entry>
+    <title>[Git][Version Control] Git - Introduction</title>
+    <url>/posts/2571684277/</url>
+    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Here is the series of Git full tutorial. I will cover the important and advanced topics that you should know in git. By reading this series, you are able to know the basic(but important) concept of Git and the technique of using git. Hope you can gain a lot ! </p>
+<span id="more"></span>
+
+<h1 id="Series-Outline"><a href="#Series-Outline" class="headerlink" title="Series Outline"></a>Series Outline</h1><p>I will follow the outline below in this series.</p>
+<ul>
+<li>Introduction (this post)</li>
+<li>Setup</li>
+<li>Version Control &amp; Commands (Basics)</li>
+<li>Branching &amp; Merging</li>
+<li>Conflict</li>
+<li>Collaboration &amp; GitHub</li>
+<li>Advanced Topics</li>
+</ul>
+<hr>
+<h1 id="Introduction-to-Git-A-Distributed-Version-Control-System"><a href="#Introduction-to-Git-A-Distributed-Version-Control-System" class="headerlink" title="Introduction to Git: A Distributed Version Control System"></a>Introduction to Git: A Distributed Version Control System</h1><p>Git is a powerful and widely used distributed version control system designed to track changes in software development projects. It provides developers with the ability to collaborate on projects efficiently, manage codebases effectively, and easily track and revert changes.</p>
+<h2 id="Distributed-Version-Control-System"><a href="#Distributed-Version-Control-System" class="headerlink" title="Distributed Version Control System"></a>Distributed Version Control System</h2><p>In traditional software development, changes to a codebase were often managed through file-based systems or centralized version control systems. However, these approaches had limitations in terms of collaboration, scalability, and flexibility. Git emerged as a solution to these challenges, offering a distributed and decentralized approach to version control.</p>
+<p>The special point of Git is that it supports distributed version control and can also easily share codes among multiple nodes.</p>
+<p><img data-src="/images/posts/Git-Series/dist-ver-ctr.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<h2 id="Branch"><a href="#Branch" class="headerlink" title="Branch"></a>Branch</h2><p>Git manages code based on a tree structure, allowing branches to be created, merged, and deleted, and code versions to be saved at any time.</p>
+<p><img data-src="/images/posts/Git-Series/branch.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<h2 id="Snapshot"><a href="#Snapshot" class="headerlink" title="Snapshot"></a>Snapshot</h2><p>Git saves full snapshots of files, rather than differences, making it easy to restore all historical versions of files.</p>
+<p><img data-src="/images/posts/Git-Series/snapshot.jpeg" 
+style="width: 70%; margin: 15px auto;"></p>
+<hr>
+<h1 id="Recommended-Resources"><a href="#Recommended-Resources" class="headerlink" title="Recommended Resources"></a>Recommended Resources</h1><p><a href="%22https://www.youtube.com/watch?v=8JJ101D3knE%22">Mosh Git Tutorail</a></p>
+]]></content>
+      <categories>
+        <category>Git 系列文</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>Version Control</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>CC-沈浸式線上逛街APP-系統與技術介紹</title>
     <url>/posts/2012237495/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>接續上一篇的文章，這篇文章會著重介紹這個系統<br>以下是我在YouTube上對這個專案的介紹與Demo：</p>
@@ -94,6 +133,61 @@ CC提供商城、買家、直播主追蹤的機制，加上個人化自己的動
       <tags>
         <tag>專案</tag>
         <tag>side project</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[Git][Version Control] Git - Setup</title>
+    <url>/posts/731175240/</url>
+    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Setting up the environment of Git and some recommended GUI tools.</p>
+<span id="more"></span>
+
+<h1 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h1><ol>
+<li><p>Install Git with the link below: (with your OS)<br><a href="%22https://git-scm.com/%22">Git official website</a></p>
+</li>
+<li><p>Type this command to check if it is installed successfully:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h1 id="Configure-Git-type-commands-in-your-shell"><a href="#Configure-Git-type-commands-in-your-shell" class="headerlink" title="Configure Git (type commands in your shell)"></a>Configure Git (type commands in your shell)</h1><ol>
+<li><p>Set your user name by running the following command:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Set your email address by running the following command:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.email youremail@example.com</span><br></pre></td></tr></table></figure></li>
+<li><p>Set up SSH key (for remote repository access. e.g. GitHub)</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<ul>
+<li><p>Press Enter to accept the default file location and passphrase (or set your own if desired).<br>Once the key is generated, run the following command to add it to the SSH agent</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-add ~/.ssh/id_rsa</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Copy the public key to your clipboard by running the following command</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Add the copied public key to your Git hosting platform account (e.g., GitHub, GitLab) by following their documentation.</p>
+</li>
+<li><p>View your ssh keys</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd ~/.ssh</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ls</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Use a text editor or command-line tools (such as cat or less) to view the contents of the .pub files and see the public key information: <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat id_rsa.pub</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<ol start="4">
+<li>You can see your configuration by typing the following commands:<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --list</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h1 id="Recommended-GUI-tools"><a href="#Recommended-GUI-tools" class="headerlink" title="Recommended GUI tools"></a>Recommended GUI tools</h1><p>Both commands and GUI tools are important to Git manupulation.<br>And Here are some recommended Git GUI tools that you can use.</p>
+<ul>
+<li><a href="%22https://www.sourcetreeapp.com/%22">Sourcetree</a></li>
+<li><a href="%22https://www.gitkraken.com/%22">GitKraken</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Git 系列文</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>Version Control</tag>
       </tags>
   </entry>
   <entry>
@@ -424,97 +518,43 @@ img{
       </tags>
   </entry>
   <entry>
-    <title>[Git][Version Control] Git - Introduction</title>
-    <url>/posts/2571684277/</url>
-    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Here is the series of Git full tutorial. I will cover the important and advanced topics that you should know in git. By reading this series, you are able to know the basic(but important) concept of Git and the technique of using git. Hope you can gain a lot ! </p>
+    <title>Basic OOP 基礎物件導向</title>
+    <url>/posts/3787153742/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>物件導向（Object-Oriented Programming, OOP）是一種程式設計範式，強調使用包含數據（屬性）和方法（功能）的物件來設計和構建應用程序。提高軟體的重用性、靈活性和擴充性。</p>
+<p>而對於物件導向，最基礎需要知道以下：</p>
+<blockquote>
+<p><strong>一個抽象</strong><br><strong>兩個目的</strong><br><strong>三個特性</strong><br><strong>五個原則</strong></p>
+</blockquote>
 <span id="more"></span>
 
-<h1 id="Series-Outline"><a href="#Series-Outline" class="headerlink" title="Series Outline"></a>Series Outline</h1><p>I will follow the outline below in this series.</p>
-<ul>
-<li>Introduction (this post)</li>
-<li>Setup</li>
-<li>Version Control &amp; Commands (Basics)</li>
-<li>Branching &amp; Merging</li>
-<li>Conflict</li>
-<li>Collaboration &amp; GitHub</li>
-<li>Advanced Topics</li>
-</ul>
-<hr>
-<h1 id="Introduction-to-Git-A-Distributed-Version-Control-System"><a href="#Introduction-to-Git-A-Distributed-Version-Control-System" class="headerlink" title="Introduction to Git: A Distributed Version Control System"></a>Introduction to Git: A Distributed Version Control System</h1><p>Git is a powerful and widely used distributed version control system designed to track changes in software development projects. It provides developers with the ability to collaborate on projects efficiently, manage codebases effectively, and easily track and revert changes.</p>
-<h2 id="Distributed-Version-Control-System"><a href="#Distributed-Version-Control-System" class="headerlink" title="Distributed Version Control System"></a>Distributed Version Control System</h2><p>In traditional software development, changes to a codebase were often managed through file-based systems or centralized version control systems. However, these approaches had limitations in terms of collaboration, scalability, and flexibility. Git emerged as a solution to these challenges, offering a distributed and decentralized approach to version control.</p>
-<p>The special point of Git is that it supports distributed version control and can also easily share codes among multiple nodes.</p>
-<p><img data-src="/images/posts/Git-Series/dist-ver-ctr.png" 
+<h1 id="一個抽象"><a href="#一個抽象" class="headerlink" title="一個抽象"></a>一個抽象</h1><h2 id="抽象-Abstraction"><a href="#抽象-Abstraction" class="headerlink" title="抽象 (Abstraction)"></a>抽象 (Abstraction)</h2><p>在OOP的背景下，抽象是指<strong>隱藏複雜的實作細節</strong>，僅展示物件的必要特性的能力。這簡化了與物件的互動，使編程更直觀、更高效。</p>
+<p>例如想要使用交通工具的物件，只需要知道交通工具提供的介面，而不需要知道具體的交通工具是什麼，以及其實作細節<br><img data-src="/images/posts/OOP-basic/abstraction.png" 
 style="width: 70%; margin: 15px auto;"></p>
-<h2 id="Branch"><a href="#Branch" class="headerlink" title="Branch"></a>Branch</h2><p>Git manages code based on a tree structure, allowing branches to be created, merged, and deleted, and code versions to be saved at any time.</p>
-<p><img data-src="/images/posts/Git-Series/branch.png" 
+<h1 id="兩個目的"><a href="#兩個目的" class="headerlink" title="兩個目的"></a>兩個目的</h1><h2 id="低耦合-Low-Coupling"><a href="#低耦合-Low-Coupling" class="headerlink" title="低耦合 (Low Coupling)"></a>低耦合 (Low Coupling)</h2><p>低耦合是指程式中<strong>不同的類別或模組之間應該有盡可能少的依賴關係</strong>。這使得<strong>一個類別或模組的變更不太可能影響到其他的類別或模組</strong>，從而使得程式更容易維護和擴展。</p>
+<h2 id="高內聚（High-Cohesion）"><a href="#高內聚（High-Cohesion）" class="headerlink" title="高內聚（High Cohesion）"></a>高內聚（High Cohesion）</h2><p>高內聚是指一個類別或模組應該只<strong>專注於完成一項特定的任務或一組緊密相關的任務</strong>。這使得程式更有組織，更易於理解和維護。</p>
+<p><img data-src="/images/posts/OOP-basic/CandC.png" 
 style="width: 70%; margin: 15px auto;"></p>
-<h2 id="Snapshot"><a href="#Snapshot" class="headerlink" title="Snapshot"></a>Snapshot</h2><p>Git saves full snapshots of files, rather than differences, making it easy to restore all historical versions of files.</p>
-<p><img data-src="/images/posts/Git-Series/snapshot.jpeg" 
-style="width: 70%; margin: 15px auto;"></p>
-<hr>
-<h1 id="Recommended-Resources"><a href="#Recommended-Resources" class="headerlink" title="Recommended Resources"></a>Recommended Resources</h1><p><a href="%22https://www.youtube.com/watch?v=8JJ101D3knE%22">Mosh Git Tutorail</a></p>
+<h1 id="三個特性"><a href="#三個特性" class="headerlink" title="三個特性"></a>三個特性</h1><h2 id="繼承-Inheritance"><a href="#繼承-Inheritance" class="headerlink" title="繼承 (Inheritance)"></a>繼承 (Inheritance)</h2><p>繼承允許新創建的類別（子類別）繼承一個或多個現有類別（父類別）的屬性和方法。這促進了程式碼重用和擴展性。</p>
+<h2 id="封裝-Encapsulation"><a href="#封裝-Encapsulation" class="headerlink" title="封裝 (Encapsulation)"></a>封裝 (Encapsulation)</h2><p>封裝是將數據（屬性）和行為（方法）綁定到單個單位（類別）中，並<strong>限制對該單位內部的直接訪問</strong>。這有助於保護數據和隱藏實現細節。</p>
+<h2 id="多型-Polymorphism"><a href="#多型-Polymorphism" class="headerlink" title="多型 (Polymorphism)"></a>多型 (Polymorphism)</h2><p>多型允許對<strong>不同類別的物件使用共同的接口</strong>。這意味著可以在不同類別的物件上執行同一操作，而每個類別可以以不同的方式響應相同的操作。</p>
+<h1 id="五個原則-SOLID"><a href="#五個原則-SOLID" class="headerlink" title="五個原則 (SOLID)"></a>五個原則 (SOLID)</h1><h2 id="S-單一職責原則（Single-Responsibility-Principle）"><a href="#S-單一職責原則（Single-Responsibility-Principle）" class="headerlink" title="S - 單一職責原則（Single Responsibility Principle）:"></a>S - 單一職責原則（Single Responsibility Principle）:</h2><p>一個類別應該只有一個改變的理由，這意味著<strong>一個類別應該只做一件事</strong>。</p>
+<h2 id="O-開放封閉原則（Open-x2F-Closed-Principle）"><a href="#O-開放封閉原則（Open-x2F-Closed-Principle）" class="headerlink" title="O - 開放封閉原則（Open&#x2F;Closed Principle）:"></a>O - 開放封閉原則（Open&#x2F;Closed Principle）:</h2><p>軟體實體（類別、模組、函數等）應該<strong>對擴展開放，對修改封閉</strong>。這意味著應該能夠在不修改現有代碼的情況下擴展其功能。</p>
+<h2 id="L-里氏替換原則（Liskov-Substitution-Principle）"><a href="#L-里氏替換原則（Liskov-Substitution-Principle）" class="headerlink" title="L - 里氏替換原則（Liskov Substitution Principle）:"></a>L - 里氏替換原則（Liskov Substitution Principle）:</h2><p><strong>子類別應該能夠替換其父類別而不影響程序的正常運行</strong>。</p>
+<h2 id="I-接口隔離原則（Interface-Segregation-Principle）"><a href="#I-接口隔離原則（Interface-Segregation-Principle）" class="headerlink" title="I - 接口隔離原則（Interface Segregation Principle）:"></a>I - 接口隔離原則（Interface Segregation Principle）:</h2><p>不應強迫客戶依賴於它們不使用的接口。換句話說，<strong>更小和更具體的接口優於大而通用的接口</strong>。</p>
+<h2 id="D-依賴反轉原則（Dependency-Inversion-Principle）"><a href="#D-依賴反轉原則（Dependency-Inversion-Principle）" class="headerlink" title="D - 依賴反轉原則（Dependency Inversion Principle）:"></a>D - 依賴反轉原則（Dependency Inversion Principle）:</h2><p><strong>高層模組不應該依賴低層模組，兩者都應該依賴於抽象</strong>；抽象不應該依賴於細節，細節應該依賴於抽象。這有助於減少類別之間的直接依賴，從而提高系統的靈活性和可重用性。</p>
+<h1 id="Design-Pattern概述"><a href="#Design-Pattern概述" class="headerlink" title="Design Pattern概述"></a>Design Pattern概述</h1><p>設計模式是一組作為最佳實踐的解決方案，用來解決特定類型的重複出現的設計問題。這些模式不是現成的程式碼，而是可以在許多不同情況下使用的模板。它們提高了代碼的可重用性、靈活性和維護性。</p>
+<p>設計模式通常分為三大類：</p>
+<ol>
+<li>創建型模式（Creational Patterns）<br>這些模式與物件創建機制有關，幫助創建物件的方式使得系統獨立於物件的創建和組合方式。</li>
+<li>結構型模式（Structural Patterns）<br>這些模式與物件的組合有關，通常用於形成大的物件結構</li>
+<li>行為型模式（Behavioral Patterns）<br>這些模式關注物件間的通訊和責任分配</li>
+</ol>
 ]]></content>
       <categories>
-        <category>Git 系列文</category>
+        <category>OOP</category>
       </categories>
       <tags>
-        <tag>Git</tag>
-        <tag>Version Control</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>[Git][Version Control] Git - Setup</title>
-    <url>/posts/731175240/</url>
-    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Setting up the environment of Git and some recommended GUI tools.</p>
-<span id="more"></span>
-
-<h1 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h1><ol>
-<li><p>Install Git with the link below: (with your OS)<br><a href="%22https://git-scm.com/%22">Git official website</a></p>
-</li>
-<li><p>Type this command to check if it is installed successfully:</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h1 id="Configure-Git-type-commands-in-your-shell"><a href="#Configure-Git-type-commands-in-your-shell" class="headerlink" title="Configure Git (type commands in your shell)"></a>Configure Git (type commands in your shell)</h1><ol>
-<li><p>Set your user name by running the following command:</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Set your email address by running the following command:</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.email youremail@example.com</span><br></pre></td></tr></table></figure></li>
-<li><p>Set up SSH key (for remote repository access. e.g. GitHub)</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure></li>
-</ol>
-<ul>
-<li><p>Press Enter to accept the default file location and passphrase (or set your own if desired).<br>Once the key is generated, run the following command to add it to the SSH agent</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-add ~/.ssh/id_rsa</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Copy the public key to your clipboard by running the following command</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Add the copied public key to your Git hosting platform account (e.g., GitHub, GitLab) by following their documentation.</p>
-</li>
-<li><p>View your ssh keys</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd ~/.ssh</span><br></pre></td></tr></table></figure>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ls</span><br></pre></td></tr></table></figure>
-<ul>
-<li>Use a text editor or command-line tools (such as cat or less) to view the contents of the .pub files and see the public key information: <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat id_rsa.pub</span><br></pre></td></tr></table></figure></li>
-</ul>
-</li>
-</ul>
-<ol start="4">
-<li>You can see your configuration by typing the following commands:<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --list</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h1 id="Recommended-GUI-tools"><a href="#Recommended-GUI-tools" class="headerlink" title="Recommended GUI tools"></a>Recommended GUI tools</h1><p>Both commands and GUI tools are important to Git manupulation.<br>And Here are some recommended Git GUI tools that you can use.</p>
-<ul>
-<li><a href="%22https://www.sourcetreeapp.com/%22">Sourcetree</a></li>
-<li><a href="%22https://www.gitkraken.com/%22">GitKraken</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>Git 系列文</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-        <tag>Version Control</tag>
+        <tag>OOP</tag>
       </tags>
   </entry>
   <entry>
@@ -981,46 +1021,6 @@ style="width: 70%; margin: 15px auto;"></p>
       </tags>
   </entry>
   <entry>
-    <title>Basic OOP 基礎物件導向</title>
-    <url>/posts/3787153742/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>物件導向（Object-Oriented Programming, OOP）是一種程式設計範式，強調使用包含數據（屬性）和方法（功能）的物件來設計和構建應用程序。提高軟體的重用性、靈活性和擴充性。</p>
-<p>而對於物件導向，最基礎需要知道以下：</p>
-<blockquote>
-<p><strong>一個抽象</strong><br><strong>兩個目的</strong><br><strong>三個特性</strong><br><strong>五個原則</strong></p>
-</blockquote>
-<span id="more"></span>
-
-<h1 id="一個抽象"><a href="#一個抽象" class="headerlink" title="一個抽象"></a>一個抽象</h1><h2 id="抽象-Abstraction"><a href="#抽象-Abstraction" class="headerlink" title="抽象 (Abstraction)"></a>抽象 (Abstraction)</h2><p>在OOP的背景下，抽象是指<strong>隱藏複雜的實作細節</strong>，僅展示物件的必要特性的能力。這簡化了與物件的互動，使編程更直觀、更高效。</p>
-<p>例如想要使用交通工具的物件，只需要知道交通工具提供的介面，而不需要知道具體的交通工具是什麼，以及其實作細節<br><img data-src="/images/posts/OOP-basic/abstraction.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<h1 id="兩個目的"><a href="#兩個目的" class="headerlink" title="兩個目的"></a>兩個目的</h1><h2 id="低耦合-Low-Coupling"><a href="#低耦合-Low-Coupling" class="headerlink" title="低耦合 (Low Coupling)"></a>低耦合 (Low Coupling)</h2><p>低耦合是指程式中<strong>不同的類別或模組之間應該有盡可能少的依賴關係</strong>。這使得<strong>一個類別或模組的變更不太可能影響到其他的類別或模組</strong>，從而使得程式更容易維護和擴展。</p>
-<h2 id="高內聚（High-Cohesion）"><a href="#高內聚（High-Cohesion）" class="headerlink" title="高內聚（High Cohesion）"></a>高內聚（High Cohesion）</h2><p>高內聚是指一個類別或模組應該只<strong>專注於完成一項特定的任務或一組緊密相關的任務</strong>。這使得程式更有組織，更易於理解和維護。</p>
-<p><img data-src="/images/posts/OOP-basic/CandC.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<h1 id="三個特性"><a href="#三個特性" class="headerlink" title="三個特性"></a>三個特性</h1><h2 id="繼承-Inheritance"><a href="#繼承-Inheritance" class="headerlink" title="繼承 (Inheritance)"></a>繼承 (Inheritance)</h2><p>繼承允許新創建的類別（子類別）繼承一個或多個現有類別（父類別）的屬性和方法。這促進了程式碼重用和擴展性。</p>
-<h2 id="封裝-Encapsulation"><a href="#封裝-Encapsulation" class="headerlink" title="封裝 (Encapsulation)"></a>封裝 (Encapsulation)</h2><p>封裝是將數據（屬性）和行為（方法）綁定到單個單位（類別）中，並<strong>限制對該單位內部的直接訪問</strong>。這有助於保護數據和隱藏實現細節。</p>
-<h2 id="多型-Polymorphism"><a href="#多型-Polymorphism" class="headerlink" title="多型 (Polymorphism)"></a>多型 (Polymorphism)</h2><p>多型允許對<strong>不同類別的物件使用共同的接口</strong>。這意味著可以在不同類別的物件上執行同一操作，而每個類別可以以不同的方式響應相同的操作。</p>
-<h1 id="五個原則-SOLID"><a href="#五個原則-SOLID" class="headerlink" title="五個原則 (SOLID)"></a>五個原則 (SOLID)</h1><h2 id="S-單一職責原則（Single-Responsibility-Principle）"><a href="#S-單一職責原則（Single-Responsibility-Principle）" class="headerlink" title="S - 單一職責原則（Single Responsibility Principle）:"></a>S - 單一職責原則（Single Responsibility Principle）:</h2><p>一個類別應該只有一個改變的理由，這意味著<strong>一個類別應該只做一件事</strong>。</p>
-<h2 id="O-開放封閉原則（Open-x2F-Closed-Principle）"><a href="#O-開放封閉原則（Open-x2F-Closed-Principle）" class="headerlink" title="O - 開放封閉原則（Open&#x2F;Closed Principle）:"></a>O - 開放封閉原則（Open&#x2F;Closed Principle）:</h2><p>軟體實體（類別、模組、函數等）應該<strong>對擴展開放，對修改封閉</strong>。這意味著應該能夠在不修改現有代碼的情況下擴展其功能。</p>
-<h2 id="L-里氏替換原則（Liskov-Substitution-Principle）"><a href="#L-里氏替換原則（Liskov-Substitution-Principle）" class="headerlink" title="L - 里氏替換原則（Liskov Substitution Principle）:"></a>L - 里氏替換原則（Liskov Substitution Principle）:</h2><p><strong>子類別應該能夠替換其父類別而不影響程序的正常運行</strong>。</p>
-<h2 id="I-接口隔離原則（Interface-Segregation-Principle）"><a href="#I-接口隔離原則（Interface-Segregation-Principle）" class="headerlink" title="I - 接口隔離原則（Interface Segregation Principle）:"></a>I - 接口隔離原則（Interface Segregation Principle）:</h2><p>不應強迫客戶依賴於它們不使用的接口。換句話說，<strong>更小和更具體的接口優於大而通用的接口</strong>。</p>
-<h2 id="D-依賴反轉原則（Dependency-Inversion-Principle）"><a href="#D-依賴反轉原則（Dependency-Inversion-Principle）" class="headerlink" title="D - 依賴反轉原則（Dependency Inversion Principle）:"></a>D - 依賴反轉原則（Dependency Inversion Principle）:</h2><p><strong>高層模組不應該依賴低層模組，兩者都應該依賴於抽象</strong>；抽象不應該依賴於細節，細節應該依賴於抽象。這有助於減少類別之間的直接依賴，從而提高系統的靈活性和可重用性。</p>
-<h1 id="Design-Pattern概述"><a href="#Design-Pattern概述" class="headerlink" title="Design Pattern概述"></a>Design Pattern概述</h1><p>設計模式是一組作為最佳實踐的解決方案，用來解決特定類型的重複出現的設計問題。這些模式不是現成的程式碼，而是可以在許多不同情況下使用的模板。它們提高了代碼的可重用性、靈活性和維護性。</p>
-<p>設計模式通常分為三大類：</p>
-<ol>
-<li>創建型模式（Creational Patterns）<br>這些模式與物件創建機制有關，幫助創建物件的方式使得系統獨立於物件的創建和組合方式。</li>
-<li>結構型模式（Structural Patterns）<br>這些模式與物件的組合有關，通常用於形成大的物件結構</li>
-<li>行為型模式（Behavioral Patterns）<br>這些模式關注物件間的通訊和責任分配</li>
-</ol>
-]]></content>
-      <categories>
-        <category>OOP</category>
-      </categories>
-      <tags>
-        <tag>OOP</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Understanding CIDR - A Guide to Classless Inter-Domain Routing</title>
     <url>/posts/1789986274/</url>
     <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Classless Inter-Domain Routing (CIDR) revolutionized IP address allocation and routing on the internet. By moving away from the rigid class-based system (Classes A, B, and C), CIDR introduced a more flexible and efficient method for managing IP spaces. This article delves into what CIDR is, how it works, and how to compute CIDR blocks for network planning.</p>
@@ -1071,6 +1071,227 @@ style="width: 70%; margin: 15px auto;"></p>
       <tags>
         <tag>networking</tag>
         <tag>cloud</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[.NET][C#][Design Pattern] - Mediator Pattern (中介者模式)</title>
+    <url>/posts/4072203086/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>這篇文章主要介紹Mediator Pattern的定義以及簡單實作<br>介紹使用Mediator Pattern的好處, 並提供範例<br>在軟體架構中Mediator Patternc和Repository Pattern都是常用的pattern<br>通常.NET專案中會結合MediatR套件使用</p>
+<span id="more"></span>
+
+<h2 id="定義-Mediator-Pattern"><a href="#定義-Mediator-Pattern" class="headerlink" title="定義 Mediator Pattern"></a>定義 Mediator Pattern</h2><p>IG貼文：<br><span class="exturl" data-url="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9wL0NpTTBlenBMTzR6Lz9obD16aC10dw==">Mediator Pattern Post<i class="fa fa-external-link-alt"></i></span></p>
+<p>GitHub連結：<br><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL21hby1jb2RlL01lZGlhdG9yUGF0dGVybg==">Sample Code<i class="fa fa-external-link-alt"></i></span></p>
+<p>定義一個 Mediator 物件用來<strong>封裝一組物件的互動方式</strong>。<br>Mediator 藉由<strong>避免物件間相互直接的引用</strong>，從而降低它們之間的耦合程度，並且可以讓我們獨立地改變這些物件間的互動方式。</p>
+<p>下面這兩張圖片可以簡單體現出Mediator Pattern在做的事</p>
+<p><strong>沒有使用中介者, 物件彼此之間直接調用</strong><br><img data-src="/images/posts/mediator-pattern/origin-graph.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p><strong>使用中介者, 物件只依賴mediator來與其他物件溝通</strong><br><img data-src="/images/posts/mediator-pattern/star.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>可以發現使用中介者模式之後, 物件都只依賴中介者來傳遞訊息, 而不是直接調用彼此, 以此達到解耦。<br>在現實生活中, 也有類似的例子, 例如開發團隊, 客服團隊, 產銷團隊, 設計團隊, 若彼此之間沒有一個統一的溝通,<br>那麼各個團隊耦合度很高, 開發跟設計要協調介面, 又要和產銷和客服討論如何贏得如何符合市場, 這樣一來分工太複雜。<br>所以需要一個<strong>產品經理來當中介者</strong>, 協助溝通各個團隊。</p>
+<h2 id="優缺點"><a href="#優缺點" class="headerlink" title="優缺點"></a>優缺點</h2><ul>
+<li>優點 <ol>
+<li>降低物件之間的耦合性，讓物件容易重複使用。</li>
+<li>物件之間一對多的關聯性變成一對一，提高系統靈活性，也讓整體容易維護及擴充。</li>
+</ol>
+</li>
+<li>缺點 (Trade-off)<ol>
+<li>同事類別過多時，中介者責任很大，會使系統提升一定程度的複雜性。</li>
+</ol>
+</li>
+</ul>
+<h2 id="UML與成員"><a href="#UML與成員" class="headerlink" title="UML與成員"></a>UML與成員</h2><p><img data-src="/images/posts/mediator-pattern/uml.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<table>
+    <thead>
+        <th>成員</th>
+        <th>定義</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Mdiator</td>
+            <td>抽象中介者, 定義註冊進入mediator以及轉發的方法</td>
+        </tr>
+        <tr>
+            <td>ConcreteMediator</td>
+            <td>具體中介者, 定義一個集合來管理同事, 所以聚合Colleague</td>
+        </tr>
+        <tr>
+            <td>Colleague</td>
+            <td>抽象同事, 可以保存中介者, 調用內部方法, 所以聚合Mediator</td>
+        </tr>
+        <tr>
+            <td>ConcreteColleague</td>
+            <td>具體同事, 當要跟其他物件溝通時, 利用內部的中介者進行轉發</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2 id="實作"><a href="#實作" class="headerlink" title="實作"></a>實作</h2><p><strong>專案結構</strong><br><img data-src="/images/posts/mediator-pattern/structure.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p><strong>抽象Mediator</strong></p>
+<figure class="highlight c#"><figcaption><span>Mediator(抽象)</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MediatorPattern.mediator</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 團隊列舉</span></span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">enum</span> teamType</span><br><span class="line">    &#123;</span><br><span class="line">        ENGINEERING, DESIGN, SERVICE, MARKETING</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 抽象mediator</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title">Mediator</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">Register</span>(<span class="params">teamType type, Colleague colleague</span>)</span>; <span class="comment">//註冊進入mediator</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">Relay</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span>; <span class="comment">//轉發;傳遞</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>PackageManager(具體Mediator)</strong></p>
+<figure class="highlight c#"><figcaption><span>PackageManager(具體Mediator)</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MediatorPattern.mediator</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="comment">// 具體mediator</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ProductManager</span> : <span class="title">Mediator</span></span><br><span class="line">	&#123;</span><br><span class="line">        <span class="comment">// 聚合Colleague, 一個儲存colleague物件的dictionary</span></span><br><span class="line">        <span class="keyword">private</span> Dictionary&lt;teamType, Colleague&gt; colleagues = <span class="keyword">new</span> Dictionary&lt;teamType, Colleague&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">Register</span>(<span class="params">teamType type, Colleague colleague</span>)</span></span><br><span class="line">        &#123;</span><br><span class="line">            colleague.setMediator(<span class="keyword">this</span>);</span><br><span class="line">            <span class="keyword">this</span>.colleagues.Add(type, colleague);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">Relay</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">        &#123;</span><br><span class="line">            Colleague toColleague = <span class="keyword">this</span>.colleagues[type];</span><br><span class="line">            toColleague.receive(msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>抽象Colleague</strong></p>
+<figure class="highlight c#"><figcaption><span>Colleague(抽象)</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.mediator;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MediatorPattern.colleagues</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title">Colleague</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">protected</span> Mediator? Mediator &#123; <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; &#125;</span><br><span class="line"></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setMediator</span>(<span class="params">Mediator mediator</span>)</span></span><br><span class="line">		&#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator = mediator;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 接收訊息後如何反應</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span>;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 傳送訊息給特定物件</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>具體Colleague</strong></p>
+<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="comment">//具體colleague</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">DesignTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;設計團隊收到訊息: &quot;</span> + msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;設計團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">EngineeringTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;工程師團隊收到訊息: &quot;</span>+msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;工程師團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">MarketingTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;產銷團隊收到訊息: &quot;</span> + msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;產銷團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ServiceTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;客服團隊收到訊息: &quot;</span> + msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;客服團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>Client端使用</strong></p>
+<figure class="highlight c#"><figcaption><span>Program.cs</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.mediator;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 具體mediator</span></span><br><span class="line">ProductManager pm = <span class="keyword">new</span> ProductManager();</span><br><span class="line"></span><br><span class="line"><span class="comment">//具體colleague</span></span><br><span class="line">Colleague ds = <span class="keyword">new</span> DesignTeam();</span><br><span class="line">Colleague eg = <span class="keyword">new</span> EngineeringTeam();</span><br><span class="line">Colleague mk = <span class="keyword">new</span> MarketingTeam();</span><br><span class="line">Colleague sv = <span class="keyword">new</span> ServiceTeam();</span><br><span class="line"></span><br><span class="line"><span class="comment">//註冊進入mediator</span></span><br><span class="line">pm.Register(teamType.DESIGN, ds);</span><br><span class="line">pm.Register(teamType.ENGINEERING, eg);</span><br><span class="line">pm.Register(teamType.MARKETING, mk);</span><br><span class="line">pm.Register(teamType.SERVICE, sv);</span><br><span class="line"></span><br><span class="line"><span class="comment">//執行</span></span><br><span class="line">ds.send(teamType.ENGINEERING, <span class="string">&quot;UI設計稿完成&quot;</span>);</span><br><span class="line">Console.WriteLine(String.Concat(Enumerable.Repeat(<span class="string">&quot;-&quot;</span>, <span class="number">10</span>)));</span><br><span class="line"></span><br><span class="line">eg.send(teamType.MARKETING, <span class="string">&quot;軟體開發完成&quot;</span>);</span><br><span class="line">Console.WriteLine(String.Concat(Enumerable.Repeat(<span class="string">&quot;-&quot;</span>, <span class="number">10</span>)));</span><br><span class="line"></span><br><span class="line">Console.ReadKey();</span><br></pre></td></tr></table></figure>
+
+<p><strong>結果</strong><br><img data-src="/images/posts/mediator-pattern/result.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<h2 id="疑問"><a href="#疑問" class="headerlink" title="疑問"></a>疑問</h2><ol>
+<li>DI不也是讓物件間解耦嗎？他們有什麼不同？<ol>
+<li>應用場景不同：Mediator模式主要用於解耦合多個相互協作的物件，特別是在複雜的互動場景中。DI則主要用於管理和注入依賴關係，以實現鬆耦合和可測試的程式碼。</li>
+<li>解決不同問題：Mediator解決的是物件之間的協作和通信問題，而DI解決的是依賴關係管理的問題。</li>
+<li>實現方式不同：Mediator需要一個中介者來協調物件之間的互動，通常由一個專門的Mediator類別來實現。DI則是一種設計模式，它可以與不同語言和框架一起使用，並不需要特定的中介者類別。</li>
+</ol>
+</li>
+</ol>
+<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><ul>
+<li>定義:<br>  定義一個 Mediator 物件用來封裝一組物件的互動方式。Mediator 藉由避免物件間相互直接的引用，從而降低它們之間的耦合程度，並且可以讓我們獨立地改變這些物件間的互動方式。</li>
+<li>成員<ul>
+<li>抽象Mediator: 定義方法, 轉接訊息</li>
+<li>具體Mediator: 實作抽象Mediator, Colleague (擁有0~多個Colleague)</li>
+<li>抽象Colleague: 定義方法, 聚合抽象Mediator (Colleague擁有Mediator)</li>
+<li>具體Colleague: 實作抽象Mediator</li>
+</ul>
+</li>
+<li>優點 <ol>
+<li>降低物件之間的耦合性，讓物件容易重複使用。</li>
+<li>物件之間一對多的關聯性變成一對一，提高系統靈活性，也讓整體容易維護及擴充。</li>
+</ol>
+</li>
+<li>缺點 (Trade-off)<ol>
+<li>同事類別過多時，中介者責任很大，會使系統提升一定程度的複雜性。</li>
+</ol>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>OOP</category>
+        <category>Design Pattern</category>
+      </categories>
+      <tags>
+        <tag>OOP</tag>
+        <tag>.NET C#</tag>
+        <tag>design-pattern</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>DataLake vs. Data Warehouse vs. Data Mart</title>
+    <url>/posts/970127527/</url>
+    <content><![CDATA[<h1 id="Understanding-the-Differences-Data-Lake-Data-Warehouse-and-Data-Mart"><a href="#Understanding-the-Differences-Data-Lake-Data-Warehouse-and-Data-Mart" class="headerlink" title="Understanding the Differences: Data Lake, Data Warehouse, and Data Mart"></a>Understanding the Differences: Data Lake, Data Warehouse, and Data Mart</h1><p>In today’s data-driven world, organizations leverage various data management systems to harness their data effectively. Among these systems, Data Lakes, Data Warehouses, and Data Marts are pivotal in supporting data storage, processing, and analysis. This article explores the key differences among these three systems, helping you understand their unique roles in data management.</p>
+<span id="more"></span>
+
+<p><img data-src="/images/posts/datascience/relation.png"></img><br>source: <span class="exturl" data-url="aHR0cHM6Ly9tZWRpdW0uY29tL0BkYXZpZC5hbHZhcmVzLjYyL2RhdGFsYWtlLWRhdGF3YXJlaG91c2UtZGF0YW1hcnQtd2l0aC1iaWdxdWVyeS0zMmY2YzM3MzVhOWQ=">https://medium.com/@david.alvares.62/datalake-datawarehouse-datamart-with-bigquery-32f6c3735a9d<i class="fa fa-external-link-alt"></i></span></p>
+<h2 id="What-is-a-Data-Lake"><a href="#What-is-a-Data-Lake" class="headerlink" title="What is a Data Lake?"></a>What is a Data Lake?</h2><p>A Data Lake is a centralized repository designed to store a vast amount of raw data in its native format, including structured, semi-structured, and unstructured data. Data Lakes support high-scale elasticity and massive processing power, making them ideal for big data analytics where data exploration and discovery are required.</p>
+<h3 id="Characteristics-of-a-Data-Lake"><a href="#Characteristics-of-a-Data-Lake" class="headerlink" title="Characteristics of a Data Lake:"></a>Characteristics of a Data Lake:</h3><ul>
+<li><strong>Data Types:</strong> Supports all types of data (structured, semi-structured, unstructured).</li>
+<li><strong>Processing:</strong> Data is kept in its raw form, and transformation occurs when needed (schema-on-read).</li>
+<li><strong>Flexibility:</strong> Highly adaptable to changes and capable of storing vast amounts of data.</li>
+<li><strong>Use Cases:</strong> Big data processing, real-time analytics, machine learning.</li>
+</ul>
+<h2 id="What-is-a-Data-Warehouse"><a href="#What-is-a-Data-Warehouse" class="headerlink" title="What is a Data Warehouse?"></a>What is a Data Warehouse?</h2><p>A Data Warehouse is a system used for reporting and data analysis. It is a central repository for integrated data from one or more disparate sources. Data Warehouses store current and historical data in one single place, which is used for creating analytical reports for knowledge workers throughout the enterprise.</p>
+<h3 id="Characteristics-of-a-Data-Warehouse"><a href="#Characteristics-of-a-Data-Warehouse" class="headerlink" title="Characteristics of a Data Warehouse:"></a>Characteristics of a Data Warehouse:</h3><ul>
+<li><strong>Data Types:</strong> Primarily structured data.</li>
+<li><strong>Processing:</strong> Data is processed (ETL - Extract, Transform, Load) before entering the warehouse.</li>
+<li><strong>Performance:</strong> Optimized for fast query performance and complex analytical queries.</li>
+<li><strong>Use Cases:</strong> Business intelligence, reporting, complex queries.</li>
+</ul>
+<h2 id="What-is-a-Data-Mart"><a href="#What-is-a-Data-Mart" class="headerlink" title="What is a Data Mart?"></a>What is a Data Mart?</h2><p>A Data Mart is a subset of a data warehouse and is oriented to a specific business line or team. Unlike a data warehouse, which covers the entire organization, a data mart is limited to certain aspects.</p>
+<h3 id="Characteristics-of-a-Data-Mart"><a href="#Characteristics-of-a-Data-Mart" class="headerlink" title="Characteristics of a Data Mart:"></a>Characteristics of a Data Mart:</h3><ul>
+<li><strong>Data Types:</strong> Structured data.</li>
+<li><strong>Scope:</strong> Focused on a specific department or business area.</li>
+<li><strong>Performance:</strong> Optimized for quick response times on specific queries.</li>
+<li><strong>Use Cases:</strong> Department-specific reporting and analysis.</li>
+</ul>
+<h2 id="Comparative-Analysis"><a href="#Comparative-Analysis" class="headerlink" title="Comparative Analysis"></a>Comparative Analysis</h2><p>The table below provides a comparison to help delineate the differences among these three data architectures:</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Data Lake</th>
+<th>Data Warehouse</th>
+<th>Data Mart</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Purpose</strong></td>
+<td>Data exploration and large-scale analytics</td>
+<td>Structured data analysis and reporting</td>
+<td>Specific business function analysis</td>
+</tr>
+<tr>
+<td><strong>Data Types</strong></td>
+<td>All types (structured, semi, unstructured)</td>
+<td>Primarily structured data</td>
+<td>Structured data</td>
+</tr>
+<tr>
+<td><strong>Processing</strong></td>
+<td>Schema-on-read (transform on demand)</td>
+<td>Schema-on-write (pre-transformed)</td>
+<td>Typically pre-transformed data from a data warehouse</td>
+</tr>
+<tr>
+<td><strong>Scope</strong></td>
+<td>Enterprise-wide</td>
+<td>Enterprise-wide</td>
+<td>Department-specific</td>
+</tr>
+<tr>
+<td><strong>Storage Cost</strong></td>
+<td>Low</td>
+<td>High</td>
+<td>Moderate</td>
+</tr>
+<tr>
+<td><strong>Complexity</strong></td>
+<td>High (due to diverse data types)</td>
+<td>Moderate</td>
+<td>Low</td>
+</tr>
+<tr>
+<td><strong>Best For</strong></td>
+<td>Big data projects, ML, real-time analytics</td>
+<td>Historical data analysis, BI</td>
+<td>Focused BI tasks within departments</td>
+</tr>
+</tbody></table>
+<h2 id="Relationships-Among-Data-Lakes-Data-Warehouses-and-Data-Marts"><a href="#Relationships-Among-Data-Lakes-Data-Warehouses-and-Data-Marts" class="headerlink" title="Relationships Among Data Lakes, Data Warehouses, and Data Marts"></a>Relationships Among Data Lakes, Data Warehouses, and Data Marts</h2><p>Understanding the relationships among Data Lakes, Data Warehouses, and Data Marts is crucial for structuring an effective data strategy.</p>
+<h3 id="Hierarchical-Relationship"><a href="#Hierarchical-Relationship" class="headerlink" title="Hierarchical Relationship"></a>Hierarchical Relationship</h3><ol>
+<li><p><strong>Data Lake to Data Warehouse</strong>:</p>
+<ul>
+<li>A <strong>Data Lake</strong> stores all raw data, both structured and unstructured. It is the initial repository for all incoming data.</li>
+<li>A <strong>Data Warehouse</strong> is curated from the data lake. Data here is cleaned and structured, optimized for efficient querying and analysis.</li>
+</ul>
+</li>
+<li><p><strong>Data Warehouse to Data Mart</strong>:</p>
+<ul>
+<li>A <strong>Data Warehouse</strong> contains integrated data from multiple sources for the entire organization.</li>
+<li><strong>Data Marts</strong> are subsets of data warehouses tailored to specific departments, facilitating faster and more relevant data access.</li>
+</ul>
+</li>
+</ol>
+<h3 id="Use-Case-Relationship"><a href="#Use-Case-Relationship" class="headerlink" title="Use Case Relationship"></a>Use Case Relationship</h3><ul>
+<li><strong>Data Lake</strong>: Ideal for massive, raw datasets used in data exploration and big data projects.</li>
+<li><strong>Data Warehouse</strong>: Best for regular, consistent reporting and structured data analysis across the organization.</li>
+<li><strong>Data Mart</strong>: Suited for targeted, department-specific analysis, enabling quick access to relevant data.</li>
+</ul>
+<h3 id="Operational-Efficiency"><a href="#Operational-Efficiency" class="headerlink" title="Operational Efficiency"></a>Operational Efficiency</h3><ul>
+<li>Using all three—Data Lakes, Data Warehouses, and Data Marts—enhances data management across different levels, from raw data collection to specific business analytics.</li>
+</ul>
+<p>This structure ensures organizations can manage vast data efficiently, supporting diverse business needs from exploratory analytics to precise departmental reporting.</p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>Each of these systems serves distinct purposes and is best suited for different aspects of data management. A Data Lake is ideal for raw, large-scale data exploration, a Data Warehouse is suited for enterprise-wide insights from structured data, and a Data Mart is optimal for department-specific analysis. Understanding these differences can help organizations choose the right architecture to meet their data management and analytical needs.</p>
+]]></content>
+      <tags>
+        <tag>datascience</tag>
       </tags>
   </entry>
   <entry>
@@ -1554,171 +1775,6 @@ style="width: 70%; margin: 15px auto;"></p>
       </tags>
   </entry>
   <entry>
-    <title>[AWS-CPE] Monitoring and Analytics</title>
-    <url>/posts/2332420025/</url>
-    <content><![CDATA[<style>
-    img{
-        width: 70%;
-    }
-</style>
-
-<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Effective monitoring is crucial for managing any business, whether it’s overseeing a coffee shop or monitoring cloud-based resources in AWS. Below, we detail how monitoring functions as a critical component of both daily business operations and technology management.</p>
-<span id="more"></span>
-
-<h1 id="Objectives"><a href="#Objectives" class="headerlink" title="Objectives"></a>Objectives</h1><ul>
-<li>Summarize approaches to monitoring your AWS environment.</li>
-<li>Describe the benefits of Amazon CloudWatch.</li>
-<li>Describe the benefits of AWS CloudTrail.</li>
-<li>Describe the benefits of AWS Trusted Advisor.</li>
-</ul>
-<h1 id="Amazon-CloudWatch"><a href="#Amazon-CloudWatch" class="headerlink" title="Amazon CloudWatch"></a>Amazon CloudWatch</h1><p>(monitoring resources)<br>As business operations, such as a coffee shop, become more complex, maintaining visibility and proactive management of systems becomes crucial. Amazon CloudWatch provides an extensive solution for monitoring AWS resources and applications, analogous to keeping a coffee shop’s equipment and operations running smoothly.</p>
-<h2 id="Key-Features-of-Amazon-CloudWatch"><a href="#Key-Features-of-Amazon-CloudWatch" class="headerlink" title="Key Features of Amazon CloudWatch"></a><strong>Key Features of Amazon CloudWatch</strong></h2><ul>
-<li><p><strong>Real-Time Monitoring and Metrics</strong>:</p>
-<ul>
-<li>Tracks various metrics related to AWS resources and applications, similar to monitoring espresso counts in a coffee machine.</li>
-<li><strong>Example</strong>: Monitoring the CPU utilization of an EC2 instance or tracking custom metrics like the number of espressos made.</li>
-</ul>
-</li>
-<li><p><strong>Alerts and Alarms</strong>:</p>
-<ul>
-<li><strong>CloudWatch Alarms</strong>: Set thresholds that, when exceeded, trigger notifications or actions, such as alerting staff to clean an espresso machine after 100 uses.</li>
-<li>Integrated with <strong>Amazon SNS</strong> for notifications, enabling actions like sending SMS messages to manage urgent tasks.</li>
-</ul>
-</li>
-<li><p><strong>Dashboards</strong>:</p>
-<ul>
-<li>Visual displays that aggregate metrics in real-time, allowing for a comprehensive view of all monitored resources.</li>
-<li>Useful for proactive monitoring and quick assessments of multiple resources at a glance.</li>
-</ul>
-</li>
-</ul>
-<p><img data-src="/images/posts/cloud/monitoring/cloud-watch.png"></img></p>
-<h2 id="Benefits-of-Using-CloudWatch"><a href="#Benefits-of-Using-CloudWatch" class="headerlink" title="Benefits of Using CloudWatch"></a><strong>Benefits of Using CloudWatch</strong></h2><ul>
-<li><p><strong>Centralized Metric Access</strong>:</p>
-<ul>
-<li>Gathers and displays metrics and logs from all AWS resources, applications, and on-premises servers in one location, enhancing system-wide visibility.</li>
-</ul>
-</li>
-<li><p><strong>Insight Across Infrastructure</strong>:</p>
-<ul>
-<li>Correlates and visualizes metrics and logs, facilitating quick identification and resolution of issues.</li>
-<li>Reduces mean time to resolution (MTTR) and improves total cost of ownership (TCO), analogous to optimizing machine maintenance in a coffee shop to free up resources for customer service.</li>
-</ul>
-</li>
-<li><p><strong>Operational Optimization</strong>:</p>
-<ul>
-<li>Aggregates usage data across resources like EC2 instances to gain operational insights and optimize utilization.</li>
-<li>Helps focus staff efforts on core activities rather than routine maintenance.</li>
-</ul>
-</li>
-</ul>
-<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>Amazon CloudWatch equips businesses with the tools necessary to monitor, alert, and manage their AWS resources effectively. By analogizing with a coffee shop’s day-to-day operations, we can see how CloudWatch’s capabilities are essential for maintaining operational efficiency and ensuring resource optimization.</p>
-<h1 id="AWS-CloudTrail"><a href="#AWS-CloudTrail" class="headerlink" title="AWS CloudTrail"></a>AWS CloudTrail</h1><p>(monitoring transactions)<br>AWS CloudTrail is a vital tool for auditing and compliance in cloud environments, similar to how a cash register tracks and records every transaction in a store. This service ensures that all actions taken within AWS are logged, providing a reliable means of monitoring and verifying all changes made to the resources.</p>
-<h2 id="Key-Features-and-Benefits-of-AWS-CloudTrail"><a href="#Key-Features-and-Benefits-of-AWS-CloudTrail" class="headerlink" title="Key Features and Benefits of AWS CloudTrail"></a><strong>Key Features and Benefits of AWS CloudTrail</strong></h2><ul>
-<li><p><strong>Comprehensive Auditing</strong>:</p>
-<ul>
-<li>Every API request made within AWS is logged by CloudTrail, whether it’s launching an EC2 instance, modifying a DynamoDB table, or altering user permissions.</li>
-<li>Details recorded include the identity of the requester, the time of the API call, IP address, and both the response and new state of the system after the request.</li>
-</ul>
-</li>
-<li><p><strong>Security and Compliance</strong>:</p>
-<ul>
-<li><strong>Root-Level Monitoring</strong>: Tracks changes made by high-level administrators, crucial for ensuring that critical settings, like security group configurations, remain unaltered.</li>
-<li><strong>Audit Trails for Compliance</strong>: Provides auditors with definitive proof that no unauthorized changes have been made, especially to security settings.</li>
-</ul>
-</li>
-<li><p><strong>Data Integrity and Storage</strong>:</p>
-<ul>
-<li>Logs are stored indefinitely in secure S3 buckets, utilizing tamper-proof features like Vault Lock to ensure data integrity and provide a clear lineage of all actions recorded.</li>
-</ul>
-</li>
-</ul>
-<p><img data-src="/images/posts/cloud/monitoring/cloud-trail.png"></img></p>
-<h2 id="Conclusion-1"><a href="#Conclusion-1" class="headerlink" title="Conclusion"></a><strong>Conclusion</strong></h2><p>AWS CloudTrail is akin to a digital cash register for cloud environments, meticulously recording each transaction and ensuring that all data is accounted for and secure. This capability is essential for maintaining stringent compliance standards and proving system integrity to auditors, making it an indispensable tool for businesses operating in AWS.</p>
-<h2 id="Quick-Quiz"><a href="#Quick-Quiz" class="headerlink" title="Quick Quiz"></a>Quick Quiz</h2><p><img data-src="/images/posts/cloud/monitoring/trail-quiz.png"></img></p>
-<h1 id="AWS-Trusted-Advisor"><a href="#AWS-Trusted-Advisor" class="headerlink" title="AWS Trusted Advisor"></a>AWS Trusted Advisor</h1><p>AWS Trusted Advisor acts like an automated consultant for your AWS environment, analyzing your setup against best practices across five key areas. It provides insights and recommendations to enhance efficiency, security, and performance, much like an external advisor might offer suggestions to improve a business’s operations.</p>
-<h2 id="Key-Features-of-AWS-Trusted-Advisor"><a href="#Key-Features-of-AWS-Trusted-Advisor" class="headerlink" title="Key Features of AWS Trusted Advisor"></a><strong>Key Features of AWS Trusted Advisor</strong></h2><ul>
-<li><p><strong>Five Pillars of Evaluation</strong>:</p>
-<ul>
-<li><strong>Cost Optimization</strong>: Identifies underutilized resources to reduce expenses.</li>
-<li><strong>Performance</strong>: Assesses configurations to ensure optimal performance.</li>
-<li><strong>Security</strong>: Highlights security vulnerabilities like weak password policies or insufficient MFA.</li>
-<li><strong>Fault Tolerance</strong>: Checks for adequate backup measures and balanced deployment across AZs.</li>
-<li><strong>Service Limits</strong>: Alerts on approaching or reached AWS service limits.</li>
-</ul>
-</li>
-<li><p><strong>Dashboard and Alerts</strong>:</p>
-<ul>
-<li><strong>Interface</strong>: Provides a dashboard that categorizes issues into three levels: action recommended (red), investigation recommended (orange), and no problems (green).</li>
-<li><strong>Alert System</strong>: Can send email notifications to relevant contacts as issues are detected.</li>
-</ul>
-</li>
-</ul>
-<p><img data-src="/images/posts/cloud/monitoring/advisor.png"></img></p>
-<h2 id="Practical-Examples-and-Recommendations"><a href="#Practical-Examples-and-Recommendations" class="headerlink" title="Practical Examples and Recommendations"></a><strong>Practical Examples and Recommendations</strong></h2><ul>
-<li><p><strong>Cost Optimization Checks</strong>:</p>
-<ul>
-<li>Might indicate idle RDS instances or underutilized EC2 instances and EBS volumes, suggesting downsizing or termination to save costs.</li>
-</ul>
-</li>
-<li><p><strong>Security Checks</strong>:</p>
-<ul>
-<li>May alert on urgent security issues like open security groups, advocating for immediate action to close vulnerabilities.</li>
-</ul>
-</li>
-<li><p><strong>Fault Tolerance Advice</strong>:</p>
-<ul>
-<li>Could point out the absence of EBS volume snapshots, recommending creating backups to prevent data loss.</li>
-</ul>
-</li>
-<li><p><strong>Handling Service Limits</strong>:</p>
-<ul>
-<li>Informs when nearing or hitting AWS service caps, advising when to request limit increases.</li>
-</ul>
-</li>
-</ul>
-<h2 id="Conclusion-2"><a href="#Conclusion-2" class="headerlink" title="Conclusion"></a><strong>Conclusion</strong></h2><p>AWS Trusted Advisor is a comprehensive tool that provides critical insights and actionable advice across multiple aspects of your AWS environment. By enabling Trusted Advisor and setting up its alert systems, you can proactively manage and optimize your resources, ensuring a secure, efficient, and reliable AWS infrastructure.</p>
-<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p>Effective management of cloud environments requires a deep understanding of system operations and resource usage. AWS provides several tools to help businesses maintain efficient, secure, and compliant applications by offering insights into system behavior, user actions, and resource optimization.</p>
-<h2 id="Overview-of-Key-AWS-Monitoring-and-Analytical-Tools"><a href="#Overview-of-Key-AWS-Monitoring-and-Analytical-Tools" class="headerlink" title="Overview of Key AWS Monitoring and Analytical Tools"></a><strong>Overview of Key AWS Monitoring and Analytical Tools</strong></h2><ul>
-<li><p><strong>Amazon CloudWatch</strong>:</p>
-<ul>
-<li>Provides near real-time monitoring of <strong>AWS resources and applications</strong>.</li>
-<li>Allows tracking of metrics over time to optimize system performance.</li>
-<li>Alerts users to conditions that require attention, enhancing proactive management.</li>
-</ul>
-</li>
-<li><p><strong>AWS CloudTrail</strong>:</p>
-<ul>
-<li>Tracks <strong>user activities and API usage</strong> within AWS.</li>
-<li>Offers comprehensive auditing capabilities by recording who accessed what, when, and from where.</li>
-<li>Answers most auditing queries, except for the reasons behind the actions.</li>
-</ul>
-</li>
-<li><p><strong>AWS Trusted Advisor</strong>:</p>
-<ul>
-<li>Delivers a dashboard summarizing over 40 common concerns related to cost, performance, security, and resilience.</li>
-<li>Provides <strong>actionable insights</strong> to help optimize resource usage and improve system efficiency.</li>
-</ul>
-</li>
-</ul>
-<h2 id="Additional-Tools-and-Resources"><a href="#Additional-Tools-and-Resources" class="headerlink" title="Additional Tools and Resources"></a><strong>Additional Tools and Resources</strong></h2><ul>
-<li>While CloudWatch, CloudTrail, and Trusted Advisor are fundamental, AWS offers a variety of other monitoring and analytical tools to suit diverse business needs.</li>
-</ul>
-<h2 id="Conclusion-3"><a href="#Conclusion-3" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>Understanding and utilizing AWS monitoring tools like CloudWatch, CloudTrail, and Trusted Advisor is crucial for any business looking to secure, optimize, and streamline their cloud operations. These tools not only provide valuable insights into system performance and user activities but also help in maintaining compliance and improving overall operational efficiency.</p>
-<h1 id="Quiz"><a href="#Quiz" class="headerlink" title="Quiz"></a>Quiz</h1><ul>
-<li><img data-src="/images/posts/cloud/monitoring/q1.png"></img></li>
-<li><img data-src="/images/posts/cloud/monitoring/q2.png"></img></li>
-<li><img data-src="/images/posts/cloud/monitoring/q3.png"></img></li>
-</ul>
-<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li>AWS SkillBuilder CPE Module7</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>cloud</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Understanding Cloud Computing - Public, Private, and Hybrid Clouds</title>
     <url>/posts/3108822142/</url>
     <content><![CDATA[<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Cloud computing has become a cornerstone for deploying modern IT solutions, offering scalable, efficient, and versatile options for businesses and individuals alike. With the evolution of cloud technology, three primary deployment models have emerged: public, private, and hybrid clouds. Each model offers distinct features, benefits, and considerations, making it crucial to understand their differences to choose the most suitable option for your needs. In this article, we’ll delve into the nuances of public, private, and hybrid clouds, helping you navigate the cloud landscape.</p>
@@ -1867,116 +1923,6 @@ style="width: 70%; margin: 15px auto;"></p>
 ]]></content>
       <tags>
         <tag>cloud computing</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>[.NET][C#][Design Pattern] - Mediator Pattern (中介者模式)</title>
-    <url>/posts/4072203086/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>這篇文章主要介紹Mediator Pattern的定義以及簡單實作<br>介紹使用Mediator Pattern的好處, 並提供範例<br>在軟體架構中Mediator Patternc和Repository Pattern都是常用的pattern<br>通常.NET專案中會結合MediatR套件使用</p>
-<span id="more"></span>
-
-<h2 id="定義-Mediator-Pattern"><a href="#定義-Mediator-Pattern" class="headerlink" title="定義 Mediator Pattern"></a>定義 Mediator Pattern</h2><p>IG貼文：<br><span class="exturl" data-url="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9wL0NpTTBlenBMTzR6Lz9obD16aC10dw==">Mediator Pattern Post<i class="fa fa-external-link-alt"></i></span></p>
-<p>GitHub連結：<br><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL21hby1jb2RlL01lZGlhdG9yUGF0dGVybg==">Sample Code<i class="fa fa-external-link-alt"></i></span></p>
-<p>定義一個 Mediator 物件用來<strong>封裝一組物件的互動方式</strong>。<br>Mediator 藉由<strong>避免物件間相互直接的引用</strong>，從而降低它們之間的耦合程度，並且可以讓我們獨立地改變這些物件間的互動方式。</p>
-<p>下面這兩張圖片可以簡單體現出Mediator Pattern在做的事</p>
-<p><strong>沒有使用中介者, 物件彼此之間直接調用</strong><br><img data-src="/images/posts/mediator-pattern/origin-graph.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p><strong>使用中介者, 物件只依賴mediator來與其他物件溝通</strong><br><img data-src="/images/posts/mediator-pattern/star.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>可以發現使用中介者模式之後, 物件都只依賴中介者來傳遞訊息, 而不是直接調用彼此, 以此達到解耦。<br>在現實生活中, 也有類似的例子, 例如開發團隊, 客服團隊, 產銷團隊, 設計團隊, 若彼此之間沒有一個統一的溝通,<br>那麼各個團隊耦合度很高, 開發跟設計要協調介面, 又要和產銷和客服討論如何贏得如何符合市場, 這樣一來分工太複雜。<br>所以需要一個<strong>產品經理來當中介者</strong>, 協助溝通各個團隊。</p>
-<h2 id="優缺點"><a href="#優缺點" class="headerlink" title="優缺點"></a>優缺點</h2><ul>
-<li>優點 <ol>
-<li>降低物件之間的耦合性，讓物件容易重複使用。</li>
-<li>物件之間一對多的關聯性變成一對一，提高系統靈活性，也讓整體容易維護及擴充。</li>
-</ol>
-</li>
-<li>缺點 (Trade-off)<ol>
-<li>同事類別過多時，中介者責任很大，會使系統提升一定程度的複雜性。</li>
-</ol>
-</li>
-</ul>
-<h2 id="UML與成員"><a href="#UML與成員" class="headerlink" title="UML與成員"></a>UML與成員</h2><p><img data-src="/images/posts/mediator-pattern/uml.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<table>
-    <thead>
-        <th>成員</th>
-        <th>定義</th>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Mdiator</td>
-            <td>抽象中介者, 定義註冊進入mediator以及轉發的方法</td>
-        </tr>
-        <tr>
-            <td>ConcreteMediator</td>
-            <td>具體中介者, 定義一個集合來管理同事, 所以聚合Colleague</td>
-        </tr>
-        <tr>
-            <td>Colleague</td>
-            <td>抽象同事, 可以保存中介者, 調用內部方法, 所以聚合Mediator</td>
-        </tr>
-        <tr>
-            <td>ConcreteColleague</td>
-            <td>具體同事, 當要跟其他物件溝通時, 利用內部的中介者進行轉發</td>
-        </tr>
-    </tbody>
-</table>
-
-<h2 id="實作"><a href="#實作" class="headerlink" title="實作"></a>實作</h2><p><strong>專案結構</strong><br><img data-src="/images/posts/mediator-pattern/structure.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p><strong>抽象Mediator</strong></p>
-<figure class="highlight c#"><figcaption><span>Mediator(抽象)</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MediatorPattern.mediator</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 團隊列舉</span></span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">enum</span> teamType</span><br><span class="line">    &#123;</span><br><span class="line">        ENGINEERING, DESIGN, SERVICE, MARKETING</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 抽象mediator</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title">Mediator</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">Register</span>(<span class="params">teamType type, Colleague colleague</span>)</span>; <span class="comment">//註冊進入mediator</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">Relay</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span>; <span class="comment">//轉發;傳遞</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>PackageManager(具體Mediator)</strong></p>
-<figure class="highlight c#"><figcaption><span>PackageManager(具體Mediator)</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MediatorPattern.mediator</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="comment">// 具體mediator</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ProductManager</span> : <span class="title">Mediator</span></span><br><span class="line">	&#123;</span><br><span class="line">        <span class="comment">// 聚合Colleague, 一個儲存colleague物件的dictionary</span></span><br><span class="line">        <span class="keyword">private</span> Dictionary&lt;teamType, Colleague&gt; colleagues = <span class="keyword">new</span> Dictionary&lt;teamType, Colleague&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">Register</span>(<span class="params">teamType type, Colleague colleague</span>)</span></span><br><span class="line">        &#123;</span><br><span class="line">            colleague.setMediator(<span class="keyword">this</span>);</span><br><span class="line">            <span class="keyword">this</span>.colleagues.Add(type, colleague);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">Relay</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">        &#123;</span><br><span class="line">            Colleague toColleague = <span class="keyword">this</span>.colleagues[type];</span><br><span class="line">            toColleague.receive(msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>抽象Colleague</strong></p>
-<figure class="highlight c#"><figcaption><span>Colleague(抽象)</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.mediator;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MediatorPattern.colleagues</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title">Colleague</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">protected</span> Mediator? Mediator &#123; <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; &#125;</span><br><span class="line"></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setMediator</span>(<span class="params">Mediator mediator</span>)</span></span><br><span class="line">		&#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator = mediator;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 接收訊息後如何反應</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span>;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 傳送訊息給特定物件</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>具體Colleague</strong></p>
-<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="comment">//具體colleague</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">DesignTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;設計團隊收到訊息: &quot;</span> + msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;設計團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">EngineeringTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;工程師團隊收到訊息: &quot;</span>+msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;工程師團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">MarketingTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;產銷團隊收到訊息: &quot;</span> + msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;產銷團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ServiceTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;客服團隊收到訊息: &quot;</span> + msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;客服團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>Client端使用</strong></p>
-<figure class="highlight c#"><figcaption><span>Program.cs</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.mediator;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 具體mediator</span></span><br><span class="line">ProductManager pm = <span class="keyword">new</span> ProductManager();</span><br><span class="line"></span><br><span class="line"><span class="comment">//具體colleague</span></span><br><span class="line">Colleague ds = <span class="keyword">new</span> DesignTeam();</span><br><span class="line">Colleague eg = <span class="keyword">new</span> EngineeringTeam();</span><br><span class="line">Colleague mk = <span class="keyword">new</span> MarketingTeam();</span><br><span class="line">Colleague sv = <span class="keyword">new</span> ServiceTeam();</span><br><span class="line"></span><br><span class="line"><span class="comment">//註冊進入mediator</span></span><br><span class="line">pm.Register(teamType.DESIGN, ds);</span><br><span class="line">pm.Register(teamType.ENGINEERING, eg);</span><br><span class="line">pm.Register(teamType.MARKETING, mk);</span><br><span class="line">pm.Register(teamType.SERVICE, sv);</span><br><span class="line"></span><br><span class="line"><span class="comment">//執行</span></span><br><span class="line">ds.send(teamType.ENGINEERING, <span class="string">&quot;UI設計稿完成&quot;</span>);</span><br><span class="line">Console.WriteLine(String.Concat(Enumerable.Repeat(<span class="string">&quot;-&quot;</span>, <span class="number">10</span>)));</span><br><span class="line"></span><br><span class="line">eg.send(teamType.MARKETING, <span class="string">&quot;軟體開發完成&quot;</span>);</span><br><span class="line">Console.WriteLine(String.Concat(Enumerable.Repeat(<span class="string">&quot;-&quot;</span>, <span class="number">10</span>)));</span><br><span class="line"></span><br><span class="line">Console.ReadKey();</span><br></pre></td></tr></table></figure>
-
-<p><strong>結果</strong><br><img data-src="/images/posts/mediator-pattern/result.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<h2 id="疑問"><a href="#疑問" class="headerlink" title="疑問"></a>疑問</h2><ol>
-<li>DI不也是讓物件間解耦嗎？他們有什麼不同？<ol>
-<li>應用場景不同：Mediator模式主要用於解耦合多個相互協作的物件，特別是在複雜的互動場景中。DI則主要用於管理和注入依賴關係，以實現鬆耦合和可測試的程式碼。</li>
-<li>解決不同問題：Mediator解決的是物件之間的協作和通信問題，而DI解決的是依賴關係管理的問題。</li>
-<li>實現方式不同：Mediator需要一個中介者來協調物件之間的互動，通常由一個專門的Mediator類別來實現。DI則是一種設計模式，它可以與不同語言和框架一起使用，並不需要特定的中介者類別。</li>
-</ol>
-</li>
-</ol>
-<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><ul>
-<li>定義:<br>  定義一個 Mediator 物件用來封裝一組物件的互動方式。Mediator 藉由避免物件間相互直接的引用，從而降低它們之間的耦合程度，並且可以讓我們獨立地改變這些物件間的互動方式。</li>
-<li>成員<ul>
-<li>抽象Mediator: 定義方法, 轉接訊息</li>
-<li>具體Mediator: 實作抽象Mediator, Colleague (擁有0~多個Colleague)</li>
-<li>抽象Colleague: 定義方法, 聚合抽象Mediator (Colleague擁有Mediator)</li>
-<li>具體Colleague: 實作抽象Mediator</li>
-</ul>
-</li>
-<li>優點 <ol>
-<li>降低物件之間的耦合性，讓物件容易重複使用。</li>
-<li>物件之間一對多的關聯性變成一對一，提高系統靈活性，也讓整體容易維護及擴充。</li>
-</ol>
-</li>
-<li>缺點 (Trade-off)<ol>
-<li>同事類別過多時，中介者責任很大，會使系統提升一定程度的複雜性。</li>
-</ol>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>OOP</category>
-        <category>Design Pattern</category>
-      </categories>
-      <tags>
-        <tag>OOP</tag>
-        <tag>.NET C#</tag>
-        <tag>design-pattern</tag>
       </tags>
   </entry>
   <entry>
@@ -2263,6 +2209,171 @@ style="width: 70%; margin: 15px auto;"><br>這裡主要是以書本和作者為�
         <tag>OOP</tag>
         <tag>.NET C#</tag>
         <tag>design-pattern</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[AWS-CPE] Monitoring and Analytics</title>
+    <url>/posts/2332420025/</url>
+    <content><![CDATA[<style>
+    img{
+        width: 70%;
+    }
+</style>
+
+<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Effective monitoring is crucial for managing any business, whether it’s overseeing a coffee shop or monitoring cloud-based resources in AWS. Below, we detail how monitoring functions as a critical component of both daily business operations and technology management.</p>
+<span id="more"></span>
+
+<h1 id="Objectives"><a href="#Objectives" class="headerlink" title="Objectives"></a>Objectives</h1><ul>
+<li>Summarize approaches to monitoring your AWS environment.</li>
+<li>Describe the benefits of Amazon CloudWatch.</li>
+<li>Describe the benefits of AWS CloudTrail.</li>
+<li>Describe the benefits of AWS Trusted Advisor.</li>
+</ul>
+<h1 id="Amazon-CloudWatch"><a href="#Amazon-CloudWatch" class="headerlink" title="Amazon CloudWatch"></a>Amazon CloudWatch</h1><p>(monitoring resources)<br>As business operations, such as a coffee shop, become more complex, maintaining visibility and proactive management of systems becomes crucial. Amazon CloudWatch provides an extensive solution for monitoring AWS resources and applications, analogous to keeping a coffee shop’s equipment and operations running smoothly.</p>
+<h2 id="Key-Features-of-Amazon-CloudWatch"><a href="#Key-Features-of-Amazon-CloudWatch" class="headerlink" title="Key Features of Amazon CloudWatch"></a><strong>Key Features of Amazon CloudWatch</strong></h2><ul>
+<li><p><strong>Real-Time Monitoring and Metrics</strong>:</p>
+<ul>
+<li>Tracks various metrics related to AWS resources and applications, similar to monitoring espresso counts in a coffee machine.</li>
+<li><strong>Example</strong>: Monitoring the CPU utilization of an EC2 instance or tracking custom metrics like the number of espressos made.</li>
+</ul>
+</li>
+<li><p><strong>Alerts and Alarms</strong>:</p>
+<ul>
+<li><strong>CloudWatch Alarms</strong>: Set thresholds that, when exceeded, trigger notifications or actions, such as alerting staff to clean an espresso machine after 100 uses.</li>
+<li>Integrated with <strong>Amazon SNS</strong> for notifications, enabling actions like sending SMS messages to manage urgent tasks.</li>
+</ul>
+</li>
+<li><p><strong>Dashboards</strong>:</p>
+<ul>
+<li>Visual displays that aggregate metrics in real-time, allowing for a comprehensive view of all monitored resources.</li>
+<li>Useful for proactive monitoring and quick assessments of multiple resources at a glance.</li>
+</ul>
+</li>
+</ul>
+<p><img data-src="/images/posts/cloud/monitoring/cloud-watch.png"></img></p>
+<h2 id="Benefits-of-Using-CloudWatch"><a href="#Benefits-of-Using-CloudWatch" class="headerlink" title="Benefits of Using CloudWatch"></a><strong>Benefits of Using CloudWatch</strong></h2><ul>
+<li><p><strong>Centralized Metric Access</strong>:</p>
+<ul>
+<li>Gathers and displays metrics and logs from all AWS resources, applications, and on-premises servers in one location, enhancing system-wide visibility.</li>
+</ul>
+</li>
+<li><p><strong>Insight Across Infrastructure</strong>:</p>
+<ul>
+<li>Correlates and visualizes metrics and logs, facilitating quick identification and resolution of issues.</li>
+<li>Reduces mean time to resolution (MTTR) and improves total cost of ownership (TCO), analogous to optimizing machine maintenance in a coffee shop to free up resources for customer service.</li>
+</ul>
+</li>
+<li><p><strong>Operational Optimization</strong>:</p>
+<ul>
+<li>Aggregates usage data across resources like EC2 instances to gain operational insights and optimize utilization.</li>
+<li>Helps focus staff efforts on core activities rather than routine maintenance.</li>
+</ul>
+</li>
+</ul>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>Amazon CloudWatch equips businesses with the tools necessary to monitor, alert, and manage their AWS resources effectively. By analogizing with a coffee shop’s day-to-day operations, we can see how CloudWatch’s capabilities are essential for maintaining operational efficiency and ensuring resource optimization.</p>
+<h1 id="AWS-CloudTrail"><a href="#AWS-CloudTrail" class="headerlink" title="AWS CloudTrail"></a>AWS CloudTrail</h1><p>(monitoring transactions)<br>AWS CloudTrail is a vital tool for auditing and compliance in cloud environments, similar to how a cash register tracks and records every transaction in a store. This service ensures that all actions taken within AWS are logged, providing a reliable means of monitoring and verifying all changes made to the resources.</p>
+<h2 id="Key-Features-and-Benefits-of-AWS-CloudTrail"><a href="#Key-Features-and-Benefits-of-AWS-CloudTrail" class="headerlink" title="Key Features and Benefits of AWS CloudTrail"></a><strong>Key Features and Benefits of AWS CloudTrail</strong></h2><ul>
+<li><p><strong>Comprehensive Auditing</strong>:</p>
+<ul>
+<li>Every API request made within AWS is logged by CloudTrail, whether it’s launching an EC2 instance, modifying a DynamoDB table, or altering user permissions.</li>
+<li>Details recorded include the identity of the requester, the time of the API call, IP address, and both the response and new state of the system after the request.</li>
+</ul>
+</li>
+<li><p><strong>Security and Compliance</strong>:</p>
+<ul>
+<li><strong>Root-Level Monitoring</strong>: Tracks changes made by high-level administrators, crucial for ensuring that critical settings, like security group configurations, remain unaltered.</li>
+<li><strong>Audit Trails for Compliance</strong>: Provides auditors with definitive proof that no unauthorized changes have been made, especially to security settings.</li>
+</ul>
+</li>
+<li><p><strong>Data Integrity and Storage</strong>:</p>
+<ul>
+<li>Logs are stored indefinitely in secure S3 buckets, utilizing tamper-proof features like Vault Lock to ensure data integrity and provide a clear lineage of all actions recorded.</li>
+</ul>
+</li>
+</ul>
+<p><img data-src="/images/posts/cloud/monitoring/cloud-trail.png"></img></p>
+<h2 id="Conclusion-1"><a href="#Conclusion-1" class="headerlink" title="Conclusion"></a><strong>Conclusion</strong></h2><p>AWS CloudTrail is akin to a digital cash register for cloud environments, meticulously recording each transaction and ensuring that all data is accounted for and secure. This capability is essential for maintaining stringent compliance standards and proving system integrity to auditors, making it an indispensable tool for businesses operating in AWS.</p>
+<h2 id="Quick-Quiz"><a href="#Quick-Quiz" class="headerlink" title="Quick Quiz"></a>Quick Quiz</h2><p><img data-src="/images/posts/cloud/monitoring/trail-quiz.png"></img></p>
+<h1 id="AWS-Trusted-Advisor"><a href="#AWS-Trusted-Advisor" class="headerlink" title="AWS Trusted Advisor"></a>AWS Trusted Advisor</h1><p>AWS Trusted Advisor acts like an automated consultant for your AWS environment, analyzing your setup against best practices across five key areas. It provides insights and recommendations to enhance efficiency, security, and performance, much like an external advisor might offer suggestions to improve a business’s operations.</p>
+<h2 id="Key-Features-of-AWS-Trusted-Advisor"><a href="#Key-Features-of-AWS-Trusted-Advisor" class="headerlink" title="Key Features of AWS Trusted Advisor"></a><strong>Key Features of AWS Trusted Advisor</strong></h2><ul>
+<li><p><strong>Five Pillars of Evaluation</strong>:</p>
+<ul>
+<li><strong>Cost Optimization</strong>: Identifies underutilized resources to reduce expenses.</li>
+<li><strong>Performance</strong>: Assesses configurations to ensure optimal performance.</li>
+<li><strong>Security</strong>: Highlights security vulnerabilities like weak password policies or insufficient MFA.</li>
+<li><strong>Fault Tolerance</strong>: Checks for adequate backup measures and balanced deployment across AZs.</li>
+<li><strong>Service Limits</strong>: Alerts on approaching or reached AWS service limits.</li>
+</ul>
+</li>
+<li><p><strong>Dashboard and Alerts</strong>:</p>
+<ul>
+<li><strong>Interface</strong>: Provides a dashboard that categorizes issues into three levels: action recommended (red), investigation recommended (orange), and no problems (green).</li>
+<li><strong>Alert System</strong>: Can send email notifications to relevant contacts as issues are detected.</li>
+</ul>
+</li>
+</ul>
+<p><img data-src="/images/posts/cloud/monitoring/advisor.png"></img></p>
+<h2 id="Practical-Examples-and-Recommendations"><a href="#Practical-Examples-and-Recommendations" class="headerlink" title="Practical Examples and Recommendations"></a><strong>Practical Examples and Recommendations</strong></h2><ul>
+<li><p><strong>Cost Optimization Checks</strong>:</p>
+<ul>
+<li>Might indicate idle RDS instances or underutilized EC2 instances and EBS volumes, suggesting downsizing or termination to save costs.</li>
+</ul>
+</li>
+<li><p><strong>Security Checks</strong>:</p>
+<ul>
+<li>May alert on urgent security issues like open security groups, advocating for immediate action to close vulnerabilities.</li>
+</ul>
+</li>
+<li><p><strong>Fault Tolerance Advice</strong>:</p>
+<ul>
+<li>Could point out the absence of EBS volume snapshots, recommending creating backups to prevent data loss.</li>
+</ul>
+</li>
+<li><p><strong>Handling Service Limits</strong>:</p>
+<ul>
+<li>Informs when nearing or hitting AWS service caps, advising when to request limit increases.</li>
+</ul>
+</li>
+</ul>
+<h2 id="Conclusion-2"><a href="#Conclusion-2" class="headerlink" title="Conclusion"></a><strong>Conclusion</strong></h2><p>AWS Trusted Advisor is a comprehensive tool that provides critical insights and actionable advice across multiple aspects of your AWS environment. By enabling Trusted Advisor and setting up its alert systems, you can proactively manage and optimize your resources, ensuring a secure, efficient, and reliable AWS infrastructure.</p>
+<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p>Effective management of cloud environments requires a deep understanding of system operations and resource usage. AWS provides several tools to help businesses maintain efficient, secure, and compliant applications by offering insights into system behavior, user actions, and resource optimization.</p>
+<h2 id="Overview-of-Key-AWS-Monitoring-and-Analytical-Tools"><a href="#Overview-of-Key-AWS-Monitoring-and-Analytical-Tools" class="headerlink" title="Overview of Key AWS Monitoring and Analytical Tools"></a><strong>Overview of Key AWS Monitoring and Analytical Tools</strong></h2><ul>
+<li><p><strong>Amazon CloudWatch</strong>:</p>
+<ul>
+<li>Provides near real-time monitoring of <strong>AWS resources and applications</strong>.</li>
+<li>Allows tracking of metrics over time to optimize system performance.</li>
+<li>Alerts users to conditions that require attention, enhancing proactive management.</li>
+</ul>
+</li>
+<li><p><strong>AWS CloudTrail</strong>:</p>
+<ul>
+<li>Tracks <strong>user activities and API usage</strong> within AWS.</li>
+<li>Offers comprehensive auditing capabilities by recording who accessed what, when, and from where.</li>
+<li>Answers most auditing queries, except for the reasons behind the actions.</li>
+</ul>
+</li>
+<li><p><strong>AWS Trusted Advisor</strong>:</p>
+<ul>
+<li>Delivers a dashboard summarizing over 40 common concerns related to cost, performance, security, and resilience.</li>
+<li>Provides <strong>actionable insights</strong> to help optimize resource usage and improve system efficiency.</li>
+</ul>
+</li>
+</ul>
+<h2 id="Additional-Tools-and-Resources"><a href="#Additional-Tools-and-Resources" class="headerlink" title="Additional Tools and Resources"></a><strong>Additional Tools and Resources</strong></h2><ul>
+<li>While CloudWatch, CloudTrail, and Trusted Advisor are fundamental, AWS offers a variety of other monitoring and analytical tools to suit diverse business needs.</li>
+</ul>
+<h2 id="Conclusion-3"><a href="#Conclusion-3" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>Understanding and utilizing AWS monitoring tools like CloudWatch, CloudTrail, and Trusted Advisor is crucial for any business looking to secure, optimize, and streamline their cloud operations. These tools not only provide valuable insights into system performance and user activities but also help in maintaining compliance and improving overall operational efficiency.</p>
+<h1 id="Quiz"><a href="#Quiz" class="headerlink" title="Quiz"></a>Quiz</h1><ul>
+<li><img data-src="/images/posts/cloud/monitoring/q1.png"></img></li>
+<li><img data-src="/images/posts/cloud/monitoring/q2.png"></img></li>
+<li><img data-src="/images/posts/cloud/monitoring/q3.png"></img></li>
+</ul>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li>AWS SkillBuilder CPE Module7</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>cloud</tag>
       </tags>
   </entry>
 </search>
