@@ -24,26 +24,29 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"mao-code.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta property="og:type" content="article">
-<meta property="og:title" content="MLLM-note-1">
-<meta property="og:url" content="https://mao-code.github.io/posts/614504250/index.html">
+    <meta name="description" content="Exploring the AWS Global InfrastructureIntroductionIn today’s digital landscape, ensuring the fault tolerance, stability, and high availability of applications is paramount. Amazon Web Services (AWS)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AWS Global Infrastructure">
+<meta property="og:url" content="https://mao-code.github.io/posts/3777980008/index.html">
 <meta property="og:site_name" content="Mao 勛哥&#39;s blog">
+<meta property="og:description" content="Exploring the AWS Global InfrastructureIntroductionIn today’s digital landscape, ensuring the fault tolerance, stability, and high availability of applications is paramount. Amazon Web Services (AWS)">
 <meta property="og:locale" content="zh_TW">
-<meta property="article:published_time" content="2023-08-15T07:14:47.000Z">
-<meta property="article:modified_time" content="2023-08-15T16:00:44.724Z">
+<meta property="article:published_time" content="2024-05-17T17:07:50.000Z">
+<meta property="article:modified_time" content="2024-05-17T17:09:04.102Z">
 <meta property="article:author" content="Mao 勛哥">
-<meta property="article:tag" content="程式, 開發, code, coding">
+<meta property="article:tag" content="cloud">
+<meta property="article:tag" content="aws">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://mao-code.github.io/posts/614504250/">
+<link rel="canonical" href="https://mao-code.github.io/posts/3777980008/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://mao-code.github.io/posts/614504250/","path":"posts/614504250/","title":"MLLM-note-1"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://mao-code.github.io/posts/3777980008/","path":"posts/3777980008/","title":"AWS Global Infrastructure"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>MLLM-note-1 | Mao 勛哥's blog</title><meta name="robots" content="noindex">
+<title>AWS Global Infrastructure | Mao 勛哥's blog</title>
   
 
 
@@ -136,7 +139,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目錄
@@ -149,6 +152,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Exploring-the-AWS-Global-Infrastructure"><span class="nav-number">1.</span> <span class="nav-text">Exploring the AWS Global Infrastructure</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction"><span class="nav-number">1.1.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AWS-Regions-Geographical-Isolation-for-Fault-Tolerance"><span class="nav-number">1.2.</span> <span class="nav-text">AWS Regions: Geographical Isolation for Fault Tolerance</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Isolation-and-Data-Residency"><span class="nav-number">1.2.1.</span> <span class="nav-text">Isolation and Data Residency</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Service-Availability"><span class="nav-number">1.2.2.</span> <span class="nav-text">Service Availability</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Availability-Zones-Building-Blocks-of-Resilient-Applications"><span class="nav-number">1.3.</span> <span class="nav-text">Availability Zones: Building Blocks of Resilient Applications</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Structure-and-Fault-Isolation"><span class="nav-number">1.3.1.</span> <span class="nav-text">Structure and Fault Isolation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Power-and-Connectivity"><span class="nav-number">1.3.2.</span> <span class="nav-text">Power and Connectivity</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Local-Zones-Reducing-Latency-for-End-Users"><span class="nav-number">1.4.</span> <span class="nav-text">Local Zones: Reducing Latency for End-Users</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Purpose-and-Use-Cases"><span class="nav-number">1.4.1.</span> <span class="nav-text">Purpose and Use Cases</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Supported-Services-and-Connectivity"><span class="nav-number">1.4.2.</span> <span class="nav-text">Supported Services and Connectivity</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Data-Centers-The-Backbone-of-AWS-Infrastructure"><span class="nav-number">1.5.</span> <span class="nav-text">Data Centers: The Backbone of AWS Infrastructure</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#High-Availability-and-Redundancy"><span class="nav-number">1.5.1.</span> <span class="nav-text">High Availability and Redundancy</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Points-of-Presence-Enhancing-Content-Delivery"><span class="nav-number">1.6.</span> <span class="nav-text">Points of Presence: Enhancing Content Delivery</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Content-Delivery-Network-CDN"><span class="nav-number">1.6.1.</span> <span class="nav-text">Content Delivery Network (CDN)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Key-Takeaways"><span class="nav-number">1.7.</span> <span class="nav-text">Key Takeaways</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Conclusion"><span class="nav-number">1.8.</span> <span class="nav-text">Conclusion</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -233,7 +237,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://mao-code.github.io/posts/614504250/">
+    <link itemprop="mainEntityOfPage" href="https://mao-code.github.io/posts/3777980008/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/mypic.JPG">
@@ -246,12 +250,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="MLLM-note-1 | Mao 勛哥's blog">
+      <meta itemprop="name" content="AWS Global Infrastructure | Mao 勛哥's blog">
       <meta itemprop="description" content>
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          MLLM-note-1
+          AWS Global Infrastructure
         </h1>
 
         <div class="post-meta-container">
@@ -261,15 +265,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">發表於</span>
+      
 
-      <time title="創建時間：2023-08-15 15:14:47" itemprop="dateCreated datePublished" datetime="2023-08-15T15:14:47+08:00">2023-08-15</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新於</span>
-      <time title="修改時間：2023-08-16 00:00:44" itemprop="dateModified" datetime="2023-08-16T00:00:44+08:00">2023-08-16</time>
+      <time title="創建時間：2024-05-18 01:07:50 / 修改時間：01:09:04" itemprop="dateCreated datePublished" datetime="2024-05-18T01:07:50+08:00">2024-05-18</time>
     </span>
 
   
@@ -286,14 +284,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">文章字數：</span>
-      <span>0</span>
+      <span>3.2k</span>
     </span>
     <span class="post-meta-item" title="所需閱讀時間">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">所需閱讀時間 &asymp;</span>
-      <span>1 分鐘</span>
+      <span>3 分鐘</span>
     </span>
 </div>
 
@@ -304,10 +302,45 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <!-- flag of hidden posts -->
+        <h1 id="Exploring-the-AWS-Global-Infrastructure"><a href="#Exploring-the-AWS-Global-Infrastructure" class="headerlink" title="Exploring the AWS Global Infrastructure"></a>Exploring the AWS Global Infrastructure</h1><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>In today’s digital landscape, ensuring the fault tolerance, stability, and high availability of applications is paramount. Amazon Web Services (AWS) provides a robust global infrastructure designed to meet these needs. This article explores the key components of the AWS global infrastructure, including Regions, Availability Zones, Local Zones, and Points of Presence.</p>
+<span id="more"></span>
+
+<h2 id="AWS-Regions-Geographical-Isolation-for-Fault-Tolerance"><a href="#AWS-Regions-Geographical-Isolation-for-Fault-Tolerance" class="headerlink" title="AWS Regions: Geographical Isolation for Fault Tolerance"></a>AWS Regions: Geographical Isolation for Fault Tolerance</h2><h3 id="Isolation-and-Data-Residency"><a href="#Isolation-and-Data-Residency" class="headerlink" title="Isolation and Data Residency"></a>Isolation and Data Residency</h3><p>AWS Regions are isolated geographic areas that enhance fault tolerance and stability. Each Region operates independently, and resources are not automatically replicated across Regions. This design ensures that data stored in one Region stays within that Region unless explicitly replicated, aiding compliance with regulatory requirements and optimizing network latency.</p>
+<h3 id="Service-Availability"><a href="#Service-Availability" class="headerlink" title="Service Availability"></a>Service Availability</h3><p>Not all AWS services are available in every Region. To check which services are offered in a specific Region, you can refer to the <span class="exturl" data-url="aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9hYm91dC1hd3MvZ2xvYmFsLWluZnJhc3RydWN0dXJlL3JlZ2lvbmFsLXByb2R1Y3Qtc2VydmljZXMv">AWS Region Table<i class="fa fa-external-link-alt"></i></span>.</p>
+<h2 id="Availability-Zones-Building-Blocks-of-Resilient-Applications"><a href="#Availability-Zones-Building-Blocks-of-Resilient-Applications" class="headerlink" title="Availability Zones: Building Blocks of Resilient Applications"></a>Availability Zones: Building Blocks of Resilient Applications</h2><h3 id="Structure-and-Fault-Isolation"><a href="#Structure-and-Fault-Isolation" class="headerlink" title="Structure and Fault Isolation"></a>Structure and Fault Isolation</h3><p>Each AWS Region consists of multiple Availability Zones (AZs). An AZ includes one or more data centers designed to be independent failure zones. These zones are physically separated, reducing the risk of simultaneous failure due to localized events.</p>
+<h3 id="Power-and-Connectivity"><a href="#Power-and-Connectivity" class="headerlink" title="Power and Connectivity"></a>Power and Connectivity</h3><p>Availability Zones have their own power supplies and networking connections, further enhancing fault isolation. AWS recommends distributing applications across multiple AZs to achieve high availability and resilience.</p>
+<h2 id="Local-Zones-Reducing-Latency-for-End-Users"><a href="#Local-Zones-Reducing-Latency-for-End-Users" class="headerlink" title="Local Zones: Reducing Latency for End-Users"></a>Local Zones: Reducing Latency for End-Users</h2><h3 id="Purpose-and-Use-Cases"><a href="#Purpose-and-Use-Cases" class="headerlink" title="Purpose and Use Cases"></a>Purpose and Use Cases</h3><p>AWS Local Zones extend AWS Regions by bringing services closer to large population centers. This reduces latency for end-users, making them ideal for applications requiring real-time processing, such as media content creation and gaming.</p>
+<h3 id="Supported-Services-and-Connectivity"><a href="#Supported-Services-and-Connectivity" class="headerlink" title="Supported Services and Connectivity"></a>Supported Services and Connectivity</h3><p>Local Zones support a variety of AWS services, including Amazon EC2, Amazon VPC, and Amazon EBS. They provide a high-bandwidth, secure connection to other AWS services in the Region, ensuring seamless integration and performance.</p>
+<h2 id="Data-Centers-The-Backbone-of-AWS-Infrastructure"><a href="#Data-Centers-The-Backbone-of-AWS-Infrastructure" class="headerlink" title="Data Centers: The Backbone of AWS Infrastructure"></a>Data Centers: The Backbone of AWS Infrastructure</h2><h3 id="High-Availability-and-Redundancy"><a href="#High-Availability-and-Redundancy" class="headerlink" title="High Availability and Redundancy"></a>High Availability and Redundancy</h3><p>AWS data centers are the physical locations where data resides and processing occurs. Designed with high availability in mind, they use custom network equipment and protocols. Core applications are deployed in an N+1 configuration, ensuring load balancing and failover capabilities.</p>
+<h2 id="Points-of-Presence-Enhancing-Content-Delivery"><a href="#Points-of-Presence-Enhancing-Content-Delivery" class="headerlink" title="Points of Presence: Enhancing Content Delivery"></a>Points of Presence: Enhancing Content Delivery</h2><h3 id="Content-Delivery-Network-CDN"><a href="#Content-Delivery-Network-CDN" class="headerlink" title="Content Delivery Network (CDN)"></a>Content Delivery Network (CDN)</h3><p>AWS uses Points of Presence (PoPs) to deliver content with low latency through services like Amazon CloudFront and Amazon Route 53. These PoPs include Edge Locations and Regional Edge Caches, which cache content closer to users, improving performance and reducing the load on origin servers.</p>
+<h2 id="Key-Takeaways"><a href="#Key-Takeaways" class="headerlink" title="Key Takeaways"></a>Key Takeaways</h2><ul>
+<li><strong>Regions</strong>: Choose based on compliance and latency requirements.</li>
+<li><strong>Availability Zones</strong>: Utilize multiple AZs for fault isolation and redundancy.</li>
+<li><strong>Local Zones</strong>: Reduce latency for latency-sensitive applications.</li>
+<li><strong>Points of Presence</strong>: Enhance content delivery and performance.</li>
+</ul>
+<p>By leveraging the AWS global infrastructure, you can build robust, high-performing, and resilient applications that meet your business needs.</p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>Understanding the components of the AWS global infrastructure is crucial for designing effective cloud solutions. By strategically utilizing Regions, Availability Zones, Local Zones, and Points of Presence, you can optimize your applications for performance, reliability, and compliance.</p>
+<p>For more information on AWS global infrastructure, visit the <span class="exturl" data-url="aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9hYm91dC1hd3MvZ2xvYmFsLWluZnJhc3RydWN0dXJlLw==">AWS Global Infrastructure page<i class="fa fa-external-link-alt"></i></span>.</p>
+
 
     </div>
       
+  <div class="popular-posts-header">相關文章</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/posts/137330004/" rel="bookmark">[AWS-CPE] Security</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/posts/2332420025/" rel="bookmark">[AWS-CPE] Monitoring and Analytics</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/posts/1789986274/" rel="bookmark">Understanding CIDR - A Guide to Classless Inter-Domain Routing</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/posts/3982951460/" rel="bookmark">[AWS-CPE] Database and Storage</a></div>
+    </li>
+  </ul>
 
 
     
@@ -315,9 +348,22 @@
     
 
     <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/cloud/" rel="tag"><i class="fa fa-tag"></i> cloud</a>
+              <a href="/tags/aws/" rel="tag"><i class="fa fa-tag"></i> aws</a>
+          </div>
 
         
 
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/posts/970127527/" rel="prev" title="DataLake vs. Data Warehouse vs. Data Mart">
+                  <i class="fa fa-chevron-left"></i> DataLake vs. Data Warehouse vs. Data Mart
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
     </footer>
   </article>
 </div>
