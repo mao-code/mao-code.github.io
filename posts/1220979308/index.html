@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/logo-favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo-favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo-favicon.png">
+  <link rel="mask-icon" href="/images/logo-favicon.svg" color="#222">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="google-site-verification" content="fggWQJk_fNEY8zNXGPdahkvrmr8J_2PN4HN7HU0ik2Q">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-minimal.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"mao-code.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="Understanding 3 types of t-TestsWhen it comes to determining the significance of findings in data science, t-tests are a commonly used statistical method. They help compare means and assess whether th">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Understanding 3 types of t-Tests">
+<meta property="og:url" content="https://mao-code.github.io/posts/1220979308/index.html">
+<meta property="og:site_name" content="Mao 勛哥&#39;s blog">
+<meta property="og:description" content="Understanding 3 types of t-TestsWhen it comes to determining the significance of findings in data science, t-tests are a commonly used statistical method. They help compare means and assess whether th">
+<meta property="og:locale" content="zh_TW">
+<meta property="article:published_time" content="2024-05-19T16:14:15.000Z">
+<meta property="article:modified_time" content="2024-05-19T16:44:36.087Z">
+<meta property="article:author" content="Mao 勛哥">
+<meta property="article:tag" content="datascience">
+<meta property="article:tag" content="statistic">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://mao-code.github.io/posts/1220979308/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://mao-code.github.io/posts/1220979308/","path":"posts/1220979308/","title":"Understanding 3 types of t-Tests"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Understanding 3 types of t-Tests | Mao 勛哥's blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="Mao 勛哥's blog" type="application/atom+xml">
+</head>
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband">
+    <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/mao-code" class="github-corner" aria-label="View source on GitHub">
+      <svg width="80" height="80" viewbox="0 0 250 250" style="fill:#222; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+  </div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Mao 勛哥's blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">程式技術交流</p>
+      <img class="custom-logo-image" src="/images/logo2-white.png" alt="Mao 勛哥's blog">
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>關於</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80" placeholder="搜尋..." spellcheck="false" type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Understanding-3-types-of-t-Tests"><span class="nav-number">1.</span> <span class="nav-text">Understanding 3 types of t-Tests</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#The-Concept-of-t-Tests"><span class="nav-number">1.1.</span> <span class="nav-text">The Concept of t-Tests</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Central-Limit-Theorem"><span class="nav-number">1.1.1.</span> <span class="nav-text">Central Limit Theorem</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Student%E2%80%99s-t-Distribution"><span class="nav-number">1.1.2.</span> <span class="nav-text">Student’s t-Distribution</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Degrees-of-Freedom"><span class="nav-number">1.1.3.</span> <span class="nav-text">Degrees of Freedom</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Independent-Two-Sample-t-Test"><span class="nav-number">1.2.</span> <span class="nav-text">1. Independent (Two-Sample) t-Test</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Concept"><span class="nav-number">1.2.1.</span> <span class="nav-text">Concept</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hypothesis"><span class="nav-number">1.2.2.</span> <span class="nav-text">Hypothesis</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Mathematical-Representation"><span class="nav-number">1.2.3.</span> <span class="nav-text">Mathematical Representation</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Single-Sample-t-Test"><span class="nav-number">1.3.</span> <span class="nav-text">2. Single-Sample t-Test</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Concept-1"><span class="nav-number">1.3.1.</span> <span class="nav-text">Concept</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hypothesis-1"><span class="nav-number">1.3.2.</span> <span class="nav-text">Hypothesis</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Mathematical-Representation-1"><span class="nav-number">1.3.3.</span> <span class="nav-text">Mathematical Representation</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Paired-Sample-t-Test"><span class="nav-number">1.4.</span> <span class="nav-text">3. Paired-Sample t-Test</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Concept-2"><span class="nav-number">1.4.1.</span> <span class="nav-text">Concept</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hypothesis-2"><span class="nav-number">1.4.2.</span> <span class="nav-text">Hypothesis</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Mathematical-Representation-2"><span class="nav-number">1.4.3.</span> <span class="nav-text">Mathematical Representation</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Python-Code-for-t-Tests"><span class="nav-number">1.5.</span> <span class="nav-text">Python Code for t-Tests</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Independent-Two-Sample-t-Test"><span class="nav-number">1.5.1.</span> <span class="nav-text">Independent (Two-Sample) t-Test</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Single-Sample-t-Test"><span class="nav-number">1.5.2.</span> <span class="nav-text">Single-Sample t-Test</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Paired-Sample-t-Test"><span class="nav-number">1.5.3.</span> <span class="nav-text">Paired-Sample t-Test</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Conclusion"><span class="nav-number">1.6.</span> <span class="nav-text">Conclusion</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Mao 勛哥" src="/images/mypic.JPG">
+  <p class="site-author-name" itemprop="name">Mao 勛哥</p>
+  <div class="site-description" itemprop="description">記錄在程式開發道路上的心得</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">23</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">22</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL21hby1jb2Rl" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;mao-code"><i class="fab fa-github fa-fw"></i>GitHub</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRsYWIuY29tL01hb1h1bg==" title="GitLab → https:&#x2F;&#x2F;gitlab.com&#x2F;MaoXun"><i class="fab fa-gitlab fa-fw"></i>GitLab</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2luL21hb3h1bi1odWFuZy1hNzc5MTMyNjg=" title="LinkedIn → https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;maoxun-huang-a77913268"><i class="fab fa-linkedin fa-fw"></i>LinkedIn</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQ0JsdHlGY2dzTDVjMURJQktIMERTaFE=" title="YouTube → https:&#x2F;&#x2F;www.youtube.com&#x2F;channel&#x2F;UCBltyFcgsL5c1DIBKH0DShQ"><i class="fab fa-youtube fa-fw"></i>YouTube</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS91cGNfbWFveHVuLz9obD16aC10dw==" title="Instagram → https:&#x2F;&#x2F;www.instagram.com&#x2F;upc_maoxun&#x2F;?hl&#x3D;zh-tw"><i class="fab fa-instagram fa-fw"></i>Instagram</span>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="rss → &#x2F;atom.xml">rss</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="回到頂端">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://mao-code.github.io/posts/1220979308/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/mypic.JPG">
+      <meta itemprop="name" content="Mao 勛哥">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mao 勛哥's blog">
+      <meta itemprop="description" content="記錄在程式開發道路上的心得">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Understanding 3 types of t-Tests | Mao 勛哥's blog">
+      <meta itemprop="description" content>
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Understanding 3 types of t-Tests
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+      
+
+      <time title="創建時間：2024-05-20 00:14:15 / 修改時間：00:44:36" itemprop="dateCreated datePublished" datetime="2024-05-20T00:14:15+08:00">2024-05-20</time>
+    </span>
+
+  
+    <span class="post-meta-item" title="閱讀次數" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">閱讀次數：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="文章字數">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">文章字數：</span>
+      <span>5.4k</span>
+    </span>
+    <span class="post-meta-item" title="所需閱讀時間">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">所需閱讀時間 &asymp;</span>
+      <span>5 分鐘</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1 id="Understanding-3-types-of-t-Tests"><a href="#Understanding-3-types-of-t-Tests" class="headerlink" title="Understanding 3 types of t-Tests"></a>Understanding 3 types of t-Tests</h1><p>When it comes to determining the significance of findings in data science, t-tests are a commonly used statistical method. They help compare means and assess whether the differences between groups or conditions are statistically significant. In this article, we’ll explore the three main types of t-tests: independent (two-sample), single-sample, and paired-sample t-tests. We’ll delve into their concepts, hypotheses, and mathematical representations to provide a clear understanding of when and how to use each type.</p>
+<span id="more"></span>
+
+<h2 id="The-Concept-of-t-Tests"><a href="#The-Concept-of-t-Tests" class="headerlink" title="The Concept of t-Tests"></a>The Concept of t-Tests</h2><p>A t-test is a statistical hypothesis test that follows a Student’s t-distribution under the null hypothesis. The primary goal is to determine <strong>if there is a significant difference between the means of two groups or between a sample mean and a known value</strong>. The t-test relies on several key concepts:</p>
+<h3 id="Central-Limit-Theorem"><a href="#Central-Limit-Theorem" class="headerlink" title="Central Limit Theorem"></a>Central Limit Theorem</h3><p>The Central Limit Theorem (CLT) is a fundamental principle in statistics that states that <strong>the distribution of the sample mean will approximate a normal distribution as the sample size becomes large, regardless of the shape of the population distribution</strong>. This property allows us to make inferences about population parameters using sample data. In the context of t-tests, the CLT justifies using the t-distribution when sample sizes are <strong>relatively small</strong> and the <strong>population standard deviation is unknown</strong>. (because of CLT, we can use confidence interval to justify t-test)</p>
+<h3 id="Student’s-t-Distribution"><a href="#Student’s-t-Distribution" class="headerlink" title="Student’s t-Distribution"></a>Student’s t-Distribution</h3><p>The t-distribution is similar to the normal distribution but has heavier tails, which means it is more prone to producing values that fall far from its mean. This characteristic makes it particularly useful for small sample sizes. As the sample size increases, the t-distribution approaches the normal distribution.</p>
+<h3 id="Degrees-of-Freedom"><a href="#Degrees-of-Freedom" class="headerlink" title="Degrees of Freedom"></a>Degrees of Freedom</h3><p>Degrees of freedom (df) refer to <strong>the number of independent values in a calculation that are free to vary</strong>. In a t-test, the degrees of freedom <strong>depend on the sample size(s)</strong> and are used to determine the critical value from the t-distribution.</p>
+<h2 id="1-Independent-Two-Sample-t-Test"><a href="#1-Independent-Two-Sample-t-Test" class="headerlink" title="1. Independent (Two-Sample) t-Test"></a>1. Independent (Two-Sample) t-Test</h2><h3 id="Concept"><a href="#Concept" class="headerlink" title="Concept"></a>Concept</h3><p>The independent t-test, also known as the two-sample t-test, is used to compare the means of <strong>two independent groups</strong>. This test determines whether the means of the two groups are significantly different from each other.</p>
+<h3 id="Hypothesis"><a href="#Hypothesis" class="headerlink" title="Hypothesis"></a>Hypothesis</h3><ul>
+<li><strong>Null Hypothesis ($H_0$)</strong>: The means of the two groups are equal ($\mu_1 &#x3D; \mu_2$).</li>
+<li><strong>Alternative Hypothesis ($H_A$)</strong>: The means of the two groups are not equal ($\mu_1 \neq \mu_2$).</li>
+</ul>
+<h3 id="Mathematical-Representation"><a href="#Mathematical-Representation" class="headerlink" title="Mathematical Representation"></a>Mathematical Representation</h3><p>The formula for the independent t-test is:</p>
+<p>$$ t &#x3D; \frac{\bar{X}_1 - \bar{X}_2}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}} $$</p>
+<p>Where:</p>
+<ul>
+<li>$\bar{X}_1$ and $\bar{X}_2$ are the sample means of groups 1 and 2.</li>
+<li>$s_1^2$ and $s_2^2$ are the sample variances of groups 1 and 2.</li>
+<li>$n_1$ and $n_2$ are the sample sizes of groups 1 and 2.</li>
+</ul>
+<h2 id="2-Single-Sample-t-Test"><a href="#2-Single-Sample-t-Test" class="headerlink" title="2. Single-Sample t-Test"></a>2. Single-Sample t-Test</h2><h3 id="Concept-1"><a href="#Concept-1" class="headerlink" title="Concept"></a>Concept</h3><p>The single-sample t-test is used to compare the mean of <strong>a single sample to a known value or a theoretical mean</strong>. This test assesses whether the sample mean significantly differs from the hypothesized population mean.</p>
+<h3 id="Hypothesis-1"><a href="#Hypothesis-1" class="headerlink" title="Hypothesis"></a>Hypothesis</h3><ul>
+<li><strong>Null Hypothesis ($H_0$)</strong>: The sample mean is equal to the population mean ($\mu &#x3D; \mu_0$).</li>
+<li><strong>Alternative Hypothesis ($H_A$)</strong>: The sample mean is not equal to the population mean ($\mu \neq \mu_0$).</li>
+</ul>
+<h3 id="Mathematical-Representation-1"><a href="#Mathematical-Representation-1" class="headerlink" title="Mathematical Representation"></a>Mathematical Representation</h3><p>The formula for the single-sample t-test is:</p>
+<p>$$ t &#x3D; \frac{\bar{X} - \mu_0}{\frac{s}{\sqrt{n}}} $$</p>
+<p>Where:</p>
+<ul>
+<li>$\bar{X}$ is the sample mean.</li>
+<li>$\mu_0$ is the hypothesized population mean.</li>
+<li>$s$ is the sample standard deviation.</li>
+<li>$n$ is the sample size.</li>
+</ul>
+<h2 id="3-Paired-Sample-t-Test"><a href="#3-Paired-Sample-t-Test" class="headerlink" title="3. Paired-Sample t-Test"></a>3. Paired-Sample t-Test</h2><h3 id="Concept-2"><a href="#Concept-2" class="headerlink" title="Concept"></a>Concept</h3><p>The paired-sample t-test, also known as the dependent t-test, is used to <strong>compare the means of two related groups</strong>. This test is often used in pre-test&#x2F;post-test scenarios or when comparing measurements taken on the <strong>same subjects under different conditions</strong>.</p>
+<h3 id="Hypothesis-2"><a href="#Hypothesis-2" class="headerlink" title="Hypothesis"></a>Hypothesis</h3><ul>
+<li><strong>Null Hypothesis ($H_0$)</strong>: The mean difference between the paired observations is zero ($\mu_D &#x3D; 0 $).</li>
+<li><strong>Alternative Hypothesis ($H_A$)</strong>: The mean difference between the paired observations is not zero ($\mu_D \neq 0$).</li>
+<li>$\mu_D &#x3D; \mu_1 - \mu_2$</li>
+</ul>
+<h3 id="Mathematical-Representation-2"><a href="#Mathematical-Representation-2" class="headerlink" title="Mathematical Representation"></a>Mathematical Representation</h3><p>The formula for the paired-sample t-test is:</p>
+<p>$$ t &#x3D; \frac{\bar{D}}{\frac{s_D}{\sqrt{n}}} $$</p>
+<p>Where:</p>
+<ul>
+<li>$\bar{D}$ is the mean of the differences between paired observations.</li>
+<li>$s_D$ is the standard deviation of the differences.</li>
+<li>$n$ is the number of paired observations.</li>
+</ul>
+<h2 id="Python-Code-for-t-Tests"><a href="#Python-Code-for-t-Tests" class="headerlink" title="Python Code for t-Tests"></a>Python Code for t-Tests</h2><p>To perform these t-tests in Python, you can use the <code>scipy.stats</code> library, which provides convenient functions for each type of t-test. Below is the sample code for each t-test:</p>
+<h3 id="Independent-Two-Sample-t-Test"><a href="#Independent-Two-Sample-t-Test" class="headerlink" title="Independent (Two-Sample) t-Test"></a>Independent (Two-Sample) t-Test</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> scipy <span class="keyword">import</span> stats</span><br><span class="line"></span><br><span class="line"><span class="comment"># Sample data for two independent groups</span></span><br><span class="line">group1 = np.array([<span class="number">12</span>, <span class="number">14</span>, <span class="number">16</span>, <span class="number">18</span>, <span class="number">20</span>])</span><br><span class="line">group2 = np.array([<span class="number">22</span>, <span class="number">24</span>, <span class="number">26</span>, <span class="number">28</span>, <span class="number">30</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># Perform independent (two-sample) t-test</span></span><br><span class="line">t_stat, p_value = stats.ttest_ind(group1, group2)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;Independent t-test: t-statistic = <span class="subst">&#123;t_stat&#125;</span>, p-value = <span class="subst">&#123;p_value&#125;</span>&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="Single-Sample-t-Test"><a href="#Single-Sample-t-Test" class="headerlink" title="Single-Sample t-Test"></a>Single-Sample t-Test</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> scipy <span class="keyword">import</span> stats</span><br><span class="line"></span><br><span class="line"><span class="comment"># Sample data</span></span><br><span class="line">data = np.array([<span class="number">12</span>, <span class="number">14</span>, <span class="number">16</span>, <span class="number">18</span>, <span class="number">20</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># Population mean to compare against</span></span><br><span class="line">population_mean = <span class="number">15</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Perform single-sample t-test</span></span><br><span class="line">t_stat, p_value = stats.ttest_1samp(data, population_mean)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;Single-sample t-test: t-statistic = <span class="subst">&#123;t_stat&#125;</span>, p-value = <span class="subst">&#123;p_value&#125;</span>&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="Paired-Sample-t-Test"><a href="#Paired-Sample-t-Test" class="headerlink" title="Paired-Sample t-Test"></a>Paired-Sample t-Test</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> scipy <span class="keyword">import</span> stats</span><br><span class="line"></span><br><span class="line"><span class="comment"># Sample data for paired observations</span></span><br><span class="line">before_treatment = np.array([<span class="number">12</span>, <span class="number">14</span>, <span class="number">16</span>, <span class="number">18</span>, <span class="number">20</span>])</span><br><span class="line">after_treatment = np.array([<span class="number">22</span>, <span class="number">24</span>, <span class="number">26</span>, <span class="number">28</span>, <span class="number">30</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># Perform paired-sample t-test</span></span><br><span class="line">t_stat, p_value = stats.ttest_rel(before_treatment, after_treatment)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;Paired-sample t-test: t-statistic = <span class="subst">&#123;t_stat&#125;</span>, p-value = <span class="subst">&#123;p_value&#125;</span>&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>Each type of t-test serves a specific purpose and is suited for different kinds of data and hypotheses. By understanding the concepts, hypotheses, and mathematical representations of the independent t-test, single-sample t-test, and paired-sample t-test, you can choose the appropriate test for your data analysis project. Using these tests effectively will enable you to draw meaningful conclusions and validate your findings with statistical significance.</p>
+
+
+    </div>
+      
+  <div class="popular-posts-header">相關文章</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/posts/970127527/" rel="bookmark">DataLake vs. Data Warehouse vs. Data Mart</a></div>
+    </li>
+  </ul>
+
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/datascience/" rel="tag"><i class="fa fa-tag"></i> datascience</a>
+              <a href="/tags/statistic/" rel="tag"><i class="fa fa-tag"></i> statistic</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/posts/3777980008/" rel="prev" title="AWS Global Infrastructure">
+                  <i class="fa fa-chevron-left"></i> AWS Global Infrastructure
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Mao 勛哥</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+      <span>總字數：</span>
+    <span title="總字數">125k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span>所需總閱讀時間 &asymp;</span>
+    <span title="所需總閱讀時間">1:54</span>
+  </span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="訪客總數">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="總瀏覽次數">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.5.0/pjax.min.js" integrity="sha256-3NkoLDrmHLTYj7csHIZSr0MHAFTXth7Ua/DDt4MRUAg=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.0/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  <script src="/js/third-party/pace.js"></script>
+
+  
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"mao-code","count":false,"i18n":{"disqus":"disqus"}}</script>
+<script src="/js/third-party/comments/disqus.js"></script>
+
+</body>
+</html>
