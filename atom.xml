@@ -6,7 +6,7 @@
   <link href="https://mao-code.github.io/atom.xml" rel="self"/>
   
   <link href="https://mao-code.github.io/"/>
-  <updated>2024-05-19T16:44:36.087Z</updated>
+  <updated>2024-05-22T08:41:53.438Z</updated>
   <id>https://mao-code.github.io/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Understanding Virtual Private Clouds (VPCs), Public Subnets, and Private Subnets</title>
+    <link href="https://mao-code.github.io/posts/3613028504/"/>
+    <id>https://mao-code.github.io/posts/3613028504/</id>
+    <published>2024-05-22T08:36:57.000Z</published>
+    <updated>2024-05-22T08:41:53.438Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Understanding-Virtual-Private-Clouds-VPCs-Public-Subnets-and-Private-Subnets"><a href="#Understanding-Virtual-Private-Clouds-VPCs-Public-Subnets-and-Private-Subnets" class="headerlink" title="Understanding Virtual Private Clouds (VPCs), Public Subnets, and Private Subnets"></a>Understanding Virtual Private Clouds (VPCs), Public Subnets, and Private Subnets</h1><p>In today’s cloud computing landscape, <strong>Virtual Private Clouds (VPCs)</strong> play a crucial role in providing secure and scalable networking solutions. This post aims to demystify VPCs, public subnets, private subnets, and their related components, helping you to better understand their significance and how to effectively utilize them.</p><span id="more"></span><p><img data-src="/images/posts/cloud/vpc/structure.png"></img><br>source: <span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmF3cy5hbWF6b24uY29tL3ZwYy9sYXRlc3QvdXNlcmd1aWRlL3ZwYy1leGFtcGxlLXByaXZhdGUtc3VibmV0cy1uYXQuaHRtbA==">https://docs.aws.amazon.com/vpc/latest/userguide/vpc-example-private-subnets-nat.html<i class="fa fa-external-link-alt"></i></span></p><h2 id="What-is-a-Virtual-Private-Cloud-VPC"><a href="#What-is-a-Virtual-Private-Cloud-VPC" class="headerlink" title="What is a Virtual Private Cloud (VPC)?"></a>What is a Virtual Private Cloud (VPC)?</h2><p>A <strong>Virtual Private Cloud (VPC)</strong> is a logically isolated section of a cloud provider’s network. It allows you to launch and manage resources, such as virtual machines, databases, and other services, in a secure and virtualized environment. By using a VPC, you gain greater control over your network configuration, including IP address assignments, subnet creation, route tables, and network gateways.</p><h3 id="Key-Features-of-a-VPC"><a href="#Key-Features-of-a-VPC" class="headerlink" title="Key Features of a VPC:"></a>Key Features of a VPC:</h3><ul><li><strong>Isolation:</strong> Ensures that your resources are separated from other users’ resources, enhancing security.</li><li><strong>Network Configuration:</strong> Allows you to define your IP address range, subnets, route tables, and network gateways.</li><li><strong>Security:</strong> Utilize security groups and network access control lists (ACLs) to control inbound and outbound traffic. (like firewalls)</li><li><strong>Connectivity:</strong> Establish connections between your VPC and other networks, such as on-premises data centers or other VPCs, using VPN or Direct Connect.</li></ul><h2 id="Public-Subnet"><a href="#Public-Subnet" class="headerlink" title="Public Subnet"></a>Public Subnet</h2><p>A <strong>Public Subnet</strong> is a subnet within a VPC that has a route to an internet gateway, allowing resources within it to have direct access to the internet. Typically, resources that need to be publicly accessible, such as web servers or bastion hosts, are placed in public subnets.</p><h3 id="Key-Characteristics-of-a-Public-Subnet"><a href="#Key-Characteristics-of-a-Public-Subnet" class="headerlink" title="Key Characteristics of a Public Subnet:"></a>Key Characteristics of a Public Subnet:</h3><ul><li><strong>Internet Access:</strong> Resources can directly communicate with the internet.</li><li><strong>Routing:</strong> The route table for a public subnet includes a route pointing to an internet gateway.</li><li><strong>Use Cases:</strong> Ideal for resources that need to be accessible from the internet, such as web servers, public-facing applications, and jump&#x2F;bastion hosts.</li></ul><h2 id="Private-Subnet"><a href="#Private-Subnet" class="headerlink" title="Private Subnet"></a>Private Subnet</h2><p>A <strong>Private Subnet</strong> is a subnet within a VPC that does not have a route to an internet gateway, meaning resources within it cannot directly access the internet. Instead, these resources can communicate with the internet via a Network Address Translation (NAT) gateway or NAT instance located in a public subnet.</p><h3 id="Key-Characteristics-of-a-Private-Subnet"><a href="#Key-Characteristics-of-a-Private-Subnet" class="headerlink" title="Key Characteristics of a Private Subnet:"></a>Key Characteristics of a Private Subnet:</h3><ul><li><strong>Restricted Internet Access:</strong> Resources cannot directly communicate with the internet, enhancing security.</li><li><strong>Routing:</strong> The route table for a private subnet does not include a route pointing to an internet gateway.</li><li><strong>Use Cases:</strong> Suitable for resources that should not be directly accessible from the internet, such as databases, application servers, and backend services.</li></ul><h2 id="Other-Related-Components"><a href="#Other-Related-Components" class="headerlink" title="Other Related Components"></a>Other Related Components</h2><h3 id="Internet-Gateway"><a href="#Internet-Gateway" class="headerlink" title="Internet Gateway"></a>Internet Gateway</h3><p>An <strong>Internet Gateway</strong> is a horizontally scaled, redundant, and highly available VPC component that allows communication between instances in your VPC and the internet. It serves as a target in your VPC route tables for internet-routable traffic.</p><h3 id="NAT-Gateway"><a href="#NAT-Gateway" class="headerlink" title="NAT Gateway"></a>NAT Gateway</h3><p>A <strong>Network Address Translation (NAT) Gateway</strong> enables instances in a private subnet to connect to the internet or other AWS services while preventing the internet from initiating a connection with those instances. It is placed in a public subnet and routes traffic from private subnets to the internet.</p><h3 id="Route-Tables"><a href="#Route-Tables" class="headerlink" title="Route Tables"></a>Route Tables</h3><p><strong>Route Tables</strong> control the routing of traffic within your VPC. Each subnet must be associated with a route table, which determines how the traffic is directed. A route table contains a set of rules, called routes, that specify the paths for traffic.</p><h3 id="Security-Groups-and-Network-ACLs"><a href="#Security-Groups-and-Network-ACLs" class="headerlink" title="Security Groups and Network ACLs"></a>Security Groups and Network ACLs</h3><p><strong>Security Groups</strong> act as virtual firewalls for your instances to control inbound and outbound traffic at the instance level. <strong>Network ACLs</strong> (Access Control Lists) provide an additional layer of security, acting as firewalls for controlling traffic in and out of one or more subnets.</p><h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>Understanding the components of a VPC, including public and private subnets, is essential for designing and managing secure, scalable, and efficient cloud architectures. By leveraging these components effectively, you can ensure that your resources are properly isolated, secure, and accessible according to your application’s needs.</p><p>By mastering VPCs, public subnets, private subnets, and their associated elements, you can optimize your cloud infrastructure for performance, security, and cost-efficiency.</p><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmF3cy5hbWF6b24uY29tL3ZwYy9sYXRlc3QvdXNlcmd1aWRlL3ZwYy1leGFtcGxlLXByaXZhdGUtc3VibmV0cy1uYXQuaHRtbA==">AWS VPC Example<i class="fa fa-external-link-alt"></i></span></p>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;Understanding-Virtual-Private-Clouds-VPCs-Public-Subnets-and-Private-Subnets&quot;&gt;&lt;a href=&quot;#Understanding-Virtual-Private-Clouds-VPCs-Public-Subnets-and-Private-Subnets&quot; class=&quot;headerlink&quot; title=&quot;Understanding Virtual Private Clouds (VPCs), Public Subnets, and Private Subnets&quot;&gt;&lt;/a&gt;Understanding Virtual Private Clouds (VPCs), Public Subnets, and Private Subnets&lt;/h1&gt;&lt;p&gt;In today’s cloud computing landscape, &lt;strong&gt;Virtual Private Clouds (VPCs)&lt;/strong&gt; play a crucial role in providing secure and scalable networking solutions. This post aims to demystify VPCs, public subnets, private subnets, and their related components, helping you to better understand their significance and how to effectively utilize them.&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="cloud computing" scheme="https://mao-code.github.io/tags/cloud-computing/"/>
+    
+  </entry>
   
   <entry>
     <title>Understanding 3 types of t-Tests</title>
@@ -232,22 +251,22 @@
     
     
     
-    <category term="專案" scheme="https://mao-code.github.io/categories/%E5%B0%88%E6%A1%88/"/>
+    <category term="GDSC" scheme="https://mao-code.github.io/categories/GDSC/"/>
     
     <category term="心得" scheme="https://mao-code.github.io/categories/%E5%BF%83%E5%BE%97/"/>
     
-    <category term="GDSC" scheme="https://mao-code.github.io/categories/GDSC/"/>
-    
-    <category term="side project" scheme="https://mao-code.github.io/categories/%E5%B0%88%E6%A1%88/side-project/"/>
+    <category term="專案" scheme="https://mao-code.github.io/categories/%E5%B0%88%E6%A1%88/"/>
     
     <category term="NCCUPass" scheme="https://mao-code.github.io/categories/GDSC/NCCUPass/"/>
     
+    <category term="side project" scheme="https://mao-code.github.io/categories/%E5%B0%88%E6%A1%88/side-project/"/>
     
-    <category term="專案" scheme="https://mao-code.github.io/tags/%E5%B0%88%E6%A1%88/"/>
     
     <category term="GDSC" scheme="https://mao-code.github.io/tags/GDSC/"/>
     
     <category term="NCCUPass" scheme="https://mao-code.github.io/tags/NCCUPass/"/>
+    
+    <category term="專案" scheme="https://mao-code.github.io/tags/%E5%B0%88%E6%A1%88/"/>
     
   </entry>
   
@@ -476,53 +495,22 @@ style=&quot;width: 70%; margin: 15px auto;&quot;&gt;&lt;br&gt;Source: &lt;a href
     
     
     
-    <category term="專案" scheme="https://mao-code.github.io/categories/%E5%B0%88%E6%A1%88/"/>
+    <category term="GDSC" scheme="https://mao-code.github.io/categories/GDSC/"/>
     
     <category term="心得" scheme="https://mao-code.github.io/categories/%E5%BF%83%E5%BE%97/"/>
     
-    <category term="GDSC" scheme="https://mao-code.github.io/categories/GDSC/"/>
-    
-    <category term="side project" scheme="https://mao-code.github.io/categories/%E5%B0%88%E6%A1%88/side-project/"/>
+    <category term="專案" scheme="https://mao-code.github.io/categories/%E5%B0%88%E6%A1%88/"/>
     
     <category term="NCCUPass" scheme="https://mao-code.github.io/categories/GDSC/NCCUPass/"/>
     
+    <category term="side project" scheme="https://mao-code.github.io/categories/%E5%B0%88%E6%A1%88/side-project/"/>
     
-    <category term="專案" scheme="https://mao-code.github.io/tags/%E5%B0%88%E6%A1%88/"/>
     
     <category term="GDSC" scheme="https://mao-code.github.io/tags/GDSC/"/>
     
     <category term="NCCUPass" scheme="https://mao-code.github.io/tags/NCCUPass/"/>
     
-  </entry>
-  
-  <entry>
-    <title>CC-沈浸式線上逛街APP-系統與技術介紹</title>
-    <link href="https://mao-code.github.io/posts/2012237495/"/>
-    <id>https://mao-code.github.io/posts/2012237495/</id>
-    <published>2023-01-11T12:58:33.000Z</published>
-    <updated>2024-02-19T16:06:33.083Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>接續上一篇的文章，這篇文章會著重介紹這個系統<br>以下是我在YouTube上對這個專案的介紹與Demo：</p><iframe    src="https://www.youtube.com/embed/aMGnyI2Xe04"></iframe><span class="exturl" data-url="aHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xTmVDRGk0dWFmQ3UtcF9iVDE2cERLSm50SXluN3FzeUYvdmlldz91c3A9c2hhcmluZw==">Proposal Link<i class="fa fa-external-link-alt"></i></span><p>這篇文章的內容會與影片很像，主要分為<strong>動機與介紹、重點功能簡介、系統架構與技術</strong>的順序介紹<br>系統功能Demo, 還請觀看影片介紹</p><span id="more"></span><p><img data-src="/images/posts/CC-project-demo/1.png" style="width: 90%; margin: 15px auto;"></p><h2 id="動機與介紹"><a href="#動機與介紹" class="headerlink" title="動機與介紹"></a>動機與介紹</h2><img data-src="/images/posts/CC-project-demo/2.png" style="width: 70%; margin: 15px auto;">首先我們主要的TA之一是線上逛街族, 針對這個族群我們統整出簡單的兩點：第一, 他們在線上瀏覽或滑商品時, 通常沒有特定的消費目的, 只是想要滑滑看看, 無目的的瀏覽行為, 第二, 這種行為主要是以消遣、獲得樂趣為目的, 而不一定是真的想要買商品<hr><img data-src="/images/posts/CC-project-demo/3.png" style="width: 70%; margin: 15px auto;">根據上面的族群設定, 我們的專案主要會focus在解決或滿足下面的問題, 第一, 我們是針對無目的性的消費情境底下的需求, 第二, 我們希望帶給使用者沈浸式的體驗, 所謂的沈浸式體驗, 就是在舒服且不受干擾的狀態下, 接收自己有興趣的資訊, 以此讓使用者能在我們這個APP上做消遣、殺時間的動作, 這麼做的目的很大一部分是為了捕捉使用者的微時刻, 這些微時刻的數據可以代表使用者不同時刻的喜好或者決策, 第四，我們這個APP也會瞄準直播的市場與直播平台合作，而這些直播主的煩惱，便是下播後無法持續創造收入，因此我們除了希望能延長商品的生命週期外，也可以透過捕捉使用者行為來提供直播主缺乏的Consumer Insight<hr><img data-src="/images/posts/CC-project-demo/4.png" style="width: 70%; margin: 15px auto;">為了達成以上的目的，我們主要有這幾項手段，第一, 研究推薦演算法與捕捉使用者行為，透過使用者不同時刻的行為數據來作為推薦的依據，而非傳統的電商使用歷史紀錄來做推薦，以次讓使用者能夠在每時每刻接收有興趣的資訊，達到沈浸式的體驗。第二，透過簡潔的介面，降低使用者瀏覽時的壓力，讓使用者更願意停留在APP上，第三，透過分享貼文、追蹤、評論等等的社群機制，讓使用者能夠了解親朋好友們有興趣或者好評的商品，也能夠享受社群的樂趣，增加APP的黏著度，最後，透過APP上種種捕捉使用者行為數據的機制，可以將這些數據提供給與我們合作的第三方廠商，讓廠商更了解使用者的喜好<h2 id="重點功能簡介"><a href="#重點功能簡介" class="headerlink" title="重點功能簡介"></a>重點功能簡介</h2><img data-src="/images/posts/CC-project-demo/5.png" style="width: 70%; margin: 15px auto;">再來介紹一些重點功能的簡短敘述，首先第一個是我們的商品貼文，也是商品的主體，貼文特色主要以滿板設計與資訊收合來達到雜訊最小化的目的，另外後面Demo也會呈現推薦商品的形式，與現在短影音的方式很像，透過推薦與給人耳目一新的商品，帶給使用者殺時間的樂趣，另外，透過商品貼文，也可以成為直播主下播後銷售的利器，與一般電商不同的是，我們主動推薦商家商品，而且是透過使用者當前的行為喜好，而不是被動等待使用者搜尋或是透過購買紀錄來做推薦<hr><img data-src="/images/posts/CC-project-demo/6.png" style="width: 70%; margin: 15px auto;">再來是我們的主頁面，透過滑卡的機制增加互動感，也可以同時捕捉使用者行為，以做到即時推薦，這麼做除了可以增加沈浸體驗，也可以更廣泛的推薦商品，提高曝光程度<hr><img data-src="/images/posts/CC-project-demo/7.png" style="width: 70%; margin: 15px auto;">主頁面與探索頁面都可以透過使用者的滑卡行為、停留時間與點擊率，來彼此優化推薦內容，做到雙向推薦的功能<hr><img data-src="/images/posts/CC-project-demo/8.png" style="width: 70%; margin: 15px auto;">探索頁面除了會推薦使用者感興趣的商品，也會隨機推薦相關商品，增加新奇度，其中最大塊的貼文則為推薦分數最高的商品，透過矩陣式樹狀結構，帶給使用者簡潔與大量瀏覽的感受<hr><img data-src="/images/posts/CC-project-demo/9.png" style="width: 70%; margin: 15px auto;">CC提供商城、買家、直播主追蹤的機制，加上個人化自己的動態牆與留言區，增加社群互動性，以社群的力量增加APP的黏著度<hr><img data-src="/images/posts/CC-project-demo/10.png" style="width: 70%; margin: 15px auto;">分享貼文除了可以增加互動的樂趣，也是提供消費者洞見的大平台最重要的是，可以藉由社群的力量，一傳十十傳百，來行銷商品<h2 id="系統架構與技術"><a href="#系統架構與技術" class="headerlink" title="系統架構與技術"></a>系統架構與技術</h2><p>先附上系統架構圖：<br><img data-src="/images/posts/CC-project-demo/CC_structure.jpeg" style="width: 70%; margin: 15px auto;"></p><p>首先前端主要由Angular寫成，搭配<strong>模組化與物件導向設計，增加程式的可維護性</strong>，最後透過PWA包裝成跨平台的APP<br>藉由Angular能夠模組化與元件化的特性，我們將各個功能切分成不同模組，提升程式低耦合高內聚的特性，另外，Token驗證、路由保護、API攔截器、資料格式化Pipeline等等，也都抽離出來實作，其中，核心的商業邏輯切分在我們的Service模組，與畫面邏輯分離，再藉由依賴注入讓各模組使用，這樣的設計，讓我們的專案在未來更改與維護擴充時非常省時與省力。</p><p>另外一個主要的功能是推薦演算法，我們透過標籤(label)與雅卡爾相似度(Jaccard Similarity)，做了一個Example Based的推薦引擎，主要是用MongoDB pipeline與後端演算構築而成。</p><p>這裡也是我第一次使用前端框架，來寫一個比較完整的專案，由於我是後端出身，所以選擇一個自己寫起來最舒服的Angular框架，有種在寫後端的親切感XD。</p><p>後端主要由NodeJS寫成，資料庫則為MongoDB，一樣是將各個功能進行模組化的拆分，與資料庫索引的優化，以及推薦演算法的實現。</p><p>另外WebServer的部分則是由IIS代理，加上GitLab CI&#x2F;CD &amp; GitLab Runner做到自動化整合與部屬的功能</p><style>.video-container{    padding-top: 60% !important;}</style>]]></content>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;接續上一篇的文章，這篇文章會著重介紹這個系統&lt;br&gt;以下是我在YouTube上對這個專案的介紹與Demo：&lt;/p&gt;
-&lt;iframe
-    src=&quot;https://www.youtube.com/embed/aMGnyI2Xe04&quot;&gt;
-&lt;/iframe&gt;
-&lt;a href=&quot;https://drive.google.com/file/d/1NeCDi4uafCu-p_bT16pDKJntIyn7qsyF/view?usp=sharing&quot;&gt;Proposal Link&lt;/a&gt;
-
-&lt;p&gt;這篇文章的內容會與影片很像，主要分為&lt;strong&gt;動機與介紹、重點功能簡介、系統架構與技術&lt;/strong&gt;的順序介紹&lt;br&gt;系統功能Demo, 還請觀看影片介紹&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="專案" scheme="https://mao-code.github.io/categories/%E5%B0%88%E6%A1%88/"/>
-    
-    <category term="side project" scheme="https://mao-code.github.io/categories/%E5%B0%88%E6%A1%88/side-project/"/>
-    
-    
     <category term="專案" scheme="https://mao-code.github.io/tags/%E5%B0%88%E6%A1%88/"/>
-    
-    <category term="side project" scheme="https://mao-code.github.io/tags/side-project/"/>
     
   </entry>
   
