@@ -28,6 +28,75 @@ style="width: 70%; margin: 15px auto;"></p>
       </tags>
   </entry>
   <entry>
+    <title>CC-沈浸式線上逛街APP-系統與技術介紹</title>
+    <url>/posts/2012237495/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>接續上一篇的文章，這篇文章會著重介紹這個系統<br>以下是我在YouTube上對這個專案的介紹與Demo：</p>
+<iframe
+    src="https://www.youtube.com/embed/aMGnyI2Xe04">
+</iframe>
+<span class="exturl" data-url="aHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xTmVDRGk0dWFmQ3UtcF9iVDE2cERLSm50SXluN3FzeUYvdmlldz91c3A9c2hhcmluZw==">Proposal Link<i class="fa fa-external-link-alt"></i></span>
+
+<p>這篇文章的內容會與影片很像，主要分為<strong>動機與介紹、重點功能簡介、系統架構與技術</strong>的順序介紹<br>系統功能Demo, 還請觀看影片介紹</p>
+<span id="more"></span>
+<p><img data-src="/images/posts/CC-project-demo/1.png" 
+style="width: 90%; margin: 15px auto;"></p>
+<h2 id="動機與介紹"><a href="#動機與介紹" class="headerlink" title="動機與介紹"></a>動機與介紹</h2><img data-src="/images/posts/CC-project-demo/2.png" style="width: 70%; margin: 15px auto;">
+首先我們主要的TA之一是線上逛街族, 針對這個族群我們統整出簡單的兩點：第一, 他們在線上瀏覽或滑商品時, 通常沒有特定的消費目的, 只是想要滑滑看看, 無目的的瀏覽行為, 第二, 這種行為主要是以消遣、獲得樂趣為目的, 而不一定是真的想要買商品
+
+<hr>
+<img data-src="/images/posts/CC-project-demo/3.png" style="width: 70%; margin: 15px auto;">
+根據上面的族群設定, 我們的專案主要會focus在解決或滿足下面的問題, 第一, 我們是針對無目的性的消費情境底下的需求, 第二, 我們希望帶給使用者沈浸式的體驗, 所謂的沈浸式體驗, 就是在舒服且不受干擾的狀態下, 接收自己有興趣的資訊, 以此讓使用者能在我們這個APP上做消遣、殺時間的動作, 這麼做的目的很大一部分是為了捕捉使用者的微時刻, 這些微時刻的數據可以代表使用者不同時刻的喜好或者決策, 第四，我們這個APP也會瞄準直播的市場與直播平台合作，而這些直播主的煩惱，便是下播後無法持續創造收入，因此我們除了希望能延長商品的生命週期外，也可以透過捕捉使用者行為來提供直播主缺乏的Consumer Insight
+
+<hr>
+<img data-src="/images/posts/CC-project-demo/4.png" style="width: 70%; margin: 15px auto;">
+為了達成以上的目的，我們主要有這幾項手段，第一, 研究推薦演算法與捕捉使用者行為，透過使用者不同時刻的行為數據來作為推薦的依據，而非傳統的電商使用歷史紀錄來做推薦，以次讓使用者能夠在每時每刻接收有興趣的資訊，達到沈浸式的體驗。第二，透過簡潔的介面，降低使用者瀏覽時的壓力，讓使用者更願意停留在APP上，第三，透過分享貼文、追蹤、評論等等的社群機制，讓使用者能夠了解親朋好友們有興趣或者好評的商品，也能夠享受社群的樂趣，增加APP的黏著度，最後，透過APP上種種捕捉使用者行為數據的機制，可以將這些數據提供給與我們合作的第三方廠商，讓廠商更了解使用者的喜好
+
+<h2 id="重點功能簡介"><a href="#重點功能簡介" class="headerlink" title="重點功能簡介"></a>重點功能簡介</h2><img data-src="/images/posts/CC-project-demo/5.png" style="width: 70%; margin: 15px auto;">
+再來介紹一些重點功能的簡短敘述，首先第一個是我們的商品貼文，也是商品的主體，貼文特色主要以滿板設計與資訊收合來達到雜訊最小化的目的，另外後面Demo也會呈現推薦商品的形式，與現在短影音的方式很像，透過推薦與給人耳目一新的商品，帶給使用者殺時間的樂趣，另外，透過商品貼文，也可以成為直播主下播後銷售的利器，與一般電商不同的是，我們主動推薦商家商品，而且是透過使用者當前的行為喜好，而不是被動等待使用者搜尋或是透過購買紀錄來做推薦
+
+<hr>
+<img data-src="/images/posts/CC-project-demo/6.png" style="width: 70%; margin: 15px auto;">
+再來是我們的主頁面，透過滑卡的機制增加互動感，也可以同時捕捉使用者行為，以做到即時推薦，這麼做除了可以增加沈浸體驗，也可以更廣泛的推薦商品，提高曝光程度
+
+<hr>
+<img data-src="/images/posts/CC-project-demo/7.png" style="width: 70%; margin: 15px auto;">
+主頁面與探索頁面都可以透過使用者的滑卡行為、停留時間與點擊率，來彼此優化推薦內容，做到雙向推薦的功能
+
+<hr>
+<img data-src="/images/posts/CC-project-demo/8.png" style="width: 70%; margin: 15px auto;">
+探索頁面除了會推薦使用者感興趣的商品，也會隨機推薦相關商品，增加新奇度，其中最大塊的貼文則為推薦分數最高的商品，透過矩陣式樹狀結構，帶給使用者簡潔與大量瀏覽的感受
+
+<hr>
+<img data-src="/images/posts/CC-project-demo/9.png" style="width: 70%; margin: 15px auto;">
+CC提供商城、買家、直播主追蹤的機制，加上個人化自己的動態牆與留言區，增加社群互動性，以社群的力量增加APP的黏著度
+
+<hr>
+<img data-src="/images/posts/CC-project-demo/10.png" style="width: 70%; margin: 15px auto;">
+分享貼文除了可以增加互動的樂趣，也是提供消費者洞見的大平台
+最重要的是，可以藉由社群的力量，一傳十十傳百，來行銷商品
+
+<h2 id="系統架構與技術"><a href="#系統架構與技術" class="headerlink" title="系統架構與技術"></a>系統架構與技術</h2><p>先附上系統架構圖：<br><img data-src="/images/posts/CC-project-demo/CC_structure.jpeg" style="width: 70%; margin: 15px auto;"></p>
+<p>首先前端主要由Angular寫成，搭配<strong>模組化與物件導向設計，增加程式的可維護性</strong>，最後透過PWA包裝成跨平台的APP<br>藉由Angular能夠模組化與元件化的特性，我們將各個功能切分成不同模組，提升程式低耦合高內聚的特性，另外，Token驗證、路由保護、API攔截器、資料格式化Pipeline等等，也都抽離出來實作，其中，核心的商業邏輯切分在我們的Service模組，與畫面邏輯分離，再藉由依賴注入讓各模組使用，這樣的設計，讓我們的專案在未來更改與維護擴充時非常省時與省力。</p>
+<p>另外一個主要的功能是推薦演算法，我們透過標籤(label)與雅卡爾相似度(Jaccard Similarity)，做了一個Example Based的推薦引擎，主要是用MongoDB pipeline與後端演算構築而成。</p>
+<p>這裡也是我第一次使用前端框架，來寫一個比較完整的專案，由於我是後端出身，所以選擇一個自己寫起來最舒服的Angular框架，有種在寫後端的親切感XD。</p>
+<p>後端主要由NodeJS寫成，資料庫則為MongoDB，一樣是將各個功能進行模組化的拆分，與資料庫索引的優化，以及推薦演算法的實現。</p>
+<p>另外WebServer的部分則是由IIS代理，加上GitLab CI&#x2F;CD &amp; GitLab Runner做到自動化整合與部屬的功能</p>
+<style>
+.video-container
+{
+    padding-top: 60% !important;
+}
+</style>]]></content>
+      <categories>
+        <category>專案</category>
+        <category>side project</category>
+      </categories>
+      <tags>
+        <tag>專案</tag>
+        <tag>side project</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>[.NET][C#][SOLID] - DI &amp; IoC (依賴注入與控制反轉) 全面講解</title>
     <url>/posts/3588979794/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>IoC (Inversion of Control) 控制反轉，與OOP SOLID原則中的其中一種設計原則有關，也就是其中的DIP(Dependency Inversion Principle)，是OOP一個非常重要的程式設計思想，對於軟體開發來說十分重要，下面我將<strong>十分詳細的介紹何為DIP、IoC以及DI、為何要使用它們以及如何實作</strong>，相信大家閱讀完會對這個重要的思想了解的更加透徹。</p>
@@ -237,72 +306,56 @@ img{
       </tags>
   </entry>
   <entry>
-    <title>CC-沈浸式線上逛街APP-系統與技術介紹</title>
-    <url>/posts/2012237495/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>接續上一篇的文章，這篇文章會著重介紹這個系統<br>以下是我在YouTube上對這個專案的介紹與Demo：</p>
-<iframe
-    src="https://www.youtube.com/embed/aMGnyI2Xe04">
-</iframe>
-<span class="exturl" data-url="aHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xTmVDRGk0dWFmQ3UtcF9iVDE2cERLSm50SXluN3FzeUYvdmlldz91c3A9c2hhcmluZw==">Proposal Link<i class="fa fa-external-link-alt"></i></span>
-
-<p>這篇文章的內容會與影片很像，主要分為<strong>動機與介紹、重點功能簡介、系統架構與技術</strong>的順序介紹<br>系統功能Demo, 還請觀看影片介紹</p>
+    <title>政大Google學生開發者社群-心得（第一學期）</title>
+    <url>/posts/277323671/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在剛上大二時，除了手邊和學長的專案，我也參加了政大的Google學生開發者社群。主要是希望透過提案，<strong>利用科技來解決問題</strong>，在這裡我也深深感受到Google的文化，那就是<strong>不會怕去嘗試、不怕去解決問題</strong>，我也認識在這個社群中的各個人才。在這個社群中，我除了擔任自己<strong>專案領導人</strong>的角色外，我也身兼<strong>後端技術長</strong>的任務，也是想要發揮我目前所學到的、最成熟的後端知識。除了技術面，如何管理一個團隊、一項專案，也是一門很大的課題。希望在未來可以繼續把自己的這項專案做到完善，解決真正的問題！</p>
 <span id="more"></span>
-<p><img data-src="/images/posts/CC-project-demo/1.png" 
-style="width: 90%; margin: 15px auto;"></p>
-<h2 id="動機與介紹"><a href="#動機與介紹" class="headerlink" title="動機與介紹"></a>動機與介紹</h2><img data-src="/images/posts/CC-project-demo/2.png" style="width: 70%; margin: 15px auto;">
-首先我們主要的TA之一是線上逛街族, 針對這個族群我們統整出簡單的兩點：第一, 他們在線上瀏覽或滑商品時, 通常沒有特定的消費目的, 只是想要滑滑看看, 無目的的瀏覽行為, 第二, 這種行為主要是以消遣、獲得樂趣為目的, 而不一定是真的想要買商品
 
+<h2 id="定位與職位"><a href="#定位與職位" class="headerlink" title="定位與職位"></a>定位與職位</h2><ul>
+<li><h3 id="專案定位"><a href="#專案定位" class="headerlink" title="專案定位"></a>專案定位</h3></li>
+</ul>
+<p>我這次的提案叫做「政大通NCCUPass」，以<strong>政大校園生活為出發點</strong>，想要做一款能夠解決政大學生生活上不便的APP，透過專案組的討論與調查，帶來<strong>更便利、聰明與數位化</strong>的校園生活，讓校園內的需求能夠即時被滿足，也讓這款APP融入政大學生的生活中，成為政大校園內不可或缺的一部分，因此，「政大通-NCCUPass」的提案就此誕生</p>
 <hr>
-<img data-src="/images/posts/CC-project-demo/3.png" style="width: 70%; margin: 15px auto;">
-根據上面的族群設定, 我們的專案主要會focus在解決或滿足下面的問題, 第一, 我們是針對無目的性的消費情境底下的需求, 第二, 我們希望帶給使用者沈浸式的體驗, 所謂的沈浸式體驗, 就是在舒服且不受干擾的狀態下, 接收自己有興趣的資訊, 以此讓使用者能在我們這個APP上做消遣、殺時間的動作, 這麼做的目的很大一部分是為了捕捉使用者的微時刻, 這些微時刻的數據可以代表使用者不同時刻的喜好或者決策, 第四，我們這個APP也會瞄準直播的市場與直播平台合作，而這些直播主的煩惱，便是下播後無法持續創造收入，因此我們除了希望能延長商品的生命週期外，也可以透過捕捉使用者行為來提供直播主缺乏的Consumer Insight
-
+<p>下面是我們第一次期末發表的海報和照片<br>海報內呈現的是我們規劃、也正在開發的功能<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/poster.jpg" 
+style="width: 70%; margin: 15px auto;"></p>
 <hr>
-<img data-src="/images/posts/CC-project-demo/4.png" style="width: 70%; margin: 15px auto;">
-為了達成以上的目的，我們主要有這幾項手段，第一, 研究推薦演算法與捕捉使用者行為，透過使用者不同時刻的行為數據來作為推薦的依據，而非傳統的電商使用歷史紀錄來做推薦，以次讓使用者能夠在每時每刻接收有興趣的資訊，達到沈浸式的體驗。第二，透過簡潔的介面，降低使用者瀏覽時的壓力，讓使用者更願意停留在APP上，第三，透過分享貼文、追蹤、評論等等的社群機制，讓使用者能夠了解親朋好友們有興趣或者好評的商品，也能夠享受社群的樂趣，增加APP的黏著度，最後，透過APP上種種捕捉使用者行為數據的機制，可以將這些數據提供給與我們合作的第三方廠商，讓廠商更了解使用者的喜好
-
-<h2 id="重點功能簡介"><a href="#重點功能簡介" class="headerlink" title="重點功能簡介"></a>重點功能簡介</h2><img data-src="/images/posts/CC-project-demo/5.png" style="width: 70%; margin: 15px auto;">
-再來介紹一些重點功能的簡短敘述，首先第一個是我們的商品貼文，也是商品的主體，貼文特色主要以滿板設計與資訊收合來達到雜訊最小化的目的，另外後面Demo也會呈現推薦商品的形式，與現在短影音的方式很像，透過推薦與給人耳目一新的商品，帶給使用者殺時間的樂趣，另外，透過商品貼文，也可以成為直播主下播後銷售的利器，與一般電商不同的是，我們主動推薦商家商品，而且是透過使用者當前的行為喜好，而不是被動等待使用者搜尋或是透過購買紀錄來做推薦
-
+<p>這個是期末發表當天的攤位介紹照片<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img4.jpg" 
+style="width: 70%; margin: 15px auto;"></p>
+<p><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img2.JPG" 
+style="width: 70%; margin: 15px auto;"></p>
+<p><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img1.JPG" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>參與證書<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/GDSC_certificate.png" 
+style="width: 70%; margin: 15px auto;"></p>
 <hr>
-<img data-src="/images/posts/CC-project-demo/6.png" style="width: 70%; margin: 15px auto;">
-再來是我們的主頁面，透過滑卡的機制增加互動感，也可以同時捕捉使用者行為，以做到即時推薦，這麼做除了可以增加沈浸體驗，也可以更廣泛的推薦商品，提高曝光程度
-
-<hr>
-<img data-src="/images/posts/CC-project-demo/7.png" style="width: 70%; margin: 15px auto;">
-主頁面與探索頁面都可以透過使用者的滑卡行為、停留時間與點擊率，來彼此優化推薦內容，做到雙向推薦的功能
-
-<hr>
-<img data-src="/images/posts/CC-project-demo/8.png" style="width: 70%; margin: 15px auto;">
-探索頁面除了會推薦使用者感興趣的商品，也會隨機推薦相關商品，增加新奇度，其中最大塊的貼文則為推薦分數最高的商品，透過矩陣式樹狀結構，帶給使用者簡潔與大量瀏覽的感受
-
-<hr>
-<img data-src="/images/posts/CC-project-demo/9.png" style="width: 70%; margin: 15px auto;">
-CC提供商城、買家、直播主追蹤的機制，加上個人化自己的動態牆與留言區，增加社群互動性，以社群的力量增加APP的黏著度
-
-<hr>
-<img data-src="/images/posts/CC-project-demo/10.png" style="width: 70%; margin: 15px auto;">
-分享貼文除了可以增加互動的樂趣，也是提供消費者洞見的大平台
-最重要的是，可以藉由社群的力量，一傳十十傳百，來行銷商品
-
-<h2 id="系統架構與技術"><a href="#系統架構與技術" class="headerlink" title="系統架構與技術"></a>系統架構與技術</h2><p>先附上系統架構圖：<br><img data-src="/images/posts/CC-project-demo/CC_structure.jpeg" style="width: 70%; margin: 15px auto;"></p>
-<p>首先前端主要由Angular寫成，搭配<strong>模組化與物件導向設計，增加程式的可維護性</strong>，最後透過PWA包裝成跨平台的APP<br>藉由Angular能夠模組化與元件化的特性，我們將各個功能切分成不同模組，提升程式低耦合高內聚的特性，另外，Token驗證、路由保護、API攔截器、資料格式化Pipeline等等，也都抽離出來實作，其中，核心的商業邏輯切分在我們的Service模組，與畫面邏輯分離，再藉由依賴注入讓各模組使用，這樣的設計，讓我們的專案在未來更改與維護擴充時非常省時與省力。</p>
-<p>另外一個主要的功能是推薦演算法，我們透過標籤(label)與雅卡爾相似度(Jaccard Similarity)，做了一個Example Based的推薦引擎，主要是用MongoDB pipeline與後端演算構築而成。</p>
-<p>這裡也是我第一次使用前端框架，來寫一個比較完整的專案，由於我是後端出身，所以選擇一個自己寫起來最舒服的Angular框架，有種在寫後端的親切感XD。</p>
-<p>後端主要由NodeJS寫成，資料庫則為MongoDB，一樣是將各個功能進行模組化的拆分，與資料庫索引的優化，以及推薦演算法的實現。</p>
-<p>另外WebServer的部分則是由IIS代理，加上GitLab CI&#x2F;CD &amp; GitLab Runner做到自動化整合與部屬的功能</p>
-<style>
-.video-container
-{
-    padding-top: 60% !important;
-}
-</style>]]></content>
+<ul>
+<li><h3 id="職位"><a href="#職位" class="headerlink" title="職位"></a>職位</h3></li>
+</ul>
+<p>在這個專案中，我擔任<strong>Project Leader(專案主持人)<strong>，與</strong>Backend Tech-Lead(後端技術長)<strong>的身份，帶領總共</strong>11人的團隊</strong>，在我們這個團隊中，主要分成四組，前端、後端、UI&#x2F;UX、文書，除了負責主要的後端技術，也要帶領後端的組員們提升實力、協調與規劃。以專案領導人的角度來看，除了需要<strong>規劃整個專案的進度與走向外，也要監督進度、協調各組、人際溝通等等</strong>，除了利用各種專案管理的工具外，也要撰寫各種文件與流程圖，老實說滿累的XD。但也是遇到一群願意跟隨我的隊友們，一起成長，真的非常得感謝他們🙏</p>
+<h2 id="技術"><a href="#技術" class="headerlink" title="技術"></a>技術</h2><ul>
+<li><h3 id="系統架構圖"><a href="#系統架構圖" class="headerlink" title="系統架構圖"></a>系統架構圖</h3></li>
+</ul>
+<p>下面是我們的系統架構圖，因為我是負責後端的部分，所以會著重畫後端的架構<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/NCCUPass-Structure.jpg" 
+style="width: 70%; margin: 15px auto;"></p>
+<ul>
+<li><h3 id="後端技術細節"><a href="#後端技術細節" class="headerlink" title="後端技術細節"></a>後端技術細節</h3></li>
+</ul>
+<p>根據上面的架構圖，我們的專案主要部署在Ubuntu的主機上，所有的服務利用Docker Compose統一建立，另外還有利用GitLab Runner做到自動化整合與自動化部屬的功能。後端程式是由.NET C#撰寫，這邊我使用的是Software Layer Architecture Pattern(軟體分層架構)，結合各種Design Pattern再加上自己的一些變形，資料庫是使用MongoDB的Replica-Set，也有使用Redis做快取，照片和一些公開的檔案主要放在我們的File Server上。其他技術細節我就列在下面，想看的人可以參考一下XD</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">- Software Layer Architecture pattern (多層)</span><br><span class="line">- Repository pattern</span><br><span class="line">- Unit of Work pattern</span><br><span class="line">- Mediator pattern &amp; CQRS</span><br><span class="line">- Password Salting and Encryption</span><br><span class="line">- JWT &amp; RBAC</span><br><span class="line">- Automapper</span><br><span class="line">- Exception handler抽離</span><br><span class="line">- Dapper &amp; EF combination</span><br><span class="line">- Redis (Cache)</span><br><span class="line">- Docker Networking</span><br><span class="line">- Docker Volume</span><br><span class="line">- Docker hub</span><br><span class="line">- appsettings 組態切換</span><br><span class="line">- MongoDB replica-set</span><br><span class="line">    - key-file (internal authentication)</span><br><span class="line">- Git 多人協作</span><br><span class="line">- Swagger / OpenAPI</span><br><span class="line">- Docker File Server</span><br><span class="line">- Docker mongoDB backup daily</span><br><span class="line">- Docker Compose</span><br><span class="line">- JMeter壓力測試</span><br><span class="line">- GC mode區別(Workstation, Server)</span><br><span class="line">- SignalR 雙向溝通</span><br><span class="line">- 測試 (K6 stress testing, )</span><br><span class="line">- 自動化發送Email (python selenium)</span><br><span class="line">- SSH with Linux server</span><br><span class="line">- FCM (to push device notification)</span><br><span class="line">- Linux server</span><br><span class="line">- Cloudflare domain and SSL/TLS</span><br><span class="line">- Nginx  (on server and on docker)</span><br><span class="line">    - redirect (setting files)</span><br><span class="line">    - ssl setting(certificate, key)</span><br><span class="line">- Shell script自動備份資料庫</span><br></pre></td></tr></table></figure>
+<p>之後也會一直新增，因為現在處於專案開發的初期。</p>
+<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>最後，這個專案雖然只是在發展初期，但我希望未來可以發展到我預想的樣子，也非常感謝一路願意跟隨我、幫助我的隊友們，單打獨鬥真的比不上團隊合作👍，也希望各位未來也可以繼續幫助我啦，現在打分享文可能還太早，但我就是想要趁學期末趕快記錄一下哈哈</p>
+]]></content>
       <categories>
+        <category>心得</category>
         <category>專案</category>
+        <category>GDSC</category>
         <category>side project</category>
+        <category>NCCUPass</category>
       </categories>
       <tags>
         <tag>專案</tag>
-        <tag>side project</tag>
+        <tag>GDSC</tag>
+        <tag>NCCUPass</tag>
       </tags>
   </entry>
   <entry>
@@ -465,96 +518,168 @@ style="width: 70%; margin: 15px auto;"></p>
       </tags>
   </entry>
   <entry>
-    <title>政大Google學生開發者社群-心得（第一學期）</title>
-    <url>/posts/277323671/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在剛上大二時，除了手邊和學長的專案，我也參加了政大的Google學生開發者社群。主要是希望透過提案，<strong>利用科技來解決問題</strong>，在這裡我也深深感受到Google的文化，那就是<strong>不會怕去嘗試、不怕去解決問題</strong>，我也認識在這個社群中的各個人才。在這個社群中，我除了擔任自己<strong>專案領導人</strong>的角色外，我也身兼<strong>後端技術長</strong>的任務，也是想要發揮我目前所學到的、最成熟的後端知識。除了技術面，如何管理一個團隊、一項專案，也是一門很大的課題。希望在未來可以繼續把自己的這項專案做到完善，解決真正的問題！</p>
+    <title>[NLP][ML] Adapters &amp; LoRA</title>
+    <url>/posts/38266156/</url>
+    <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>In this article, I will provide an introduction to adapters and LoRA, including their <strong>definitions, purposes, and functions.</strong> I will also explore their various <strong>applications</strong> and, lastly, delve into the distinctions that set them apart(the <strong>differences between them</strong>).</p>
 <span id="more"></span>
 
-<h2 id="定位與職位"><a href="#定位與職位" class="headerlink" title="定位與職位"></a>定位與職位</h2><ul>
-<li><h3 id="專案定位"><a href="#專案定位" class="headerlink" title="專案定位"></a>專案定位</h3></li>
-</ul>
-<p>我這次的提案叫做「政大通NCCUPass」，以<strong>政大校園生活為出發點</strong>，想要做一款能夠解決政大學生生活上不便的APP，透過專案組的討論與調查，帶來<strong>更便利、聰明與數位化</strong>的校園生活，讓校園內的需求能夠即時被滿足，也讓這款APP融入政大學生的生活中，成為政大校園內不可或缺的一部分，因此，「政大通-NCCUPass」的提案就此誕生</p>
-<hr>
-<p>下面是我們第一次期末發表的海報和照片<br>海報內呈現的是我們規劃、也正在開發的功能<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/poster.jpg" 
-style="width: 70%; margin: 15px auto;"></p>
-<hr>
-<p>這個是期末發表當天的攤位介紹照片<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img4.jpg" 
-style="width: 70%; margin: 15px auto;"></p>
-<p><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img2.JPG" 
-style="width: 70%; margin: 15px auto;"></p>
-<p><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img1.JPG" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>參與證書<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/GDSC_certificate.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<hr>
-<ul>
-<li><h3 id="職位"><a href="#職位" class="headerlink" title="職位"></a>職位</h3></li>
-</ul>
-<p>在這個專案中，我擔任<strong>Project Leader(專案主持人)<strong>，與</strong>Backend Tech-Lead(後端技術長)<strong>的身份，帶領總共</strong>11人的團隊</strong>，在我們這個團隊中，主要分成四組，前端、後端、UI&#x2F;UX、文書，除了負責主要的後端技術，也要帶領後端的組員們提升實力、協調與規劃。以專案領導人的角度來看，除了需要<strong>規劃整個專案的進度與走向外，也要監督進度、協調各組、人際溝通等等</strong>，除了利用各種專案管理的工具外，也要撰寫各種文件與流程圖，老實說滿累的XD。但也是遇到一群願意跟隨我的隊友們，一起成長，真的非常得感謝他們🙏</p>
-<h2 id="技術"><a href="#技術" class="headerlink" title="技術"></a>技術</h2><ul>
-<li><h3 id="系統架構圖"><a href="#系統架構圖" class="headerlink" title="系統架構圖"></a>系統架構圖</h3></li>
-</ul>
-<p>下面是我們的系統架構圖，因為我是負責後端的部分，所以會著重畫後端的架構<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/NCCUPass-Structure.jpg" 
-style="width: 70%; margin: 15px auto;"></p>
-<ul>
-<li><h3 id="後端技術細節"><a href="#後端技術細節" class="headerlink" title="後端技術細節"></a>後端技術細節</h3></li>
-</ul>
-<p>根據上面的架構圖，我們的專案主要部署在Ubuntu的主機上，所有的服務利用Docker Compose統一建立，另外還有利用GitLab Runner做到自動化整合與自動化部屬的功能。後端程式是由.NET C#撰寫，這邊我使用的是Software Layer Architecture Pattern(軟體分層架構)，結合各種Design Pattern再加上自己的一些變形，資料庫是使用MongoDB的Replica-Set，也有使用Redis做快取，照片和一些公開的檔案主要放在我們的File Server上。其他技術細節我就列在下面，想看的人可以參考一下XD</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">- Software Layer Architecture pattern (多層)</span><br><span class="line">- Repository pattern</span><br><span class="line">- Unit of Work pattern</span><br><span class="line">- Mediator pattern &amp; CQRS</span><br><span class="line">- Password Salting and Encryption</span><br><span class="line">- JWT &amp; RBAC</span><br><span class="line">- Automapper</span><br><span class="line">- Exception handler抽離</span><br><span class="line">- Dapper &amp; EF combination</span><br><span class="line">- Redis (Cache)</span><br><span class="line">- Docker Networking</span><br><span class="line">- Docker Volume</span><br><span class="line">- Docker hub</span><br><span class="line">- appsettings 組態切換</span><br><span class="line">- MongoDB replica-set</span><br><span class="line">    - key-file (internal authentication)</span><br><span class="line">- Git 多人協作</span><br><span class="line">- Swagger / OpenAPI</span><br><span class="line">- Docker File Server</span><br><span class="line">- Docker mongoDB backup daily</span><br><span class="line">- Docker Compose</span><br><span class="line">- JMeter壓力測試</span><br><span class="line">- GC mode區別(Workstation, Server)</span><br><span class="line">- SignalR 雙向溝通</span><br><span class="line">- 測試 (K6 stress testing, )</span><br><span class="line">- 自動化發送Email (python selenium)</span><br><span class="line">- SSH with Linux server</span><br><span class="line">- FCM (to push device notification)</span><br><span class="line">- Linux server</span><br><span class="line">- Cloudflare domain and SSL/TLS</span><br><span class="line">- Nginx  (on server and on docker)</span><br><span class="line">    - redirect (setting files)</span><br><span class="line">    - ssl setting(certificate, key)</span><br><span class="line">- Shell script自動備份資料庫</span><br></pre></td></tr></table></figure>
-<p>之後也會一直新增，因為現在處於專案開發的初期。</p>
-<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>最後，這個專案雖然只是在發展初期，但我希望未來可以發展到我預想的樣子，也非常感謝一路願意跟隨我、幫助我的隊友們，單打獨鬥真的比不上團隊合作👍，也希望各位未來也可以繼續幫助我啦，現在打分享文可能還太早，但我就是想要趁學期末趕快記錄一下哈哈</p>
-]]></content>
-      <categories>
-        <category>心得</category>
-        <category>專案</category>
-        <category>GDSC</category>
-        <category>side project</category>
-        <category>NCCUPass</category>
-      </categories>
-      <tags>
-        <tag>專案</tag>
-        <tag>GDSC</tag>
-        <tag>NCCUPass</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Basic OOP 基礎物件導向</title>
-    <url>/posts/3787153742/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>物件導向（Object-Oriented Programming, OOP）是一種程式設計範式，強調使用包含數據（屬性）和方法（功能）的物件來設計和構建應用程序。提高軟體的重用性、靈活性和擴充性。</p>
-<p>而對於物件導向，最基礎需要知道以下：</p>
+<h1 id="Adapter"><a href="#Adapter" class="headerlink" title="Adapter"></a>Adapter</h1><h2 id="What-are-Adapters"><a href="#What-are-Adapters" class="headerlink" title="What are Adapters?"></a>What are Adapters?</h2><p>According to <span class="exturl" data-url="aHR0cHM6Ly93d3cuYW5hbHl0aWNzdmlkaHlhLmNvbS9ibG9nLzIwMjMvMDQvdHJhaW5pbmctYW4tYWRhcHRlci1mb3Itcm9iZXJ0YS1tb2RlbC1mb3Itc2VxdWVuY2UtY2xhc3NpZmljYXRpb24tdGFzay8jOn46dGV4dD1BZGFwdGVycyUyMGFyZSUyMGxpZ2h0d2VpZ2h0JTIwYWx0ZXJuYXRpdmVzJTIwdG8sbW9kdWxhciUyMGFwcHJvYWNoJTIwdG8lMjB0cmFuc2ZlciUyMGxlYXJuaW5nLg==">this article<i class="fa fa-external-link-alt"></i></span><br>We can give the definition of adapters:</p>
 <blockquote>
-<p><strong>一個抽象</strong><br><strong>兩個目的</strong><br><strong>三個特性</strong><br><strong>五個原則</strong></p>
+<p><strong>Adapters are lightweight alternatives to fully fine-tuned pre-trained models.</strong><br>Currently, <strong>adapters are implemented as small feedforward neural networks</strong> that are <strong>inserted between layers of a pre-trained model.</strong><br>They provide a <strong>parameter-efficient, computationally efficient, and modular approach</strong> to transfer learning. The following image shows added adapter.</p>
 </blockquote>
-<span id="more"></span>
-
-<h1 id="一個抽象"><a href="#一個抽象" class="headerlink" title="一個抽象"></a>一個抽象</h1><h2 id="抽象-Abstraction"><a href="#抽象-Abstraction" class="headerlink" title="抽象 (Abstraction)"></a>抽象 (Abstraction)</h2><p>在OOP的背景下，抽象是指<strong>隱藏複雜的實作細節</strong>，僅展示物件的必要特性的能力。這簡化了與物件的互動，使編程更直觀、更高效。</p>
-<p>例如想要使用交通工具的物件，只需要知道交通工具提供的介面，而不需要知道具體的交通工具是什麼，以及其實作細節<br><img data-src="/images/posts/OOP-basic/abstraction.png" 
+<p>The image below clearly shows the usage flow of apadters<br>(Source: <span class="exturl" data-url="aHR0cHM6Ly9hZGFwdGVyaHViLm1sLw==">AdapterHub<i class="fa fa-external-link-alt"></i></span>)<br><img data-src="/images/posts/NLP-series/adapter.gif" 
 style="width: 70%; margin: 15px auto;"></p>
-<h1 id="兩個目的"><a href="#兩個目的" class="headerlink" title="兩個目的"></a>兩個目的</h1><h2 id="低耦合-Low-Coupling"><a href="#低耦合-Low-Coupling" class="headerlink" title="低耦合 (Low Coupling)"></a>低耦合 (Low Coupling)</h2><p>低耦合是指程式中<strong>不同的類別或模組之間應該有盡可能少的依賴關係</strong>。這使得<strong>一個類別或模組的變更不太可能影響到其他的類別或模組</strong>，從而使得程式更容易維護和擴展。</p>
-<h2 id="高內聚（High-Cohesion）"><a href="#高內聚（High-Cohesion）" class="headerlink" title="高內聚（High Cohesion）"></a>高內聚（High Cohesion）</h2><p>高內聚是指一個類別或模組應該只<strong>專注於完成一項特定的任務或一組緊密相關的任務</strong>。這使得程式更有組織，更易於理解和維護。</p>
-<p><img data-src="/images/posts/OOP-basic/CandC.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<h1 id="三個特性"><a href="#三個特性" class="headerlink" title="三個特性"></a>三個特性</h1><h2 id="繼承-Inheritance"><a href="#繼承-Inheritance" class="headerlink" title="繼承 (Inheritance)"></a>繼承 (Inheritance)</h2><p>繼承允許新創建的類別（子類別）繼承一個或多個現有類別（父類別）的屬性和方法。這促進了程式碼重用和擴展性。</p>
-<h2 id="封裝-Encapsulation"><a href="#封裝-Encapsulation" class="headerlink" title="封裝 (Encapsulation)"></a>封裝 (Encapsulation)</h2><p>封裝是將數據（屬性）和行為（方法）綁定到單個單位（類別）中，並<strong>限制對該單位內部的直接訪問</strong>。這有助於保護數據和隱藏實現細節。</p>
-<h2 id="多型-Polymorphism"><a href="#多型-Polymorphism" class="headerlink" title="多型 (Polymorphism)"></a>多型 (Polymorphism)</h2><p>多型允許對<strong>不同類別的物件使用共同的接口</strong>。這意味著可以在不同類別的物件上執行同一操作，而每個類別可以以不同的方式響應相同的操作。</p>
-<h1 id="五個原則-SOLID"><a href="#五個原則-SOLID" class="headerlink" title="五個原則 (SOLID)"></a>五個原則 (SOLID)</h1><h2 id="S-單一職責原則（Single-Responsibility-Principle）"><a href="#S-單一職責原則（Single-Responsibility-Principle）" class="headerlink" title="S - 單一職責原則（Single Responsibility Principle）:"></a>S - 單一職責原則（Single Responsibility Principle）:</h2><p>一個類別應該只有一個改變的理由，這意味著<strong>一個類別應該只做一件事</strong>。</p>
-<h2 id="O-開放封閉原則（Open-x2F-Closed-Principle）"><a href="#O-開放封閉原則（Open-x2F-Closed-Principle）" class="headerlink" title="O - 開放封閉原則（Open&#x2F;Closed Principle）:"></a>O - 開放封閉原則（Open&#x2F;Closed Principle）:</h2><p>軟體實體（類別、模組、函數等）應該<strong>對擴展開放，對修改封閉</strong>。這意味著應該能夠在不修改現有代碼的情況下擴展其功能。</p>
-<h2 id="L-里氏替換原則（Liskov-Substitution-Principle）"><a href="#L-里氏替換原則（Liskov-Substitution-Principle）" class="headerlink" title="L - 里氏替換原則（Liskov Substitution Principle）:"></a>L - 里氏替換原則（Liskov Substitution Principle）:</h2><p><strong>子類別應該能夠替換其父類別而不影響程序的正常運行</strong>。</p>
-<h2 id="I-接口隔離原則（Interface-Segregation-Principle）"><a href="#I-接口隔離原則（Interface-Segregation-Principle）" class="headerlink" title="I - 接口隔離原則（Interface Segregation Principle）:"></a>I - 接口隔離原則（Interface Segregation Principle）:</h2><p>不應強迫客戶依賴於它們不使用的接口。換句話說，<strong>更小和更具體的接口優於大而通用的接口</strong>。</p>
-<h2 id="D-依賴反轉原則（Dependency-Inversion-Principle）"><a href="#D-依賴反轉原則（Dependency-Inversion-Principle）" class="headerlink" title="D - 依賴反轉原則（Dependency Inversion Principle）:"></a>D - 依賴反轉原則（Dependency Inversion Principle）:</h2><p><strong>高層模組不應該依賴低層模組，兩者都應該依賴於抽象</strong>；抽象不應該依賴於細節，細節應該依賴於抽象。這有助於減少類別之間的直接依賴，從而提高系統的靈活性和可重用性。</p>
-<h1 id="Design-Pattern概述"><a href="#Design-Pattern概述" class="headerlink" title="Design Pattern概述"></a>Design Pattern概述</h1><p>設計模式是一組作為最佳實踐的解決方案，用來解決特定類型的重複出現的設計問題。這些模式不是現成的程式碼，而是可以在許多不同情況下使用的模板。它們提高了代碼的可重用性、靈活性和維護性。</p>
-<p>設計模式通常分為三大類：</p>
-<ol>
-<li>創建型模式（Creational Patterns）<br>這些模式與物件創建機制有關，幫助創建物件的方式使得系統獨立於物件的創建和組合方式。</li>
-<li>結構型模式（Structural Patterns）<br>這些模式與物件的組合有關，通常用於形成大的物件結構</li>
-<li>行為型模式（Behavioral Patterns）<br>這些模式關注物件間的通訊和責任分配</li>
+<blockquote>
+<p>During training, <strong>all the weights of the pre-trained model are frozen</strong> such that only the adapter weights<br>are updated, resulting in <strong>modular knowledge representations</strong>. They can be easily <strong>extracted, interchanged,</strong><br><strong>independently distributed, and dynamically plugged</strong> into a language model. These properties highlight the<br>potential of adapters in advancing the NLP field astronomically.</p>
+</blockquote>
+<h2 id="What-is-the-purpose-and-function-of-adapters"><a href="#What-is-the-purpose-and-function-of-adapters" class="headerlink" title="What is the purpose and function of adapters?"></a>What is the purpose and function of adapters?</h2><ol>
+<li>Purpose:<br>Large Language Models are computationally expensive and memory-intensive. <strong>Fine-tuning the entire model for each specific task</strong> can be impractical due to resource constraints. Adapters provide a solution by allowing for more efficient and <strong>targeted modifications</strong> to the model for different tasks. This approach <strong>saves both computational power and memory</strong>, enabling the deployment of a single pre-trained model for multiple tasks.</li>
+<li>Functions:<ol>
+<li><p>Efficient Fine-tuning: Instead of fine-tuning the entire model, adapters enable <strong>fine-tuning only a small subset of parameters</strong> related to a specific task. This fine-tuning process is faster and requires fewer resources.</p>
+</li>
+<li><p>Task-specific Modifications: Adapters allow you to add <strong>task-specific layers or modifications</strong> to the pre-trained model without altering the core architecture. This makes it easier to adapt the model for various tasks like text classification, named entity recognition, sentiment analysis, etc.</p>
+</li>
+<li><p>Versatility: With adapters, a single pre-trained LLM can be <strong>adapted for a wide range of tasks.</strong> This versatility is beneficial in scenarios where deploying and maintaining separate models for each task might be impractical.</p>
+</li>
+<li><p>Interoperability: Adapters enable the combination of pre-trained models with task-specific modifications in a standardized way. This facilitates sharing, collaboration, and research in the NLP community.</p>
+</li>
+<li><p>Transfer Learning: Adapters enhance the <strong>effectiveness of transfer learning.</strong> Models pre-trained on <strong>large and diverse datasets can be fine-tuned on smaller</strong>, task-specific datasets using adapters, improving performance on specific tasks.</p>
+</li>
+<li><p>Incremental Updates: Adapters allow for easy updates to the model. Instead of retraining the entire model, only the adapters related to a specific task need to be fine-tuned when new data or requirements arise.</p>
+</li>
 </ol>
+</li>
+</ol>
+<p>Overall, adapters are a <strong>mechanism that strikes a balance between the benefits of fine-tuning for specific tasks and the efficiency of reusing pre-trained LLMs.</strong> They enable the NLP community to leverage the power of these large models while tailoring them to a diverse set of applications.</p>
+<h2 id="The-applications-of-adapters"><a href="#The-applications-of-adapters" class="headerlink" title="The applications of adapters"></a>The applications of adapters</h2><p>I list some practical applications that can use adapters to enhance.</p>
+<ol>
+<li><p>Efficient Task Adaptation: Adapters make it possible to fine-tune a pretrained model for specific tasks with minimal computational resources and time. This is particularly useful for industries that require quick adaptation to changing trends or requirements.</p>
+</li>
+<li><p>Multilingual Applications: Adapters can be used to enable a pretrained model to perform tasks in multiple languages. This is valuable for businesses operating in global markets.</p>
+</li>
+<li><p>Domain-Specific NLP: Adapting models with domain-specific adapters (e.g., medical, legal, financial) enhances their performance on tasks specific to those domains.</p>
+</li>
+<li><p>Personalization: Adapters can be used to personalize a general-purpose model for individual users or contexts, leading to more relevant and tailored responses.</p>
+</li>
+</ol>
+<h1 id="LoRA-Low-Rank-Adaptation"><a href="#LoRA-Low-Rank-Adaptation" class="headerlink" title="LoRA (Low-Rank Adaptation)"></a>LoRA (Low-Rank Adaptation)</h1><h2 id="What-is-LoRA"><a href="#What-is-LoRA" class="headerlink" title="What is LoRA?"></a>What is LoRA?</h2><ul>
+<li>Low-Rank Adaptation, or LoRA, is proposed, which <strong>freezes the pre-trained model weights</strong> and <strong>injects trainable rank decomposition matrices into each layer</strong> of the <strong>Transformer</strong> architecture, greatly <strong>reducing the number of trainable parameters</strong> for downstream tasks.</li>
+</ul>
+<p>And let’s see the full fine-tuning definition:</p>
+<ul>
+<li>Full fine-tuning LLM, which <strong>retrains all model parameters</strong>, becomes less feasible. Using GPT-3 175B as an example — deploying independent instances of fine-tuned models, each with 175B parameters, is prohibitively expensive.</li>
+</ul>
+<p>In <span class="exturl" data-url="aHR0cHM6Ly9iZHRlY2h0YWxrcy5jb20vMjAyMy8wNS8yMi93aGF0LWlzLWxvcmEv">this article<i class="fa fa-external-link-alt"></i></span>, it clearly compare the fine-tuning and LoRA approaches. And in <span class="exturl" data-url="aHR0cHM6Ly9zaC10c2FuZy5tZWRpdW0uY29tL2JyaWVmLXJldmlldy1sb3JhLWxvdy1yYW5rLWFkYXB0YXRpb24tb2YtbGFyZ2UtbGFuZ3VhZ2UtbW9kZWxzLWZhZjVkZGQ1ODAyZiM6fjp0ZXh0PUxvUkElMkMlMjBMb3clMkRSYW5rJTIwTExNJTIwRmluZSUyRFR1bmluZyUyQyUyMFJlZHVjZSUyMFJlcXVpcmVkJTIwTWVtb3J5JnRleHQ9TG93JTJEUmFuayUyMEFkYXB0YXRpb24lMkMlMjBvciUyMExvUkEsdHJhaW5hYmxlJTIwcGFyYW1ldGVycyUyMGZvciUyMGRvd25zdHJlYW0lMjB0YXNrcy4=">this article<i class="fa fa-external-link-alt"></i></span>, it dives more into the machanism of LoRA. If you wnat to know the full knowledge, you can refer to <span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzIxMDYuMDk2ODU=">the paper of LoRA<i class="fa fa-external-link-alt"></i></span>.<br>In the next sections, I will introduce more ideas of LoRA based on these references. Note that I only organize the contents of these articles and add some mark and note on my own.</p>
+<hr>
+<h3 id="How-does-fine-tuning-LLMs-work"><a href="#How-does-fine-tuning-LLMs-work" class="headerlink" title="How does fine-tuning LLMs work?"></a>How does fine-tuning LLMs work?</h3><p>Open-source LLMs such as LLaMA,Vicuna are foundation models that <strong>have been pre-trained on hundreds of billions of words.</strong> Developers and machine learning engineers can download the model with the <strong>pre-trained weights</strong> and <strong>fine-tune it for downstream tasks</strong> such as <span class="exturl" data-url="aHR0cHM6Ly9iZHRlY2h0YWxrcy5jb20vMjAyMy8wMS8xNi93aGF0LWlzLXJsaGYv">instruction following<i class="fa fa-external-link-alt"></i></span>.</p>
+<p>The model is provided input from the <strong>fine-tuning dataset</strong>. It then <strong>predicts the next tokens and compares its output with the ground truth.</strong> It then <strong>adjusts the weights(gradient)</strong> to correct its predictions. By doing this over and over, the LLM becomes fine-tuned to the downstream task.</p>
+<p><img data-src="/images/posts/NLP-series/LLM-fintune.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>(Source: <span class="exturl" data-url="aHR0cHM6Ly9iZHRlY2h0YWxrcy5jb20vMjAyMy8wNS8yMi93aGF0LWlzLWxvcmEv">What is low-rank adaptation (LoRA)?<i class="fa fa-external-link-alt"></i></span>)</p>
+<h3 id="The-idea-of-LoRA"><a href="#The-idea-of-LoRA" class="headerlink" title="The idea of LoRA"></a>The idea of LoRA</h3><p>Now, let’s make a small modification to the fine-tuning process. In this new method, we <strong>freeze the original weights of the model and don’t modify them during the fine-tuning process.</strong> Instead, we apply the modifications to a <strong>separate set of weights</strong> and we add their new values to the original parameters. Let’s call these two sets <strong>“pre-trained” and “fine-tuned” weights</strong>.</p>
+<blockquote>
+<p><strong>Separating the pre-trained and fine-tuned parameters is an important part of LoRA.</strong><br><img data-src="/images/posts/NLP-series/LoRA-1.png" 
+style="width: 70%; margin: 15px auto;"></p>
+</blockquote>
+<h4 id="Low-rank-adaptation"><a href="#Low-rank-adaptation" class="headerlink" title="Low-rank adaptation"></a>Low-rank adaptation</h4><p>Before moving on to LoRA, let’s think about our <strong>model parameters as very large matrices</strong>. If you remember your linear algebra class, <strong>matrices can form vector spaces</strong>. In this case, we’re talking about a <strong>very large vector space with many dimensions</strong> that models language.</p>
+<p>Every matrix has a <strong>“rank”</strong>, which is <strong>the number of linearly independent columns it has</strong>. If a column is linearly independent, it means that <strong>it can’t be represented as a combination of other columns in the matrix</strong>. On the other hand, a dependent column is one that can be represented as a combination of one or more columns in the same matrix. You can remove dependent columns from a matrix without losing information.</p>
+<p>LoRA, proposed in a <span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzIxMDYuMDk2ODU=">paper<i class="fa fa-external-link-alt"></i></span> by researchers at Microsoft, suggests that when fine-tuning an LLM for a downstream task, <strong>you don’t need the full-rank weight matrix.</strong> They proposed that you could preserve most of the learning capacity of the model while <strong>reducing the dimension of the downstream parameters.</strong> (This is why it makes sense to separate the pre-trained and fine-tuned weights.)</p>
+<hr>
+<p><img data-src="/images/posts/NLP-series/LoRA-2.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>Basically, in LoRA, you create <strong>two downstream weight matrices</strong>. One <strong>transforms the input parameters from the original dimension to the low-rank dimension</strong>. And the second matrix <strong>transforms the low-rank data to the output dimensions of the original model</strong>.</p>
+<p>During training, <strong>modifications are made to the LoRA parameters</strong>, which are now much fewer than the original weights. This is why they can be trained much faster and at a fraction of the cost of doing full fine-tuning. <strong>At inference time, the output of LoRA is added to the pre-trained parameters to calculate the final values.</strong></p>
+<h4 id="More-detail"><a href="#More-detail" class="headerlink" title="More detail"></a>More detail</h4><p><img data-src="/images/posts/NLP-series/LoRA-3.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<ul>
+<li>For a pre-trained weight matrix $W_0$, its update is constrained by representing the latter with a low-rank decomposition:</li>
+</ul>
+<p>$$\begin{equation}<br>   W_0 + \Delta{W} &#x3D; W_0 + BA<br>\end{equation}$$</p>
+<ul>
+<li>During training, <strong>$W_0$ is frozen</strong> and does not receive gradient updates, while <strong>A and B contain trainable parameters</strong>.</li>
+<li>For $h&#x3D;W_0$, the modified forward pass yields:</li>
+</ul>
+<p>$$\begin{equation}<br>   h &#x3D; W_0x + \Delta{W}x &#x3D; W_0x + BAx<br>\end{equation}$$</p>
+<ul>
+<li><p>A random <strong>Gaussian initialization is used for A</strong> and <strong>zero is used for B</strong>, so $\Delta{W}&#x3D;BA$ is zero at the beginning of training. (The method of initializing the weights)</p>
+</li>
+<li><p>One of the advantages is that when deployed in production, we can <strong>explicitly compute and store $W&#x3D;W_0+BA$</strong> and perform inference as usual. <strong>No additional latency</strong> compared to other methods, such as appending more layers.</p>
+</li>
+</ul>
+<p>You can see the implementation and more detail of LoRA in <span class="exturl" data-url="aHR0cHM6Ly95b3V0dS5iZS9kQS1OaEN0cnJWRQ==">this video<i class="fa fa-external-link-alt"></i></span><br>and <span class="exturl" data-url="aHR0cHM6Ly9ibG9nLm1sNi5ldS9sb3ctcmFuay1hZGFwdGF0aW9uLWEtdGVjaG5pY2FsLWRlZXAtZGl2ZS03ODJkZWM5OTU3NzI=">this article<i class="fa fa-external-link-alt"></i></span>.</p>
+<h2 id="What-is-the-purpose-and-function-of-LoRA"><a href="#What-is-the-purpose-and-function-of-LoRA" class="headerlink" title="What is the purpose and function of LoRA?"></a>What is the purpose and function of LoRA?</h2><ul>
+<li>Purpose<ul>
+<li>The purpose of LoRA is to make it easier and more efficient to fine-tune LLMs for downstream tasks.</li>
+</ul>
+</li>
+<li>Function<ul>
+<li>The function of LoRA is to decompose the LLM into a low-rank representation and then adapt this representation to the target task.</li>
+<li>Here are the benefits:</li>
+</ul>
+</li>
+<li>Reduced number of parameters: The low-rank representation has a much smaller number of parameters than the original LLM, which can make it faster to train and easier to deploy.</li>
+<li>Improved performance: The low-rank representation is able to capture the most important features of the LLM, which can lead to improved performance on the downstream task.</li>
+</ul>
+<h2 id="The-applications-of-LoRA"><a href="#The-applications-of-LoRA" class="headerlink" title="The applications of LoRA"></a>The applications of LoRA</h2><ul>
+<li>Fine-tuning large language models for downstream tasks:<br>LoRA can be used to fine-tune large language models (LLMs) for a variety of downstream tasks, such as question answering, summarization, and translation. This can <strong>make LLMs more accessible and easier to use for a wider range of applications.</strong></li>
+<li>Improving the efficiency of machine learning models:<br> LoRA can be used to improve the efficiency of machine learning models by reducing the number of parameters. This can <strong>make models faster to train and easier to deploy</strong>.</li>
+<li>Compressing large datasets:<br>LoRA can be used to <strong>compress large datasets by representing them in a low-rank format</strong>. This can make datasets easier to <strong>store and transmit</strong>.</li>
+<li>Improving the security of machine learning models:<br>LoRA can be used to improve the security of machine learning models by making them more resistant to adversarial attacks.</li>
+</ul>
+<h1 id="Differences-between-adapter-and-LoRA"><a href="#Differences-between-adapter-and-LoRA" class="headerlink" title="Differences between adapter and LoRA"></a>Differences between adapter and LoRA</h1><table>
+   <thead>
+      <th>Feature</th>
+      <th>Adapter</th>
+      <th>LoRA</th>
+   </thead>
+   <tbody>
+      <tr>
+         <td>Approach</td>
+         <td>Adds additional layers to the pretrained model	</td>
+         <td>Decomposes the pretrained model into a low-rank representation
+</td>
+      </tr>
+      <tr>
+         <td>Parameters</td>
+         <td>Adds a small number of parameters to the pretrained model</td>
+         <td>Reduces the number of parameters in the pretrained model</td>
+      </tr>
+      <tr>
+         <td>Performance</td>
+         <td>Effective for a variety of downstream tasks</td>
+         <td>Particularly effective for tasks that require a large number of parameters</td>
+      </tr>
+      <tr>
+         <td>Speed</td>
+         <td>Can be faster to train than LoRA</td>
+         <td>Can be faster at inference time</td>
+      </tr>
+      <tr>
+         <td>Memory usage</td>
+         <td>Can use more memory than LoRA</td>
+         <td></td>
+      </tr>
+   </tbody>
+</table>
+
+<p>In general, adapters are a good choice for tasks that require a small number of parameters and can be trained quickly, while LoRA is a good choice for tasks that require a large number of parameters and need to be fast at inference time.</p>
+<h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuYW5hbHl0aWNzdmlkaHlhLmNvbS9ibG9nLzIwMjMvMDQvdHJhaW5pbmctYW4tYWRhcHRlci1mb3Itcm9iZXJ0YS1tb2RlbC1mb3Itc2VxdWVuY2UtY2xhc3NpZmljYXRpb24tdGFzay8jOn46dGV4dD1BZGFwdGVycyUyMGFyZSUyMGxpZ2h0d2VpZ2h0JTIwYWx0ZXJuYXRpdmVzJTIwdG8sbW9kdWxhciUyMGFwcHJvYWNoJTIwdG8lMjB0cmFuc2ZlciUyMGxlYXJuaW5nLg==">(Recommend) Training an Adapter for RoBERTa Model for Sequence Classification Task<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9hZGFwdGVyaHViLm1sLw==">AdapterHub<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9kb2NzL2RpZmZ1c2Vycy90cmFpbmluZy9sb3JhIzp+OnRleHQ9TG93JTJEUmFuayUyMEFkYXB0YXRpb24lMjBvZiUyMExhcmdlJTIwTGFuZ3VhZ2UlMjBNb2RlbHMlMjAoTG9SQSklMjBpcyx0cmFpbnMlMjB0aG9zZSUyMG5ld2x5JTIwYWRkZWQlMjB3ZWlnaHRzLg==">Low-Rank Adaptation of Large Language Models (LoRA) (Huggingface)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9zaC10c2FuZy5tZWRpdW0uY29tL2JyaWVmLXJldmlldy1sb3JhLWxvdy1yYW5rLWFkYXB0YXRpb24tb2YtbGFyZ2UtbGFuZ3VhZ2UtbW9kZWxzLWZhZjVkZGQ1ODAyZiM6fjp0ZXh0PUxvUkElMkMlMjBMb3clMkRSYW5rJTIwTExNJTIwRmluZSUyRFR1bmluZyUyQyUyMFJlZHVjZSUyMFJlcXVpcmVkJTIwTWVtb3J5JnRleHQ9TG93JTJEUmFuayUyMEFkYXB0YXRpb24lMkMlMjBvciUyMExvUkEsdHJhaW5hYmxlJTIwcGFyYW1ldGVycyUyMGZvciUyMGRvd25zdHJlYW0lMjB0YXNrcy4=">Brief Review — LoRA: Low-Rank Adaptation of Large Language Models<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9iZHRlY2h0YWxrcy5jb20vMjAyMy8wNS8yMi93aGF0LWlzLWxvcmEv">What is low-rank adaptation (LoRA)?<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzIxMDYuMDk2ODU=">LoRA: Low-Rank Adaptation of Large Language Models (Paper)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9ibG9nLm1sNi5ldS9sb3ctcmFuay1hZGFwdGF0aW9uLWEtdGVjaG5pY2FsLWRlZXAtZGl2ZS03ODJkZWM5OTU3NzI=">(Recommend) Low Rank Adaptation: A Technical Deep Dive<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly95b3V0dS5iZS9kQS1OaEN0cnJWRQ==">Low-rank Adaption of Large Language Models: Explaining the Key Concepts Behind LoRA (Video)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1VczVaRnAxNlBhVQ==">Fine-tuning LLMs with PEFT and LoRA<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9ibG9nL3BlZnQ=">PEFT: Parameter-Efficient Fine-Tuning of Billion-Scale Models on Low-Resource Hardware<i class="fa fa-external-link-alt"></i></span></li>
+</ul>
 ]]></content>
-      <categories>
-        <category>OOP</category>
-      </categories>
       <tags>
-        <tag>OOP</tag>
+        <tag>ML</tag>
+        <tag>AI</tag>
+        <tag>NLP</tag>
       </tags>
   </entry>
   <entry>
@@ -856,278 +981,43 @@ style="width: 70%; margin: 15px auto;"></p>
       </tags>
   </entry>
   <entry>
-    <title>[.NET][C#][Design Pattern] - Mediator Pattern (中介者模式)</title>
-    <url>/posts/4072203086/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>這篇文章主要介紹Mediator Pattern的定義以及簡單實作<br>介紹使用Mediator Pattern的好處, 並提供範例<br>在軟體架構中Mediator Patternc和Repository Pattern都是常用的pattern<br>通常.NET專案中會結合MediatR套件使用</p>
+    <title>Basic OOP 基礎物件導向</title>
+    <url>/posts/3787153742/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>物件導向（Object-Oriented Programming, OOP）是一種程式設計範式，強調使用包含數據（屬性）和方法（功能）的物件來設計和構建應用程序。提高軟體的重用性、靈活性和擴充性。</p>
+<p>而對於物件導向，最基礎需要知道以下：</p>
+<blockquote>
+<p><strong>一個抽象</strong><br><strong>兩個目的</strong><br><strong>三個特性</strong><br><strong>五個原則</strong></p>
+</blockquote>
 <span id="more"></span>
 
-<h2 id="定義-Mediator-Pattern"><a href="#定義-Mediator-Pattern" class="headerlink" title="定義 Mediator Pattern"></a>定義 Mediator Pattern</h2><p>IG貼文：<br><span class="exturl" data-url="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9wL0NpTTBlenBMTzR6Lz9obD16aC10dw==">Mediator Pattern Post<i class="fa fa-external-link-alt"></i></span></p>
-<p>GitHub連結：<br><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL21hby1jb2RlL01lZGlhdG9yUGF0dGVybg==">Sample Code<i class="fa fa-external-link-alt"></i></span></p>
-<p>定義一個 Mediator 物件用來<strong>封裝一組物件的互動方式</strong>。<br>Mediator 藉由<strong>避免物件間相互直接的引用</strong>，從而降低它們之間的耦合程度，並且可以讓我們獨立地改變這些物件間的互動方式。</p>
-<p>下面這兩張圖片可以簡單體現出Mediator Pattern在做的事</p>
-<p><strong>沒有使用中介者, 物件彼此之間直接調用</strong><br><img data-src="/images/posts/mediator-pattern/origin-graph.png" 
+<h1 id="一個抽象"><a href="#一個抽象" class="headerlink" title="一個抽象"></a>一個抽象</h1><h2 id="抽象-Abstraction"><a href="#抽象-Abstraction" class="headerlink" title="抽象 (Abstraction)"></a>抽象 (Abstraction)</h2><p>在OOP的背景下，抽象是指<strong>隱藏複雜的實作細節</strong>，僅展示物件的必要特性的能力。這簡化了與物件的互動，使編程更直觀、更高效。</p>
+<p>例如想要使用交通工具的物件，只需要知道交通工具提供的介面，而不需要知道具體的交通工具是什麼，以及其實作細節<br><img data-src="/images/posts/OOP-basic/abstraction.png" 
 style="width: 70%; margin: 15px auto;"></p>
-<p><strong>使用中介者, 物件只依賴mediator來與其他物件溝通</strong><br><img data-src="/images/posts/mediator-pattern/star.png" 
+<h1 id="兩個目的"><a href="#兩個目的" class="headerlink" title="兩個目的"></a>兩個目的</h1><h2 id="低耦合-Low-Coupling"><a href="#低耦合-Low-Coupling" class="headerlink" title="低耦合 (Low Coupling)"></a>低耦合 (Low Coupling)</h2><p>低耦合是指程式中<strong>不同的類別或模組之間應該有盡可能少的依賴關係</strong>。這使得<strong>一個類別或模組的變更不太可能影響到其他的類別或模組</strong>，從而使得程式更容易維護和擴展。</p>
+<h2 id="高內聚（High-Cohesion）"><a href="#高內聚（High-Cohesion）" class="headerlink" title="高內聚（High Cohesion）"></a>高內聚（High Cohesion）</h2><p>高內聚是指一個類別或模組應該只<strong>專注於完成一項特定的任務或一組緊密相關的任務</strong>。這使得程式更有組織，更易於理解和維護。</p>
+<p><img data-src="/images/posts/OOP-basic/CandC.png" 
 style="width: 70%; margin: 15px auto;"></p>
-<p>可以發現使用中介者模式之後, 物件都只依賴中介者來傳遞訊息, 而不是直接調用彼此, 以此達到解耦。<br>在現實生活中, 也有類似的例子, 例如開發團隊, 客服團隊, 產銷團隊, 設計團隊, 若彼此之間沒有一個統一的溝通,<br>那麼各個團隊耦合度很高, 開發跟設計要協調介面, 又要和產銷和客服討論如何贏得如何符合市場, 這樣一來分工太複雜。<br>所以需要一個<strong>產品經理來當中介者</strong>, 協助溝通各個團隊。</p>
-<h2 id="優缺點"><a href="#優缺點" class="headerlink" title="優缺點"></a>優缺點</h2><ul>
-<li>優點 <ol>
-<li>降低物件之間的耦合性，讓物件容易重複使用。</li>
-<li>物件之間一對多的關聯性變成一對一，提高系統靈活性，也讓整體容易維護及擴充。</li>
+<h1 id="三個特性"><a href="#三個特性" class="headerlink" title="三個特性"></a>三個特性</h1><h2 id="繼承-Inheritance"><a href="#繼承-Inheritance" class="headerlink" title="繼承 (Inheritance)"></a>繼承 (Inheritance)</h2><p>繼承允許新創建的類別（子類別）繼承一個或多個現有類別（父類別）的屬性和方法。這促進了程式碼重用和擴展性。</p>
+<h2 id="封裝-Encapsulation"><a href="#封裝-Encapsulation" class="headerlink" title="封裝 (Encapsulation)"></a>封裝 (Encapsulation)</h2><p>封裝是將數據（屬性）和行為（方法）綁定到單個單位（類別）中，並<strong>限制對該單位內部的直接訪問</strong>。這有助於保護數據和隱藏實現細節。</p>
+<h2 id="多型-Polymorphism"><a href="#多型-Polymorphism" class="headerlink" title="多型 (Polymorphism)"></a>多型 (Polymorphism)</h2><p>多型允許對<strong>不同類別的物件使用共同的接口</strong>。這意味著可以在不同類別的物件上執行同一操作，而每個類別可以以不同的方式響應相同的操作。</p>
+<h1 id="五個原則-SOLID"><a href="#五個原則-SOLID" class="headerlink" title="五個原則 (SOLID)"></a>五個原則 (SOLID)</h1><h2 id="S-單一職責原則（Single-Responsibility-Principle）"><a href="#S-單一職責原則（Single-Responsibility-Principle）" class="headerlink" title="S - 單一職責原則（Single Responsibility Principle）:"></a>S - 單一職責原則（Single Responsibility Principle）:</h2><p>一個類別應該只有一個改變的理由，這意味著<strong>一個類別應該只做一件事</strong>。</p>
+<h2 id="O-開放封閉原則（Open-x2F-Closed-Principle）"><a href="#O-開放封閉原則（Open-x2F-Closed-Principle）" class="headerlink" title="O - 開放封閉原則（Open&#x2F;Closed Principle）:"></a>O - 開放封閉原則（Open&#x2F;Closed Principle）:</h2><p>軟體實體（類別、模組、函數等）應該<strong>對擴展開放，對修改封閉</strong>。這意味著應該能夠在不修改現有代碼的情況下擴展其功能。</p>
+<h2 id="L-里氏替換原則（Liskov-Substitution-Principle）"><a href="#L-里氏替換原則（Liskov-Substitution-Principle）" class="headerlink" title="L - 里氏替換原則（Liskov Substitution Principle）:"></a>L - 里氏替換原則（Liskov Substitution Principle）:</h2><p><strong>子類別應該能夠替換其父類別而不影響程序的正常運行</strong>。</p>
+<h2 id="I-接口隔離原則（Interface-Segregation-Principle）"><a href="#I-接口隔離原則（Interface-Segregation-Principle）" class="headerlink" title="I - 接口隔離原則（Interface Segregation Principle）:"></a>I - 接口隔離原則（Interface Segregation Principle）:</h2><p>不應強迫客戶依賴於它們不使用的接口。換句話說，<strong>更小和更具體的接口優於大而通用的接口</strong>。</p>
+<h2 id="D-依賴反轉原則（Dependency-Inversion-Principle）"><a href="#D-依賴反轉原則（Dependency-Inversion-Principle）" class="headerlink" title="D - 依賴反轉原則（Dependency Inversion Principle）:"></a>D - 依賴反轉原則（Dependency Inversion Principle）:</h2><p><strong>高層模組不應該依賴低層模組，兩者都應該依賴於抽象</strong>；抽象不應該依賴於細節，細節應該依賴於抽象。這有助於減少類別之間的直接依賴，從而提高系統的靈活性和可重用性。</p>
+<h1 id="Design-Pattern概述"><a href="#Design-Pattern概述" class="headerlink" title="Design Pattern概述"></a>Design Pattern概述</h1><p>設計模式是一組作為最佳實踐的解決方案，用來解決特定類型的重複出現的設計問題。這些模式不是現成的程式碼，而是可以在許多不同情況下使用的模板。它們提高了代碼的可重用性、靈活性和維護性。</p>
+<p>設計模式通常分為三大類：</p>
+<ol>
+<li>創建型模式（Creational Patterns）<br>這些模式與物件創建機制有關，幫助創建物件的方式使得系統獨立於物件的創建和組合方式。</li>
+<li>結構型模式（Structural Patterns）<br>這些模式與物件的組合有關，通常用於形成大的物件結構</li>
+<li>行為型模式（Behavioral Patterns）<br>這些模式關注物件間的通訊和責任分配</li>
 </ol>
-</li>
-<li>缺點 (Trade-off)<ol>
-<li>同事類別過多時，中介者責任很大，會使系統提升一定程度的複雜性。</li>
-</ol>
-</li>
-</ul>
-<h2 id="UML與成員"><a href="#UML與成員" class="headerlink" title="UML與成員"></a>UML與成員</h2><p><img data-src="/images/posts/mediator-pattern/uml.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<table>
-    <thead>
-        <th>成員</th>
-        <th>定義</th>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Mdiator</td>
-            <td>抽象中介者, 定義註冊進入mediator以及轉發的方法</td>
-        </tr>
-        <tr>
-            <td>ConcreteMediator</td>
-            <td>具體中介者, 定義一個集合來管理同事, 所以聚合Colleague</td>
-        </tr>
-        <tr>
-            <td>Colleague</td>
-            <td>抽象同事, 可以保存中介者, 調用內部方法, 所以聚合Mediator</td>
-        </tr>
-        <tr>
-            <td>ConcreteColleague</td>
-            <td>具體同事, 當要跟其他物件溝通時, 利用內部的中介者進行轉發</td>
-        </tr>
-    </tbody>
-</table>
-
-<h2 id="實作"><a href="#實作" class="headerlink" title="實作"></a>實作</h2><p><strong>專案結構</strong><br><img data-src="/images/posts/mediator-pattern/structure.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p><strong>抽象Mediator</strong></p>
-<figure class="highlight c#"><figcaption><span>Mediator(抽象)</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MediatorPattern.mediator</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 團隊列舉</span></span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">enum</span> teamType</span><br><span class="line">    &#123;</span><br><span class="line">        ENGINEERING, DESIGN, SERVICE, MARKETING</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 抽象mediator</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title">Mediator</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">Register</span>(<span class="params">teamType type, Colleague colleague</span>)</span>; <span class="comment">//註冊進入mediator</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">Relay</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span>; <span class="comment">//轉發;傳遞</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>PackageManager(具體Mediator)</strong></p>
-<figure class="highlight c#"><figcaption><span>PackageManager(具體Mediator)</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MediatorPattern.mediator</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="comment">// 具體mediator</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ProductManager</span> : <span class="title">Mediator</span></span><br><span class="line">	&#123;</span><br><span class="line">        <span class="comment">// 聚合Colleague, 一個儲存colleague物件的dictionary</span></span><br><span class="line">        <span class="keyword">private</span> Dictionary&lt;teamType, Colleague&gt; colleagues = <span class="keyword">new</span> Dictionary&lt;teamType, Colleague&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">Register</span>(<span class="params">teamType type, Colleague colleague</span>)</span></span><br><span class="line">        &#123;</span><br><span class="line">            colleague.setMediator(<span class="keyword">this</span>);</span><br><span class="line">            <span class="keyword">this</span>.colleagues.Add(type, colleague);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">Relay</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">        &#123;</span><br><span class="line">            Colleague toColleague = <span class="keyword">this</span>.colleagues[type];</span><br><span class="line">            toColleague.receive(msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>抽象Colleague</strong></p>
-<figure class="highlight c#"><figcaption><span>Colleague(抽象)</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.mediator;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MediatorPattern.colleagues</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title">Colleague</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">protected</span> Mediator? Mediator &#123; <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; &#125;</span><br><span class="line"></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setMediator</span>(<span class="params">Mediator mediator</span>)</span></span><br><span class="line">		&#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator = mediator;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 接收訊息後如何反應</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span>;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 傳送訊息給特定物件</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>具體Colleague</strong></p>
-<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="comment">//具體colleague</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">DesignTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;設計團隊收到訊息: &quot;</span> + msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;設計團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">EngineeringTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;工程師團隊收到訊息: &quot;</span>+msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;工程師團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">MarketingTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;產銷團隊收到訊息: &quot;</span> + msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;產銷團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ServiceTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;客服團隊收到訊息: &quot;</span> + msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;客服團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>Client端使用</strong></p>
-<figure class="highlight c#"><figcaption><span>Program.cs</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.mediator;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 具體mediator</span></span><br><span class="line">ProductManager pm = <span class="keyword">new</span> ProductManager();</span><br><span class="line"></span><br><span class="line"><span class="comment">//具體colleague</span></span><br><span class="line">Colleague ds = <span class="keyword">new</span> DesignTeam();</span><br><span class="line">Colleague eg = <span class="keyword">new</span> EngineeringTeam();</span><br><span class="line">Colleague mk = <span class="keyword">new</span> MarketingTeam();</span><br><span class="line">Colleague sv = <span class="keyword">new</span> ServiceTeam();</span><br><span class="line"></span><br><span class="line"><span class="comment">//註冊進入mediator</span></span><br><span class="line">pm.Register(teamType.DESIGN, ds);</span><br><span class="line">pm.Register(teamType.ENGINEERING, eg);</span><br><span class="line">pm.Register(teamType.MARKETING, mk);</span><br><span class="line">pm.Register(teamType.SERVICE, sv);</span><br><span class="line"></span><br><span class="line"><span class="comment">//執行</span></span><br><span class="line">ds.send(teamType.ENGINEERING, <span class="string">&quot;UI設計稿完成&quot;</span>);</span><br><span class="line">Console.WriteLine(String.Concat(Enumerable.Repeat(<span class="string">&quot;-&quot;</span>, <span class="number">10</span>)));</span><br><span class="line"></span><br><span class="line">eg.send(teamType.MARKETING, <span class="string">&quot;軟體開發完成&quot;</span>);</span><br><span class="line">Console.WriteLine(String.Concat(Enumerable.Repeat(<span class="string">&quot;-&quot;</span>, <span class="number">10</span>)));</span><br><span class="line"></span><br><span class="line">Console.ReadKey();</span><br></pre></td></tr></table></figure>
-
-<p><strong>結果</strong><br><img data-src="/images/posts/mediator-pattern/result.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<h2 id="疑問"><a href="#疑問" class="headerlink" title="疑問"></a>疑問</h2><ol>
-<li>DI不也是讓物件間解耦嗎？他們有什麼不同？<ol>
-<li>應用場景不同：Mediator模式主要用於解耦合多個相互協作的物件，特別是在複雜的互動場景中。DI則主要用於管理和注入依賴關係，以實現鬆耦合和可測試的程式碼。</li>
-<li>解決不同問題：Mediator解決的是物件之間的協作和通信問題，而DI解決的是依賴關係管理的問題。</li>
-<li>實現方式不同：Mediator需要一個中介者來協調物件之間的互動，通常由一個專門的Mediator類別來實現。DI則是一種設計模式，它可以與不同語言和框架一起使用，並不需要特定的中介者類別。</li>
-</ol>
-</li>
-</ol>
-<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><ul>
-<li>定義:<br>  定義一個 Mediator 物件用來封裝一組物件的互動方式。Mediator 藉由避免物件間相互直接的引用，從而降低它們之間的耦合程度，並且可以讓我們獨立地改變這些物件間的互動方式。</li>
-<li>成員<ul>
-<li>抽象Mediator: 定義方法, 轉接訊息</li>
-<li>具體Mediator: 實作抽象Mediator, Colleague (擁有0~多個Colleague)</li>
-<li>抽象Colleague: 定義方法, 聚合抽象Mediator (Colleague擁有Mediator)</li>
-<li>具體Colleague: 實作抽象Mediator</li>
-</ul>
-</li>
-<li>優點 <ol>
-<li>降低物件之間的耦合性，讓物件容易重複使用。</li>
-<li>物件之間一對多的關聯性變成一對一，提高系統靈活性，也讓整體容易維護及擴充。</li>
-</ol>
-</li>
-<li>缺點 (Trade-off)<ol>
-<li>同事類別過多時，中介者責任很大，會使系統提升一定程度的複雜性。</li>
-</ol>
-</li>
-</ul>
 ]]></content>
       <categories>
         <category>OOP</category>
-        <category>Design Pattern</category>
       </categories>
       <tags>
         <tag>OOP</tag>
-        <tag>.NET C#</tag>
-        <tag>design-pattern</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>[NLP][ML] Adapters &amp; LoRA</title>
-    <url>/posts/38266156/</url>
-    <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>In this article, I will provide an introduction to adapters and LoRA, including their <strong>definitions, purposes, and functions.</strong> I will also explore their various <strong>applications</strong> and, lastly, delve into the distinctions that set them apart(the <strong>differences between them</strong>).</p>
-<span id="more"></span>
-
-<h1 id="Adapter"><a href="#Adapter" class="headerlink" title="Adapter"></a>Adapter</h1><h2 id="What-are-Adapters"><a href="#What-are-Adapters" class="headerlink" title="What are Adapters?"></a>What are Adapters?</h2><p>According to <span class="exturl" data-url="aHR0cHM6Ly93d3cuYW5hbHl0aWNzdmlkaHlhLmNvbS9ibG9nLzIwMjMvMDQvdHJhaW5pbmctYW4tYWRhcHRlci1mb3Itcm9iZXJ0YS1tb2RlbC1mb3Itc2VxdWVuY2UtY2xhc3NpZmljYXRpb24tdGFzay8jOn46dGV4dD1BZGFwdGVycyUyMGFyZSUyMGxpZ2h0d2VpZ2h0JTIwYWx0ZXJuYXRpdmVzJTIwdG8sbW9kdWxhciUyMGFwcHJvYWNoJTIwdG8lMjB0cmFuc2ZlciUyMGxlYXJuaW5nLg==">this article<i class="fa fa-external-link-alt"></i></span><br>We can give the definition of adapters:</p>
-<blockquote>
-<p><strong>Adapters are lightweight alternatives to fully fine-tuned pre-trained models.</strong><br>Currently, <strong>adapters are implemented as small feedforward neural networks</strong> that are <strong>inserted between layers of a pre-trained model.</strong><br>They provide a <strong>parameter-efficient, computationally efficient, and modular approach</strong> to transfer learning. The following image shows added adapter.</p>
-</blockquote>
-<p>The image below clearly shows the usage flow of apadters<br>(Source: <span class="exturl" data-url="aHR0cHM6Ly9hZGFwdGVyaHViLm1sLw==">AdapterHub<i class="fa fa-external-link-alt"></i></span>)<br><img data-src="/images/posts/NLP-series/adapter.gif" 
-style="width: 70%; margin: 15px auto;"></p>
-<blockquote>
-<p>During training, <strong>all the weights of the pre-trained model are frozen</strong> such that only the adapter weights<br>are updated, resulting in <strong>modular knowledge representations</strong>. They can be easily <strong>extracted, interchanged,</strong><br><strong>independently distributed, and dynamically plugged</strong> into a language model. These properties highlight the<br>potential of adapters in advancing the NLP field astronomically.</p>
-</blockquote>
-<h2 id="What-is-the-purpose-and-function-of-adapters"><a href="#What-is-the-purpose-and-function-of-adapters" class="headerlink" title="What is the purpose and function of adapters?"></a>What is the purpose and function of adapters?</h2><ol>
-<li>Purpose:<br>Large Language Models are computationally expensive and memory-intensive. <strong>Fine-tuning the entire model for each specific task</strong> can be impractical due to resource constraints. Adapters provide a solution by allowing for more efficient and <strong>targeted modifications</strong> to the model for different tasks. This approach <strong>saves both computational power and memory</strong>, enabling the deployment of a single pre-trained model for multiple tasks.</li>
-<li>Functions:<ol>
-<li><p>Efficient Fine-tuning: Instead of fine-tuning the entire model, adapters enable <strong>fine-tuning only a small subset of parameters</strong> related to a specific task. This fine-tuning process is faster and requires fewer resources.</p>
-</li>
-<li><p>Task-specific Modifications: Adapters allow you to add <strong>task-specific layers or modifications</strong> to the pre-trained model without altering the core architecture. This makes it easier to adapt the model for various tasks like text classification, named entity recognition, sentiment analysis, etc.</p>
-</li>
-<li><p>Versatility: With adapters, a single pre-trained LLM can be <strong>adapted for a wide range of tasks.</strong> This versatility is beneficial in scenarios where deploying and maintaining separate models for each task might be impractical.</p>
-</li>
-<li><p>Interoperability: Adapters enable the combination of pre-trained models with task-specific modifications in a standardized way. This facilitates sharing, collaboration, and research in the NLP community.</p>
-</li>
-<li><p>Transfer Learning: Adapters enhance the <strong>effectiveness of transfer learning.</strong> Models pre-trained on <strong>large and diverse datasets can be fine-tuned on smaller</strong>, task-specific datasets using adapters, improving performance on specific tasks.</p>
-</li>
-<li><p>Incremental Updates: Adapters allow for easy updates to the model. Instead of retraining the entire model, only the adapters related to a specific task need to be fine-tuned when new data or requirements arise.</p>
-</li>
-</ol>
-</li>
-</ol>
-<p>Overall, adapters are a <strong>mechanism that strikes a balance between the benefits of fine-tuning for specific tasks and the efficiency of reusing pre-trained LLMs.</strong> They enable the NLP community to leverage the power of these large models while tailoring them to a diverse set of applications.</p>
-<h2 id="The-applications-of-adapters"><a href="#The-applications-of-adapters" class="headerlink" title="The applications of adapters"></a>The applications of adapters</h2><p>I list some practical applications that can use adapters to enhance.</p>
-<ol>
-<li><p>Efficient Task Adaptation: Adapters make it possible to fine-tune a pretrained model for specific tasks with minimal computational resources and time. This is particularly useful for industries that require quick adaptation to changing trends or requirements.</p>
-</li>
-<li><p>Multilingual Applications: Adapters can be used to enable a pretrained model to perform tasks in multiple languages. This is valuable for businesses operating in global markets.</p>
-</li>
-<li><p>Domain-Specific NLP: Adapting models with domain-specific adapters (e.g., medical, legal, financial) enhances their performance on tasks specific to those domains.</p>
-</li>
-<li><p>Personalization: Adapters can be used to personalize a general-purpose model for individual users or contexts, leading to more relevant and tailored responses.</p>
-</li>
-</ol>
-<h1 id="LoRA-Low-Rank-Adaptation"><a href="#LoRA-Low-Rank-Adaptation" class="headerlink" title="LoRA (Low-Rank Adaptation)"></a>LoRA (Low-Rank Adaptation)</h1><h2 id="What-is-LoRA"><a href="#What-is-LoRA" class="headerlink" title="What is LoRA?"></a>What is LoRA?</h2><ul>
-<li>Low-Rank Adaptation, or LoRA, is proposed, which <strong>freezes the pre-trained model weights</strong> and <strong>injects trainable rank decomposition matrices into each layer</strong> of the <strong>Transformer</strong> architecture, greatly <strong>reducing the number of trainable parameters</strong> for downstream tasks.</li>
-</ul>
-<p>And let’s see the full fine-tuning definition:</p>
-<ul>
-<li>Full fine-tuning LLM, which <strong>retrains all model parameters</strong>, becomes less feasible. Using GPT-3 175B as an example — deploying independent instances of fine-tuned models, each with 175B parameters, is prohibitively expensive.</li>
-</ul>
-<p>In <span class="exturl" data-url="aHR0cHM6Ly9iZHRlY2h0YWxrcy5jb20vMjAyMy8wNS8yMi93aGF0LWlzLWxvcmEv">this article<i class="fa fa-external-link-alt"></i></span>, it clearly compare the fine-tuning and LoRA approaches. And in <span class="exturl" data-url="aHR0cHM6Ly9zaC10c2FuZy5tZWRpdW0uY29tL2JyaWVmLXJldmlldy1sb3JhLWxvdy1yYW5rLWFkYXB0YXRpb24tb2YtbGFyZ2UtbGFuZ3VhZ2UtbW9kZWxzLWZhZjVkZGQ1ODAyZiM6fjp0ZXh0PUxvUkElMkMlMjBMb3clMkRSYW5rJTIwTExNJTIwRmluZSUyRFR1bmluZyUyQyUyMFJlZHVjZSUyMFJlcXVpcmVkJTIwTWVtb3J5JnRleHQ9TG93JTJEUmFuayUyMEFkYXB0YXRpb24lMkMlMjBvciUyMExvUkEsdHJhaW5hYmxlJTIwcGFyYW1ldGVycyUyMGZvciUyMGRvd25zdHJlYW0lMjB0YXNrcy4=">this article<i class="fa fa-external-link-alt"></i></span>, it dives more into the machanism of LoRA. If you wnat to know the full knowledge, you can refer to <span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzIxMDYuMDk2ODU=">the paper of LoRA<i class="fa fa-external-link-alt"></i></span>.<br>In the next sections, I will introduce more ideas of LoRA based on these references. Note that I only organize the contents of these articles and add some mark and note on my own.</p>
-<hr>
-<h3 id="How-does-fine-tuning-LLMs-work"><a href="#How-does-fine-tuning-LLMs-work" class="headerlink" title="How does fine-tuning LLMs work?"></a>How does fine-tuning LLMs work?</h3><p>Open-source LLMs such as LLaMA,Vicuna are foundation models that <strong>have been pre-trained on hundreds of billions of words.</strong> Developers and machine learning engineers can download the model with the <strong>pre-trained weights</strong> and <strong>fine-tune it for downstream tasks</strong> such as <span class="exturl" data-url="aHR0cHM6Ly9iZHRlY2h0YWxrcy5jb20vMjAyMy8wMS8xNi93aGF0LWlzLXJsaGYv">instruction following<i class="fa fa-external-link-alt"></i></span>.</p>
-<p>The model is provided input from the <strong>fine-tuning dataset</strong>. It then <strong>predicts the next tokens and compares its output with the ground truth.</strong> It then <strong>adjusts the weights(gradient)</strong> to correct its predictions. By doing this over and over, the LLM becomes fine-tuned to the downstream task.</p>
-<p><img data-src="/images/posts/NLP-series/LLM-fintune.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>(Source: <span class="exturl" data-url="aHR0cHM6Ly9iZHRlY2h0YWxrcy5jb20vMjAyMy8wNS8yMi93aGF0LWlzLWxvcmEv">What is low-rank adaptation (LoRA)?<i class="fa fa-external-link-alt"></i></span>)</p>
-<h3 id="The-idea-of-LoRA"><a href="#The-idea-of-LoRA" class="headerlink" title="The idea of LoRA"></a>The idea of LoRA</h3><p>Now, let’s make a small modification to the fine-tuning process. In this new method, we <strong>freeze the original weights of the model and don’t modify them during the fine-tuning process.</strong> Instead, we apply the modifications to a <strong>separate set of weights</strong> and we add their new values to the original parameters. Let’s call these two sets <strong>“pre-trained” and “fine-tuned” weights</strong>.</p>
-<blockquote>
-<p><strong>Separating the pre-trained and fine-tuned parameters is an important part of LoRA.</strong><br><img data-src="/images/posts/NLP-series/LoRA-1.png" 
-style="width: 70%; margin: 15px auto;"></p>
-</blockquote>
-<h4 id="Low-rank-adaptation"><a href="#Low-rank-adaptation" class="headerlink" title="Low-rank adaptation"></a>Low-rank adaptation</h4><p>Before moving on to LoRA, let’s think about our <strong>model parameters as very large matrices</strong>. If you remember your linear algebra class, <strong>matrices can form vector spaces</strong>. In this case, we’re talking about a <strong>very large vector space with many dimensions</strong> that models language.</p>
-<p>Every matrix has a <strong>“rank”</strong>, which is <strong>the number of linearly independent columns it has</strong>. If a column is linearly independent, it means that <strong>it can’t be represented as a combination of other columns in the matrix</strong>. On the other hand, a dependent column is one that can be represented as a combination of one or more columns in the same matrix. You can remove dependent columns from a matrix without losing information.</p>
-<p>LoRA, proposed in a <span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzIxMDYuMDk2ODU=">paper<i class="fa fa-external-link-alt"></i></span> by researchers at Microsoft, suggests that when fine-tuning an LLM for a downstream task, <strong>you don’t need the full-rank weight matrix.</strong> They proposed that you could preserve most of the learning capacity of the model while <strong>reducing the dimension of the downstream parameters.</strong> (This is why it makes sense to separate the pre-trained and fine-tuned weights.)</p>
-<hr>
-<p><img data-src="/images/posts/NLP-series/LoRA-2.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>Basically, in LoRA, you create <strong>two downstream weight matrices</strong>. One <strong>transforms the input parameters from the original dimension to the low-rank dimension</strong>. And the second matrix <strong>transforms the low-rank data to the output dimensions of the original model</strong>.</p>
-<p>During training, <strong>modifications are made to the LoRA parameters</strong>, which are now much fewer than the original weights. This is why they can be trained much faster and at a fraction of the cost of doing full fine-tuning. <strong>At inference time, the output of LoRA is added to the pre-trained parameters to calculate the final values.</strong></p>
-<h4 id="More-detail"><a href="#More-detail" class="headerlink" title="More detail"></a>More detail</h4><p><img data-src="/images/posts/NLP-series/LoRA-3.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<ul>
-<li>For a pre-trained weight matrix $W_0$, its update is constrained by representing the latter with a low-rank decomposition:</li>
-</ul>
-<p>$$\begin{equation}<br>   W_0 + \Delta{W} &#x3D; W_0 + BA<br>\end{equation}$$</p>
-<ul>
-<li>During training, <strong>$W_0$ is frozen</strong> and does not receive gradient updates, while <strong>A and B contain trainable parameters</strong>.</li>
-<li>For $h&#x3D;W_0$, the modified forward pass yields:</li>
-</ul>
-<p>$$\begin{equation}<br>   h &#x3D; W_0x + \Delta{W}x &#x3D; W_0x + BAx<br>\end{equation}$$</p>
-<ul>
-<li><p>A random <strong>Gaussian initialization is used for A</strong> and <strong>zero is used for B</strong>, so $\Delta{W}&#x3D;BA$ is zero at the beginning of training. (The method of initializing the weights)</p>
-</li>
-<li><p>One of the advantages is that when deployed in production, we can <strong>explicitly compute and store $W&#x3D;W_0+BA$</strong> and perform inference as usual. <strong>No additional latency</strong> compared to other methods, such as appending more layers.</p>
-</li>
-</ul>
-<p>You can see the implementation and more detail of LoRA in <span class="exturl" data-url="aHR0cHM6Ly95b3V0dS5iZS9kQS1OaEN0cnJWRQ==">this video<i class="fa fa-external-link-alt"></i></span><br>and <span class="exturl" data-url="aHR0cHM6Ly9ibG9nLm1sNi5ldS9sb3ctcmFuay1hZGFwdGF0aW9uLWEtdGVjaG5pY2FsLWRlZXAtZGl2ZS03ODJkZWM5OTU3NzI=">this article<i class="fa fa-external-link-alt"></i></span>.</p>
-<h2 id="What-is-the-purpose-and-function-of-LoRA"><a href="#What-is-the-purpose-and-function-of-LoRA" class="headerlink" title="What is the purpose and function of LoRA?"></a>What is the purpose and function of LoRA?</h2><ul>
-<li>Purpose<ul>
-<li>The purpose of LoRA is to make it easier and more efficient to fine-tune LLMs for downstream tasks.</li>
-</ul>
-</li>
-<li>Function<ul>
-<li>The function of LoRA is to decompose the LLM into a low-rank representation and then adapt this representation to the target task.</li>
-<li>Here are the benefits:</li>
-</ul>
-</li>
-<li>Reduced number of parameters: The low-rank representation has a much smaller number of parameters than the original LLM, which can make it faster to train and easier to deploy.</li>
-<li>Improved performance: The low-rank representation is able to capture the most important features of the LLM, which can lead to improved performance on the downstream task.</li>
-</ul>
-<h2 id="The-applications-of-LoRA"><a href="#The-applications-of-LoRA" class="headerlink" title="The applications of LoRA"></a>The applications of LoRA</h2><ul>
-<li>Fine-tuning large language models for downstream tasks:<br>LoRA can be used to fine-tune large language models (LLMs) for a variety of downstream tasks, such as question answering, summarization, and translation. This can <strong>make LLMs more accessible and easier to use for a wider range of applications.</strong></li>
-<li>Improving the efficiency of machine learning models:<br> LoRA can be used to improve the efficiency of machine learning models by reducing the number of parameters. This can <strong>make models faster to train and easier to deploy</strong>.</li>
-<li>Compressing large datasets:<br>LoRA can be used to <strong>compress large datasets by representing them in a low-rank format</strong>. This can make datasets easier to <strong>store and transmit</strong>.</li>
-<li>Improving the security of machine learning models:<br>LoRA can be used to improve the security of machine learning models by making them more resistant to adversarial attacks.</li>
-</ul>
-<h1 id="Differences-between-adapter-and-LoRA"><a href="#Differences-between-adapter-and-LoRA" class="headerlink" title="Differences between adapter and LoRA"></a>Differences between adapter and LoRA</h1><table>
-   <thead>
-      <th>Feature</th>
-      <th>Adapter</th>
-      <th>LoRA</th>
-   </thead>
-   <tbody>
-      <tr>
-         <td>Approach</td>
-         <td>Adds additional layers to the pretrained model	</td>
-         <td>Decomposes the pretrained model into a low-rank representation
-</td>
-      </tr>
-      <tr>
-         <td>Parameters</td>
-         <td>Adds a small number of parameters to the pretrained model</td>
-         <td>Reduces the number of parameters in the pretrained model</td>
-      </tr>
-      <tr>
-         <td>Performance</td>
-         <td>Effective for a variety of downstream tasks</td>
-         <td>Particularly effective for tasks that require a large number of parameters</td>
-      </tr>
-      <tr>
-         <td>Speed</td>
-         <td>Can be faster to train than LoRA</td>
-         <td>Can be faster at inference time</td>
-      </tr>
-      <tr>
-         <td>Memory usage</td>
-         <td>Can use more memory than LoRA</td>
-         <td></td>
-      </tr>
-   </tbody>
-</table>
-
-<p>In general, adapters are a good choice for tasks that require a small number of parameters and can be trained quickly, while LoRA is a good choice for tasks that require a large number of parameters and need to be fast at inference time.</p>
-<h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><ul>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuYW5hbHl0aWNzdmlkaHlhLmNvbS9ibG9nLzIwMjMvMDQvdHJhaW5pbmctYW4tYWRhcHRlci1mb3Itcm9iZXJ0YS1tb2RlbC1mb3Itc2VxdWVuY2UtY2xhc3NpZmljYXRpb24tdGFzay8jOn46dGV4dD1BZGFwdGVycyUyMGFyZSUyMGxpZ2h0d2VpZ2h0JTIwYWx0ZXJuYXRpdmVzJTIwdG8sbW9kdWxhciUyMGFwcHJvYWNoJTIwdG8lMjB0cmFuc2ZlciUyMGxlYXJuaW5nLg==">(Recommend) Training an Adapter for RoBERTa Model for Sequence Classification Task<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9hZGFwdGVyaHViLm1sLw==">AdapterHub<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9kb2NzL2RpZmZ1c2Vycy90cmFpbmluZy9sb3JhIzp+OnRleHQ9TG93JTJEUmFuayUyMEFkYXB0YXRpb24lMjBvZiUyMExhcmdlJTIwTGFuZ3VhZ2UlMjBNb2RlbHMlMjAoTG9SQSklMjBpcyx0cmFpbnMlMjB0aG9zZSUyMG5ld2x5JTIwYWRkZWQlMjB3ZWlnaHRzLg==">Low-Rank Adaptation of Large Language Models (LoRA) (Huggingface)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9zaC10c2FuZy5tZWRpdW0uY29tL2JyaWVmLXJldmlldy1sb3JhLWxvdy1yYW5rLWFkYXB0YXRpb24tb2YtbGFyZ2UtbGFuZ3VhZ2UtbW9kZWxzLWZhZjVkZGQ1ODAyZiM6fjp0ZXh0PUxvUkElMkMlMjBMb3clMkRSYW5rJTIwTExNJTIwRmluZSUyRFR1bmluZyUyQyUyMFJlZHVjZSUyMFJlcXVpcmVkJTIwTWVtb3J5JnRleHQ9TG93JTJEUmFuayUyMEFkYXB0YXRpb24lMkMlMjBvciUyMExvUkEsdHJhaW5hYmxlJTIwcGFyYW1ldGVycyUyMGZvciUyMGRvd25zdHJlYW0lMjB0YXNrcy4=">Brief Review — LoRA: Low-Rank Adaptation of Large Language Models<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9iZHRlY2h0YWxrcy5jb20vMjAyMy8wNS8yMi93aGF0LWlzLWxvcmEv">What is low-rank adaptation (LoRA)?<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzIxMDYuMDk2ODU=">LoRA: Low-Rank Adaptation of Large Language Models (Paper)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9ibG9nLm1sNi5ldS9sb3ctcmFuay1hZGFwdGF0aW9uLWEtdGVjaG5pY2FsLWRlZXAtZGl2ZS03ODJkZWM5OTU3NzI=">(Recommend) Low Rank Adaptation: A Technical Deep Dive<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly95b3V0dS5iZS9kQS1OaEN0cnJWRQ==">Low-rank Adaption of Large Language Models: Explaining the Key Concepts Behind LoRA (Video)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1VczVaRnAxNlBhVQ==">Fine-tuning LLMs with PEFT and LoRA<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9ibG9nL3BlZnQ=">PEFT: Parameter-Efficient Fine-Tuning of Billion-Scale Models on Low-Resource Hardware<i class="fa fa-external-link-alt"></i></span></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>ML</tag>
-        <tag>AI</tag>
-        <tag>NLP</tag>
       </tags>
   </entry>
   <entry>
@@ -1307,6 +1197,35 @@ style="width: 70%; margin: 15px auto;"></p>
       </tags>
   </entry>
   <entry>
+    <title>AWS Global Infrastructure</title>
+    <url>/posts/3777980008/</url>
+    <content><![CDATA[<h1 id="Exploring-the-AWS-Global-Infrastructure"><a href="#Exploring-the-AWS-Global-Infrastructure" class="headerlink" title="Exploring the AWS Global Infrastructure"></a>Exploring the AWS Global Infrastructure</h1><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>In today’s digital landscape, ensuring the fault tolerance, stability, and high availability of applications is paramount. Amazon Web Services (AWS) provides a robust global infrastructure designed to meet these needs. This article explores the key components of the AWS global infrastructure, including Regions, Availability Zones, Local Zones, and Points of Presence.</p>
+<span id="more"></span>
+
+<h2 id="AWS-Regions-Geographical-Isolation-for-Fault-Tolerance"><a href="#AWS-Regions-Geographical-Isolation-for-Fault-Tolerance" class="headerlink" title="AWS Regions: Geographical Isolation for Fault Tolerance"></a>AWS Regions: Geographical Isolation for Fault Tolerance</h2><h3 id="Isolation-and-Data-Residency"><a href="#Isolation-and-Data-Residency" class="headerlink" title="Isolation and Data Residency"></a>Isolation and Data Residency</h3><p>AWS Regions are isolated geographic areas that enhance fault tolerance and stability. Each Region operates independently, and resources are not automatically replicated across Regions. This design ensures that data stored in one Region stays within that Region unless explicitly replicated, aiding compliance with regulatory requirements and optimizing network latency.</p>
+<h3 id="Service-Availability"><a href="#Service-Availability" class="headerlink" title="Service Availability"></a>Service Availability</h3><p>Not all AWS services are available in every Region. To check which services are offered in a specific Region, you can refer to the <span class="exturl" data-url="aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9hYm91dC1hd3MvZ2xvYmFsLWluZnJhc3RydWN0dXJlL3JlZ2lvbmFsLXByb2R1Y3Qtc2VydmljZXMv">AWS Region Table<i class="fa fa-external-link-alt"></i></span>.</p>
+<h2 id="Availability-Zones-Building-Blocks-of-Resilient-Applications"><a href="#Availability-Zones-Building-Blocks-of-Resilient-Applications" class="headerlink" title="Availability Zones: Building Blocks of Resilient Applications"></a>Availability Zones: Building Blocks of Resilient Applications</h2><h3 id="Structure-and-Fault-Isolation"><a href="#Structure-and-Fault-Isolation" class="headerlink" title="Structure and Fault Isolation"></a>Structure and Fault Isolation</h3><p>Each AWS Region consists of multiple Availability Zones (AZs). An AZ includes one or more data centers designed to be independent failure zones. These zones are physically separated, reducing the risk of simultaneous failure due to localized events.</p>
+<h3 id="Power-and-Connectivity"><a href="#Power-and-Connectivity" class="headerlink" title="Power and Connectivity"></a>Power and Connectivity</h3><p>Availability Zones have their own power supplies and networking connections, further enhancing fault isolation. AWS recommends distributing applications across multiple AZs to achieve high availability and resilience.</p>
+<h2 id="Local-Zones-Reducing-Latency-for-End-Users"><a href="#Local-Zones-Reducing-Latency-for-End-Users" class="headerlink" title="Local Zones: Reducing Latency for End-Users"></a>Local Zones: Reducing Latency for End-Users</h2><h3 id="Purpose-and-Use-Cases"><a href="#Purpose-and-Use-Cases" class="headerlink" title="Purpose and Use Cases"></a>Purpose and Use Cases</h3><p>AWS Local Zones extend AWS Regions by bringing services closer to large population centers. This reduces latency for end-users, making them ideal for applications requiring real-time processing, such as media content creation and gaming.</p>
+<h3 id="Supported-Services-and-Connectivity"><a href="#Supported-Services-and-Connectivity" class="headerlink" title="Supported Services and Connectivity"></a>Supported Services and Connectivity</h3><p>Local Zones support a variety of AWS services, including Amazon EC2, Amazon VPC, and Amazon EBS. They provide a high-bandwidth, secure connection to other AWS services in the Region, ensuring seamless integration and performance.</p>
+<h2 id="Data-Centers-The-Backbone-of-AWS-Infrastructure"><a href="#Data-Centers-The-Backbone-of-AWS-Infrastructure" class="headerlink" title="Data Centers: The Backbone of AWS Infrastructure"></a>Data Centers: The Backbone of AWS Infrastructure</h2><h3 id="High-Availability-and-Redundancy"><a href="#High-Availability-and-Redundancy" class="headerlink" title="High Availability and Redundancy"></a>High Availability and Redundancy</h3><p>AWS data centers are the physical locations where data resides and processing occurs. Designed with high availability in mind, they use custom network equipment and protocols. Core applications are deployed in an N+1 configuration, ensuring load balancing and failover capabilities.</p>
+<h2 id="Points-of-Presence-Enhancing-Content-Delivery"><a href="#Points-of-Presence-Enhancing-Content-Delivery" class="headerlink" title="Points of Presence: Enhancing Content Delivery"></a>Points of Presence: Enhancing Content Delivery</h2><h3 id="Content-Delivery-Network-CDN"><a href="#Content-Delivery-Network-CDN" class="headerlink" title="Content Delivery Network (CDN)"></a>Content Delivery Network (CDN)</h3><p>AWS uses Points of Presence (PoPs) to deliver content with low latency through services like Amazon CloudFront and Amazon Route 53. These PoPs include Edge Locations and Regional Edge Caches, which cache content closer to users, improving performance and reducing the load on origin servers.</p>
+<h2 id="Key-Takeaways"><a href="#Key-Takeaways" class="headerlink" title="Key Takeaways"></a>Key Takeaways</h2><ul>
+<li><strong>Regions</strong>: Choose based on compliance and latency requirements.</li>
+<li><strong>Availability Zones</strong>: Utilize multiple AZs for fault isolation and redundancy.</li>
+<li><strong>Local Zones</strong>: Reduce latency for latency-sensitive applications.</li>
+<li><strong>Points of Presence</strong>: Enhance content delivery and performance.</li>
+</ul>
+<p>By leveraging the AWS global infrastructure, you can build robust, high-performing, and resilient applications that meet your business needs.</p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>Understanding the components of the AWS global infrastructure is crucial for designing effective cloud solutions. By strategically utilizing Regions, Availability Zones, Local Zones, and Points of Presence, you can optimize your applications for performance, reliability, and compliance.</p>
+<p>For more information on AWS global infrastructure, visit the <span class="exturl" data-url="aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9hYm91dC1hd3MvZ2xvYmFsLWluZnJhc3RydWN0dXJlLw==">AWS Global Infrastructure page<i class="fa fa-external-link-alt"></i></span>.</p>
+]]></content>
+      <tags>
+        <tag>cloud</tag>
+        <tag>aws</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Understanding CIDR - A Guide to Classless Inter-Domain Routing</title>
     <url>/posts/1789986274/</url>
     <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Classless Inter-Domain Routing (CIDR) revolutionized IP address allocation and routing on the internet. By moving away from the rigid class-based system (Classes A, B, and C), CIDR introduced a more flexible and efficient method for managing IP spaces. This article delves into what CIDR is, how it works, and how to compute CIDR blocks for network planning.</p>
@@ -1355,37 +1274,8 @@ style="width: 70%; margin: 15px auto;"></p>
 </ul>
 ]]></content>
       <tags>
+        <tag>cloud</tag>
         <tag>networking</tag>
-        <tag>cloud</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>AWS Global Infrastructure</title>
-    <url>/posts/3777980008/</url>
-    <content><![CDATA[<h1 id="Exploring-the-AWS-Global-Infrastructure"><a href="#Exploring-the-AWS-Global-Infrastructure" class="headerlink" title="Exploring the AWS Global Infrastructure"></a>Exploring the AWS Global Infrastructure</h1><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>In today’s digital landscape, ensuring the fault tolerance, stability, and high availability of applications is paramount. Amazon Web Services (AWS) provides a robust global infrastructure designed to meet these needs. This article explores the key components of the AWS global infrastructure, including Regions, Availability Zones, Local Zones, and Points of Presence.</p>
-<span id="more"></span>
-
-<h2 id="AWS-Regions-Geographical-Isolation-for-Fault-Tolerance"><a href="#AWS-Regions-Geographical-Isolation-for-Fault-Tolerance" class="headerlink" title="AWS Regions: Geographical Isolation for Fault Tolerance"></a>AWS Regions: Geographical Isolation for Fault Tolerance</h2><h3 id="Isolation-and-Data-Residency"><a href="#Isolation-and-Data-Residency" class="headerlink" title="Isolation and Data Residency"></a>Isolation and Data Residency</h3><p>AWS Regions are isolated geographic areas that enhance fault tolerance and stability. Each Region operates independently, and resources are not automatically replicated across Regions. This design ensures that data stored in one Region stays within that Region unless explicitly replicated, aiding compliance with regulatory requirements and optimizing network latency.</p>
-<h3 id="Service-Availability"><a href="#Service-Availability" class="headerlink" title="Service Availability"></a>Service Availability</h3><p>Not all AWS services are available in every Region. To check which services are offered in a specific Region, you can refer to the <span class="exturl" data-url="aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9hYm91dC1hd3MvZ2xvYmFsLWluZnJhc3RydWN0dXJlL3JlZ2lvbmFsLXByb2R1Y3Qtc2VydmljZXMv">AWS Region Table<i class="fa fa-external-link-alt"></i></span>.</p>
-<h2 id="Availability-Zones-Building-Blocks-of-Resilient-Applications"><a href="#Availability-Zones-Building-Blocks-of-Resilient-Applications" class="headerlink" title="Availability Zones: Building Blocks of Resilient Applications"></a>Availability Zones: Building Blocks of Resilient Applications</h2><h3 id="Structure-and-Fault-Isolation"><a href="#Structure-and-Fault-Isolation" class="headerlink" title="Structure and Fault Isolation"></a>Structure and Fault Isolation</h3><p>Each AWS Region consists of multiple Availability Zones (AZs). An AZ includes one or more data centers designed to be independent failure zones. These zones are physically separated, reducing the risk of simultaneous failure due to localized events.</p>
-<h3 id="Power-and-Connectivity"><a href="#Power-and-Connectivity" class="headerlink" title="Power and Connectivity"></a>Power and Connectivity</h3><p>Availability Zones have their own power supplies and networking connections, further enhancing fault isolation. AWS recommends distributing applications across multiple AZs to achieve high availability and resilience.</p>
-<h2 id="Local-Zones-Reducing-Latency-for-End-Users"><a href="#Local-Zones-Reducing-Latency-for-End-Users" class="headerlink" title="Local Zones: Reducing Latency for End-Users"></a>Local Zones: Reducing Latency for End-Users</h2><h3 id="Purpose-and-Use-Cases"><a href="#Purpose-and-Use-Cases" class="headerlink" title="Purpose and Use Cases"></a>Purpose and Use Cases</h3><p>AWS Local Zones extend AWS Regions by bringing services closer to large population centers. This reduces latency for end-users, making them ideal for applications requiring real-time processing, such as media content creation and gaming.</p>
-<h3 id="Supported-Services-and-Connectivity"><a href="#Supported-Services-and-Connectivity" class="headerlink" title="Supported Services and Connectivity"></a>Supported Services and Connectivity</h3><p>Local Zones support a variety of AWS services, including Amazon EC2, Amazon VPC, and Amazon EBS. They provide a high-bandwidth, secure connection to other AWS services in the Region, ensuring seamless integration and performance.</p>
-<h2 id="Data-Centers-The-Backbone-of-AWS-Infrastructure"><a href="#Data-Centers-The-Backbone-of-AWS-Infrastructure" class="headerlink" title="Data Centers: The Backbone of AWS Infrastructure"></a>Data Centers: The Backbone of AWS Infrastructure</h2><h3 id="High-Availability-and-Redundancy"><a href="#High-Availability-and-Redundancy" class="headerlink" title="High Availability and Redundancy"></a>High Availability and Redundancy</h3><p>AWS data centers are the physical locations where data resides and processing occurs. Designed with high availability in mind, they use custom network equipment and protocols. Core applications are deployed in an N+1 configuration, ensuring load balancing and failover capabilities.</p>
-<h2 id="Points-of-Presence-Enhancing-Content-Delivery"><a href="#Points-of-Presence-Enhancing-Content-Delivery" class="headerlink" title="Points of Presence: Enhancing Content Delivery"></a>Points of Presence: Enhancing Content Delivery</h2><h3 id="Content-Delivery-Network-CDN"><a href="#Content-Delivery-Network-CDN" class="headerlink" title="Content Delivery Network (CDN)"></a>Content Delivery Network (CDN)</h3><p>AWS uses Points of Presence (PoPs) to deliver content with low latency through services like Amazon CloudFront and Amazon Route 53. These PoPs include Edge Locations and Regional Edge Caches, which cache content closer to users, improving performance and reducing the load on origin servers.</p>
-<h2 id="Key-Takeaways"><a href="#Key-Takeaways" class="headerlink" title="Key Takeaways"></a>Key Takeaways</h2><ul>
-<li><strong>Regions</strong>: Choose based on compliance and latency requirements.</li>
-<li><strong>Availability Zones</strong>: Utilize multiple AZs for fault isolation and redundancy.</li>
-<li><strong>Local Zones</strong>: Reduce latency for latency-sensitive applications.</li>
-<li><strong>Points of Presence</strong>: Enhance content delivery and performance.</li>
-</ul>
-<p>By leveraging the AWS global infrastructure, you can build robust, high-performing, and resilient applications that meet your business needs.</p>
-<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>Understanding the components of the AWS global infrastructure is crucial for designing effective cloud solutions. By strategically utilizing Regions, Availability Zones, Local Zones, and Points of Presence, you can optimize your applications for performance, reliability, and compliance.</p>
-<p>For more information on AWS global infrastructure, visit the <span class="exturl" data-url="aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9hYm91dC1hd3MvZ2xvYmFsLWluZnJhc3RydWN0dXJlLw==">AWS Global Infrastructure page<i class="fa fa-external-link-alt"></i></span>.</p>
-]]></content>
-      <tags>
-        <tag>cloud</tag>
-        <tag>aws</tag>
       </tags>
   </entry>
   <entry>
@@ -1569,6 +1459,172 @@ style="width: 70%; margin: 15px auto;"></p>
 </ul>
 <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference:"></a>Reference:</h1><ul>
 <li>AWS SkillBuilder CPE Course Module5</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>cloud</tag>
+        <tag>aws</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[AWS-CPE] Monitoring and Analytics</title>
+    <url>/posts/2332420025/</url>
+    <content><![CDATA[<style>
+    img{
+        width: 70%;
+    }
+</style>
+
+<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Effective monitoring is crucial for managing any business, whether it’s overseeing a coffee shop or monitoring cloud-based resources in AWS. Below, we detail how monitoring functions as a critical component of both daily business operations and technology management.</p>
+<span id="more"></span>
+
+<h1 id="Objectives"><a href="#Objectives" class="headerlink" title="Objectives"></a>Objectives</h1><ul>
+<li>Summarize approaches to monitoring your AWS environment.</li>
+<li>Describe the benefits of Amazon CloudWatch.</li>
+<li>Describe the benefits of AWS CloudTrail.</li>
+<li>Describe the benefits of AWS Trusted Advisor.</li>
+</ul>
+<h1 id="Amazon-CloudWatch"><a href="#Amazon-CloudWatch" class="headerlink" title="Amazon CloudWatch"></a>Amazon CloudWatch</h1><p>(monitoring resources)<br>As business operations, such as a coffee shop, become more complex, maintaining visibility and proactive management of systems becomes crucial. Amazon CloudWatch provides an extensive solution for monitoring AWS resources and applications, analogous to keeping a coffee shop’s equipment and operations running smoothly.</p>
+<h2 id="Key-Features-of-Amazon-CloudWatch"><a href="#Key-Features-of-Amazon-CloudWatch" class="headerlink" title="Key Features of Amazon CloudWatch"></a><strong>Key Features of Amazon CloudWatch</strong></h2><ul>
+<li><p><strong>Real-Time Monitoring and Metrics</strong>:</p>
+<ul>
+<li>Tracks various metrics related to AWS resources and applications, similar to monitoring espresso counts in a coffee machine.</li>
+<li><strong>Example</strong>: Monitoring the CPU utilization of an EC2 instance or tracking custom metrics like the number of espressos made.</li>
+</ul>
+</li>
+<li><p><strong>Alerts and Alarms</strong>:</p>
+<ul>
+<li><strong>CloudWatch Alarms</strong>: Set thresholds that, when exceeded, trigger notifications or actions, such as alerting staff to clean an espresso machine after 100 uses.</li>
+<li>Integrated with <strong>Amazon SNS</strong> for notifications, enabling actions like sending SMS messages to manage urgent tasks.</li>
+</ul>
+</li>
+<li><p><strong>Dashboards</strong>:</p>
+<ul>
+<li>Visual displays that aggregate metrics in real-time, allowing for a comprehensive view of all monitored resources.</li>
+<li>Useful for proactive monitoring and quick assessments of multiple resources at a glance.</li>
+</ul>
+</li>
+</ul>
+<p><img data-src="/images/posts/cloud/monitoring/cloud-watch.png"></img></p>
+<h2 id="Benefits-of-Using-CloudWatch"><a href="#Benefits-of-Using-CloudWatch" class="headerlink" title="Benefits of Using CloudWatch"></a><strong>Benefits of Using CloudWatch</strong></h2><ul>
+<li><p><strong>Centralized Metric Access</strong>:</p>
+<ul>
+<li>Gathers and displays metrics and logs from all AWS resources, applications, and on-premises servers in one location, enhancing system-wide visibility.</li>
+</ul>
+</li>
+<li><p><strong>Insight Across Infrastructure</strong>:</p>
+<ul>
+<li>Correlates and visualizes metrics and logs, facilitating quick identification and resolution of issues.</li>
+<li>Reduces mean time to resolution (MTTR) and improves total cost of ownership (TCO), analogous to optimizing machine maintenance in a coffee shop to free up resources for customer service.</li>
+</ul>
+</li>
+<li><p><strong>Operational Optimization</strong>:</p>
+<ul>
+<li>Aggregates usage data across resources like EC2 instances to gain operational insights and optimize utilization.</li>
+<li>Helps focus staff efforts on core activities rather than routine maintenance.</li>
+</ul>
+</li>
+</ul>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>Amazon CloudWatch equips businesses with the tools necessary to monitor, alert, and manage their AWS resources effectively. By analogizing with a coffee shop’s day-to-day operations, we can see how CloudWatch’s capabilities are essential for maintaining operational efficiency and ensuring resource optimization.</p>
+<h1 id="AWS-CloudTrail"><a href="#AWS-CloudTrail" class="headerlink" title="AWS CloudTrail"></a>AWS CloudTrail</h1><p>(monitoring transactions)<br>AWS CloudTrail is a vital tool for auditing and compliance in cloud environments, similar to how a cash register tracks and records every transaction in a store. This service ensures that all actions taken within AWS are logged, providing a reliable means of monitoring and verifying all changes made to the resources.</p>
+<h2 id="Key-Features-and-Benefits-of-AWS-CloudTrail"><a href="#Key-Features-and-Benefits-of-AWS-CloudTrail" class="headerlink" title="Key Features and Benefits of AWS CloudTrail"></a><strong>Key Features and Benefits of AWS CloudTrail</strong></h2><ul>
+<li><p><strong>Comprehensive Auditing</strong>:</p>
+<ul>
+<li>Every API request made within AWS is logged by CloudTrail, whether it’s launching an EC2 instance, modifying a DynamoDB table, or altering user permissions.</li>
+<li>Details recorded include the identity of the requester, the time of the API call, IP address, and both the response and new state of the system after the request.</li>
+</ul>
+</li>
+<li><p><strong>Security and Compliance</strong>:</p>
+<ul>
+<li><strong>Root-Level Monitoring</strong>: Tracks changes made by high-level administrators, crucial for ensuring that critical settings, like security group configurations, remain unaltered.</li>
+<li><strong>Audit Trails for Compliance</strong>: Provides auditors with definitive proof that no unauthorized changes have been made, especially to security settings.</li>
+</ul>
+</li>
+<li><p><strong>Data Integrity and Storage</strong>:</p>
+<ul>
+<li>Logs are stored indefinitely in secure S3 buckets, utilizing tamper-proof features like Vault Lock to ensure data integrity and provide a clear lineage of all actions recorded.</li>
+</ul>
+</li>
+</ul>
+<p><img data-src="/images/posts/cloud/monitoring/cloud-trail.png"></img></p>
+<h2 id="Conclusion-1"><a href="#Conclusion-1" class="headerlink" title="Conclusion"></a><strong>Conclusion</strong></h2><p>AWS CloudTrail is akin to a digital cash register for cloud environments, meticulously recording each transaction and ensuring that all data is accounted for and secure. This capability is essential for maintaining stringent compliance standards and proving system integrity to auditors, making it an indispensable tool for businesses operating in AWS.</p>
+<h2 id="Quick-Quiz"><a href="#Quick-Quiz" class="headerlink" title="Quick Quiz"></a>Quick Quiz</h2><p><img data-src="/images/posts/cloud/monitoring/trail-quiz.png"></img></p>
+<h1 id="AWS-Trusted-Advisor"><a href="#AWS-Trusted-Advisor" class="headerlink" title="AWS Trusted Advisor"></a>AWS Trusted Advisor</h1><p>AWS Trusted Advisor acts like an automated consultant for your AWS environment, analyzing your setup against best practices across five key areas. It provides insights and recommendations to enhance efficiency, security, and performance, much like an external advisor might offer suggestions to improve a business’s operations.</p>
+<h2 id="Key-Features-of-AWS-Trusted-Advisor"><a href="#Key-Features-of-AWS-Trusted-Advisor" class="headerlink" title="Key Features of AWS Trusted Advisor"></a><strong>Key Features of AWS Trusted Advisor</strong></h2><ul>
+<li><p><strong>Five Pillars of Evaluation</strong>:</p>
+<ul>
+<li><strong>Cost Optimization</strong>: Identifies underutilized resources to reduce expenses.</li>
+<li><strong>Performance</strong>: Assesses configurations to ensure optimal performance.</li>
+<li><strong>Security</strong>: Highlights security vulnerabilities like weak password policies or insufficient MFA.</li>
+<li><strong>Fault Tolerance</strong>: Checks for adequate backup measures and balanced deployment across AZs.</li>
+<li><strong>Service Limits</strong>: Alerts on approaching or reached AWS service limits.</li>
+</ul>
+</li>
+<li><p><strong>Dashboard and Alerts</strong>:</p>
+<ul>
+<li><strong>Interface</strong>: Provides a dashboard that categorizes issues into three levels: action recommended (red), investigation recommended (orange), and no problems (green).</li>
+<li><strong>Alert System</strong>: Can send email notifications to relevant contacts as issues are detected.</li>
+</ul>
+</li>
+</ul>
+<p><img data-src="/images/posts/cloud/monitoring/advisor.png"></img></p>
+<h2 id="Practical-Examples-and-Recommendations"><a href="#Practical-Examples-and-Recommendations" class="headerlink" title="Practical Examples and Recommendations"></a><strong>Practical Examples and Recommendations</strong></h2><ul>
+<li><p><strong>Cost Optimization Checks</strong>:</p>
+<ul>
+<li>Might indicate idle RDS instances or underutilized EC2 instances and EBS volumes, suggesting downsizing or termination to save costs.</li>
+</ul>
+</li>
+<li><p><strong>Security Checks</strong>:</p>
+<ul>
+<li>May alert on urgent security issues like open security groups, advocating for immediate action to close vulnerabilities.</li>
+</ul>
+</li>
+<li><p><strong>Fault Tolerance Advice</strong>:</p>
+<ul>
+<li>Could point out the absence of EBS volume snapshots, recommending creating backups to prevent data loss.</li>
+</ul>
+</li>
+<li><p><strong>Handling Service Limits</strong>:</p>
+<ul>
+<li>Informs when nearing or hitting AWS service caps, advising when to request limit increases.</li>
+</ul>
+</li>
+</ul>
+<h2 id="Conclusion-2"><a href="#Conclusion-2" class="headerlink" title="Conclusion"></a><strong>Conclusion</strong></h2><p>AWS Trusted Advisor is a comprehensive tool that provides critical insights and actionable advice across multiple aspects of your AWS environment. By enabling Trusted Advisor and setting up its alert systems, you can proactively manage and optimize your resources, ensuring a secure, efficient, and reliable AWS infrastructure.</p>
+<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p>Effective management of cloud environments requires a deep understanding of system operations and resource usage. AWS provides several tools to help businesses maintain efficient, secure, and compliant applications by offering insights into system behavior, user actions, and resource optimization.</p>
+<h2 id="Overview-of-Key-AWS-Monitoring-and-Analytical-Tools"><a href="#Overview-of-Key-AWS-Monitoring-and-Analytical-Tools" class="headerlink" title="Overview of Key AWS Monitoring and Analytical Tools"></a><strong>Overview of Key AWS Monitoring and Analytical Tools</strong></h2><ul>
+<li><p><strong>Amazon CloudWatch</strong>:</p>
+<ul>
+<li>Provides near real-time monitoring of <strong>AWS resources and applications</strong>.</li>
+<li>Allows tracking of metrics over time to optimize system performance.</li>
+<li>Alerts users to conditions that require attention, enhancing proactive management.</li>
+</ul>
+</li>
+<li><p><strong>AWS CloudTrail</strong>:</p>
+<ul>
+<li>Tracks <strong>user activities and API usage</strong> within AWS.</li>
+<li>Offers comprehensive auditing capabilities by recording who accessed what, when, and from where.</li>
+<li>Answers most auditing queries, except for the reasons behind the actions.</li>
+</ul>
+</li>
+<li><p><strong>AWS Trusted Advisor</strong>:</p>
+<ul>
+<li>Delivers a dashboard summarizing over 40 common concerns related to cost, performance, security, and resilience.</li>
+<li>Provides <strong>actionable insights</strong> to help optimize resource usage and improve system efficiency.</li>
+</ul>
+</li>
+</ul>
+<h2 id="Additional-Tools-and-Resources"><a href="#Additional-Tools-and-Resources" class="headerlink" title="Additional Tools and Resources"></a><strong>Additional Tools and Resources</strong></h2><ul>
+<li>While CloudWatch, CloudTrail, and Trusted Advisor are fundamental, AWS offers a variety of other monitoring and analytical tools to suit diverse business needs.</li>
+</ul>
+<h2 id="Conclusion-3"><a href="#Conclusion-3" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>Understanding and utilizing AWS monitoring tools like CloudWatch, CloudTrail, and Trusted Advisor is crucial for any business looking to secure, optimize, and streamline their cloud operations. These tools not only provide valuable insights into system performance and user activities but also help in maintaining compliance and improving overall operational efficiency.</p>
+<h1 id="Quiz"><a href="#Quiz" class="headerlink" title="Quiz"></a>Quiz</h1><ul>
+<li><img data-src="/images/posts/cloud/monitoring/q1.png"></img></li>
+<li><img data-src="/images/posts/cloud/monitoring/q2.png"></img></li>
+<li><img data-src="/images/posts/cloud/monitoring/q3.png"></img></li>
+</ul>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li>AWS SkillBuilder CPE Module7</li>
 </ul>
 ]]></content>
       <tags>
@@ -1871,172 +1927,6 @@ style="width: 70%; margin: 15px auto;"></p>
       </tags>
   </entry>
   <entry>
-    <title>[AWS-CPE] Monitoring and Analytics</title>
-    <url>/posts/2332420025/</url>
-    <content><![CDATA[<style>
-    img{
-        width: 70%;
-    }
-</style>
-
-<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Effective monitoring is crucial for managing any business, whether it’s overseeing a coffee shop or monitoring cloud-based resources in AWS. Below, we detail how monitoring functions as a critical component of both daily business operations and technology management.</p>
-<span id="more"></span>
-
-<h1 id="Objectives"><a href="#Objectives" class="headerlink" title="Objectives"></a>Objectives</h1><ul>
-<li>Summarize approaches to monitoring your AWS environment.</li>
-<li>Describe the benefits of Amazon CloudWatch.</li>
-<li>Describe the benefits of AWS CloudTrail.</li>
-<li>Describe the benefits of AWS Trusted Advisor.</li>
-</ul>
-<h1 id="Amazon-CloudWatch"><a href="#Amazon-CloudWatch" class="headerlink" title="Amazon CloudWatch"></a>Amazon CloudWatch</h1><p>(monitoring resources)<br>As business operations, such as a coffee shop, become more complex, maintaining visibility and proactive management of systems becomes crucial. Amazon CloudWatch provides an extensive solution for monitoring AWS resources and applications, analogous to keeping a coffee shop’s equipment and operations running smoothly.</p>
-<h2 id="Key-Features-of-Amazon-CloudWatch"><a href="#Key-Features-of-Amazon-CloudWatch" class="headerlink" title="Key Features of Amazon CloudWatch"></a><strong>Key Features of Amazon CloudWatch</strong></h2><ul>
-<li><p><strong>Real-Time Monitoring and Metrics</strong>:</p>
-<ul>
-<li>Tracks various metrics related to AWS resources and applications, similar to monitoring espresso counts in a coffee machine.</li>
-<li><strong>Example</strong>: Monitoring the CPU utilization of an EC2 instance or tracking custom metrics like the number of espressos made.</li>
-</ul>
-</li>
-<li><p><strong>Alerts and Alarms</strong>:</p>
-<ul>
-<li><strong>CloudWatch Alarms</strong>: Set thresholds that, when exceeded, trigger notifications or actions, such as alerting staff to clean an espresso machine after 100 uses.</li>
-<li>Integrated with <strong>Amazon SNS</strong> for notifications, enabling actions like sending SMS messages to manage urgent tasks.</li>
-</ul>
-</li>
-<li><p><strong>Dashboards</strong>:</p>
-<ul>
-<li>Visual displays that aggregate metrics in real-time, allowing for a comprehensive view of all monitored resources.</li>
-<li>Useful for proactive monitoring and quick assessments of multiple resources at a glance.</li>
-</ul>
-</li>
-</ul>
-<p><img data-src="/images/posts/cloud/monitoring/cloud-watch.png"></img></p>
-<h2 id="Benefits-of-Using-CloudWatch"><a href="#Benefits-of-Using-CloudWatch" class="headerlink" title="Benefits of Using CloudWatch"></a><strong>Benefits of Using CloudWatch</strong></h2><ul>
-<li><p><strong>Centralized Metric Access</strong>:</p>
-<ul>
-<li>Gathers and displays metrics and logs from all AWS resources, applications, and on-premises servers in one location, enhancing system-wide visibility.</li>
-</ul>
-</li>
-<li><p><strong>Insight Across Infrastructure</strong>:</p>
-<ul>
-<li>Correlates and visualizes metrics and logs, facilitating quick identification and resolution of issues.</li>
-<li>Reduces mean time to resolution (MTTR) and improves total cost of ownership (TCO), analogous to optimizing machine maintenance in a coffee shop to free up resources for customer service.</li>
-</ul>
-</li>
-<li><p><strong>Operational Optimization</strong>:</p>
-<ul>
-<li>Aggregates usage data across resources like EC2 instances to gain operational insights and optimize utilization.</li>
-<li>Helps focus staff efforts on core activities rather than routine maintenance.</li>
-</ul>
-</li>
-</ul>
-<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>Amazon CloudWatch equips businesses with the tools necessary to monitor, alert, and manage their AWS resources effectively. By analogizing with a coffee shop’s day-to-day operations, we can see how CloudWatch’s capabilities are essential for maintaining operational efficiency and ensuring resource optimization.</p>
-<h1 id="AWS-CloudTrail"><a href="#AWS-CloudTrail" class="headerlink" title="AWS CloudTrail"></a>AWS CloudTrail</h1><p>(monitoring transactions)<br>AWS CloudTrail is a vital tool for auditing and compliance in cloud environments, similar to how a cash register tracks and records every transaction in a store. This service ensures that all actions taken within AWS are logged, providing a reliable means of monitoring and verifying all changes made to the resources.</p>
-<h2 id="Key-Features-and-Benefits-of-AWS-CloudTrail"><a href="#Key-Features-and-Benefits-of-AWS-CloudTrail" class="headerlink" title="Key Features and Benefits of AWS CloudTrail"></a><strong>Key Features and Benefits of AWS CloudTrail</strong></h2><ul>
-<li><p><strong>Comprehensive Auditing</strong>:</p>
-<ul>
-<li>Every API request made within AWS is logged by CloudTrail, whether it’s launching an EC2 instance, modifying a DynamoDB table, or altering user permissions.</li>
-<li>Details recorded include the identity of the requester, the time of the API call, IP address, and both the response and new state of the system after the request.</li>
-</ul>
-</li>
-<li><p><strong>Security and Compliance</strong>:</p>
-<ul>
-<li><strong>Root-Level Monitoring</strong>: Tracks changes made by high-level administrators, crucial for ensuring that critical settings, like security group configurations, remain unaltered.</li>
-<li><strong>Audit Trails for Compliance</strong>: Provides auditors with definitive proof that no unauthorized changes have been made, especially to security settings.</li>
-</ul>
-</li>
-<li><p><strong>Data Integrity and Storage</strong>:</p>
-<ul>
-<li>Logs are stored indefinitely in secure S3 buckets, utilizing tamper-proof features like Vault Lock to ensure data integrity and provide a clear lineage of all actions recorded.</li>
-</ul>
-</li>
-</ul>
-<p><img data-src="/images/posts/cloud/monitoring/cloud-trail.png"></img></p>
-<h2 id="Conclusion-1"><a href="#Conclusion-1" class="headerlink" title="Conclusion"></a><strong>Conclusion</strong></h2><p>AWS CloudTrail is akin to a digital cash register for cloud environments, meticulously recording each transaction and ensuring that all data is accounted for and secure. This capability is essential for maintaining stringent compliance standards and proving system integrity to auditors, making it an indispensable tool for businesses operating in AWS.</p>
-<h2 id="Quick-Quiz"><a href="#Quick-Quiz" class="headerlink" title="Quick Quiz"></a>Quick Quiz</h2><p><img data-src="/images/posts/cloud/monitoring/trail-quiz.png"></img></p>
-<h1 id="AWS-Trusted-Advisor"><a href="#AWS-Trusted-Advisor" class="headerlink" title="AWS Trusted Advisor"></a>AWS Trusted Advisor</h1><p>AWS Trusted Advisor acts like an automated consultant for your AWS environment, analyzing your setup against best practices across five key areas. It provides insights and recommendations to enhance efficiency, security, and performance, much like an external advisor might offer suggestions to improve a business’s operations.</p>
-<h2 id="Key-Features-of-AWS-Trusted-Advisor"><a href="#Key-Features-of-AWS-Trusted-Advisor" class="headerlink" title="Key Features of AWS Trusted Advisor"></a><strong>Key Features of AWS Trusted Advisor</strong></h2><ul>
-<li><p><strong>Five Pillars of Evaluation</strong>:</p>
-<ul>
-<li><strong>Cost Optimization</strong>: Identifies underutilized resources to reduce expenses.</li>
-<li><strong>Performance</strong>: Assesses configurations to ensure optimal performance.</li>
-<li><strong>Security</strong>: Highlights security vulnerabilities like weak password policies or insufficient MFA.</li>
-<li><strong>Fault Tolerance</strong>: Checks for adequate backup measures and balanced deployment across AZs.</li>
-<li><strong>Service Limits</strong>: Alerts on approaching or reached AWS service limits.</li>
-</ul>
-</li>
-<li><p><strong>Dashboard and Alerts</strong>:</p>
-<ul>
-<li><strong>Interface</strong>: Provides a dashboard that categorizes issues into three levels: action recommended (red), investigation recommended (orange), and no problems (green).</li>
-<li><strong>Alert System</strong>: Can send email notifications to relevant contacts as issues are detected.</li>
-</ul>
-</li>
-</ul>
-<p><img data-src="/images/posts/cloud/monitoring/advisor.png"></img></p>
-<h2 id="Practical-Examples-and-Recommendations"><a href="#Practical-Examples-and-Recommendations" class="headerlink" title="Practical Examples and Recommendations"></a><strong>Practical Examples and Recommendations</strong></h2><ul>
-<li><p><strong>Cost Optimization Checks</strong>:</p>
-<ul>
-<li>Might indicate idle RDS instances or underutilized EC2 instances and EBS volumes, suggesting downsizing or termination to save costs.</li>
-</ul>
-</li>
-<li><p><strong>Security Checks</strong>:</p>
-<ul>
-<li>May alert on urgent security issues like open security groups, advocating for immediate action to close vulnerabilities.</li>
-</ul>
-</li>
-<li><p><strong>Fault Tolerance Advice</strong>:</p>
-<ul>
-<li>Could point out the absence of EBS volume snapshots, recommending creating backups to prevent data loss.</li>
-</ul>
-</li>
-<li><p><strong>Handling Service Limits</strong>:</p>
-<ul>
-<li>Informs when nearing or hitting AWS service caps, advising when to request limit increases.</li>
-</ul>
-</li>
-</ul>
-<h2 id="Conclusion-2"><a href="#Conclusion-2" class="headerlink" title="Conclusion"></a><strong>Conclusion</strong></h2><p>AWS Trusted Advisor is a comprehensive tool that provides critical insights and actionable advice across multiple aspects of your AWS environment. By enabling Trusted Advisor and setting up its alert systems, you can proactively manage and optimize your resources, ensuring a secure, efficient, and reliable AWS infrastructure.</p>
-<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p>Effective management of cloud environments requires a deep understanding of system operations and resource usage. AWS provides several tools to help businesses maintain efficient, secure, and compliant applications by offering insights into system behavior, user actions, and resource optimization.</p>
-<h2 id="Overview-of-Key-AWS-Monitoring-and-Analytical-Tools"><a href="#Overview-of-Key-AWS-Monitoring-and-Analytical-Tools" class="headerlink" title="Overview of Key AWS Monitoring and Analytical Tools"></a><strong>Overview of Key AWS Monitoring and Analytical Tools</strong></h2><ul>
-<li><p><strong>Amazon CloudWatch</strong>:</p>
-<ul>
-<li>Provides near real-time monitoring of <strong>AWS resources and applications</strong>.</li>
-<li>Allows tracking of metrics over time to optimize system performance.</li>
-<li>Alerts users to conditions that require attention, enhancing proactive management.</li>
-</ul>
-</li>
-<li><p><strong>AWS CloudTrail</strong>:</p>
-<ul>
-<li>Tracks <strong>user activities and API usage</strong> within AWS.</li>
-<li>Offers comprehensive auditing capabilities by recording who accessed what, when, and from where.</li>
-<li>Answers most auditing queries, except for the reasons behind the actions.</li>
-</ul>
-</li>
-<li><p><strong>AWS Trusted Advisor</strong>:</p>
-<ul>
-<li>Delivers a dashboard summarizing over 40 common concerns related to cost, performance, security, and resilience.</li>
-<li>Provides <strong>actionable insights</strong> to help optimize resource usage and improve system efficiency.</li>
-</ul>
-</li>
-</ul>
-<h2 id="Additional-Tools-and-Resources"><a href="#Additional-Tools-and-Resources" class="headerlink" title="Additional Tools and Resources"></a><strong>Additional Tools and Resources</strong></h2><ul>
-<li>While CloudWatch, CloudTrail, and Trusted Advisor are fundamental, AWS offers a variety of other monitoring and analytical tools to suit diverse business needs.</li>
-</ul>
-<h2 id="Conclusion-3"><a href="#Conclusion-3" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>Understanding and utilizing AWS monitoring tools like CloudWatch, CloudTrail, and Trusted Advisor is crucial for any business looking to secure, optimize, and streamline their cloud operations. These tools not only provide valuable insights into system performance and user activities but also help in maintaining compliance and improving overall operational efficiency.</p>
-<h1 id="Quiz"><a href="#Quiz" class="headerlink" title="Quiz"></a>Quiz</h1><ul>
-<li><img data-src="/images/posts/cloud/monitoring/q1.png"></img></li>
-<li><img data-src="/images/posts/cloud/monitoring/q2.png"></img></li>
-<li><img data-src="/images/posts/cloud/monitoring/q3.png"></img></li>
-</ul>
-<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li>AWS SkillBuilder CPE Module7</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>cloud</tag>
-        <tag>aws</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Understanding Cloud Computing - Public, Private, and Hybrid Clouds</title>
     <url>/posts/3108822142/</url>
     <content><![CDATA[<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Cloud computing has become a cornerstone for deploying modern IT solutions, offering scalable, efficient, and versatile options for businesses and individuals alike. With the evolution of cloud technology, three primary deployment models have emerged: public, private, and hybrid clouds. Each model offers distinct features, benefits, and considerations, making it crucial to understand their differences to choose the most suitable option for your needs. In this article, we’ll delve into the nuances of public, private, and hybrid clouds, helping you navigate the cloud landscape.</p>
@@ -2188,6 +2078,44 @@ style="width: 70%; margin: 15px auto;"></p>
       </tags>
   </entry>
   <entry>
+    <title>Understanding Virtual Private Clouds (VPCs), Public Subnets, and Private Subnets</title>
+    <url>/posts/3613028504/</url>
+    <content><![CDATA[<h1 id="Understanding-Virtual-Private-Clouds-VPCs-Public-Subnets-and-Private-Subnets"><a href="#Understanding-Virtual-Private-Clouds-VPCs-Public-Subnets-and-Private-Subnets" class="headerlink" title="Understanding Virtual Private Clouds (VPCs), Public Subnets, and Private Subnets"></a>Understanding Virtual Private Clouds (VPCs), Public Subnets, and Private Subnets</h1><p>In today’s cloud computing landscape, <strong>Virtual Private Clouds (VPCs)</strong> play a crucial role in providing secure and scalable networking solutions. This post aims to demystify VPCs, public subnets, private subnets, and their related components, helping you to better understand their significance and how to effectively utilize them.</p>
+<span id="more"></span>
+
+<p><img data-src="/images/posts/cloud/vpc/structure.png"></img><br>source: <span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmF3cy5hbWF6b24uY29tL3ZwYy9sYXRlc3QvdXNlcmd1aWRlL3ZwYy1leGFtcGxlLXByaXZhdGUtc3VibmV0cy1uYXQuaHRtbA==">https://docs.aws.amazon.com/vpc/latest/userguide/vpc-example-private-subnets-nat.html<i class="fa fa-external-link-alt"></i></span></p>
+<h2 id="What-is-a-Virtual-Private-Cloud-VPC"><a href="#What-is-a-Virtual-Private-Cloud-VPC" class="headerlink" title="What is a Virtual Private Cloud (VPC)?"></a>What is a Virtual Private Cloud (VPC)?</h2><p>A <strong>Virtual Private Cloud (VPC)</strong> is a logically isolated section of a cloud provider’s network. It allows you to launch and manage resources, such as virtual machines, databases, and other services, in a secure and virtualized environment. By using a VPC, you gain greater control over your network configuration, including IP address assignments, subnet creation, route tables, and network gateways.</p>
+<h3 id="Key-Features-of-a-VPC"><a href="#Key-Features-of-a-VPC" class="headerlink" title="Key Features of a VPC:"></a>Key Features of a VPC:</h3><ul>
+<li><strong>Isolation:</strong> Ensures that your resources are separated from other users’ resources, enhancing security.</li>
+<li><strong>Network Configuration:</strong> Allows you to define your IP address range, subnets, route tables, and network gateways.</li>
+<li><strong>Security:</strong> Utilize security groups and network access control lists (ACLs) to control inbound and outbound traffic. (like firewalls)</li>
+<li><strong>Connectivity:</strong> Establish connections between your VPC and other networks, such as on-premises data centers or other VPCs, using VPN or Direct Connect.</li>
+</ul>
+<h2 id="Public-Subnet"><a href="#Public-Subnet" class="headerlink" title="Public Subnet"></a>Public Subnet</h2><p>A <strong>Public Subnet</strong> is a subnet within a VPC that has a route to an internet gateway, allowing resources within it to have direct access to the internet. Typically, resources that need to be publicly accessible, such as web servers or bastion hosts, are placed in public subnets.</p>
+<h3 id="Key-Characteristics-of-a-Public-Subnet"><a href="#Key-Characteristics-of-a-Public-Subnet" class="headerlink" title="Key Characteristics of a Public Subnet:"></a>Key Characteristics of a Public Subnet:</h3><ul>
+<li><strong>Internet Access:</strong> Resources can directly communicate with the internet.</li>
+<li><strong>Routing:</strong> The route table for a public subnet includes a route pointing to an internet gateway.</li>
+<li><strong>Use Cases:</strong> Ideal for resources that need to be accessible from the internet, such as web servers, public-facing applications, and jump&#x2F;bastion hosts.</li>
+</ul>
+<h2 id="Private-Subnet"><a href="#Private-Subnet" class="headerlink" title="Private Subnet"></a>Private Subnet</h2><p>A <strong>Private Subnet</strong> is a subnet within a VPC that does not have a route to an internet gateway, meaning resources within it cannot directly access the internet. Instead, these resources can communicate with the internet via a Network Address Translation (NAT) gateway or NAT instance located in a public subnet.</p>
+<h3 id="Key-Characteristics-of-a-Private-Subnet"><a href="#Key-Characteristics-of-a-Private-Subnet" class="headerlink" title="Key Characteristics of a Private Subnet:"></a>Key Characteristics of a Private Subnet:</h3><ul>
+<li><strong>Restricted Internet Access:</strong> Resources cannot directly communicate with the internet, enhancing security.</li>
+<li><strong>Routing:</strong> The route table for a private subnet does not include a route pointing to an internet gateway.</li>
+<li><strong>Use Cases:</strong> Suitable for resources that should not be directly accessible from the internet, such as databases, application servers, and backend services.</li>
+</ul>
+<h2 id="Other-Related-Components"><a href="#Other-Related-Components" class="headerlink" title="Other Related Components"></a>Other Related Components</h2><h3 id="Internet-Gateway"><a href="#Internet-Gateway" class="headerlink" title="Internet Gateway"></a>Internet Gateway</h3><p>An <strong>Internet Gateway</strong> is a horizontally scaled, redundant, and highly available VPC component that allows communication between instances in your VPC and the internet. It serves as a target in your VPC route tables for internet-routable traffic.</p>
+<h3 id="NAT-Gateway"><a href="#NAT-Gateway" class="headerlink" title="NAT Gateway"></a>NAT Gateway</h3><p>A <strong>Network Address Translation (NAT) Gateway</strong> enables instances in a private subnet to connect to the internet or other AWS services while preventing the internet from initiating a connection with those instances. It is placed in a public subnet and routes traffic from private subnets to the internet.</p>
+<h3 id="Route-Tables"><a href="#Route-Tables" class="headerlink" title="Route Tables"></a>Route Tables</h3><p><strong>Route Tables</strong> control the routing of traffic within your VPC. Each subnet must be associated with a route table, which determines how the traffic is directed. A route table contains a set of rules, called routes, that specify the paths for traffic.</p>
+<h3 id="Security-Groups-and-Network-ACLs"><a href="#Security-Groups-and-Network-ACLs" class="headerlink" title="Security Groups and Network ACLs"></a>Security Groups and Network ACLs</h3><p><strong>Security Groups</strong> act as virtual firewalls for your instances to control inbound and outbound traffic at the instance level. <strong>Network ACLs</strong> (Access Control Lists) provide an additional layer of security, acting as firewalls for controlling traffic in and out of one or more subnets.</p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>Understanding the components of a VPC, including public and private subnets, is essential for designing and managing secure, scalable, and efficient cloud architectures. By leveraging these components effectively, you can ensure that your resources are properly isolated, secure, and accessible according to your application’s needs.</p>
+<p>By mastering VPCs, public subnets, private subnets, and their associated elements, you can optimize your cloud infrastructure for performance, security, and cost-efficiency.</p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmF3cy5hbWF6b24uY29tL3ZwYy9sYXRlc3QvdXNlcmd1aWRlL3ZwYy1leGFtcGxlLXByaXZhdGUtc3VibmV0cy1uYXQuaHRtbA==">AWS VPC Example<i class="fa fa-external-link-alt"></i></span></p>
+]]></content>
+      <tags>
+        <tag>cloud computing</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Understanding AWS Networking: VGW, VPC Endpoints, and Security Groups</title>
     <url>/posts/3294285798/</url>
     <content><![CDATA[<h1 id="Understanding-AWS-Networking-VGW-VPC-Endpoints-and-Security-Groups"><a href="#Understanding-AWS-Networking-VGW-VPC-Endpoints-and-Security-Groups" class="headerlink" title="Understanding AWS Networking: VGW, VPC Endpoints, and Security Groups"></a>Understanding AWS Networking: VGW, VPC Endpoints, and Security Groups</h1><p>When working with Amazon Web Services (AWS), understanding the various networking components is crucial for designing secure and efficient architectures. In this article, we will explore three key concepts: Virtual Private Gateway (VGW), VPC Endpoints, and Security Groups.</p>
@@ -2242,47 +2170,120 @@ style="width: 70%; margin: 15px auto;"></p>
 </ol>
 <h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>Understanding VGW, VPC Endpoints, and Security Groups is essential for designing secure and efficient network architectures in AWS. VGWs provide secure connectivity between VPCs and on-premises networks, VPC Endpoints allow private connections to AWS services, and Security Groups offer granular control over instance traffic. Leveraging these components effectively can significantly enhance the security and performance of your AWS infrastructure.</p>
 <p>By mastering these AWS networking fundamentals, you can ensure that your applications and data remain secure and accessible, while optimizing costs and simplifying network management.</p>
+<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><p><span class="exturl" data-url="aHR0cHM6Ly9nb2RsZW9uLmdpdGh1Yi5pby9ibG9nL0FXUy9BV1MtU09BLVZQQy8=">AWS SOA 學習筆記 - VPC(Virtual Private Cloud)<i class="fa fa-external-link-alt"></i></span></p>
 ]]></content>
       <tags>
         <tag>cloud computing</tag>
       </tags>
   </entry>
   <entry>
-    <title>Understanding Virtual Private Clouds (VPCs), Public Subnets, and Private Subnets</title>
-    <url>/posts/3613028504/</url>
-    <content><![CDATA[<h1 id="Understanding-Virtual-Private-Clouds-VPCs-Public-Subnets-and-Private-Subnets"><a href="#Understanding-Virtual-Private-Clouds-VPCs-Public-Subnets-and-Private-Subnets" class="headerlink" title="Understanding Virtual Private Clouds (VPCs), Public Subnets, and Private Subnets"></a>Understanding Virtual Private Clouds (VPCs), Public Subnets, and Private Subnets</h1><p>In today’s cloud computing landscape, <strong>Virtual Private Clouds (VPCs)</strong> play a crucial role in providing secure and scalable networking solutions. This post aims to demystify VPCs, public subnets, private subnets, and their related components, helping you to better understand their significance and how to effectively utilize them.</p>
+    <title>[.NET][C#][Design Pattern] - Mediator Pattern (中介者模式)</title>
+    <url>/posts/4072203086/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>這篇文章主要介紹Mediator Pattern的定義以及簡單實作<br>介紹使用Mediator Pattern的好處, 並提供範例<br>在軟體架構中Mediator Patternc和Repository Pattern都是常用的pattern<br>通常.NET專案中會結合MediatR套件使用</p>
 <span id="more"></span>
 
-<p><img data-src="/images/posts/cloud/vpc/structure.png"></img><br>source: <span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmF3cy5hbWF6b24uY29tL3ZwYy9sYXRlc3QvdXNlcmd1aWRlL3ZwYy1leGFtcGxlLXByaXZhdGUtc3VibmV0cy1uYXQuaHRtbA==">https://docs.aws.amazon.com/vpc/latest/userguide/vpc-example-private-subnets-nat.html<i class="fa fa-external-link-alt"></i></span></p>
-<h2 id="What-is-a-Virtual-Private-Cloud-VPC"><a href="#What-is-a-Virtual-Private-Cloud-VPC" class="headerlink" title="What is a Virtual Private Cloud (VPC)?"></a>What is a Virtual Private Cloud (VPC)?</h2><p>A <strong>Virtual Private Cloud (VPC)</strong> is a logically isolated section of a cloud provider’s network. It allows you to launch and manage resources, such as virtual machines, databases, and other services, in a secure and virtualized environment. By using a VPC, you gain greater control over your network configuration, including IP address assignments, subnet creation, route tables, and network gateways.</p>
-<h3 id="Key-Features-of-a-VPC"><a href="#Key-Features-of-a-VPC" class="headerlink" title="Key Features of a VPC:"></a>Key Features of a VPC:</h3><ul>
-<li><strong>Isolation:</strong> Ensures that your resources are separated from other users’ resources, enhancing security.</li>
-<li><strong>Network Configuration:</strong> Allows you to define your IP address range, subnets, route tables, and network gateways.</li>
-<li><strong>Security:</strong> Utilize security groups and network access control lists (ACLs) to control inbound and outbound traffic. (like firewalls)</li>
-<li><strong>Connectivity:</strong> Establish connections between your VPC and other networks, such as on-premises data centers or other VPCs, using VPN or Direct Connect.</li>
+<h2 id="定義-Mediator-Pattern"><a href="#定義-Mediator-Pattern" class="headerlink" title="定義 Mediator Pattern"></a>定義 Mediator Pattern</h2><p>IG貼文：<br><span class="exturl" data-url="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9wL0NpTTBlenBMTzR6Lz9obD16aC10dw==">Mediator Pattern Post<i class="fa fa-external-link-alt"></i></span></p>
+<p>GitHub連結：<br><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL21hby1jb2RlL01lZGlhdG9yUGF0dGVybg==">Sample Code<i class="fa fa-external-link-alt"></i></span></p>
+<p>定義一個 Mediator 物件用來<strong>封裝一組物件的互動方式</strong>。<br>Mediator 藉由<strong>避免物件間相互直接的引用</strong>，從而降低它們之間的耦合程度，並且可以讓我們獨立地改變這些物件間的互動方式。</p>
+<p>下面這兩張圖片可以簡單體現出Mediator Pattern在做的事</p>
+<p><strong>沒有使用中介者, 物件彼此之間直接調用</strong><br><img data-src="/images/posts/mediator-pattern/origin-graph.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p><strong>使用中介者, 物件只依賴mediator來與其他物件溝通</strong><br><img data-src="/images/posts/mediator-pattern/star.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>可以發現使用中介者模式之後, 物件都只依賴中介者來傳遞訊息, 而不是直接調用彼此, 以此達到解耦。<br>在現實生活中, 也有類似的例子, 例如開發團隊, 客服團隊, 產銷團隊, 設計團隊, 若彼此之間沒有一個統一的溝通,<br>那麼各個團隊耦合度很高, 開發跟設計要協調介面, 又要和產銷和客服討論如何贏得如何符合市場, 這樣一來分工太複雜。<br>所以需要一個<strong>產品經理來當中介者</strong>, 協助溝通各個團隊。</p>
+<h2 id="優缺點"><a href="#優缺點" class="headerlink" title="優缺點"></a>優缺點</h2><ul>
+<li>優點 <ol>
+<li>降低物件之間的耦合性，讓物件容易重複使用。</li>
+<li>物件之間一對多的關聯性變成一對一，提高系統靈活性，也讓整體容易維護及擴充。</li>
+</ol>
+</li>
+<li>缺點 (Trade-off)<ol>
+<li>同事類別過多時，中介者責任很大，會使系統提升一定程度的複雜性。</li>
+</ol>
+</li>
 </ul>
-<h2 id="Public-Subnet"><a href="#Public-Subnet" class="headerlink" title="Public Subnet"></a>Public Subnet</h2><p>A <strong>Public Subnet</strong> is a subnet within a VPC that has a route to an internet gateway, allowing resources within it to have direct access to the internet. Typically, resources that need to be publicly accessible, such as web servers or bastion hosts, are placed in public subnets.</p>
-<h3 id="Key-Characteristics-of-a-Public-Subnet"><a href="#Key-Characteristics-of-a-Public-Subnet" class="headerlink" title="Key Characteristics of a Public Subnet:"></a>Key Characteristics of a Public Subnet:</h3><ul>
-<li><strong>Internet Access:</strong> Resources can directly communicate with the internet.</li>
-<li><strong>Routing:</strong> The route table for a public subnet includes a route pointing to an internet gateway.</li>
-<li><strong>Use Cases:</strong> Ideal for resources that need to be accessible from the internet, such as web servers, public-facing applications, and jump&#x2F;bastion hosts.</li>
+<h2 id="UML與成員"><a href="#UML與成員" class="headerlink" title="UML與成員"></a>UML與成員</h2><p><img data-src="/images/posts/mediator-pattern/uml.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<table>
+    <thead>
+        <th>成員</th>
+        <th>定義</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Mdiator</td>
+            <td>抽象中介者, 定義註冊進入mediator以及轉發的方法</td>
+        </tr>
+        <tr>
+            <td>ConcreteMediator</td>
+            <td>具體中介者, 定義一個集合來管理同事, 所以聚合Colleague</td>
+        </tr>
+        <tr>
+            <td>Colleague</td>
+            <td>抽象同事, 可以保存中介者, 調用內部方法, 所以聚合Mediator</td>
+        </tr>
+        <tr>
+            <td>ConcreteColleague</td>
+            <td>具體同事, 當要跟其他物件溝通時, 利用內部的中介者進行轉發</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2 id="實作"><a href="#實作" class="headerlink" title="實作"></a>實作</h2><p><strong>專案結構</strong><br><img data-src="/images/posts/mediator-pattern/structure.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p><strong>抽象Mediator</strong></p>
+<figure class="highlight c#"><figcaption><span>Mediator(抽象)</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MediatorPattern.mediator</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 團隊列舉</span></span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">enum</span> teamType</span><br><span class="line">    &#123;</span><br><span class="line">        ENGINEERING, DESIGN, SERVICE, MARKETING</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 抽象mediator</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title">Mediator</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">Register</span>(<span class="params">teamType type, Colleague colleague</span>)</span>; <span class="comment">//註冊進入mediator</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">Relay</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span>; <span class="comment">//轉發;傳遞</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>PackageManager(具體Mediator)</strong></p>
+<figure class="highlight c#"><figcaption><span>PackageManager(具體Mediator)</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MediatorPattern.mediator</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="comment">// 具體mediator</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ProductManager</span> : <span class="title">Mediator</span></span><br><span class="line">	&#123;</span><br><span class="line">        <span class="comment">// 聚合Colleague, 一個儲存colleague物件的dictionary</span></span><br><span class="line">        <span class="keyword">private</span> Dictionary&lt;teamType, Colleague&gt; colleagues = <span class="keyword">new</span> Dictionary&lt;teamType, Colleague&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">Register</span>(<span class="params">teamType type, Colleague colleague</span>)</span></span><br><span class="line">        &#123;</span><br><span class="line">            colleague.setMediator(<span class="keyword">this</span>);</span><br><span class="line">            <span class="keyword">this</span>.colleagues.Add(type, colleague);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">Relay</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">        &#123;</span><br><span class="line">            Colleague toColleague = <span class="keyword">this</span>.colleagues[type];</span><br><span class="line">            toColleague.receive(msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>抽象Colleague</strong></p>
+<figure class="highlight c#"><figcaption><span>Colleague(抽象)</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.mediator;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MediatorPattern.colleagues</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title">Colleague</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">protected</span> Mediator? Mediator &#123; <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; &#125;</span><br><span class="line"></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setMediator</span>(<span class="params">Mediator mediator</span>)</span></span><br><span class="line">		&#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator = mediator;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 接收訊息後如何反應</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span>;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 傳送訊息給特定物件</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>具體Colleague</strong></p>
+<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="comment">//具體colleague</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">DesignTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;設計團隊收到訊息: &quot;</span> + msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;設計團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">EngineeringTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;工程師團隊收到訊息: &quot;</span>+msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;工程師團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">MarketingTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;產銷團隊收到訊息: &quot;</span> + msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;產銷團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ServiceTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;客服團隊收到訊息: &quot;</span> + msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;客服團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>Client端使用</strong></p>
+<figure class="highlight c#"><figcaption><span>Program.cs</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.mediator;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 具體mediator</span></span><br><span class="line">ProductManager pm = <span class="keyword">new</span> ProductManager();</span><br><span class="line"></span><br><span class="line"><span class="comment">//具體colleague</span></span><br><span class="line">Colleague ds = <span class="keyword">new</span> DesignTeam();</span><br><span class="line">Colleague eg = <span class="keyword">new</span> EngineeringTeam();</span><br><span class="line">Colleague mk = <span class="keyword">new</span> MarketingTeam();</span><br><span class="line">Colleague sv = <span class="keyword">new</span> ServiceTeam();</span><br><span class="line"></span><br><span class="line"><span class="comment">//註冊進入mediator</span></span><br><span class="line">pm.Register(teamType.DESIGN, ds);</span><br><span class="line">pm.Register(teamType.ENGINEERING, eg);</span><br><span class="line">pm.Register(teamType.MARKETING, mk);</span><br><span class="line">pm.Register(teamType.SERVICE, sv);</span><br><span class="line"></span><br><span class="line"><span class="comment">//執行</span></span><br><span class="line">ds.send(teamType.ENGINEERING, <span class="string">&quot;UI設計稿完成&quot;</span>);</span><br><span class="line">Console.WriteLine(String.Concat(Enumerable.Repeat(<span class="string">&quot;-&quot;</span>, <span class="number">10</span>)));</span><br><span class="line"></span><br><span class="line">eg.send(teamType.MARKETING, <span class="string">&quot;軟體開發完成&quot;</span>);</span><br><span class="line">Console.WriteLine(String.Concat(Enumerable.Repeat(<span class="string">&quot;-&quot;</span>, <span class="number">10</span>)));</span><br><span class="line"></span><br><span class="line">Console.ReadKey();</span><br></pre></td></tr></table></figure>
+
+<p><strong>結果</strong><br><img data-src="/images/posts/mediator-pattern/result.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<h2 id="疑問"><a href="#疑問" class="headerlink" title="疑問"></a>疑問</h2><ol>
+<li>DI不也是讓物件間解耦嗎？他們有什麼不同？<ol>
+<li>應用場景不同：Mediator模式主要用於解耦合多個相互協作的物件，特別是在複雜的互動場景中。DI則主要用於管理和注入依賴關係，以實現鬆耦合和可測試的程式碼。</li>
+<li>解決不同問題：Mediator解決的是物件之間的協作和通信問題，而DI解決的是依賴關係管理的問題。</li>
+<li>實現方式不同：Mediator需要一個中介者來協調物件之間的互動，通常由一個專門的Mediator類別來實現。DI則是一種設計模式，它可以與不同語言和框架一起使用，並不需要特定的中介者類別。</li>
+</ol>
+</li>
+</ol>
+<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><ul>
+<li>定義:<br>  定義一個 Mediator 物件用來封裝一組物件的互動方式。Mediator 藉由避免物件間相互直接的引用，從而降低它們之間的耦合程度，並且可以讓我們獨立地改變這些物件間的互動方式。</li>
+<li>成員<ul>
+<li>抽象Mediator: 定義方法, 轉接訊息</li>
+<li>具體Mediator: 實作抽象Mediator, Colleague (擁有0~多個Colleague)</li>
+<li>抽象Colleague: 定義方法, 聚合抽象Mediator (Colleague擁有Mediator)</li>
+<li>具體Colleague: 實作抽象Mediator</li>
 </ul>
-<h2 id="Private-Subnet"><a href="#Private-Subnet" class="headerlink" title="Private Subnet"></a>Private Subnet</h2><p>A <strong>Private Subnet</strong> is a subnet within a VPC that does not have a route to an internet gateway, meaning resources within it cannot directly access the internet. Instead, these resources can communicate with the internet via a Network Address Translation (NAT) gateway or NAT instance located in a public subnet.</p>
-<h3 id="Key-Characteristics-of-a-Private-Subnet"><a href="#Key-Characteristics-of-a-Private-Subnet" class="headerlink" title="Key Characteristics of a Private Subnet:"></a>Key Characteristics of a Private Subnet:</h3><ul>
-<li><strong>Restricted Internet Access:</strong> Resources cannot directly communicate with the internet, enhancing security.</li>
-<li><strong>Routing:</strong> The route table for a private subnet does not include a route pointing to an internet gateway.</li>
-<li><strong>Use Cases:</strong> Suitable for resources that should not be directly accessible from the internet, such as databases, application servers, and backend services.</li>
+</li>
+<li>優點 <ol>
+<li>降低物件之間的耦合性，讓物件容易重複使用。</li>
+<li>物件之間一對多的關聯性變成一對一，提高系統靈活性，也讓整體容易維護及擴充。</li>
+</ol>
+</li>
+<li>缺點 (Trade-off)<ol>
+<li>同事類別過多時，中介者責任很大，會使系統提升一定程度的複雜性。</li>
+</ol>
+</li>
 </ul>
-<h2 id="Other-Related-Components"><a href="#Other-Related-Components" class="headerlink" title="Other Related Components"></a>Other Related Components</h2><h3 id="Internet-Gateway"><a href="#Internet-Gateway" class="headerlink" title="Internet Gateway"></a>Internet Gateway</h3><p>An <strong>Internet Gateway</strong> is a horizontally scaled, redundant, and highly available VPC component that allows communication between instances in your VPC and the internet. It serves as a target in your VPC route tables for internet-routable traffic.</p>
-<h3 id="NAT-Gateway"><a href="#NAT-Gateway" class="headerlink" title="NAT Gateway"></a>NAT Gateway</h3><p>A <strong>Network Address Translation (NAT) Gateway</strong> enables instances in a private subnet to connect to the internet or other AWS services while preventing the internet from initiating a connection with those instances. It is placed in a public subnet and routes traffic from private subnets to the internet.</p>
-<h3 id="Route-Tables"><a href="#Route-Tables" class="headerlink" title="Route Tables"></a>Route Tables</h3><p><strong>Route Tables</strong> control the routing of traffic within your VPC. Each subnet must be associated with a route table, which determines how the traffic is directed. A route table contains a set of rules, called routes, that specify the paths for traffic.</p>
-<h3 id="Security-Groups-and-Network-ACLs"><a href="#Security-Groups-and-Network-ACLs" class="headerlink" title="Security Groups and Network ACLs"></a>Security Groups and Network ACLs</h3><p><strong>Security Groups</strong> act as virtual firewalls for your instances to control inbound and outbound traffic at the instance level. <strong>Network ACLs</strong> (Access Control Lists) provide an additional layer of security, acting as firewalls for controlling traffic in and out of one or more subnets.</p>
-<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>Understanding the components of a VPC, including public and private subnets, is essential for designing and managing secure, scalable, and efficient cloud architectures. By leveraging these components effectively, you can ensure that your resources are properly isolated, secure, and accessible according to your application’s needs.</p>
-<p>By mastering VPCs, public subnets, private subnets, and their associated elements, you can optimize your cloud infrastructure for performance, security, and cost-efficiency.</p>
-<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmF3cy5hbWF6b24uY29tL3ZwYy9sYXRlc3QvdXNlcmd1aWRlL3ZwYy1leGFtcGxlLXByaXZhdGUtc3VibmV0cy1uYXQuaHRtbA==">AWS VPC Example<i class="fa fa-external-link-alt"></i></span></p>
 ]]></content>
+      <categories>
+        <category>OOP</category>
+        <category>Design Pattern</category>
+      </categories>
       <tags>
-        <tag>cloud computing</tag>
+        <tag>OOP</tag>
+        <tag>.NET C#</tag>
+        <tag>design-pattern</tag>
       </tags>
   </entry>
   <entry>
