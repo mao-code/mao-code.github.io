@@ -24,17 +24,18 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"mao-code.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Understanding Virtual Private Clouds (VPCs), Public Subnets, and Private SubnetsIn today’s cloud computing landscape, Virtual Private Clouds (VPCs) play a crucial role in providing secure and scalable">
+    <meta name="description" content="The Foundational Role of a VPC in AWS Cloud NetworkingA Virtual Private Cloud (VPC) in Amazon Web Services (AWS) serves as the cornerstone of your AWS network infrastructure. It enables you to launch">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Understanding Virtual Private Clouds (VPCs), Public Subnets, and Private Subnets">
+<meta property="og:title" content="Understanding Networking in AWS">
 <meta property="og:url" content="https://mao-code.github.io/posts/3613028504/index.html">
 <meta property="og:site_name" content="Mao 勛哥&#39;s blog">
-<meta property="og:description" content="Understanding Virtual Private Clouds (VPCs), Public Subnets, and Private SubnetsIn today’s cloud computing landscape, Virtual Private Clouds (VPCs) play a crucial role in providing secure and scalable">
+<meta property="og:description" content="The Foundational Role of a VPC in AWS Cloud NetworkingA Virtual Private Cloud (VPC) in Amazon Web Services (AWS) serves as the cornerstone of your AWS network infrastructure. It enables you to launch">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://mao-code.github.io/images/posts/cloud/vpc/structure.png">
 <meta property="article:published_time" content="2024-05-22T08:36:57.000Z">
-<meta property="article:modified_time" content="2024-05-22T08:41:53.438Z">
+<meta property="article:modified_time" content="2024-05-27T10:48:17.794Z">
 <meta property="article:author" content="Mao 勛哥">
+<meta property="article:tag" content="aws">
 <meta property="article:tag" content="cloud computing">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://mao-code.github.io/images/posts/cloud/vpc/structure.png">
@@ -44,10 +45,10 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://mao-code.github.io/posts/3613028504/","path":"posts/3613028504/","title":"Understanding Virtual Private Clouds (VPCs), Public Subnets, and Private Subnets"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://mao-code.github.io/posts/3613028504/","path":"posts/3613028504/","title":"Understanding Networking in AWS"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Understanding Virtual Private Clouds (VPCs), Public Subnets, and Private Subnets | Mao 勛哥's blog</title>
+<title>Understanding Networking in AWS | Mao 勛哥's blog</title>
   
 
 
@@ -153,7 +154,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Understanding-Virtual-Private-Clouds-VPCs-Public-Subnets-and-Private-Subnets"><span class="nav-number">1.</span> <span class="nav-text">Understanding Virtual Private Clouds (VPCs), Public Subnets, and Private Subnets</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#What-is-a-Virtual-Private-Cloud-VPC"><span class="nav-number">1.1.</span> <span class="nav-text">What is a Virtual Private Cloud (VPC)?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Key-Features-of-a-VPC"><span class="nav-number">1.1.1.</span> <span class="nav-text">Key Features of a VPC:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Public-Subnet"><span class="nav-number">1.2.</span> <span class="nav-text">Public Subnet</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Key-Characteristics-of-a-Public-Subnet"><span class="nav-number">1.2.1.</span> <span class="nav-text">Key Characteristics of a Public Subnet:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Private-Subnet"><span class="nav-number">1.3.</span> <span class="nav-text">Private Subnet</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Key-Characteristics-of-a-Private-Subnet"><span class="nav-number">1.3.1.</span> <span class="nav-text">Key Characteristics of a Private Subnet:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Other-Related-Components"><span class="nav-number">1.4.</span> <span class="nav-text">Other Related Components</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Internet-Gateway"><span class="nav-number">1.4.1.</span> <span class="nav-text">Internet Gateway</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#NAT-Gateway"><span class="nav-number">1.4.2.</span> <span class="nav-text">NAT Gateway</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Route-Tables"><span class="nav-number">1.4.3.</span> <span class="nav-text">Route Tables</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Security-Groups-and-Network-ACLs"><span class="nav-number">1.4.4.</span> <span class="nav-text">Security Groups and Network ACLs</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Conclusion"><span class="nav-number">1.5.</span> <span class="nav-text">Conclusion</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">1.6.</span> <span class="nav-text">Reference</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#The-Foundational-Role-of-a-VPC-in-AWS-Cloud-Networking"><span class="nav-number">1.</span> <span class="nav-text">The Foundational Role of a VPC in AWS Cloud Networking</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Key-Components-and-Concepts-of-VPC"><span class="nav-number">1.1.</span> <span class="nav-text">Key Components and Concepts of VPC</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Connecting-Your-AWS-Networking-Environment-to-the-Internet"><span class="nav-number">1.2.</span> <span class="nav-text">Connecting Your AWS Networking Environment to the Internet</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Isolating-Resources-Within-Your-AWS-Networking-Environment"><span class="nav-number">1.3.</span> <span class="nav-text">Isolating Resources Within Your AWS Networking Environment</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Creating-a-VPC-with-Subnets-an-Internet-Gateway-Route-Tables-and-Security-Groups"><span class="nav-number">1.4.</span> <span class="nav-text">Creating a VPC with Subnets, an Internet Gateway, Route Tables, and Security Groups</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#References"><span class="nav-number">1.5.</span> <span class="nav-text">References</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -251,12 +252,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Understanding Virtual Private Clouds (VPCs), Public Subnets, and Private Subnets | Mao 勛哥's blog">
+      <meta itemprop="name" content="Understanding Networking in AWS | Mao 勛哥's blog">
       <meta itemprop="description" content>
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Understanding Virtual Private Clouds (VPCs), Public Subnets, and Private Subnets
+          Understanding Networking in AWS
         </h1>
 
         <div class="post-meta-container">
@@ -266,9 +267,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">發表於</span>
-      
 
-      <time title="創建時間：2024-05-22 16:36:57 / 修改時間：16:41:53" itemprop="dateCreated datePublished" datetime="2024-05-22T16:36:57+08:00">2024-05-22</time>
+      <time title="創建時間：2024-05-22 16:36:57" itemprop="dateCreated datePublished" datetime="2024-05-22T16:36:57+08:00">2024-05-22</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新於</span>
+      <time title="修改時間：2024-05-27 18:48:17" itemprop="dateModified" datetime="2024-05-27T18:48:17+08:00">2024-05-27</time>
     </span>
 
   
@@ -285,7 +292,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">文章字數：</span>
-      <span>3.9k</span>
+      <span>4.5k</span>
     </span>
     <span class="post-meta-item" title="所需閱讀時間">
       <span class="post-meta-item-icon">
@@ -303,36 +310,106 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="Understanding-Virtual-Private-Clouds-VPCs-Public-Subnets-and-Private-Subnets"><a href="#Understanding-Virtual-Private-Clouds-VPCs-Public-Subnets-and-Private-Subnets" class="headerlink" title="Understanding Virtual Private Clouds (VPCs), Public Subnets, and Private Subnets"></a>Understanding Virtual Private Clouds (VPCs), Public Subnets, and Private Subnets</h1><p>In today’s cloud computing landscape, <strong>Virtual Private Clouds (VPCs)</strong> play a crucial role in providing secure and scalable networking solutions. This post aims to demystify VPCs, public subnets, private subnets, and their related components, helping you to better understand their significance and how to effectively utilize them.</p>
+        <h2 id="The-Foundational-Role-of-a-VPC-in-AWS-Cloud-Networking"><a href="#The-Foundational-Role-of-a-VPC-in-AWS-Cloud-Networking" class="headerlink" title="The Foundational Role of a VPC in AWS Cloud Networking"></a>The Foundational Role of a VPC in AWS Cloud Networking</h2><p>A <strong>Virtual Private Cloud (VPC)</strong> in Amazon Web Services (AWS) serves as the cornerstone of your AWS network infrastructure. It enables you to launch AWS resources in a logically isolated virtual network that you define. This virtual network closely mirrors a traditional network you would operate in your data center, benefiting from the scalability and flexibility of AWS’s cloud infrastructure.</p>
+<p><img data-src="/images/posts/cloud/vpc/structure.png"><br>source: <span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmF3cy5hbWF6b24uY29tL3ZwYy9sYXRlc3QvdXNlcmd1aWRlL3ZwYy1leGFtcGxlLXByaXZhdGUtc3VibmV0cy1uYXQuaHRtbA==">https://docs.aws.amazon.com/vpc/latest/userguide/vpc-example-private-subnets-nat.html<i class="fa fa-external-link-alt"></i></span></p>
 <span id="more"></span>
 
-<p><img data-src="/images/posts/cloud/vpc/structure.png"><br>source: <span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmF3cy5hbWF6b24uY29tL3ZwYy9sYXRlc3QvdXNlcmd1aWRlL3ZwYy1leGFtcGxlLXByaXZhdGUtc3VibmV0cy1uYXQuaHRtbA==">https://docs.aws.amazon.com/vpc/latest/userguide/vpc-example-private-subnets-nat.html<i class="fa fa-external-link-alt"></i></span></p>
-<h2 id="What-is-a-Virtual-Private-Cloud-VPC"><a href="#What-is-a-Virtual-Private-Cloud-VPC" class="headerlink" title="What is a Virtual Private Cloud (VPC)?"></a>What is a Virtual Private Cloud (VPC)?</h2><p>A <strong>Virtual Private Cloud (VPC)</strong> is a logically isolated section of a cloud provider’s network. It allows you to launch and manage resources, such as virtual machines, databases, and other services, in a secure and virtualized environment. By using a VPC, you gain greater control over your network configuration, including IP address assignments, subnet creation, route tables, and network gateways.</p>
-<h3 id="Key-Features-of-a-VPC"><a href="#Key-Features-of-a-VPC" class="headerlink" title="Key Features of a VPC:"></a>Key Features of a VPC:</h3><ul>
-<li><strong>Isolation:</strong> Ensures that your resources are separated from other users’ resources, enhancing security.</li>
-<li><strong>Network Configuration:</strong> Allows you to define your IP address range, subnets, route tables, and network gateways.</li>
-<li><strong>Security:</strong> Utilize security groups and network access control lists (ACLs) to control inbound and outbound traffic. (like firewalls)</li>
-<li><strong>Connectivity:</strong> Establish connections between your VPC and other networks, such as on-premises data centers or other VPCs, using VPN or Direct Connect.</li>
+<h3 id="Key-Components-and-Concepts-of-VPC"><a href="#Key-Components-and-Concepts-of-VPC" class="headerlink" title="Key Components and Concepts of VPC"></a>Key Components and Concepts of VPC</h3><p><strong>1. Subnets:</strong></p>
+<ul>
+<li>Subnets are subdivisions within your VPC, each representing a range of IP addresses within the VPC. They help organize and isolate resources within different availability zones for high availability.</li>
 </ul>
-<h2 id="Public-Subnet"><a href="#Public-Subnet" class="headerlink" title="Public Subnet"></a>Public Subnet</h2><p>A <strong>Public Subnet</strong> is a subnet within a VPC that has a route to an internet gateway, allowing resources within it to have direct access to the internet. Typically, resources that need to be publicly accessible, such as web servers or bastion hosts, are placed in public subnets.</p>
-<h3 id="Key-Characteristics-of-a-Public-Subnet"><a href="#Key-Characteristics-of-a-Public-Subnet" class="headerlink" title="Key Characteristics of a Public Subnet:"></a>Key Characteristics of a Public Subnet:</h3><ul>
-<li><strong>Internet Access:</strong> Resources can directly communicate with the internet.</li>
-<li><strong>Routing:</strong> The route table for a public subnet includes a route pointing to an internet gateway.</li>
-<li><strong>Use Cases:</strong> Ideal for resources that need to be accessible from the internet, such as web servers, public-facing applications, and jump&#x2F;bastion hosts.</li>
+<p><strong>2. Internet Gateway:</strong></p>
+<ul>
+<li>An Internet Gateway is a horizontally scaled, redundant, and highly available VPC component that allows communication between instances in your VPC and the internet. It serves as a target in your VPC route tables for internet-routable traffic.</li>
 </ul>
-<h2 id="Private-Subnet"><a href="#Private-Subnet" class="headerlink" title="Private Subnet"></a>Private Subnet</h2><p>A <strong>Private Subnet</strong> is a subnet within a VPC that does not have a route to an internet gateway, meaning resources within it cannot directly access the internet. Instead, these resources can communicate with the internet via a Network Address Translation (NAT) gateway or NAT instance located in a public subnet.</p>
-<h3 id="Key-Characteristics-of-a-Private-Subnet"><a href="#Key-Characteristics-of-a-Private-Subnet" class="headerlink" title="Key Characteristics of a Private Subnet:"></a>Key Characteristics of a Private Subnet:</h3><ul>
-<li><strong>Restricted Internet Access:</strong> Resources cannot directly communicate with the internet, enhancing security.</li>
-<li><strong>Routing:</strong> The route table for a private subnet does not include a route pointing to an internet gateway.</li>
-<li><strong>Use Cases:</strong> Suitable for resources that should not be directly accessible from the internet, such as databases, application servers, and backend services.</li>
+<p><strong>3. Route Tables:</strong></p>
+<ul>
+<li>Route tables contain a set of rules, called routes, that determine where network traffic is directed. Each subnet in your VPC must be associated with a route table, which controls the routing for the subnet.</li>
 </ul>
-<h2 id="Other-Related-Components"><a href="#Other-Related-Components" class="headerlink" title="Other Related Components"></a>Other Related Components</h2><h3 id="Internet-Gateway"><a href="#Internet-Gateway" class="headerlink" title="Internet Gateway"></a>Internet Gateway</h3><p>An <strong>Internet Gateway</strong> is a horizontally scaled, redundant, and highly available VPC component that allows communication between instances in your VPC and the internet. It serves as a target in your VPC route tables for internet-routable traffic.</p>
-<h3 id="NAT-Gateway"><a href="#NAT-Gateway" class="headerlink" title="NAT Gateway"></a>NAT Gateway</h3><p>A <strong>Network Address Translation (NAT) Gateway</strong> enables instances in a private subnet to connect to the internet or other AWS services while preventing the internet from initiating a connection with those instances. It is placed in a public subnet and routes traffic from private subnets to the internet.</p>
-<h3 id="Route-Tables"><a href="#Route-Tables" class="headerlink" title="Route Tables"></a>Route Tables</h3><p><strong>Route Tables</strong> control the routing of traffic within your VPC. Each subnet must be associated with a route table, which determines how the traffic is directed. A route table contains a set of rules, called routes, that specify the paths for traffic.</p>
-<h3 id="Security-Groups-and-Network-ACLs"><a href="#Security-Groups-and-Network-ACLs" class="headerlink" title="Security Groups and Network ACLs"></a>Security Groups and Network ACLs</h3><p><strong>Security Groups</strong> act as virtual firewalls for your instances to control inbound and outbound traffic at the instance level. <strong>Network ACLs</strong> (Access Control Lists) provide an additional layer of security, acting as firewalls for controlling traffic in and out of one or more subnets.</p>
-<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>Understanding the components of a VPC, including public and private subnets, is essential for designing and managing secure, scalable, and efficient cloud architectures. By leveraging these components effectively, you can ensure that your resources are properly isolated, secure, and accessible according to your application’s needs.</p>
-<p>By mastering VPCs, public subnets, private subnets, and their associated elements, you can optimize your cloud infrastructure for performance, security, and cost-efficiency.</p>
-<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmF3cy5hbWF6b24uY29tL3ZwYy9sYXRlc3QvdXNlcmd1aWRlL3ZwYy1leGFtcGxlLXByaXZhdGUtc3VibmV0cy1uYXQuaHRtbA==">AWS VPC Example<i class="fa fa-external-link-alt"></i></span></p>
+<p><strong>4. Security Groups:</strong></p>
+<ul>
+<li>Security Groups act as virtual firewalls for your instances to control inbound and outbound traffic. They are stateful, meaning they track the state of network connections passing through them, allowing responses to outbound traffic automatically.</li>
+</ul>
+<p><strong>5. Network ACLs (Access Control Lists):</strong></p>
+<ul>
+<li>Network ACLs provide an additional layer of security at the subnet level, controlling inbound and outbound traffic to and from subnets. Unlike security groups, network ACLs are stateless, meaning they evaluate each packet that crosses the subnet boundary.</li>
+</ul>
+<p><strong>6. VPC Peering:</strong></p>
+<ul>
+<li>VPC Peering allows you to route traffic between VPCs using private IP addresses, facilitating communication between VPCs in the same or different AWS accounts and regions.</li>
+</ul>
+<p><strong>7. Transit Gateway:</strong></p>
+<ul>
+<li>AWS Transit Gateway acts as a central hub to connect multiple VPCs and on-premises networks. It simplifies network management by consolidating and controlling the routing between these environments.</li>
+</ul>
+<p><strong>8. AWS PrivateLink:</strong></p>
+<ul>
+<li>AWS PrivateLink enables private connectivity between VPCs, AWS services, and on-premises applications without exposing traffic to the public internet. This enhances security by keeping traffic within the AWS network.</li>
+</ul>
+<h3 id="Connecting-Your-AWS-Networking-Environment-to-the-Internet"><a href="#Connecting-Your-AWS-Networking-Environment-to-the-Internet" class="headerlink" title="Connecting Your AWS Networking Environment to the Internet"></a>Connecting Your AWS Networking Environment to the Internet</h3><p>To connect your VPC to the internet, you need to:</p>
+<p><strong>1. Attach an Internet Gateway:</strong></p>
+<ul>
+<li>Attach an Internet Gateway to your VPC. This provides a target for internet-bound traffic from instances within your VPC.</li>
+</ul>
+<p><strong>2. Update Route Tables:</strong></p>
+<ul>
+<li>Add routes to your route tables that direct internet-bound traffic to the Internet Gateway.</li>
+</ul>
+<p><strong>3. Assign Public IP Addresses:</strong></p>
+<ul>
+<li>Ensure that instances that need to communicate with the internet have public IP addresses or Elastic IP addresses.</li>
+</ul>
+<p><strong>4. Configure Security Groups and Network ACLs:</strong></p>
+<ul>
+<li>Modify the inbound and outbound rules of your security groups and network ACLs to allow the necessary traffic to flow to and from the internet.</li>
+</ul>
+<h3 id="Isolating-Resources-Within-Your-AWS-Networking-Environment"><a href="#Isolating-Resources-Within-Your-AWS-Networking-Environment" class="headerlink" title="Isolating Resources Within Your AWS Networking Environment"></a>Isolating Resources Within Your AWS Networking Environment</h3><p>Isolation of resources within your AWS networking environment can be achieved through several strategies:</p>
+<p><strong>1. Subnets:</strong></p>
+<ul>
+<li>Create public and private subnets to separate resources that need direct internet access from those that don’t. For example, public subnets can house web servers, while private subnets can house database servers.</li>
+</ul>
+<p><strong>2. Security Groups:</strong></p>
+<ul>
+<li>Configure security groups to control traffic to and from specific instances based on IP address, protocol, and port.</li>
+</ul>
+<p><strong>3. Network ACLs:</strong></p>
+<ul>
+<li>Use network ACLs to provide an additional layer of stateless traffic filtering at the subnet level.</li>
+</ul>
+<p><strong>4. VPC Peering and Transit Gateways:</strong></p>
+<ul>
+<li>Use VPC Peering or Transit Gateways to connect isolated VPCs while maintaining control over the traffic flow between them.</li>
+</ul>
+<h3 id="Creating-a-VPC-with-Subnets-an-Internet-Gateway-Route-Tables-and-Security-Groups"><a href="#Creating-a-VPC-with-Subnets-an-Internet-Gateway-Route-Tables-and-Security-Groups" class="headerlink" title="Creating a VPC with Subnets, an Internet Gateway, Route Tables, and Security Groups"></a>Creating a VPC with Subnets, an Internet Gateway, Route Tables, and Security Groups</h3><p>Here is a step-by-step outline to create a VPC and configure its components:</p>
+<p><strong>1. Create a VPC:</strong></p>
+<ul>
+<li>Define your VPC with a specified IPv4 CIDR block.</li>
+</ul>
+<p><strong>2. Create Subnets:</strong></p>
+<ul>
+<li>Create public and private subnets within different availability zones to enhance fault tolerance.</li>
+</ul>
+<p><strong>3. Attach an Internet Gateway:</strong></p>
+<ul>
+<li>Attach an Internet Gateway to your VPC to allow internet access.</li>
+</ul>
+<p><strong>4. Update Route Tables:</strong></p>
+<ul>
+<li>Create route tables and associate them with your subnets. Add a route in the public subnet’s route table to direct internet-bound traffic to the Internet Gateway.</li>
+</ul>
+<p><strong>5. Configure Security Groups:</strong></p>
+<ul>
+<li>Create and configure security groups to control inbound and outbound traffic to your instances. For example, allow HTTP and HTTPS traffic for web servers, and limit SSH access to specific IP addresses.</li>
+</ul>
+<p><strong>6. Deploy Instances:</strong></p>
+<ul>
+<li>Launch EC2 instances within your subnets, applying the appropriate security groups and configuring their IP addresses as needed.</li>
+</ul>
+<p>By following these steps and understanding these concepts, you can effectively set up and manage a secure and scalable networking environment in AWS.</p>
+<h3 id="References"><a href="#References" class="headerlink" title="References"></a>References</h3><ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmF3cy5hbWF6b24uY29tL3ZwYy9sYXRlc3QvdXNlcmd1aWRlL3doYXQtaXMtYW1hem9uLXZwYy5odG1s">AWS Documentation on Amazon VPC<i class="fa fa-external-link-alt"></i></span>.</li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmF3cy5hbWF6b24uY29tL3ZwYy9sYXRlc3QvdXNlcmd1aWRlL3ZwYy1leGFtcGxlLXByaXZhdGUtc3VibmV0cy1uYXQuaHRtbA==">Example: VPC with servers in private subnets and NAT<i class="fa fa-external-link-alt"></i></span></li>
+</ul>
 
 
     </div>
@@ -340,10 +417,19 @@
   <div class="popular-posts-header">相關文章</div>
   <ul class="popular-posts">
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/3108822142/" rel="bookmark">Understanding Cloud Computing - Public, Private, and Hybrid Clouds</a></div>
+      <div class="popular-posts-title"><a href="/posts/3777980008/" rel="bookmark">AWS Global Infrastructure</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/3294285798/" rel="bookmark">Understanding AWS Networking: VGW, VPC Endpoints, and Security Groups</a></div>
+      <div class="popular-posts-title"><a href="/posts/3982951460/" rel="bookmark">[AWS-CPE] Database and Storage</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/posts/137330004/" rel="bookmark">[AWS-CPE] Security</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/posts/2332420025/" rel="bookmark">[AWS-CPE] Monitoring and Analytics</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/posts/3108822142/" rel="bookmark">Understanding Cloud Computing - Public, Private, and Hybrid Clouds</a></div>
     </li>
   </ul>
 
@@ -354,6 +440,7 @@
 
     <footer class="post-footer">
           <div class="post-tags">
+              <a href="/tags/aws/" rel="tag"><i class="fa fa-tag"></i> aws</a>
               <a href="/tags/cloud-computing/" rel="tag"><i class="fa fa-tag"></i> cloud computing</a>
           </div>
 
