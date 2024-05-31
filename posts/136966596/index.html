@@ -24,27 +24,31 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"mao-code.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta property="og:type" content="article">
-<meta property="og:title" content="[ML][AI]Neural Network 觀念與實作(1) - Basic - 2LayerNN - [3]">
-<meta property="og:url" content="https://mao-code.github.io/posts/3004174837/index.html">
+    <meta name="description" content="Connecting Networks in AWS: A Comprehensive GuideIn today’s hybrid cloud environments, seamlessly connecting on-premises networks with the AWS Cloud, as well as interconnecting Virtual Private Clouds">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Connecting Networks in AWS: A Comprehensive Guide">
+<meta property="og:url" content="https://mao-code.github.io/posts/136966596/index.html">
 <meta property="og:site_name" content="Mao 勛哥&#39;s blog">
+<meta property="og:description" content="Connecting Networks in AWS: A Comprehensive GuideIn today’s hybrid cloud environments, seamlessly connecting on-premises networks with the AWS Cloud, as well as interconnecting Virtual Private Clouds">
 <meta property="og:locale" content="zh_TW">
-<meta property="article:published_time" content="2023-04-13T16:45:47.000Z">
-<meta property="article:modified_time" content="2023-04-13T16:54:18.983Z">
+<meta property="og:image" content="https://mao-code.github.io/images/posts/cloud/vpc-connect/connectivity-overview.png">
+<meta property="article:published_time" content="2024-05-31T16:30:15.000Z">
+<meta property="article:modified_time" content="2024-05-31T16:33:39.208Z">
 <meta property="article:author" content="Mao 勛哥">
-<meta property="article:tag" content="ML">
-<meta property="article:tag" content="AI">
+<meta property="article:tag" content="aws">
+<meta property="article:tag" content="cloud computing">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://mao-code.github.io/images/posts/cloud/vpc-connect/connectivity-overview.png">
 
 
-<link rel="canonical" href="https://mao-code.github.io/posts/3004174837/">
+<link rel="canonical" href="https://mao-code.github.io/posts/136966596/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://mao-code.github.io/posts/3004174837/","path":"posts/3004174837/","title":"[ML][AI]Neural Network 觀念與實作(1) - Basic - 2LayerNN - [3]"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://mao-code.github.io/posts/136966596/","path":"posts/136966596/","title":"Connecting Networks in AWS: A Comprehensive Guide"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>[ML][AI]Neural Network 觀念與實作(1) - Basic - 2LayerNN - [3] | Mao 勛哥's blog</title><meta name="robots" content="noindex">
+<title>Connecting Networks in AWS: A Comprehensive Guide | Mao 勛哥's blog</title>
   
 
 
@@ -137,7 +141,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目錄
@@ -150,6 +154,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Connecting-Networks-in-AWS-A-Comprehensive-Guide"><span class="nav-number">1.</span> <span class="nav-text">Connecting Networks in AWS: A Comprehensive Guide</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Connecting-an-On-Premises-Network-to-the-AWS-Cloud"><span class="nav-number">1.1.</span> <span class="nav-text">Connecting an On-Premises Network to the AWS Cloud</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#AWS-Direct-Connect"><span class="nav-number">1.1.1.</span> <span class="nav-text">AWS Direct Connect</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AWS-Site-to-Site-VPN"><span class="nav-number">1.1.2.</span> <span class="nav-text">AWS Site-to-Site VPN</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Connecting-VPCs-in-the-AWS-Cloud"><span class="nav-number">1.2.</span> <span class="nav-text">Connecting VPCs in the AWS Cloud</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#VPC-Peering"><span class="nav-number">1.2.1.</span> <span class="nav-text">VPC Peering</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Scaling-VPCs-in-the-AWS-Cloud"><span class="nav-number">1.3.</span> <span class="nav-text">Scaling VPCs in the AWS Cloud</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Subnet-Scaling"><span class="nav-number">1.3.1.</span> <span class="nav-text">Subnet Scaling</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Elastic-Load-Balancing-ELB"><span class="nav-number">1.3.2.</span> <span class="nav-text">Elastic Load Balancing (ELB)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Connecting-VPCs-to-Supported-AWS-Services"><span class="nav-number">1.4.</span> <span class="nav-text">Connecting VPCs to Supported AWS Services</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#AWS-PrivateLink"><span class="nav-number">1.4.1.</span> <span class="nav-text">AWS PrivateLink</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AWS-Transit-Gateway"><span class="nav-number">1.4.2.</span> <span class="nav-text">AWS Transit Gateway</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#References"><span class="nav-number">1.5.</span> <span class="nav-text">References</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -234,7 +239,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://mao-code.github.io/posts/3004174837/">
+    <link itemprop="mainEntityOfPage" href="https://mao-code.github.io/posts/136966596/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/mypic.JPG">
@@ -247,12 +252,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="[ML][AI]Neural Network 觀念與實作(1) - Basic - 2LayerNN - [3] | Mao 勛哥's blog">
+      <meta itemprop="name" content="Connecting Networks in AWS: A Comprehensive Guide | Mao 勛哥's blog">
       <meta itemprop="description" content>
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          [ML][AI]Neural Network 觀念與實作(1) - Basic - 2LayerNN - [3]
+          Connecting Networks in AWS: A Comprehensive Guide
         </h1>
 
         <div class="post-meta-container">
@@ -264,7 +269,7 @@
       <span class="post-meta-item-text">發表於</span>
       
 
-      <time title="創建時間：2023-04-14 00:45:47 / 修改時間：00:54:18" itemprop="dateCreated datePublished" datetime="2023-04-14T00:45:47+08:00">2023-04-14</time>
+      <time title="創建時間：2024-06-01 00:30:15 / 修改時間：00:33:39" itemprop="dateCreated datePublished" datetime="2024-06-01T00:30:15+08:00">2024-06-01</time>
     </span>
 
   
@@ -281,14 +286,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">文章字數：</span>
-      <span>0</span>
+      <span>4.7k</span>
     </span>
     <span class="post-meta-item" title="所需閱讀時間">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">所需閱讀時間 &asymp;</span>
-      <span>1 分鐘</span>
+      <span>4 分鐘</span>
     </span>
 </div>
 
@@ -299,26 +304,90 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <!-- flag of hidden posts -->
+        <h1 id="Connecting-Networks-in-AWS-A-Comprehensive-Guide"><a href="#Connecting-Networks-in-AWS-A-Comprehensive-Guide" class="headerlink" title="Connecting Networks in AWS: A Comprehensive Guide"></a>Connecting Networks in AWS: A Comprehensive Guide</h1><p>In today’s hybrid cloud environments, seamlessly connecting on-premises networks with the AWS Cloud, as well as interconnecting Virtual Private Clouds (VPCs) within AWS, is crucial for building scalable and efficient cloud architectures. In this blog, we will explore how to achieve these connections, scale VPCs, and integrate VPCs with supported AWS services.</p>
+<p><img data-src="/images/posts/cloud/vpc-connect/connectivity-overview.png"><br>source: <span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmF3cy5hbWF6b24uY29tL3ZwYy9sYXRlc3QvdXNlcmd1aWRlL2V4dGVuZC1pbnRyby5odG1s">https://docs.aws.amazon.com/vpc/latest/userguide/extend-intro.html<i class="fa fa-external-link-alt"></i></span></p>
+<span id="more"></span>
+
+<h2 id="Connecting-an-On-Premises-Network-to-the-AWS-Cloud"><a href="#Connecting-an-On-Premises-Network-to-the-AWS-Cloud" class="headerlink" title="Connecting an On-Premises Network to the AWS Cloud"></a>Connecting an On-Premises Network to the AWS Cloud</h2><p>Connecting your on-premises network to the AWS Cloud can be accomplished using several methods, each with its own set of benefits:</p>
+<h3 id="AWS-Direct-Connect"><a href="#AWS-Direct-Connect" class="headerlink" title="AWS Direct Connect"></a>AWS Direct Connect</h3><p>AWS Direct Connect establishes a dedicated network connection from your premises to AWS. This private connection can offer lower latency, higher bandwidth, and a more consistent network experience compared to internet-based connections.</p>
+<p><strong>Steps to set up AWS Direct Connect:</strong></p>
+<ol>
+<li><strong>Request a Connection:</strong> Sign up for AWS Direct Connect and request a dedicated connection.</li>
+<li><strong>Set Up the Physical Connection:</strong> Connect your on-premises router to an AWS Direct Connect location using an Ethernet cable.</li>
+<li><strong>Create a Virtual Interface:</strong> Define a virtual interface to establish a logical connection to the desired VPC or AWS service.</li>
+<li><strong>Configure Routing:</strong> Set up Border Gateway Protocol (BGP) to route traffic between your on-premises network and AWS.</li>
+</ol>
+<h3 id="AWS-Site-to-Site-VPN"><a href="#AWS-Site-to-Site-VPN" class="headerlink" title="AWS Site-to-Site VPN"></a>AWS Site-to-Site VPN</h3><p>AWS Site-to-Site VPN allows you to create a secure, encrypted connection over the internet between your on-premises network and your AWS VPC.</p>
+<p><strong>Steps to set up AWS Site-to-Site VPN:</strong></p>
+<ol>
+<li><strong>Create a Customer Gateway:</strong> Define your on-premises router as a customer gateway in the AWS Management Console.</li>
+<li><strong>Create a Virtual Private Gateway:</strong> Attach a virtual private gateway to your VPC.</li>
+<li><strong>Establish the VPN Connection:</strong> Set up the VPN connection between the customer gateway and the virtual private gateway.</li>
+<li><strong>Configure Routing:</strong> Update your route tables to direct traffic through the VPN connection.</li>
+</ol>
+<h2 id="Connecting-VPCs-in-the-AWS-Cloud"><a href="#Connecting-VPCs-in-the-AWS-Cloud" class="headerlink" title="Connecting VPCs in the AWS Cloud"></a>Connecting VPCs in the AWS Cloud</h2><p>Connecting VPCs within AWS can be done using several methods, such as VPC Peering, AWS Transit Gateway, and PrivateLink. Here, we will focus on VPC Peering.</p>
+<h3 id="VPC-Peering"><a href="#VPC-Peering" class="headerlink" title="VPC Peering"></a>VPC Peering</h3><p>VPC Peering allows you to connect two VPCs privately using AWS’s network, enabling you to route traffic between them using private IP addresses.</p>
+<p><strong>Steps to set up VPC Peering:</strong></p>
+<ol>
+<li><strong>Create a Peering Connection:</strong> In the AWS Management Console, navigate to the VPC Dashboard and create a peering connection between the VPCs.</li>
+<li><strong>Accept the Peering Request:</strong> The owner of the peer VPC must accept the peering connection request.</li>
+<li><strong>Update Route Tables:</strong> Modify the route tables of both VPCs to route traffic through the peering connection.</li>
+<li><strong>Update Security Groups:</strong> Adjust the security group rules to allow traffic between the peered VPCs.</li>
+</ol>
+<h2 id="Scaling-VPCs-in-the-AWS-Cloud"><a href="#Scaling-VPCs-in-the-AWS-Cloud" class="headerlink" title="Scaling VPCs in the AWS Cloud"></a>Scaling VPCs in the AWS Cloud</h2><p>As your cloud infrastructure grows, scaling your VPCs becomes essential. AWS provides several mechanisms to scale VPCs effectively:</p>
+<h3 id="Subnet-Scaling"><a href="#Subnet-Scaling" class="headerlink" title="Subnet Scaling"></a>Subnet Scaling</h3><p>Divide your VPC into multiple subnets, each representing different availability zones (AZs). This allows for high availability and fault tolerance.</p>
+<p><strong>Steps to scale using subnets:</strong></p>
+<ol>
+<li><strong>Plan Subnet IP Ranges:</strong> Allocate IP address ranges for each subnet.</li>
+<li><strong>Create Subnets:</strong> In the AWS Management Console, create subnets in different AZs.</li>
+<li><strong>Distribute Resources:</strong> Distribute your resources (e.g., EC2 instances) across these subnets for load balancing and redundancy.</li>
+</ol>
+<h3 id="Elastic-Load-Balancing-ELB"><a href="#Elastic-Load-Balancing-ELB" class="headerlink" title="Elastic Load Balancing (ELB)"></a>Elastic Load Balancing (ELB)</h3><p>ELB distributes incoming application traffic across multiple targets, such as EC2 instances, containers, and IP addresses, in one or more AZs.</p>
+<p><strong>Steps to set up ELB:</strong></p>
+<ol>
+<li><strong>Create a Load Balancer:</strong> In the AWS Management Console, navigate to the EC2 Dashboard and create a load balancer.</li>
+<li><strong>Configure Load Balancer:</strong> Specify the load balancer settings, such as listeners and security groups.</li>
+<li><strong>Register Targets:</strong> Add your EC2 instances or other targets to the load balancer.</li>
+<li><strong>Update Route Tables:</strong> Ensure that the route tables direct traffic to the load balancer.</li>
+</ol>
+<h2 id="Connecting-VPCs-to-Supported-AWS-Services"><a href="#Connecting-VPCs-to-Supported-AWS-Services" class="headerlink" title="Connecting VPCs to Supported AWS Services"></a>Connecting VPCs to Supported AWS Services</h2><p>AWS offers various services that can be integrated with your VPCs to enhance functionality and security. Some of these services include AWS Lambda, Amazon RDS, and Amazon S3.</p>
+<h3 id="AWS-PrivateLink"><a href="#AWS-PrivateLink" class="headerlink" title="AWS PrivateLink"></a>AWS PrivateLink</h3><p>AWS PrivateLink enables you to privately access AWS services and third-party services from your VPC without using public IP addresses.</p>
+<p><strong>Steps to set up AWS PrivateLink:</strong></p>
+<ol>
+<li><strong>Create a VPC Endpoint:</strong> In the AWS Management Console, create a VPC endpoint for the desired service.</li>
+<li><strong>Configure Security Groups:</strong> Adjust security group rules to allow traffic between your VPC and the service endpoint.</li>
+<li><strong>Update Route Tables:</strong> Add routes to direct traffic to the VPC endpoint.</li>
+</ol>
+<h3 id="AWS-Transit-Gateway"><a href="#AWS-Transit-Gateway" class="headerlink" title="AWS Transit Gateway"></a>AWS Transit Gateway</h3><p>AWS Transit Gateway connects multiple VPCs and on-premises networks through a central hub. This simplifies network architecture and management.</p>
+<p><strong>Steps to set up AWS Transit Gateway:</strong></p>
+<ol>
+<li><strong>Create a Transit Gateway:</strong> In the AWS Management Console, create a transit gateway.</li>
+<li><strong>Attach VPCs:</strong> Attach your VPCs to the transit gateway.</li>
+<li><strong>Configure Route Tables:</strong> Set up transit gateway route tables to manage traffic flow.</li>
+<li><strong>Establish VPN Connections:</strong> Optionally, create VPN connections between the transit gateway and your on-premises networks.</li>
+</ol>
+<p>By following these guidelines, you can create a robust and scalable network architecture that seamlessly connects your on-premises environments, VPCs, and AWS services, ensuring high availability, security, and performance.</p>
+<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><p><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmF3cy5hbWF6b24uY29tL3ZwYy9sYXRlc3QvdXNlcmd1aWRlL2V4dGVuZC1pbnRyby5odG1s">Connect your VPC to other networks<i class="fa fa-external-link-alt"></i></span></p>
+
 
     </div>
       
   <div class="popular-posts-header">相關文章</div>
   <ul class="popular-posts">
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/4283617483/" rel="bookmark">[NLP][ML] Transformer (1) - Structure</a></div>
+      <div class="popular-posts-title"><a href="/posts/3613028504/" rel="bookmark">Understanding Networking in AWS</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/38266156/" rel="bookmark">[NLP][ML] Adapters & LoRA</a></div>
+      <div class="popular-posts-title"><a href="/posts/3777980008/" rel="bookmark">AWS Global Infrastructure</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/2443192075/" rel="bookmark">[NLP][ML] Transformer (2) - Attention & Summary</a></div>
+      <div class="popular-posts-title"><a href="/posts/3982951460/" rel="bookmark">[AWS-CPE] Database and Storage</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/1255359463/" rel="bookmark">[NLP][ML] Transformer (3) - More conputational detail</a></div>
+      <div class="popular-posts-title"><a href="/posts/137330004/" rel="bookmark">[AWS-CPE] Security</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/2312529159/" rel="bookmark">[NLP] MLLM(多模態LLM) 論文簡要欣賞</a></div>
+      <div class="popular-posts-title"><a href="/posts/2332420025/" rel="bookmark">[AWS-CPE] Monitoring and Analytics</a></div>
     </li>
   </ul>
 
@@ -329,12 +398,21 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/ML/" rel="tag"><i class="fa fa-tag"></i> ML</a>
-              <a href="/tags/AI/" rel="tag"><i class="fa fa-tag"></i> AI</a>
+              <a href="/tags/aws/" rel="tag"><i class="fa fa-tag"></i> aws</a>
+              <a href="/tags/cloud-computing/" rel="tag"><i class="fa fa-tag"></i> cloud computing</a>
           </div>
 
         
 
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/posts/3294285798/" rel="prev" title="Understanding AWS Networking: VGW, VPC Endpoints, and Security Groups">
+                  <i class="fa fa-chevron-left"></i> Understanding AWS Networking: VGW, VPC Endpoints, and Security Groups
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
     </footer>
   </article>
 </div>
