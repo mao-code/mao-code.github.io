@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/logo-favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo-favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo-favicon.png">
+  <link rel="mask-icon" href="/images/logo-favicon.svg" color="#222">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="google-site-verification" content="fggWQJk_fNEY8zNXGPdahkvrmr8J_2PN4HN7HU0ik2Q">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-minimal.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"mao-code.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="Understanding AWS Networking: VGW, VPC Endpoints, and Security GroupsWhen working with Amazon Web Services (AWS), understanding the various networking components is crucial for designing secure and ef">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Understanding AWS Networking: VGW, VPC Endpoints, and Security Groups">
+<meta property="og:url" content="https://mao-code.github.io/posts/3294285798/index.html">
+<meta property="og:site_name" content="Mao 勛哥&#39;s blog">
+<meta property="og:description" content="Understanding AWS Networking: VGW, VPC Endpoints, and Security GroupsWhen working with Amazon Web Services (AWS), understanding the various networking components is crucial for designing secure and ef">
+<meta property="og:locale" content="zh_TW">
+<meta property="article:published_time" content="2024-05-22T09:55:53.000Z">
+<meta property="article:modified_time" content="2024-05-22T10:21:58.351Z">
+<meta property="article:author" content="Mao 勛哥">
+<meta property="article:tag" content="cloud computing">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://mao-code.github.io/posts/3294285798/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://mao-code.github.io/posts/3294285798/","path":"posts/3294285798/","title":"Understanding AWS Networking: VGW, VPC Endpoints, and Security Groups"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Understanding AWS Networking: VGW, VPC Endpoints, and Security Groups | Mao 勛哥's blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="Mao 勛哥's blog" type="application/atom+xml">
+</head>
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband">
+    <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/mao-code" class="github-corner" aria-label="View source on GitHub">
+      <svg width="80" height="80" viewbox="0 0 250 250" style="fill:#222; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+  </div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Mao 勛哥's blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">程式技術交流</p>
+      <img class="custom-logo-image" src="/images/logo2-white.png" alt="Mao 勛哥's blog">
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>關於</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80" placeholder="搜尋..." spellcheck="false" type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Understanding-AWS-Networking-VGW-VPC-Endpoints-and-Security-Groups"><span class="nav-number">1.</span> <span class="nav-text">Understanding AWS Networking: VGW, VPC Endpoints, and Security Groups</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Virtual-Private-Gateway-VGW"><span class="nav-number">1.1.</span> <span class="nav-text">Virtual Private Gateway (VGW)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#What-is-VGW"><span class="nav-number">1.1.1.</span> <span class="nav-text">What is VGW?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Key-Aspects-of-VGW"><span class="nav-number">1.1.2.</span> <span class="nav-text">Key Aspects of VGW</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Benefits-of-VGW"><span class="nav-number">1.1.3.</span> <span class="nav-text">Benefits of VGW</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#VPC-Endpoints"><span class="nav-number">1.2.</span> <span class="nav-text">VPC Endpoints</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#What-are-VPC-Endpoints"><span class="nav-number">1.2.1.</span> <span class="nav-text">What are VPC Endpoints?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Types-of-VPC-Endpoints"><span class="nav-number">1.2.2.</span> <span class="nav-text">Types of VPC Endpoints</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Benefits-of-VPC-Endpoints"><span class="nav-number">1.2.3.</span> <span class="nav-text">Benefits of VPC Endpoints</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Security-Groups"><span class="nav-number">1.3.</span> <span class="nav-text">Security Groups</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#What-are-Security-Groups"><span class="nav-number">1.3.1.</span> <span class="nav-text">What are Security Groups?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Key-Characteristics-of-Security-Groups"><span class="nav-number">1.3.2.</span> <span class="nav-text">Key Characteristics of Security Groups</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Benefits-of-Security-Groups"><span class="nav-number">1.3.3.</span> <span class="nav-text">Benefits of Security Groups</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Quiz"><span class="nav-number">1.4.</span> <span class="nav-text">Quick Quiz</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Reason-of-False-Selections"><span class="nav-number">1.4.1.</span> <span class="nav-text">Reason of False Selections</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Conclusion"><span class="nav-number">1.5.</span> <span class="nav-text">Conclusion</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#References"><span class="nav-number">1.6.</span> <span class="nav-text">References</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Mao 勛哥" src="/images/mypic.JPG">
+  <p class="site-author-name" itemprop="name">Mao 勛哥</p>
+  <div class="site-description" itemprop="description">記錄在程式開發道路上的心得</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">26</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">22</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL21hby1jb2Rl" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;mao-code"><i class="fab fa-github fa-fw"></i>GitHub</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRsYWIuY29tL01hb1h1bg==" title="GitLab → https:&#x2F;&#x2F;gitlab.com&#x2F;MaoXun"><i class="fab fa-gitlab fa-fw"></i>GitLab</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2luL21hb3h1bi1odWFuZy1hNzc5MTMyNjg=" title="LinkedIn → https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;maoxun-huang-a77913268"><i class="fab fa-linkedin fa-fw"></i>LinkedIn</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQ0JsdHlGY2dzTDVjMURJQktIMERTaFE=" title="YouTube → https:&#x2F;&#x2F;www.youtube.com&#x2F;channel&#x2F;UCBltyFcgsL5c1DIBKH0DShQ"><i class="fab fa-youtube fa-fw"></i>YouTube</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS91cGNfbWFveHVuLz9obD16aC10dw==" title="Instagram → https:&#x2F;&#x2F;www.instagram.com&#x2F;upc_maoxun&#x2F;?hl&#x3D;zh-tw"><i class="fab fa-instagram fa-fw"></i>Instagram</span>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="rss → &#x2F;atom.xml">rss</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="回到頂端">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://mao-code.github.io/posts/3294285798/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/mypic.JPG">
+      <meta itemprop="name" content="Mao 勛哥">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mao 勛哥's blog">
+      <meta itemprop="description" content="記錄在程式開發道路上的心得">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Understanding AWS Networking: VGW, VPC Endpoints, and Security Groups | Mao 勛哥's blog">
+      <meta itemprop="description" content>
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Understanding AWS Networking: VGW, VPC Endpoints, and Security Groups
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+      
+
+      <time title="創建時間：2024-05-22 17:55:53 / 修改時間：18:21:58" itemprop="dateCreated datePublished" datetime="2024-05-22T17:55:53+08:00">2024-05-22</time>
+    </span>
+
+  
+    <span class="post-meta-item" title="閱讀次數" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">閱讀次數：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="文章字數">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">文章字數：</span>
+      <span>4.9k</span>
+    </span>
+    <span class="post-meta-item" title="所需閱讀時間">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">所需閱讀時間 &asymp;</span>
+      <span>4 分鐘</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1 id="Understanding-AWS-Networking-VGW-VPC-Endpoints-and-Security-Groups"><a href="#Understanding-AWS-Networking-VGW-VPC-Endpoints-and-Security-Groups" class="headerlink" title="Understanding AWS Networking: VGW, VPC Endpoints, and Security Groups"></a>Understanding AWS Networking: VGW, VPC Endpoints, and Security Groups</h1><p>When working with Amazon Web Services (AWS), understanding the various networking components is crucial for designing secure and efficient architectures. In this article, we will explore three key concepts: Virtual Private Gateway (VGW), VPC Endpoints, and Security Groups.</p>
+<span id="more"></span>
+
+<h2 id="Virtual-Private-Gateway-VGW"><a href="#Virtual-Private-Gateway-VGW" class="headerlink" title="Virtual Private Gateway (VGW)"></a>Virtual Private Gateway (VGW)</h2><h3 id="What-is-VGW"><a href="#What-is-VGW" class="headerlink" title="What is VGW?"></a>What is VGW?</h3><p>A <strong>Virtual Private Gateway (VGW)</strong> is a component that enables communication between your Amazon Virtual Private Cloud (VPC) and on-premises networks or other VPCs. It acts as the VPN concentrator on the AWS side of the VPN connection.</p>
+<h3 id="Key-Aspects-of-VGW"><a href="#Key-Aspects-of-VGW" class="headerlink" title="Key Aspects of VGW"></a>Key Aspects of VGW</h3><ul>
+<li><strong>Functionality</strong>: VGW is used to set up a VPN connection between your VPC and your on-premises data center or another VPC.</li>
+<li><strong>Use Cases</strong>: It is typically used for hybrid cloud setups where resources are spread across on-premises infrastructure and AWS.</li>
+<li><strong>Components</strong>: A VPN connection includes two tunnels between your VGW and the on-premises VPN appliance, providing redundancy.</li>
+</ul>
+<h3 id="Benefits-of-VGW"><a href="#Benefits-of-VGW" class="headerlink" title="Benefits of VGW"></a>Benefits of VGW</h3><ul>
+<li><strong>Secure Connectivity</strong>: Provides secure connections between AWS and on-premises networks.</li>
+<li><strong>Redundancy</strong>: Multiple VPN tunnels ensure high availability.</li>
+<li><strong>Scalability</strong>: Easily scalable to meet growing network demands.</li>
+</ul>
+<h2 id="VPC-Endpoints"><a href="#VPC-Endpoints" class="headerlink" title="VPC Endpoints"></a>VPC Endpoints</h2><h3 id="What-are-VPC-Endpoints"><a href="#What-are-VPC-Endpoints" class="headerlink" title="What are VPC Endpoints?"></a>What are VPC Endpoints?</h3><p><strong>VPC Endpoints</strong> allow you to privately connect your VPC to supported AWS services and VPC endpoint services powered by AWS PrivateLink without requiring an internet gateway, NAT device, VPN connection, or AWS Direct Connect connection.</p>
+<h3 id="Types-of-VPC-Endpoints"><a href="#Types-of-VPC-Endpoints" class="headerlink" title="Types of VPC Endpoints"></a>Types of VPC Endpoints</h3><ul>
+<li><strong>Interface Endpoints</strong>: These use AWS PrivateLink and provide private connectivity to services like Amazon S3, DynamoDB, and others via a network interface in your VPC.</li>
+<li><strong>Gateway Endpoints</strong>: These are used specifically for S3 and DynamoDB and route traffic to these services without traversing the internet.</li>
+</ul>
+<h3 id="Benefits-of-VPC-Endpoints"><a href="#Benefits-of-VPC-Endpoints" class="headerlink" title="Benefits of VPC Endpoints"></a>Benefits of VPC Endpoints</h3><ul>
+<li><strong>Enhanced Security</strong>: Ensures that traffic between your VPC and AWS services does not leave the AWS network.</li>
+<li><strong>Simplified Network Architecture</strong>: Reduces the need for an internet gateway or NAT device.</li>
+<li><strong>Cost-Efficiency</strong>: Can reduce data transfer costs compared to internet-based communication.</li>
+</ul>
+<h2 id="Security-Groups"><a href="#Security-Groups" class="headerlink" title="Security Groups"></a>Security Groups</h2><h3 id="What-are-Security-Groups"><a href="#What-are-Security-Groups" class="headerlink" title="What are Security Groups?"></a>What are Security Groups?</h3><p><strong>Security Groups</strong> are virtual firewalls that control inbound and outbound traffic to AWS resources within a VPC.</p>
+<h3 id="Key-Characteristics-of-Security-Groups"><a href="#Key-Characteristics-of-Security-Groups" class="headerlink" title="Key Characteristics of Security Groups"></a>Key Characteristics of Security Groups</h3><ul>
+<li><strong>Functionality</strong>: Act at the instance level and control traffic based on protocols, ports, and source&#x2F;destination IP addresses.</li>
+<li><strong>Rules</strong>: Define rules to allow or deny traffic. For inbound rules, specify the allowed traffic to the instance. For outbound rules, specify the allowed traffic from the instance.</li>
+<li><strong>Statefulness</strong>: Security groups are stateful, meaning if you allow an inbound request from an IP, the response is automatically allowed regardless of outbound rules.</li>
+</ul>
+<h3 id="Benefits-of-Security-Groups"><a href="#Benefits-of-Security-Groups" class="headerlink" title="Benefits of Security Groups"></a>Benefits of Security Groups</h3><ul>
+<li><strong>Granular Control</strong>: Fine-grained control over inbound and outbound traffic.</li>
+<li><strong>Stateful Rules</strong>: Simplifies rule management by automatically allowing response traffic.</li>
+<li><strong>Enhanced Security</strong>: Helps protect instances from unwanted traffic.</li>
+</ul>
+<h2 id="Quick-Quiz"><a href="#Quick-Quiz" class="headerlink" title="Quick Quiz"></a>Quick Quiz</h2><p>Which techniques should you use to secure an Amazon Relational Database Service (Amazon RDS) database? (Select THREE.)<br> [] AWS Identity and Access Management (IAM) policies to define access at the table, [] row, and column levels<br> [v] Security groups to control network access to individual instances<br> [] An Amazon Virtual Private Cloud (Amazon VPC) gateway endpoint to prevent traffic [] from traversing the internet<br> [] A virtual private gateway (VGW) to filter traffic from restricted networks<br> [v] A virtual private cloud (VPC) to provide instance isolation and firewall protection<br> [v] Encryption to protect sensitive data</p>
+<h3 id="Reason-of-False-Selections"><a href="#Reason-of-False-Selections" class="headerlink" title="Reason of False Selections"></a>Reason of False Selections</h3><ol>
+<li>AWS Identity and Access Management (IAM) policies to define access at the table, row, and column levels<ol>
+<li>Reason: While IAM policies are crucial for managing permissions and access controls, RDS uses database-specific authentication mechanisms for access control at more granular levels such as table, row, and column. IAM is typically used for controlling access to the RDS instance itself rather than the data within it.</li>
+</ol>
+</li>
+<li>An Amazon Virtual Private Cloud (Amazon VPC) gateway endpoint to prevent traffic from traversing the internet<ol>
+<li>Reason: VPC endpoints are useful for connecting to AWS services privately without going through the public internet. However, they are not specifically designed for securing RDS instances. The primary use of VPC endpoints is for connecting to services like S3 or DynamoDB within a VPC, not for instance-level security.</li>
+</ol>
+</li>
+<li>A virtual private gateway (VGW) to filter traffic from restricted networks<ol>
+<li>Reason: A VGW is used to establish VPN connections between your VPC and on-premises networks. While it provides a secure connection for hybrid environments, it is not specifically tailored to securing RDS instances directly. VGWs are more about connecting different network environments rather than providing instance-level security.</li>
+</ol>
+</li>
+</ol>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>Understanding VGW, VPC Endpoints, and Security Groups is essential for designing secure and efficient network architectures in AWS. VGWs provide secure connectivity between VPCs and on-premises networks, VPC Endpoints allow private connections to AWS services, and Security Groups offer granular control over instance traffic. Leveraging these components effectively can significantly enhance the security and performance of your AWS infrastructure.</p>
+<p>By mastering these AWS networking fundamentals, you can ensure that your applications and data remain secure and accessible, while optimizing costs and simplifying network management.</p>
+<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><p><span class="exturl" data-url="aHR0cHM6Ly9nb2RsZW9uLmdpdGh1Yi5pby9ibG9nL0FXUy9BV1MtU09BLVZQQy8=">AWS SOA 學習筆記 - VPC(Virtual Private Cloud)<i class="fa fa-external-link-alt"></i></span></p>
+
+
+    </div>
+      
+  <div class="popular-posts-header">相關文章</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/posts/3108822142/" rel="bookmark">Understanding Cloud Computing - Public, Private, and Hybrid Clouds</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/posts/3613028504/" rel="bookmark">Understanding Networking in AWS</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/posts/136966596/" rel="bookmark">Connecting Networks in AWS: A Comprehensive Guide</a></div>
+    </li>
+  </ul>
+
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/cloud-computing/" rel="tag"><i class="fa fa-tag"></i> cloud computing</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/posts/3613028504/" rel="prev" title="Understanding Networking in AWS">
+                  <i class="fa fa-chevron-left"></i> Understanding Networking in AWS
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/posts/136966596/" rel="next" title="Connecting Networks in AWS: A Comprehensive Guide">
+                  Connecting Networks in AWS: A Comprehensive Guide <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Mao 勛哥</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+      <span>總字數：</span>
+    <span title="總字數">139k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span>所需總閱讀時間 &asymp;</span>
+    <span title="所需總閱讀時間">2:06</span>
+  </span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="訪客總數">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="總瀏覽次數">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.5.0/pjax.min.js" integrity="sha256-3NkoLDrmHLTYj7csHIZSr0MHAFTXth7Ua/DDt4MRUAg=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.0/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  <script src="/js/third-party/pace.js"></script>
+
+  
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"mao-code","count":false,"i18n":{"disqus":"disqus"}}</script>
+<script src="/js/third-party/comments/disqus.js"></script>
+
+</body>
+</html>
