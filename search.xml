@@ -28,193 +28,6 @@ style="width: 70%; margin: 15px auto;"></p>
       </tags>
   </entry>
   <entry>
-    <title>CC-沈浸式線上逛街APP-系統與技術介紹</title>
-    <url>/posts/2012237495/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>接續上一篇的文章，這篇文章會著重介紹這個系統<br>以下是我在YouTube上對這個專案的介紹與Demo：</p>
-<iframe
-    src="https://www.youtube.com/embed/aMGnyI2Xe04">
-</iframe>
-<span class="exturl" data-url="aHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xTmVDRGk0dWFmQ3UtcF9iVDE2cERLSm50SXluN3FzeUYvdmlldz91c3A9c2hhcmluZw==">Proposal Link<i class="fa fa-external-link-alt"></i></span>
-
-<p>這篇文章的內容會與影片很像，主要分為<strong>動機與介紹、重點功能簡介、系統架構與技術</strong>的順序介紹<br>系統功能Demo, 還請觀看影片介紹</p>
-<span id="more"></span>
-<p><img data-src="/images/posts/CC-project-demo/1.png" 
-style="width: 90%; margin: 15px auto;"></p>
-<h2 id="動機與介紹"><a href="#動機與介紹" class="headerlink" title="動機與介紹"></a>動機與介紹</h2><img data-src="/images/posts/CC-project-demo/2.png" style="width: 70%; margin: 15px auto;">
-首先我們主要的TA之一是線上逛街族, 針對這個族群我們統整出簡單的兩點：第一, 他們在線上瀏覽或滑商品時, 通常沒有特定的消費目的, 只是想要滑滑看看, 無目的的瀏覽行為, 第二, 這種行為主要是以消遣、獲得樂趣為目的, 而不一定是真的想要買商品
-
-<hr>
-<img data-src="/images/posts/CC-project-demo/3.png" style="width: 70%; margin: 15px auto;">
-根據上面的族群設定, 我們的專案主要會focus在解決或滿足下面的問題, 第一, 我們是針對無目的性的消費情境底下的需求, 第二, 我們希望帶給使用者沈浸式的體驗, 所謂的沈浸式體驗, 就是在舒服且不受干擾的狀態下, 接收自己有興趣的資訊, 以此讓使用者能在我們這個APP上做消遣、殺時間的動作, 這麼做的目的很大一部分是為了捕捉使用者的微時刻, 這些微時刻的數據可以代表使用者不同時刻的喜好或者決策, 第四，我們這個APP也會瞄準直播的市場與直播平台合作，而這些直播主的煩惱，便是下播後無法持續創造收入，因此我們除了希望能延長商品的生命週期外，也可以透過捕捉使用者行為來提供直播主缺乏的Consumer Insight
-
-<hr>
-<img data-src="/images/posts/CC-project-demo/4.png" style="width: 70%; margin: 15px auto;">
-為了達成以上的目的，我們主要有這幾項手段，第一, 研究推薦演算法與捕捉使用者行為，透過使用者不同時刻的行為數據來作為推薦的依據，而非傳統的電商使用歷史紀錄來做推薦，以次讓使用者能夠在每時每刻接收有興趣的資訊，達到沈浸式的體驗。第二，透過簡潔的介面，降低使用者瀏覽時的壓力，讓使用者更願意停留在APP上，第三，透過分享貼文、追蹤、評論等等的社群機制，讓使用者能夠了解親朋好友們有興趣或者好評的商品，也能夠享受社群的樂趣，增加APP的黏著度，最後，透過APP上種種捕捉使用者行為數據的機制，可以將這些數據提供給與我們合作的第三方廠商，讓廠商更了解使用者的喜好
-
-<h2 id="重點功能簡介"><a href="#重點功能簡介" class="headerlink" title="重點功能簡介"></a>重點功能簡介</h2><img data-src="/images/posts/CC-project-demo/5.png" style="width: 70%; margin: 15px auto;">
-再來介紹一些重點功能的簡短敘述，首先第一個是我們的商品貼文，也是商品的主體，貼文特色主要以滿板設計與資訊收合來達到雜訊最小化的目的，另外後面Demo也會呈現推薦商品的形式，與現在短影音的方式很像，透過推薦與給人耳目一新的商品，帶給使用者殺時間的樂趣，另外，透過商品貼文，也可以成為直播主下播後銷售的利器，與一般電商不同的是，我們主動推薦商家商品，而且是透過使用者當前的行為喜好，而不是被動等待使用者搜尋或是透過購買紀錄來做推薦
-
-<hr>
-<img data-src="/images/posts/CC-project-demo/6.png" style="width: 70%; margin: 15px auto;">
-再來是我們的主頁面，透過滑卡的機制增加互動感，也可以同時捕捉使用者行為，以做到即時推薦，這麼做除了可以增加沈浸體驗，也可以更廣泛的推薦商品，提高曝光程度
-
-<hr>
-<img data-src="/images/posts/CC-project-demo/7.png" style="width: 70%; margin: 15px auto;">
-主頁面與探索頁面都可以透過使用者的滑卡行為、停留時間與點擊率，來彼此優化推薦內容，做到雙向推薦的功能
-
-<hr>
-<img data-src="/images/posts/CC-project-demo/8.png" style="width: 70%; margin: 15px auto;">
-探索頁面除了會推薦使用者感興趣的商品，也會隨機推薦相關商品，增加新奇度，其中最大塊的貼文則為推薦分數最高的商品，透過矩陣式樹狀結構，帶給使用者簡潔與大量瀏覽的感受
-
-<hr>
-<img data-src="/images/posts/CC-project-demo/9.png" style="width: 70%; margin: 15px auto;">
-CC提供商城、買家、直播主追蹤的機制，加上個人化自己的動態牆與留言區，增加社群互動性，以社群的力量增加APP的黏著度
-
-<hr>
-<img data-src="/images/posts/CC-project-demo/10.png" style="width: 70%; margin: 15px auto;">
-分享貼文除了可以增加互動的樂趣，也是提供消費者洞見的大平台
-最重要的是，可以藉由社群的力量，一傳十十傳百，來行銷商品
-
-<h2 id="系統架構與技術"><a href="#系統架構與技術" class="headerlink" title="系統架構與技術"></a>系統架構與技術</h2><p>先附上系統架構圖：<br><img data-src="/images/posts/CC-project-demo/CC_structure.jpeg" style="width: 70%; margin: 15px auto;"></p>
-<p>首先前端主要由Angular寫成，搭配<strong>模組化與物件導向設計，增加程式的可維護性</strong>，最後透過PWA包裝成跨平台的APP<br>藉由Angular能夠模組化與元件化的特性，我們將各個功能切分成不同模組，提升程式低耦合高內聚的特性，另外，Token驗證、路由保護、API攔截器、資料格式化Pipeline等等，也都抽離出來實作，其中，核心的商業邏輯切分在我們的Service模組，與畫面邏輯分離，再藉由依賴注入讓各模組使用，這樣的設計，讓我們的專案在未來更改與維護擴充時非常省時與省力。</p>
-<p>另外一個主要的功能是推薦演算法，我們透過標籤(label)與雅卡爾相似度(Jaccard Similarity)，做了一個Example Based的推薦引擎，主要是用MongoDB pipeline與後端演算構築而成。</p>
-<p>這裡也是我第一次使用前端框架，來寫一個比較完整的專案，由於我是後端出身，所以選擇一個自己寫起來最舒服的Angular框架，有種在寫後端的親切感XD。</p>
-<p>後端主要由NodeJS寫成，資料庫則為MongoDB，一樣是將各個功能進行模組化的拆分，與資料庫索引的優化，以及推薦演算法的實現。</p>
-<p>另外WebServer的部分則是由IIS代理，加上GitLab CI&#x2F;CD &amp; GitLab Runner做到自動化整合與部屬的功能</p>
-<style>
-.video-container
-{
-    padding-top: 60% !important;
-}
-</style>]]></content>
-      <categories>
-        <category>專案</category>
-        <category>side project</category>
-      </categories>
-      <tags>
-        <tag>專案</tag>
-        <tag>side project</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>政大Google學生開發者社群-心得（第一學期）</title>
-    <url>/posts/277323671/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在剛上大二時，除了手邊和學長的專案，我也參加了政大的Google學生開發者社群。主要是希望透過提案，<strong>利用科技來解決問題</strong>，在這裡我也深深感受到Google的文化，那就是<strong>不會怕去嘗試、不怕去解決問題</strong>，我也認識在這個社群中的各個人才。在這個社群中，我除了擔任自己<strong>專案領導人</strong>的角色外，我也身兼<strong>後端技術長</strong>的任務，也是想要發揮我目前所學到的、最成熟的後端知識。除了技術面，如何管理一個團隊、一項專案，也是一門很大的課題。希望在未來可以繼續把自己的這項專案做到完善，解決真正的問題！</p>
-<span id="more"></span>
-
-<h2 id="定位與職位"><a href="#定位與職位" class="headerlink" title="定位與職位"></a>定位與職位</h2><ul>
-<li><h3 id="專案定位"><a href="#專案定位" class="headerlink" title="專案定位"></a>專案定位</h3></li>
-</ul>
-<p>我這次的提案叫做「政大通NCCUPass」，以<strong>政大校園生活為出發點</strong>，想要做一款能夠解決政大學生生活上不便的APP，透過專案組的討論與調查，帶來<strong>更便利、聰明與數位化</strong>的校園生活，讓校園內的需求能夠即時被滿足，也讓這款APP融入政大學生的生活中，成為政大校園內不可或缺的一部分，因此，「政大通-NCCUPass」的提案就此誕生</p>
-<hr>
-<p>下面是我們第一次期末發表的海報和照片<br>海報內呈現的是我們規劃、也正在開發的功能<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/poster.jpg" 
-style="width: 70%; margin: 15px auto;"></p>
-<hr>
-<p>這個是期末發表當天的攤位介紹照片<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img4.jpg" 
-style="width: 70%; margin: 15px auto;"></p>
-<p><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img2.JPG" 
-style="width: 70%; margin: 15px auto;"></p>
-<p><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img1.JPG" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>參與證書<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/GDSC_certificate.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<hr>
-<ul>
-<li><h3 id="職位"><a href="#職位" class="headerlink" title="職位"></a>職位</h3></li>
-</ul>
-<p>在這個專案中，我擔任<strong>Project Leader(專案主持人)<strong>，與</strong>Backend Tech-Lead(後端技術長)<strong>的身份，帶領總共</strong>11人的團隊</strong>，在我們這個團隊中，主要分成四組，前端、後端、UI&#x2F;UX、文書，除了負責主要的後端技術，也要帶領後端的組員們提升實力、協調與規劃。以專案領導人的角度來看，除了需要<strong>規劃整個專案的進度與走向外，也要監督進度、協調各組、人際溝通等等</strong>，除了利用各種專案管理的工具外，也要撰寫各種文件與流程圖，老實說滿累的XD。但也是遇到一群願意跟隨我的隊友們，一起成長，真的非常得感謝他們🙏</p>
-<h2 id="技術"><a href="#技術" class="headerlink" title="技術"></a>技術</h2><ul>
-<li><h3 id="系統架構圖"><a href="#系統架構圖" class="headerlink" title="系統架構圖"></a>系統架構圖</h3></li>
-</ul>
-<p>下面是我們的系統架構圖，因為我是負責後端的部分，所以會著重畫後端的架構<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/NCCUPass-Structure.jpg" 
-style="width: 70%; margin: 15px auto;"></p>
-<ul>
-<li><h3 id="後端技術細節"><a href="#後端技術細節" class="headerlink" title="後端技術細節"></a>後端技術細節</h3></li>
-</ul>
-<p>根據上面的架構圖，我們的專案主要部署在Ubuntu的主機上，所有的服務利用Docker Compose統一建立，另外還有利用GitLab Runner做到自動化整合與自動化部屬的功能。後端程式是由.NET C#撰寫，這邊我使用的是Software Layer Architecture Pattern(軟體分層架構)，結合各種Design Pattern再加上自己的一些變形，資料庫是使用MongoDB的Replica-Set，也有使用Redis做快取，照片和一些公開的檔案主要放在我們的File Server上。其他技術細節我就列在下面，想看的人可以參考一下XD</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">- Software Layer Architecture pattern (多層)</span><br><span class="line">- Repository pattern</span><br><span class="line">- Unit of Work pattern</span><br><span class="line">- Mediator pattern &amp; CQRS</span><br><span class="line">- Password Salting and Encryption</span><br><span class="line">- JWT &amp; RBAC</span><br><span class="line">- Automapper</span><br><span class="line">- Exception handler抽離</span><br><span class="line">- Dapper &amp; EF combination</span><br><span class="line">- Redis (Cache)</span><br><span class="line">- Docker Networking</span><br><span class="line">- Docker Volume</span><br><span class="line">- Docker hub</span><br><span class="line">- appsettings 組態切換</span><br><span class="line">- MongoDB replica-set</span><br><span class="line">    - key-file (internal authentication)</span><br><span class="line">- Git 多人協作</span><br><span class="line">- Swagger / OpenAPI</span><br><span class="line">- Docker File Server</span><br><span class="line">- Docker mongoDB backup daily</span><br><span class="line">- Docker Compose</span><br><span class="line">- JMeter壓力測試</span><br><span class="line">- GC mode區別(Workstation, Server)</span><br><span class="line">- SignalR 雙向溝通</span><br><span class="line">- 測試 (K6 stress testing, )</span><br><span class="line">- 自動化發送Email (python selenium)</span><br><span class="line">- SSH with Linux server</span><br><span class="line">- FCM (to push device notification)</span><br><span class="line">- Linux server</span><br><span class="line">- Cloudflare domain and SSL/TLS</span><br><span class="line">- Nginx  (on server and on docker)</span><br><span class="line">    - redirect (setting files)</span><br><span class="line">    - ssl setting(certificate, key)</span><br><span class="line">- Shell script自動備份資料庫</span><br></pre></td></tr></table></figure>
-<p>之後也會一直新增，因為現在處於專案開發的初期。</p>
-<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>最後，這個專案雖然只是在發展初期，但我希望未來可以發展到我預想的樣子，也非常感謝一路願意跟隨我、幫助我的隊友們，單打獨鬥真的比不上團隊合作👍，也希望各位未來也可以繼續幫助我啦，現在打分享文可能還太早，但我就是想要趁學期末趕快記錄一下哈哈</p>
-]]></content>
-      <categories>
-        <category>心得</category>
-        <category>專案</category>
-        <category>GDSC</category>
-        <category>side project</category>
-        <category>NCCUPass</category>
-      </categories>
-      <tags>
-        <tag>專案</tag>
-        <tag>GDSC</tag>
-        <tag>NCCUPass</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>政大Google學生開發者社群-政大通NCCUPass-心得 (第二學期)</title>
-    <url>/posts/3042436019/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>繼上篇<a href="https://mao-code.github.io/posts/277323671/#more">GDSC的心得文</a>，這篇我會介紹我們下學期的開發經歷、得獎、專案簡介以及未來這個專案的走向，屬於一個小小的紀錄心得文！</p>
-<span id="more"></span>
-
-<h1 id="專案"><a href="#專案" class="headerlink" title="專案"></a>專案</h1><h2 id="簡介"><a href="#簡介" class="headerlink" title="簡介"></a>簡介</h2><p>政大通 - NCCUPass 團隊熱切懷抱著重塑校園體驗的夢想，點燃學生的熱情和創造力，以共同打造一個充滿活力、連結力和創新力的校園生活。經由深入校園的人際交流與觀察，我們發現學生面對著種種生活上的不便與困難，然而目前鮮少有專門為學生打造的解決方案。學生間的線下互動與真實聯繫日益減少，導致難以找到同學幫忙或組團合作的機會。此外，午晚餐時的人潮湧入校園周邊餐廳，更帶來了無法即時點餐的困擾。這些現況讓我們看到一個獨特的契機，我們決心以「政大通 - NCCUPass 」 APP 的形式來化解這些困境。</p>
-<p>「政大通 - NCCUPass 」不僅提供政大學生一個集社交、實用和創新於一身的平台，更是一個綜合性的應用程式，旨在加強他們的校園體驗。我們希望這個 APP 能成為解決校園生活難題的得力幫手！</p>
-<p>在社團「政大 Google 學生開發者社群」的擁護下，我們匯聚各領域的精英，凝聚開放分享的心態，攜手共創這個改變學生生活的嶄新 APP ！政大只是我們的第一塊版圖，我們的未來目標是影響全國的大學生，為他們帶來更加豐富、更加便利的校園體驗！</p>
-<h2 id="目前功能簡介"><a href="#目前功能簡介" class="headerlink" title="目前功能簡介"></a>目前功能簡介</h2><h3 id="學生任務功能-增強校園互動體驗"><a href="#學生任務功能-增強校園互動體驗" class="headerlink" title="學生任務功能 - 增強校園互動體驗"></a>學生任務功能 - 增強校園互動體驗</h3><ul>
-<li>動機發想<ul>
-<li>缺乏線下互動與真實聯繫：<br>我們注意到越來越多的大學生在日常生活中依賴數位平台和社交媒體，而非與人面對面的互動。這種現象在校園中尤為明顯，比起在現實中進行真實的互動，學生更傾向於在虛擬世界中建立社交連結。我們對大學生進行訪談、問卷調查和社交媒體分析，收集了大量的數據和反饋。這些數據揭示了大學生內心深處對面對面互動的渴望，以及更真實的交流，更深刻的情感，卻在線下互動中遇到了種種挑戰與限制。基於這些資訊，我們更加確定缺乏線下互動和真實聯繫的問題造成大學生的困擾，這些數據與心靈共鳴，激發了我們的靈感。我們深信，缺乏線下互動和真實聯繫的問題，不僅是個人的困擾，更是一種社會現象，需要我們攜手改變。於是，我們投入心血，開發了一個獨特的解決方案——一個能在現實世界中促進人與人之間有意義連結的奇妙工具。</li>
-</ul>
-</li>
-<li>功能敘述<ul>
-<li>這個功能旨在促進學生之間的線下互動，並為他們提供一個自由而實用的平台，能以此完成各種有趣的任務。學生們可以發布任務，例如：幫忙帶宵夜、一起揪團出去玩等等。學生可以在我們的 APP 上自由發布任務，並尋找其他學生來接受挑戰，每一次的任務都是獨特的社交機會，讓學生們在校園中建立更多真實的聯繫和友誼。除此之外，這個功能還擁有相當多面的好處。首先，它鼓勵學生積極參與校園生活，擺脫線上世界的束縛。透過與其他學生一起完成任務，他們可以體驗到珍貴的團隊合作和互助精神。此外，如果同學對彼此的服務滿意，可以提供金錢或其他回饋，藉著小小賺外快的機會，也可以累積一定的金錢！相信這個制度能鼓勵學生發揮創意和努力工作，同時也建立相互尊重和價值交換的文化。</li>
-</ul>
-</li>
-</ul>
-<h3 id="預約外帶功能與午餐快選器-－-用餐省時無等待，專屬學生的美食提前預訂"><a href="#預約外帶功能與午餐快選器-－-用餐省時無等待，專屬學生的美食提前預訂" class="headerlink" title="預約外帶功能與午餐快選器 － 用餐省時無等待，專屬學生的美食提前預訂"></a>預約外帶功能與午餐快選器 － 用餐省時無等待，專屬學生的美食提前預訂</h3><ul>
-<li><p>動機發想</p>
-<ul>
-<li><p>餐點供應不足：<br>尤其在午晚餐尖峰時段，餐廳經常供不應求，學生需要花費大量的時間排隊等待。</p>
-</li>
-<li><p>用餐時間緊湊：<br>大學生的生活節奏快，經常要在短時間內完成吃飯等基本活動，而在繁忙的用餐時間內排隊等待餐點往往會浪費寶貴的時間。</p>
-</li>
-<li><p>無法預估用餐需求：<br>在繁忙的用餐時間內，無法預估用餐需求，可能需要長時間等待，或因時間太短而做了不太理想的食物選擇。</p>
-</li>
-</ul>
-</li>
-<li><p>功能敘述</p>
-<ul>
-<li>這個功能將為大學生們帶來極速、便利、無等待的用餐體驗！我們與學校附近的店家攜手合作，確保學生們不必等待太久。現在，同學只需要提前預約外帶，下課後直接前往店家，餐點早已準備好，輕鬆取走即可！不再浪費時間排隊，享受自由自在的用餐時光！這個預約外帶功能不僅是大學生們用餐的時尚選擇，更是忙碌學習生活的得力助手。在繁忙的用餐尖峰時段，可以輕鬆預訂心儀的美食，避免為了取餐而耽誤其他重要事務。</li>
-</ul>
-</li>
-</ul>
-<h2 id="連結"><a href="#連結" class="headerlink" title="連結"></a>連結</h2><ul>
-<li><span class="exturl" data-url="aHR0cHM6Ly9uY2N1cGFzcy5jb20v">官方網站<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9uY2N1cGFzcy8=">IG粉專<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2NvbXBhbnkvbmNjdXBhc3M=">LinkedIn<i class="fa fa-external-link-alt"></i></span></li>
-</ul>
-<h1 id="得獎"><a href="#得獎" class="headerlink" title="得獎"></a>得獎</h1><p>NCCUPass在當天的期末發表會得到最佳人氣專案奬的殊榮！<br><img data-src="/images/posts/2023NCCUPass/GDSC_award.JPG" 
-style="width: 70%; margin: 15px auto;"></p>
-<p><img data-src="/images/posts/2023NCCUPass/GDSC_award_on_stage.JPG" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>當天的期末發表會：<br><img data-src="/images/posts/2023NCCUPass/GDSC_final.JPG" 
-style="width: 70%; margin: 15px auto;"></p>
-<h1 id="技術"><a href="#技術" class="headerlink" title="技術"></a>技術</h1><p>在經過一個學期後，我們也慢慢拓展技術範圍，未來也將因應需求機動地改變<br>在這邊就只放上系統架構圖，不贅述太多技術細節</p>
-<h2 id="系統架構圖"><a href="#系統架構圖" class="headerlink" title="系統架構圖"></a>系統架構圖</h2><p><img data-src="/images/posts/2023NCCUPass/NCCUPass_structure.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<h1 id="未來"><a href="#未來" class="headerlink" title="未來"></a>未來</h1><p>政大是我們的第一塊版圖，我們的目標是全台灣的大學，目前先穩紮穩打在政大站穩腳步，在此期間會積極地與其他組織或社團合作、參與各項競賽以及參加創投機構的活動，我們的理念是讓大學生們彼此間的關係更加密切與真實，使他們的生活更加數位化與便利！</p>
-]]></content>
-      <categories>
-        <category>心得</category>
-        <category>專案</category>
-        <category>GDSC</category>
-        <category>side project</category>
-        <category>NCCUPass</category>
-      </categories>
-      <tags>
-        <tag>專案</tag>
-        <tag>GDSC</tag>
-        <tag>NCCUPass</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>[.NET][C#][SOLID] - DI &amp; IoC (依賴注入與控制反轉) 全面講解</title>
     <url>/posts/3588979794/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>IoC (Inversion of Control) 控制反轉，與OOP SOLID原則中的其中一種設計原則有關，也就是其中的DIP(Dependency Inversion Principle)，是OOP一個非常重要的程式設計思想，對於軟體開發來說十分重要，下面我將<strong>十分詳細的介紹何為DIP、IoC以及DI、為何要使用它們以及如何實作</strong>，相信大家閱讀完會對這個重要的思想了解的更加透徹。</p>
@@ -243,7 +56,7 @@ style="width: 70%; margin: 15px auto;"></p>
 </ul>
 </blockquote>
 <p>DIP的定義非常重要，請大家牢記在心。<br>也就是說，程式應該依賴抽象，而不是實作的實體，這可以幫助我們對程式之間解耦，能夠被更好地維護。<br>DI是為了實現DIP和IoC而誕生的實現方式，因此大家在使用物件導向的技巧時，<strong>務必清楚自己在做什麼，和為何這樣做</strong>。</p>
-<h2 id="好處-x2F-為什麼要使用？"><a href="#好處-x2F-為什麼要使用？" class="headerlink" title="好處&#x2F;為什麼要使用？"></a>好處&#x2F;為什麼要使用？</h2><p>在針對各個名詞解釋與實作之前，我想先讓各位了解DIP以及IoC帶來的好處。</p>
+<h2 id="好處-為什麼要使用？"><a href="#好處-為什麼要使用？" class="headerlink" title="好處&#x2F;為什麼要使用？"></a>好處&#x2F;為什麼要使用？</h2><p>在針對各個名詞解釋與實作之前，我想先讓各位了解DIP以及IoC帶來的好處。</p>
 <blockquote>
 <ol>
 <li>可維護性 (maintainability)</li>
@@ -424,137 +237,190 @@ img{
       </tags>
   </entry>
   <entry>
-    <title>[Git][Version Control] Git - Setup</title>
-    <url>/posts/731175240/</url>
-    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Setting up the environment of Git and some recommended GUI tools.</p>
-<span id="more"></span>
+    <title>CC-沈浸式線上逛街APP-系統與技術介紹</title>
+    <url>/posts/2012237495/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>接續上一篇的文章，這篇文章會著重介紹這個系統<br>以下是我在YouTube上對這個專案的介紹與Demo：</p>
+<iframe
+    src="https://www.youtube.com/embed/aMGnyI2Xe04">
+</iframe>
+<span class="exturl" data-url="aHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xTmVDRGk0dWFmQ3UtcF9iVDE2cERLSm50SXluN3FzeUYvdmlldz91c3A9c2hhcmluZw==">Proposal Link<i class="fa fa-external-link-alt"></i></span>
 
-<h1 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h1><ol>
-<li><p>Install Git with the link below: (with your OS)<br><a href="%22https://git-scm.com/%22">Git official website</a></p>
-</li>
-<li><p>Type this command to check if it is installed successfully:</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h1 id="Configure-Git-type-commands-in-your-shell"><a href="#Configure-Git-type-commands-in-your-shell" class="headerlink" title="Configure Git (type commands in your shell)"></a>Configure Git (type commands in your shell)</h1><ol>
-<li><p>Set your user name by running the following command:</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Set your email address by running the following command:</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.email youremail@example.com</span><br></pre></td></tr></table></figure></li>
-<li><p>Set up SSH key (for remote repository access. e.g. GitHub)</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure></li>
-</ol>
-<ul>
-<li><p>Press Enter to accept the default file location and passphrase (or set your own if desired).<br>Once the key is generated, run the following command to add it to the SSH agent</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-add ~/.ssh/id_rsa</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Copy the public key to your clipboard by running the following command</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Add the copied public key to your Git hosting platform account (e.g., GitHub, GitLab) by following their documentation.</p>
-</li>
-<li><p>View your ssh keys</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd ~/.ssh</span><br></pre></td></tr></table></figure>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ls</span><br></pre></td></tr></table></figure>
-<ul>
-<li>Use a text editor or command-line tools (such as cat or less) to view the contents of the .pub files and see the public key information: <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat id_rsa.pub</span><br></pre></td></tr></table></figure></li>
-</ul>
-</li>
-</ul>
-<ol start="4">
-<li>You can see your configuration by typing the following commands:<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --list</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h1 id="Recommended-GUI-tools"><a href="#Recommended-GUI-tools" class="headerlink" title="Recommended GUI tools"></a>Recommended GUI tools</h1><p>Both commands and GUI tools are important to Git manupulation.<br>And Here are some recommended Git GUI tools that you can use.</p>
-<ul>
-<li><a href="%22https://www.sourcetreeapp.com/%22">Sourcetree</a></li>
-<li><a href="%22https://www.gitkraken.com/%22">GitKraken</a></li>
-</ul>
-]]></content>
+<p>這篇文章的內容會與影片很像，主要分為<strong>動機與介紹、重點功能簡介、系統架構與技術</strong>的順序介紹<br>系統功能Demo, 還請觀看影片介紹</p>
+<span id="more"></span>
+<p><img data-src="/images/posts/CC-project-demo/1.png" 
+style="width: 90%; margin: 15px auto;"></p>
+<h2 id="動機與介紹"><a href="#動機與介紹" class="headerlink" title="動機與介紹"></a>動機與介紹</h2><img data-src="/images/posts/CC-project-demo/2.png" style="width: 70%; margin: 15px auto;">
+首先我們主要的TA之一是線上逛街族, 針對這個族群我們統整出簡單的兩點：第一, 他們在線上瀏覽或滑商品時, 通常沒有特定的消費目的, 只是想要滑滑看看, 無目的的瀏覽行為, 第二, 這種行為主要是以消遣、獲得樂趣為目的, 而不一定是真的想要買商品
+
+<hr>
+<img data-src="/images/posts/CC-project-demo/3.png" style="width: 70%; margin: 15px auto;">
+根據上面的族群設定, 我們的專案主要會focus在解決或滿足下面的問題, 第一, 我們是針對無目的性的消費情境底下的需求, 第二, 我們希望帶給使用者沈浸式的體驗, 所謂的沈浸式體驗, 就是在舒服且不受干擾的狀態下, 接收自己有興趣的資訊, 以此讓使用者能在我們這個APP上做消遣、殺時間的動作, 這麼做的目的很大一部分是為了捕捉使用者的微時刻, 這些微時刻的數據可以代表使用者不同時刻的喜好或者決策, 第四，我們這個APP也會瞄準直播的市場與直播平台合作，而這些直播主的煩惱，便是下播後無法持續創造收入，因此我們除了希望能延長商品的生命週期外，也可以透過捕捉使用者行為來提供直播主缺乏的Consumer Insight
+
+<hr>
+<img data-src="/images/posts/CC-project-demo/4.png" style="width: 70%; margin: 15px auto;">
+為了達成以上的目的，我們主要有這幾項手段，第一, 研究推薦演算法與捕捉使用者行為，透過使用者不同時刻的行為數據來作為推薦的依據，而非傳統的電商使用歷史紀錄來做推薦，以次讓使用者能夠在每時每刻接收有興趣的資訊，達到沈浸式的體驗。第二，透過簡潔的介面，降低使用者瀏覽時的壓力，讓使用者更願意停留在APP上，第三，透過分享貼文、追蹤、評論等等的社群機制，讓使用者能夠了解親朋好友們有興趣或者好評的商品，也能夠享受社群的樂趣，增加APP的黏著度，最後，透過APP上種種捕捉使用者行為數據的機制，可以將這些數據提供給與我們合作的第三方廠商，讓廠商更了解使用者的喜好
+
+<h2 id="重點功能簡介"><a href="#重點功能簡介" class="headerlink" title="重點功能簡介"></a>重點功能簡介</h2><img data-src="/images/posts/CC-project-demo/5.png" style="width: 70%; margin: 15px auto;">
+再來介紹一些重點功能的簡短敘述，首先第一個是我們的商品貼文，也是商品的主體，貼文特色主要以滿板設計與資訊收合來達到雜訊最小化的目的，另外後面Demo也會呈現推薦商品的形式，與現在短影音的方式很像，透過推薦與給人耳目一新的商品，帶給使用者殺時間的樂趣，另外，透過商品貼文，也可以成為直播主下播後銷售的利器，與一般電商不同的是，我們主動推薦商家商品，而且是透過使用者當前的行為喜好，而不是被動等待使用者搜尋或是透過購買紀錄來做推薦
+
+<hr>
+<img data-src="/images/posts/CC-project-demo/6.png" style="width: 70%; margin: 15px auto;">
+再來是我們的主頁面，透過滑卡的機制增加互動感，也可以同時捕捉使用者行為，以做到即時推薦，這麼做除了可以增加沈浸體驗，也可以更廣泛的推薦商品，提高曝光程度
+
+<hr>
+<img data-src="/images/posts/CC-project-demo/7.png" style="width: 70%; margin: 15px auto;">
+主頁面與探索頁面都可以透過使用者的滑卡行為、停留時間與點擊率，來彼此優化推薦內容，做到雙向推薦的功能
+
+<hr>
+<img data-src="/images/posts/CC-project-demo/8.png" style="width: 70%; margin: 15px auto;">
+探索頁面除了會推薦使用者感興趣的商品，也會隨機推薦相關商品，增加新奇度，其中最大塊的貼文則為推薦分數最高的商品，透過矩陣式樹狀結構，帶給使用者簡潔與大量瀏覽的感受
+
+<hr>
+<img data-src="/images/posts/CC-project-demo/9.png" style="width: 70%; margin: 15px auto;">
+CC提供商城、買家、直播主追蹤的機制，加上個人化自己的動態牆與留言區，增加社群互動性，以社群的力量增加APP的黏著度
+
+<hr>
+<img data-src="/images/posts/CC-project-demo/10.png" style="width: 70%; margin: 15px auto;">
+分享貼文除了可以增加互動的樂趣，也是提供消費者洞見的大平台
+最重要的是，可以藉由社群的力量，一傳十十傳百，來行銷商品
+
+<h2 id="系統架構與技術"><a href="#系統架構與技術" class="headerlink" title="系統架構與技術"></a>系統架構與技術</h2><p>先附上系統架構圖：<br><img data-src="/images/posts/CC-project-demo/CC_structure.jpeg" style="width: 70%; margin: 15px auto;"></p>
+<p>首先前端主要由Angular寫成，搭配<strong>模組化與物件導向設計，增加程式的可維護性</strong>，最後透過PWA包裝成跨平台的APP<br>藉由Angular能夠模組化與元件化的特性，我們將各個功能切分成不同模組，提升程式低耦合高內聚的特性，另外，Token驗證、路由保護、API攔截器、資料格式化Pipeline等等，也都抽離出來實作，其中，核心的商業邏輯切分在我們的Service模組，與畫面邏輯分離，再藉由依賴注入讓各模組使用，這樣的設計，讓我們的專案在未來更改與維護擴充時非常省時與省力。</p>
+<p>另外一個主要的功能是推薦演算法，我們透過標籤(label)與雅卡爾相似度(Jaccard Similarity)，做了一個Example Based的推薦引擎，主要是用MongoDB pipeline與後端演算構築而成。</p>
+<p>這裡也是我第一次使用前端框架，來寫一個比較完整的專案，由於我是後端出身，所以選擇一個自己寫起來最舒服的Angular框架，有種在寫後端的親切感XD。</p>
+<p>後端主要由NodeJS寫成，資料庫則為MongoDB，一樣是將各個功能進行模組化的拆分，與資料庫索引的優化，以及推薦演算法的實現。</p>
+<p>另外WebServer的部分則是由IIS代理，加上GitLab CI&#x2F;CD &amp; GitLab Runner做到自動化整合與部屬的功能</p>
+<style>
+.video-container
+{
+    padding-top: 60% !important;
+}
+</style>]]></content>
       <categories>
-        <category>Git 系列文</category>
+        <category>專案</category>
+        <category>side project</category>
       </categories>
       <tags>
-        <tag>Git</tag>
-        <tag>Version Control</tag>
+        <tag>專案</tag>
+        <tag>side project</tag>
       </tags>
   </entry>
   <entry>
-    <title>[Git][Version Control] Git - Introduction</title>
-    <url>/posts/2571684277/</url>
-    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Here is the series of Git full tutorial. I will cover the important and advanced topics that you should know in git. By reading this series, you are able to know the basic(but important) concept of Git and the technique of using git. Hope you can gain a lot ! </p>
+    <title>政大Google學生開發者社群-政大通NCCUPass-心得 (第二學期)</title>
+    <url>/posts/3042436019/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>繼上篇<a href="https://mao-code.github.io/posts/277323671/#more">GDSC的心得文</a>，這篇我會介紹我們下學期的開發經歷、得獎、專案簡介以及未來這個專案的走向，屬於一個小小的紀錄心得文！</p>
 <span id="more"></span>
 
-<h1 id="Series-Outline"><a href="#Series-Outline" class="headerlink" title="Series Outline"></a>Series Outline</h1><p>I will follow the outline below in this series.</p>
-<ul>
-<li>Introduction (this post)</li>
-<li>Setup</li>
-<li>Version Control &amp; Commands (Basics)</li>
-<li>Branching &amp; Merging</li>
-<li>Conflict</li>
-<li>Collaboration &amp; GitHub</li>
-<li>Advanced Topics</li>
+<h1 id="專案"><a href="#專案" class="headerlink" title="專案"></a>專案</h1><h2 id="簡介"><a href="#簡介" class="headerlink" title="簡介"></a>簡介</h2><p>政大通 - NCCUPass 團隊熱切懷抱著重塑校園體驗的夢想，點燃學生的熱情和創造力，以共同打造一個充滿活力、連結力和創新力的校園生活。經由深入校園的人際交流與觀察，我們發現學生面對著種種生活上的不便與困難，然而目前鮮少有專門為學生打造的解決方案。學生間的線下互動與真實聯繫日益減少，導致難以找到同學幫忙或組團合作的機會。此外，午晚餐時的人潮湧入校園周邊餐廳，更帶來了無法即時點餐的困擾。這些現況讓我們看到一個獨特的契機，我們決心以「政大通 - NCCUPass 」 APP 的形式來化解這些困境。</p>
+<p>「政大通 - NCCUPass 」不僅提供政大學生一個集社交、實用和創新於一身的平台，更是一個綜合性的應用程式，旨在加強他們的校園體驗。我們希望這個 APP 能成為解決校園生活難題的得力幫手！</p>
+<p>在社團「政大 Google 學生開發者社群」的擁護下，我們匯聚各領域的精英，凝聚開放分享的心態，攜手共創這個改變學生生活的嶄新 APP ！政大只是我們的第一塊版圖，我們的未來目標是影響全國的大學生，為他們帶來更加豐富、更加便利的校園體驗！</p>
+<h2 id="目前功能簡介"><a href="#目前功能簡介" class="headerlink" title="目前功能簡介"></a>目前功能簡介</h2><h3 id="學生任務功能-增強校園互動體驗"><a href="#學生任務功能-增強校園互動體驗" class="headerlink" title="學生任務功能 - 增強校園互動體驗"></a>學生任務功能 - 增強校園互動體驗</h3><ul>
+<li>動機發想<ul>
+<li>缺乏線下互動與真實聯繫：<br>我們注意到越來越多的大學生在日常生活中依賴數位平台和社交媒體，而非與人面對面的互動。這種現象在校園中尤為明顯，比起在現實中進行真實的互動，學生更傾向於在虛擬世界中建立社交連結。我們對大學生進行訪談、問卷調查和社交媒體分析，收集了大量的數據和反饋。這些數據揭示了大學生內心深處對面對面互動的渴望，以及更真實的交流，更深刻的情感，卻在線下互動中遇到了種種挑戰與限制。基於這些資訊，我們更加確定缺乏線下互動和真實聯繫的問題造成大學生的困擾，這些數據與心靈共鳴，激發了我們的靈感。我們深信，缺乏線下互動和真實聯繫的問題，不僅是個人的困擾，更是一種社會現象，需要我們攜手改變。於是，我們投入心血，開發了一個獨特的解決方案——一個能在現實世界中促進人與人之間有意義連結的奇妙工具。</li>
 </ul>
-<hr>
-<h1 id="Introduction-to-Git-A-Distributed-Version-Control-System"><a href="#Introduction-to-Git-A-Distributed-Version-Control-System" class="headerlink" title="Introduction to Git: A Distributed Version Control System"></a>Introduction to Git: A Distributed Version Control System</h1><p>Git is a powerful and widely used distributed version control system designed to track changes in software development projects. It provides developers with the ability to collaborate on projects efficiently, manage codebases effectively, and easily track and revert changes.</p>
-<h2 id="Distributed-Version-Control-System"><a href="#Distributed-Version-Control-System" class="headerlink" title="Distributed Version Control System"></a>Distributed Version Control System</h2><p>In traditional software development, changes to a codebase were often managed through file-based systems or centralized version control systems. However, these approaches had limitations in terms of collaboration, scalability, and flexibility. Git emerged as a solution to these challenges, offering a distributed and decentralized approach to version control.</p>
-<p>The special point of Git is that it supports distributed version control and can also easily share codes among multiple nodes.</p>
-<p><img data-src="/images/posts/Git-Series/dist-ver-ctr.png" 
+</li>
+<li>功能敘述<ul>
+<li>這個功能旨在促進學生之間的線下互動，並為他們提供一個自由而實用的平台，能以此完成各種有趣的任務。學生們可以發布任務，例如：幫忙帶宵夜、一起揪團出去玩等等。學生可以在我們的 APP 上自由發布任務，並尋找其他學生來接受挑戰，每一次的任務都是獨特的社交機會，讓學生們在校園中建立更多真實的聯繫和友誼。除此之外，這個功能還擁有相當多面的好處。首先，它鼓勵學生積極參與校園生活，擺脫線上世界的束縛。透過與其他學生一起完成任務，他們可以體驗到珍貴的團隊合作和互助精神。此外，如果同學對彼此的服務滿意，可以提供金錢或其他回饋，藉著小小賺外快的機會，也可以累積一定的金錢！相信這個制度能鼓勵學生發揮創意和努力工作，同時也建立相互尊重和價值交換的文化。</li>
+</ul>
+</li>
+</ul>
+<h3 id="預約外帶功能與午餐快選器-－-用餐省時無等待，專屬學生的美食提前預訂"><a href="#預約外帶功能與午餐快選器-－-用餐省時無等待，專屬學生的美食提前預訂" class="headerlink" title="預約外帶功能與午餐快選器 － 用餐省時無等待，專屬學生的美食提前預訂"></a>預約外帶功能與午餐快選器 － 用餐省時無等待，專屬學生的美食提前預訂</h3><ul>
+<li><p>動機發想</p>
+<ul>
+<li><p>餐點供應不足：<br>尤其在午晚餐尖峰時段，餐廳經常供不應求，學生需要花費大量的時間排隊等待。</p>
+</li>
+<li><p>用餐時間緊湊：<br>大學生的生活節奏快，經常要在短時間內完成吃飯等基本活動，而在繁忙的用餐時間內排隊等待餐點往往會浪費寶貴的時間。</p>
+</li>
+<li><p>無法預估用餐需求：<br>在繁忙的用餐時間內，無法預估用餐需求，可能需要長時間等待，或因時間太短而做了不太理想的食物選擇。</p>
+</li>
+</ul>
+</li>
+<li><p>功能敘述</p>
+<ul>
+<li>這個功能將為大學生們帶來極速、便利、無等待的用餐體驗！我們與學校附近的店家攜手合作，確保學生們不必等待太久。現在，同學只需要提前預約外帶，下課後直接前往店家，餐點早已準備好，輕鬆取走即可！不再浪費時間排隊，享受自由自在的用餐時光！這個預約外帶功能不僅是大學生們用餐的時尚選擇，更是忙碌學習生活的得力助手。在繁忙的用餐尖峰時段，可以輕鬆預訂心儀的美食，避免為了取餐而耽誤其他重要事務。</li>
+</ul>
+</li>
+</ul>
+<h2 id="連結"><a href="#連結" class="headerlink" title="連結"></a>連結</h2><ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly9uY2N1cGFzcy5jb20v">官方網站<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9uY2N1cGFzcy8=">IG粉專<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2NvbXBhbnkvbmNjdXBhc3M=">LinkedIn<i class="fa fa-external-link-alt"></i></span></li>
+</ul>
+<h1 id="得獎"><a href="#得獎" class="headerlink" title="得獎"></a>得獎</h1><p>NCCUPass在當天的期末發表會得到最佳人氣專案奬的殊榮！<br><img data-src="/images/posts/2023NCCUPass/GDSC_award.JPG" 
 style="width: 70%; margin: 15px auto;"></p>
-<h2 id="Branch"><a href="#Branch" class="headerlink" title="Branch"></a>Branch</h2><p>Git manages code based on a tree structure, allowing branches to be created, merged, and deleted, and code versions to be saved at any time.</p>
-<p><img data-src="/images/posts/Git-Series/branch.png" 
+<p><img data-src="/images/posts/2023NCCUPass/GDSC_award_on_stage.JPG" 
 style="width: 70%; margin: 15px auto;"></p>
-<h2 id="Snapshot"><a href="#Snapshot" class="headerlink" title="Snapshot"></a>Snapshot</h2><p>Git saves full snapshots of files, rather than differences, making it easy to restore all historical versions of files.</p>
-<p><img data-src="/images/posts/Git-Series/snapshot.jpeg" 
+<p>當天的期末發表會：<br><img data-src="/images/posts/2023NCCUPass/GDSC_final.JPG" 
 style="width: 70%; margin: 15px auto;"></p>
-<hr>
-<h1 id="Recommended-Resources"><a href="#Recommended-Resources" class="headerlink" title="Recommended Resources"></a>Recommended Resources</h1><p><a href="%22https://www.youtube.com/watch?v=8JJ101D3knE%22">Mosh Git Tutorail</a></p>
+<h1 id="技術"><a href="#技術" class="headerlink" title="技術"></a>技術</h1><p>在經過一個學期後，我們也慢慢拓展技術範圍，未來也將因應需求機動地改變<br>在這邊就只放上系統架構圖，不贅述太多技術細節</p>
+<h2 id="系統架構圖"><a href="#系統架構圖" class="headerlink" title="系統架構圖"></a>系統架構圖</h2><p><img data-src="/images/posts/2023NCCUPass/NCCUPass_structure.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<h1 id="未來"><a href="#未來" class="headerlink" title="未來"></a>未來</h1><p>政大是我們的第一塊版圖，我們的目標是全台灣的大學，目前先穩紮穩打在政大站穩腳步，在此期間會積極地與其他組織或社團合作、參與各項競賽以及參加創投機構的活動，我們的理念是讓大學生們彼此間的關係更加密切與真實，使他們的生活更加數位化與便利！</p>
 ]]></content>
       <categories>
-        <category>Git 系列文</category>
+        <category>心得</category>
+        <category>專案</category>
+        <category>GDSC</category>
+        <category>side project</category>
+        <category>NCCUPass</category>
       </categories>
       <tags>
-        <tag>Git</tag>
-        <tag>Version Control</tag>
+        <tag>專案</tag>
+        <tag>GDSC</tag>
+        <tag>NCCUPass</tag>
       </tags>
   </entry>
   <entry>
-    <title>Basic OOP 基礎物件導向</title>
-    <url>/posts/3787153742/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>物件導向（Object-Oriented Programming, OOP）是一種程式設計範式，強調使用包含數據（屬性）和方法（功能）的物件來設計和構建應用程序。提高軟體的重用性、靈活性和擴充性。</p>
-<p>而對於物件導向，最基礎需要知道以下：</p>
-<blockquote>
-<p><strong>一個抽象</strong><br><strong>兩個目的</strong><br><strong>三個特性</strong><br><strong>五個原則</strong></p>
-</blockquote>
+    <title>政大Google學生開發者社群-心得（第一學期）</title>
+    <url>/posts/277323671/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在剛上大二時，除了手邊和學長的專案，我也參加了政大的Google學生開發者社群。主要是希望透過提案，<strong>利用科技來解決問題</strong>，在這裡我也深深感受到Google的文化，那就是<strong>不會怕去嘗試、不怕去解決問題</strong>，我也認識在這個社群中的各個人才。在這個社群中，我除了擔任自己<strong>專案領導人</strong>的角色外，我也身兼<strong>後端技術長</strong>的任務，也是想要發揮我目前所學到的、最成熟的後端知識。除了技術面，如何管理一個團隊、一項專案，也是一門很大的課題。希望在未來可以繼續把自己的這項專案做到完善，解決真正的問題！</p>
 <span id="more"></span>
 
-<h1 id="一個抽象"><a href="#一個抽象" class="headerlink" title="一個抽象"></a>一個抽象</h1><h2 id="抽象-Abstraction"><a href="#抽象-Abstraction" class="headerlink" title="抽象 (Abstraction)"></a>抽象 (Abstraction)</h2><p>在OOP的背景下，抽象是指<strong>隱藏複雜的實作細節</strong>，僅展示物件的必要特性的能力。這簡化了與物件的互動，使編程更直觀、更高效。</p>
-<p>例如想要使用交通工具的物件，只需要知道交通工具提供的介面，而不需要知道具體的交通工具是什麼，以及其實作細節<br><img data-src="/images/posts/OOP-basic/abstraction.png" 
+<h2 id="定位與職位"><a href="#定位與職位" class="headerlink" title="定位與職位"></a>定位與職位</h2><ul>
+<li><h3 id="專案定位"><a href="#專案定位" class="headerlink" title="專案定位"></a>專案定位</h3></li>
+</ul>
+<p>我這次的提案叫做「政大通NCCUPass」，以<strong>政大校園生活為出發點</strong>，想要做一款能夠解決政大學生生活上不便的APP，透過專案組的討論與調查，帶來<strong>更便利、聰明與數位化</strong>的校園生活，讓校園內的需求能夠即時被滿足，也讓這款APP融入政大學生的生活中，成為政大校園內不可或缺的一部分，因此，「政大通-NCCUPass」的提案就此誕生</p>
+<hr>
+<p>下面是我們第一次期末發表的海報和照片<br>海報內呈現的是我們規劃、也正在開發的功能<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/poster.jpg" 
 style="width: 70%; margin: 15px auto;"></p>
-<h1 id="兩個目的"><a href="#兩個目的" class="headerlink" title="兩個目的"></a>兩個目的</h1><h2 id="低耦合-Low-Coupling"><a href="#低耦合-Low-Coupling" class="headerlink" title="低耦合 (Low Coupling)"></a>低耦合 (Low Coupling)</h2><p>低耦合是指程式中<strong>不同的類別或模組之間應該有盡可能少的依賴關係</strong>。這使得<strong>一個類別或模組的變更不太可能影響到其他的類別或模組</strong>，從而使得程式更容易維護和擴展。</p>
-<h2 id="高內聚（High-Cohesion）"><a href="#高內聚（High-Cohesion）" class="headerlink" title="高內聚（High Cohesion）"></a>高內聚（High Cohesion）</h2><p>高內聚是指一個類別或模組應該只<strong>專注於完成一項特定的任務或一組緊密相關的任務</strong>。這使得程式更有組織，更易於理解和維護。</p>
-<p><img data-src="/images/posts/OOP-basic/CandC.png" 
+<hr>
+<p>這個是期末發表當天的攤位介紹照片<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img4.jpg" 
 style="width: 70%; margin: 15px auto;"></p>
-<h1 id="三個特性"><a href="#三個特性" class="headerlink" title="三個特性"></a>三個特性</h1><h2 id="繼承-Inheritance"><a href="#繼承-Inheritance" class="headerlink" title="繼承 (Inheritance)"></a>繼承 (Inheritance)</h2><p>繼承允許新創建的類別（子類別）繼承一個或多個現有類別（父類別）的屬性和方法。這促進了程式碼重用和擴展性。</p>
-<h2 id="封裝-Encapsulation"><a href="#封裝-Encapsulation" class="headerlink" title="封裝 (Encapsulation)"></a>封裝 (Encapsulation)</h2><p>封裝是將數據（屬性）和行為（方法）綁定到單個單位（類別）中，並<strong>限制對該單位內部的直接訪問</strong>。這有助於保護數據和隱藏實現細節。</p>
-<h2 id="多型-Polymorphism"><a href="#多型-Polymorphism" class="headerlink" title="多型 (Polymorphism)"></a>多型 (Polymorphism)</h2><p>多型允許對<strong>不同類別的物件使用共同的接口</strong>。這意味著可以在不同類別的物件上執行同一操作，而每個類別可以以不同的方式響應相同的操作。</p>
-<h1 id="五個原則-SOLID"><a href="#五個原則-SOLID" class="headerlink" title="五個原則 (SOLID)"></a>五個原則 (SOLID)</h1><h2 id="S-單一職責原則（Single-Responsibility-Principle）"><a href="#S-單一職責原則（Single-Responsibility-Principle）" class="headerlink" title="S - 單一職責原則（Single Responsibility Principle）:"></a>S - 單一職責原則（Single Responsibility Principle）:</h2><p>一個類別應該只有一個改變的理由，這意味著<strong>一個類別應該只做一件事</strong>。</p>
-<h2 id="O-開放封閉原則（Open-x2F-Closed-Principle）"><a href="#O-開放封閉原則（Open-x2F-Closed-Principle）" class="headerlink" title="O - 開放封閉原則（Open&#x2F;Closed Principle）:"></a>O - 開放封閉原則（Open&#x2F;Closed Principle）:</h2><p>軟體實體（類別、模組、函數等）應該<strong>對擴展開放，對修改封閉</strong>。這意味著應該能夠在不修改現有代碼的情況下擴展其功能。</p>
-<h2 id="L-里氏替換原則（Liskov-Substitution-Principle）"><a href="#L-里氏替換原則（Liskov-Substitution-Principle）" class="headerlink" title="L - 里氏替換原則（Liskov Substitution Principle）:"></a>L - 里氏替換原則（Liskov Substitution Principle）:</h2><p><strong>子類別應該能夠替換其父類別而不影響程序的正常運行</strong>。</p>
-<h2 id="I-接口隔離原則（Interface-Segregation-Principle）"><a href="#I-接口隔離原則（Interface-Segregation-Principle）" class="headerlink" title="I - 接口隔離原則（Interface Segregation Principle）:"></a>I - 接口隔離原則（Interface Segregation Principle）:</h2><p>不應強迫客戶依賴於它們不使用的接口。換句話說，<strong>更小和更具體的接口優於大而通用的接口</strong>。</p>
-<h2 id="D-依賴反轉原則（Dependency-Inversion-Principle）"><a href="#D-依賴反轉原則（Dependency-Inversion-Principle）" class="headerlink" title="D - 依賴反轉原則（Dependency Inversion Principle）:"></a>D - 依賴反轉原則（Dependency Inversion Principle）:</h2><p><strong>高層模組不應該依賴低層模組，兩者都應該依賴於抽象</strong>；抽象不應該依賴於細節，細節應該依賴於抽象。這有助於減少類別之間的直接依賴，從而提高系統的靈活性和可重用性。</p>
-<h1 id="Design-Pattern概述"><a href="#Design-Pattern概述" class="headerlink" title="Design Pattern概述"></a>Design Pattern概述</h1><p>設計模式是一組作為最佳實踐的解決方案，用來解決特定類型的重複出現的設計問題。這些模式不是現成的程式碼，而是可以在許多不同情況下使用的模板。它們提高了代碼的可重用性、靈活性和維護性。</p>
-<p>設計模式通常分為三大類：</p>
-<ol>
-<li>創建型模式（Creational Patterns）<br>這些模式與物件創建機制有關，幫助創建物件的方式使得系統獨立於物件的創建和組合方式。</li>
-<li>結構型模式（Structural Patterns）<br>這些模式與物件的組合有關，通常用於形成大的物件結構</li>
-<li>行為型模式（Behavioral Patterns）<br>這些模式關注物件間的通訊和責任分配</li>
-</ol>
+<p><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img2.JPG" 
+style="width: 70%; margin: 15px auto;"></p>
+<p><img data-src="/images/posts/GDSC-NCCUPass-experience-1/img1.JPG" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>參與證書<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/GDSC_certificate.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<hr>
+<ul>
+<li><h3 id="職位"><a href="#職位" class="headerlink" title="職位"></a>職位</h3></li>
+</ul>
+<p>在這個專案中，我擔任<strong>Project Leader(專案主持人)<strong>，與</strong>Backend Tech-Lead(後端技術長)<strong>的身份，帶領總共</strong>11人的團隊</strong>，在我們這個團隊中，主要分成四組，前端、後端、UI&#x2F;UX、文書，除了負責主要的後端技術，也要帶領後端的組員們提升實力、協調與規劃。以專案領導人的角度來看，除了需要<strong>規劃整個專案的進度與走向外，也要監督進度、協調各組、人際溝通等等</strong>，除了利用各種專案管理的工具外，也要撰寫各種文件與流程圖，老實說滿累的XD。但也是遇到一群願意跟隨我的隊友們，一起成長，真的非常得感謝他們🙏</p>
+<h2 id="技術"><a href="#技術" class="headerlink" title="技術"></a>技術</h2><ul>
+<li><h3 id="系統架構圖"><a href="#系統架構圖" class="headerlink" title="系統架構圖"></a>系統架構圖</h3></li>
+</ul>
+<p>下面是我們的系統架構圖，因為我是負責後端的部分，所以會著重畫後端的架構<br><img data-src="/images/posts/GDSC-NCCUPass-experience-1/NCCUPass-Structure.jpg" 
+style="width: 70%; margin: 15px auto;"></p>
+<ul>
+<li><h3 id="後端技術細節"><a href="#後端技術細節" class="headerlink" title="後端技術細節"></a>後端技術細節</h3></li>
+</ul>
+<p>根據上面的架構圖，我們的專案主要部署在Ubuntu的主機上，所有的服務利用Docker Compose統一建立，另外還有利用GitLab Runner做到自動化整合與自動化部屬的功能。後端程式是由.NET C#撰寫，這邊我使用的是Software Layer Architecture Pattern(軟體分層架構)，結合各種Design Pattern再加上自己的一些變形，資料庫是使用MongoDB的Replica-Set，也有使用Redis做快取，照片和一些公開的檔案主要放在我們的File Server上。其他技術細節我就列在下面，想看的人可以參考一下XD</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">- Software Layer Architecture pattern (多層)</span><br><span class="line">- Repository pattern</span><br><span class="line">- Unit of Work pattern</span><br><span class="line">- Mediator pattern &amp; CQRS</span><br><span class="line">- Password Salting and Encryption</span><br><span class="line">- JWT &amp; RBAC</span><br><span class="line">- Automapper</span><br><span class="line">- Exception handler抽離</span><br><span class="line">- Dapper &amp; EF combination</span><br><span class="line">- Redis (Cache)</span><br><span class="line">- Docker Networking</span><br><span class="line">- Docker Volume</span><br><span class="line">- Docker hub</span><br><span class="line">- appsettings 組態切換</span><br><span class="line">- MongoDB replica-set</span><br><span class="line">    - key-file (internal authentication)</span><br><span class="line">- Git 多人協作</span><br><span class="line">- Swagger / OpenAPI</span><br><span class="line">- Docker File Server</span><br><span class="line">- Docker mongoDB backup daily</span><br><span class="line">- Docker Compose</span><br><span class="line">- JMeter壓力測試</span><br><span class="line">- GC mode區別(Workstation, Server)</span><br><span class="line">- SignalR 雙向溝通</span><br><span class="line">- 測試 (K6 stress testing, )</span><br><span class="line">- 自動化發送Email (python selenium)</span><br><span class="line">- SSH with Linux server</span><br><span class="line">- FCM (to push device notification)</span><br><span class="line">- Linux server</span><br><span class="line">- Cloudflare domain and SSL/TLS</span><br><span class="line">- Nginx  (on server and on docker)</span><br><span class="line">    - redirect (setting files)</span><br><span class="line">    - ssl setting(certificate, key)</span><br><span class="line">- Shell script自動備份資料庫</span><br></pre></td></tr></table></figure>
+<p>之後也會一直新增，因為現在處於專案開發的初期。</p>
+<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>最後，這個專案雖然只是在發展初期，但我希望未來可以發展到我預想的樣子，也非常感謝一路願意跟隨我、幫助我的隊友們，單打獨鬥真的比不上團隊合作👍，也希望各位未來也可以繼續幫助我啦，現在打分享文可能還太早，但我就是想要趁學期末趕快記錄一下哈哈</p>
 ]]></content>
       <categories>
-        <category>OOP</category>
+        <category>心得</category>
+        <category>專案</category>
+        <category>GDSC</category>
+        <category>side project</category>
+        <category>NCCUPass</category>
       </categories>
       <tags>
-        <tag>OOP</tag>
+        <tag>專案</tag>
+        <tag>GDSC</tag>
+        <tag>NCCUPass</tag>
       </tags>
   </entry>
   <entry>
@@ -1024,6 +890,140 @@ style="width: 70%; margin: 15px auto;"></p>
       </tags>
   </entry>
   <entry>
+    <title>[Git][Version Control] Git - Introduction</title>
+    <url>/posts/2571684277/</url>
+    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Here is the series of Git full tutorial. I will cover the important and advanced topics that you should know in git. By reading this series, you are able to know the basic(but important) concept of Git and the technique of using git. Hope you can gain a lot ! </p>
+<span id="more"></span>
+
+<h1 id="Series-Outline"><a href="#Series-Outline" class="headerlink" title="Series Outline"></a>Series Outline</h1><p>I will follow the outline below in this series.</p>
+<ul>
+<li>Introduction (this post)</li>
+<li>Setup</li>
+<li>Version Control &amp; Commands (Basics)</li>
+<li>Branching &amp; Merging</li>
+<li>Conflict</li>
+<li>Collaboration &amp; GitHub</li>
+<li>Advanced Topics</li>
+</ul>
+<hr>
+<h1 id="Introduction-to-Git-A-Distributed-Version-Control-System"><a href="#Introduction-to-Git-A-Distributed-Version-Control-System" class="headerlink" title="Introduction to Git: A Distributed Version Control System"></a>Introduction to Git: A Distributed Version Control System</h1><p>Git is a powerful and widely used distributed version control system designed to track changes in software development projects. It provides developers with the ability to collaborate on projects efficiently, manage codebases effectively, and easily track and revert changes.</p>
+<h2 id="Distributed-Version-Control-System"><a href="#Distributed-Version-Control-System" class="headerlink" title="Distributed Version Control System"></a>Distributed Version Control System</h2><p>In traditional software development, changes to a codebase were often managed through file-based systems or centralized version control systems. However, these approaches had limitations in terms of collaboration, scalability, and flexibility. Git emerged as a solution to these challenges, offering a distributed and decentralized approach to version control.</p>
+<p>The special point of Git is that it supports distributed version control and can also easily share codes among multiple nodes.</p>
+<p><img data-src="/images/posts/Git-Series/dist-ver-ctr.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<h2 id="Branch"><a href="#Branch" class="headerlink" title="Branch"></a>Branch</h2><p>Git manages code based on a tree structure, allowing branches to be created, merged, and deleted, and code versions to be saved at any time.</p>
+<p><img data-src="/images/posts/Git-Series/branch.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<h2 id="Snapshot"><a href="#Snapshot" class="headerlink" title="Snapshot"></a>Snapshot</h2><p>Git saves full snapshots of files, rather than differences, making it easy to restore all historical versions of files.</p>
+<p><img data-src="/images/posts/Git-Series/snapshot.jpeg" 
+style="width: 70%; margin: 15px auto;"></p>
+<hr>
+<h1 id="Recommended-Resources"><a href="#Recommended-Resources" class="headerlink" title="Recommended Resources"></a>Recommended Resources</h1><p><a href="%22https://www.youtube.com/watch?v=8JJ101D3knE%22">Mosh Git Tutorail</a></p>
+]]></content>
+      <categories>
+        <category>Git 系列文</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>Version Control</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[Git][Version Control] Git - Setup</title>
+    <url>/posts/731175240/</url>
+    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Setting up the environment of Git and some recommended GUI tools.</p>
+<span id="more"></span>
+
+<h1 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h1><ol>
+<li><p>Install Git with the link below: (with your OS)<br><a href="%22https://git-scm.com/%22">Git official website</a></p>
+</li>
+<li><p>Type this command to check if it is installed successfully:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h1 id="Configure-Git-type-commands-in-your-shell"><a href="#Configure-Git-type-commands-in-your-shell" class="headerlink" title="Configure Git (type commands in your shell)"></a>Configure Git (type commands in your shell)</h1><ol>
+<li><p>Set your user name by running the following command:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Set your email address by running the following command:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.email youremail@example.com</span><br></pre></td></tr></table></figure></li>
+<li><p>Set up SSH key (for remote repository access. e.g. GitHub)</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<ul>
+<li><p>Press Enter to accept the default file location and passphrase (or set your own if desired).<br>Once the key is generated, run the following command to add it to the SSH agent</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-add ~/.ssh/id_rsa</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Copy the public key to your clipboard by running the following command</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Add the copied public key to your Git hosting platform account (e.g., GitHub, GitLab) by following their documentation.</p>
+</li>
+<li><p>View your ssh keys</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd ~/.ssh</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ls</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Use a text editor or command-line tools (such as cat or less) to view the contents of the .pub files and see the public key information: <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat id_rsa.pub</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<ol start="4">
+<li>You can see your configuration by typing the following commands:<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --list</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h1 id="Recommended-GUI-tools"><a href="#Recommended-GUI-tools" class="headerlink" title="Recommended GUI tools"></a>Recommended GUI tools</h1><p>Both commands and GUI tools are important to Git manupulation.<br>And Here are some recommended Git GUI tools that you can use.</p>
+<ul>
+<li><a href="%22https://www.sourcetreeapp.com/%22">Sourcetree</a></li>
+<li><a href="%22https://www.gitkraken.com/%22">GitKraken</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Git 系列文</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>Version Control</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Basic OOP 基礎物件導向</title>
+    <url>/posts/3787153742/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>物件導向（Object-Oriented Programming, OOP）是一種程式設計範式，強調使用包含數據（屬性）和方法（功能）的物件來設計和構建應用程序。提高軟體的重用性、靈活性和擴充性。</p>
+<p>而對於物件導向，最基礎需要知道以下：</p>
+<blockquote>
+<p><strong>一個抽象</strong><br><strong>兩個目的</strong><br><strong>三個特性</strong><br><strong>五個原則</strong></p>
+</blockquote>
+<span id="more"></span>
+
+<h1 id="一個抽象"><a href="#一個抽象" class="headerlink" title="一個抽象"></a>一個抽象</h1><h2 id="抽象-Abstraction"><a href="#抽象-Abstraction" class="headerlink" title="抽象 (Abstraction)"></a>抽象 (Abstraction)</h2><p>在OOP的背景下，抽象是指<strong>隱藏複雜的實作細節</strong>，僅展示物件的必要特性的能力。這簡化了與物件的互動，使編程更直觀、更高效。</p>
+<p>例如想要使用交通工具的物件，只需要知道交通工具提供的介面，而不需要知道具體的交通工具是什麼，以及其實作細節<br><img data-src="/images/posts/OOP-basic/abstraction.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<h1 id="兩個目的"><a href="#兩個目的" class="headerlink" title="兩個目的"></a>兩個目的</h1><h2 id="低耦合-Low-Coupling"><a href="#低耦合-Low-Coupling" class="headerlink" title="低耦合 (Low Coupling)"></a>低耦合 (Low Coupling)</h2><p>低耦合是指程式中<strong>不同的類別或模組之間應該有盡可能少的依賴關係</strong>。這使得<strong>一個類別或模組的變更不太可能影響到其他的類別或模組</strong>，從而使得程式更容易維護和擴展。</p>
+<h2 id="高內聚（High-Cohesion）"><a href="#高內聚（High-Cohesion）" class="headerlink" title="高內聚（High Cohesion）"></a>高內聚（High Cohesion）</h2><p>高內聚是指一個類別或模組應該只<strong>專注於完成一項特定的任務或一組緊密相關的任務</strong>。這使得程式更有組織，更易於理解和維護。</p>
+<p><img data-src="/images/posts/OOP-basic/CandC.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<h1 id="三個特性"><a href="#三個特性" class="headerlink" title="三個特性"></a>三個特性</h1><h2 id="繼承-Inheritance"><a href="#繼承-Inheritance" class="headerlink" title="繼承 (Inheritance)"></a>繼承 (Inheritance)</h2><p>繼承允許新創建的類別（子類別）繼承一個或多個現有類別（父類別）的屬性和方法。這促進了程式碼重用和擴展性。</p>
+<h2 id="封裝-Encapsulation"><a href="#封裝-Encapsulation" class="headerlink" title="封裝 (Encapsulation)"></a>封裝 (Encapsulation)</h2><p>封裝是將數據（屬性）和行為（方法）綁定到單個單位（類別）中，並<strong>限制對該單位內部的直接訪問</strong>。這有助於保護數據和隱藏實現細節。</p>
+<h2 id="多型-Polymorphism"><a href="#多型-Polymorphism" class="headerlink" title="多型 (Polymorphism)"></a>多型 (Polymorphism)</h2><p>多型允許對<strong>不同類別的物件使用共同的接口</strong>。這意味著可以在不同類別的物件上執行同一操作，而每個類別可以以不同的方式響應相同的操作。</p>
+<h1 id="五個原則-SOLID"><a href="#五個原則-SOLID" class="headerlink" title="五個原則 (SOLID)"></a>五個原則 (SOLID)</h1><h2 id="S-單一職責原則（Single-Responsibility-Principle）"><a href="#S-單一職責原則（Single-Responsibility-Principle）" class="headerlink" title="S - 單一職責原則（Single Responsibility Principle）:"></a>S - 單一職責原則（Single Responsibility Principle）:</h2><p>一個類別應該只有一個改變的理由，這意味著<strong>一個類別應該只做一件事</strong>。</p>
+<h2 id="O-開放封閉原則（Open-Closed-Principle）"><a href="#O-開放封閉原則（Open-Closed-Principle）" class="headerlink" title="O - 開放封閉原則（Open&#x2F;Closed Principle）:"></a>O - 開放封閉原則（Open&#x2F;Closed Principle）:</h2><p>軟體實體（類別、模組、函數等）應該<strong>對擴展開放，對修改封閉</strong>。這意味著應該能夠在不修改現有代碼的情況下擴展其功能。</p>
+<h2 id="L-里氏替換原則（Liskov-Substitution-Principle）"><a href="#L-里氏替換原則（Liskov-Substitution-Principle）" class="headerlink" title="L - 里氏替換原則（Liskov Substitution Principle）:"></a>L - 里氏替換原則（Liskov Substitution Principle）:</h2><p><strong>子類別應該能夠替換其父類別而不影響程序的正常運行</strong>。</p>
+<h2 id="I-接口隔離原則（Interface-Segregation-Principle）"><a href="#I-接口隔離原則（Interface-Segregation-Principle）" class="headerlink" title="I - 接口隔離原則（Interface Segregation Principle）:"></a>I - 接口隔離原則（Interface Segregation Principle）:</h2><p>不應強迫客戶依賴於它們不使用的接口。換句話說，<strong>更小和更具體的接口優於大而通用的接口</strong>。</p>
+<h2 id="D-依賴反轉原則（Dependency-Inversion-Principle）"><a href="#D-依賴反轉原則（Dependency-Inversion-Principle）" class="headerlink" title="D - 依賴反轉原則（Dependency Inversion Principle）:"></a>D - 依賴反轉原則（Dependency Inversion Principle）:</h2><p><strong>高層模組不應該依賴低層模組，兩者都應該依賴於抽象</strong>；抽象不應該依賴於細節，細節應該依賴於抽象。這有助於減少類別之間的直接依賴，從而提高系統的靈活性和可重用性。</p>
+<h1 id="Design-Pattern概述"><a href="#Design-Pattern概述" class="headerlink" title="Design Pattern概述"></a>Design Pattern概述</h1><p>設計模式是一組作為最佳實踐的解決方案，用來解決特定類型的重複出現的設計問題。這些模式不是現成的程式碼，而是可以在許多不同情況下使用的模板。它們提高了代碼的可重用性、靈活性和維護性。</p>
+<p>設計模式通常分為三大類：</p>
+<ol>
+<li>創建型模式（Creational Patterns）<br>這些模式與物件創建機制有關，幫助創建物件的方式使得系統獨立於物件的創建和組合方式。</li>
+<li>結構型模式（Structural Patterns）<br>這些模式與物件的組合有關，通常用於形成大的物件結構</li>
+<li>行為型模式（Behavioral Patterns）<br>這些模式關注物件間的通訊和責任分配</li>
+</ol>
+]]></content>
+      <categories>
+        <category>OOP</category>
+      </categories>
+      <tags>
+        <tag>OOP</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>DataLake vs. Data Warehouse vs. Data Mart</title>
     <url>/posts/970127527/</url>
     <content><![CDATA[<h1 id="Understanding-the-Differences-Data-Lake-Data-Warehouse-and-Data-Mart"><a href="#Understanding-the-Differences-Data-Lake-Data-Warehouse-and-Data-Mart" class="headerlink" title="Understanding the Differences: Data Lake, Data Warehouse, and Data Mart"></a>Understanding the Differences: Data Lake, Data Warehouse, and Data Mart</h1><p>In today’s data-driven world, organizations leverage various data management systems to harness their data effectively. Among these systems, Data Lakes, Data Warehouses, and Data Marts are pivotal in supporting data storage, processing, and analysis. This article explores the key differences among these three systems, helping you understand their unique roles in data management.</p>
@@ -1339,217 +1339,6 @@ style="width: 70%; margin: 15px auto;"></p>
       </tags>
   </entry>
   <entry>
-    <title>[NLP] MLLM(多模態LLM) 論文簡要欣賞</title>
-    <url>/posts/2312529159/</url>
-    <content><![CDATA[<h1 id="Abstract-amp-Overview"><a href="#Abstract-amp-Overview" class="headerlink" title="Abstract &amp; Overview"></a>Abstract &amp; Overview</h1><p>這篇文章我們來欣賞一下在arXiv上的一篇論文：<br><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzIzMDYuMTM1NDk=">A Servey on Multimodal Large Language Models<i class="fa fa-external-link-alt"></i></span><br>這篇論文主要在介紹與整理現行代表性的MLLM(Multimodal LLM)，並將其分類為4大體裁：<br>Multimodal Instruction Tuning(M-IT), Multimodal In-Context Learning(M-ICL), Multimodal Chain-of_Thought(M-CoT)以及LLM-Aided Visual Reasoning(LAVR)。<br>其中，前三者為MLLM的基礎，而最後一個則是以LLM為核心的multimodal system，類似於一個系統框架。</p>
-<p>MLLM指的是在LLM的基礎上，從單模態走向多模態，從人工智慧的角度來看，MLLM比LLM向前又跨出了一步，原因如下：</p>
-<ol>
-<li>MLLM更符合人的感官世界，自然地接受多感官輸入</li>
-<li>MLLM提供一個友好的介面，支持多模態輸入，使其易於與使用者交流</li>
-<li>MLLM是一個更全面的問題解決者，雖然LLM可以解決NLP的問題，但MLLM通常可以支持更大範圍的任務</li>
-</ol>
-<p>下面我將針對這篇論文中較為<strong>重要的部分做簡要的欣賞與分析</strong> ，其他細節部分可以自行閱讀這篇精彩的論文！</p>
-<span id="more"></span>
-<h1 id="Prerequest-amp-Note"><a href="#Prerequest-amp-Note" class="headerlink" title="Prerequest &amp; Note"></a>Prerequest &amp; Note</h1><p>在開始之前，先介紹在論文中常出現的一些基本名詞</p>
-<h2 id="IT-ICL-CoT"><a href="#IT-ICL-CoT" class="headerlink" title="IT, ICL, CoT"></a>IT, ICL, CoT</h2><p>讓我們先看一下這三者的定義：</p>
-<ol>
-<li><strong>Instruction Tuning:</strong><ul>
-<li>Instruction tuning involves fine-tuning a pre-trained language model by providing <strong>specific instructions during the training process.</strong></li>
-<li>These instructions can be in the form of <strong>prompts or demonstrations</strong>, guiding the model to generate responses in a desired manner.</li>
-<li>It allows for controlled language generation and can be useful for generating responses tailored to specific tasks or contexts.</li>
-</ul>
-</li>
-<li><strong>In Context Learning:</strong><ul>
-<li>In context learning refers to training a language model on a <strong>large dataset with diverse contexts and topics.</strong></li>
-<li>The model learns to <strong>understand</strong> and generate responses based on the context it is given, which allows for more <strong>contextually relevant and coherent responses.</strong></li>
-<li>This approach is suitable for applications where the model needs to <strong>understand and adapt to various contexts</strong> during language generation.</li>
-</ul>
-</li>
-<li><strong>Chain of Thought:</strong><ul>
-<li>Chain of thought is a concept in natural language generation where the model maintains <strong>coherence throughout a conversation by remembering past interactions.</strong></li>
-<li>The model keeps track of the conversation history, ensuring <strong>consistent</strong> responses and avoiding contradictions.</li>
-<li>This is especially valuable in chatbot applications to provide more human-like and coherent conversations.</li>
-</ul>
-</li>
-</ol>
-<p>簡單整理一下三者的差異：</p>
-<blockquote>
-<ul>
-<li>Instruction Tuning 著重於微調模型以遵循特定的指令或指導，使其更好地符合特定任務或需求的生成。</li>
-<li>In-Context Learning 強調理解上下文，確保生成的結果與上下文相關且連貫。</li>
-<li>Chain-of-Thought 強調模型生成文本時的連貫性，能夠記住過去的互動，使生成的文本像人類思維的連貫性一樣。<br>這三個方法或概念是獨立的，但可以搭配使用，創造更好的效果。</li>
-</ul>
-</blockquote>
-<h2 id="Zero-Shot-Few-Shot-Learning"><a href="#Zero-Shot-Few-Shot-Learning" class="headerlink" title="Zero-Shot, Few-Shot Learning"></a>Zero-Shot, Few-Shot Learning</h2><p>先看一下兩者的定義：</p>
-<ul>
-<li><p><strong>Zero-Shot Learning:</strong></p>
-<ul>
-<li>Zero-shot learning is a learning paradigm where a model is trained to perform a task for which <strong>it has never seen any examples during training.</strong> </li>
-<li>In other words, the model is expected to <strong>generalize its knowledge</strong> from the training data to <strong>new, unseen categories or tasks.</strong></li>
-</ul>
-</li>
-<li><p><strong>Few-Shot Learning:</strong></p>
-<ul>
-<li>Few-shot learning is a similar concept, but it allows a model to be trained on a very small number of examples for each new category or task it encounters. * </li>
-<li>Instead of needing a large amount of data per class, few-shot learning aims to generalize from a few examples. </li>
-<li>It’s like teaching a model to learn from just a handful of samples. This is particularly useful in scenarios where collecting a substantial amount of data for each new class is impractical.</li>
-</ul>
-</li>
-</ul>
-<h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><p>這邊整理了一些重要的專有名詞</p>
-<ul>
-<li>Learning Paradigm<ul>
-<li>A learning paradigm refers to a <strong>specific approach or framework used to train machine learning models.</strong> </li>
-<li>It encompasses the fundamental principles, methods, and strategies that guide how models are constructed, trained, and evaluated. </li>
-<li>Different learning paradigms offer distinct ways of addressing various types of problems and data.</li>
-<li>E.g. Supervised Learning, Semi-Supervised Learning, Reinforcement Learning, Transfer Learning, etc.</li>
-</ul>
-</li>
-</ul>
-<p>簡單整理一下兩者的差異：</p>
-<blockquote>
-<ul>
-<li>Zero-Shot Learning 利用先前學習的知識，執行全新、未看過的任務類別。</li>
-<li>Few-Shot Learning 利用少量的範例(有答案)，去適應新的任務類別。</li>
-</ul>
-</blockquote>
-<h1 id="M-IT"><a href="#M-IT" class="headerlink" title="M-IT"></a>M-IT</h1><p>Instruction指的是對於任務的描述，IT是一種利用instruction-formatted datasets來訓練LLM的技巧。利用這個技巧，LLM可以透過跟隨新的instruction來泛化未曾看過的新任務，進而實現zero-shot learning的成效。<br>下面是論文中引用來描繪instruction tuning與其他learning paradigms的圖示</p>
-<p><img data-src="/images/posts/paper-study/MLLM-1.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<hr>
-<p>為了要從unimodality到mutimodality，需要調整的部分主要 <strong>分為兩個：”Data” 和 “Model”。</strong></p>
-<ol>
-<li><p>在Data方面，我們常 <strong>調整現存的benchmark datasets來取得M-IT datasets，或是使用self-instruction。</strong><br>下面的圖簡單呈現了M-IT data的模板<br><img data-src="/images/posts/paper-study/MLLM-2.png" 
-style="width: 70%; margin: 15px auto;"></p>
-</li>
-<li><p>在Model方面，一個常見的做法是將 <strong>其他modalities的資訊注入進LLM，並把LLM當成是一個強大的推理者。</strong> 其他相關的著作常會直接將理解外來modality的能力嵌入進LLM；或是使用expert model把外來的modality轉換成LLM可以理解的natural language。</p>
-</li>
-</ol>
-<hr>
-<h2 id="Formulation-M-IT-amp-M-IT-sample"><a href="#Formulation-M-IT-amp-M-IT-sample" class="headerlink" title="Formulation M-IT &amp; M-IT sample"></a>Formulation M-IT &amp; M-IT sample</h2><p>這邊我簡單把論文中提到有關M-IT以及其目標函數的內容拉出來<br>M-IT sample其實可以被標示為三元素的數組：<br>$$(I, M, R)$$<br>分別代表instruction, multimodal input以及ground-truth response</p>
-<p>MLLM利用給予的instruction和multimodal input預測answer<br>$$ A &#x3D; f(I, M; \theta)$$<br>其中，A代表預測的答案(answer)，$\theta$ 則代表模型中的parameters</p>
-<p>而訓練的目標是要最小化loss function，而MLLM的目標是要預測下一個response的token，基於這點，loss function可以這麼表示：<br>$$\begin{equation}<br>    L(\theta) &#x3D; -\sum_{i&#x3D;1}^N\log{}p(R_i|I,R_{&lt;i};\theta)<br>\end{equation}$$<br>其中，</p>
-<ul>
-<li>N為ground-truth response的長度</li>
-<li>使用log是因為將機率連乘轉為連加，以避免underflow</li>
-<li>因為是loss function，所以加個負號，最小化loss function同時最大化預測下個token的機率</li>
-<li>利用instruction與前i-1個ground truth response token預測第i個token</li>
-</ul>
-<hr>
-<h2 id="Bridgin-the-gap-between-different-modalities"><a href="#Bridgin-the-gap-between-different-modalities" class="headerlink" title="Bridgin the gap between different modalities"></a>Bridgin the gap between different modalities</h2><p>在這篇論文中提到一個非常重要的問題：該怎麼連結不同的modalities？<br>主要有兩種方法：</p>
-<ol>
-<li>Learnable Interface: <ul>
-<li>在LLM的其中一個模組或權重下去做調整，並插入在pre-trained visual encoder與LLM之間，作為一個可以用來訓練模態轉換的model。</li>
-<li>連結不同的modalities的同時，凍結pre-trained model的parameters。</li>
-<li>如何將視覺內容轉為LLM可以理解得文字格式</li>
-</ul>
-</li>
-<li>Expert model: <ul>
-<li>利用其他模型，轉換外來的modality成不需要訓練訓練的語言，例如image captioning model(不用訓練)。</li>
-<li>可能不像learnable interface那樣彈性，且有information loss的風險</li>
-</ul>
-</li>
-</ol>
-<h1 id="M-ICL"><a href="#M-ICL" class="headerlink" title="M-ICL"></a>M-ICL</h1><p>先介紹兩個ICL的特點：</p>
-<ol>
-<li>supervised learning是從大量的資料中學習資料背後的模式，與傳統supervised learning不同的是，ICL的關鍵是”類推”，從少量的資料搭配一些選填的instruction，去外推新的問題與任務，因此使用few-shot learning的方式解決全新的問題。</li>
-<li>ICL常常使用training-free的方式實作，因此可以在inference stage，很容易地整合進不同的框架。</li>
-<li>IT與ICL十分相關，IT常常被拿來加強模型的ICL能力。</li>
-</ol>
-<hr>
-<p>下面的圖示描繪了簡化過後的M-ICL query模板，其中，使用了兩個in-context範例和一個query，兩者用虛線隔開，模型的目的是要完成這個request。<br><img data-src="/images/posts/paper-study/MLLM-3.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<h1 id="M-CoT"><a href="#M-CoT" class="headerlink" title="M-CoT"></a>M-CoT</h1><blockquote>
-<p>CoT is “a series of intermediate reasoning steps”, which has been proven to be effective in complex reasoning tasks.</p>
-</blockquote>
-<ul>
-<li>CoT主要是想讓我們在prompt LLMs時，讓他生成不只是最後的答案，而是要有推理的過程而引導到最終解答。</li>
-<li>在M-CoT中有幾個重要的概念：modality bridging(解決modality gap), learning paradigms, chain configuration以及generation patterns。</li>
-</ul>
-<hr>
-<h2 id="Modality-Bridging"><a href="#Modality-Bridging" class="headerlink" title="Modality Bridging"></a>Modality Bridging</h2><ol>
-<li>使用Learnable Interface：<ul>
-<li>這個方法使用一個learnable interface把visual embedding mapping到word embedding空間。</li>
-<li>這個mapped embedding可以被視為是一個prompt，進而傳遞給LLMs，引出其M-CoT的能力</li>
-<li>舉例來說，CoT-PT使用多個Meta-Net來作prompt tuning，Meta-Net將visual features轉換成階段性的prompt，其中，可以把Meta-Net想像為CoT-PT的其中一個模組。</li>
-<li>Multimodal-CoT使用shared Transformer-based 架構，visual與textual特徵通過cross-attention進行交互。</li>
-</ul>
-</li>
-<li>使用Expert Model：<ul>
-<li>引用expert models來將visual input翻譯為texual description</li>
-<li>儘管其非常直接且簡單，但在轉換的過程中可能會遇到information loss的問題</li>
-</ul>
-</li>
-</ol>
-<h2 id="Learning-Paradigms"><a href="#Learning-Paradigms" class="headerlink" title="Learning Paradigms"></a>Learning Paradigms</h2><p>learning paradigms也可以解釋為模型如何從資訊中獲取知識。大致可以分為 <strong>三種方式來習得M-CoT的能力</strong></p>
-<ol>
-<li>fintuning：<br>通常需要針對M-CoT的datasets</li>
-<li>training-free few-shot learning：<br>同常需要手作一些in-context的範例讓模型去學如何推理</li>
-<li>training-free zero-shot learning：<br>直接prompt就可以，不需要其他明顯的指引，舉例來說”Let’s think frame by frame”</li>
-</ol>
-<p>其中對於sample size的要求由上而下遞減</p>
-<h2 id="Chain-Configuration"><a href="#Chain-Configuration" class="headerlink" title="Chain Configuration"></a>Chain Configuration</h2><p>簡單來說就是要什麼時後該停止推裡，主要有adaptive和pre-defined formation兩種方法。</p>
-<ul>
-<li>Adaptive:<br>要求LLMs自己決定何時該停止reasoing chains</li>
-<li>Pre-defined formation<br>使用者事先設定好reasoning chains的長度</li>
-</ul>
-<h2 id="Generation-Pattern"><a href="#Generation-Pattern" class="headerlink" title="Generation Pattern"></a>Generation Pattern</h2><p>Reasoning chain是如何建構的？<br>主要有兩種可能</p>
-<ol>
-<li>Infilling-based pattern：<br>需要在上下文中去做演繹(前幾步與後幾步)，去填補邏輯漏洞</li>
-<li>predicting-based pattern：<br>利用已知的條件、instruction以及過去推理的資訊去擴充reasoning chain<br>不管是哪種模式，都必須要求生成的文本必須是連續且正確的</li>
-</ol>
-<h1 id="LAVR"><a href="#LAVR" class="headerlink" title="LAVR"></a>LAVR</h1><p>將LLMs作為helpers，以及其他不同的角色，建構出一個支持特定任務或genral-purpose的visual reasoning system<br>跟傳統的visual reasoning system相比，LAVR有一些更好的特點：</p>
-<ol>
-<li>Strong generalization ability：<br>擁有眾多知識並以大量資料及訓練的模型，可以容易地泛化未看過的任務，並在zero-shot&#x2F;few-shot擁有不錯的性能。</li>
-<li>Emergent abilities：<br>其定義為，在小的模型不會出現，而在大模型會出現的能力，當模型到一定的scale會湧現的能力，例如能夠看到圖片表面下的意義，像是能夠理解會和一個迷因是好笑的。</li>
-<li>Better interactvity and control：<br>LLM-based system提供一個更好使用與控制的使用者介面，例如使用自然語言的query進行互動。<br>下面我將介紹論文中提到的，LAVR不同的training paradigm以及LLM在這個系統中扮演的角色</li>
-</ol>
-<h2 id="Training-Paradigms"><a href="#Training-Paradigms" class="headerlink" title="Training Paradigms"></a>Training Paradigms</h2><p>主要有兩種：</p>
-<ol>
-<li>training-free：<ul>
-<li>few-shot models：<br>   需要少量的hand-crafted in-context sample，去指引LLMs產生程式或一連串的執行步驟， <strong>這些程式或執行步驟是作為其他對應模型或外部工具與模組的instructions</strong></li>
-<li>zero-shot models：<br>   依賴LLMs的語言相關知識與推理能力，例如CAT使用LLMs去refine影像的caption，使其更符合使用者的需求</li>
-</ul>
-</li>
-<li>finetuning：<br>主要是想要激活LLMs在LAVR中的planning abilities(對應到工具的使用)，以及instruction-following abilities。</li>
-</ol>
-<h2 id="Functions"><a href="#Functions" class="headerlink" title="Functions"></a>Functions</h2><p>LLMs在LAVR system中扮演的主要角色，主要有三種</p>
-<blockquote>
-<ol>
-<li>LLM as a Controller</li>
-<li>LLM as a Decision Maker</li>
-<li>LLM as a Semantics Refiner</li>
-</ol>
-</blockquote>
-<p>前兩者(controller &amp; decision maker)與CoT相關，因為複雜的任務需要被拆解為intermediate simpler tasks。</p>
-<p>當LLMs作為controller時，任務常常是在single round完成的，而multi-round更常見於decision maker</p>
-<h3 id="LLM-as-a-Controller"><a href="#LLM-as-a-Controller" class="headerlink" title="LLM as a Controller"></a>LLM as a Controller</h3><ol>
-<li>Break down a complex task into simpler sub-tasks<br>常運用LLMs的CoT能力</li>
-<li>Assigns these tasks to appropriate tools&#x2F;modules</li>
-</ol>
-<h3 id="LLM-as-a-Decision-Maker"><a href="#LLM-as-a-Decision-Maker" class="headerlink" title="LLM as a Decision Maker"></a>LLM as a Decision Maker</h3><p>在這個case中，複雜的任務會以multi-round的方式被解決，decision maker通常要滿足以下能力</p>
-<ol>
-<li>總結目前的上下文以及歷史資訊，並判斷目前的資訊是否足夠推導出最終解答</li>
-<li>整理並總結答案，並且用user-friendly的方式呈現給使用者</li>
-</ol>
-<h3 id="LLM-as-a-Semantics-Refiner"><a href="#LLM-as-a-Semantics-Refiner" class="headerlink" title="LLM as a Semantics Refiner"></a>LLM as a Semantics Refiner</h3><p>使用LLMs豐富的語言與語義知識，去對最終解答做加強</p>
-<h1 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h1><p>這篇論文整理的現行MLLM的資訊，並給出了主要的幾個方向，包括包括3個常見的技巧(M-IT, M-ICL, M-CoT)，和一個task-solving systems的廣泛框架(LAVR)。<br>論文中還有許多evaluation的方式，以及現在研究需要被填充的gap，其他更詳細的內容還有待讀者親自去欣賞這篇論文！</p>
-<h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><ul>
-<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzIzMDYuMTM1NDk=">https://arxiv.org/abs/2306.13549<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC82Mzk2NjQ2MTU=">https://zhuanlan.zhihu.com/p/639664615<i class="fa fa-external-link-alt"></i></span></li>
-</ul>
-]]></content>
-      <categories>
-        <category>MLLM論文</category>
-      </categories>
-      <tags>
-        <tag>ML</tag>
-        <tag>AI</tag>
-        <tag>NLP</tag>
-        <tag>paper-study</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Understanding CIDR - A Guide to Classless Inter-Domain Routing</title>
     <url>/posts/1789986274/</url>
     <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Classless Inter-Domain Routing (CIDR) revolutionized IP address allocation and routing on the internet. By moving away from the rigid class-based system (Classes A, B, and C), CIDR introduced a more flexible and efficient method for managing IP spaces. This article delves into what CIDR is, how it works, and how to compute CIDR blocks for network planning.</p>
@@ -1600,6 +1389,194 @@ style="width: 70%; margin: 15px auto;"></p>
       <tags>
         <tag>cloud</tag>
         <tag>networking</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[AWS-CPE] Database and Storage</title>
+    <url>/posts/3982951460/</url>
+    <content><![CDATA[<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Storage refers to the preservation of digital data in a form that can be accessed by a computer system. It comes in various types, such as hard drives, solid-state drives, USB flash drives, and cloud storage. These storage devices can hold data temporarily or permanently.</p>
+<p>Databases, on the other hand, are structured systems for organizing, storing, and retrieving data. They allow for efficient data management and can handle large amounts of information systematically. Databases can be relational, where data is stored in tables and relationships can be defined between these tables, or non-relational (NoSQL), which are more flexible and can store unstructured data. The management of databases is handled through database management systems (DBMS), which provide tools for creating, querying, updating, and administering the database.</p>
+<span id="more"></span>
+
+<h1 id="Outline"><a href="#Outline" class="headerlink" title="Outline"></a>Outline</h1><p>In this article, we will talk about the database and storage service in AWS. This article is based on the courses on the AWS SkillBuilder platform. (Module5)</p>
+<ul>
+<li>Summarize the basic concept of storage and databases.</li>
+<li>Describe the benefits of Amazon Elastic Block Store (Amazon EBS).</li>
+<li>Describe the benefits of Amazon Simple Storage Service (Amazon S3).</li>
+<li>Describe the benefits of Amazon Elastic File System (Amazon EFS).</li>
+<li>Summarize various storage solutions.</li>
+<li>Describe the benefits of Amazon Relational Database Service (Amazon RDS).</li>
+<li>Describe the benefits of Amazon DynamoDB.</li>
+<li>Summarize various database services.</li>
+</ul>
+<h1 id="Amazon-EBS-Instance-Stores-and-Amazon-Elastic-Block-Store"><a href="#Amazon-EBS-Instance-Stores-and-Amazon-Elastic-Block-Store" class="headerlink" title="Amazon EBS (Instance Stores and Amazon Elastic Block Store)"></a>Amazon EBS (Instance Stores and Amazon Elastic Block Store)</h1><h2 id="Instance-Stores-provide"><a href="#Instance-Stores-provide" class="headerlink" title="Instance Stores provide"></a>Instance Stores provide</h2><p>  <strong>temporary block-level storage for Amazon EC2 (Elastic Compute Cloud) instances.</strong> This storage is physically <strong>attached to the host machine</strong> where the instance runs, offering high performance and low latency. However, data on instance stores is ephemeral; it <strong>persists only as long as the instance is running</strong> and is lost if the instance is stopped, terminated, or if the underlying physical drive fails.</p>
+<p>Block Store: (changed only by block)<br><img data-src="/images/posts/cloud/database-and-storage/block.png"></img> </p>
+<p>Instance Store:<br><img data-src="/images/posts/cloud/database-and-storage/instance-store.png"></img></p>
+<h2 id="Amazon-Elastic-Block-Store-Amazon-EBS"><a href="#Amazon-Elastic-Block-Store-Amazon-EBS" class="headerlink" title="Amazon Elastic Block Store (Amazon EBS)"></a>Amazon Elastic Block Store (Amazon EBS)</h2><p>  EBS, in contrast, offers <strong>persistent block storage volumes</strong> for use with EC2 instances. EBS volumes are <strong>network-attached and persist independently of the life of an instance</strong>. This means that EBS volumes can be detached from one instance and attached to another, and their data remains intact even after the instance is stopped or terminated. EBS provides various volume types that cater to different use cases, such as high throughput or high IOPS (input&#x2F;output operations per second), and is designed for both high availability and durability.</p>
+<p>EBS Settings:<br><img data-src="/images/posts/cloud/database-and-storage/ebs-config.png"></img></p>
+<p>EBS:<br><img data-src="/images/posts/cloud/database-and-storage/ebs.png"></img></p>
+<h2 id="Snapshot"><a href="#Snapshot" class="headerlink" title="Snapshot"></a>Snapshot</h2><ul>
+<li>A snapshot in the context of cloud computing, particularly with Amazon Elastic Block Store (Amazon EBS), is a point-in-time backup of an EBS volume. It captures the exact state of a volume at the time the snapshot is taken and is stored in Amazon S3 (Simple Storage Service) for durability. Snapshots are incremental, meaning only the blocks on the device that have changed after your most recent snapshot are saved, which optimizes both the time required to create the snapshot and the space used on storage.</li>
+<li>Snapshots are widely used for data backup, archiving, and disaster recovery purposes. They can also be used to create new EBS volumes, clone existing volumes, or transfer data across AWS regions. Snapshots are a key feature in ensuring data durability and recoverability in cloud environments.</li>
+<li><img data-src="/images/posts/cloud/database-and-storage/snapshot.png"></img></li>
+</ul>
+<h2 id="Quick-Quiz"><a href="#Quick-Quiz" class="headerlink" title="Quick Quiz"></a>Quick Quiz</h2><ul>
+<li><img data-src="/images/posts/cloud/database-and-storage/ebs-quiz.png"></img></li>
+</ul>
+<h1 id="Amazon-S3-Amazon-Simple-Storage-Service"><a href="#Amazon-S3-Amazon-Simple-Storage-Service" class="headerlink" title="Amazon S3 (Amazon Simple Storage Service)"></a>Amazon S3 (Amazon Simple Storage Service)</h1><p>Amazon S3 (Simple Storage Service) is a scalable, high-speed, web-based cloud storage service designed for online backup and archiving of data and application programs. S3 provides an object storage format, which differs from traditional file systems or block storage. Data is stored as objects within buckets, and each object consists of the file itself and metadata containing a globally unique identifier and other information. S3 is widely recognized for its durability, availability, and scalability.<br><img data-src="/images/posts/cloud/database-and-storage/obj-storage.png"></img></p>
+<ul>
+<li>Key features of S3 include:<ul>
+<li>Buckets: Containers for storage of any amount of data at any time. Each bucket is identified by a unique, user-defined name.</li>
+<li>Objects: Files or blobs of data that are stored in buckets. Objects are identified within a bucket by a unique, user-assigned key.</li>
+<li>Scalability: Ability to store and retrieve any amount of data, from small files to large datasets, at any time.</li>
+<li>Data Availability and Durability: Designed for 99.999999999% (11 9’s) of durability, ensuring data protection against losses.</li>
+<li>Security: Supports various mechanisms to control access to data, including AWS Identity and Access Management (IAM), bucket policies, and Access Control Lists (ACLs).</li>
+<li>Versioning: Allows multiple variants of an object to be stored in the same bucket, useful for backup and recovery.<br><img width="60%" data-src="/images/posts/cloud/database-and-storage/aws-s3-store.png"></img></li>
+</ul>
+</li>
+</ul>
+<p>S3 is widely used in a variety of applications such as website hosting, data backup, and a backend storage for services such as Amazon EC2, Amazon EBS, and Amazon RDS.</p>
+<h2 id="Types-of-AWS-S3"><a href="#Types-of-AWS-S3" class="headerlink" title="Types of AWS S3"></a>Types of AWS S3</h2><ol>
+<li>S3 Standard:<br>Use Case: Frequently accessed data.<br>Characteristics: Offers high durability, availability, and performance with low latency and high throughput.</li>
+<li>S3 Intelligent-Tiering:<br>Use Case: Data with unknown or changing access patterns.<br>Characteristics: Automatically moves data between two access tiers — frequent and infrequent access — based on changing access patterns, optimizing costs without performance impact.</li>
+<li>S3 Standard-Infrequent Access (S3 Standard-IA):<br>Use Case: Less frequently accessed data, but requires rapid access when needed.<br>Characteristics: Lower storage cost compared to S3 Standard, but with a retrieval fee.</li>
+<li>S3 One Zone-Infrequent Access (S3 One Zone-IA):<br>Use Case: For data that is infrequently accessed and does not require the multiple Availability Zone data resilience.<br>Characteristics: Stores data in a single Availability Zone, making it less expensive than S3 Standard-IA.</li>
+<li>S3 Glacier:<br>Use Case: Archiving data that is rarely accessed.<br>Characteristics: Offers very low storage cost but has higher retrieval times and fees. Suitable for data archiving and long-term backup.</li>
+<li>S3 Glacier Deep Archive:<br>Use Case: Long-term storage of data that is accessed once or twice a year.<br>Characteristics: AWS’s lowest-cost storage class and supports long-term retention and digital preservation for data that may be accessed once or twice a year.</li>
+</ol>
+<h2 id="Quick-Quiz-1"><a href="#Quick-Quiz-1" class="headerlink" title="Quick Quiz"></a>Quick Quiz</h2><ul>
+<li><img data-src="/images/posts/cloud/database-and-storage/s3-quiz.png"></img></li>
+</ul>
+<h1 id="Amazon-EFS-Amazon-Elastic-File-System"><a href="#Amazon-EFS-Amazon-Elastic-File-System" class="headerlink" title="Amazon EFS (Amazon Elastic File System)"></a>Amazon EFS (Amazon Elastic File System)</h1><p>AWS EFS is a cloud-based file storage service for applications that require <strong>shared file storage accessible by multiple EC2 instances</strong>. EFS is scalable and elastic, providing a simple interface that allows storage capacity to <strong>grow or shrink automatically</strong> as files are added or removed. It uses the NFS (Network File System) protocol and can be mounted on several instances simultaneously, making it ideal for applications that need common data access for multiple servers, such as content management systems and web serving.</p>
+<ul>
+<li>Differences between AWS EFS and AWS EBS:</li>
+</ul>
+<ol>
+<li>Storage Type:<br>EFS is a file-level storage service that operates on the NFS protocol, allowing simultaneous access from multiple EC2 instances.<br>EBS is a block-level storage service attached to a single EC2 instance at a time, used like a traditional drive.</li>
+<li>Scalability:<br>EFS automatically scales its capacity up or down as you add or remove files, with no need for manual intervention or provisioning.<br>EBS requires manual management of capacity. You must choose the volume size ahead of time, though you can resize it, the process is not automatic.</li>
+<li>Use Case:<br>EFS is ideal for use cases where multiple instances need to access a common file system concurrently, such as web applications and content management systems.<br>EBS is better suited for use cases requiring dedicated, single-instance storage, such as databases or any application needing consistent block-level storage.</li>
+<li>Performance:<br>EFS offers scalable performance, but with slightly higher latency due to its network-based nature.<br>EBS provides high performance with lower latency, especially with provisioned IOPS volumes for I&#x2F;O-intensive applications.</li>
+<li>Data Durability and Availability:<br>EFS is designed to be highly durable and available, storing data across multiple Availability Zones automatically.<br>EBS volumes are tied to a specific Availability Zone; however, you can take snapshots and replicate them to other zones for higher availability and durability.</li>
+</ol>
+<h1 id="Amazon-RDS-Amazon-Relational-Database-Service"><a href="#Amazon-RDS-Amazon-Relational-Database-Service" class="headerlink" title="Amazon RDS (Amazon Relational Database Service)"></a>Amazon RDS (Amazon Relational Database Service)</h1><p>AWS RDS is a managed relational database service that simplifies the setup, operation, and scaling of a relational database in the cloud. It provides cost-efficient and resizable capacity while automating time-consuming administration tasks such as hardware provisioning, database setup, patching, and backups. RDS allows you to focus on your applications so you can give them the fast performance, high availability, security, and compatibility they need.</p>
+<h2 id="Amazon-RDS-database-engines"><a href="#Amazon-RDS-database-engines" class="headerlink" title="Amazon RDS database engines"></a>Amazon RDS database engines</h2><p>Amazon RDS is available on six database engines, which optimize for memory, performance, or input&#x2F;output (I&#x2F;O). Supported database engines include:</p>
+<ul>
+<li>Amazon Aurora</li>
+<li>PostgreSQL</li>
+<li>MySQL</li>
+<li>MariaDB</li>
+<li>Oracle Database</li>
+<li>Microsoft SQL Server</li>
+</ul>
+<h2 id="Amazon-Aurora"><a href="#Amazon-Aurora" class="headerlink" title="Amazon Aurora"></a>Amazon Aurora</h2><p>Amazon Aurora is an enterprise-class relational database. It is compatible with MySQL and PostgreSQL relational databases. It is up to five times faster than standard MySQL databases and up to three times faster than standard PostgreSQL databases.</p>
+<p>Amazon Aurora helps to reduce your database costs by reducing unnecessary input&#x2F;output (I&#x2F;O) operations, while ensuring that your database resources remain reliable and available. </p>
+<p>Consider Amazon Aurora if your workloads require high availability. It replicates six copies of your data across three Availability Zones and continuously backs up your data to Amazon S3.</p>
+<h1 id="Amazon-DynamoDB"><a href="#Amazon-DynamoDB" class="headerlink" title="Amazon DynamoDB"></a>Amazon DynamoDB</h1><p>AWS DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability. DynamoDB lets you offload the administrative burdens of operating and scaling a distributed database, so you do not have to worry about <strong>hardware provisioning, setup and configuration, replication, software patching, or cluster scaling</strong>.</p>
+<p><img width="60%" data-src="/images/posts/cloud/database-and-storage/dydb.png"></img></p>
+<h2 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h2><p>Amazon DynamoDB is a key-value database service. It delivers single-digit millisecond performance at any scale. Here are 2 important features of Amazon DynamoDB.</p>
+<ul>
+<li>Serverless<ul>
+<li>DynamoDB is serverless, which means that you do not have to provision, patch, or manage servers.</li>
+<li>You also do not have to install, maintain, or operate software.</li>
+</ul>
+</li>
+<li>Automatic Scaling<ul>
+<li>As the size of your database shrinks or grows, DynamoDB automatically scales to adjust for changes in capacity while maintaining consistent performance. </li>
+<li>This makes it a suitable choice for use cases that require high performance while scaling.</li>
+</ul>
+</li>
+</ul>
+<h2 id="Amazon-RDS-VS-Amazon-DynamoDB"><a href="#Amazon-RDS-VS-Amazon-DynamoDB" class="headerlink" title="Amazon RDS VS. Amazon DynamoDB"></a>Amazon RDS VS. Amazon DynamoDB</h2><p><img width="60%" data-src="/images/posts/cloud/database-and-storage/rds-dydb1.png"></img><br><img width="60%" data-src="/images/posts/cloud/database-and-storage/rds-dydb2.png"></img></p>
+<ul>
+<li>Database Type<ul>
+<li>RDS: Relational database service supporting SQL queries and complex transactions, suitable for structured data.</li>
+<li>DynamoDB: NoSQL database service optimized for high performance and scalability, handling key-value and document data.</li>
+</ul>
+</li>
+<li>Use Cases<ul>
+<li>RDS: Ideal for applications requiring complex queries and transactional integrity, such as business software and reporting systems.</li>
+<li>DynamoDB: Best for applications needing fast access, massive scalability, like mobile apps, gaming platforms, and IoT systems.</li>
+</ul>
+</li>
+<li>Performance and Scalability<ul>
+<li>RDS: Scalable vertically (upgrading server resources); performance relies on SQL optimization.</li>
+<li>DynamoDB: Automatically scalable horizontally, offering consistent single-digit millisecond latency at any scale.</li>
+</ul>
+</li>
+<li>Management<ul>
+<li>RDS: Requires some management for scaling and backups.</li>
+<li>DynamoDB: Fully managed, with automatic scaling, partitioning, and replication.</li>
+</ul>
+</li>
+<li>Pricing<ul>
+<li>RDS: Charges based on compute, storage, and additional features like backups and replication.</li>
+<li>DynamoDB: Pricing based on throughput, storage, and optional features like data streaming.</li>
+</ul>
+</li>
+</ul>
+<p>Conclusion: Choose RDS for complex relational databases and DynamoDB for high-performance, scalable, simple data structure needs. Each has its strengths depending on the application’s requirements.</p>
+<h2 id="Quick-Quiz-2"><a href="#Quick-Quiz-2" class="headerlink" title="Quick Quiz"></a>Quick Quiz</h2><p><img data-src="/images/posts/cloud/database-and-storage/dydb-quiz.png"></img></p>
+<h1 id="Amazon-Redshift"><a href="#Amazon-Redshift" class="headerlink" title="Amazon Redshift"></a>Amazon Redshift</h1><p>AWS Redshift is a <strong>fully managed, petabyte-scale data warehouse service</strong> in the cloud. It provides fast query performance by using <strong>columnar</strong> storage technology to improve I&#x2F;O efficiency and parallelizing queries across multiple nodes. </p>
+<h2 id="What-is-Data-Warehouse"><a href="#What-is-Data-Warehouse" class="headerlink" title="What is Data Warehouse?"></a>What is Data Warehouse?</h2><p>A Data Warehouse is a system used for <strong>reporting and data analysis</strong>, and is considered a core component of business intelligence. It is designed to enable and support business decisions by <strong>consolidating, aggregating, and organizing data from multiple sources into a central repository</strong>. This repository is structured specifically for query and analysis, often using historical data derived from transaction data, but it can include data from other sources.</p>
+<p>Data warehouses support various data analysis tools, such as online analytical processing (OLAP) and data mining. The primary function of a data warehouse is to enable data analysis and support decision-making. It acts as a central repository where information is stored and can be retrieved from multiple sources, making it a valuable resource for gaining insight into the functioning and performance of an organization over time.</p>
+<h1 id="AWS-DMS-AWS-Database-Migration-Service"><a href="#AWS-DMS-AWS-Database-Migration-Service" class="headerlink" title="AWS DMS (AWS Database Migration Service)"></a>AWS DMS (AWS Database Migration Service)</h1><p>AWS Database Migration Service (AWS DMS) is a cloud service that makes it easier for you to migrate relational databases, data warehouses, NoSQL databases, and other types of data stores to AWS. DMS can also be used to migrate data between on-premises databases, between different AWS cloud services, or between a combination of cloud and on-premises setups.</p>
+<p><img data-src="/images/posts/cloud/database-and-storage/dms.png"></img></p>
+<h2 id="2-Processes-Heterogeneous-Database"><a href="#2-Processes-Heterogeneous-Database" class="headerlink" title="2 Processes (Heterogeneous Database)"></a>2 Processes (Heterogeneous Database)</h2><p>AWS Schema Conversion Tool to make the schema structures and database code to match the target DB<br><img data-src="/images/posts/cloud/database-and-storage/dms-proc1.png"></img></p>
+<p>AWS DMS to migrate<br><img data-src="/images/posts/cloud/database-and-storage/dms.png"></img></p>
+<h2 id="Use-Cases"><a href="#Use-Cases" class="headerlink" title="Use Cases"></a>Use Cases</h2><ul>
+<li>Development and test database migrations<ul>
+<li>Enabling developers to test applications against production data without affecting production users</li>
+<li><img data-src="/images/posts/cloud/database-and-storage/dms-dev-mig.png"></img></li>
+</ul>
+</li>
+<li>Database consolidation<ul>
+<li>Combining several databases into a single database</li>
+<li><img data-src="/images/posts/cloud/database-and-storage/dms-con.png"></img></li>
+</ul>
+</li>
+<li>Continuous replication<ul>
+<li>Sending ongoing copies of your data to other target sources instead of doing a one-time migration</li>
+<li><img data-src="/images/posts/cloud/database-and-storage/dms-rep.png"></img></li>
+</ul>
+</li>
+</ul>
+<h1 id="Additional-Database-Services"><a href="#Additional-Database-Services" class="headerlink" title="Additional Database Services"></a>Additional Database Services</h1><p>Selecting the appropriate database and storage solutions is crucial for meeting specific business needs without compromising on functionality. AWS offers a range of specialized database services tailored to unique business requirements.</p>
+<h2 id="Specialized-AWS-Database-Services"><a href="#Specialized-AWS-Database-Services" class="headerlink" title="Specialized AWS Database Services"></a>Specialized AWS Database Services</h2><ul>
+<li><p>Amazon DocumentDB<br>Ideal for content-heavy applications such as content management systems, catalogs, and user profiles, Amazon DocumentDB supports complex document storage needs.</p>
+</li>
+<li><p>Amazon Neptune<br>Amazon Neptune is a graph database designed for managing intricate data relationships efficiently, suitable for social networks, recommendation systems, and fraud detection.</p>
+</li>
+<li><p>Amazon Managed Blockchain and Amazon QLDB<br>For applications requiring immutable records, such as in supply chain or financial sectors, Amazon QLDB provides a secure, immutable ledger system, whereas Amazon Managed Blockchain introduces a decentralized blockchain solution.</p>
+</li>
+<li><p>Performance Enhancement Options<br>Amazon ElastiCache<br>Improves database read times significantly, offering caching solutions like Memcached and Redis to enhance performance without maintenance overhead.</p>
+</li>
+<li><p>DAX (DynamoDB Accelerator)<br>A native caching layer for DynamoDB, DAX boosts read performance dramatically, making it ideal for applications requiring speedy data retrieval.</p>
+</li>
+</ul>
+<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><ul>
+<li>Elastic Block Store (EBS): Provides persistent block storage volumes for EC2 instances, ensuring local storage that is not ephemeral.</li>
+<li>Amazon S3: A robust object storage service that allows users to store and retrieve vast amounts of data easily via a user interface or API.</li>
+<li>Database Options: Explored relational databases available on AWS for structured data management and DynamoDB for key-value pair, non-relational workloads.</li>
+<li>Elastic File System (EFS): Offers a simple, scalable file storage solution for use with AWS Cloud services and on-premises resources.</li>
+<li>Amazon Redshift: Serves as a fully managed data warehouse that provides powerful and fast data analysis across your datasets.</li>
+<li>Database Migration Service (DMS): Facilitates the migration of your databases to AWS, ensuring seamless data transfer with minimal downtime.</li>
+<li>Specialized Storage Services: Briefly covered less commonly known services like Amazon DocumentDB, Neptune, QLDB, and Amazon Managed Blockchain for specific use cases.</li>
+<li>Caching Solutions: Discussed the use of Amazon ElastiCache and DynamoDB Accelerator to improve the performance of database reads.</li>
+</ul>
+<h1 id="Quiz"><a href="#Quiz" class="headerlink" title="Quiz"></a>Quiz</h1><ul>
+<li><img data-src="/images/posts/cloud/database-and-storage/q1.png"></img></li>
+<li><img data-src="/images/posts/cloud/database-and-storage/q2.png"></img></li>
+<li><img data-src="/images/posts/cloud/database-and-storage/q3.png"></img></li>
+<li><img data-src="/images/posts/cloud/database-and-storage/q4.png"></img></li>
+<li><img data-src="/images/posts/cloud/database-and-storage/q5.png"></img></li>
+</ul>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference:"></a>Reference:</h1><ul>
+<li>AWS SkillBuilder CPE Course Module5</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>cloud</tag>
+        <tag>aws</tag>
       </tags>
   </entry>
   <entry>
@@ -1897,255 +1874,6 @@ style="width: 70%; margin: 15px auto;"></p>
       </tags>
   </entry>
   <entry>
-    <title>[AWS-CPE] Database and Storage</title>
-    <url>/posts/3982951460/</url>
-    <content><![CDATA[<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Storage refers to the preservation of digital data in a form that can be accessed by a computer system. It comes in various types, such as hard drives, solid-state drives, USB flash drives, and cloud storage. These storage devices can hold data temporarily or permanently.</p>
-<p>Databases, on the other hand, are structured systems for organizing, storing, and retrieving data. They allow for efficient data management and can handle large amounts of information systematically. Databases can be relational, where data is stored in tables and relationships can be defined between these tables, or non-relational (NoSQL), which are more flexible and can store unstructured data. The management of databases is handled through database management systems (DBMS), which provide tools for creating, querying, updating, and administering the database.</p>
-<span id="more"></span>
-
-<h1 id="Outline"><a href="#Outline" class="headerlink" title="Outline"></a>Outline</h1><p>In this article, we will talk about the database and storage service in AWS. This article is based on the courses on the AWS SkillBuilder platform. (Module5)</p>
-<ul>
-<li>Summarize the basic concept of storage and databases.</li>
-<li>Describe the benefits of Amazon Elastic Block Store (Amazon EBS).</li>
-<li>Describe the benefits of Amazon Simple Storage Service (Amazon S3).</li>
-<li>Describe the benefits of Amazon Elastic File System (Amazon EFS).</li>
-<li>Summarize various storage solutions.</li>
-<li>Describe the benefits of Amazon Relational Database Service (Amazon RDS).</li>
-<li>Describe the benefits of Amazon DynamoDB.</li>
-<li>Summarize various database services.</li>
-</ul>
-<h1 id="Amazon-EBS-Instance-Stores-and-Amazon-Elastic-Block-Store"><a href="#Amazon-EBS-Instance-Stores-and-Amazon-Elastic-Block-Store" class="headerlink" title="Amazon EBS (Instance Stores and Amazon Elastic Block Store)"></a>Amazon EBS (Instance Stores and Amazon Elastic Block Store)</h1><h2 id="Instance-Stores-provide"><a href="#Instance-Stores-provide" class="headerlink" title="Instance Stores provide"></a>Instance Stores provide</h2><p>  <strong>temporary block-level storage for Amazon EC2 (Elastic Compute Cloud) instances.</strong> This storage is physically <strong>attached to the host machine</strong> where the instance runs, offering high performance and low latency. However, data on instance stores is ephemeral; it <strong>persists only as long as the instance is running</strong> and is lost if the instance is stopped, terminated, or if the underlying physical drive fails.</p>
-<p>Block Store: (changed only by block)<br><img data-src="/images/posts/cloud/database-and-storage/block.png"></img> </p>
-<p>Instance Store:<br><img data-src="/images/posts/cloud/database-and-storage/instance-store.png"></img></p>
-<h2 id="Amazon-Elastic-Block-Store-Amazon-EBS"><a href="#Amazon-Elastic-Block-Store-Amazon-EBS" class="headerlink" title="Amazon Elastic Block Store (Amazon EBS)"></a>Amazon Elastic Block Store (Amazon EBS)</h2><p>  EBS, in contrast, offers <strong>persistent block storage volumes</strong> for use with EC2 instances. EBS volumes are <strong>network-attached and persist independently of the life of an instance</strong>. This means that EBS volumes can be detached from one instance and attached to another, and their data remains intact even after the instance is stopped or terminated. EBS provides various volume types that cater to different use cases, such as high throughput or high IOPS (input&#x2F;output operations per second), and is designed for both high availability and durability.</p>
-<p>EBS Settings:<br><img data-src="/images/posts/cloud/database-and-storage/ebs-config.png"></img></p>
-<p>EBS:<br><img data-src="/images/posts/cloud/database-and-storage/ebs.png"></img></p>
-<h2 id="Snapshot"><a href="#Snapshot" class="headerlink" title="Snapshot"></a>Snapshot</h2><ul>
-<li>A snapshot in the context of cloud computing, particularly with Amazon Elastic Block Store (Amazon EBS), is a point-in-time backup of an EBS volume. It captures the exact state of a volume at the time the snapshot is taken and is stored in Amazon S3 (Simple Storage Service) for durability. Snapshots are incremental, meaning only the blocks on the device that have changed after your most recent snapshot are saved, which optimizes both the time required to create the snapshot and the space used on storage.</li>
-<li>Snapshots are widely used for data backup, archiving, and disaster recovery purposes. They can also be used to create new EBS volumes, clone existing volumes, or transfer data across AWS regions. Snapshots are a key feature in ensuring data durability and recoverability in cloud environments.</li>
-<li><img data-src="/images/posts/cloud/database-and-storage/snapshot.png"></img></li>
-</ul>
-<h2 id="Quick-Quiz"><a href="#Quick-Quiz" class="headerlink" title="Quick Quiz"></a>Quick Quiz</h2><ul>
-<li><img data-src="/images/posts/cloud/database-and-storage/ebs-quiz.png"></img></li>
-</ul>
-<h1 id="Amazon-S3-Amazon-Simple-Storage-Service"><a href="#Amazon-S3-Amazon-Simple-Storage-Service" class="headerlink" title="Amazon S3 (Amazon Simple Storage Service)"></a>Amazon S3 (Amazon Simple Storage Service)</h1><p>Amazon S3 (Simple Storage Service) is a scalable, high-speed, web-based cloud storage service designed for online backup and archiving of data and application programs. S3 provides an object storage format, which differs from traditional file systems or block storage. Data is stored as objects within buckets, and each object consists of the file itself and metadata containing a globally unique identifier and other information. S3 is widely recognized for its durability, availability, and scalability.<br><img data-src="/images/posts/cloud/database-and-storage/obj-storage.png"></img></p>
-<ul>
-<li>Key features of S3 include:<ul>
-<li>Buckets: Containers for storage of any amount of data at any time. Each bucket is identified by a unique, user-defined name.</li>
-<li>Objects: Files or blobs of data that are stored in buckets. Objects are identified within a bucket by a unique, user-assigned key.</li>
-<li>Scalability: Ability to store and retrieve any amount of data, from small files to large datasets, at any time.</li>
-<li>Data Availability and Durability: Designed for 99.999999999% (11 9’s) of durability, ensuring data protection against losses.</li>
-<li>Security: Supports various mechanisms to control access to data, including AWS Identity and Access Management (IAM), bucket policies, and Access Control Lists (ACLs).</li>
-<li>Versioning: Allows multiple variants of an object to be stored in the same bucket, useful for backup and recovery.<br><img width="60%" data-src="/images/posts/cloud/database-and-storage/aws-s3-store.png"></img></li>
-</ul>
-</li>
-</ul>
-<p>S3 is widely used in a variety of applications such as website hosting, data backup, and a backend storage for services such as Amazon EC2, Amazon EBS, and Amazon RDS.</p>
-<h2 id="Types-of-AWS-S3"><a href="#Types-of-AWS-S3" class="headerlink" title="Types of AWS S3"></a>Types of AWS S3</h2><ol>
-<li>S3 Standard:<br>Use Case: Frequently accessed data.<br>Characteristics: Offers high durability, availability, and performance with low latency and high throughput.</li>
-<li>S3 Intelligent-Tiering:<br>Use Case: Data with unknown or changing access patterns.<br>Characteristics: Automatically moves data between two access tiers — frequent and infrequent access — based on changing access patterns, optimizing costs without performance impact.</li>
-<li>S3 Standard-Infrequent Access (S3 Standard-IA):<br>Use Case: Less frequently accessed data, but requires rapid access when needed.<br>Characteristics: Lower storage cost compared to S3 Standard, but with a retrieval fee.</li>
-<li>S3 One Zone-Infrequent Access (S3 One Zone-IA):<br>Use Case: For data that is infrequently accessed and does not require the multiple Availability Zone data resilience.<br>Characteristics: Stores data in a single Availability Zone, making it less expensive than S3 Standard-IA.</li>
-<li>S3 Glacier:<br>Use Case: Archiving data that is rarely accessed.<br>Characteristics: Offers very low storage cost but has higher retrieval times and fees. Suitable for data archiving and long-term backup.</li>
-<li>S3 Glacier Deep Archive:<br>Use Case: Long-term storage of data that is accessed once or twice a year.<br>Characteristics: AWS’s lowest-cost storage class and supports long-term retention and digital preservation for data that may be accessed once or twice a year.</li>
-</ol>
-<h2 id="Quick-Quiz-1"><a href="#Quick-Quiz-1" class="headerlink" title="Quick Quiz"></a>Quick Quiz</h2><ul>
-<li><img data-src="/images/posts/cloud/database-and-storage/s3-quiz.png"></img></li>
-</ul>
-<h1 id="Amazon-EFS-Amazon-Elastic-File-System"><a href="#Amazon-EFS-Amazon-Elastic-File-System" class="headerlink" title="Amazon EFS (Amazon Elastic File System)"></a>Amazon EFS (Amazon Elastic File System)</h1><p>AWS EFS is a cloud-based file storage service for applications that require <strong>shared file storage accessible by multiple EC2 instances</strong>. EFS is scalable and elastic, providing a simple interface that allows storage capacity to <strong>grow or shrink automatically</strong> as files are added or removed. It uses the NFS (Network File System) protocol and can be mounted on several instances simultaneously, making it ideal for applications that need common data access for multiple servers, such as content management systems and web serving.</p>
-<ul>
-<li>Differences between AWS EFS and AWS EBS:</li>
-</ul>
-<ol>
-<li>Storage Type:<br>EFS is a file-level storage service that operates on the NFS protocol, allowing simultaneous access from multiple EC2 instances.<br>EBS is a block-level storage service attached to a single EC2 instance at a time, used like a traditional drive.</li>
-<li>Scalability:<br>EFS automatically scales its capacity up or down as you add or remove files, with no need for manual intervention or provisioning.<br>EBS requires manual management of capacity. You must choose the volume size ahead of time, though you can resize it, the process is not automatic.</li>
-<li>Use Case:<br>EFS is ideal for use cases where multiple instances need to access a common file system concurrently, such as web applications and content management systems.<br>EBS is better suited for use cases requiring dedicated, single-instance storage, such as databases or any application needing consistent block-level storage.</li>
-<li>Performance:<br>EFS offers scalable performance, but with slightly higher latency due to its network-based nature.<br>EBS provides high performance with lower latency, especially with provisioned IOPS volumes for I&#x2F;O-intensive applications.</li>
-<li>Data Durability and Availability:<br>EFS is designed to be highly durable and available, storing data across multiple Availability Zones automatically.<br>EBS volumes are tied to a specific Availability Zone; however, you can take snapshots and replicate them to other zones for higher availability and durability.</li>
-</ol>
-<h1 id="Amazon-RDS-Amazon-Relational-Database-Service"><a href="#Amazon-RDS-Amazon-Relational-Database-Service" class="headerlink" title="Amazon RDS (Amazon Relational Database Service)"></a>Amazon RDS (Amazon Relational Database Service)</h1><p>AWS RDS is a managed relational database service that simplifies the setup, operation, and scaling of a relational database in the cloud. It provides cost-efficient and resizable capacity while automating time-consuming administration tasks such as hardware provisioning, database setup, patching, and backups. RDS allows you to focus on your applications so you can give them the fast performance, high availability, security, and compatibility they need.</p>
-<h2 id="Amazon-RDS-database-engines"><a href="#Amazon-RDS-database-engines" class="headerlink" title="Amazon RDS database engines"></a>Amazon RDS database engines</h2><p>Amazon RDS is available on six database engines, which optimize for memory, performance, or input&#x2F;output (I&#x2F;O). Supported database engines include:</p>
-<ul>
-<li>Amazon Aurora</li>
-<li>PostgreSQL</li>
-<li>MySQL</li>
-<li>MariaDB</li>
-<li>Oracle Database</li>
-<li>Microsoft SQL Server</li>
-</ul>
-<h2 id="Amazon-Aurora"><a href="#Amazon-Aurora" class="headerlink" title="Amazon Aurora"></a>Amazon Aurora</h2><p>Amazon Aurora is an enterprise-class relational database. It is compatible with MySQL and PostgreSQL relational databases. It is up to five times faster than standard MySQL databases and up to three times faster than standard PostgreSQL databases.</p>
-<p>Amazon Aurora helps to reduce your database costs by reducing unnecessary input&#x2F;output (I&#x2F;O) operations, while ensuring that your database resources remain reliable and available. </p>
-<p>Consider Amazon Aurora if your workloads require high availability. It replicates six copies of your data across three Availability Zones and continuously backs up your data to Amazon S3.</p>
-<h1 id="Amazon-DynamoDB"><a href="#Amazon-DynamoDB" class="headerlink" title="Amazon DynamoDB"></a>Amazon DynamoDB</h1><p>AWS DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability. DynamoDB lets you offload the administrative burdens of operating and scaling a distributed database, so you do not have to worry about <strong>hardware provisioning, setup and configuration, replication, software patching, or cluster scaling</strong>.</p>
-<p><img width="60%" data-src="/images/posts/cloud/database-and-storage/dydb.png"></img></p>
-<h2 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h2><p>Amazon DynamoDB is a key-value database service. It delivers single-digit millisecond performance at any scale. Here are 2 important features of Amazon DynamoDB.</p>
-<ul>
-<li>Serverless<ul>
-<li>DynamoDB is serverless, which means that you do not have to provision, patch, or manage servers.</li>
-<li>You also do not have to install, maintain, or operate software.</li>
-</ul>
-</li>
-<li>Automatic Scaling<ul>
-<li>As the size of your database shrinks or grows, DynamoDB automatically scales to adjust for changes in capacity while maintaining consistent performance. </li>
-<li>This makes it a suitable choice for use cases that require high performance while scaling.</li>
-</ul>
-</li>
-</ul>
-<h2 id="Amazon-RDS-VS-Amazon-DynamoDB"><a href="#Amazon-RDS-VS-Amazon-DynamoDB" class="headerlink" title="Amazon RDS VS. Amazon DynamoDB"></a>Amazon RDS VS. Amazon DynamoDB</h2><p><img width="60%" data-src="/images/posts/cloud/database-and-storage/rds-dydb1.png"></img><br><img width="60%" data-src="/images/posts/cloud/database-and-storage/rds-dydb2.png"></img></p>
-<ul>
-<li>Database Type<ul>
-<li>RDS: Relational database service supporting SQL queries and complex transactions, suitable for structured data.</li>
-<li>DynamoDB: NoSQL database service optimized for high performance and scalability, handling key-value and document data.</li>
-</ul>
-</li>
-<li>Use Cases<ul>
-<li>RDS: Ideal for applications requiring complex queries and transactional integrity, such as business software and reporting systems.</li>
-<li>DynamoDB: Best for applications needing fast access, massive scalability, like mobile apps, gaming platforms, and IoT systems.</li>
-</ul>
-</li>
-<li>Performance and Scalability<ul>
-<li>RDS: Scalable vertically (upgrading server resources); performance relies on SQL optimization.</li>
-<li>DynamoDB: Automatically scalable horizontally, offering consistent single-digit millisecond latency at any scale.</li>
-</ul>
-</li>
-<li>Management<ul>
-<li>RDS: Requires some management for scaling and backups.</li>
-<li>DynamoDB: Fully managed, with automatic scaling, partitioning, and replication.</li>
-</ul>
-</li>
-<li>Pricing<ul>
-<li>RDS: Charges based on compute, storage, and additional features like backups and replication.</li>
-<li>DynamoDB: Pricing based on throughput, storage, and optional features like data streaming.</li>
-</ul>
-</li>
-</ul>
-<p>Conclusion: Choose RDS for complex relational databases and DynamoDB for high-performance, scalable, simple data structure needs. Each has its strengths depending on the application’s requirements.</p>
-<h2 id="Quick-Quiz-2"><a href="#Quick-Quiz-2" class="headerlink" title="Quick Quiz"></a>Quick Quiz</h2><p><img data-src="/images/posts/cloud/database-and-storage/dydb-quiz.png"></img></p>
-<h1 id="Amazon-Redshift"><a href="#Amazon-Redshift" class="headerlink" title="Amazon Redshift"></a>Amazon Redshift</h1><p>AWS Redshift is a <strong>fully managed, petabyte-scale data warehouse service</strong> in the cloud. It provides fast query performance by using <strong>columnar</strong> storage technology to improve I&#x2F;O efficiency and parallelizing queries across multiple nodes. </p>
-<h2 id="What-is-Data-Warehouse"><a href="#What-is-Data-Warehouse" class="headerlink" title="What is Data Warehouse?"></a>What is Data Warehouse?</h2><p>A Data Warehouse is a system used for <strong>reporting and data analysis</strong>, and is considered a core component of business intelligence. It is designed to enable and support business decisions by <strong>consolidating, aggregating, and organizing data from multiple sources into a central repository</strong>. This repository is structured specifically for query and analysis, often using historical data derived from transaction data, but it can include data from other sources.</p>
-<p>Data warehouses support various data analysis tools, such as online analytical processing (OLAP) and data mining. The primary function of a data warehouse is to enable data analysis and support decision-making. It acts as a central repository where information is stored and can be retrieved from multiple sources, making it a valuable resource for gaining insight into the functioning and performance of an organization over time.</p>
-<h1 id="AWS-DMS-AWS-Database-Migration-Service"><a href="#AWS-DMS-AWS-Database-Migration-Service" class="headerlink" title="AWS DMS (AWS Database Migration Service)"></a>AWS DMS (AWS Database Migration Service)</h1><p>AWS Database Migration Service (AWS DMS) is a cloud service that makes it easier for you to migrate relational databases, data warehouses, NoSQL databases, and other types of data stores to AWS. DMS can also be used to migrate data between on-premises databases, between different AWS cloud services, or between a combination of cloud and on-premises setups.</p>
-<p><img data-src="/images/posts/cloud/database-and-storage/dms.png"></img></p>
-<h2 id="2-Processes-Heterogeneous-Database"><a href="#2-Processes-Heterogeneous-Database" class="headerlink" title="2 Processes (Heterogeneous Database)"></a>2 Processes (Heterogeneous Database)</h2><p>AWS Schema Conversion Tool to make the schema structures and database code to match the target DB<br><img data-src="/images/posts/cloud/database-and-storage/dms-proc1.png"></img></p>
-<p>AWS DMS to migrate<br><img data-src="/images/posts/cloud/database-and-storage/dms.png"></img></p>
-<h2 id="Use-Cases"><a href="#Use-Cases" class="headerlink" title="Use Cases"></a>Use Cases</h2><ul>
-<li>Development and test database migrations<ul>
-<li>Enabling developers to test applications against production data without affecting production users</li>
-<li><img data-src="/images/posts/cloud/database-and-storage/dms-dev-mig.png"></img></li>
-</ul>
-</li>
-<li>Database consolidation<ul>
-<li>Combining several databases into a single database</li>
-<li><img data-src="/images/posts/cloud/database-and-storage/dms-con.png"></img></li>
-</ul>
-</li>
-<li>Continuous replication<ul>
-<li>Sending ongoing copies of your data to other target sources instead of doing a one-time migration</li>
-<li><img data-src="/images/posts/cloud/database-and-storage/dms-rep.png"></img></li>
-</ul>
-</li>
-</ul>
-<h1 id="Additional-Database-Services"><a href="#Additional-Database-Services" class="headerlink" title="Additional Database Services"></a>Additional Database Services</h1><p>Selecting the appropriate database and storage solutions is crucial for meeting specific business needs without compromising on functionality. AWS offers a range of specialized database services tailored to unique business requirements.</p>
-<h2 id="Specialized-AWS-Database-Services"><a href="#Specialized-AWS-Database-Services" class="headerlink" title="Specialized AWS Database Services"></a>Specialized AWS Database Services</h2><ul>
-<li><p>Amazon DocumentDB<br>Ideal for content-heavy applications such as content management systems, catalogs, and user profiles, Amazon DocumentDB supports complex document storage needs.</p>
-</li>
-<li><p>Amazon Neptune<br>Amazon Neptune is a graph database designed for managing intricate data relationships efficiently, suitable for social networks, recommendation systems, and fraud detection.</p>
-</li>
-<li><p>Amazon Managed Blockchain and Amazon QLDB<br>For applications requiring immutable records, such as in supply chain or financial sectors, Amazon QLDB provides a secure, immutable ledger system, whereas Amazon Managed Blockchain introduces a decentralized blockchain solution.</p>
-</li>
-<li><p>Performance Enhancement Options<br>Amazon ElastiCache<br>Improves database read times significantly, offering caching solutions like Memcached and Redis to enhance performance without maintenance overhead.</p>
-</li>
-<li><p>DAX (DynamoDB Accelerator)<br>A native caching layer for DynamoDB, DAX boosts read performance dramatically, making it ideal for applications requiring speedy data retrieval.</p>
-</li>
-</ul>
-<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><ul>
-<li>Elastic Block Store (EBS): Provides persistent block storage volumes for EC2 instances, ensuring local storage that is not ephemeral.</li>
-<li>Amazon S3: A robust object storage service that allows users to store and retrieve vast amounts of data easily via a user interface or API.</li>
-<li>Database Options: Explored relational databases available on AWS for structured data management and DynamoDB for key-value pair, non-relational workloads.</li>
-<li>Elastic File System (EFS): Offers a simple, scalable file storage solution for use with AWS Cloud services and on-premises resources.</li>
-<li>Amazon Redshift: Serves as a fully managed data warehouse that provides powerful and fast data analysis across your datasets.</li>
-<li>Database Migration Service (DMS): Facilitates the migration of your databases to AWS, ensuring seamless data transfer with minimal downtime.</li>
-<li>Specialized Storage Services: Briefly covered less commonly known services like Amazon DocumentDB, Neptune, QLDB, and Amazon Managed Blockchain for specific use cases.</li>
-<li>Caching Solutions: Discussed the use of Amazon ElastiCache and DynamoDB Accelerator to improve the performance of database reads.</li>
-</ul>
-<h1 id="Quiz"><a href="#Quiz" class="headerlink" title="Quiz"></a>Quiz</h1><ul>
-<li><img data-src="/images/posts/cloud/database-and-storage/q1.png"></img></li>
-<li><img data-src="/images/posts/cloud/database-and-storage/q2.png"></img></li>
-<li><img data-src="/images/posts/cloud/database-and-storage/q3.png"></img></li>
-<li><img data-src="/images/posts/cloud/database-and-storage/q4.png"></img></li>
-<li><img data-src="/images/posts/cloud/database-and-storage/q5.png"></img></li>
-</ul>
-<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference:"></a>Reference:</h1><ul>
-<li>AWS SkillBuilder CPE Course Module5</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>cloud</tag>
-        <tag>aws</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Understanding AWS Networking: VGW, VPC Endpoints, and Security Groups</title>
-    <url>/posts/3294285798/</url>
-    <content><![CDATA[<h1 id="Understanding-AWS-Networking-VGW-VPC-Endpoints-and-Security-Groups"><a href="#Understanding-AWS-Networking-VGW-VPC-Endpoints-and-Security-Groups" class="headerlink" title="Understanding AWS Networking: VGW, VPC Endpoints, and Security Groups"></a>Understanding AWS Networking: VGW, VPC Endpoints, and Security Groups</h1><p>When working with Amazon Web Services (AWS), understanding the various networking components is crucial for designing secure and efficient architectures. In this article, we will explore three key concepts: Virtual Private Gateway (VGW), VPC Endpoints, and Security Groups.</p>
-<span id="more"></span>
-
-<h2 id="Virtual-Private-Gateway-VGW"><a href="#Virtual-Private-Gateway-VGW" class="headerlink" title="Virtual Private Gateway (VGW)"></a>Virtual Private Gateway (VGW)</h2><h3 id="What-is-VGW"><a href="#What-is-VGW" class="headerlink" title="What is VGW?"></a>What is VGW?</h3><p>A <strong>Virtual Private Gateway (VGW)</strong> is a component that enables communication between your Amazon Virtual Private Cloud (VPC) and on-premises networks or other VPCs. It acts as the VPN concentrator on the AWS side of the VPN connection.</p>
-<h3 id="Key-Aspects-of-VGW"><a href="#Key-Aspects-of-VGW" class="headerlink" title="Key Aspects of VGW"></a>Key Aspects of VGW</h3><ul>
-<li><strong>Functionality</strong>: VGW is used to set up a VPN connection between your VPC and your on-premises data center or another VPC.</li>
-<li><strong>Use Cases</strong>: It is typically used for hybrid cloud setups where resources are spread across on-premises infrastructure and AWS.</li>
-<li><strong>Components</strong>: A VPN connection includes two tunnels between your VGW and the on-premises VPN appliance, providing redundancy.</li>
-</ul>
-<h3 id="Benefits-of-VGW"><a href="#Benefits-of-VGW" class="headerlink" title="Benefits of VGW"></a>Benefits of VGW</h3><ul>
-<li><strong>Secure Connectivity</strong>: Provides secure connections between AWS and on-premises networks.</li>
-<li><strong>Redundancy</strong>: Multiple VPN tunnels ensure high availability.</li>
-<li><strong>Scalability</strong>: Easily scalable to meet growing network demands.</li>
-</ul>
-<h2 id="VPC-Endpoints"><a href="#VPC-Endpoints" class="headerlink" title="VPC Endpoints"></a>VPC Endpoints</h2><h3 id="What-are-VPC-Endpoints"><a href="#What-are-VPC-Endpoints" class="headerlink" title="What are VPC Endpoints?"></a>What are VPC Endpoints?</h3><p><strong>VPC Endpoints</strong> allow you to privately connect your VPC to supported AWS services and VPC endpoint services powered by AWS PrivateLink without requiring an internet gateway, NAT device, VPN connection, or AWS Direct Connect connection.</p>
-<h3 id="Types-of-VPC-Endpoints"><a href="#Types-of-VPC-Endpoints" class="headerlink" title="Types of VPC Endpoints"></a>Types of VPC Endpoints</h3><ul>
-<li><strong>Interface Endpoints</strong>: These use AWS PrivateLink and provide private connectivity to services like Amazon S3, DynamoDB, and others via a network interface in your VPC.</li>
-<li><strong>Gateway Endpoints</strong>: These are used specifically for S3 and DynamoDB and route traffic to these services without traversing the internet.</li>
-</ul>
-<h3 id="Benefits-of-VPC-Endpoints"><a href="#Benefits-of-VPC-Endpoints" class="headerlink" title="Benefits of VPC Endpoints"></a>Benefits of VPC Endpoints</h3><ul>
-<li><strong>Enhanced Security</strong>: Ensures that traffic between your VPC and AWS services does not leave the AWS network.</li>
-<li><strong>Simplified Network Architecture</strong>: Reduces the need for an internet gateway or NAT device.</li>
-<li><strong>Cost-Efficiency</strong>: Can reduce data transfer costs compared to internet-based communication.</li>
-</ul>
-<h2 id="Security-Groups"><a href="#Security-Groups" class="headerlink" title="Security Groups"></a>Security Groups</h2><h3 id="What-are-Security-Groups"><a href="#What-are-Security-Groups" class="headerlink" title="What are Security Groups?"></a>What are Security Groups?</h3><p><strong>Security Groups</strong> are virtual firewalls that control inbound and outbound traffic to AWS resources within a VPC.</p>
-<h3 id="Key-Characteristics-of-Security-Groups"><a href="#Key-Characteristics-of-Security-Groups" class="headerlink" title="Key Characteristics of Security Groups"></a>Key Characteristics of Security Groups</h3><ul>
-<li><strong>Functionality</strong>: Act at the instance level and control traffic based on protocols, ports, and source&#x2F;destination IP addresses.</li>
-<li><strong>Rules</strong>: Define rules to allow or deny traffic. For inbound rules, specify the allowed traffic to the instance. For outbound rules, specify the allowed traffic from the instance.</li>
-<li><strong>Statefulness</strong>: Security groups are stateful, meaning if you allow an inbound request from an IP, the response is automatically allowed regardless of outbound rules.</li>
-</ul>
-<h3 id="Benefits-of-Security-Groups"><a href="#Benefits-of-Security-Groups" class="headerlink" title="Benefits of Security Groups"></a>Benefits of Security Groups</h3><ul>
-<li><strong>Granular Control</strong>: Fine-grained control over inbound and outbound traffic.</li>
-<li><strong>Stateful Rules</strong>: Simplifies rule management by automatically allowing response traffic.</li>
-<li><strong>Enhanced Security</strong>: Helps protect instances from unwanted traffic.</li>
-</ul>
-<h2 id="Quick-Quiz"><a href="#Quick-Quiz" class="headerlink" title="Quick Quiz"></a>Quick Quiz</h2><p>Which techniques should you use to secure an Amazon Relational Database Service (Amazon RDS) database? (Select THREE.)<br> [] AWS Identity and Access Management (IAM) policies to define access at the table, [] row, and column levels<br> [v] Security groups to control network access to individual instances<br> [] An Amazon Virtual Private Cloud (Amazon VPC) gateway endpoint to prevent traffic [] from traversing the internet<br> [] A virtual private gateway (VGW) to filter traffic from restricted networks<br> [v] A virtual private cloud (VPC) to provide instance isolation and firewall protection<br> [v] Encryption to protect sensitive data</p>
-<h3 id="Reason-of-False-Selections"><a href="#Reason-of-False-Selections" class="headerlink" title="Reason of False Selections"></a>Reason of False Selections</h3><ol>
-<li>AWS Identity and Access Management (IAM) policies to define access at the table, row, and column levels<ol>
-<li>Reason: While IAM policies are crucial for managing permissions and access controls, RDS uses database-specific authentication mechanisms for access control at more granular levels such as table, row, and column. IAM is typically used for controlling access to the RDS instance itself rather than the data within it.</li>
-</ol>
-</li>
-<li>An Amazon Virtual Private Cloud (Amazon VPC) gateway endpoint to prevent traffic from traversing the internet<ol>
-<li>Reason: VPC endpoints are useful for connecting to AWS services privately without going through the public internet. However, they are not specifically designed for securing RDS instances. The primary use of VPC endpoints is for connecting to services like S3 or DynamoDB within a VPC, not for instance-level security.</li>
-</ol>
-</li>
-<li>A virtual private gateway (VGW) to filter traffic from restricted networks<ol>
-<li>Reason: A VGW is used to establish VPN connections between your VPC and on-premises networks. While it provides a secure connection for hybrid environments, it is not specifically tailored to securing RDS instances directly. VGWs are more about connecting different network environments rather than providing instance-level security.</li>
-</ol>
-</li>
-</ol>
-<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>Understanding VGW, VPC Endpoints, and Security Groups is essential for designing secure and efficient network architectures in AWS. VGWs provide secure connectivity between VPCs and on-premises networks, VPC Endpoints allow private connections to AWS services, and Security Groups offer granular control over instance traffic. Leveraging these components effectively can significantly enhance the security and performance of your AWS infrastructure.</p>
-<p>By mastering these AWS networking fundamentals, you can ensure that your applications and data remain secure and accessible, while optimizing costs and simplifying network management.</p>
-<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><p><span class="exturl" data-url="aHR0cHM6Ly9nb2RsZW9uLmdpdGh1Yi5pby9ibG9nL0FXUy9BV1MtU09BLVZQQy8=">AWS SOA 學習筆記 - VPC(Virtual Private Cloud)<i class="fa fa-external-link-alt"></i></span></p>
-]]></content>
-      <tags>
-        <tag>cloud computing</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>[AWS-CPE] Monitoring and Analytics</title>
     <url>/posts/2332420025/</url>
     <content><![CDATA[<style>
@@ -2309,6 +2037,224 @@ style="width: 70%; margin: 15px auto;"></p>
       <tags>
         <tag>cloud</tag>
         <tag>aws</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Understanding Cloud Computing - Public, Private, and Hybrid Clouds</title>
+    <url>/posts/3108822142/</url>
+    <content><![CDATA[<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Cloud computing has become a cornerstone for deploying modern IT solutions, offering scalable, efficient, and versatile options for businesses and individuals alike. With the evolution of cloud technology, three primary deployment models have emerged: public, private, and hybrid clouds. Each model offers distinct features, benefits, and considerations, making it crucial to understand their differences to choose the most suitable option for your needs. In this article, we’ll delve into the nuances of public, private, and hybrid clouds, helping you navigate the cloud landscape.</p>
+<span id="more"></span>
+
+<h1 id="Public-Cloud"><a href="#Public-Cloud" class="headerlink" title="Public Cloud"></a>Public Cloud</h1><p>The public cloud is a model where computing services are <strong>offered by third-party providers</strong> over the Internet, making them available to anyone who wants to use or purchase them. This model is characterized by its scalability, reliability, and flexibility, allowing users to access a wide range of resources and services on a pay-as-you-go basis. Public clouds are ideal for businesses that need to <strong>scale their computing resources up or down quickly</strong> or that do not want to invest in heavy upfront costs for infrastructure.</p>
+<p>Below are the features of public cloud:</p>
+<ul>
+<li>Characteristics<ul>
+<li>Multi-tenancy: Shared resources among multiple users.</li>
+<li>Scalability: Easily adjusts to demand.</li>
+<li>Cost-Effectiveness: Pay-as-you-go model reduces upfront investments.</li>
+<li>Maintenance: Handled by the provider, reducing the workload on users.</li>
+</ul>
+</li>
+<li>Benefits<ul>
+<li>Quick, easy setup and scalability.</li>
+<li>Access to a broad range of services and applications.</li>
+<li>No need for physical hardware investments.</li>
+</ul>
+</li>
+<li>Challenges<ul>
+<li>Lesser control over security and privacy.</li>
+<li>Performance may vary due to the shared resource model.</li>
+</ul>
+</li>
+<li>Examples:<ul>
+<li>Amazon Web Services (AWS)</li>
+<li>Microsoft Azure</li>
+<li>Google Cloud Platform (GCP)</li>
+</ul>
+</li>
+</ul>
+<h1 id="Private-Cloud"><a href="#Private-Cloud" class="headerlink" title="Private Cloud"></a>Private Cloud</h1><p>Private cloud refers to cloud computing resources used <strong>exclusively by a single business or organization.</strong> The private cloud can be hosted on the <strong>organization’s own premises or by a third-party service provider but remains within the control of the organization it serves.</strong> This model offers enhanced security and control, making it suitable for businesses with <strong>strict regulatory compliance requirements or those that handle sensitive data.</strong></p>
+<p>Below are the features of private cloud:</p>
+<ul>
+<li>Characteristics<ul>
+<li>Single-tenancy: Dedicated resources for a single organization.</li>
+<li>Customization: Tailorable to specific business needs.</li>
+<li>Control: More direct oversight over security and compliance.</li>
+</ul>
+</li>
+<li>Benefits<ul>
+<li>Enhanced security and privacy.</li>
+<li>Full control over the cloud environment.</li>
+<li>Potentially more cost-effective for steady, predictable workloads.</li>
+</ul>
+</li>
+<li>Challenges<ul>
+<li>Requires more significant initial investment and expertise.</li>
+<li>Maintenance and management can be resource-intensive.</li>
+</ul>
+</li>
+<li>Examples:<ul>
+<li>VMware vSphere</li>
+<li>OpenStack</li>
+<li>Microsoft Azure Stack</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Note: The distinction between private cloud hosted by a third-party provider and public cloud lies in <strong>the architecture, resource allocation, and control</strong> rather than the physical location or ownership of the infrastructure. </p>
+</blockquote>
+<h1 id="Hybrid-Cloud"><a href="#Hybrid-Cloud" class="headerlink" title="Hybrid Cloud"></a>Hybrid Cloud</h1><p>Hybrid cloud combines public and private cloud elements, with technology enabling data and applications to be shared between them. This approach allows businesses to <strong>keep critical applications and sensitive data in a private cloud for security while leveraging the robust scalability and cost-efficiency of the public cloud for less sensitive operations.</strong> Hybrid cloud is ideal for organizations looking for flexibility, more deployment options, and optimization of their workloads across different environments.</p>
+<p>Below are the features of hybrid cloud:</p>
+<ul>
+<li>Characteristics<ul>
+<li>Interoperability: Smooth integration between public and private sectors.</li>
+<li>Flexibility: Workloads are movable based on needs and costs.</li>
+<li>Optimization: Places workloads in the best environment for performance, cost, and compliance.</li>
+</ul>
+</li>
+<li>Benefits<ul>
+<li>Merges the scalability of public clouds with the security of private clouds.</li>
+<li>Supports dynamic or fluctuating workloads effectively.</li>
+<li>Ideal for meeting both operational flexibility and compliance requirements.</li>
+</ul>
+</li>
+<li>Challenges<ul>
+<li>Complexity in setup and ongoing management.</li>
+<li>Necessitates strategic planning for seamless operation across environments.</li>
+</ul>
+</li>
+<li>Examples:<ul>
+<li>IBM Cloud</li>
+<li>Oracle Cloud at Customer</li>
+<li>AWS Outposts</li>
+</ul>
+</li>
+</ul>
+<h1 id="Comparison"><a href="#Comparison" class="headerlink" title="Comparison"></a>Comparison</h1><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Public Cloud</th>
+<th>Private Cloud</th>
+<th>Hybrid Cloud</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Accessibility</strong></td>
+<td>Over the Internet, available to all</td>
+<td>Restricted to a single organization</td>
+<td>Combination, with controlled access</td>
+</tr>
+<tr>
+<td><strong>Cost</strong></td>
+<td>Pay-as-you-go, less upfront cost</td>
+<td>Higher initial cost and maintenance</td>
+<td>Varies, can optimize cost based on usage</td>
+</tr>
+<tr>
+<td><strong>Control</strong></td>
+<td>Limited control over infrastructure</td>
+<td>High control over resources</td>
+<td>Balances control and flexibility</td>
+</tr>
+<tr>
+<td><strong>Security</strong></td>
+<td>Good, but shared with other tenants</td>
+<td>Enhanced, as resources are not shared</td>
+<td>Customizable, can be tailored for each part</td>
+</tr>
+<tr>
+<td><strong>Scalability</strong></td>
+<td>Highly scalable, on-demand resources</td>
+<td>Scalable, but within private resources</td>
+<td>Highly scalable, leverages both models</td>
+</tr>
+<tr>
+<td><strong>Suitability</strong></td>
+<td>Small to large businesses needing scalability</td>
+<td>Businesses with strict data control needs</td>
+<td>Businesses requiring flexibility and control</td>
+</tr>
+<tr>
+<td><strong>Maintenance</strong></td>
+<td>Managed by the provider</td>
+<td>Managed by the organization or provider</td>
+<td>Combination, depending on where hosted</td>
+</tr>
+</tbody></table>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuYnVzaW5lc3N0ZWNod2Vla2x5LmNvbS9vcGVyYXRpb25hbC1lZmZpY2llbmN5L2Nsb3VkLWNvbXB1dGluZy9wcml2YXRlLWNsb3VkLXZzLXB1YmxpYy1jbG91ZC8=">Private Cloud vs Public Cloud: Which Cloud Computing deployment model is best for your business?<i class="fa fa-external-link-alt"></i></span></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>cloud computing</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Understanding AWS Networking: VGW, VPC Endpoints, and Security Groups</title>
+    <url>/posts/3294285798/</url>
+    <content><![CDATA[<h1 id="Understanding-AWS-Networking-VGW-VPC-Endpoints-and-Security-Groups"><a href="#Understanding-AWS-Networking-VGW-VPC-Endpoints-and-Security-Groups" class="headerlink" title="Understanding AWS Networking: VGW, VPC Endpoints, and Security Groups"></a>Understanding AWS Networking: VGW, VPC Endpoints, and Security Groups</h1><p>When working with Amazon Web Services (AWS), understanding the various networking components is crucial for designing secure and efficient architectures. In this article, we will explore three key concepts: Virtual Private Gateway (VGW), VPC Endpoints, and Security Groups.</p>
+<span id="more"></span>
+
+<h2 id="Virtual-Private-Gateway-VGW"><a href="#Virtual-Private-Gateway-VGW" class="headerlink" title="Virtual Private Gateway (VGW)"></a>Virtual Private Gateway (VGW)</h2><h3 id="What-is-VGW"><a href="#What-is-VGW" class="headerlink" title="What is VGW?"></a>What is VGW?</h3><p>A <strong>Virtual Private Gateway (VGW)</strong> is a component that enables communication between your Amazon Virtual Private Cloud (VPC) and on-premises networks or other VPCs. It acts as the VPN concentrator on the AWS side of the VPN connection.</p>
+<h3 id="Key-Aspects-of-VGW"><a href="#Key-Aspects-of-VGW" class="headerlink" title="Key Aspects of VGW"></a>Key Aspects of VGW</h3><ul>
+<li><strong>Functionality</strong>: VGW is used to set up a VPN connection between your VPC and your on-premises data center or another VPC.</li>
+<li><strong>Use Cases</strong>: It is typically used for hybrid cloud setups where resources are spread across on-premises infrastructure and AWS.</li>
+<li><strong>Components</strong>: A VPN connection includes two tunnels between your VGW and the on-premises VPN appliance, providing redundancy.</li>
+</ul>
+<h3 id="Benefits-of-VGW"><a href="#Benefits-of-VGW" class="headerlink" title="Benefits of VGW"></a>Benefits of VGW</h3><ul>
+<li><strong>Secure Connectivity</strong>: Provides secure connections between AWS and on-premises networks.</li>
+<li><strong>Redundancy</strong>: Multiple VPN tunnels ensure high availability.</li>
+<li><strong>Scalability</strong>: Easily scalable to meet growing network demands.</li>
+</ul>
+<h2 id="VPC-Endpoints"><a href="#VPC-Endpoints" class="headerlink" title="VPC Endpoints"></a>VPC Endpoints</h2><h3 id="What-are-VPC-Endpoints"><a href="#What-are-VPC-Endpoints" class="headerlink" title="What are VPC Endpoints?"></a>What are VPC Endpoints?</h3><p><strong>VPC Endpoints</strong> allow you to privately connect your VPC to supported AWS services and VPC endpoint services powered by AWS PrivateLink without requiring an internet gateway, NAT device, VPN connection, or AWS Direct Connect connection.</p>
+<h3 id="Types-of-VPC-Endpoints"><a href="#Types-of-VPC-Endpoints" class="headerlink" title="Types of VPC Endpoints"></a>Types of VPC Endpoints</h3><ul>
+<li><strong>Interface Endpoints</strong>: These use AWS PrivateLink and provide private connectivity to services like Amazon S3, DynamoDB, and others via a network interface in your VPC.</li>
+<li><strong>Gateway Endpoints</strong>: These are used specifically for S3 and DynamoDB and route traffic to these services without traversing the internet.</li>
+</ul>
+<h3 id="Benefits-of-VPC-Endpoints"><a href="#Benefits-of-VPC-Endpoints" class="headerlink" title="Benefits of VPC Endpoints"></a>Benefits of VPC Endpoints</h3><ul>
+<li><strong>Enhanced Security</strong>: Ensures that traffic between your VPC and AWS services does not leave the AWS network.</li>
+<li><strong>Simplified Network Architecture</strong>: Reduces the need for an internet gateway or NAT device.</li>
+<li><strong>Cost-Efficiency</strong>: Can reduce data transfer costs compared to internet-based communication.</li>
+</ul>
+<h2 id="Security-Groups"><a href="#Security-Groups" class="headerlink" title="Security Groups"></a>Security Groups</h2><h3 id="What-are-Security-Groups"><a href="#What-are-Security-Groups" class="headerlink" title="What are Security Groups?"></a>What are Security Groups?</h3><p><strong>Security Groups</strong> are virtual firewalls that control inbound and outbound traffic to AWS resources within a VPC.</p>
+<h3 id="Key-Characteristics-of-Security-Groups"><a href="#Key-Characteristics-of-Security-Groups" class="headerlink" title="Key Characteristics of Security Groups"></a>Key Characteristics of Security Groups</h3><ul>
+<li><strong>Functionality</strong>: Act at the instance level and control traffic based on protocols, ports, and source&#x2F;destination IP addresses.</li>
+<li><strong>Rules</strong>: Define rules to allow or deny traffic. For inbound rules, specify the allowed traffic to the instance. For outbound rules, specify the allowed traffic from the instance.</li>
+<li><strong>Statefulness</strong>: Security groups are stateful, meaning if you allow an inbound request from an IP, the response is automatically allowed regardless of outbound rules.</li>
+</ul>
+<h3 id="Benefits-of-Security-Groups"><a href="#Benefits-of-Security-Groups" class="headerlink" title="Benefits of Security Groups"></a>Benefits of Security Groups</h3><ul>
+<li><strong>Granular Control</strong>: Fine-grained control over inbound and outbound traffic.</li>
+<li><strong>Stateful Rules</strong>: Simplifies rule management by automatically allowing response traffic.</li>
+<li><strong>Enhanced Security</strong>: Helps protect instances from unwanted traffic.</li>
+</ul>
+<h2 id="Quick-Quiz"><a href="#Quick-Quiz" class="headerlink" title="Quick Quiz"></a>Quick Quiz</h2><p>Which techniques should you use to secure an Amazon Relational Database Service (Amazon RDS) database? (Select THREE.)<br> [] AWS Identity and Access Management (IAM) policies to define access at the table, [] row, and column levels<br> [v] Security groups to control network access to individual instances<br> [] An Amazon Virtual Private Cloud (Amazon VPC) gateway endpoint to prevent traffic [] from traversing the internet<br> [] A virtual private gateway (VGW) to filter traffic from restricted networks<br> [v] A virtual private cloud (VPC) to provide instance isolation and firewall protection<br> [v] Encryption to protect sensitive data</p>
+<h3 id="Reason-of-False-Selections"><a href="#Reason-of-False-Selections" class="headerlink" title="Reason of False Selections"></a>Reason of False Selections</h3><ol>
+<li>AWS Identity and Access Management (IAM) policies to define access at the table, row, and column levels<ol>
+<li>Reason: While IAM policies are crucial for managing permissions and access controls, RDS uses database-specific authentication mechanisms for access control at more granular levels such as table, row, and column. IAM is typically used for controlling access to the RDS instance itself rather than the data within it.</li>
+</ol>
+</li>
+<li>An Amazon Virtual Private Cloud (Amazon VPC) gateway endpoint to prevent traffic from traversing the internet<ol>
+<li>Reason: VPC endpoints are useful for connecting to AWS services privately without going through the public internet. However, they are not specifically designed for securing RDS instances. The primary use of VPC endpoints is for connecting to services like S3 or DynamoDB within a VPC, not for instance-level security.</li>
+</ol>
+</li>
+<li>A virtual private gateway (VGW) to filter traffic from restricted networks<ol>
+<li>Reason: A VGW is used to establish VPN connections between your VPC and on-premises networks. While it provides a secure connection for hybrid environments, it is not specifically tailored to securing RDS instances directly. VGWs are more about connecting different network environments rather than providing instance-level security.</li>
+</ol>
+</li>
+</ol>
+<h2 id="Extra-VGW-vs-IGW-Internet-Gate-Way"><a href="#Extra-VGW-vs-IGW-Internet-Gate-Way" class="headerlink" title="Extra: VGW vs. IGW(Internet Gate Way)"></a>Extra: VGW vs. IGW(Internet Gate Way)</h2><p>On-Premises Network          Internet<br>       |                       |<br>       |                       |<br>      VPN                      |<br>       |                       |<br>    VGW|                       |IGW<br>      |&#x2F;                      |&#x2F;<br>   +——-+               +——–+<br>   |  VPC  |               |  VPC   |<br>   +——-+               +——–+<br>   |       |               |        |<br> Instances              Instances</p>
+<h2 id="Extra-VGW-vs-IGW-vs-VPC-gateway-endpoint"><a href="#Extra-VGW-vs-IGW-vs-VPC-gateway-endpoint" class="headerlink" title="Extra VGW vs. IGW vs. VPC gateway endpoint"></a>Extra VGW vs. IGW vs. VPC gateway endpoint</h2><ul>
+<li>Internet Gateway (IGW): Provides internet access for VPC instances.</li>
+<li>Virtual Private Gateway (VGW): Facilitates secure connections between VPC and on-premises networks.</li>
+<li>VPC Gateway Endpoint: Allows private access to supported AWS services from within the VPC.</li>
+</ul>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>Understanding VGW, VPC Endpoints, and Security Groups is essential for designing secure and efficient network architectures in AWS. VGWs provide secure connectivity between VPCs and on-premises networks, VPC Endpoints allow private connections to AWS services, and Security Groups offer granular control over instance traffic. Leveraging these components effectively can significantly enhance the security and performance of your AWS infrastructure.</p>
+<p>By mastering these AWS networking fundamentals, you can ensure that your applications and data remain secure and accessible, while optimizing costs and simplifying network management.</p>
+<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><p><span class="exturl" data-url="aHR0cHM6Ly9nb2RsZW9uLmdpdGh1Yi5pby9ibG9nL0FXUy9BV1MtU09BLVZQQy8=">AWS SOA 學習筆記 - VPC(Virtual Private Cloud)<i class="fa fa-external-link-alt"></i></span></p>
+]]></content>
+      <tags>
+        <tag>cloud computing</tag>
       </tags>
   </entry>
   <entry>
@@ -2494,154 +2440,214 @@ style="width: 70%; margin: 15px auto;"></p>
       </tags>
   </entry>
   <entry>
-    <title>Understanding Cloud Computing - Public, Private, and Hybrid Clouds</title>
-    <url>/posts/3108822142/</url>
-    <content><![CDATA[<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Cloud computing has become a cornerstone for deploying modern IT solutions, offering scalable, efficient, and versatile options for businesses and individuals alike. With the evolution of cloud technology, three primary deployment models have emerged: public, private, and hybrid clouds. Each model offers distinct features, benefits, and considerations, making it crucial to understand their differences to choose the most suitable option for your needs. In this article, we’ll delve into the nuances of public, private, and hybrid clouds, helping you navigate the cloud landscape.</p>
+    <title>[NLP] MLLM(多模態LLM) 論文簡要欣賞</title>
+    <url>/posts/2312529159/</url>
+    <content><![CDATA[<h1 id="Abstract-Overview"><a href="#Abstract-Overview" class="headerlink" title="Abstract &amp; Overview"></a>Abstract &amp; Overview</h1><p>這篇文章我們來欣賞一下在arXiv上的一篇論文：<br><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzIzMDYuMTM1NDk=">A Servey on Multimodal Large Language Models<i class="fa fa-external-link-alt"></i></span><br>這篇論文主要在介紹與整理現行代表性的MLLM(Multimodal LLM)，並將其分類為4大體裁：<br>Multimodal Instruction Tuning(M-IT), Multimodal In-Context Learning(M-ICL), Multimodal Chain-of_Thought(M-CoT)以及LLM-Aided Visual Reasoning(LAVR)。<br>其中，前三者為MLLM的基礎，而最後一個則是以LLM為核心的multimodal system，類似於一個系統框架。</p>
+<p>MLLM指的是在LLM的基礎上，從單模態走向多模態，從人工智慧的角度來看，MLLM比LLM向前又跨出了一步，原因如下：</p>
+<ol>
+<li>MLLM更符合人的感官世界，自然地接受多感官輸入</li>
+<li>MLLM提供一個友好的介面，支持多模態輸入，使其易於與使用者交流</li>
+<li>MLLM是一個更全面的問題解決者，雖然LLM可以解決NLP的問題，但MLLM通常可以支持更大範圍的任務</li>
+</ol>
+<p>下面我將針對這篇論文中較為<strong>重要的部分做簡要的欣賞與分析</strong> ，其他細節部分可以自行閱讀這篇精彩的論文！</p>
 <span id="more"></span>
-
-<h1 id="Public-Cloud"><a href="#Public-Cloud" class="headerlink" title="Public Cloud"></a>Public Cloud</h1><p>The public cloud is a model where computing services are <strong>offered by third-party providers</strong> over the Internet, making them available to anyone who wants to use or purchase them. This model is characterized by its scalability, reliability, and flexibility, allowing users to access a wide range of resources and services on a pay-as-you-go basis. Public clouds are ideal for businesses that need to <strong>scale their computing resources up or down quickly</strong> or that do not want to invest in heavy upfront costs for infrastructure.</p>
-<p>Below are the features of public cloud:</p>
-<ul>
-<li>Characteristics<ul>
-<li>Multi-tenancy: Shared resources among multiple users.</li>
-<li>Scalability: Easily adjusts to demand.</li>
-<li>Cost-Effectiveness: Pay-as-you-go model reduces upfront investments.</li>
-<li>Maintenance: Handled by the provider, reducing the workload on users.</li>
+<h1 id="Prerequest-Note"><a href="#Prerequest-Note" class="headerlink" title="Prerequest &amp; Note"></a>Prerequest &amp; Note</h1><p>在開始之前，先介紹在論文中常出現的一些基本名詞</p>
+<h2 id="IT-ICL-CoT"><a href="#IT-ICL-CoT" class="headerlink" title="IT, ICL, CoT"></a>IT, ICL, CoT</h2><p>讓我們先看一下這三者的定義：</p>
+<ol>
+<li><strong>Instruction Tuning:</strong><ul>
+<li>Instruction tuning involves fine-tuning a pre-trained language model by providing <strong>specific instructions during the training process.</strong></li>
+<li>These instructions can be in the form of <strong>prompts or demonstrations</strong>, guiding the model to generate responses in a desired manner.</li>
+<li>It allows for controlled language generation and can be useful for generating responses tailored to specific tasks or contexts.</li>
 </ul>
 </li>
-<li>Benefits<ul>
-<li>Quick, easy setup and scalability.</li>
-<li>Access to a broad range of services and applications.</li>
-<li>No need for physical hardware investments.</li>
+<li><strong>In Context Learning:</strong><ul>
+<li>In context learning refers to training a language model on a <strong>large dataset with diverse contexts and topics.</strong></li>
+<li>The model learns to <strong>understand</strong> and generate responses based on the context it is given, which allows for more <strong>contextually relevant and coherent responses.</strong></li>
+<li>This approach is suitable for applications where the model needs to <strong>understand and adapt to various contexts</strong> during language generation.</li>
 </ul>
 </li>
-<li>Challenges<ul>
-<li>Lesser control over security and privacy.</li>
-<li>Performance may vary due to the shared resource model.</li>
+<li><strong>Chain of Thought:</strong><ul>
+<li>Chain of thought is a concept in natural language generation where the model maintains <strong>coherence throughout a conversation by remembering past interactions.</strong></li>
+<li>The model keeps track of the conversation history, ensuring <strong>consistent</strong> responses and avoiding contradictions.</li>
+<li>This is especially valuable in chatbot applications to provide more human-like and coherent conversations.</li>
 </ul>
 </li>
-<li>Examples:<ul>
-<li>Amazon Web Services (AWS)</li>
-<li>Microsoft Azure</li>
-<li>Google Cloud Platform (GCP)</li>
-</ul>
-</li>
-</ul>
-<h1 id="Private-Cloud"><a href="#Private-Cloud" class="headerlink" title="Private Cloud"></a>Private Cloud</h1><p>Private cloud refers to cloud computing resources used <strong>exclusively by a single business or organization.</strong> The private cloud can be hosted on the <strong>organization’s own premises or by a third-party service provider but remains within the control of the organization it serves.</strong> This model offers enhanced security and control, making it suitable for businesses with <strong>strict regulatory compliance requirements or those that handle sensitive data.</strong></p>
-<p>Below are the features of private cloud:</p>
-<ul>
-<li>Characteristics<ul>
-<li>Single-tenancy: Dedicated resources for a single organization.</li>
-<li>Customization: Tailorable to specific business needs.</li>
-<li>Control: More direct oversight over security and compliance.</li>
-</ul>
-</li>
-<li>Benefits<ul>
-<li>Enhanced security and privacy.</li>
-<li>Full control over the cloud environment.</li>
-<li>Potentially more cost-effective for steady, predictable workloads.</li>
-</ul>
-</li>
-<li>Challenges<ul>
-<li>Requires more significant initial investment and expertise.</li>
-<li>Maintenance and management can be resource-intensive.</li>
-</ul>
-</li>
-<li>Examples:<ul>
-<li>VMware vSphere</li>
-<li>OpenStack</li>
-<li>Microsoft Azure Stack</li>
-</ul>
-</li>
-</ul>
+</ol>
+<p>簡單整理一下三者的差異：</p>
 <blockquote>
-<p>Note: The distinction between private cloud hosted by a third-party provider and public cloud lies in <strong>the architecture, resource allocation, and control</strong> rather than the physical location or ownership of the infrastructure. </p>
-</blockquote>
-<h1 id="Hybrid-Cloud"><a href="#Hybrid-Cloud" class="headerlink" title="Hybrid Cloud"></a>Hybrid Cloud</h1><p>Hybrid cloud combines public and private cloud elements, with technology enabling data and applications to be shared between them. This approach allows businesses to <strong>keep critical applications and sensitive data in a private cloud for security while leveraging the robust scalability and cost-efficiency of the public cloud for less sensitive operations.</strong> Hybrid cloud is ideal for organizations looking for flexibility, more deployment options, and optimization of their workloads across different environments.</p>
-<p>Below are the features of hybrid cloud:</p>
 <ul>
-<li>Characteristics<ul>
-<li>Interoperability: Smooth integration between public and private sectors.</li>
-<li>Flexibility: Workloads are movable based on needs and costs.</li>
-<li>Optimization: Places workloads in the best environment for performance, cost, and compliance.</li>
+<li>Instruction Tuning 著重於微調模型以遵循特定的指令或指導，使其更好地符合特定任務或需求的生成。</li>
+<li>In-Context Learning 強調理解上下文，確保生成的結果與上下文相關且連貫。</li>
+<li>Chain-of-Thought 強調模型生成文本時的連貫性，能夠記住過去的互動，使生成的文本像人類思維的連貫性一樣。<br>這三個方法或概念是獨立的，但可以搭配使用，創造更好的效果。</li>
+</ul>
+</blockquote>
+<h2 id="Zero-Shot-Few-Shot-Learning"><a href="#Zero-Shot-Few-Shot-Learning" class="headerlink" title="Zero-Shot, Few-Shot Learning"></a>Zero-Shot, Few-Shot Learning</h2><p>先看一下兩者的定義：</p>
+<ul>
+<li><p><strong>Zero-Shot Learning:</strong></p>
+<ul>
+<li>Zero-shot learning is a learning paradigm where a model is trained to perform a task for which <strong>it has never seen any examples during training.</strong> </li>
+<li>In other words, the model is expected to <strong>generalize its knowledge</strong> from the training data to <strong>new, unseen categories or tasks.</strong></li>
 </ul>
 </li>
-<li>Benefits<ul>
-<li>Merges the scalability of public clouds with the security of private clouds.</li>
-<li>Supports dynamic or fluctuating workloads effectively.</li>
-<li>Ideal for meeting both operational flexibility and compliance requirements.</li>
-</ul>
-</li>
-<li>Challenges<ul>
-<li>Complexity in setup and ongoing management.</li>
-<li>Necessitates strategic planning for seamless operation across environments.</li>
-</ul>
-</li>
-<li>Examples:<ul>
-<li>IBM Cloud</li>
-<li>Oracle Cloud at Customer</li>
-<li>AWS Outposts</li>
+<li><p><strong>Few-Shot Learning:</strong></p>
+<ul>
+<li>Few-shot learning is a similar concept, but it allows a model to be trained on a very small number of examples for each new category or task it encounters. * </li>
+<li>Instead of needing a large amount of data per class, few-shot learning aims to generalize from a few examples. </li>
+<li>It’s like teaching a model to learn from just a handful of samples. This is particularly useful in scenarios where collecting a substantial amount of data for each new class is impractical.</li>
 </ul>
 </li>
 </ul>
-<h1 id="Comparison"><a href="#Comparison" class="headerlink" title="Comparison"></a>Comparison</h1><table>
-<thead>
-<tr>
-<th>Feature</th>
-<th>Public Cloud</th>
-<th>Private Cloud</th>
-<th>Hybrid Cloud</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>Accessibility</strong></td>
-<td>Over the Internet, available to all</td>
-<td>Restricted to a single organization</td>
-<td>Combination, with controlled access</td>
-</tr>
-<tr>
-<td><strong>Cost</strong></td>
-<td>Pay-as-you-go, less upfront cost</td>
-<td>Higher initial cost and maintenance</td>
-<td>Varies, can optimize cost based on usage</td>
-</tr>
-<tr>
-<td><strong>Control</strong></td>
-<td>Limited control over infrastructure</td>
-<td>High control over resources</td>
-<td>Balances control and flexibility</td>
-</tr>
-<tr>
-<td><strong>Security</strong></td>
-<td>Good, but shared with other tenants</td>
-<td>Enhanced, as resources are not shared</td>
-<td>Customizable, can be tailored for each part</td>
-</tr>
-<tr>
-<td><strong>Scalability</strong></td>
-<td>Highly scalable, on-demand resources</td>
-<td>Scalable, but within private resources</td>
-<td>Highly scalable, leverages both models</td>
-</tr>
-<tr>
-<td><strong>Suitability</strong></td>
-<td>Small to large businesses needing scalability</td>
-<td>Businesses with strict data control needs</td>
-<td>Businesses requiring flexibility and control</td>
-</tr>
-<tr>
-<td><strong>Maintenance</strong></td>
-<td>Managed by the provider</td>
-<td>Managed by the organization or provider</td>
-<td>Combination, depending on where hosted</td>
-</tr>
-</tbody></table>
-<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuYnVzaW5lc3N0ZWNod2Vla2x5LmNvbS9vcGVyYXRpb25hbC1lZmZpY2llbmN5L2Nsb3VkLWNvbXB1dGluZy9wcml2YXRlLWNsb3VkLXZzLXB1YmxpYy1jbG91ZC8=">Private Cloud vs Public Cloud: Which Cloud Computing deployment model is best for your business?<i class="fa fa-external-link-alt"></i></span></li>
+<h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><p>這邊整理了一些重要的專有名詞</p>
+<ul>
+<li>Learning Paradigm<ul>
+<li>A learning paradigm refers to a <strong>specific approach or framework used to train machine learning models.</strong> </li>
+<li>It encompasses the fundamental principles, methods, and strategies that guide how models are constructed, trained, and evaluated. </li>
+<li>Different learning paradigms offer distinct ways of addressing various types of problems and data.</li>
+<li>E.g. Supervised Learning, Semi-Supervised Learning, Reinforcement Learning, Transfer Learning, etc.</li>
+</ul>
+</li>
+</ul>
+<p>簡單整理一下兩者的差異：</p>
+<blockquote>
+<ul>
+<li>Zero-Shot Learning 利用先前學習的知識，執行全新、未看過的任務類別。</li>
+<li>Few-Shot Learning 利用少量的範例(有答案)，去適應新的任務類別。</li>
+</ul>
+</blockquote>
+<h1 id="M-IT"><a href="#M-IT" class="headerlink" title="M-IT"></a>M-IT</h1><p>Instruction指的是對於任務的描述，IT是一種利用instruction-formatted datasets來訓練LLM的技巧。利用這個技巧，LLM可以透過跟隨新的instruction來泛化未曾看過的新任務，進而實現zero-shot learning的成效。<br>下面是論文中引用來描繪instruction tuning與其他learning paradigms的圖示</p>
+<p><img data-src="/images/posts/paper-study/MLLM-1.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<hr>
+<p>為了要從unimodality到mutimodality，需要調整的部分主要 <strong>分為兩個：”Data” 和 “Model”。</strong></p>
+<ol>
+<li><p>在Data方面，我們常 <strong>調整現存的benchmark datasets來取得M-IT datasets，或是使用self-instruction。</strong><br>下面的圖簡單呈現了M-IT data的模板<br><img data-src="/images/posts/paper-study/MLLM-2.png" 
+style="width: 70%; margin: 15px auto;"></p>
+</li>
+<li><p>在Model方面，一個常見的做法是將 <strong>其他modalities的資訊注入進LLM，並把LLM當成是一個強大的推理者。</strong> 其他相關的著作常會直接將理解外來modality的能力嵌入進LLM；或是使用expert model把外來的modality轉換成LLM可以理解的natural language。</p>
+</li>
+</ol>
+<hr>
+<h2 id="Formulation-M-IT-M-IT-sample"><a href="#Formulation-M-IT-M-IT-sample" class="headerlink" title="Formulation M-IT &amp; M-IT sample"></a>Formulation M-IT &amp; M-IT sample</h2><p>這邊我簡單把論文中提到有關M-IT以及其目標函數的內容拉出來<br>M-IT sample其實可以被標示為三元素的數組：<br>$$(I, M, R)$$<br>分別代表instruction, multimodal input以及ground-truth response</p>
+<p>MLLM利用給予的instruction和multimodal input預測answer<br>$$ A &#x3D; f(I, M; \theta)$$<br>其中，A代表預測的答案(answer)，$\theta$ 則代表模型中的parameters</p>
+<p>而訓練的目標是要最小化loss function，而MLLM的目標是要預測下一個response的token，基於這點，loss function可以這麼表示：<br>$$\begin{equation}<br>    L(\theta) &#x3D; -\sum_{i&#x3D;1}^N\log{}p(R_i|I,R_{&lt;i};\theta)<br>\end{equation}$$<br>其中，</p>
+<ul>
+<li>N為ground-truth response的長度</li>
+<li>使用log是因為將機率連乘轉為連加，以避免underflow</li>
+<li>因為是loss function，所以加個負號，最小化loss function同時最大化預測下個token的機率</li>
+<li>利用instruction與前i-1個ground truth response token預測第i個token</li>
+</ul>
+<hr>
+<h2 id="Bridgin-the-gap-between-different-modalities"><a href="#Bridgin-the-gap-between-different-modalities" class="headerlink" title="Bridgin the gap between different modalities"></a>Bridgin the gap between different modalities</h2><p>在這篇論文中提到一個非常重要的問題：該怎麼連結不同的modalities？<br>主要有兩種方法：</p>
+<ol>
+<li>Learnable Interface: <ul>
+<li>在LLM的其中一個模組或權重下去做調整，並插入在pre-trained visual encoder與LLM之間，作為一個可以用來訓練模態轉換的model。</li>
+<li>連結不同的modalities的同時，凍結pre-trained model的parameters。</li>
+<li>如何將視覺內容轉為LLM可以理解得文字格式</li>
+</ul>
+</li>
+<li>Expert model: <ul>
+<li>利用其他模型，轉換外來的modality成不需要訓練訓練的語言，例如image captioning model(不用訓練)。</li>
+<li>可能不像learnable interface那樣彈性，且有information loss的風險</li>
+</ul>
+</li>
+</ol>
+<h1 id="M-ICL"><a href="#M-ICL" class="headerlink" title="M-ICL"></a>M-ICL</h1><p>先介紹兩個ICL的特點：</p>
+<ol>
+<li>supervised learning是從大量的資料中學習資料背後的模式，與傳統supervised learning不同的是，ICL的關鍵是”類推”，從少量的資料搭配一些選填的instruction，去外推新的問題與任務，因此使用few-shot learning的方式解決全新的問題。</li>
+<li>ICL常常使用training-free的方式實作，因此可以在inference stage，很容易地整合進不同的框架。</li>
+<li>IT與ICL十分相關，IT常常被拿來加強模型的ICL能力。</li>
+</ol>
+<hr>
+<p>下面的圖示描繪了簡化過後的M-ICL query模板，其中，使用了兩個in-context範例和一個query，兩者用虛線隔開，模型的目的是要完成這個request。<br><img data-src="/images/posts/paper-study/MLLM-3.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<h1 id="M-CoT"><a href="#M-CoT" class="headerlink" title="M-CoT"></a>M-CoT</h1><blockquote>
+<p>CoT is “a series of intermediate reasoning steps”, which has been proven to be effective in complex reasoning tasks.</p>
+</blockquote>
+<ul>
+<li>CoT主要是想讓我們在prompt LLMs時，讓他生成不只是最後的答案，而是要有推理的過程而引導到最終解答。</li>
+<li>在M-CoT中有幾個重要的概念：modality bridging(解決modality gap), learning paradigms, chain configuration以及generation patterns。</li>
+</ul>
+<hr>
+<h2 id="Modality-Bridging"><a href="#Modality-Bridging" class="headerlink" title="Modality Bridging"></a>Modality Bridging</h2><ol>
+<li>使用Learnable Interface：<ul>
+<li>這個方法使用一個learnable interface把visual embedding mapping到word embedding空間。</li>
+<li>這個mapped embedding可以被視為是一個prompt，進而傳遞給LLMs，引出其M-CoT的能力</li>
+<li>舉例來說，CoT-PT使用多個Meta-Net來作prompt tuning，Meta-Net將visual features轉換成階段性的prompt，其中，可以把Meta-Net想像為CoT-PT的其中一個模組。</li>
+<li>Multimodal-CoT使用shared Transformer-based 架構，visual與textual特徵通過cross-attention進行交互。</li>
+</ul>
+</li>
+<li>使用Expert Model：<ul>
+<li>引用expert models來將visual input翻譯為texual description</li>
+<li>儘管其非常直接且簡單，但在轉換的過程中可能會遇到information loss的問題</li>
+</ul>
+</li>
+</ol>
+<h2 id="Learning-Paradigms"><a href="#Learning-Paradigms" class="headerlink" title="Learning Paradigms"></a>Learning Paradigms</h2><p>learning paradigms也可以解釋為模型如何從資訊中獲取知識。大致可以分為 <strong>三種方式來習得M-CoT的能力</strong></p>
+<ol>
+<li>fintuning：<br>通常需要針對M-CoT的datasets</li>
+<li>training-free few-shot learning：<br>同常需要手作一些in-context的範例讓模型去學如何推理</li>
+<li>training-free zero-shot learning：<br>直接prompt就可以，不需要其他明顯的指引，舉例來說”Let’s think frame by frame”</li>
+</ol>
+<p>其中對於sample size的要求由上而下遞減</p>
+<h2 id="Chain-Configuration"><a href="#Chain-Configuration" class="headerlink" title="Chain Configuration"></a>Chain Configuration</h2><p>簡單來說就是要什麼時後該停止推裡，主要有adaptive和pre-defined formation兩種方法。</p>
+<ul>
+<li>Adaptive:<br>要求LLMs自己決定何時該停止reasoing chains</li>
+<li>Pre-defined formation<br>使用者事先設定好reasoning chains的長度</li>
+</ul>
+<h2 id="Generation-Pattern"><a href="#Generation-Pattern" class="headerlink" title="Generation Pattern"></a>Generation Pattern</h2><p>Reasoning chain是如何建構的？<br>主要有兩種可能</p>
+<ol>
+<li>Infilling-based pattern：<br>需要在上下文中去做演繹(前幾步與後幾步)，去填補邏輯漏洞</li>
+<li>predicting-based pattern：<br>利用已知的條件、instruction以及過去推理的資訊去擴充reasoning chain<br>不管是哪種模式，都必須要求生成的文本必須是連續且正確的</li>
+</ol>
+<h1 id="LAVR"><a href="#LAVR" class="headerlink" title="LAVR"></a>LAVR</h1><p>將LLMs作為helpers，以及其他不同的角色，建構出一個支持特定任務或genral-purpose的visual reasoning system<br>跟傳統的visual reasoning system相比，LAVR有一些更好的特點：</p>
+<ol>
+<li>Strong generalization ability：<br>擁有眾多知識並以大量資料及訓練的模型，可以容易地泛化未看過的任務，並在zero-shot&#x2F;few-shot擁有不錯的性能。</li>
+<li>Emergent abilities：<br>其定義為，在小的模型不會出現，而在大模型會出現的能力，當模型到一定的scale會湧現的能力，例如能夠看到圖片表面下的意義，像是能夠理解會和一個迷因是好笑的。</li>
+<li>Better interactvity and control：<br>LLM-based system提供一個更好使用與控制的使用者介面，例如使用自然語言的query進行互動。<br>下面我將介紹論文中提到的，LAVR不同的training paradigm以及LLM在這個系統中扮演的角色</li>
+</ol>
+<h2 id="Training-Paradigms"><a href="#Training-Paradigms" class="headerlink" title="Training Paradigms"></a>Training Paradigms</h2><p>主要有兩種：</p>
+<ol>
+<li>training-free：<ul>
+<li>few-shot models：<br>   需要少量的hand-crafted in-context sample，去指引LLMs產生程式或一連串的執行步驟， <strong>這些程式或執行步驟是作為其他對應模型或外部工具與模組的instructions</strong></li>
+<li>zero-shot models：<br>   依賴LLMs的語言相關知識與推理能力，例如CAT使用LLMs去refine影像的caption，使其更符合使用者的需求</li>
+</ul>
+</li>
+<li>finetuning：<br>主要是想要激活LLMs在LAVR中的planning abilities(對應到工具的使用)，以及instruction-following abilities。</li>
+</ol>
+<h2 id="Functions"><a href="#Functions" class="headerlink" title="Functions"></a>Functions</h2><p>LLMs在LAVR system中扮演的主要角色，主要有三種</p>
+<blockquote>
+<ol>
+<li>LLM as a Controller</li>
+<li>LLM as a Decision Maker</li>
+<li>LLM as a Semantics Refiner</li>
+</ol>
+</blockquote>
+<p>前兩者(controller &amp; decision maker)與CoT相關，因為複雜的任務需要被拆解為intermediate simpler tasks。</p>
+<p>當LLMs作為controller時，任務常常是在single round完成的，而multi-round更常見於decision maker</p>
+<h3 id="LLM-as-a-Controller"><a href="#LLM-as-a-Controller" class="headerlink" title="LLM as a Controller"></a>LLM as a Controller</h3><ol>
+<li>Break down a complex task into simpler sub-tasks<br>常運用LLMs的CoT能力</li>
+<li>Assigns these tasks to appropriate tools&#x2F;modules</li>
+</ol>
+<h3 id="LLM-as-a-Decision-Maker"><a href="#LLM-as-a-Decision-Maker" class="headerlink" title="LLM as a Decision Maker"></a>LLM as a Decision Maker</h3><p>在這個case中，複雜的任務會以multi-round的方式被解決，decision maker通常要滿足以下能力</p>
+<ol>
+<li>總結目前的上下文以及歷史資訊，並判斷目前的資訊是否足夠推導出最終解答</li>
+<li>整理並總結答案，並且用user-friendly的方式呈現給使用者</li>
+</ol>
+<h3 id="LLM-as-a-Semantics-Refiner"><a href="#LLM-as-a-Semantics-Refiner" class="headerlink" title="LLM as a Semantics Refiner"></a>LLM as a Semantics Refiner</h3><p>使用LLMs豐富的語言與語義知識，去對最終解答做加強</p>
+<h1 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h1><p>這篇論文整理的現行MLLM的資訊，並給出了主要的幾個方向，包括包括3個常見的技巧(M-IT, M-ICL, M-CoT)，和一個task-solving systems的廣泛框架(LAVR)。<br>論文中還有許多evaluation的方式，以及現在研究需要被填充的gap，其他更詳細的內容還有待讀者親自去欣賞這篇論文！</p>
+<h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzIzMDYuMTM1NDk=">https://arxiv.org/abs/2306.13549<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC82Mzk2NjQ2MTU=">https://zhuanlan.zhihu.com/p/639664615<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
 ]]></content>
+      <categories>
+        <category>MLLM論文</category>
+      </categories>
       <tags>
-        <tag>cloud computing</tag>
+        <tag>ML</tag>
+        <tag>AI</tag>
+        <tag>NLP</tag>
+        <tag>paper-study</tag>
       </tags>
   </entry>
   <entry>
@@ -2717,6 +2723,88 @@ style="width: 70%; margin: 15px auto;"><br>這裡主要是以書本和作者為�
         <tag>OOP</tag>
         <tag>.NET C#</tag>
         <tag>design-pattern</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[SD][ML] ControlNet in StableDiffusion: A Comprehensive Guide</title>
+    <url>/posts/2736514643/</url>
+    <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>ControlNet is an innovative addition to the StableDiffusion model that enhances the model’s ability to generate high-quality images with <strong>specific control over the content and structure</strong>. This guide delves into the fundamentals of ControlNet, how it works, implementation details, and training your own ControlNet. The following sections provide an in-depth look at each aspect of this powerful tool.</p>
+<img data-src="/images/posts/SD-series/controlnet/1.0.png"> 
+source: https://arxiv.org/abs/2302.05543
+
+<span id="more"></span>
+
+<h1 id="What-is-ControlNet"><a href="#What-is-ControlNet" class="headerlink" title="What is ControlNet?"></a>What is ControlNet?</h1><blockquote>
+<p>ControlNet is a neural network structure that adds conditional control to StableDiffusion models.</p>
+</blockquote>
+<p>It allows users to influence the generation process of the diffusion model by <strong>injecting additional information</strong>, such as <strong>edge maps, poses, or depth maps</strong>, into the model. This ensures that the generated images adhere more closely to the desired specifications, leading to more accurate and contextually relevant outputs.</p>
+<p>Use OpenCV to capture the cany edge from an image:<br><img data-src="/images/posts/SD-series/controlnet/cany.png"><br>source: <span class="exturl" data-url="aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9kb2NzL2RpZmZ1c2Vycy91c2luZy1kaWZmdXNlcnMvY29udHJvbG5ldA==">https://huggingface.co/docs/diffusers/using-diffusers/controlnet<i class="fa fa-external-link-alt"></i></span></p>
+<p>Use cany edge as a condition input and use ControlNet to generate a new image:<br><img data-src="/images/posts/SD-series/controlnet/cany_result.png"><br>source: <span class="exturl" data-url="aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9kb2NzL2RpZmZ1c2Vycy91c2luZy1kaWZmdXNlcnMvY29udHJvbG5ldA==">https://huggingface.co/docs/diffusers/using-diffusers/controlnet<i class="fa fa-external-link-alt"></i></span></p>
+<h1 id="ControlNet-Structure-1-0"><a href="#ControlNet-Structure-1-0" class="headerlink" title="ControlNet Structure (1.0)"></a>ControlNet Structure (1.0)</h1><blockquote>
+<p>ControlNet is a neural network structure to control diffusion models by adding extra conditions.</p>
+</blockquote>
+<img data-src="/images/posts/SD-series/controlnet/1.0.png"> 
+source: https://arxiv.org/abs/2302.05543
+
+<ul>
+<li>It duplicates the weights of neural network blocks into two copies: one “locked” and one “trainable.”</li>
+<li>The “trainable” copy adapts to your specific condition, while the “locked” copy maintains the integrity of your original model.</li>
+<li>This approach ensures that training with a small dataset of image pairs won’t compromise the production-ready diffusion models.</li>
+<li>The “zero convolution” is a 1×1 convolution with weights and biases initialized to zero.</li>
+<li>Prior to training, all zero convolutions produce zeros, preventing any initial distortion from ControlNet.</li>
+<li>No layers are trained from scratch; instead, you are fine-tuning, keeping your original model intact.</li>
+<li>This method allows for training on small-scale or even personal devices.</li>
+</ul>
+<hr>
+<p>After initialization, the untrained ControlNet parameters should be as follows:</p>
+<!-- Math equation conflict: https://theme-next.js.org/docs/third-party-services/math-equations -->
+<p>$$<br>\left\{<br>    \begin{array}{l}<br>        \mathcal{Z}\left(\boldsymbol{c} ; \Theta_{\mathrm{z}1}\right) &#x3D; 0 \\<br>        \mathcal{F}\left(x + \mathcal{Z}\left(\boldsymbol{c} ; \Theta_{\mathrm{z}1}\right); \Theta_{\mathrm{c}}\right) &#x3D; \mathcal{F}\left(x ; \Theta_{\mathrm{c}}\right) &#x3D; \mathcal{F}(x ; \Theta) \\<br>        \mathcal{Z}\left(\mathcal{F}\left(x + \mathcal{Z}\left(\boldsymbol{c} ; \Theta_{\mathrm{z}1}\right); \Theta_{\mathrm{c}}\right); \Theta_{\mathrm{z}2}\right) &#x3D; \mathcal{Z}\left(\mathcal{F}\left(x ; \Theta_{\mathrm{c}}\right); \Theta_{\mathrm{z}2}\right) &#x3D; 0<br>    \end{array}<br>\right.<br>$$</p>
+<ul>
+<li>That is to say, when ControlNet is untrained, the output is 0, so the numbers added to the original network are also 0. </li>
+<li>This has no impact on the original network, ensuring that the performance of the original network is fully preserved. </li>
+<li>Subsequent training of ControlNet only optimizes the original network, which can be considered equivalent to fine-tuning the network.</li>
+</ul>
+<h1 id="ControlNet-in-StableDiffusion"><a href="#ControlNet-in-StableDiffusion" class="headerlink" title="ControlNet in StableDiffusion"></a>ControlNet in StableDiffusion</h1><img data-src="/images/posts/SD-series/controlnet/sd_ctn.png"> 
+source: https://arxiv.org/pdf/2302.05543
+
+<p>The previous section described how ControlNet controls individual neural network blocks. In the paper, the authors used Stable Diffusion as an example to explain how ControlNet can control large networks. The following figure shows that the process of controlling Stable Diffusion involves copying and training the encoder while using skip connections in the decoder.</p>
+<p>Before proceeding, it is important to note:<br>Stable Diffusion has a preprocessing step where a 512×512 image is converted to a 64×64 image before training(for computing efficient purpose). To ensure that the control conditions are also mapped to the 64×64 conditional space, a small network $\mathcal{E}$ is added during training to convert the image space conditions to feature map conditions.<br>$$c_f &#x3D; \mathcal{E}(c_i)$$<br>This network $\mathcal{E}$ is a four-layer convolutional neural network with 4×4 kernels, a stride of 2, and channels 16, 32, 64, 128, initialized with Gaussian weights. This network is jointly trained with the entire ControlNet.</p>
+<p>$$<br>\begin{array}{l}<br>c_f &#x3D; \mathcal{E}(c_i)<br>\end{array}<br>$$</p>
+<h1 id="Workflow-Wrapup"><a href="#Workflow-Wrapup" class="headerlink" title="Workflow Wrapup"></a>Workflow Wrapup</h1><ol>
+<li>Input Processing: ControlNet takes an additional input, such as a sketch or a pose, along with the standard textual input.</li>
+<li>Feature Extraction: It extracts features from the control signal using a separate encoder.</li>
+<li>Conditional Guidance: These features are then combined with the features extracted from the text prompt.</li>
+<li>Diffusion Process: The combined features guide the diffusion process, ensuring that the generated image aligns with both the text and the control input.</li>
+<li>This mechanism allows for precise control over the content and structure of the generated images, making ControlNet a powerful tool for various applications, from art creation to realistic image synthesis.</li>
+</ol>
+<h1 id="How-to-implement"><a href="#How-to-implement" class="headerlink" title="How to implement?"></a>How to implement?</h1><ol>
+<li><p>Install the required libraries:</p>
+ <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip install diffusers transformers</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Load the StableDiffusion and ControlNet models:</p>
+ <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> diffusers <span class="keyword">import</span> StableDiffusionPipeline, ControlNetModel</span><br><span class="line"></span><br><span class="line"><span class="comment"># Load the models</span></span><br><span class="line">stable_diffusion_model = StableDiffusionPipeline.from_pretrained(<span class="string">&quot;CompVis/stable-diffusion-v1-4&quot;</span>)</span><br><span class="line">controlnet_model = ControlNetModel.from_pretrained(<span class="string">&quot;lllyasviel/controlnet&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Integrate ControlNet with StableDiffusion</span></span><br><span class="line">stable_diffusion_model.unet.load_additional_model(controlnet_model)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Prepare the inputs</p>
+ <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"></span><br><span class="line"><span class="comment"># Load and preprocess the control image (e.g., an edge map or pose)</span></span><br><span class="line">control_image = Image.<span class="built_in">open</span>(<span class="string">&quot;path_to_control_image.jpg&quot;</span>).convert(<span class="string">&quot;RGB&quot;</span>)</span><br><span class="line">control_tensor = torch.tensor(control_image).unsqueeze(<span class="number">0</span>)  <span class="comment"># Convert to tensor and add batch dimension</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Prepare the text prompt</span></span><br><span class="line">prompt = <span class="string">&quot;A futuristic cityscape with towering skyscrapers&quot;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Generate the image</p>
+ <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Generate the image with ControlNet guidance</span></span><br><span class="line">generated_image = stable_diffusion_model(prompt=prompt, control_image=control_tensor)</span><br><span class="line">generated_image.save(<span class="string">&quot;output_image.jpg&quot;</span>)</span><br><span class="line"><span class="comment"># display(generated_image)</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>This code demonstrates the basic implementation of ControlNet with StableDiffusion, highlighting the simplicity and flexibility of integrating control signals into the image generation process.</p>
+<h1 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h1><p>ControlNet offers a significant advancement in the field of text-to-image generation, providing precise control over the generated content. Its ability to integrate various control signals into the diffusion process makes it an invaluable tool for artists, designers, and researchers. By understanding its working principles, implementing it in your projects, and even training your own ControlNet, you can harness the full potential of this innovative technology to create stunning and accurate visual content.</p>
+<h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzIzMDIuMDU1NDM=">Adding Conditional Control to Text-to-Image Diffusion Models<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2xsbHlhc3ZpZWwvQ29udHJvbE5ldA==">ControlNet GitHub<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9zdGFibGUtZGlmZnVzaW9uLWFydC5jb20vY29udHJvbG5ldC8=">ControlNet: A Complete Guide<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9qdWVqaW4uY24vcG9zdC83MjEwMzY5NjcxNjU2NTA1Mzk5">ControlNet原理解析 | 读论文<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9kb2NzL2RpZmZ1c2Vycy9hcGkvcGlwZWxpbmVzL2NvbnRyb2xuZXQ=">ControlNet HuggingFace<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9ibG9nL3RyYWluLXlvdXItY29udHJvbG5ldA==">Train your ControlNet with diffusers 🧨<i class="fa fa-external-link-alt"></i></span></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>ML</tag>
+        <tag>AI</tag>
+        <tag>StableDiffusion</tag>
       </tags>
   </entry>
 </search>
