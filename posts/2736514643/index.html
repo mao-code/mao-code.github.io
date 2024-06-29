@@ -37,7 +37,7 @@
 <meta property="og:image" content="https://mao-code.github.io/images/posts/SD-series/controlnet/1.0.png">
 <meta property="og:image" content="https://mao-code.github.io/images/posts/SD-series/controlnet/sd_ctn.png">
 <meta property="article:published_time" content="2024-06-26T02:45:47.000Z">
-<meta property="article:modified_time" content="2024-06-29T15:05:14.505Z">
+<meta property="article:modified_time" content="2024-06-29T15:08:11.041Z">
 <meta property="article:author" content="Mao 勛哥">
 <meta property="article:tag" content="ML">
 <meta property="article:tag" content="AI">
@@ -280,7 +280,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新於</span>
-      <time title="修改時間：2024-06-29 23:05:14" itemprop="dateModified" datetime="2024-06-29T23:05:14+08:00">2024-06-29</time>
+      <time title="修改時間：2024-06-29 23:08:11" itemprop="dateModified" datetime="2024-06-29T23:08:11+08:00">2024-06-29</time>
     </span>
 
   
@@ -297,7 +297,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">文章字數：</span>
-      <span>6.2k</span>
+      <span>6.1k</span>
     </span>
     <span class="post-meta-item" title="所需閱讀時間">
       <span class="post-meta-item-icon">
@@ -356,7 +356,6 @@ source: https://arxiv.org/pdf/2302.05543
 
 <p>The previous section described how ControlNet controls individual neural network blocks. In the paper, the authors used Stable Diffusion as an example to explain how ControlNet can control large networks. The following figure shows that the process of controlling Stable Diffusion involves copying and training the encoder while using skip connections in the decoder.</p>
 <p>Before proceeding, it is important to note:<br>Stable Diffusion has a preprocessing step where a 512×512 image is converted to a 64×64 image before training(for computing efficient purpose). To ensure that the control conditions are also mapped to the 64×64 conditional space, a small network $\mathcal{E}$ is added during training to convert the image space conditions to feature map conditions.<br>$$c_f &#x3D; \mathcal{E}(c_i)$$<br>This network $\mathcal{E}$ is a four-layer convolutional neural network with 4×4 kernels, a stride of 2, and channels 16, 32, 64, 128, initialized with Gaussian weights. This network is jointly trained with the entire ControlNet.</p>
-<p>$$<br>\begin{array}{l}<br>c_f &#x3D; \mathcal{E}(c_i)<br>\end{array}<br>$$</p>
 <h1 id="Workflow-Wrapup"><a href="#Workflow-Wrapup" class="headerlink" title="Workflow Wrapup"></a>Workflow Wrapup</h1><ol>
 <li>Input Processing: ControlNet takes an additional input, such as a sketch or a pose, along with the standard textual input.</li>
 <li>Feature Extraction: It extracts features from the control signal using a separate encoder.</li>
@@ -397,13 +396,13 @@ source: https://arxiv.org/pdf/2302.05543
       <div class="popular-posts-title"><a href="/posts/38266156/" rel="bookmark">[NLP][ML] Adapters & LoRA</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/4283617483/" rel="bookmark">[NLP][ML] Transformer (1) - Structure</a></div>
-    </li>
-    <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/posts/2443192075/" rel="bookmark">[NLP][ML] Transformer (2) - Attention & Summary</a></div>
     </li>
     <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/posts/1255359463/" rel="bookmark">[NLP][ML] Transformer (3) - More conputational detail</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/posts/4283617483/" rel="bookmark">[NLP][ML] Transformer (1) - Structure</a></div>
     </li>
     <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/posts/2312529159/" rel="bookmark">[NLP] MLLM(多模態LLM) 論文簡要欣賞</a></div>

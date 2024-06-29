@@ -237,6 +237,71 @@ img{
       </tags>
   </entry>
   <entry>
+    <title>政大Google學生開發者社群-政大通NCCUPass-心得 (第二學期)</title>
+    <url>/posts/3042436019/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>繼上篇<a href="https://mao-code.github.io/posts/277323671/#more">GDSC的心得文</a>，這篇我會介紹我們下學期的開發經歷、得獎、專案簡介以及未來這個專案的走向，屬於一個小小的紀錄心得文！</p>
+<span id="more"></span>
+
+<h1 id="專案"><a href="#專案" class="headerlink" title="專案"></a>專案</h1><h2 id="簡介"><a href="#簡介" class="headerlink" title="簡介"></a>簡介</h2><p>政大通 - NCCUPass 團隊熱切懷抱著重塑校園體驗的夢想，點燃學生的熱情和創造力，以共同打造一個充滿活力、連結力和創新力的校園生活。經由深入校園的人際交流與觀察，我們發現學生面對著種種生活上的不便與困難，然而目前鮮少有專門為學生打造的解決方案。學生間的線下互動與真實聯繫日益減少，導致難以找到同學幫忙或組團合作的機會。此外，午晚餐時的人潮湧入校園周邊餐廳，更帶來了無法即時點餐的困擾。這些現況讓我們看到一個獨特的契機，我們決心以「政大通 - NCCUPass 」 APP 的形式來化解這些困境。</p>
+<p>「政大通 - NCCUPass 」不僅提供政大學生一個集社交、實用和創新於一身的平台，更是一個綜合性的應用程式，旨在加強他們的校園體驗。我們希望這個 APP 能成為解決校園生活難題的得力幫手！</p>
+<p>在社團「政大 Google 學生開發者社群」的擁護下，我們匯聚各領域的精英，凝聚開放分享的心態，攜手共創這個改變學生生活的嶄新 APP ！政大只是我們的第一塊版圖，我們的未來目標是影響全國的大學生，為他們帶來更加豐富、更加便利的校園體驗！</p>
+<h2 id="目前功能簡介"><a href="#目前功能簡介" class="headerlink" title="目前功能簡介"></a>目前功能簡介</h2><h3 id="學生任務功能-增強校園互動體驗"><a href="#學生任務功能-增強校園互動體驗" class="headerlink" title="學生任務功能 - 增強校園互動體驗"></a>學生任務功能 - 增強校園互動體驗</h3><ul>
+<li>動機發想<ul>
+<li>缺乏線下互動與真實聯繫：<br>我們注意到越來越多的大學生在日常生活中依賴數位平台和社交媒體，而非與人面對面的互動。這種現象在校園中尤為明顯，比起在現實中進行真實的互動，學生更傾向於在虛擬世界中建立社交連結。我們對大學生進行訪談、問卷調查和社交媒體分析，收集了大量的數據和反饋。這些數據揭示了大學生內心深處對面對面互動的渴望，以及更真實的交流，更深刻的情感，卻在線下互動中遇到了種種挑戰與限制。基於這些資訊，我們更加確定缺乏線下互動和真實聯繫的問題造成大學生的困擾，這些數據與心靈共鳴，激發了我們的靈感。我們深信，缺乏線下互動和真實聯繫的問題，不僅是個人的困擾，更是一種社會現象，需要我們攜手改變。於是，我們投入心血，開發了一個獨特的解決方案——一個能在現實世界中促進人與人之間有意義連結的奇妙工具。</li>
+</ul>
+</li>
+<li>功能敘述<ul>
+<li>這個功能旨在促進學生之間的線下互動，並為他們提供一個自由而實用的平台，能以此完成各種有趣的任務。學生們可以發布任務，例如：幫忙帶宵夜、一起揪團出去玩等等。學生可以在我們的 APP 上自由發布任務，並尋找其他學生來接受挑戰，每一次的任務都是獨特的社交機會，讓學生們在校園中建立更多真實的聯繫和友誼。除此之外，這個功能還擁有相當多面的好處。首先，它鼓勵學生積極參與校園生活，擺脫線上世界的束縛。透過與其他學生一起完成任務，他們可以體驗到珍貴的團隊合作和互助精神。此外，如果同學對彼此的服務滿意，可以提供金錢或其他回饋，藉著小小賺外快的機會，也可以累積一定的金錢！相信這個制度能鼓勵學生發揮創意和努力工作，同時也建立相互尊重和價值交換的文化。</li>
+</ul>
+</li>
+</ul>
+<h3 id="預約外帶功能與午餐快選器-－-用餐省時無等待，專屬學生的美食提前預訂"><a href="#預約外帶功能與午餐快選器-－-用餐省時無等待，專屬學生的美食提前預訂" class="headerlink" title="預約外帶功能與午餐快選器 － 用餐省時無等待，專屬學生的美食提前預訂"></a>預約外帶功能與午餐快選器 － 用餐省時無等待，專屬學生的美食提前預訂</h3><ul>
+<li><p>動機發想</p>
+<ul>
+<li><p>餐點供應不足：<br>尤其在午晚餐尖峰時段，餐廳經常供不應求，學生需要花費大量的時間排隊等待。</p>
+</li>
+<li><p>用餐時間緊湊：<br>大學生的生活節奏快，經常要在短時間內完成吃飯等基本活動，而在繁忙的用餐時間內排隊等待餐點往往會浪費寶貴的時間。</p>
+</li>
+<li><p>無法預估用餐需求：<br>在繁忙的用餐時間內，無法預估用餐需求，可能需要長時間等待，或因時間太短而做了不太理想的食物選擇。</p>
+</li>
+</ul>
+</li>
+<li><p>功能敘述</p>
+<ul>
+<li>這個功能將為大學生們帶來極速、便利、無等待的用餐體驗！我們與學校附近的店家攜手合作，確保學生們不必等待太久。現在，同學只需要提前預約外帶，下課後直接前往店家，餐點早已準備好，輕鬆取走即可！不再浪費時間排隊，享受自由自在的用餐時光！這個預約外帶功能不僅是大學生們用餐的時尚選擇，更是忙碌學習生活的得力助手。在繁忙的用餐尖峰時段，可以輕鬆預訂心儀的美食，避免為了取餐而耽誤其他重要事務。</li>
+</ul>
+</li>
+</ul>
+<h2 id="連結"><a href="#連結" class="headerlink" title="連結"></a>連結</h2><ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly9uY2N1cGFzcy5jb20v">官方網站<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9uY2N1cGFzcy8=">IG粉專<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2NvbXBhbnkvbmNjdXBhc3M=">LinkedIn<i class="fa fa-external-link-alt"></i></span></li>
+</ul>
+<h1 id="得獎"><a href="#得獎" class="headerlink" title="得獎"></a>得獎</h1><p>NCCUPass在當天的期末發表會得到最佳人氣專案奬的殊榮！<br><img data-src="/images/posts/2023NCCUPass/GDSC_award.JPG" 
+style="width: 70%; margin: 15px auto;"></p>
+<p><img data-src="/images/posts/2023NCCUPass/GDSC_award_on_stage.JPG" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>當天的期末發表會：<br><img data-src="/images/posts/2023NCCUPass/GDSC_final.JPG" 
+style="width: 70%; margin: 15px auto;"></p>
+<h1 id="技術"><a href="#技術" class="headerlink" title="技術"></a>技術</h1><p>在經過一個學期後，我們也慢慢拓展技術範圍，未來也將因應需求機動地改變<br>在這邊就只放上系統架構圖，不贅述太多技術細節</p>
+<h2 id="系統架構圖"><a href="#系統架構圖" class="headerlink" title="系統架構圖"></a>系統架構圖</h2><p><img data-src="/images/posts/2023NCCUPass/NCCUPass_structure.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<h1 id="未來"><a href="#未來" class="headerlink" title="未來"></a>未來</h1><p>政大是我們的第一塊版圖，我們的目標是全台灣的大學，目前先穩紮穩打在政大站穩腳步，在此期間會積極地與其他組織或社團合作、參與各項競賽以及參加創投機構的活動，我們的理念是讓大學生們彼此間的關係更加密切與真實，使他們的生活更加數位化與便利！</p>
+]]></content>
+      <categories>
+        <category>心得</category>
+        <category>GDSC</category>
+        <category>專案</category>
+        <category>NCCUPass</category>
+        <category>side project</category>
+      </categories>
+      <tags>
+        <tag>GDSC</tag>
+        <tag>NCCUPass</tag>
+        <tag>專案</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>CC-沈浸式線上逛街APP-系統與技術介紹</title>
     <url>/posts/2012237495/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>接續上一篇的文章，這篇文章會著重介紹這個系統<br>以下是我在YouTube上對這個專案的介紹與Demo：</p>
@@ -306,68 +371,97 @@ CC提供商城、買家、直播主追蹤的機制，加上個人化自己的動
       </tags>
   </entry>
   <entry>
-    <title>政大Google學生開發者社群-政大通NCCUPass-心得 (第二學期)</title>
-    <url>/posts/3042436019/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>繼上篇<a href="https://mao-code.github.io/posts/277323671/#more">GDSC的心得文</a>，這篇我會介紹我們下學期的開發經歷、得獎、專案簡介以及未來這個專案的走向，屬於一個小小的紀錄心得文！</p>
+    <title>[Git][Version Control] Git - Introduction</title>
+    <url>/posts/2571684277/</url>
+    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Here is the series of Git full tutorial. I will cover the important and advanced topics that you should know in git. By reading this series, you are able to know the basic(but important) concept of Git and the technique of using git. Hope you can gain a lot ! </p>
 <span id="more"></span>
 
-<h1 id="專案"><a href="#專案" class="headerlink" title="專案"></a>專案</h1><h2 id="簡介"><a href="#簡介" class="headerlink" title="簡介"></a>簡介</h2><p>政大通 - NCCUPass 團隊熱切懷抱著重塑校園體驗的夢想，點燃學生的熱情和創造力，以共同打造一個充滿活力、連結力和創新力的校園生活。經由深入校園的人際交流與觀察，我們發現學生面對著種種生活上的不便與困難，然而目前鮮少有專門為學生打造的解決方案。學生間的線下互動與真實聯繫日益減少，導致難以找到同學幫忙或組團合作的機會。此外，午晚餐時的人潮湧入校園周邊餐廳，更帶來了無法即時點餐的困擾。這些現況讓我們看到一個獨特的契機，我們決心以「政大通 - NCCUPass 」 APP 的形式來化解這些困境。</p>
-<p>「政大通 - NCCUPass 」不僅提供政大學生一個集社交、實用和創新於一身的平台，更是一個綜合性的應用程式，旨在加強他們的校園體驗。我們希望這個 APP 能成為解決校園生活難題的得力幫手！</p>
-<p>在社團「政大 Google 學生開發者社群」的擁護下，我們匯聚各領域的精英，凝聚開放分享的心態，攜手共創這個改變學生生活的嶄新 APP ！政大只是我們的第一塊版圖，我們的未來目標是影響全國的大學生，為他們帶來更加豐富、更加便利的校園體驗！</p>
-<h2 id="目前功能簡介"><a href="#目前功能簡介" class="headerlink" title="目前功能簡介"></a>目前功能簡介</h2><h3 id="學生任務功能-增強校園互動體驗"><a href="#學生任務功能-增強校園互動體驗" class="headerlink" title="學生任務功能 - 增強校園互動體驗"></a>學生任務功能 - 增強校園互動體驗</h3><ul>
-<li>動機發想<ul>
-<li>缺乏線下互動與真實聯繫：<br>我們注意到越來越多的大學生在日常生活中依賴數位平台和社交媒體，而非與人面對面的互動。這種現象在校園中尤為明顯，比起在現實中進行真實的互動，學生更傾向於在虛擬世界中建立社交連結。我們對大學生進行訪談、問卷調查和社交媒體分析，收集了大量的數據和反饋。這些數據揭示了大學生內心深處對面對面互動的渴望，以及更真實的交流，更深刻的情感，卻在線下互動中遇到了種種挑戰與限制。基於這些資訊，我們更加確定缺乏線下互動和真實聯繫的問題造成大學生的困擾，這些數據與心靈共鳴，激發了我們的靈感。我們深信，缺乏線下互動和真實聯繫的問題，不僅是個人的困擾，更是一種社會現象，需要我們攜手改變。於是，我們投入心血，開發了一個獨特的解決方案——一個能在現實世界中促進人與人之間有意義連結的奇妙工具。</li>
-</ul>
-</li>
-<li>功能敘述<ul>
-<li>這個功能旨在促進學生之間的線下互動，並為他們提供一個自由而實用的平台，能以此完成各種有趣的任務。學生們可以發布任務，例如：幫忙帶宵夜、一起揪團出去玩等等。學生可以在我們的 APP 上自由發布任務，並尋找其他學生來接受挑戰，每一次的任務都是獨特的社交機會，讓學生們在校園中建立更多真實的聯繫和友誼。除此之外，這個功能還擁有相當多面的好處。首先，它鼓勵學生積極參與校園生活，擺脫線上世界的束縛。透過與其他學生一起完成任務，他們可以體驗到珍貴的團隊合作和互助精神。此外，如果同學對彼此的服務滿意，可以提供金錢或其他回饋，藉著小小賺外快的機會，也可以累積一定的金錢！相信這個制度能鼓勵學生發揮創意和努力工作，同時也建立相互尊重和價值交換的文化。</li>
-</ul>
-</li>
-</ul>
-<h3 id="預約外帶功能與午餐快選器-－-用餐省時無等待，專屬學生的美食提前預訂"><a href="#預約外帶功能與午餐快選器-－-用餐省時無等待，專屬學生的美食提前預訂" class="headerlink" title="預約外帶功能與午餐快選器 － 用餐省時無等待，專屬學生的美食提前預訂"></a>預約外帶功能與午餐快選器 － 用餐省時無等待，專屬學生的美食提前預訂</h3><ul>
-<li><p>動機發想</p>
+<h1 id="Series-Outline"><a href="#Series-Outline" class="headerlink" title="Series Outline"></a>Series Outline</h1><p>I will follow the outline below in this series.</p>
 <ul>
-<li><p>餐點供應不足：<br>尤其在午晚餐尖峰時段，餐廳經常供不應求，學生需要花費大量的時間排隊等待。</p>
-</li>
-<li><p>用餐時間緊湊：<br>大學生的生活節奏快，經常要在短時間內完成吃飯等基本活動，而在繁忙的用餐時間內排隊等待餐點往往會浪費寶貴的時間。</p>
-</li>
-<li><p>無法預估用餐需求：<br>在繁忙的用餐時間內，無法預估用餐需求，可能需要長時間等待，或因時間太短而做了不太理想的食物選擇。</p>
-</li>
+<li>Introduction (this post)</li>
+<li>Setup</li>
+<li>Version Control &amp; Commands (Basics)</li>
+<li>Branching &amp; Merging</li>
+<li>Conflict</li>
+<li>Collaboration &amp; GitHub</li>
+<li>Advanced Topics</li>
 </ul>
-</li>
-<li><p>功能敘述</p>
-<ul>
-<li>這個功能將為大學生們帶來極速、便利、無等待的用餐體驗！我們與學校附近的店家攜手合作，確保學生們不必等待太久。現在，同學只需要提前預約外帶，下課後直接前往店家，餐點早已準備好，輕鬆取走即可！不再浪費時間排隊，享受自由自在的用餐時光！這個預約外帶功能不僅是大學生們用餐的時尚選擇，更是忙碌學習生活的得力助手。在繁忙的用餐尖峰時段，可以輕鬆預訂心儀的美食，避免為了取餐而耽誤其他重要事務。</li>
-</ul>
-</li>
-</ul>
-<h2 id="連結"><a href="#連結" class="headerlink" title="連結"></a>連結</h2><ul>
-<li><span class="exturl" data-url="aHR0cHM6Ly9uY2N1cGFzcy5jb20v">官方網站<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9uY2N1cGFzcy8=">IG粉專<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2NvbXBhbnkvbmNjdXBhc3M=">LinkedIn<i class="fa fa-external-link-alt"></i></span></li>
-</ul>
-<h1 id="得獎"><a href="#得獎" class="headerlink" title="得獎"></a>得獎</h1><p>NCCUPass在當天的期末發表會得到最佳人氣專案奬的殊榮！<br><img data-src="/images/posts/2023NCCUPass/GDSC_award.JPG" 
+<hr>
+<h1 id="Introduction-to-Git-A-Distributed-Version-Control-System"><a href="#Introduction-to-Git-A-Distributed-Version-Control-System" class="headerlink" title="Introduction to Git: A Distributed Version Control System"></a>Introduction to Git: A Distributed Version Control System</h1><p>Git is a powerful and widely used distributed version control system designed to track changes in software development projects. It provides developers with the ability to collaborate on projects efficiently, manage codebases effectively, and easily track and revert changes.</p>
+<h2 id="Distributed-Version-Control-System"><a href="#Distributed-Version-Control-System" class="headerlink" title="Distributed Version Control System"></a>Distributed Version Control System</h2><p>In traditional software development, changes to a codebase were often managed through file-based systems or centralized version control systems. However, these approaches had limitations in terms of collaboration, scalability, and flexibility. Git emerged as a solution to these challenges, offering a distributed and decentralized approach to version control.</p>
+<p>The special point of Git is that it supports distributed version control and can also easily share codes among multiple nodes.</p>
+<p><img data-src="/images/posts/Git-Series/dist-ver-ctr.png" 
 style="width: 70%; margin: 15px auto;"></p>
-<p><img data-src="/images/posts/2023NCCUPass/GDSC_award_on_stage.JPG" 
+<h2 id="Branch"><a href="#Branch" class="headerlink" title="Branch"></a>Branch</h2><p>Git manages code based on a tree structure, allowing branches to be created, merged, and deleted, and code versions to be saved at any time.</p>
+<p><img data-src="/images/posts/Git-Series/branch.png" 
 style="width: 70%; margin: 15px auto;"></p>
-<p>當天的期末發表會：<br><img data-src="/images/posts/2023NCCUPass/GDSC_final.JPG" 
+<h2 id="Snapshot"><a href="#Snapshot" class="headerlink" title="Snapshot"></a>Snapshot</h2><p>Git saves full snapshots of files, rather than differences, making it easy to restore all historical versions of files.</p>
+<p><img data-src="/images/posts/Git-Series/snapshot.jpeg" 
 style="width: 70%; margin: 15px auto;"></p>
-<h1 id="技術"><a href="#技術" class="headerlink" title="技術"></a>技術</h1><p>在經過一個學期後，我們也慢慢拓展技術範圍，未來也將因應需求機動地改變<br>在這邊就只放上系統架構圖，不贅述太多技術細節</p>
-<h2 id="系統架構圖"><a href="#系統架構圖" class="headerlink" title="系統架構圖"></a>系統架構圖</h2><p><img data-src="/images/posts/2023NCCUPass/NCCUPass_structure.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<h1 id="未來"><a href="#未來" class="headerlink" title="未來"></a>未來</h1><p>政大是我們的第一塊版圖，我們的目標是全台灣的大學，目前先穩紮穩打在政大站穩腳步，在此期間會積極地與其他組織或社團合作、參與各項競賽以及參加創投機構的活動，我們的理念是讓大學生們彼此間的關係更加密切與真實，使他們的生活更加數位化與便利！</p>
+<hr>
+<h1 id="Recommended-Resources"><a href="#Recommended-Resources" class="headerlink" title="Recommended Resources"></a>Recommended Resources</h1><p><a href="%22https://www.youtube.com/watch?v=8JJ101D3knE%22">Mosh Git Tutorail</a></p>
 ]]></content>
       <categories>
-        <category>心得</category>
-        <category>專案</category>
-        <category>GDSC</category>
-        <category>side project</category>
-        <category>NCCUPass</category>
+        <category>Git 系列文</category>
       </categories>
       <tags>
-        <tag>專案</tag>
-        <tag>GDSC</tag>
-        <tag>NCCUPass</tag>
+        <tag>Git</tag>
+        <tag>Version Control</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[Git][Version Control] Git - Setup</title>
+    <url>/posts/731175240/</url>
+    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Setting up the environment of Git and some recommended GUI tools.</p>
+<span id="more"></span>
+
+<h1 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h1><ol>
+<li><p>Install Git with the link below: (with your OS)<br><a href="%22https://git-scm.com/%22">Git official website</a></p>
+</li>
+<li><p>Type this command to check if it is installed successfully:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h1 id="Configure-Git-type-commands-in-your-shell"><a href="#Configure-Git-type-commands-in-your-shell" class="headerlink" title="Configure Git (type commands in your shell)"></a>Configure Git (type commands in your shell)</h1><ol>
+<li><p>Set your user name by running the following command:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Set your email address by running the following command:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.email youremail@example.com</span><br></pre></td></tr></table></figure></li>
+<li><p>Set up SSH key (for remote repository access. e.g. GitHub)</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<ul>
+<li><p>Press Enter to accept the default file location and passphrase (or set your own if desired).<br>Once the key is generated, run the following command to add it to the SSH agent</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-add ~/.ssh/id_rsa</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Copy the public key to your clipboard by running the following command</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Add the copied public key to your Git hosting platform account (e.g., GitHub, GitLab) by following their documentation.</p>
+</li>
+<li><p>View your ssh keys</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd ~/.ssh</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ls</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Use a text editor or command-line tools (such as cat or less) to view the contents of the .pub files and see the public key information: <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat id_rsa.pub</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<ol start="4">
+<li>You can see your configuration by typing the following commands:<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --list</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h1 id="Recommended-GUI-tools"><a href="#Recommended-GUI-tools" class="headerlink" title="Recommended GUI tools"></a>Recommended GUI tools</h1><p>Both commands and GUI tools are important to Git manupulation.<br>And Here are some recommended Git GUI tools that you can use.</p>
+<ul>
+<li><a href="%22https://www.sourcetreeapp.com/%22">Sourcetree</a></li>
+<li><a href="%22https://www.gitkraken.com/%22">GitKraken</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Git 系列文</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>Version Control</tag>
       </tags>
   </entry>
   <entry>
@@ -412,15 +506,15 @@ style="width: 70%; margin: 15px auto;"></p>
 ]]></content>
       <categories>
         <category>心得</category>
-        <category>專案</category>
         <category>GDSC</category>
-        <category>side project</category>
+        <category>專案</category>
         <category>NCCUPass</category>
+        <category>side project</category>
       </categories>
       <tags>
-        <tag>專案</tag>
         <tag>GDSC</tag>
         <tag>NCCUPass</tag>
+        <tag>專案</tag>
       </tags>
   </entry>
   <entry>
@@ -580,65 +674,6 @@ style="width: 70%; margin: 15px auto;"></p>
 <li><span class="exturl" data-url="aHR0cHM6Ly95b3V0dS5iZS9kQS1OaEN0cnJWRQ==">Low-rank Adaption of Large Language Models: Explaining the Key Concepts Behind LoRA (Video)<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1VczVaRnAxNlBhVQ==">Fine-tuning LLMs with PEFT and LoRA<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9ibG9nL3BlZnQ=">PEFT: Parameter-Efficient Fine-Tuning of Billion-Scale Models on Low-Resource Hardware<i class="fa fa-external-link-alt"></i></span></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>ML</tag>
-        <tag>AI</tag>
-        <tag>NLP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>[NLP][ML] Transformer (1) - Structure</title>
-    <url>/posts/4283617483/</url>
-    <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>The Transformer is a <strong>deep learning architecture</strong> introduced in the paper “Attention Is All You Need” by Vaswani et al. in 2017. It revolutionized the field of natural language processing (NLP) and brought significant advancements in various <strong>sequence-to-sequence tasks</strong>. The Transformer architecture, thanks to its <strong>attention mechanisms</strong>, enables efficient processing of sequential data while <strong>capturing long-range dependencies</strong>.</p>
-<hr>
-<p>Transformer is a <strong>Seq2Seq(Sequence to Sequence) model</strong>. It uses <strong>Encoder-Decoder structure</strong><br>Below is a simple diagram：</p>
-<p><img data-src="/images/posts/NLP-series/transformer-1.gif" 
-style="width: 70%; margin: 15px auto;"><br>Source: <span class="exturl" data-url="aHR0cHM6Ly9haS5nb29nbGVibG9nLmNvbS8yMDE2LzA5L2EtbmV1cmFsLW5ldHdvcmstZm9yLW1hY2hpbmUuaHRtbA==">https://ai.googleblog.com/2016/09/a-neural-network-for-machine.html<i class="fa fa-external-link-alt"></i></span></p>
-<p>The line between Encoder and Decoder represents the “Attention”.<br>The thicker the line, the more the Decoder below pays more attention to some Chinese characters above when generating an English word.</p>
-<span id="more"></span>
-<p>In the below sections, I will introduce the structure of transformer and the attention machanism.<br>For the <strong>detail explaination of key components in transformer and the details of attention</strong>, you can refer to the <a href="https://mao-code.github.io/posts/2443192075/#more">next article</a>.</p>
-<h1 id="Structure"><a href="#Structure" class="headerlink" title="Structure"></a>Structure</h1><p>Below is the strucutre of Transformer.</p>
-<p><img data-src="/images/posts/NLP-series/transformer-2.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>The part <strong>on the left in the figure is the Encoder, and the part on the right is the Decoder</strong>.<br>You can notice that the structures of the left and right sides are actually quite similar.<br>The Encoder and Decoder usually contain many blocks with the same layer structure, and each layer will have <strong>multi-head attention and Feed Forward Network</strong>.</p>
-<h2 id="Encoder"><a href="#Encoder" class="headerlink" title="Encoder"></a>Encoder</h2><p><img data-src="/images/posts/NLP-series/transformer-3.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>We just mentioned that the Encoder will be divided into many blocks.<br>We will <strong>first convert a whole row of input sequence data into a whole row of vectors</strong>, and then the processing steps of each block are as follows:</p>
-<ol>
-<li>Firstly, after considering all the input information of the input vector through self-attention, output a row of vectors. (I will introduce how self-attention considers all input information later)</li>
-<li>Throw this row of vectors into the feed forward network of Fully Connected (FC).</li>
-<li>The final output vector is the output of the block.</li>
-</ol>
-<hr>
-<p>However, what the block does in the original Transformer is more complicated, the details are as follows:<br><img data-src="/images/posts/NLP-series/transformer-4.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>Suppose we will follow the method just now, and the <strong>output result of the input vector after self-attention is called a</strong>. we also need to <strong>pull the original input (we first call it b )</strong> and add it to a to get a+b . Such a network architecture is called a <strong>residual connection</strong>.</p>
-<p>After that, we will do <strong>layer normalization</strong> on the result of a+b. It will calculate the average $m$(mean) and standard deviation $\sigma$(standard deviation) of the input vector, and then calculate it according to the formula: divide the input minus the mean $m$ by the standard deviation $\sigma$. It’s here that we really get <strong>the input of the FC network</strong>.</p>
-<p>The <strong>FC network also has a residual architecture</strong>, so we will add the input of the FC network to its output to get a new output, and then do layer normalization again. This is the <strong>real output of a block in Transformer Encoder</strong>.</p>
-<hr>
-<p>Now, let’s look back at the structure diagram of Encoder:</p>
-<p><img data-src="/images/posts/NLP-series/transformer-5.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>First, in the place of input, <strong>convert the input into a vector through Embedding</strong>, and then add <strong>positional encoding</strong> (because if only self-attention is used, there will be a lack of unknown information)</p>
-<p>Next we see <strong>Multi-Head Attention</strong>, which is <strong>the block of self-attention and Add&amp;Norm means residual plus layer normalization</strong>.</p>
-<p>Finally, <strong>doing Add&amp;Norm again after FC’s feed forward network is the output of the whole block</strong>, and this block will be <strong>repeated n times</strong>.</p>
-<h2 id="Decoder"><a href="#Decoder" class="headerlink" title="Decoder"></a>Decoder</h2><p>Then let us look at the Decoder:</p>
-<p><img data-src="/images/posts/NLP-series/transformer-2.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p><strong>Input the sequence obtained at the previous time</strong>, and then perform the same Embedding and Positional Encoding and then enter the block repeated N times.<br>The difference is that there is an extra <strong>“Masked” (note the red box) in the Multi-Head Attention</strong> when we first entered. What does it mean?</p>
-<p>Masked means that the model will <strong>only pay attention to the part it has already generated</strong>, and <strong>will not accidentally pay attention to the words generated in the future</strong>. Since the output of the Decoder is generated <strong>one by one</strong>, it has no way to consider its future input. It seems a bit vague to say this, and I will make it clearer when I talk about self-attention in the next article.</p>
-<p>After repeating the block N times, after the <strong>Linear Layer and Softmax</strong>, we can get the output <strong>probability distribution</strong> we want, and we can sample according to this distribution or take the value with the highest probability to get the output sequence.</p>
-<p>There is still one of the most critical self-attention mechanisms that has not been explained in detail. Let’s introduce how it pays attention to all input sequences and performs parallel processing in the next article!</p>
-<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1lTWx4NWZGTm9ZYw==">3Blue1Brown<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MDM5Mg==">iThome - Day 27 Transformer (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MTI0Mg==">iThome - Day 28 Self-Attention (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9oYWNrbWQuaW8vQGFibGl1L0JrWG16REJtcg==">Transformer 李宏毅深度學習 (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9zcGVlY2guZWUubnR1LmVkdS50dy9+aHlsZWUvbWwvbWwyMDIxLWNvdXJzZS1kYXRhL3NlcTJzZXFfdjkucGRm">Transformer 李宏毅老師簡報<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQzJnZ2p0dXVXdnhySEhIaWFESDFkbFE=">李宏毅老師YouTube channel<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzE3MDYuMDM3NjI=">Attention is all you need (paper)<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
 ]]></content>
       <tags>
@@ -890,97 +925,62 @@ style="width: 70%; margin: 15px auto;"></p>
       </tags>
   </entry>
   <entry>
-    <title>[Git][Version Control] Git - Introduction</title>
-    <url>/posts/2571684277/</url>
-    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Here is the series of Git full tutorial. I will cover the important and advanced topics that you should know in git. By reading this series, you are able to know the basic(but important) concept of Git and the technique of using git. Hope you can gain a lot ! </p>
-<span id="more"></span>
-
-<h1 id="Series-Outline"><a href="#Series-Outline" class="headerlink" title="Series Outline"></a>Series Outline</h1><p>I will follow the outline below in this series.</p>
-<ul>
-<li>Introduction (this post)</li>
-<li>Setup</li>
-<li>Version Control &amp; Commands (Basics)</li>
-<li>Branching &amp; Merging</li>
-<li>Conflict</li>
-<li>Collaboration &amp; GitHub</li>
-<li>Advanced Topics</li>
-</ul>
+    <title>[NLP][ML] Transformer (1) - Structure</title>
+    <url>/posts/4283617483/</url>
+    <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>The Transformer is a <strong>deep learning architecture</strong> introduced in the paper “Attention Is All You Need” by Vaswani et al. in 2017. It revolutionized the field of natural language processing (NLP) and brought significant advancements in various <strong>sequence-to-sequence tasks</strong>. The Transformer architecture, thanks to its <strong>attention mechanisms</strong>, enables efficient processing of sequential data while <strong>capturing long-range dependencies</strong>.</p>
 <hr>
-<h1 id="Introduction-to-Git-A-Distributed-Version-Control-System"><a href="#Introduction-to-Git-A-Distributed-Version-Control-System" class="headerlink" title="Introduction to Git: A Distributed Version Control System"></a>Introduction to Git: A Distributed Version Control System</h1><p>Git is a powerful and widely used distributed version control system designed to track changes in software development projects. It provides developers with the ability to collaborate on projects efficiently, manage codebases effectively, and easily track and revert changes.</p>
-<h2 id="Distributed-Version-Control-System"><a href="#Distributed-Version-Control-System" class="headerlink" title="Distributed Version Control System"></a>Distributed Version Control System</h2><p>In traditional software development, changes to a codebase were often managed through file-based systems or centralized version control systems. However, these approaches had limitations in terms of collaboration, scalability, and flexibility. Git emerged as a solution to these challenges, offering a distributed and decentralized approach to version control.</p>
-<p>The special point of Git is that it supports distributed version control and can also easily share codes among multiple nodes.</p>
-<p><img data-src="/images/posts/Git-Series/dist-ver-ctr.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<h2 id="Branch"><a href="#Branch" class="headerlink" title="Branch"></a>Branch</h2><p>Git manages code based on a tree structure, allowing branches to be created, merged, and deleted, and code versions to be saved at any time.</p>
-<p><img data-src="/images/posts/Git-Series/branch.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<h2 id="Snapshot"><a href="#Snapshot" class="headerlink" title="Snapshot"></a>Snapshot</h2><p>Git saves full snapshots of files, rather than differences, making it easy to restore all historical versions of files.</p>
-<p><img data-src="/images/posts/Git-Series/snapshot.jpeg" 
-style="width: 70%; margin: 15px auto;"></p>
-<hr>
-<h1 id="Recommended-Resources"><a href="#Recommended-Resources" class="headerlink" title="Recommended Resources"></a>Recommended Resources</h1><p><a href="%22https://www.youtube.com/watch?v=8JJ101D3knE%22">Mosh Git Tutorail</a></p>
-]]></content>
-      <categories>
-        <category>Git 系列文</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-        <tag>Version Control</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>[Git][Version Control] Git - Setup</title>
-    <url>/posts/731175240/</url>
-    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Setting up the environment of Git and some recommended GUI tools.</p>
+<p>Transformer is a <strong>Seq2Seq(Sequence to Sequence) model</strong>. It uses <strong>Encoder-Decoder structure</strong><br>Below is a simple diagram：</p>
+<p><img data-src="/images/posts/NLP-series/transformer-1.gif" 
+style="width: 70%; margin: 15px auto;"><br>Source: <span class="exturl" data-url="aHR0cHM6Ly9haS5nb29nbGVibG9nLmNvbS8yMDE2LzA5L2EtbmV1cmFsLW5ldHdvcmstZm9yLW1hY2hpbmUuaHRtbA==">https://ai.googleblog.com/2016/09/a-neural-network-for-machine.html<i class="fa fa-external-link-alt"></i></span></p>
+<p>The line between Encoder and Decoder represents the “Attention”.<br>The thicker the line, the more the Decoder below pays more attention to some Chinese characters above when generating an English word.</p>
 <span id="more"></span>
-
-<h1 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h1><ol>
-<li><p>Install Git with the link below: (with your OS)<br><a href="%22https://git-scm.com/%22">Git official website</a></p>
-</li>
-<li><p>Type this command to check if it is installed successfully:</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure></li>
+<p>In the below sections, I will introduce the structure of transformer and the attention machanism.<br>For the <strong>detail explaination of key components in transformer and the details of attention</strong>, you can refer to the <a href="https://mao-code.github.io/posts/2443192075/#more">next article</a>.</p>
+<h1 id="Structure"><a href="#Structure" class="headerlink" title="Structure"></a>Structure</h1><p>Below is the strucutre of Transformer.</p>
+<p><img data-src="/images/posts/NLP-series/transformer-2.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>The part <strong>on the left in the figure is the Encoder, and the part on the right is the Decoder</strong>.<br>You can notice that the structures of the left and right sides are actually quite similar.<br>The Encoder and Decoder usually contain many blocks with the same layer structure, and each layer will have <strong>multi-head attention and Feed Forward Network</strong>.</p>
+<h2 id="Encoder"><a href="#Encoder" class="headerlink" title="Encoder"></a>Encoder</h2><p><img data-src="/images/posts/NLP-series/transformer-3.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>We just mentioned that the Encoder will be divided into many blocks.<br>We will <strong>first convert a whole row of input sequence data into a whole row of vectors</strong>, and then the processing steps of each block are as follows:</p>
+<ol>
+<li>Firstly, after considering all the input information of the input vector through self-attention, output a row of vectors. (I will introduce how self-attention considers all input information later)</li>
+<li>Throw this row of vectors into the feed forward network of Fully Connected (FC).</li>
+<li>The final output vector is the output of the block.</li>
 </ol>
-<h1 id="Configure-Git-type-commands-in-your-shell"><a href="#Configure-Git-type-commands-in-your-shell" class="headerlink" title="Configure Git (type commands in your shell)"></a>Configure Git (type commands in your shell)</h1><ol>
-<li><p>Set your user name by running the following command:</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Set your email address by running the following command:</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.email youremail@example.com</span><br></pre></td></tr></table></figure></li>
-<li><p>Set up SSH key (for remote repository access. e.g. GitHub)</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure></li>
-</ol>
-<ul>
-<li><p>Press Enter to accept the default file location and passphrase (or set your own if desired).<br>Once the key is generated, run the following command to add it to the SSH agent</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-add ~/.ssh/id_rsa</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Copy the public key to your clipboard by running the following command</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Add the copied public key to your Git hosting platform account (e.g., GitHub, GitLab) by following their documentation.</p>
-</li>
-<li><p>View your ssh keys</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd ~/.ssh</span><br></pre></td></tr></table></figure>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ls</span><br></pre></td></tr></table></figure>
-<ul>
-<li>Use a text editor or command-line tools (such as cat or less) to view the contents of the .pub files and see the public key information: <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat id_rsa.pub</span><br></pre></td></tr></table></figure></li>
-</ul>
-</li>
-</ul>
-<ol start="4">
-<li>You can see your configuration by typing the following commands:<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --list</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h1 id="Recommended-GUI-tools"><a href="#Recommended-GUI-tools" class="headerlink" title="Recommended GUI tools"></a>Recommended GUI tools</h1><p>Both commands and GUI tools are important to Git manupulation.<br>And Here are some recommended Git GUI tools that you can use.</p>
-<ul>
-<li><a href="%22https://www.sourcetreeapp.com/%22">Sourcetree</a></li>
-<li><a href="%22https://www.gitkraken.com/%22">GitKraken</a></li>
+<hr>
+<p>However, what the block does in the original Transformer is more complicated, the details are as follows:<br><img data-src="/images/posts/NLP-series/transformer-4.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>Suppose we will follow the method just now, and the <strong>output result of the input vector after self-attention is called a</strong>. we also need to <strong>pull the original input (we first call it b )</strong> and add it to a to get a+b . Such a network architecture is called a <strong>residual connection</strong>.</p>
+<p>After that, we will do <strong>layer normalization</strong> on the result of a+b. It will calculate the average $m$(mean) and standard deviation $\sigma$(standard deviation) of the input vector, and then calculate it according to the formula: divide the input minus the mean $m$ by the standard deviation $\sigma$. It’s here that we really get <strong>the input of the FC network</strong>.</p>
+<p>The <strong>FC network also has a residual architecture</strong>, so we will add the input of the FC network to its output to get a new output, and then do layer normalization again. This is the <strong>real output of a block in Transformer Encoder</strong>.</p>
+<hr>
+<p>Now, let’s look back at the structure diagram of Encoder:</p>
+<p><img data-src="/images/posts/NLP-series/transformer-5.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>First, in the place of input, <strong>convert the input into a vector through Embedding</strong>, and then add <strong>positional encoding</strong> (because if only self-attention is used, there will be a lack of unknown information)</p>
+<p>Next we see <strong>Multi-Head Attention</strong>, which is <strong>the block of self-attention and Add&amp;Norm means residual plus layer normalization</strong>.</p>
+<p>Finally, <strong>doing Add&amp;Norm again after FC’s feed forward network is the output of the whole block</strong>, and this block will be <strong>repeated n times</strong>.</p>
+<h2 id="Decoder"><a href="#Decoder" class="headerlink" title="Decoder"></a>Decoder</h2><p>Then let us look at the Decoder:</p>
+<p><img data-src="/images/posts/NLP-series/transformer-2.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p><strong>Input the sequence obtained at the previous time</strong>, and then perform the same Embedding and Positional Encoding and then enter the block repeated N times.<br>The difference is that there is an extra <strong>“Masked” (note the red box) in the Multi-Head Attention</strong> when we first entered. What does it mean?</p>
+<p>Masked means that the model will <strong>only pay attention to the part it has already generated</strong>, and <strong>will not accidentally pay attention to the words generated in the future</strong>. Since the output of the Decoder is generated <strong>one by one</strong>, it has no way to consider its future input. It seems a bit vague to say this, and I will make it clearer when I talk about self-attention in the next article.</p>
+<p>After repeating the block N times, after the <strong>Linear Layer and Softmax</strong>, we can get the output <strong>probability distribution</strong> we want, and we can sample according to this distribution or take the value with the highest probability to get the output sequence.</p>
+<p>There is still one of the most critical self-attention mechanisms that has not been explained in detail. Let’s introduce how it pays attention to all input sequences and performs parallel processing in the next article!</p>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1lTWx4NWZGTm9ZYw==">3Blue1Brown<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MDM5Mg==">iThome - Day 27 Transformer (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MTI0Mg==">iThome - Day 28 Self-Attention (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9oYWNrbWQuaW8vQGFibGl1L0JrWG16REJtcg==">Transformer 李宏毅深度學習 (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9zcGVlY2guZWUubnR1LmVkdS50dy9+aHlsZWUvbWwvbWwyMDIxLWNvdXJzZS1kYXRhL3NlcTJzZXFfdjkucGRm">Transformer 李宏毅老師簡報<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQzJnZ2p0dXVXdnhySEhIaWFESDFkbFE=">李宏毅老師YouTube channel<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzE3MDYuMDM3NjI=">Attention is all you need (paper)<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
 ]]></content>
-      <categories>
-        <category>Git 系列文</category>
-      </categories>
       <tags>
-        <tag>Git</tag>
-        <tag>Version Control</tag>
+        <tag>ML</tag>
+        <tag>AI</tag>
+        <tag>NLP</tag>
       </tags>
   </entry>
   <entry>
@@ -1021,6 +1021,116 @@ style="width: 70%; margin: 15px auto;"></p>
       </categories>
       <tags>
         <tag>OOP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[.NET][C#][Design Pattern] - Mediator Pattern (中介者模式)</title>
+    <url>/posts/4072203086/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>這篇文章主要介紹Mediator Pattern的定義以及簡單實作<br>介紹使用Mediator Pattern的好處, 並提供範例<br>在軟體架構中Mediator Patternc和Repository Pattern都是常用的pattern<br>通常.NET專案中會結合MediatR套件使用</p>
+<span id="more"></span>
+
+<h2 id="定義-Mediator-Pattern"><a href="#定義-Mediator-Pattern" class="headerlink" title="定義 Mediator Pattern"></a>定義 Mediator Pattern</h2><p>IG貼文：<br><span class="exturl" data-url="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9wL0NpTTBlenBMTzR6Lz9obD16aC10dw==">Mediator Pattern Post<i class="fa fa-external-link-alt"></i></span></p>
+<p>GitHub連結：<br><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL21hby1jb2RlL01lZGlhdG9yUGF0dGVybg==">Sample Code<i class="fa fa-external-link-alt"></i></span></p>
+<p>定義一個 Mediator 物件用來<strong>封裝一組物件的互動方式</strong>。<br>Mediator 藉由<strong>避免物件間相互直接的引用</strong>，從而降低它們之間的耦合程度，並且可以讓我們獨立地改變這些物件間的互動方式。</p>
+<p>下面這兩張圖片可以簡單體現出Mediator Pattern在做的事</p>
+<p><strong>沒有使用中介者, 物件彼此之間直接調用</strong><br><img data-src="/images/posts/mediator-pattern/origin-graph.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p><strong>使用中介者, 物件只依賴mediator來與其他物件溝通</strong><br><img data-src="/images/posts/mediator-pattern/star.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>可以發現使用中介者模式之後, 物件都只依賴中介者來傳遞訊息, 而不是直接調用彼此, 以此達到解耦。<br>在現實生活中, 也有類似的例子, 例如開發團隊, 客服團隊, 產銷團隊, 設計團隊, 若彼此之間沒有一個統一的溝通,<br>那麼各個團隊耦合度很高, 開發跟設計要協調介面, 又要和產銷和客服討論如何贏得如何符合市場, 這樣一來分工太複雜。<br>所以需要一個<strong>產品經理來當中介者</strong>, 協助溝通各個團隊。</p>
+<h2 id="優缺點"><a href="#優缺點" class="headerlink" title="優缺點"></a>優缺點</h2><ul>
+<li>優點 <ol>
+<li>降低物件之間的耦合性，讓物件容易重複使用。</li>
+<li>物件之間一對多的關聯性變成一對一，提高系統靈活性，也讓整體容易維護及擴充。</li>
+</ol>
+</li>
+<li>缺點 (Trade-off)<ol>
+<li>同事類別過多時，中介者責任很大，會使系統提升一定程度的複雜性。</li>
+</ol>
+</li>
+</ul>
+<h2 id="UML與成員"><a href="#UML與成員" class="headerlink" title="UML與成員"></a>UML與成員</h2><p><img data-src="/images/posts/mediator-pattern/uml.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<table>
+    <thead>
+        <th>成員</th>
+        <th>定義</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Mdiator</td>
+            <td>抽象中介者, 定義註冊進入mediator以及轉發的方法</td>
+        </tr>
+        <tr>
+            <td>ConcreteMediator</td>
+            <td>具體中介者, 定義一個集合來管理同事, 所以聚合Colleague</td>
+        </tr>
+        <tr>
+            <td>Colleague</td>
+            <td>抽象同事, 可以保存中介者, 調用內部方法, 所以聚合Mediator</td>
+        </tr>
+        <tr>
+            <td>ConcreteColleague</td>
+            <td>具體同事, 當要跟其他物件溝通時, 利用內部的中介者進行轉發</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2 id="實作"><a href="#實作" class="headerlink" title="實作"></a>實作</h2><p><strong>專案結構</strong><br><img data-src="/images/posts/mediator-pattern/structure.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p><strong>抽象Mediator</strong></p>
+<figure class="highlight c#"><figcaption><span>Mediator(抽象)</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MediatorPattern.mediator</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 團隊列舉</span></span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">enum</span> teamType</span><br><span class="line">    &#123;</span><br><span class="line">        ENGINEERING, DESIGN, SERVICE, MARKETING</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 抽象mediator</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title">Mediator</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">Register</span>(<span class="params">teamType type, Colleague colleague</span>)</span>; <span class="comment">//註冊進入mediator</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">Relay</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span>; <span class="comment">//轉發;傳遞</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>PackageManager(具體Mediator)</strong></p>
+<figure class="highlight c#"><figcaption><span>PackageManager(具體Mediator)</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MediatorPattern.mediator</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="comment">// 具體mediator</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ProductManager</span> : <span class="title">Mediator</span></span><br><span class="line">	&#123;</span><br><span class="line">        <span class="comment">// 聚合Colleague, 一個儲存colleague物件的dictionary</span></span><br><span class="line">        <span class="keyword">private</span> Dictionary&lt;teamType, Colleague&gt; colleagues = <span class="keyword">new</span> Dictionary&lt;teamType, Colleague&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">Register</span>(<span class="params">teamType type, Colleague colleague</span>)</span></span><br><span class="line">        &#123;</span><br><span class="line">            colleague.setMediator(<span class="keyword">this</span>);</span><br><span class="line">            <span class="keyword">this</span>.colleagues.Add(type, colleague);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">Relay</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">        &#123;</span><br><span class="line">            Colleague toColleague = <span class="keyword">this</span>.colleagues[type];</span><br><span class="line">            toColleague.receive(msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>抽象Colleague</strong></p>
+<figure class="highlight c#"><figcaption><span>Colleague(抽象)</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.mediator;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MediatorPattern.colleagues</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title">Colleague</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">protected</span> Mediator? Mediator &#123; <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; &#125;</span><br><span class="line"></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setMediator</span>(<span class="params">Mediator mediator</span>)</span></span><br><span class="line">		&#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator = mediator;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 接收訊息後如何反應</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span>;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 傳送訊息給特定物件</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>具體Colleague</strong></p>
+<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="comment">//具體colleague</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">DesignTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;設計團隊收到訊息: &quot;</span> + msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;設計團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">EngineeringTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;工程師團隊收到訊息: &quot;</span>+msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;工程師團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">MarketingTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;產銷團隊收到訊息: &quot;</span> + msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;產銷團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ServiceTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;客服團隊收到訊息: &quot;</span> + msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;客服團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>Client端使用</strong></p>
+<figure class="highlight c#"><figcaption><span>Program.cs</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.mediator;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 具體mediator</span></span><br><span class="line">ProductManager pm = <span class="keyword">new</span> ProductManager();</span><br><span class="line"></span><br><span class="line"><span class="comment">//具體colleague</span></span><br><span class="line">Colleague ds = <span class="keyword">new</span> DesignTeam();</span><br><span class="line">Colleague eg = <span class="keyword">new</span> EngineeringTeam();</span><br><span class="line">Colleague mk = <span class="keyword">new</span> MarketingTeam();</span><br><span class="line">Colleague sv = <span class="keyword">new</span> ServiceTeam();</span><br><span class="line"></span><br><span class="line"><span class="comment">//註冊進入mediator</span></span><br><span class="line">pm.Register(teamType.DESIGN, ds);</span><br><span class="line">pm.Register(teamType.ENGINEERING, eg);</span><br><span class="line">pm.Register(teamType.MARKETING, mk);</span><br><span class="line">pm.Register(teamType.SERVICE, sv);</span><br><span class="line"></span><br><span class="line"><span class="comment">//執行</span></span><br><span class="line">ds.send(teamType.ENGINEERING, <span class="string">&quot;UI設計稿完成&quot;</span>);</span><br><span class="line">Console.WriteLine(String.Concat(Enumerable.Repeat(<span class="string">&quot;-&quot;</span>, <span class="number">10</span>)));</span><br><span class="line"></span><br><span class="line">eg.send(teamType.MARKETING, <span class="string">&quot;軟體開發完成&quot;</span>);</span><br><span class="line">Console.WriteLine(String.Concat(Enumerable.Repeat(<span class="string">&quot;-&quot;</span>, <span class="number">10</span>)));</span><br><span class="line"></span><br><span class="line">Console.ReadKey();</span><br></pre></td></tr></table></figure>
+
+<p><strong>結果</strong><br><img data-src="/images/posts/mediator-pattern/result.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<h2 id="疑問"><a href="#疑問" class="headerlink" title="疑問"></a>疑問</h2><ol>
+<li>DI不也是讓物件間解耦嗎？他們有什麼不同？<ol>
+<li>應用場景不同：Mediator模式主要用於解耦合多個相互協作的物件，特別是在複雜的互動場景中。DI則主要用於管理和注入依賴關係，以實現鬆耦合和可測試的程式碼。</li>
+<li>解決不同問題：Mediator解決的是物件之間的協作和通信問題，而DI解決的是依賴關係管理的問題。</li>
+<li>實現方式不同：Mediator需要一個中介者來協調物件之間的互動，通常由一個專門的Mediator類別來實現。DI則是一種設計模式，它可以與不同語言和框架一起使用，並不需要特定的中介者類別。</li>
+</ol>
+</li>
+</ol>
+<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><ul>
+<li>定義:<br>  定義一個 Mediator 物件用來封裝一組物件的互動方式。Mediator 藉由避免物件間相互直接的引用，從而降低它們之間的耦合程度，並且可以讓我們獨立地改變這些物件間的互動方式。</li>
+<li>成員<ul>
+<li>抽象Mediator: 定義方法, 轉接訊息</li>
+<li>具體Mediator: 實作抽象Mediator, Colleague (擁有0~多個Colleague)</li>
+<li>抽象Colleague: 定義方法, 聚合抽象Mediator (Colleague擁有Mediator)</li>
+<li>具體Colleague: 實作抽象Mediator</li>
+</ul>
+</li>
+<li>優點 <ol>
+<li>降低物件之間的耦合性，讓物件容易重複使用。</li>
+<li>物件之間一對多的關聯性變成一對一，提高系統靈活性，也讓整體容易維護及擴充。</li>
+</ol>
+</li>
+<li>缺點 (Trade-off)<ol>
+<li>同事類別過多時，中介者責任很大，會使系統提升一定程度的複雜性。</li>
+</ol>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>OOP</category>
+        <category>Design Pattern</category>
+      </categories>
+      <tags>
+        <tag>OOP</tag>
+        <tag>.NET C#</tag>
+        <tag>design-pattern</tag>
       </tags>
   </entry>
   <entry>
@@ -1200,116 +1310,6 @@ style="width: 70%; margin: 15px auto;"></p>
       </tags>
   </entry>
   <entry>
-    <title>[.NET][C#][Design Pattern] - Mediator Pattern (中介者模式)</title>
-    <url>/posts/4072203086/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>這篇文章主要介紹Mediator Pattern的定義以及簡單實作<br>介紹使用Mediator Pattern的好處, 並提供範例<br>在軟體架構中Mediator Patternc和Repository Pattern都是常用的pattern<br>通常.NET專案中會結合MediatR套件使用</p>
-<span id="more"></span>
-
-<h2 id="定義-Mediator-Pattern"><a href="#定義-Mediator-Pattern" class="headerlink" title="定義 Mediator Pattern"></a>定義 Mediator Pattern</h2><p>IG貼文：<br><span class="exturl" data-url="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9wL0NpTTBlenBMTzR6Lz9obD16aC10dw==">Mediator Pattern Post<i class="fa fa-external-link-alt"></i></span></p>
-<p>GitHub連結：<br><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL21hby1jb2RlL01lZGlhdG9yUGF0dGVybg==">Sample Code<i class="fa fa-external-link-alt"></i></span></p>
-<p>定義一個 Mediator 物件用來<strong>封裝一組物件的互動方式</strong>。<br>Mediator 藉由<strong>避免物件間相互直接的引用</strong>，從而降低它們之間的耦合程度，並且可以讓我們獨立地改變這些物件間的互動方式。</p>
-<p>下面這兩張圖片可以簡單體現出Mediator Pattern在做的事</p>
-<p><strong>沒有使用中介者, 物件彼此之間直接調用</strong><br><img data-src="/images/posts/mediator-pattern/origin-graph.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p><strong>使用中介者, 物件只依賴mediator來與其他物件溝通</strong><br><img data-src="/images/posts/mediator-pattern/star.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>可以發現使用中介者模式之後, 物件都只依賴中介者來傳遞訊息, 而不是直接調用彼此, 以此達到解耦。<br>在現實生活中, 也有類似的例子, 例如開發團隊, 客服團隊, 產銷團隊, 設計團隊, 若彼此之間沒有一個統一的溝通,<br>那麼各個團隊耦合度很高, 開發跟設計要協調介面, 又要和產銷和客服討論如何贏得如何符合市場, 這樣一來分工太複雜。<br>所以需要一個<strong>產品經理來當中介者</strong>, 協助溝通各個團隊。</p>
-<h2 id="優缺點"><a href="#優缺點" class="headerlink" title="優缺點"></a>優缺點</h2><ul>
-<li>優點 <ol>
-<li>降低物件之間的耦合性，讓物件容易重複使用。</li>
-<li>物件之間一對多的關聯性變成一對一，提高系統靈活性，也讓整體容易維護及擴充。</li>
-</ol>
-</li>
-<li>缺點 (Trade-off)<ol>
-<li>同事類別過多時，中介者責任很大，會使系統提升一定程度的複雜性。</li>
-</ol>
-</li>
-</ul>
-<h2 id="UML與成員"><a href="#UML與成員" class="headerlink" title="UML與成員"></a>UML與成員</h2><p><img data-src="/images/posts/mediator-pattern/uml.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<table>
-    <thead>
-        <th>成員</th>
-        <th>定義</th>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Mdiator</td>
-            <td>抽象中介者, 定義註冊進入mediator以及轉發的方法</td>
-        </tr>
-        <tr>
-            <td>ConcreteMediator</td>
-            <td>具體中介者, 定義一個集合來管理同事, 所以聚合Colleague</td>
-        </tr>
-        <tr>
-            <td>Colleague</td>
-            <td>抽象同事, 可以保存中介者, 調用內部方法, 所以聚合Mediator</td>
-        </tr>
-        <tr>
-            <td>ConcreteColleague</td>
-            <td>具體同事, 當要跟其他物件溝通時, 利用內部的中介者進行轉發</td>
-        </tr>
-    </tbody>
-</table>
-
-<h2 id="實作"><a href="#實作" class="headerlink" title="實作"></a>實作</h2><p><strong>專案結構</strong><br><img data-src="/images/posts/mediator-pattern/structure.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p><strong>抽象Mediator</strong></p>
-<figure class="highlight c#"><figcaption><span>Mediator(抽象)</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MediatorPattern.mediator</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 團隊列舉</span></span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">enum</span> teamType</span><br><span class="line">    &#123;</span><br><span class="line">        ENGINEERING, DESIGN, SERVICE, MARKETING</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 抽象mediator</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title">Mediator</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">Register</span>(<span class="params">teamType type, Colleague colleague</span>)</span>; <span class="comment">//註冊進入mediator</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">Relay</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span>; <span class="comment">//轉發;傳遞</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>PackageManager(具體Mediator)</strong></p>
-<figure class="highlight c#"><figcaption><span>PackageManager(具體Mediator)</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MediatorPattern.mediator</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="comment">// 具體mediator</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ProductManager</span> : <span class="title">Mediator</span></span><br><span class="line">	&#123;</span><br><span class="line">        <span class="comment">// 聚合Colleague, 一個儲存colleague物件的dictionary</span></span><br><span class="line">        <span class="keyword">private</span> Dictionary&lt;teamType, Colleague&gt; colleagues = <span class="keyword">new</span> Dictionary&lt;teamType, Colleague&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">Register</span>(<span class="params">teamType type, Colleague colleague</span>)</span></span><br><span class="line">        &#123;</span><br><span class="line">            colleague.setMediator(<span class="keyword">this</span>);</span><br><span class="line">            <span class="keyword">this</span>.colleagues.Add(type, colleague);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">Relay</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">        &#123;</span><br><span class="line">            Colleague toColleague = <span class="keyword">this</span>.colleagues[type];</span><br><span class="line">            toColleague.receive(msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>抽象Colleague</strong></p>
-<figure class="highlight c#"><figcaption><span>Colleague(抽象)</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.mediator;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MediatorPattern.colleagues</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title">Colleague</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">protected</span> Mediator? Mediator &#123; <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; &#125;</span><br><span class="line"></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setMediator</span>(<span class="params">Mediator mediator</span>)</span></span><br><span class="line">		&#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator = mediator;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 接收訊息後如何反應</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span>;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 傳送訊息給特定物件</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>具體Colleague</strong></p>
-<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="comment">//具體colleague</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">DesignTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;設計團隊收到訊息: &quot;</span> + msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;設計團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">EngineeringTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;工程師團隊收到訊息: &quot;</span>+msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;工程師團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">MarketingTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;產銷團隊收到訊息: &quot;</span> + msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;產銷團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ServiceTeam</span> : <span class="title">Colleague</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">receive</span>(<span class="params"><span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;客服團隊收到訊息: &quot;</span> + msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">send</span>(<span class="params">teamType type, <span class="built_in">string</span> msg</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;客服團隊發送訊息: &quot;</span>+msg);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.Mediator != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.Mediator.Relay(type, msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>Client端使用</strong></p>
-<figure class="highlight c#"><figcaption><span>Program.cs</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> MediatorPattern.colleagues;</span><br><span class="line"><span class="keyword">using</span> MediatorPattern.mediator;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 具體mediator</span></span><br><span class="line">ProductManager pm = <span class="keyword">new</span> ProductManager();</span><br><span class="line"></span><br><span class="line"><span class="comment">//具體colleague</span></span><br><span class="line">Colleague ds = <span class="keyword">new</span> DesignTeam();</span><br><span class="line">Colleague eg = <span class="keyword">new</span> EngineeringTeam();</span><br><span class="line">Colleague mk = <span class="keyword">new</span> MarketingTeam();</span><br><span class="line">Colleague sv = <span class="keyword">new</span> ServiceTeam();</span><br><span class="line"></span><br><span class="line"><span class="comment">//註冊進入mediator</span></span><br><span class="line">pm.Register(teamType.DESIGN, ds);</span><br><span class="line">pm.Register(teamType.ENGINEERING, eg);</span><br><span class="line">pm.Register(teamType.MARKETING, mk);</span><br><span class="line">pm.Register(teamType.SERVICE, sv);</span><br><span class="line"></span><br><span class="line"><span class="comment">//執行</span></span><br><span class="line">ds.send(teamType.ENGINEERING, <span class="string">&quot;UI設計稿完成&quot;</span>);</span><br><span class="line">Console.WriteLine(String.Concat(Enumerable.Repeat(<span class="string">&quot;-&quot;</span>, <span class="number">10</span>)));</span><br><span class="line"></span><br><span class="line">eg.send(teamType.MARKETING, <span class="string">&quot;軟體開發完成&quot;</span>);</span><br><span class="line">Console.WriteLine(String.Concat(Enumerable.Repeat(<span class="string">&quot;-&quot;</span>, <span class="number">10</span>)));</span><br><span class="line"></span><br><span class="line">Console.ReadKey();</span><br></pre></td></tr></table></figure>
-
-<p><strong>結果</strong><br><img data-src="/images/posts/mediator-pattern/result.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<h2 id="疑問"><a href="#疑問" class="headerlink" title="疑問"></a>疑問</h2><ol>
-<li>DI不也是讓物件間解耦嗎？他們有什麼不同？<ol>
-<li>應用場景不同：Mediator模式主要用於解耦合多個相互協作的物件，特別是在複雜的互動場景中。DI則主要用於管理和注入依賴關係，以實現鬆耦合和可測試的程式碼。</li>
-<li>解決不同問題：Mediator解決的是物件之間的協作和通信問題，而DI解決的是依賴關係管理的問題。</li>
-<li>實現方式不同：Mediator需要一個中介者來協調物件之間的互動，通常由一個專門的Mediator類別來實現。DI則是一種設計模式，它可以與不同語言和框架一起使用，並不需要特定的中介者類別。</li>
-</ol>
-</li>
-</ol>
-<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><ul>
-<li>定義:<br>  定義一個 Mediator 物件用來封裝一組物件的互動方式。Mediator 藉由避免物件間相互直接的引用，從而降低它們之間的耦合程度，並且可以讓我們獨立地改變這些物件間的互動方式。</li>
-<li>成員<ul>
-<li>抽象Mediator: 定義方法, 轉接訊息</li>
-<li>具體Mediator: 實作抽象Mediator, Colleague (擁有0~多個Colleague)</li>
-<li>抽象Colleague: 定義方法, 聚合抽象Mediator (Colleague擁有Mediator)</li>
-<li>具體Colleague: 實作抽象Mediator</li>
-</ul>
-</li>
-<li>優點 <ol>
-<li>降低物件之間的耦合性，讓物件容易重複使用。</li>
-<li>物件之間一對多的關聯性變成一對一，提高系統靈活性，也讓整體容易維護及擴充。</li>
-</ol>
-</li>
-<li>缺點 (Trade-off)<ol>
-<li>同事類別過多時，中介者責任很大，會使系統提升一定程度的複雜性。</li>
-</ol>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>OOP</category>
-        <category>Design Pattern</category>
-      </categories>
-      <tags>
-        <tag>OOP</tag>
-        <tag>.NET C#</tag>
-        <tag>design-pattern</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>AWS Global Infrastructure</title>
     <url>/posts/3777980008/</url>
     <content><![CDATA[<h1 id="Exploring-the-AWS-Global-Infrastructure"><a href="#Exploring-the-AWS-Global-Infrastructure" class="headerlink" title="Exploring the AWS Global Infrastructure"></a>Exploring the AWS Global Infrastructure</h1><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>In today’s digital landscape, ensuring the fault tolerance, stability, and high availability of applications is paramount. Amazon Web Services (AWS) provides a robust global infrastructure designed to meet these needs. This article explores the key components of the AWS global infrastructure, including Regions, Availability Zones, Local Zones, and Points of Presence.</p>
@@ -1389,194 +1389,6 @@ style="width: 70%; margin: 15px auto;"></p>
       <tags>
         <tag>cloud</tag>
         <tag>networking</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>[AWS-CPE] Database and Storage</title>
-    <url>/posts/3982951460/</url>
-    <content><![CDATA[<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Storage refers to the preservation of digital data in a form that can be accessed by a computer system. It comes in various types, such as hard drives, solid-state drives, USB flash drives, and cloud storage. These storage devices can hold data temporarily or permanently.</p>
-<p>Databases, on the other hand, are structured systems for organizing, storing, and retrieving data. They allow for efficient data management and can handle large amounts of information systematically. Databases can be relational, where data is stored in tables and relationships can be defined between these tables, or non-relational (NoSQL), which are more flexible and can store unstructured data. The management of databases is handled through database management systems (DBMS), which provide tools for creating, querying, updating, and administering the database.</p>
-<span id="more"></span>
-
-<h1 id="Outline"><a href="#Outline" class="headerlink" title="Outline"></a>Outline</h1><p>In this article, we will talk about the database and storage service in AWS. This article is based on the courses on the AWS SkillBuilder platform. (Module5)</p>
-<ul>
-<li>Summarize the basic concept of storage and databases.</li>
-<li>Describe the benefits of Amazon Elastic Block Store (Amazon EBS).</li>
-<li>Describe the benefits of Amazon Simple Storage Service (Amazon S3).</li>
-<li>Describe the benefits of Amazon Elastic File System (Amazon EFS).</li>
-<li>Summarize various storage solutions.</li>
-<li>Describe the benefits of Amazon Relational Database Service (Amazon RDS).</li>
-<li>Describe the benefits of Amazon DynamoDB.</li>
-<li>Summarize various database services.</li>
-</ul>
-<h1 id="Amazon-EBS-Instance-Stores-and-Amazon-Elastic-Block-Store"><a href="#Amazon-EBS-Instance-Stores-and-Amazon-Elastic-Block-Store" class="headerlink" title="Amazon EBS (Instance Stores and Amazon Elastic Block Store)"></a>Amazon EBS (Instance Stores and Amazon Elastic Block Store)</h1><h2 id="Instance-Stores-provide"><a href="#Instance-Stores-provide" class="headerlink" title="Instance Stores provide"></a>Instance Stores provide</h2><p>  <strong>temporary block-level storage for Amazon EC2 (Elastic Compute Cloud) instances.</strong> This storage is physically <strong>attached to the host machine</strong> where the instance runs, offering high performance and low latency. However, data on instance stores is ephemeral; it <strong>persists only as long as the instance is running</strong> and is lost if the instance is stopped, terminated, or if the underlying physical drive fails.</p>
-<p>Block Store: (changed only by block)<br><img data-src="/images/posts/cloud/database-and-storage/block.png"></img> </p>
-<p>Instance Store:<br><img data-src="/images/posts/cloud/database-and-storage/instance-store.png"></img></p>
-<h2 id="Amazon-Elastic-Block-Store-Amazon-EBS"><a href="#Amazon-Elastic-Block-Store-Amazon-EBS" class="headerlink" title="Amazon Elastic Block Store (Amazon EBS)"></a>Amazon Elastic Block Store (Amazon EBS)</h2><p>  EBS, in contrast, offers <strong>persistent block storage volumes</strong> for use with EC2 instances. EBS volumes are <strong>network-attached and persist independently of the life of an instance</strong>. This means that EBS volumes can be detached from one instance and attached to another, and their data remains intact even after the instance is stopped or terminated. EBS provides various volume types that cater to different use cases, such as high throughput or high IOPS (input&#x2F;output operations per second), and is designed for both high availability and durability.</p>
-<p>EBS Settings:<br><img data-src="/images/posts/cloud/database-and-storage/ebs-config.png"></img></p>
-<p>EBS:<br><img data-src="/images/posts/cloud/database-and-storage/ebs.png"></img></p>
-<h2 id="Snapshot"><a href="#Snapshot" class="headerlink" title="Snapshot"></a>Snapshot</h2><ul>
-<li>A snapshot in the context of cloud computing, particularly with Amazon Elastic Block Store (Amazon EBS), is a point-in-time backup of an EBS volume. It captures the exact state of a volume at the time the snapshot is taken and is stored in Amazon S3 (Simple Storage Service) for durability. Snapshots are incremental, meaning only the blocks on the device that have changed after your most recent snapshot are saved, which optimizes both the time required to create the snapshot and the space used on storage.</li>
-<li>Snapshots are widely used for data backup, archiving, and disaster recovery purposes. They can also be used to create new EBS volumes, clone existing volumes, or transfer data across AWS regions. Snapshots are a key feature in ensuring data durability and recoverability in cloud environments.</li>
-<li><img data-src="/images/posts/cloud/database-and-storage/snapshot.png"></img></li>
-</ul>
-<h2 id="Quick-Quiz"><a href="#Quick-Quiz" class="headerlink" title="Quick Quiz"></a>Quick Quiz</h2><ul>
-<li><img data-src="/images/posts/cloud/database-and-storage/ebs-quiz.png"></img></li>
-</ul>
-<h1 id="Amazon-S3-Amazon-Simple-Storage-Service"><a href="#Amazon-S3-Amazon-Simple-Storage-Service" class="headerlink" title="Amazon S3 (Amazon Simple Storage Service)"></a>Amazon S3 (Amazon Simple Storage Service)</h1><p>Amazon S3 (Simple Storage Service) is a scalable, high-speed, web-based cloud storage service designed for online backup and archiving of data and application programs. S3 provides an object storage format, which differs from traditional file systems or block storage. Data is stored as objects within buckets, and each object consists of the file itself and metadata containing a globally unique identifier and other information. S3 is widely recognized for its durability, availability, and scalability.<br><img data-src="/images/posts/cloud/database-and-storage/obj-storage.png"></img></p>
-<ul>
-<li>Key features of S3 include:<ul>
-<li>Buckets: Containers for storage of any amount of data at any time. Each bucket is identified by a unique, user-defined name.</li>
-<li>Objects: Files or blobs of data that are stored in buckets. Objects are identified within a bucket by a unique, user-assigned key.</li>
-<li>Scalability: Ability to store and retrieve any amount of data, from small files to large datasets, at any time.</li>
-<li>Data Availability and Durability: Designed for 99.999999999% (11 9’s) of durability, ensuring data protection against losses.</li>
-<li>Security: Supports various mechanisms to control access to data, including AWS Identity and Access Management (IAM), bucket policies, and Access Control Lists (ACLs).</li>
-<li>Versioning: Allows multiple variants of an object to be stored in the same bucket, useful for backup and recovery.<br><img width="60%" data-src="/images/posts/cloud/database-and-storage/aws-s3-store.png"></img></li>
-</ul>
-</li>
-</ul>
-<p>S3 is widely used in a variety of applications such as website hosting, data backup, and a backend storage for services such as Amazon EC2, Amazon EBS, and Amazon RDS.</p>
-<h2 id="Types-of-AWS-S3"><a href="#Types-of-AWS-S3" class="headerlink" title="Types of AWS S3"></a>Types of AWS S3</h2><ol>
-<li>S3 Standard:<br>Use Case: Frequently accessed data.<br>Characteristics: Offers high durability, availability, and performance with low latency and high throughput.</li>
-<li>S3 Intelligent-Tiering:<br>Use Case: Data with unknown or changing access patterns.<br>Characteristics: Automatically moves data between two access tiers — frequent and infrequent access — based on changing access patterns, optimizing costs without performance impact.</li>
-<li>S3 Standard-Infrequent Access (S3 Standard-IA):<br>Use Case: Less frequently accessed data, but requires rapid access when needed.<br>Characteristics: Lower storage cost compared to S3 Standard, but with a retrieval fee.</li>
-<li>S3 One Zone-Infrequent Access (S3 One Zone-IA):<br>Use Case: For data that is infrequently accessed and does not require the multiple Availability Zone data resilience.<br>Characteristics: Stores data in a single Availability Zone, making it less expensive than S3 Standard-IA.</li>
-<li>S3 Glacier:<br>Use Case: Archiving data that is rarely accessed.<br>Characteristics: Offers very low storage cost but has higher retrieval times and fees. Suitable for data archiving and long-term backup.</li>
-<li>S3 Glacier Deep Archive:<br>Use Case: Long-term storage of data that is accessed once or twice a year.<br>Characteristics: AWS’s lowest-cost storage class and supports long-term retention and digital preservation for data that may be accessed once or twice a year.</li>
-</ol>
-<h2 id="Quick-Quiz-1"><a href="#Quick-Quiz-1" class="headerlink" title="Quick Quiz"></a>Quick Quiz</h2><ul>
-<li><img data-src="/images/posts/cloud/database-and-storage/s3-quiz.png"></img></li>
-</ul>
-<h1 id="Amazon-EFS-Amazon-Elastic-File-System"><a href="#Amazon-EFS-Amazon-Elastic-File-System" class="headerlink" title="Amazon EFS (Amazon Elastic File System)"></a>Amazon EFS (Amazon Elastic File System)</h1><p>AWS EFS is a cloud-based file storage service for applications that require <strong>shared file storage accessible by multiple EC2 instances</strong>. EFS is scalable and elastic, providing a simple interface that allows storage capacity to <strong>grow or shrink automatically</strong> as files are added or removed. It uses the NFS (Network File System) protocol and can be mounted on several instances simultaneously, making it ideal for applications that need common data access for multiple servers, such as content management systems and web serving.</p>
-<ul>
-<li>Differences between AWS EFS and AWS EBS:</li>
-</ul>
-<ol>
-<li>Storage Type:<br>EFS is a file-level storage service that operates on the NFS protocol, allowing simultaneous access from multiple EC2 instances.<br>EBS is a block-level storage service attached to a single EC2 instance at a time, used like a traditional drive.</li>
-<li>Scalability:<br>EFS automatically scales its capacity up or down as you add or remove files, with no need for manual intervention or provisioning.<br>EBS requires manual management of capacity. You must choose the volume size ahead of time, though you can resize it, the process is not automatic.</li>
-<li>Use Case:<br>EFS is ideal for use cases where multiple instances need to access a common file system concurrently, such as web applications and content management systems.<br>EBS is better suited for use cases requiring dedicated, single-instance storage, such as databases or any application needing consistent block-level storage.</li>
-<li>Performance:<br>EFS offers scalable performance, but with slightly higher latency due to its network-based nature.<br>EBS provides high performance with lower latency, especially with provisioned IOPS volumes for I&#x2F;O-intensive applications.</li>
-<li>Data Durability and Availability:<br>EFS is designed to be highly durable and available, storing data across multiple Availability Zones automatically.<br>EBS volumes are tied to a specific Availability Zone; however, you can take snapshots and replicate them to other zones for higher availability and durability.</li>
-</ol>
-<h1 id="Amazon-RDS-Amazon-Relational-Database-Service"><a href="#Amazon-RDS-Amazon-Relational-Database-Service" class="headerlink" title="Amazon RDS (Amazon Relational Database Service)"></a>Amazon RDS (Amazon Relational Database Service)</h1><p>AWS RDS is a managed relational database service that simplifies the setup, operation, and scaling of a relational database in the cloud. It provides cost-efficient and resizable capacity while automating time-consuming administration tasks such as hardware provisioning, database setup, patching, and backups. RDS allows you to focus on your applications so you can give them the fast performance, high availability, security, and compatibility they need.</p>
-<h2 id="Amazon-RDS-database-engines"><a href="#Amazon-RDS-database-engines" class="headerlink" title="Amazon RDS database engines"></a>Amazon RDS database engines</h2><p>Amazon RDS is available on six database engines, which optimize for memory, performance, or input&#x2F;output (I&#x2F;O). Supported database engines include:</p>
-<ul>
-<li>Amazon Aurora</li>
-<li>PostgreSQL</li>
-<li>MySQL</li>
-<li>MariaDB</li>
-<li>Oracle Database</li>
-<li>Microsoft SQL Server</li>
-</ul>
-<h2 id="Amazon-Aurora"><a href="#Amazon-Aurora" class="headerlink" title="Amazon Aurora"></a>Amazon Aurora</h2><p>Amazon Aurora is an enterprise-class relational database. It is compatible with MySQL and PostgreSQL relational databases. It is up to five times faster than standard MySQL databases and up to three times faster than standard PostgreSQL databases.</p>
-<p>Amazon Aurora helps to reduce your database costs by reducing unnecessary input&#x2F;output (I&#x2F;O) operations, while ensuring that your database resources remain reliable and available. </p>
-<p>Consider Amazon Aurora if your workloads require high availability. It replicates six copies of your data across three Availability Zones and continuously backs up your data to Amazon S3.</p>
-<h1 id="Amazon-DynamoDB"><a href="#Amazon-DynamoDB" class="headerlink" title="Amazon DynamoDB"></a>Amazon DynamoDB</h1><p>AWS DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability. DynamoDB lets you offload the administrative burdens of operating and scaling a distributed database, so you do not have to worry about <strong>hardware provisioning, setup and configuration, replication, software patching, or cluster scaling</strong>.</p>
-<p><img width="60%" data-src="/images/posts/cloud/database-and-storage/dydb.png"></img></p>
-<h2 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h2><p>Amazon DynamoDB is a key-value database service. It delivers single-digit millisecond performance at any scale. Here are 2 important features of Amazon DynamoDB.</p>
-<ul>
-<li>Serverless<ul>
-<li>DynamoDB is serverless, which means that you do not have to provision, patch, or manage servers.</li>
-<li>You also do not have to install, maintain, or operate software.</li>
-</ul>
-</li>
-<li>Automatic Scaling<ul>
-<li>As the size of your database shrinks or grows, DynamoDB automatically scales to adjust for changes in capacity while maintaining consistent performance. </li>
-<li>This makes it a suitable choice for use cases that require high performance while scaling.</li>
-</ul>
-</li>
-</ul>
-<h2 id="Amazon-RDS-VS-Amazon-DynamoDB"><a href="#Amazon-RDS-VS-Amazon-DynamoDB" class="headerlink" title="Amazon RDS VS. Amazon DynamoDB"></a>Amazon RDS VS. Amazon DynamoDB</h2><p><img width="60%" data-src="/images/posts/cloud/database-and-storage/rds-dydb1.png"></img><br><img width="60%" data-src="/images/posts/cloud/database-and-storage/rds-dydb2.png"></img></p>
-<ul>
-<li>Database Type<ul>
-<li>RDS: Relational database service supporting SQL queries and complex transactions, suitable for structured data.</li>
-<li>DynamoDB: NoSQL database service optimized for high performance and scalability, handling key-value and document data.</li>
-</ul>
-</li>
-<li>Use Cases<ul>
-<li>RDS: Ideal for applications requiring complex queries and transactional integrity, such as business software and reporting systems.</li>
-<li>DynamoDB: Best for applications needing fast access, massive scalability, like mobile apps, gaming platforms, and IoT systems.</li>
-</ul>
-</li>
-<li>Performance and Scalability<ul>
-<li>RDS: Scalable vertically (upgrading server resources); performance relies on SQL optimization.</li>
-<li>DynamoDB: Automatically scalable horizontally, offering consistent single-digit millisecond latency at any scale.</li>
-</ul>
-</li>
-<li>Management<ul>
-<li>RDS: Requires some management for scaling and backups.</li>
-<li>DynamoDB: Fully managed, with automatic scaling, partitioning, and replication.</li>
-</ul>
-</li>
-<li>Pricing<ul>
-<li>RDS: Charges based on compute, storage, and additional features like backups and replication.</li>
-<li>DynamoDB: Pricing based on throughput, storage, and optional features like data streaming.</li>
-</ul>
-</li>
-</ul>
-<p>Conclusion: Choose RDS for complex relational databases and DynamoDB for high-performance, scalable, simple data structure needs. Each has its strengths depending on the application’s requirements.</p>
-<h2 id="Quick-Quiz-2"><a href="#Quick-Quiz-2" class="headerlink" title="Quick Quiz"></a>Quick Quiz</h2><p><img data-src="/images/posts/cloud/database-and-storage/dydb-quiz.png"></img></p>
-<h1 id="Amazon-Redshift"><a href="#Amazon-Redshift" class="headerlink" title="Amazon Redshift"></a>Amazon Redshift</h1><p>AWS Redshift is a <strong>fully managed, petabyte-scale data warehouse service</strong> in the cloud. It provides fast query performance by using <strong>columnar</strong> storage technology to improve I&#x2F;O efficiency and parallelizing queries across multiple nodes. </p>
-<h2 id="What-is-Data-Warehouse"><a href="#What-is-Data-Warehouse" class="headerlink" title="What is Data Warehouse?"></a>What is Data Warehouse?</h2><p>A Data Warehouse is a system used for <strong>reporting and data analysis</strong>, and is considered a core component of business intelligence. It is designed to enable and support business decisions by <strong>consolidating, aggregating, and organizing data from multiple sources into a central repository</strong>. This repository is structured specifically for query and analysis, often using historical data derived from transaction data, but it can include data from other sources.</p>
-<p>Data warehouses support various data analysis tools, such as online analytical processing (OLAP) and data mining. The primary function of a data warehouse is to enable data analysis and support decision-making. It acts as a central repository where information is stored and can be retrieved from multiple sources, making it a valuable resource for gaining insight into the functioning and performance of an organization over time.</p>
-<h1 id="AWS-DMS-AWS-Database-Migration-Service"><a href="#AWS-DMS-AWS-Database-Migration-Service" class="headerlink" title="AWS DMS (AWS Database Migration Service)"></a>AWS DMS (AWS Database Migration Service)</h1><p>AWS Database Migration Service (AWS DMS) is a cloud service that makes it easier for you to migrate relational databases, data warehouses, NoSQL databases, and other types of data stores to AWS. DMS can also be used to migrate data between on-premises databases, between different AWS cloud services, or between a combination of cloud and on-premises setups.</p>
-<p><img data-src="/images/posts/cloud/database-and-storage/dms.png"></img></p>
-<h2 id="2-Processes-Heterogeneous-Database"><a href="#2-Processes-Heterogeneous-Database" class="headerlink" title="2 Processes (Heterogeneous Database)"></a>2 Processes (Heterogeneous Database)</h2><p>AWS Schema Conversion Tool to make the schema structures and database code to match the target DB<br><img data-src="/images/posts/cloud/database-and-storage/dms-proc1.png"></img></p>
-<p>AWS DMS to migrate<br><img data-src="/images/posts/cloud/database-and-storage/dms.png"></img></p>
-<h2 id="Use-Cases"><a href="#Use-Cases" class="headerlink" title="Use Cases"></a>Use Cases</h2><ul>
-<li>Development and test database migrations<ul>
-<li>Enabling developers to test applications against production data without affecting production users</li>
-<li><img data-src="/images/posts/cloud/database-and-storage/dms-dev-mig.png"></img></li>
-</ul>
-</li>
-<li>Database consolidation<ul>
-<li>Combining several databases into a single database</li>
-<li><img data-src="/images/posts/cloud/database-and-storage/dms-con.png"></img></li>
-</ul>
-</li>
-<li>Continuous replication<ul>
-<li>Sending ongoing copies of your data to other target sources instead of doing a one-time migration</li>
-<li><img data-src="/images/posts/cloud/database-and-storage/dms-rep.png"></img></li>
-</ul>
-</li>
-</ul>
-<h1 id="Additional-Database-Services"><a href="#Additional-Database-Services" class="headerlink" title="Additional Database Services"></a>Additional Database Services</h1><p>Selecting the appropriate database and storage solutions is crucial for meeting specific business needs without compromising on functionality. AWS offers a range of specialized database services tailored to unique business requirements.</p>
-<h2 id="Specialized-AWS-Database-Services"><a href="#Specialized-AWS-Database-Services" class="headerlink" title="Specialized AWS Database Services"></a>Specialized AWS Database Services</h2><ul>
-<li><p>Amazon DocumentDB<br>Ideal for content-heavy applications such as content management systems, catalogs, and user profiles, Amazon DocumentDB supports complex document storage needs.</p>
-</li>
-<li><p>Amazon Neptune<br>Amazon Neptune is a graph database designed for managing intricate data relationships efficiently, suitable for social networks, recommendation systems, and fraud detection.</p>
-</li>
-<li><p>Amazon Managed Blockchain and Amazon QLDB<br>For applications requiring immutable records, such as in supply chain or financial sectors, Amazon QLDB provides a secure, immutable ledger system, whereas Amazon Managed Blockchain introduces a decentralized blockchain solution.</p>
-</li>
-<li><p>Performance Enhancement Options<br>Amazon ElastiCache<br>Improves database read times significantly, offering caching solutions like Memcached and Redis to enhance performance without maintenance overhead.</p>
-</li>
-<li><p>DAX (DynamoDB Accelerator)<br>A native caching layer for DynamoDB, DAX boosts read performance dramatically, making it ideal for applications requiring speedy data retrieval.</p>
-</li>
-</ul>
-<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><ul>
-<li>Elastic Block Store (EBS): Provides persistent block storage volumes for EC2 instances, ensuring local storage that is not ephemeral.</li>
-<li>Amazon S3: A robust object storage service that allows users to store and retrieve vast amounts of data easily via a user interface or API.</li>
-<li>Database Options: Explored relational databases available on AWS for structured data management and DynamoDB for key-value pair, non-relational workloads.</li>
-<li>Elastic File System (EFS): Offers a simple, scalable file storage solution for use with AWS Cloud services and on-premises resources.</li>
-<li>Amazon Redshift: Serves as a fully managed data warehouse that provides powerful and fast data analysis across your datasets.</li>
-<li>Database Migration Service (DMS): Facilitates the migration of your databases to AWS, ensuring seamless data transfer with minimal downtime.</li>
-<li>Specialized Storage Services: Briefly covered less commonly known services like Amazon DocumentDB, Neptune, QLDB, and Amazon Managed Blockchain for specific use cases.</li>
-<li>Caching Solutions: Discussed the use of Amazon ElastiCache and DynamoDB Accelerator to improve the performance of database reads.</li>
-</ul>
-<h1 id="Quiz"><a href="#Quiz" class="headerlink" title="Quiz"></a>Quiz</h1><ul>
-<li><img data-src="/images/posts/cloud/database-and-storage/q1.png"></img></li>
-<li><img data-src="/images/posts/cloud/database-and-storage/q2.png"></img></li>
-<li><img data-src="/images/posts/cloud/database-and-storage/q3.png"></img></li>
-<li><img data-src="/images/posts/cloud/database-and-storage/q4.png"></img></li>
-<li><img data-src="/images/posts/cloud/database-and-storage/q5.png"></img></li>
-</ul>
-<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference:"></a>Reference:</h1><ul>
-<li>AWS SkillBuilder CPE Course Module5</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>cloud</tag>
-        <tag>aws</tag>
       </tags>
   </entry>
   <entry>
@@ -2191,6 +2003,194 @@ style="width: 70%; margin: 15px auto;"></p>
       </tags>
   </entry>
   <entry>
+    <title>[AWS-CPE] Database and Storage</title>
+    <url>/posts/3982951460/</url>
+    <content><![CDATA[<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Storage refers to the preservation of digital data in a form that can be accessed by a computer system. It comes in various types, such as hard drives, solid-state drives, USB flash drives, and cloud storage. These storage devices can hold data temporarily or permanently.</p>
+<p>Databases, on the other hand, are structured systems for organizing, storing, and retrieving data. They allow for efficient data management and can handle large amounts of information systematically. Databases can be relational, where data is stored in tables and relationships can be defined between these tables, or non-relational (NoSQL), which are more flexible and can store unstructured data. The management of databases is handled through database management systems (DBMS), which provide tools for creating, querying, updating, and administering the database.</p>
+<span id="more"></span>
+
+<h1 id="Outline"><a href="#Outline" class="headerlink" title="Outline"></a>Outline</h1><p>In this article, we will talk about the database and storage service in AWS. This article is based on the courses on the AWS SkillBuilder platform. (Module5)</p>
+<ul>
+<li>Summarize the basic concept of storage and databases.</li>
+<li>Describe the benefits of Amazon Elastic Block Store (Amazon EBS).</li>
+<li>Describe the benefits of Amazon Simple Storage Service (Amazon S3).</li>
+<li>Describe the benefits of Amazon Elastic File System (Amazon EFS).</li>
+<li>Summarize various storage solutions.</li>
+<li>Describe the benefits of Amazon Relational Database Service (Amazon RDS).</li>
+<li>Describe the benefits of Amazon DynamoDB.</li>
+<li>Summarize various database services.</li>
+</ul>
+<h1 id="Amazon-EBS-Instance-Stores-and-Amazon-Elastic-Block-Store"><a href="#Amazon-EBS-Instance-Stores-and-Amazon-Elastic-Block-Store" class="headerlink" title="Amazon EBS (Instance Stores and Amazon Elastic Block Store)"></a>Amazon EBS (Instance Stores and Amazon Elastic Block Store)</h1><h2 id="Instance-Stores-provide"><a href="#Instance-Stores-provide" class="headerlink" title="Instance Stores provide"></a>Instance Stores provide</h2><p>  <strong>temporary block-level storage for Amazon EC2 (Elastic Compute Cloud) instances.</strong> This storage is physically <strong>attached to the host machine</strong> where the instance runs, offering high performance and low latency. However, data on instance stores is ephemeral; it <strong>persists only as long as the instance is running</strong> and is lost if the instance is stopped, terminated, or if the underlying physical drive fails.</p>
+<p>Block Store: (changed only by block)<br><img data-src="/images/posts/cloud/database-and-storage/block.png"></img> </p>
+<p>Instance Store:<br><img data-src="/images/posts/cloud/database-and-storage/instance-store.png"></img></p>
+<h2 id="Amazon-Elastic-Block-Store-Amazon-EBS"><a href="#Amazon-Elastic-Block-Store-Amazon-EBS" class="headerlink" title="Amazon Elastic Block Store (Amazon EBS)"></a>Amazon Elastic Block Store (Amazon EBS)</h2><p>  EBS, in contrast, offers <strong>persistent block storage volumes</strong> for use with EC2 instances. EBS volumes are <strong>network-attached and persist independently of the life of an instance</strong>. This means that EBS volumes can be detached from one instance and attached to another, and their data remains intact even after the instance is stopped or terminated. EBS provides various volume types that cater to different use cases, such as high throughput or high IOPS (input&#x2F;output operations per second), and is designed for both high availability and durability.</p>
+<p>EBS Settings:<br><img data-src="/images/posts/cloud/database-and-storage/ebs-config.png"></img></p>
+<p>EBS:<br><img data-src="/images/posts/cloud/database-and-storage/ebs.png"></img></p>
+<h2 id="Snapshot"><a href="#Snapshot" class="headerlink" title="Snapshot"></a>Snapshot</h2><ul>
+<li>A snapshot in the context of cloud computing, particularly with Amazon Elastic Block Store (Amazon EBS), is a point-in-time backup of an EBS volume. It captures the exact state of a volume at the time the snapshot is taken and is stored in Amazon S3 (Simple Storage Service) for durability. Snapshots are incremental, meaning only the blocks on the device that have changed after your most recent snapshot are saved, which optimizes both the time required to create the snapshot and the space used on storage.</li>
+<li>Snapshots are widely used for data backup, archiving, and disaster recovery purposes. They can also be used to create new EBS volumes, clone existing volumes, or transfer data across AWS regions. Snapshots are a key feature in ensuring data durability and recoverability in cloud environments.</li>
+<li><img data-src="/images/posts/cloud/database-and-storage/snapshot.png"></img></li>
+</ul>
+<h2 id="Quick-Quiz"><a href="#Quick-Quiz" class="headerlink" title="Quick Quiz"></a>Quick Quiz</h2><ul>
+<li><img data-src="/images/posts/cloud/database-and-storage/ebs-quiz.png"></img></li>
+</ul>
+<h1 id="Amazon-S3-Amazon-Simple-Storage-Service"><a href="#Amazon-S3-Amazon-Simple-Storage-Service" class="headerlink" title="Amazon S3 (Amazon Simple Storage Service)"></a>Amazon S3 (Amazon Simple Storage Service)</h1><p>Amazon S3 (Simple Storage Service) is a scalable, high-speed, web-based cloud storage service designed for online backup and archiving of data and application programs. S3 provides an object storage format, which differs from traditional file systems or block storage. Data is stored as objects within buckets, and each object consists of the file itself and metadata containing a globally unique identifier and other information. S3 is widely recognized for its durability, availability, and scalability.<br><img data-src="/images/posts/cloud/database-and-storage/obj-storage.png"></img></p>
+<ul>
+<li>Key features of S3 include:<ul>
+<li>Buckets: Containers for storage of any amount of data at any time. Each bucket is identified by a unique, user-defined name.</li>
+<li>Objects: Files or blobs of data that are stored in buckets. Objects are identified within a bucket by a unique, user-assigned key.</li>
+<li>Scalability: Ability to store and retrieve any amount of data, from small files to large datasets, at any time.</li>
+<li>Data Availability and Durability: Designed for 99.999999999% (11 9’s) of durability, ensuring data protection against losses.</li>
+<li>Security: Supports various mechanisms to control access to data, including AWS Identity and Access Management (IAM), bucket policies, and Access Control Lists (ACLs).</li>
+<li>Versioning: Allows multiple variants of an object to be stored in the same bucket, useful for backup and recovery.<br><img width="60%" data-src="/images/posts/cloud/database-and-storage/aws-s3-store.png"></img></li>
+</ul>
+</li>
+</ul>
+<p>S3 is widely used in a variety of applications such as website hosting, data backup, and a backend storage for services such as Amazon EC2, Amazon EBS, and Amazon RDS.</p>
+<h2 id="Types-of-AWS-S3"><a href="#Types-of-AWS-S3" class="headerlink" title="Types of AWS S3"></a>Types of AWS S3</h2><ol>
+<li>S3 Standard:<br>Use Case: Frequently accessed data.<br>Characteristics: Offers high durability, availability, and performance with low latency and high throughput.</li>
+<li>S3 Intelligent-Tiering:<br>Use Case: Data with unknown or changing access patterns.<br>Characteristics: Automatically moves data between two access tiers — frequent and infrequent access — based on changing access patterns, optimizing costs without performance impact.</li>
+<li>S3 Standard-Infrequent Access (S3 Standard-IA):<br>Use Case: Less frequently accessed data, but requires rapid access when needed.<br>Characteristics: Lower storage cost compared to S3 Standard, but with a retrieval fee.</li>
+<li>S3 One Zone-Infrequent Access (S3 One Zone-IA):<br>Use Case: For data that is infrequently accessed and does not require the multiple Availability Zone data resilience.<br>Characteristics: Stores data in a single Availability Zone, making it less expensive than S3 Standard-IA.</li>
+<li>S3 Glacier:<br>Use Case: Archiving data that is rarely accessed.<br>Characteristics: Offers very low storage cost but has higher retrieval times and fees. Suitable for data archiving and long-term backup.</li>
+<li>S3 Glacier Deep Archive:<br>Use Case: Long-term storage of data that is accessed once or twice a year.<br>Characteristics: AWS’s lowest-cost storage class and supports long-term retention and digital preservation for data that may be accessed once or twice a year.</li>
+</ol>
+<h2 id="Quick-Quiz-1"><a href="#Quick-Quiz-1" class="headerlink" title="Quick Quiz"></a>Quick Quiz</h2><ul>
+<li><img data-src="/images/posts/cloud/database-and-storage/s3-quiz.png"></img></li>
+</ul>
+<h1 id="Amazon-EFS-Amazon-Elastic-File-System"><a href="#Amazon-EFS-Amazon-Elastic-File-System" class="headerlink" title="Amazon EFS (Amazon Elastic File System)"></a>Amazon EFS (Amazon Elastic File System)</h1><p>AWS EFS is a cloud-based file storage service for applications that require <strong>shared file storage accessible by multiple EC2 instances</strong>. EFS is scalable and elastic, providing a simple interface that allows storage capacity to <strong>grow or shrink automatically</strong> as files are added or removed. It uses the NFS (Network File System) protocol and can be mounted on several instances simultaneously, making it ideal for applications that need common data access for multiple servers, such as content management systems and web serving.</p>
+<ul>
+<li>Differences between AWS EFS and AWS EBS:</li>
+</ul>
+<ol>
+<li>Storage Type:<br>EFS is a file-level storage service that operates on the NFS protocol, allowing simultaneous access from multiple EC2 instances.<br>EBS is a block-level storage service attached to a single EC2 instance at a time, used like a traditional drive.</li>
+<li>Scalability:<br>EFS automatically scales its capacity up or down as you add or remove files, with no need for manual intervention or provisioning.<br>EBS requires manual management of capacity. You must choose the volume size ahead of time, though you can resize it, the process is not automatic.</li>
+<li>Use Case:<br>EFS is ideal for use cases where multiple instances need to access a common file system concurrently, such as web applications and content management systems.<br>EBS is better suited for use cases requiring dedicated, single-instance storage, such as databases or any application needing consistent block-level storage.</li>
+<li>Performance:<br>EFS offers scalable performance, but with slightly higher latency due to its network-based nature.<br>EBS provides high performance with lower latency, especially with provisioned IOPS volumes for I&#x2F;O-intensive applications.</li>
+<li>Data Durability and Availability:<br>EFS is designed to be highly durable and available, storing data across multiple Availability Zones automatically.<br>EBS volumes are tied to a specific Availability Zone; however, you can take snapshots and replicate them to other zones for higher availability and durability.</li>
+</ol>
+<h1 id="Amazon-RDS-Amazon-Relational-Database-Service"><a href="#Amazon-RDS-Amazon-Relational-Database-Service" class="headerlink" title="Amazon RDS (Amazon Relational Database Service)"></a>Amazon RDS (Amazon Relational Database Service)</h1><p>AWS RDS is a managed relational database service that simplifies the setup, operation, and scaling of a relational database in the cloud. It provides cost-efficient and resizable capacity while automating time-consuming administration tasks such as hardware provisioning, database setup, patching, and backups. RDS allows you to focus on your applications so you can give them the fast performance, high availability, security, and compatibility they need.</p>
+<h2 id="Amazon-RDS-database-engines"><a href="#Amazon-RDS-database-engines" class="headerlink" title="Amazon RDS database engines"></a>Amazon RDS database engines</h2><p>Amazon RDS is available on six database engines, which optimize for memory, performance, or input&#x2F;output (I&#x2F;O). Supported database engines include:</p>
+<ul>
+<li>Amazon Aurora</li>
+<li>PostgreSQL</li>
+<li>MySQL</li>
+<li>MariaDB</li>
+<li>Oracle Database</li>
+<li>Microsoft SQL Server</li>
+</ul>
+<h2 id="Amazon-Aurora"><a href="#Amazon-Aurora" class="headerlink" title="Amazon Aurora"></a>Amazon Aurora</h2><p>Amazon Aurora is an enterprise-class relational database. It is compatible with MySQL and PostgreSQL relational databases. It is up to five times faster than standard MySQL databases and up to three times faster than standard PostgreSQL databases.</p>
+<p>Amazon Aurora helps to reduce your database costs by reducing unnecessary input&#x2F;output (I&#x2F;O) operations, while ensuring that your database resources remain reliable and available. </p>
+<p>Consider Amazon Aurora if your workloads require high availability. It replicates six copies of your data across three Availability Zones and continuously backs up your data to Amazon S3.</p>
+<h1 id="Amazon-DynamoDB"><a href="#Amazon-DynamoDB" class="headerlink" title="Amazon DynamoDB"></a>Amazon DynamoDB</h1><p>AWS DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability. DynamoDB lets you offload the administrative burdens of operating and scaling a distributed database, so you do not have to worry about <strong>hardware provisioning, setup and configuration, replication, software patching, or cluster scaling</strong>.</p>
+<p><img width="60%" data-src="/images/posts/cloud/database-and-storage/dydb.png"></img></p>
+<h2 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h2><p>Amazon DynamoDB is a key-value database service. It delivers single-digit millisecond performance at any scale. Here are 2 important features of Amazon DynamoDB.</p>
+<ul>
+<li>Serverless<ul>
+<li>DynamoDB is serverless, which means that you do not have to provision, patch, or manage servers.</li>
+<li>You also do not have to install, maintain, or operate software.</li>
+</ul>
+</li>
+<li>Automatic Scaling<ul>
+<li>As the size of your database shrinks or grows, DynamoDB automatically scales to adjust for changes in capacity while maintaining consistent performance. </li>
+<li>This makes it a suitable choice for use cases that require high performance while scaling.</li>
+</ul>
+</li>
+</ul>
+<h2 id="Amazon-RDS-VS-Amazon-DynamoDB"><a href="#Amazon-RDS-VS-Amazon-DynamoDB" class="headerlink" title="Amazon RDS VS. Amazon DynamoDB"></a>Amazon RDS VS. Amazon DynamoDB</h2><p><img width="60%" data-src="/images/posts/cloud/database-and-storage/rds-dydb1.png"></img><br><img width="60%" data-src="/images/posts/cloud/database-and-storage/rds-dydb2.png"></img></p>
+<ul>
+<li>Database Type<ul>
+<li>RDS: Relational database service supporting SQL queries and complex transactions, suitable for structured data.</li>
+<li>DynamoDB: NoSQL database service optimized for high performance and scalability, handling key-value and document data.</li>
+</ul>
+</li>
+<li>Use Cases<ul>
+<li>RDS: Ideal for applications requiring complex queries and transactional integrity, such as business software and reporting systems.</li>
+<li>DynamoDB: Best for applications needing fast access, massive scalability, like mobile apps, gaming platforms, and IoT systems.</li>
+</ul>
+</li>
+<li>Performance and Scalability<ul>
+<li>RDS: Scalable vertically (upgrading server resources); performance relies on SQL optimization.</li>
+<li>DynamoDB: Automatically scalable horizontally, offering consistent single-digit millisecond latency at any scale.</li>
+</ul>
+</li>
+<li>Management<ul>
+<li>RDS: Requires some management for scaling and backups.</li>
+<li>DynamoDB: Fully managed, with automatic scaling, partitioning, and replication.</li>
+</ul>
+</li>
+<li>Pricing<ul>
+<li>RDS: Charges based on compute, storage, and additional features like backups and replication.</li>
+<li>DynamoDB: Pricing based on throughput, storage, and optional features like data streaming.</li>
+</ul>
+</li>
+</ul>
+<p>Conclusion: Choose RDS for complex relational databases and DynamoDB for high-performance, scalable, simple data structure needs. Each has its strengths depending on the application’s requirements.</p>
+<h2 id="Quick-Quiz-2"><a href="#Quick-Quiz-2" class="headerlink" title="Quick Quiz"></a>Quick Quiz</h2><p><img data-src="/images/posts/cloud/database-and-storage/dydb-quiz.png"></img></p>
+<h1 id="Amazon-Redshift"><a href="#Amazon-Redshift" class="headerlink" title="Amazon Redshift"></a>Amazon Redshift</h1><p>AWS Redshift is a <strong>fully managed, petabyte-scale data warehouse service</strong> in the cloud. It provides fast query performance by using <strong>columnar</strong> storage technology to improve I&#x2F;O efficiency and parallelizing queries across multiple nodes. </p>
+<h2 id="What-is-Data-Warehouse"><a href="#What-is-Data-Warehouse" class="headerlink" title="What is Data Warehouse?"></a>What is Data Warehouse?</h2><p>A Data Warehouse is a system used for <strong>reporting and data analysis</strong>, and is considered a core component of business intelligence. It is designed to enable and support business decisions by <strong>consolidating, aggregating, and organizing data from multiple sources into a central repository</strong>. This repository is structured specifically for query and analysis, often using historical data derived from transaction data, but it can include data from other sources.</p>
+<p>Data warehouses support various data analysis tools, such as online analytical processing (OLAP) and data mining. The primary function of a data warehouse is to enable data analysis and support decision-making. It acts as a central repository where information is stored and can be retrieved from multiple sources, making it a valuable resource for gaining insight into the functioning and performance of an organization over time.</p>
+<h1 id="AWS-DMS-AWS-Database-Migration-Service"><a href="#AWS-DMS-AWS-Database-Migration-Service" class="headerlink" title="AWS DMS (AWS Database Migration Service)"></a>AWS DMS (AWS Database Migration Service)</h1><p>AWS Database Migration Service (AWS DMS) is a cloud service that makes it easier for you to migrate relational databases, data warehouses, NoSQL databases, and other types of data stores to AWS. DMS can also be used to migrate data between on-premises databases, between different AWS cloud services, or between a combination of cloud and on-premises setups.</p>
+<p><img data-src="/images/posts/cloud/database-and-storage/dms.png"></img></p>
+<h2 id="2-Processes-Heterogeneous-Database"><a href="#2-Processes-Heterogeneous-Database" class="headerlink" title="2 Processes (Heterogeneous Database)"></a>2 Processes (Heterogeneous Database)</h2><p>AWS Schema Conversion Tool to make the schema structures and database code to match the target DB<br><img data-src="/images/posts/cloud/database-and-storage/dms-proc1.png"></img></p>
+<p>AWS DMS to migrate<br><img data-src="/images/posts/cloud/database-and-storage/dms.png"></img></p>
+<h2 id="Use-Cases"><a href="#Use-Cases" class="headerlink" title="Use Cases"></a>Use Cases</h2><ul>
+<li>Development and test database migrations<ul>
+<li>Enabling developers to test applications against production data without affecting production users</li>
+<li><img data-src="/images/posts/cloud/database-and-storage/dms-dev-mig.png"></img></li>
+</ul>
+</li>
+<li>Database consolidation<ul>
+<li>Combining several databases into a single database</li>
+<li><img data-src="/images/posts/cloud/database-and-storage/dms-con.png"></img></li>
+</ul>
+</li>
+<li>Continuous replication<ul>
+<li>Sending ongoing copies of your data to other target sources instead of doing a one-time migration</li>
+<li><img data-src="/images/posts/cloud/database-and-storage/dms-rep.png"></img></li>
+</ul>
+</li>
+</ul>
+<h1 id="Additional-Database-Services"><a href="#Additional-Database-Services" class="headerlink" title="Additional Database Services"></a>Additional Database Services</h1><p>Selecting the appropriate database and storage solutions is crucial for meeting specific business needs without compromising on functionality. AWS offers a range of specialized database services tailored to unique business requirements.</p>
+<h2 id="Specialized-AWS-Database-Services"><a href="#Specialized-AWS-Database-Services" class="headerlink" title="Specialized AWS Database Services"></a>Specialized AWS Database Services</h2><ul>
+<li><p>Amazon DocumentDB<br>Ideal for content-heavy applications such as content management systems, catalogs, and user profiles, Amazon DocumentDB supports complex document storage needs.</p>
+</li>
+<li><p>Amazon Neptune<br>Amazon Neptune is a graph database designed for managing intricate data relationships efficiently, suitable for social networks, recommendation systems, and fraud detection.</p>
+</li>
+<li><p>Amazon Managed Blockchain and Amazon QLDB<br>For applications requiring immutable records, such as in supply chain or financial sectors, Amazon QLDB provides a secure, immutable ledger system, whereas Amazon Managed Blockchain introduces a decentralized blockchain solution.</p>
+</li>
+<li><p>Performance Enhancement Options<br>Amazon ElastiCache<br>Improves database read times significantly, offering caching solutions like Memcached and Redis to enhance performance without maintenance overhead.</p>
+</li>
+<li><p>DAX (DynamoDB Accelerator)<br>A native caching layer for DynamoDB, DAX boosts read performance dramatically, making it ideal for applications requiring speedy data retrieval.</p>
+</li>
+</ul>
+<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><ul>
+<li>Elastic Block Store (EBS): Provides persistent block storage volumes for EC2 instances, ensuring local storage that is not ephemeral.</li>
+<li>Amazon S3: A robust object storage service that allows users to store and retrieve vast amounts of data easily via a user interface or API.</li>
+<li>Database Options: Explored relational databases available on AWS for structured data management and DynamoDB for key-value pair, non-relational workloads.</li>
+<li>Elastic File System (EFS): Offers a simple, scalable file storage solution for use with AWS Cloud services and on-premises resources.</li>
+<li>Amazon Redshift: Serves as a fully managed data warehouse that provides powerful and fast data analysis across your datasets.</li>
+<li>Database Migration Service (DMS): Facilitates the migration of your databases to AWS, ensuring seamless data transfer with minimal downtime.</li>
+<li>Specialized Storage Services: Briefly covered less commonly known services like Amazon DocumentDB, Neptune, QLDB, and Amazon Managed Blockchain for specific use cases.</li>
+<li>Caching Solutions: Discussed the use of Amazon ElastiCache and DynamoDB Accelerator to improve the performance of database reads.</li>
+</ul>
+<h1 id="Quiz"><a href="#Quiz" class="headerlink" title="Quiz"></a>Quiz</h1><ul>
+<li><img data-src="/images/posts/cloud/database-and-storage/q1.png"></img></li>
+<li><img data-src="/images/posts/cloud/database-and-storage/q2.png"></img></li>
+<li><img data-src="/images/posts/cloud/database-and-storage/q3.png"></img></li>
+<li><img data-src="/images/posts/cloud/database-and-storage/q4.png"></img></li>
+<li><img data-src="/images/posts/cloud/database-and-storage/q5.png"></img></li>
+</ul>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference:"></a>Reference:</h1><ul>
+<li>AWS SkillBuilder CPE Course Module5</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>cloud</tag>
+        <tag>aws</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Understanding AWS Networking: VGW, VPC Endpoints, and Security Groups</title>
     <url>/posts/3294285798/</url>
     <content><![CDATA[<h1 id="Understanding-AWS-Networking-VGW-VPC-Endpoints-and-Security-Groups"><a href="#Understanding-AWS-Networking-VGW-VPC-Endpoints-and-Security-Groups" class="headerlink" title="Understanding AWS Networking: VGW, VPC Endpoints, and Security Groups"></a>Understanding AWS Networking: VGW, VPC Endpoints, and Security Groups</h1><p>When working with Amazon Web Services (AWS), understanding the various networking components is crucial for designing secure and efficient architectures. In this article, we will explore three key concepts: Virtual Private Gateway (VGW), VPC Endpoints, and Security Groups.</p>
@@ -2254,115 +2254,6 @@ style="width: 70%; margin: 15px auto;"></p>
 <h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><p><span class="exturl" data-url="aHR0cHM6Ly9nb2RsZW9uLmdpdGh1Yi5pby9ibG9nL0FXUy9BV1MtU09BLVZQQy8=">AWS SOA 學習筆記 - VPC(Virtual Private Cloud)<i class="fa fa-external-link-alt"></i></span></p>
 ]]></content>
       <tags>
-        <tag>cloud computing</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Understanding Networking in AWS</title>
-    <url>/posts/3613028504/</url>
-    <content><![CDATA[<h2 id="The-Foundational-Role-of-a-VPC-in-AWS-Cloud-Networking"><a href="#The-Foundational-Role-of-a-VPC-in-AWS-Cloud-Networking" class="headerlink" title="The Foundational Role of a VPC in AWS Cloud Networking"></a>The Foundational Role of a VPC in AWS Cloud Networking</h2><p>A <strong>Virtual Private Cloud (VPC)</strong> in Amazon Web Services (AWS) serves as the cornerstone of your AWS network infrastructure. It enables you to launch AWS resources in a logically isolated virtual network that you define. This virtual network closely mirrors a traditional network you would operate in your data center, benefiting from the scalability and flexibility of AWS’s cloud infrastructure.</p>
-<p><img data-src="/images/posts/cloud/vpc/structure.png"></img><br>source: <span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmF3cy5hbWF6b24uY29tL3ZwYy9sYXRlc3QvdXNlcmd1aWRlL3ZwYy1leGFtcGxlLXByaXZhdGUtc3VibmV0cy1uYXQuaHRtbA==">https://docs.aws.amazon.com/vpc/latest/userguide/vpc-example-private-subnets-nat.html<i class="fa fa-external-link-alt"></i></span></p>
-<span id="more"></span>
-
-<h3 id="Key-Components-and-Concepts-of-VPC"><a href="#Key-Components-and-Concepts-of-VPC" class="headerlink" title="Key Components and Concepts of VPC"></a>Key Components and Concepts of VPC</h3><p><strong>1. Subnets:</strong></p>
-<ul>
-<li>Subnets are subdivisions within your VPC, each representing a range of IP addresses within the VPC. They help organize and isolate resources within different availability zones for high availability.</li>
-</ul>
-<p><strong>2. Internet Gateway:</strong></p>
-<ul>
-<li>An Internet Gateway is a horizontally scaled, redundant, and highly available VPC component that allows communication between instances in your VPC and the internet. It serves as a target in your VPC route tables for internet-routable traffic.</li>
-</ul>
-<p><strong>3. Route Tables:</strong></p>
-<ul>
-<li>Route tables contain a set of rules, called routes, that determine where network traffic is directed. Each subnet in your VPC must be associated with a route table, which controls the routing for the subnet.</li>
-</ul>
-<p><strong>4. Security Groups:</strong></p>
-<ul>
-<li>Security Groups act as virtual firewalls for your instances to control inbound and outbound traffic. They are stateful, meaning they track the state of network connections passing through them, allowing responses to outbound traffic automatically.</li>
-</ul>
-<p><strong>5. Network ACLs (Access Control Lists):</strong></p>
-<ul>
-<li>Network ACLs provide an additional layer of security at the subnet level, controlling inbound and outbound traffic to and from subnets. Unlike security groups, network ACLs are stateless, meaning they evaluate each packet that crosses the subnet boundary.</li>
-</ul>
-<p><strong>6. VPC Peering:</strong></p>
-<ul>
-<li>VPC Peering allows you to route traffic between VPCs using private IP addresses, facilitating communication between VPCs in the same or different AWS accounts and regions.</li>
-</ul>
-<p><strong>7. Transit Gateway:</strong></p>
-<ul>
-<li>AWS Transit Gateway acts as a central hub to connect multiple VPCs and on-premises networks. It simplifies network management by consolidating and controlling the routing between these environments.</li>
-</ul>
-<p><strong>8. AWS PrivateLink:</strong></p>
-<ul>
-<li>AWS PrivateLink enables private connectivity between VPCs, AWS services, and on-premises applications without exposing traffic to the public internet. This enhances security by keeping traffic within the AWS network.</li>
-</ul>
-<h3 id="Connecting-Your-AWS-Networking-Environment-to-the-Internet"><a href="#Connecting-Your-AWS-Networking-Environment-to-the-Internet" class="headerlink" title="Connecting Your AWS Networking Environment to the Internet"></a>Connecting Your AWS Networking Environment to the Internet</h3><p>To connect your VPC to the internet, you need to:</p>
-<p><strong>1. Attach an Internet Gateway:</strong></p>
-<ul>
-<li>Attach an Internet Gateway to your VPC. This provides a target for internet-bound traffic from instances within your VPC.</li>
-</ul>
-<p><strong>2. Update Route Tables:</strong></p>
-<ul>
-<li>Add routes to your route tables that direct internet-bound traffic to the Internet Gateway.</li>
-</ul>
-<p><strong>3. Assign Public IP Addresses:</strong></p>
-<ul>
-<li>Ensure that instances that need to communicate with the internet have public IP addresses or Elastic IP addresses.</li>
-</ul>
-<p><strong>4. Configure Security Groups and Network ACLs:</strong></p>
-<ul>
-<li>Modify the inbound and outbound rules of your security groups and network ACLs to allow the necessary traffic to flow to and from the internet.</li>
-</ul>
-<h3 id="Isolating-Resources-Within-Your-AWS-Networking-Environment"><a href="#Isolating-Resources-Within-Your-AWS-Networking-Environment" class="headerlink" title="Isolating Resources Within Your AWS Networking Environment"></a>Isolating Resources Within Your AWS Networking Environment</h3><p>Isolation of resources within your AWS networking environment can be achieved through several strategies:</p>
-<p><strong>1. Subnets:</strong></p>
-<ul>
-<li>Create public and private subnets to separate resources that need direct internet access from those that don’t. For example, public subnets can house web servers, while private subnets can house database servers.</li>
-</ul>
-<p><strong>2. Security Groups:</strong></p>
-<ul>
-<li>Configure security groups to control traffic to and from specific instances based on IP address, protocol, and port.</li>
-</ul>
-<p><strong>3. Network ACLs:</strong></p>
-<ul>
-<li>Use network ACLs to provide an additional layer of stateless traffic filtering at the subnet level.</li>
-</ul>
-<p><strong>4. VPC Peering and Transit Gateways:</strong></p>
-<ul>
-<li>Use VPC Peering or Transit Gateways to connect isolated VPCs while maintaining control over the traffic flow between them.</li>
-</ul>
-<h3 id="Creating-a-VPC-with-Subnets-an-Internet-Gateway-Route-Tables-and-Security-Groups"><a href="#Creating-a-VPC-with-Subnets-an-Internet-Gateway-Route-Tables-and-Security-Groups" class="headerlink" title="Creating a VPC with Subnets, an Internet Gateway, Route Tables, and Security Groups"></a>Creating a VPC with Subnets, an Internet Gateway, Route Tables, and Security Groups</h3><p>Here is a step-by-step outline to create a VPC and configure its components:</p>
-<p><strong>1. Create a VPC:</strong></p>
-<ul>
-<li>Define your VPC with a specified IPv4 CIDR block.</li>
-</ul>
-<p><strong>2. Create Subnets:</strong></p>
-<ul>
-<li>Create public and private subnets within different availability zones to enhance fault tolerance.</li>
-</ul>
-<p><strong>3. Attach an Internet Gateway:</strong></p>
-<ul>
-<li>Attach an Internet Gateway to your VPC to allow internet access.</li>
-</ul>
-<p><strong>4. Update Route Tables:</strong></p>
-<ul>
-<li>Create route tables and associate them with your subnets. Add a route in the public subnet’s route table to direct internet-bound traffic to the Internet Gateway.</li>
-</ul>
-<p><strong>5. Configure Security Groups:</strong></p>
-<ul>
-<li>Create and configure security groups to control inbound and outbound traffic to your instances. For example, allow HTTP and HTTPS traffic for web servers, and limit SSH access to specific IP addresses.</li>
-</ul>
-<p><strong>6. Deploy Instances:</strong></p>
-<ul>
-<li>Launch EC2 instances within your subnets, applying the appropriate security groups and configuring their IP addresses as needed.</li>
-</ul>
-<p>By following these steps and understanding these concepts, you can effectively set up and manage a secure and scalable networking environment in AWS.</p>
-<h3 id="References"><a href="#References" class="headerlink" title="References"></a>References</h3><ul>
-<li><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmF3cy5hbWF6b24uY29tL3ZwYy9sYXRlc3QvdXNlcmd1aWRlL3doYXQtaXMtYW1hem9uLXZwYy5odG1s">AWS Documentation on Amazon VPC<i class="fa fa-external-link-alt"></i></span>.</li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmF3cy5hbWF6b24uY29tL3ZwYy9sYXRlc3QvdXNlcmd1aWRlL3ZwYy1leGFtcGxlLXByaXZhdGUtc3VibmV0cy1uYXQuaHRtbA==">Example: VPC with servers in private subnets and NAT<i class="fa fa-external-link-alt"></i></span></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>aws</tag>
         <tag>cloud computing</tag>
       </tags>
   </entry>
@@ -2651,6 +2542,115 @@ style="width: 70%; margin: 15px auto;"></p>
       </tags>
   </entry>
   <entry>
+    <title>Understanding Networking in AWS</title>
+    <url>/posts/3613028504/</url>
+    <content><![CDATA[<h2 id="The-Foundational-Role-of-a-VPC-in-AWS-Cloud-Networking"><a href="#The-Foundational-Role-of-a-VPC-in-AWS-Cloud-Networking" class="headerlink" title="The Foundational Role of a VPC in AWS Cloud Networking"></a>The Foundational Role of a VPC in AWS Cloud Networking</h2><p>A <strong>Virtual Private Cloud (VPC)</strong> in Amazon Web Services (AWS) serves as the cornerstone of your AWS network infrastructure. It enables you to launch AWS resources in a logically isolated virtual network that you define. This virtual network closely mirrors a traditional network you would operate in your data center, benefiting from the scalability and flexibility of AWS’s cloud infrastructure.</p>
+<p><img data-src="/images/posts/cloud/vpc/structure.png"></img><br>source: <span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmF3cy5hbWF6b24uY29tL3ZwYy9sYXRlc3QvdXNlcmd1aWRlL3ZwYy1leGFtcGxlLXByaXZhdGUtc3VibmV0cy1uYXQuaHRtbA==">https://docs.aws.amazon.com/vpc/latest/userguide/vpc-example-private-subnets-nat.html<i class="fa fa-external-link-alt"></i></span></p>
+<span id="more"></span>
+
+<h3 id="Key-Components-and-Concepts-of-VPC"><a href="#Key-Components-and-Concepts-of-VPC" class="headerlink" title="Key Components and Concepts of VPC"></a>Key Components and Concepts of VPC</h3><p><strong>1. Subnets:</strong></p>
+<ul>
+<li>Subnets are subdivisions within your VPC, each representing a range of IP addresses within the VPC. They help organize and isolate resources within different availability zones for high availability.</li>
+</ul>
+<p><strong>2. Internet Gateway:</strong></p>
+<ul>
+<li>An Internet Gateway is a horizontally scaled, redundant, and highly available VPC component that allows communication between instances in your VPC and the internet. It serves as a target in your VPC route tables for internet-routable traffic.</li>
+</ul>
+<p><strong>3. Route Tables:</strong></p>
+<ul>
+<li>Route tables contain a set of rules, called routes, that determine where network traffic is directed. Each subnet in your VPC must be associated with a route table, which controls the routing for the subnet.</li>
+</ul>
+<p><strong>4. Security Groups:</strong></p>
+<ul>
+<li>Security Groups act as virtual firewalls for your instances to control inbound and outbound traffic. They are stateful, meaning they track the state of network connections passing through them, allowing responses to outbound traffic automatically.</li>
+</ul>
+<p><strong>5. Network ACLs (Access Control Lists):</strong></p>
+<ul>
+<li>Network ACLs provide an additional layer of security at the subnet level, controlling inbound and outbound traffic to and from subnets. Unlike security groups, network ACLs are stateless, meaning they evaluate each packet that crosses the subnet boundary.</li>
+</ul>
+<p><strong>6. VPC Peering:</strong></p>
+<ul>
+<li>VPC Peering allows you to route traffic between VPCs using private IP addresses, facilitating communication between VPCs in the same or different AWS accounts and regions.</li>
+</ul>
+<p><strong>7. Transit Gateway:</strong></p>
+<ul>
+<li>AWS Transit Gateway acts as a central hub to connect multiple VPCs and on-premises networks. It simplifies network management by consolidating and controlling the routing between these environments.</li>
+</ul>
+<p><strong>8. AWS PrivateLink:</strong></p>
+<ul>
+<li>AWS PrivateLink enables private connectivity between VPCs, AWS services, and on-premises applications without exposing traffic to the public internet. This enhances security by keeping traffic within the AWS network.</li>
+</ul>
+<h3 id="Connecting-Your-AWS-Networking-Environment-to-the-Internet"><a href="#Connecting-Your-AWS-Networking-Environment-to-the-Internet" class="headerlink" title="Connecting Your AWS Networking Environment to the Internet"></a>Connecting Your AWS Networking Environment to the Internet</h3><p>To connect your VPC to the internet, you need to:</p>
+<p><strong>1. Attach an Internet Gateway:</strong></p>
+<ul>
+<li>Attach an Internet Gateway to your VPC. This provides a target for internet-bound traffic from instances within your VPC.</li>
+</ul>
+<p><strong>2. Update Route Tables:</strong></p>
+<ul>
+<li>Add routes to your route tables that direct internet-bound traffic to the Internet Gateway.</li>
+</ul>
+<p><strong>3. Assign Public IP Addresses:</strong></p>
+<ul>
+<li>Ensure that instances that need to communicate with the internet have public IP addresses or Elastic IP addresses.</li>
+</ul>
+<p><strong>4. Configure Security Groups and Network ACLs:</strong></p>
+<ul>
+<li>Modify the inbound and outbound rules of your security groups and network ACLs to allow the necessary traffic to flow to and from the internet.</li>
+</ul>
+<h3 id="Isolating-Resources-Within-Your-AWS-Networking-Environment"><a href="#Isolating-Resources-Within-Your-AWS-Networking-Environment" class="headerlink" title="Isolating Resources Within Your AWS Networking Environment"></a>Isolating Resources Within Your AWS Networking Environment</h3><p>Isolation of resources within your AWS networking environment can be achieved through several strategies:</p>
+<p><strong>1. Subnets:</strong></p>
+<ul>
+<li>Create public and private subnets to separate resources that need direct internet access from those that don’t. For example, public subnets can house web servers, while private subnets can house database servers.</li>
+</ul>
+<p><strong>2. Security Groups:</strong></p>
+<ul>
+<li>Configure security groups to control traffic to and from specific instances based on IP address, protocol, and port.</li>
+</ul>
+<p><strong>3. Network ACLs:</strong></p>
+<ul>
+<li>Use network ACLs to provide an additional layer of stateless traffic filtering at the subnet level.</li>
+</ul>
+<p><strong>4. VPC Peering and Transit Gateways:</strong></p>
+<ul>
+<li>Use VPC Peering or Transit Gateways to connect isolated VPCs while maintaining control over the traffic flow between them.</li>
+</ul>
+<h3 id="Creating-a-VPC-with-Subnets-an-Internet-Gateway-Route-Tables-and-Security-Groups"><a href="#Creating-a-VPC-with-Subnets-an-Internet-Gateway-Route-Tables-and-Security-Groups" class="headerlink" title="Creating a VPC with Subnets, an Internet Gateway, Route Tables, and Security Groups"></a>Creating a VPC with Subnets, an Internet Gateway, Route Tables, and Security Groups</h3><p>Here is a step-by-step outline to create a VPC and configure its components:</p>
+<p><strong>1. Create a VPC:</strong></p>
+<ul>
+<li>Define your VPC with a specified IPv4 CIDR block.</li>
+</ul>
+<p><strong>2. Create Subnets:</strong></p>
+<ul>
+<li>Create public and private subnets within different availability zones to enhance fault tolerance.</li>
+</ul>
+<p><strong>3. Attach an Internet Gateway:</strong></p>
+<ul>
+<li>Attach an Internet Gateway to your VPC to allow internet access.</li>
+</ul>
+<p><strong>4. Update Route Tables:</strong></p>
+<ul>
+<li>Create route tables and associate them with your subnets. Add a route in the public subnet’s route table to direct internet-bound traffic to the Internet Gateway.</li>
+</ul>
+<p><strong>5. Configure Security Groups:</strong></p>
+<ul>
+<li>Create and configure security groups to control inbound and outbound traffic to your instances. For example, allow HTTP and HTTPS traffic for web servers, and limit SSH access to specific IP addresses.</li>
+</ul>
+<p><strong>6. Deploy Instances:</strong></p>
+<ul>
+<li>Launch EC2 instances within your subnets, applying the appropriate security groups and configuring their IP addresses as needed.</li>
+</ul>
+<p>By following these steps and understanding these concepts, you can effectively set up and manage a secure and scalable networking environment in AWS.</p>
+<h3 id="References"><a href="#References" class="headerlink" title="References"></a>References</h3><ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmF3cy5hbWF6b24uY29tL3ZwYy9sYXRlc3QvdXNlcmd1aWRlL3doYXQtaXMtYW1hem9uLXZwYy5odG1s">AWS Documentation on Amazon VPC<i class="fa fa-external-link-alt"></i></span>.</li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmF3cy5hbWF6b24uY29tL3ZwYy9sYXRlc3QvdXNlcmd1aWRlL3ZwYy1leGFtcGxlLXByaXZhdGUtc3VibmV0cy1uYXQuaHRtbA==">Example: VPC with servers in private subnets and NAT<i class="fa fa-external-link-alt"></i></span></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>aws</tag>
+        <tag>cloud computing</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>[.NET][C#][Design Pattern] - Repository Pattern</title>
     <url>/posts/1822258245/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>這篇文章主要介紹何為Repository Pattern, 並如何在.NET C#中實作<br>並結合Unit Of Work Pattern, 讓程式對Repository解耦<br>這個design pattern可以說是踏入軟體架構的敲門磚<br>也算是非常常用的pattern, 實用性非常高</p>
@@ -2769,7 +2769,6 @@ source: https://arxiv.org/pdf/2302.05543
 
 <p>The previous section described how ControlNet controls individual neural network blocks. In the paper, the authors used Stable Diffusion as an example to explain how ControlNet can control large networks. The following figure shows that the process of controlling Stable Diffusion involves copying and training the encoder while using skip connections in the decoder.</p>
 <p>Before proceeding, it is important to note:<br>Stable Diffusion has a preprocessing step where a 512×512 image is converted to a 64×64 image before training(for computing efficient purpose). To ensure that the control conditions are also mapped to the 64×64 conditional space, a small network $\mathcal{E}$ is added during training to convert the image space conditions to feature map conditions.<br>$$c_f &#x3D; \mathcal{E}(c_i)$$<br>This network $\mathcal{E}$ is a four-layer convolutional neural network with 4×4 kernels, a stride of 2, and channels 16, 32, 64, 128, initialized with Gaussian weights. This network is jointly trained with the entire ControlNet.</p>
-<p>$$<br>\begin{array}{l}<br>c_f &#x3D; \mathcal{E}(c_i)<br>\end{array}<br>$$</p>
 <h1 id="Workflow-Wrapup"><a href="#Workflow-Wrapup" class="headerlink" title="Workflow Wrapup"></a>Workflow Wrapup</h1><ol>
 <li>Input Processing: ControlNet takes an additional input, such as a sketch or a pose, along with the standard textual input.</li>
 <li>Feature Extraction: It extracts features from the control signal using a separate encoder.</li>
