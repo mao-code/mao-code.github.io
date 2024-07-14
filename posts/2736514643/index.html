@@ -37,7 +37,7 @@
 <meta property="og:image" content="https://mao-code.github.io/images/posts/SD-series/controlnet/1.0.png">
 <meta property="og:image" content="https://mao-code.github.io/images/posts/SD-series/controlnet/sd_ctn.png">
 <meta property="article:published_time" content="2024-06-26T02:45:47.000Z">
-<meta property="article:modified_time" content="2024-06-29T15:08:11.041Z">
+<meta property="article:modified_time" content="2024-07-14T07:24:24.537Z">
 <meta property="article:author" content="Mao 勛哥">
 <meta property="article:tag" content="ML">
 <meta property="article:tag" content="AI">
@@ -280,7 +280,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新於</span>
-      <time title="修改時間：2024-06-29 23:08:11" itemprop="dateModified" datetime="2024-06-29T23:08:11+08:00">2024-06-29</time>
+      <time title="修改時間：2024-07-14 15:24:24" itemprop="dateModified" datetime="2024-07-14T15:24:24+08:00">2024-07-14</time>
     </span>
 
   
@@ -345,7 +345,7 @@ source: https://arxiv.org/abs/2302.05543
 <hr>
 <p>After initialization, the untrained ControlNet parameters should be as follows:</p>
 <!-- Math equation conflict: https://theme-next.js.org/docs/third-party-services/math-equations -->
-<p>$$<br>\left\{<br>    \begin{array}{l}<br>        \mathcal{Z}\left(\boldsymbol{c} ; \Theta_{\mathrm{z}1}\right) &#x3D; 0 \\<br>        \mathcal{F}\left(x + \mathcal{Z}\left(\boldsymbol{c} ; \Theta_{\mathrm{z}1}\right); \Theta_{\mathrm{c}}\right) &#x3D; \mathcal{F}\left(x ; \Theta_{\mathrm{c}}\right) &#x3D; \mathcal{F}(x ; \Theta) \\<br>        \mathcal{Z}\left(\mathcal{F}\left(x + \mathcal{Z}\left(\boldsymbol{c} ; \Theta_{\mathrm{z}1}\right); \Theta_{\mathrm{c}}\right); \Theta_{\mathrm{z}2}\right) &#x3D; \mathcal{Z}\left(\mathcal{F}\left(x ; \Theta_{\mathrm{c}}\right); \Theta_{\mathrm{z}2}\right) &#x3D; 0<br>    \end{array}<br>\right.<br>$$</p>
+<p>$$<br>\left\{<br>    \begin{array}{l}<br>        \mathcal{Z}\left(\boldsymbol{c} ; \Theta_{\mathrm{z}1}\right) &#x3D; 0 \\<br>        \\<br>        \mathcal{F}\left(x + \mathcal{Z}\left(\boldsymbol{c} ; \Theta_{\mathrm{z}1}\right); \Theta_{\mathrm{c}}\right) \\ &#x3D; \mathcal{F}\left(x ; \Theta_{\mathrm{c}}\right) \\ &#x3D; \mathcal{F}(x ; \Theta) \\<br>        \\<br>        \mathcal{Z}\left(\mathcal{F}\left(x + \mathcal{Z}\left(\boldsymbol{c} ; \Theta_{\mathrm{z}1}\right); \Theta_{\mathrm{c}}\right); \Theta_{\mathrm{z}2}\right) \\ &#x3D; \mathcal{Z}\left(\mathcal{F}\left(x ; \Theta_{\mathrm{c}}\right); \Theta_{\mathrm{z}2}\right) &#x3D; 0<br>    \end{array}<br>\right.<br>$$</p>
 <ul>
 <li>That is to say, when ControlNet is untrained, the output is 0, so the numbers added to the original network are also 0. </li>
 <li>This has no impact on the original network, ensuring that the performance of the original network is fully preserved. </li>
@@ -396,13 +396,13 @@ source: https://arxiv.org/pdf/2302.05543
       <div class="popular-posts-title"><a href="/posts/38266156/" rel="bookmark">[NLP][ML] Adapters & LoRA</a></div>
     </li>
     <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/posts/4283617483/" rel="bookmark">[NLP][ML] Transformer (1) - Structure</a></div>
+    </li>
+    <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/posts/2443192075/" rel="bookmark">[NLP][ML] Transformer (2) - Attention & Summary</a></div>
     </li>
     <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/posts/1255359463/" rel="bookmark">[NLP][ML] Transformer (3) - More conputational detail</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/4283617483/" rel="bookmark">[NLP][ML] Transformer (1) - Structure</a></div>
     </li>
     <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/posts/2312529159/" rel="bookmark">[NLP] MLLM(多模態LLM) 論文簡要欣賞</a></div>
