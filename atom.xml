@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>MaoXun(Michael)&#39;s blog</title>
   
-  <subtitle>程式技術交流</subtitle>
+  <subtitle>Sharing Programming Techniques and Research Contributions</subtitle>
   <link href="https://mao-code.github.io/atom.xml" rel="self"/>
   
   <link href="https://mao-code.github.io/"/>
