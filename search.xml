@@ -1,6 +1,215 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>[.NET][C#][SOLID] - DI &amp; IoC (依賴注入與控制反轉) 全面講解</title>
+    <url>/posts/3588979794/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>IoC (Inversion of Control) 控制反轉，與OOP SOLID原則中的其中一種設計原則有關，也就是其中的DIP(Dependency Inversion Principle)，是OOP一個非常重要的程式設計思想，對於軟體開發來說十分重要，下面我將<strong>十分詳細的介紹何為DIP、IoC以及DI、為何要使用它們以及如何實作</strong>，相信大家閱讀完會對這個重要的思想了解的更加透徹。</p>
+<span id="more"></span>
+<h2 id="定義"><a href="#定義" class="headerlink" title="定義"></a>定義</h2><p>DIP以簡單的一句話說明就是</p>
+<blockquote>
+<p><strong>DIP - Dependency Inversion Principle (依賴倒轉原則)</strong></p>
+<ul>
+<li>一種原則、思想</li>
+<li>高層次的模組不應該依賴低層的模組，低層次的模組也不應該依賴高層次的模組<br><strong>兩者都應該依賴抽象</strong></li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>IoC - Inversion of Control (控制反轉)</strong></p>
+<ul>
+<li>一種思想</li>
+<li>把對於某個物件的<strong>控制權</strong>移轉給<strong>第三方容器 (IoC Container)</strong></li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>DI - Dependency Injection (依賴注入)</strong></p>
+<ul>
+<li>一種設計模式</li>
+<li>將依賴通過<strong>注入</strong>的方式提供給需要的模組，是 IoC 與 DIP 的具體表現</li>
+<li>把被依賴物件注入被動接收物件中</li>
+</ul>
+</blockquote>
+<p>DIP的定義非常重要，請大家牢記在心。<br>也就是說，程式應該依賴抽象，而不是實作的實體，這可以幫助我們對程式之間解耦，能夠被更好地維護。<br>DI是為了實現DIP和IoC而誕生的實現方式，因此大家在使用物件導向的技巧時，<strong>務必清楚自己在做什麼，和為何這樣做</strong>。</p>
+<h2 id="好處-為什麼要使用？"><a href="#好處-為什麼要使用？" class="headerlink" title="好處&#x2F;為什麼要使用？"></a>好處&#x2F;為什麼要使用？</h2><p>在針對各個名詞解釋與實作之前，我想先讓各位了解DIP以及IoC帶來的好處。</p>
+<blockquote>
+<ol>
+<li>可維護性 (maintainability)</li>
+<li>寬鬆耦合 (loose coupling)</li>
+</ol>
+</blockquote>
+<ul>
+<li>所謂的<strong>可維護性</strong>，就是你在日<strong>後需要修改或更新程式的時候，所花費的時間和精力</strong>，如果修改起來很費時費力，那我們就說他可維護性低。</li>
+<li>所謂的耦合度，就是物件與物件間的依賴、相關程度，如果在A類內去new B，B類內又去new C，彼此相互直接依賴，這樣類別之間相互呼叫令彼此有所牽連，便是耦合(coupling)，物件關係越緊密，耦合度越高，耦合度高的程式碼，一旦有任何變動，容易發生<strong>連鎖反應，牽一髮動全身</strong>，因此龐大的軟體更應該考慮<strong>低耦合高內聚</strong>的設計方式。</li>
+</ul>
+<p>而DIP, IoC和DI可以<strong>讓程式之間解耦</strong>，提高程式的可維護性。<br>基本上「可維護性」和「寬鬆耦合」就是我們學習DIP, IoC和DI的原因</p>
+<p>下面我會一一介紹DIP, IoC以及DI，最後附上實際應用，即最後組合出來的結果。</p>
+<h2 id="DIP"><a href="#DIP" class="headerlink" title="DIP"></a>DIP</h2><blockquote>
+<p><strong>DIP - Dependency Inversion Principle(依賴倒轉原則)</strong></p>
+<ul>
+<li>一種原則、思想</li>
+<li>高層次的模組不應該依賴低層的模組，低層次的模組也不應該依賴高層次的模組<br><strong>兩者都應該依賴抽象</strong></li>
+</ul>
+</blockquote>
+<p>什麼意思呢？讓我們看看下面的範例：</p>
+<h3 id="簡單範例"><a href="#簡單範例" class="headerlink" title="簡單範例"></a>簡單範例</h3><figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Database</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Connect</span>()</span> &#123; <span class="comment">/* database connect logic */</span> &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Disconnect</span>()</span> &#123; <span class="comment">/* database disconnect logic */</span> &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">SaveData</span>(<span class="params"><span class="built_in">string</span> data</span>)</span> &#123; <span class="comment">/* database save data logic */</span> &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">DataAccess</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> Database _database = <span class="keyword">new</span> Database();</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">SaveData</span>(<span class="params"><span class="built_in">string</span> data</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _database.Connect();</span><br><span class="line">        _database.SaveData(data);</span><br><span class="line">        _database.Disconnect();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>上面的程式碼違反了DIP，因為DataAccess<strong>直接依賴</strong>了’Database’類別，如果Database做了任何變動，DataAccess也需要跟著變動，所有有用到關於Database的class也都需要跟著變動，因此，’DataAccess’ class應該依賴抽象的Interface，而不是具體的實作。</p>
+<hr>
+<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">IDatabase</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Connect</span>()</span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Disconnect</span>()</span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">SaveData</span>(<span class="params"><span class="built_in">string</span> data</span>)</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">SqlServerDatabase</span> : <span class="title">IDatabase</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Connect</span>()</span> &#123; <span class="comment">/* SQL Server database connect logic */</span> &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Disconnect</span>()</span> &#123; <span class="comment">/* SQL Server database disconnect logic */</span> &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">SaveData</span>(<span class="params"><span class="built_in">string</span> data</span>)</span> &#123; <span class="comment">/* SQL Server database save data logic */</span> &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">OracleDatabase</span> : <span class="title">IDatabase</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Connect</span>()</span> &#123; <span class="comment">/* Oracle database connect logic */</span> &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Disconnect</span>()</span> &#123; <span class="comment">/* Oracle database disconnect logic */</span> &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">SaveData</span>(<span class="params"><span class="built_in">string</span> data</span>)</span> &#123; <span class="comment">/* Oracle database save data logic */</span> &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">DataAccess</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> IDatabase _database;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">DataAccess</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        _database = <span class="keyword">new</span> SqlServerDatabase();</span><br><span class="line">        <span class="comment">//_database = new OracleDatabase(); 在這裡抽換</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">SaveData</span>(<span class="params"><span class="built_in">string</span> data</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _database.Connect();</span><br><span class="line">        _database.SaveData(data);</span><br><span class="line">        _database.Disconnect();</span><br><span class="line">    &#125;</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+<p>由上面的範例可知，我們定義了一個IDatabase，規範所有資料庫應該有的action，讓不同的實體Database去實作，而Program本身(DataAccess)，只需要去依賴、使用IDatabase，這樣一來就算未來我從SQL-Server DB遷移到Oracle DB，我<strong>只需要抽換IDatabase的實作實體</strong>(_database指標指向的實際記憶體)，DataAccess內部使用到IDatabase的程式碼一行都不用更改。</p>
+<p>但是，可以發現到，雖然透過依賴倒轉，可以改變為依賴抽象，<strong>但程式(DataAccess)本身還是需要new 出instance</strong>，也就是說程式本身(呼叫者)，對於依賴的控制流程具有主導權，這時就需要<strong>控制反轉</strong>。</p>
+<h2 id="IoC"><a href="#IoC" class="headerlink" title="IoC"></a>IoC</h2><blockquote>
+<ul>
+<li>把對於某個物件的<strong>控制權</strong>移轉給<strong>第三方容器 (IoC Container)</strong></li>
+</ul>
+</blockquote>
+<p>IoC 是一種設計原則或思想，它建議我們反轉物件導向設計中的各種控制，以達到各個類別間的解耦。這裡的 <strong>“控制”指的是除了一個類別本身的職責之外的其它所有工作</strong>，如整個軟體的流程控制，物件的依賴或創建等等。</p>
+<blockquote>
+<ul>
+<li>其實意思就是，一個類別本身除了<strong>本身的職責外，不應該擁有太多其他的工作 (SRP)</strong></li>
+<li>所以建議將這些對於物件的<strong>控制權(創建、實作實體抽換等等)<strong>，交給</strong>第三方容器</strong> (Framework or Library)。</li>
+<li>獲取資源的行為由”主動”轉為”被動”</li>
+<li><strong>程式(Application) 依賴物件的「控制流程 (Control Flow)」，由「主動」變成「被動」。就是「控制反轉」</strong></li>
+</ul>
+</blockquote>
+<p>下面這兩張圖簡單解釋了使用IoC後的依賴關係</p>
+<ul>
+<li><p>這是還沒使用IoC前，我們的應用程式直接依賴於實體類別<br><img data-src="/images/posts/DI-IoC/IoC1.png"></img></p>
+</li>
+<li><p>這個則是使用IoC後，透過IoC Container，將依賴實體注入至程式中，程式由原來主動的依賴變成被動的接收<br><img data-src="/images/posts/DI-IoC/IoC2.png"></img></p>
+</li>
+</ul>
+<p>好萊塢原則也很貼切的說明了控制反轉的情境</p>
+<blockquote>
+<p>Don’t call me, I’ll call you.</p>
+</blockquote>
+<h3 id="IoC-Container"><a href="#IoC-Container" class="headerlink" title="IoC Container"></a>IoC Container</h3><p>廣義上來說， IoC 容器，就是有進行「依賴注入」的地方，<br>你隨便寫一個類別，透過它將所需元件注入給高階模組，便可說是容器。<br>但現在所說的容器通常泛指那些<strong>強大的IoC框架所提供的容器</strong>。</p>
+<p>各位可以把IoC容器想像成是儲存一堆使用者<strong>註冊的依賴實體</strong>，IoC Container透過這些使用者註冊的資訊，知道程式需要這個instance並賦予給他，達到不需要修改高階模組的目的。<br>程式在<strong>執行的期間(Runtime)<strong>，需要依賴物件的實體，需要透過IoC Container注入給程式，使用的是</strong>反射原理(Reflection)</strong>-也就是透過程式碼的中間編譯檔，去讀取程式碼內部的資訊。</p>
+<p>下面這兩張圖則解釋了IoC如何利用IoC Container做到控制反轉的示意圖</p>
+<ul>
+<li><p>這個是沒有使用IoC框架時，高階模組主動的去建立所需要的低階模組 (資源)<br><img data-src="/images/posts/DI-IoC/IoC4.png"></img></p>
+</li>
+<li><p>這個則是使用了IoC框架，透過 <strong>「註冊 (Register)」</strong> 所需要的模組進IoC Container，藉由容器<strong>主動注入依賴實體</strong>進入高階模組<br><img data-src="/images/posts/DI-IoC/IoC3.png"></img></p>
+</li>
+</ul>
+<h3 id="簡單範例-1"><a href="#簡單範例-1" class="headerlink" title="簡單範例"></a>簡單範例</h3><p>這邊提供的簡單範例中，IoC Container用簡單的方式實作，實際上這些工作會交給第三方套件或框架完成，這邊使用簡單的方式實作給大家理解</p>
+<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">ILogger</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Log</span>(<span class="params"><span class="built_in">string</span> message</span>)</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ConsoleLogger</span> : <span class="title">ILogger</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Log</span>(<span class="params"><span class="built_in">string</span> message</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">$&quot;Log: <span class="subst">&#123;message&#125;</span>&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">UserService</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">readonly</span> ILogger _logger;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">UserService</span>(<span class="params">ILogger logger</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _logger = logger;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">CreateUser</span>(<span class="params"><span class="built_in">string</span> username, <span class="built_in">string</span> password</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _logger.Log(<span class="string">$&quot;Creating user <span class="subst">&#123;username&#125;</span>&quot;</span>);</span><br><span class="line">        <span class="comment">// Implementation to create a user</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="built_in">string</span>[] args</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        ILogger logger = <span class="keyword">new</span> ConsoleLogger();</span><br><span class="line">        UserService userService = <span class="keyword">new</span> UserService(logger);</span><br><span class="line">        userService.CreateUser(<span class="string">&quot;johndoe&quot;</span>, <span class="string">&quot;secret&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在這裡，<strong>Program就是我們的IoC Container</strong>，UserService依賴ILogger抽象，而透過註冊在Program中的資訊，讓<strong>Program主動將實際的依賴實體(ConsoleLogger物件)，注入到UserService的建構元中</strong>，也就是建構元注入，後面講到DI會再提到。<br><strong>之後如果有需要新的Logger，只需要創建並實作ILogger，再透過Program注入給UserService，UserService內部程式碼一行都不用更改。</strong></p>
+<h3 id="IoC與DIP的差別"><a href="#IoC與DIP的差別" class="headerlink" title="IoC與DIP的差別"></a>IoC與DIP的差別</h3><p>控制反轉(IoC)與依賴倒轉(DIP)兩者不相等！</p>
+<blockquote>
+<p>依賴倒轉，倒轉的是「依賴關係」<br>控制反轉，反轉的是程式依賴物件的「控制流程」</p>
+</blockquote>
+<h2 id="DI"><a href="#DI" class="headerlink" title="DI"></a>DI</h2><blockquote>
+<p>將依賴通過<strong>注入</strong>的方式提供給需要的模組，是 IoC 與 DIP 的具體表現<br>把被依賴物件注入被動接收物件中</p>
+</blockquote>
+<blockquote>
+<p><strong>程式或者開發者不必理會物件是如何產生、保持、至銷毀的生命週期</strong><br>在.NET的DI框架中，生命週期有三種，Transient、Scoped、Singleton，後面講解實作時會再談到。</p>
+</blockquote>
+<p>DI的背後思想主要是：</p>
+<blockquote>
+<ol>
+<li>為了保證DIP，一個類別應該只依賴抽象</li>
+<li>於是具體的實現必須透過某種方式”注入”到這個類別</li>
+<li>那麼依據IoC原則，最好透過第三方容器來做到這件事</li>
+</ol>
+</blockquote>
+<p>而DI又有主要的三種形式：</p>
+<blockquote>
+<ol>
+<li>建構元注入 (Constructor Injection)</li>
+<li>設值方法注入 (Setter Injection)</li>
+<li>介面注入 (Interface Injection)</li>
+</ol>
+</blockquote>
+<p>下面舉個簡單的範例</p>
+<h3 id="簡單範例-2"><a href="#簡單範例-2" class="headerlink" title="簡單範例"></a>簡單範例</h3><ol>
+<li>建構元注入 (Constructor Injection)<br>屬於最常見的注入方式，IoC Container將實體DI到呼叫者的建構元中，當呼叫者被new(建立)時，就會自動注入相關實體進入建構元。<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">ILogger</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Log</span>(<span class="params"><span class="built_in">string</span> message</span>)</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Logger</span> : <span class="title">ILogger</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Log</span>(<span class="params"><span class="built_in">string</span> message</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;Log: &quot;</span> + message);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">UserService</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">readonly</span> ILogger _logger;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">UserService</span>(<span class="params">ILogger logger</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _logger = logger;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">AddUser</span>(<span class="params"><span class="built_in">string</span> userName</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _logger.Log(<span class="string">&quot;User Added: &quot;</span> + userName);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+在這裡，當有人去new UserService時，IoC Container就會自動注入當初註冊的實體進入UserService的建構元。</li>
+</ol>
+<hr>
+<ol start="2">
+<li><p>設值方法注入 (Setter Injection)<br>透過setter method注入實體，他允許我們在呼叫者實體被創建後(instantiated)，才注入相關依賴實體。</p>
+<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">UserService</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> ILogger _logger;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> ILogger Logger</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">set</span> &#123; _logger = <span class="keyword">value</span>; &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">AddUser</span>(<span class="params"><span class="built_in">string</span> userName</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _logger.Log(<span class="string">&quot;User Added: &quot;</span> + userName);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>介面注入 (Interface Injection)<br>依賴透過Interface注入近實例中，這個Interface必須定義一個方法來注入依賴，再藉由實例去實作此介面，來實現具體的DI</p>
+<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">IUserService</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">AddUser</span>(<span class="params"><span class="built_in">string</span> userName</span>)</span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">SetLogger</span>(<span class="params">ILogger logger</span>)</span>; <span class="comment">// 定義注入依賴的方法</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">UserService</span> : <span class="title">IUserService</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> ILogger _logger;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">AddUser</span>(<span class="params"><span class="built_in">string</span> userName</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _logger.Log(<span class="string">&quot;User Added: &quot;</span> + userName);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">SetLogger</span>(<span class="params">ILogger logger</span>) <span class="comment">// 實際注入依賴</span></span></span><br><span class="line">    &#123;</span><br><span class="line">        _logger = logger;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="DIP、IoC與DI的結合-實際應用"><a href="#DIP、IoC與DI的結合-實際應用" class="headerlink" title="DIP、IoC與DI的結合 - 實際應用"></a>DIP、IoC與DI的結合 - 實際應用</h2><p>為大家總結一下上面講的各種名詞，用這張圖簡單概括<br>先讓大家釐清，DIP, IoC, DI, IoC Container之間的關係<br><img data-src="/images/posts/DI-IoC/sumup.png"></img></p>
+<h3 id="生活範例"><a href="#生活範例" class="headerlink" title="生活範例"></a>生活範例</h3><p>讓我們用在「餐廳煮東西」來舉例</p>
+<blockquote>
+<p>DIP: High-level modules should not depend on low-level modules. Both should depend on abstractions.</p>
+</blockquote>
+<p>在我們的例子中，<strong>廚師就是高階模組</strong>，而<strong>食材是低階模組</strong>，<ins>廚師不應該依賴於特定的食材</ins>，而是應該依賴於可以<ins>用來煮各種餐點的食材的抽象概念</ins>。</p>
+<hr>
+<blockquote>
+<p>Inversion of Control (IoC): The control of the flow of a program is inverted.</p>
+</blockquote>
+<p>在我們例子中，顧客點餐，廚師備餐，對於餐點準備的控制流程，<ins>顧客不控制備餐的流程，而是接受最終完成的餐點</ins>。</p>
+<hr>
+<blockquote>
+<p>IoC Container: A container that manages and controls the creation and life cycle of objects, and also injects their dependencies.</p>
+</blockquote>
+<p>在我們的例子中，可以把廚房想像成是IoC容器，他主管了各個食材、廚房用具的生命週期，並確保能夠提供廚師需要的食材或工具。</p>
+<hr>
+<blockquote>
+<p>Dependency Injection (DI): A technique for achieving IoC, where the objects are given their dependencies instead of creating them themselves.</p>
+</blockquote>
+<p>在我們的例子中，廚師是被提供食材的人（由廚房提供），而不是自己去尋找食材。</p>
+<h3 id="結合舉例"><a href="#結合舉例" class="headerlink" title="結合舉例"></a>結合舉例</h3><p>接下來我們接續上面的例子，透過程式的方式來講解上面的所有概念(DIP, IoC, IoC Container, DI)</p>
+<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">IChef</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Cook</span>()</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Chef</span> : <span class="title">IChef</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">readonly</span> IIngredients _ingredients;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Chef</span>(<span class="params">IIngredients ingredients</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _ingredients = ingredients;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Cook</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;Cooking with &quot;</span> + _ingredients.GetIngredients());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">IIngredients</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="built_in">string</span> <span class="title">GetIngredients</span>()</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Ingredients</span> : <span class="title">IIngredients</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="built_in">string</span> <span class="title">GetIngredients</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;Tomatoes, Onions, Garlic, and Spices&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title">Kitchen</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> IChef _chef;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> IIngredients _ingredients;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="title">Kitchen</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        _ingredients = <span class="keyword">new</span> Ingredients();</span><br><span class="line">        _chef = <span class="keyword">new</span> Chef(_ingredients);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> IChef <span class="title">GetChef</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> _chef;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="built_in">string</span>[] args</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">var</span> chef = Kitchen.GetChef();</span><br><span class="line">        chef.Cook();</span><br><span class="line">        Console.ReadLine();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>在上面的例子中，’IChef’介面和’Chef’類別遵守了<strong>DIP</strong>，因為他們依賴於抽象的’IIngredients’，而不是特定的食材實體。</li>
+<li>而’Chef’類別透過 <strong>「建構元注入」</strong> 的方式，給予’IIngredients’的依賴，而不是自己主動直接創建一個實體。</li>
+<li>‘Kitchen’ class則扮演IoC Container的角色，他管理了’Chef’和’Ingredients’的創建與生命週期，並注入’Ingredients’實體進入’Chef’的建構元中。</li>
+<li>而Main method可以當成是我們的Application，透過’Kitchen’獲取’Chef’實體，並呼叫Cook() method。</li>
+</ul>
+<h2 id="NET-C-實現"><a href="#NET-C-實現" class="headerlink" title=".NET C#實現"></a>.NET C#實現</h2><p>下面我將簡單使用.NET預設的DI框架(Microsoft.Extensions.DependencyInjection)來實現註冊依賴實體，與依賴注入。<br>其中還有一些進階的用法，像是把<ins>註冊相關的邏輯抽提出來寫成擴充方法</ins>，還有使用<ins>Attribute與反射來解決建構元注入太多的問題</ins>，但在這篇教學中先使用最簡單的方法實作，為的是讓各位先理解基本的概念與用法，進階用法會在之後的文章詳細介紹。</p>
+<h3 id="DI生命週期與註冊"><a href="#DI生命週期與註冊" class="headerlink" title="DI生命週期與註冊"></a>DI生命週期與註冊</h3><p>在.NET的預設DI框架中，註冊實體物件時可以指定其生命週期，分為三種（重要！）</p>
+<blockquote>
+<ol>
+<li>Transient (一次性) : <strong>每次注入時</strong>，都建立一個新的實體。</li>
+<li>Scoped (作用域) : <strong>每次的Request</strong>，都建立一個新的實體，同一個Request下，重複利用同一個實體 (這裡的Request 常指Http Request)。</li>
+<li>Singleton (單例) : 使用單例模式(Singleton Pattern)，<strong>從程式開始到結束</strong>，只建立一個實體，每次都重複利用同一個，直到程式被終止。</li>
+</ol>
+</blockquote>
+<h3 id="實作"><a href="#實作" class="headerlink" title="實作"></a>實作</h3><p>讓我們繼續以上面餐廳的例子實作<br>首先定義好相關的class與Interface，其中使用DIP我這邊就不特別提了</p>
+<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">IChef</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Cook</span>()</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Chef</span> : <span class="title">IChef</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">readonly</span> IIngredients _ingredients;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Chef</span>(<span class="params">IIngredients ingredients</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _ingredients = ingredients;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Cook</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;Cooking with &quot;</span> + _ingredients.GetIngredients());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">IIngredients</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="built_in">string</span> <span class="title">GetIngredients</span>()</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Ingredients</span> : <span class="title">IIngredients</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="built_in">string</span> <span class="title">GetIngredients</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;Tomatoes, Onions, Garlic, and Spices&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>接著就是我們主要註冊DI實體的地方，在Program.cs的檔案中，我這邊只寫出關鍵的部分。</p>
+<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="comment">// ...</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> Microsoft.Extensions.DependencyInjection;</span><br><span class="line"></span><br><span class="line">builder.Services.AddScoped&lt;IChef, Chef&gt;();</span><br><span class="line">builder.Services.AddScoped&lt;IIngredients, Ingredients&gt;();</span><br><span class="line"></span><br><span class="line"><span class="comment">// ...</span></span><br></pre></td></tr></table></figure>
+<p>解釋一下，這邊的builder.Services屬於IServiceCollection類，一但呼叫’AddScoped&lt;IIngredients, Ingredients&gt;()’方法，IoC Container就知道要建立一個Ingredients實體，去對應到程式中的三種DI形式之一，並注入實體讓IIngredients指向，在我們的例子中是「建構元注入」，因此，DI框架透過「反射原理」，知道Chef class中的建構元有IIngredients，透過之前註冊的資訊，IoC Continaer主動建立一個Ingredients實體，並注入到Chef class的建構元中。</p>
+<p><strong>整理一下上面的流程</strong></p>
+<blockquote>
+<ol>
+<li>利用builder.Services.AddScoped&lt;IIngredients, Ingredients&gt;()註冊依賴資訊，以及生命週期給IoC Container</li>
+<li>IoC Container利用反射原理，得知Chef class中的建構元有IIngredients，並與之前註冊的依賴資訊做對應</li>
+<li>IoC Container建立一個Ingredients實體，並注入進Chef class的建構元中，讓建構元的IIngredients指標指向</li>
+<li>在建構元中，透過建構元參數指向的Ingredients實體，賦值給Chef class的內部欄位_ingredients</li>
+</ol>
+</blockquote>
+<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>這篇文章我十分詳細的介紹了DIP, IoC, DI的概念與實作，這些概念對於軟體開發來說非常重要，但大家也要清楚理解<strong>這些思想要解決的問題，以及使用它們的好處，清楚自己在做什麼，而不是為設計而設計</strong>，其實OOP很多的pattern，都會有其好處以及trade off，因此了解為何使用就顯得非常重要。</p>
+<p>P.S. : </p>
+<ul>
+<li>我自己很喜歡使用指標和記憶體的概念來理解物件與其值，這對於理解Pass by value&#x2F;reference和Stack, Heap的記憶體分配非常有用，十分建議大家使用。</li>
+<li>Microsoft.Extensions.DependencyInjection這個namespace，利用IServiceProvider來管理我們程式中中所註冊的依賴，我們也可以透過注入這個IServiceProvider來取得實體，這在之後的<strong>DI進化的文章會有著關鍵作用。</strong></li>
+</ul>
+<style>
+img{
+    width: 70%; 
+    margin: 15px auto;
+}
+
+</style>]]></content>
+      <categories>
+        <category>OOP</category>
+        <category>SOLID</category>
+      </categories>
+      <tags>
+        <tag>OOP</tag>
+        <tag>SOLID</tag>
+        <tag>.NET C#</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>大一大二參加畢業專案與程式比賽心得分享</title>
     <url>/posts/534426495/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>小弟我在剛上大一沒多久，就私mail系上的程式老師，詢問是否可以參與更多的專案或研究，也一併把我的履歷給教授看。<br>沒想到教授大方地給我幾條路選，可以跟教授做研究，出去實習，或是和學長們做專案。<br>大一的我想要慢慢累積實力，於是決定先<strong>和學長們做專案</strong>，去比賽，累積經驗。<br>在歷經<strong>國科會專案、資訊競賽、畢業專案競賽等等</strong>後，我非常感謝教授和學長們給我這個機會，讓我可以擁有這些寶貴的經驗！<br>這篇文章主要著重在心得與分享，比較技術面的內容會在下篇文章詳細介紹。</p>
@@ -215,254 +424,6 @@ style="width: 70%; margin: 15px auto;"></p>
       </tags>
   </entry>
   <entry>
-    <title>[.NET][C#][SOLID] - DI &amp; IoC (依賴注入與控制反轉) 全面講解</title>
-    <url>/posts/3588979794/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>IoC (Inversion of Control) 控制反轉，與OOP SOLID原則中的其中一種設計原則有關，也就是其中的DIP(Dependency Inversion Principle)，是OOP一個非常重要的程式設計思想，對於軟體開發來說十分重要，下面我將<strong>十分詳細的介紹何為DIP、IoC以及DI、為何要使用它們以及如何實作</strong>，相信大家閱讀完會對這個重要的思想了解的更加透徹。</p>
-<span id="more"></span>
-<h2 id="定義"><a href="#定義" class="headerlink" title="定義"></a>定義</h2><p>DIP以簡單的一句話說明就是</p>
-<blockquote>
-<p><strong>DIP - Dependency Inversion Principle (依賴倒轉原則)</strong></p>
-<ul>
-<li>一種原則、思想</li>
-<li>高層次的模組不應該依賴低層的模組，低層次的模組也不應該依賴高層次的模組<br><strong>兩者都應該依賴抽象</strong></li>
-</ul>
-</blockquote>
-<blockquote>
-<p><strong>IoC - Inversion of Control (控制反轉)</strong></p>
-<ul>
-<li>一種思想</li>
-<li>把對於某個物件的<strong>控制權</strong>移轉給<strong>第三方容器 (IoC Container)</strong></li>
-</ul>
-</blockquote>
-<blockquote>
-<p><strong>DI - Dependency Injection (依賴注入)</strong></p>
-<ul>
-<li>一種設計模式</li>
-<li>將依賴通過<strong>注入</strong>的方式提供給需要的模組，是 IoC 與 DIP 的具體表現</li>
-<li>把被依賴物件注入被動接收物件中</li>
-</ul>
-</blockquote>
-<p>DIP的定義非常重要，請大家牢記在心。<br>也就是說，程式應該依賴抽象，而不是實作的實體，這可以幫助我們對程式之間解耦，能夠被更好地維護。<br>DI是為了實現DIP和IoC而誕生的實現方式，因此大家在使用物件導向的技巧時，<strong>務必清楚自己在做什麼，和為何這樣做</strong>。</p>
-<h2 id="好處-為什麼要使用？"><a href="#好處-為什麼要使用？" class="headerlink" title="好處&#x2F;為什麼要使用？"></a>好處&#x2F;為什麼要使用？</h2><p>在針對各個名詞解釋與實作之前，我想先讓各位了解DIP以及IoC帶來的好處。</p>
-<blockquote>
-<ol>
-<li>可維護性 (maintainability)</li>
-<li>寬鬆耦合 (loose coupling)</li>
-</ol>
-</blockquote>
-<ul>
-<li>所謂的<strong>可維護性</strong>，就是你在日<strong>後需要修改或更新程式的時候，所花費的時間和精力</strong>，如果修改起來很費時費力，那我們就說他可維護性低。</li>
-<li>所謂的耦合度，就是物件與物件間的依賴、相關程度，如果在A類內去new B，B類內又去new C，彼此相互直接依賴，這樣類別之間相互呼叫令彼此有所牽連，便是耦合(coupling)，物件關係越緊密，耦合度越高，耦合度高的程式碼，一旦有任何變動，容易發生<strong>連鎖反應，牽一髮動全身</strong>，因此龐大的軟體更應該考慮<strong>低耦合高內聚</strong>的設計方式。</li>
-</ul>
-<p>而DIP, IoC和DI可以<strong>讓程式之間解耦</strong>，提高程式的可維護性。<br>基本上「可維護性」和「寬鬆耦合」就是我們學習DIP, IoC和DI的原因</p>
-<p>下面我會一一介紹DIP, IoC以及DI，最後附上實際應用，即最後組合出來的結果。</p>
-<h2 id="DIP"><a href="#DIP" class="headerlink" title="DIP"></a>DIP</h2><blockquote>
-<p><strong>DIP - Dependency Inversion Principle(依賴倒轉原則)</strong></p>
-<ul>
-<li>一種原則、思想</li>
-<li>高層次的模組不應該依賴低層的模組，低層次的模組也不應該依賴高層次的模組<br><strong>兩者都應該依賴抽象</strong></li>
-</ul>
-</blockquote>
-<p>什麼意思呢？讓我們看看下面的範例：</p>
-<h3 id="簡單範例"><a href="#簡單範例" class="headerlink" title="簡單範例"></a>簡單範例</h3><figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Database</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Connect</span>()</span> &#123; <span class="comment">/* database connect logic */</span> &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Disconnect</span>()</span> &#123; <span class="comment">/* database disconnect logic */</span> &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">SaveData</span>(<span class="params"><span class="built_in">string</span> data</span>)</span> &#123; <span class="comment">/* database save data logic */</span> &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">DataAccess</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> Database _database = <span class="keyword">new</span> Database();</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">SaveData</span>(<span class="params"><span class="built_in">string</span> data</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _database.Connect();</span><br><span class="line">        _database.SaveData(data);</span><br><span class="line">        _database.Disconnect();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>上面的程式碼違反了DIP，因為DataAccess<strong>直接依賴</strong>了’Database’類別，如果Database做了任何變動，DataAccess也需要跟著變動，所有有用到關於Database的class也都需要跟著變動，因此，’DataAccess’ class應該依賴抽象的Interface，而不是具體的實作。</p>
-<hr>
-<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">IDatabase</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Connect</span>()</span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Disconnect</span>()</span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">SaveData</span>(<span class="params"><span class="built_in">string</span> data</span>)</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">SqlServerDatabase</span> : <span class="title">IDatabase</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Connect</span>()</span> &#123; <span class="comment">/* SQL Server database connect logic */</span> &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Disconnect</span>()</span> &#123; <span class="comment">/* SQL Server database disconnect logic */</span> &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">SaveData</span>(<span class="params"><span class="built_in">string</span> data</span>)</span> &#123; <span class="comment">/* SQL Server database save data logic */</span> &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">OracleDatabase</span> : <span class="title">IDatabase</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Connect</span>()</span> &#123; <span class="comment">/* Oracle database connect logic */</span> &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Disconnect</span>()</span> &#123; <span class="comment">/* Oracle database disconnect logic */</span> &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">SaveData</span>(<span class="params"><span class="built_in">string</span> data</span>)</span> &#123; <span class="comment">/* Oracle database save data logic */</span> &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">DataAccess</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> IDatabase _database;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">DataAccess</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        _database = <span class="keyword">new</span> SqlServerDatabase();</span><br><span class="line">        <span class="comment">//_database = new OracleDatabase(); 在這裡抽換</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">SaveData</span>(<span class="params"><span class="built_in">string</span> data</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _database.Connect();</span><br><span class="line">        _database.SaveData(data);</span><br><span class="line">        _database.Disconnect();</span><br><span class="line">    &#125;</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
-<p>由上面的範例可知，我們定義了一個IDatabase，規範所有資料庫應該有的action，讓不同的實體Database去實作，而Program本身(DataAccess)，只需要去依賴、使用IDatabase，這樣一來就算未來我從SQL-Server DB遷移到Oracle DB，我<strong>只需要抽換IDatabase的實作實體</strong>(_database指標指向的實際記憶體)，DataAccess內部使用到IDatabase的程式碼一行都不用更改。</p>
-<p>但是，可以發現到，雖然透過依賴倒轉，可以改變為依賴抽象，<strong>但程式(DataAccess)本身還是需要new 出instance</strong>，也就是說程式本身(呼叫者)，對於依賴的控制流程具有主導權，這時就需要<strong>控制反轉</strong>。</p>
-<h2 id="IoC"><a href="#IoC" class="headerlink" title="IoC"></a>IoC</h2><blockquote>
-<ul>
-<li>把對於某個物件的<strong>控制權</strong>移轉給<strong>第三方容器 (IoC Container)</strong></li>
-</ul>
-</blockquote>
-<p>IoC 是一種設計原則或思想，它建議我們反轉物件導向設計中的各種控制，以達到各個類別間的解耦。這裡的 <strong>“控制”指的是除了一個類別本身的職責之外的其它所有工作</strong>，如整個軟體的流程控制，物件的依賴或創建等等。</p>
-<blockquote>
-<ul>
-<li>其實意思就是，一個類別本身除了<strong>本身的職責外，不應該擁有太多其他的工作 (SRP)</strong></li>
-<li>所以建議將這些對於物件的<strong>控制權(創建、實作實體抽換等等)<strong>，交給</strong>第三方容器</strong> (Framework or Library)。</li>
-<li>獲取資源的行為由”主動”轉為”被動”</li>
-<li><strong>程式(Application) 依賴物件的「控制流程 (Control Flow)」，由「主動」變成「被動」。就是「控制反轉」</strong></li>
-</ul>
-</blockquote>
-<p>下面這兩張圖簡單解釋了使用IoC後的依賴關係</p>
-<ul>
-<li><p>這是還沒使用IoC前，我們的應用程式直接依賴於實體類別<br><img data-src="/images/posts/DI-IoC/IoC1.png"></img></p>
-</li>
-<li><p>這個則是使用IoC後，透過IoC Container，將依賴實體注入至程式中，程式由原來主動的依賴變成被動的接收<br><img data-src="/images/posts/DI-IoC/IoC2.png"></img></p>
-</li>
-</ul>
-<p>好萊塢原則也很貼切的說明了控制反轉的情境</p>
-<blockquote>
-<p>Don’t call me, I’ll call you.</p>
-</blockquote>
-<h3 id="IoC-Container"><a href="#IoC-Container" class="headerlink" title="IoC Container"></a>IoC Container</h3><p>廣義上來說， IoC 容器，就是有進行「依賴注入」的地方，<br>你隨便寫一個類別，透過它將所需元件注入給高階模組，便可說是容器。<br>但現在所說的容器通常泛指那些<strong>強大的IoC框架所提供的容器</strong>。</p>
-<p>各位可以把IoC容器想像成是儲存一堆使用者<strong>註冊的依賴實體</strong>，IoC Container透過這些使用者註冊的資訊，知道程式需要這個instance並賦予給他，達到不需要修改高階模組的目的。<br>程式在<strong>執行的期間(Runtime)<strong>，需要依賴物件的實體，需要透過IoC Container注入給程式，使用的是</strong>反射原理(Reflection)</strong>-也就是透過程式碼的中間編譯檔，去讀取程式碼內部的資訊。</p>
-<p>下面這兩張圖則解釋了IoC如何利用IoC Container做到控制反轉的示意圖</p>
-<ul>
-<li><p>這個是沒有使用IoC框架時，高階模組主動的去建立所需要的低階模組 (資源)<br><img data-src="/images/posts/DI-IoC/IoC4.png"></img></p>
-</li>
-<li><p>這個則是使用了IoC框架，透過 <strong>「註冊 (Register)」</strong> 所需要的模組進IoC Container，藉由容器<strong>主動注入依賴實體</strong>進入高階模組<br><img data-src="/images/posts/DI-IoC/IoC3.png"></img></p>
-</li>
-</ul>
-<h3 id="簡單範例-1"><a href="#簡單範例-1" class="headerlink" title="簡單範例"></a>簡單範例</h3><p>這邊提供的簡單範例中，IoC Container用簡單的方式實作，實際上這些工作會交給第三方套件或框架完成，這邊使用簡單的方式實作給大家理解</p>
-<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">ILogger</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Log</span>(<span class="params"><span class="built_in">string</span> message</span>)</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ConsoleLogger</span> : <span class="title">ILogger</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Log</span>(<span class="params"><span class="built_in">string</span> message</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">$&quot;Log: <span class="subst">&#123;message&#125;</span>&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">UserService</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">readonly</span> ILogger _logger;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">UserService</span>(<span class="params">ILogger logger</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _logger = logger;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">CreateUser</span>(<span class="params"><span class="built_in">string</span> username, <span class="built_in">string</span> password</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _logger.Log(<span class="string">$&quot;Creating user <span class="subst">&#123;username&#125;</span>&quot;</span>);</span><br><span class="line">        <span class="comment">// Implementation to create a user</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="built_in">string</span>[] args</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        ILogger logger = <span class="keyword">new</span> ConsoleLogger();</span><br><span class="line">        UserService userService = <span class="keyword">new</span> UserService(logger);</span><br><span class="line">        userService.CreateUser(<span class="string">&quot;johndoe&quot;</span>, <span class="string">&quot;secret&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>在這裡，<strong>Program就是我們的IoC Container</strong>，UserService依賴ILogger抽象，而透過註冊在Program中的資訊，讓<strong>Program主動將實際的依賴實體(ConsoleLogger物件)，注入到UserService的建構元中</strong>，也就是建構元注入，後面講到DI會再提到。<br><strong>之後如果有需要新的Logger，只需要創建並實作ILogger，再透過Program注入給UserService，UserService內部程式碼一行都不用更改。</strong></p>
-<h3 id="IoC與DIP的差別"><a href="#IoC與DIP的差別" class="headerlink" title="IoC與DIP的差別"></a>IoC與DIP的差別</h3><p>控制反轉(IoC)與依賴倒轉(DIP)兩者不相等！</p>
-<blockquote>
-<p>依賴倒轉，倒轉的是「依賴關係」<br>控制反轉，反轉的是程式依賴物件的「控制流程」</p>
-</blockquote>
-<h2 id="DI"><a href="#DI" class="headerlink" title="DI"></a>DI</h2><blockquote>
-<p>將依賴通過<strong>注入</strong>的方式提供給需要的模組，是 IoC 與 DIP 的具體表現<br>把被依賴物件注入被動接收物件中</p>
-</blockquote>
-<blockquote>
-<p><strong>程式或者開發者不必理會物件是如何產生、保持、至銷毀的生命週期</strong><br>在.NET的DI框架中，生命週期有三種，Transient、Scoped、Singleton，後面講解實作時會再談到。</p>
-</blockquote>
-<p>DI的背後思想主要是：</p>
-<blockquote>
-<ol>
-<li>為了保證DIP，一個類別應該只依賴抽象</li>
-<li>於是具體的實現必須透過某種方式”注入”到這個類別</li>
-<li>那麼依據IoC原則，最好透過第三方容器來做到這件事</li>
-</ol>
-</blockquote>
-<p>而DI又有主要的三種形式：</p>
-<blockquote>
-<ol>
-<li>建構元注入 (Constructor Injection)</li>
-<li>設值方法注入 (Setter Injection)</li>
-<li>介面注入 (Interface Injection)</li>
-</ol>
-</blockquote>
-<p>下面舉個簡單的範例</p>
-<h3 id="簡單範例-2"><a href="#簡單範例-2" class="headerlink" title="簡單範例"></a>簡單範例</h3><ol>
-<li>建構元注入 (Constructor Injection)<br>屬於最常見的注入方式，IoC Container將實體DI到呼叫者的建構元中，當呼叫者被new(建立)時，就會自動注入相關實體進入建構元。<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">ILogger</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Log</span>(<span class="params"><span class="built_in">string</span> message</span>)</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Logger</span> : <span class="title">ILogger</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Log</span>(<span class="params"><span class="built_in">string</span> message</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;Log: &quot;</span> + message);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">UserService</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">readonly</span> ILogger _logger;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">UserService</span>(<span class="params">ILogger logger</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _logger = logger;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">AddUser</span>(<span class="params"><span class="built_in">string</span> userName</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _logger.Log(<span class="string">&quot;User Added: &quot;</span> + userName);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-在這裡，當有人去new UserService時，IoC Container就會自動注入當初註冊的實體進入UserService的建構元。</li>
-</ol>
-<hr>
-<ol start="2">
-<li><p>設值方法注入 (Setter Injection)<br>透過setter method注入實體，他允許我們在呼叫者實體被創建後(instantiated)，才注入相關依賴實體。</p>
-<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">UserService</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> ILogger _logger;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> ILogger Logger</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">set</span> &#123; _logger = <span class="keyword">value</span>; &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">AddUser</span>(<span class="params"><span class="built_in">string</span> userName</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _logger.Log(<span class="string">&quot;User Added: &quot;</span> + userName);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>介面注入 (Interface Injection)<br>依賴透過Interface注入近實例中，這個Interface必須定義一個方法來注入依賴，再藉由實例去實作此介面，來實現具體的DI</p>
-<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">IUserService</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">AddUser</span>(<span class="params"><span class="built_in">string</span> userName</span>)</span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">SetLogger</span>(<span class="params">ILogger logger</span>)</span>; <span class="comment">// 定義注入依賴的方法</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">UserService</span> : <span class="title">IUserService</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> ILogger _logger;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">AddUser</span>(<span class="params"><span class="built_in">string</span> userName</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _logger.Log(<span class="string">&quot;User Added: &quot;</span> + userName);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">SetLogger</span>(<span class="params">ILogger logger</span>) <span class="comment">// 實際注入依賴</span></span></span><br><span class="line">    &#123;</span><br><span class="line">        _logger = logger;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h2 id="DIP、IoC與DI的結合-實際應用"><a href="#DIP、IoC與DI的結合-實際應用" class="headerlink" title="DIP、IoC與DI的結合 - 實際應用"></a>DIP、IoC與DI的結合 - 實際應用</h2><p>為大家總結一下上面講的各種名詞，用這張圖簡單概括<br>先讓大家釐清，DIP, IoC, DI, IoC Container之間的關係<br><img data-src="/images/posts/DI-IoC/sumup.png"></img></p>
-<h3 id="生活範例"><a href="#生活範例" class="headerlink" title="生活範例"></a>生活範例</h3><p>讓我們用在「餐廳煮東西」來舉例</p>
-<blockquote>
-<p>DIP: High-level modules should not depend on low-level modules. Both should depend on abstractions.</p>
-</blockquote>
-<p>在我們的例子中，<strong>廚師就是高階模組</strong>，而<strong>食材是低階模組</strong>，<ins>廚師不應該依賴於特定的食材</ins>，而是應該依賴於可以<ins>用來煮各種餐點的食材的抽象概念</ins>。</p>
-<hr>
-<blockquote>
-<p>Inversion of Control (IoC): The control of the flow of a program is inverted.</p>
-</blockquote>
-<p>在我們例子中，顧客點餐，廚師備餐，對於餐點準備的控制流程，<ins>顧客不控制備餐的流程，而是接受最終完成的餐點</ins>。</p>
-<hr>
-<blockquote>
-<p>IoC Container: A container that manages and controls the creation and life cycle of objects, and also injects their dependencies.</p>
-</blockquote>
-<p>在我們的例子中，可以把廚房想像成是IoC容器，他主管了各個食材、廚房用具的生命週期，並確保能夠提供廚師需要的食材或工具。</p>
-<hr>
-<blockquote>
-<p>Dependency Injection (DI): A technique for achieving IoC, where the objects are given their dependencies instead of creating them themselves.</p>
-</blockquote>
-<p>在我們的例子中，廚師是被提供食材的人（由廚房提供），而不是自己去尋找食材。</p>
-<h3 id="結合舉例"><a href="#結合舉例" class="headerlink" title="結合舉例"></a>結合舉例</h3><p>接下來我們接續上面的例子，透過程式的方式來講解上面的所有概念(DIP, IoC, IoC Container, DI)</p>
-<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">IChef</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Cook</span>()</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Chef</span> : <span class="title">IChef</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">readonly</span> IIngredients _ingredients;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Chef</span>(<span class="params">IIngredients ingredients</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _ingredients = ingredients;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Cook</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;Cooking with &quot;</span> + _ingredients.GetIngredients());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">IIngredients</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="built_in">string</span> <span class="title">GetIngredients</span>()</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Ingredients</span> : <span class="title">IIngredients</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="built_in">string</span> <span class="title">GetIngredients</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;Tomatoes, Onions, Garlic, and Spices&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title">Kitchen</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> IChef _chef;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> IIngredients _ingredients;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="title">Kitchen</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        _ingredients = <span class="keyword">new</span> Ingredients();</span><br><span class="line">        _chef = <span class="keyword">new</span> Chef(_ingredients);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> IChef <span class="title">GetChef</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> _chef;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="built_in">string</span>[] args</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">var</span> chef = Kitchen.GetChef();</span><br><span class="line">        chef.Cook();</span><br><span class="line">        Console.ReadLine();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>在上面的例子中，’IChef’介面和’Chef’類別遵守了<strong>DIP</strong>，因為他們依賴於抽象的’IIngredients’，而不是特定的食材實體。</li>
-<li>而’Chef’類別透過 <strong>「建構元注入」</strong> 的方式，給予’IIngredients’的依賴，而不是自己主動直接創建一個實體。</li>
-<li>‘Kitchen’ class則扮演IoC Container的角色，他管理了’Chef’和’Ingredients’的創建與生命週期，並注入’Ingredients’實體進入’Chef’的建構元中。</li>
-<li>而Main method可以當成是我們的Application，透過’Kitchen’獲取’Chef’實體，並呼叫Cook() method。</li>
-</ul>
-<h2 id="NET-C-實現"><a href="#NET-C-實現" class="headerlink" title=".NET C#實現"></a>.NET C#實現</h2><p>下面我將簡單使用.NET預設的DI框架(Microsoft.Extensions.DependencyInjection)來實現註冊依賴實體，與依賴注入。<br>其中還有一些進階的用法，像是把<ins>註冊相關的邏輯抽提出來寫成擴充方法</ins>，還有使用<ins>Attribute與反射來解決建構元注入太多的問題</ins>，但在這篇教學中先使用最簡單的方法實作，為的是讓各位先理解基本的概念與用法，進階用法會在之後的文章詳細介紹。</p>
-<h3 id="DI生命週期與註冊"><a href="#DI生命週期與註冊" class="headerlink" title="DI生命週期與註冊"></a>DI生命週期與註冊</h3><p>在.NET的預設DI框架中，註冊實體物件時可以指定其生命週期，分為三種（重要！）</p>
-<blockquote>
-<ol>
-<li>Transient (一次性) : <strong>每次注入時</strong>，都建立一個新的實體。</li>
-<li>Scoped (作用域) : <strong>每次的Request</strong>，都建立一個新的實體，同一個Request下，重複利用同一個實體 (這裡的Request 常指Http Request)。</li>
-<li>Singleton (單例) : 使用單例模式(Singleton Pattern)，<strong>從程式開始到結束</strong>，只建立一個實體，每次都重複利用同一個，直到程式被終止。</li>
-</ol>
-</blockquote>
-<h3 id="實作"><a href="#實作" class="headerlink" title="實作"></a>實作</h3><p>讓我們繼續以上面餐廳的例子實作<br>首先定義好相關的class與Interface，其中使用DIP我這邊就不特別提了</p>
-<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">IChef</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Cook</span>()</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Chef</span> : <span class="title">IChef</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">readonly</span> IIngredients _ingredients;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Chef</span>(<span class="params">IIngredients ingredients</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        _ingredients = ingredients;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Cook</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;Cooking with &quot;</span> + _ingredients.GetIngredients());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">IIngredients</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="built_in">string</span> <span class="title">GetIngredients</span>()</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Ingredients</span> : <span class="title">IIngredients</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="built_in">string</span> <span class="title">GetIngredients</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;Tomatoes, Onions, Garlic, and Spices&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<p>接著就是我們主要註冊DI實體的地方，在Program.cs的檔案中，我這邊只寫出關鍵的部分。</p>
-<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="comment">// ...</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> Microsoft.Extensions.DependencyInjection;</span><br><span class="line"></span><br><span class="line">builder.Services.AddScoped&lt;IChef, Chef&gt;();</span><br><span class="line">builder.Services.AddScoped&lt;IIngredients, Ingredients&gt;();</span><br><span class="line"></span><br><span class="line"><span class="comment">// ...</span></span><br></pre></td></tr></table></figure>
-<p>解釋一下，這邊的builder.Services屬於IServiceCollection類，一但呼叫’AddScoped&lt;IIngredients, Ingredients&gt;()’方法，IoC Container就知道要建立一個Ingredients實體，去對應到程式中的三種DI形式之一，並注入實體讓IIngredients指向，在我們的例子中是「建構元注入」，因此，DI框架透過「反射原理」，知道Chef class中的建構元有IIngredients，透過之前註冊的資訊，IoC Continaer主動建立一個Ingredients實體，並注入到Chef class的建構元中。</p>
-<p><strong>整理一下上面的流程</strong></p>
-<blockquote>
-<ol>
-<li>利用builder.Services.AddScoped&lt;IIngredients, Ingredients&gt;()註冊依賴資訊，以及生命週期給IoC Container</li>
-<li>IoC Container利用反射原理，得知Chef class中的建構元有IIngredients，並與之前註冊的依賴資訊做對應</li>
-<li>IoC Container建立一個Ingredients實體，並注入進Chef class的建構元中，讓建構元的IIngredients指標指向</li>
-<li>在建構元中，透過建構元參數指向的Ingredients實體，賦值給Chef class的內部欄位_ingredients</li>
-</ol>
-</blockquote>
-<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>這篇文章我十分詳細的介紹了DIP, IoC, DI的概念與實作，這些概念對於軟體開發來說非常重要，但大家也要清楚理解<strong>這些思想要解決的問題，以及使用它們的好處，清楚自己在做什麼，而不是為設計而設計</strong>，其實OOP很多的pattern，都會有其好處以及trade off，因此了解為何使用就顯得非常重要。</p>
-<p>P.S. : </p>
-<ul>
-<li>我自己很喜歡使用指標和記憶體的概念來理解物件與其值，這對於理解Pass by value&#x2F;reference和Stack, Heap的記憶體分配非常有用，十分建議大家使用。</li>
-<li>Microsoft.Extensions.DependencyInjection這個namespace，利用IServiceProvider來管理我們程式中中所註冊的依賴，我們也可以透過注入這個IServiceProvider來取得實體，這在之後的<strong>DI進化的文章會有著關鍵作用。</strong></li>
-</ul>
-<style>
-img{
-    width: 70%; 
-    margin: 15px auto;
-}
-
-</style>]]></content>
-      <categories>
-        <category>OOP</category>
-        <category>SOLID</category>
-      </categories>
-      <tags>
-        <tag>OOP</tag>
-        <tag>SOLID</tag>
-        <tag>.NET C#</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>[Git][Version Control] Git - Introduction</title>
-    <url>/posts/2571684277/</url>
-    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Here is the series of Git full tutorial. I will cover the important and advanced topics that you should know in git. By reading this series, you are able to know the basic(but important) concept of Git and the technique of using git. Hope you can gain a lot ! </p>
-<span id="more"></span>
-
-<h1 id="Series-Outline"><a href="#Series-Outline" class="headerlink" title="Series Outline"></a>Series Outline</h1><p>I will follow the outline below in this series.</p>
-<ul>
-<li>Introduction (this post)</li>
-<li>Setup</li>
-<li>Version Control &amp; Commands (Basics)</li>
-<li>Branching &amp; Merging</li>
-<li>Conflict</li>
-<li>Collaboration &amp; GitHub</li>
-<li>Advanced Topics</li>
-</ul>
-<hr>
-<h1 id="Introduction-to-Git-A-Distributed-Version-Control-System"><a href="#Introduction-to-Git-A-Distributed-Version-Control-System" class="headerlink" title="Introduction to Git: A Distributed Version Control System"></a>Introduction to Git: A Distributed Version Control System</h1><p>Git is a powerful and widely used distributed version control system designed to track changes in software development projects. It provides developers with the ability to collaborate on projects efficiently, manage codebases effectively, and easily track and revert changes.</p>
-<h2 id="Distributed-Version-Control-System"><a href="#Distributed-Version-Control-System" class="headerlink" title="Distributed Version Control System"></a>Distributed Version Control System</h2><p>In traditional software development, changes to a codebase were often managed through file-based systems or centralized version control systems. However, these approaches had limitations in terms of collaboration, scalability, and flexibility. Git emerged as a solution to these challenges, offering a distributed and decentralized approach to version control.</p>
-<p>The special point of Git is that it supports distributed version control and can also easily share codes among multiple nodes.</p>
-<p><img data-src="/images/posts/Git-Series/dist-ver-ctr.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<h2 id="Branch"><a href="#Branch" class="headerlink" title="Branch"></a>Branch</h2><p>Git manages code based on a tree structure, allowing branches to be created, merged, and deleted, and code versions to be saved at any time.</p>
-<p><img data-src="/images/posts/Git-Series/branch.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<h2 id="Snapshot"><a href="#Snapshot" class="headerlink" title="Snapshot"></a>Snapshot</h2><p>Git saves full snapshots of files, rather than differences, making it easy to restore all historical versions of files.</p>
-<p><img data-src="/images/posts/Git-Series/snapshot.jpeg" 
-style="width: 70%; margin: 15px auto;"></p>
-<hr>
-<h1 id="Recommended-Resources"><a href="#Recommended-Resources" class="headerlink" title="Recommended Resources"></a>Recommended Resources</h1><p><a href="%22https://www.youtube.com/watch?v=8JJ101D3knE%22">Mosh Git Tutorail</a></p>
-]]></content>
-      <categories>
-        <category>Git 系列文</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-        <tag>Version Control</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>[NLP][ML] Adapters &amp; LoRA</title>
     <url>/posts/38266156/</url>
     <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>In this article, I will provide an introduction to adapters and LoRA, including their <strong>definitions, purposes, and functions.</strong> I will also explore their various <strong>applications</strong> and, lastly, delve into the distinctions that set them apart(the <strong>differences between them</strong>).</p>
@@ -628,58 +589,95 @@ style="width: 70%; margin: 15px auto;"></p>
       </tags>
   </entry>
   <entry>
-    <title>[Git][Version Control] Git - Setup</title>
-    <url>/posts/731175240/</url>
-    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Setting up the environment of Git and some recommended GUI tools.</p>
+    <title>[NLP][ML] Transformer (2) - Attention &amp; Summary</title>
+    <url>/posts/2443192075/</url>
+    <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>Self-attention allows the model to <strong>weigh the importance of different parts of an input sequence against each other</strong>, capturing <strong>relationships</strong> and dependencies between elements within the sequence. This is particularly powerful for tasks involving sequential or contextual information, such as language translation, text generation, and more.</p>
+<p>What Self-Attention wants to do is to replace what RNN can do<br>Its output&#x2F;input is the same as RNN, and its biggest advantages are:</p>
+<ul>
+<li>Can parallelize operations</li>
+<li>Each output vector has seen the entire input sequence. So there is no need to stack several layers like CNN.</li>
+</ul>
 <span id="more"></span>
-
-<h1 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h1><ol>
-<li><p>Install Git with the link below: (with your OS)<br><a href="%22https://git-scm.com/%22">Git official website</a></p>
+<h1 id="Difference-between-attention-and-self-attention"><a href="#Difference-between-attention-and-self-attention" class="headerlink" title="Difference between attention and self-attention"></a>Difference between attention and self-attention</h1><p><strong>attention is a broader concept of selectively focusing on information</strong>, while <strong>self-attention is a specific implementation of this concept</strong> where elements within the same sequence are attended to. Self-attention is a fundamental building block of the Transformer architecture, allowing it to capture relationships and dependencies within sequences effectively.</p>
+<h1 id="Attention-Machanism"><a href="#Attention-Machanism" class="headerlink" title="Attention (Machanism)"></a>Attention (Machanism)</h1><p>main idea:<br>use <strong>triples</strong><br>$$&lt;Q,K,V&gt;$$</p>
+<p>Represents the <strong>attention mechanism</strong>, expresses the <strong>similarity between Query and Key</strong>, and then assigns the value of <strong>Value according to the similarity</strong><br><strong>formula</strong>:<br>$$Attention(Q,K,V) &#x3D; softmax(\frac{QK^T}{\sqrt{d_k}})V$$</p>
+<h1 id="Self-Attention-Layer-Key"><a href="#Self-Attention-Layer-Key" class="headerlink" title="Self-Attention(Layer) (Key)"></a>Self-Attention(Layer) (<strong>Key</strong>)</h1><h2 id="Computing-process"><a href="#Computing-process" class="headerlink" title="Computing process"></a>Computing process</h2><ol>
+<li><p>Now we suppose to enter $a_1$~$a_4$ Four vector, and Self-Attention needs to output another row of $b$ vectors, and each $b$ is generated after considering all $a$</p>
 </li>
-<li><p>Type this command to check if it is installed successfully:</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure></li>
+<li><p>To figure out $b_1$, the first step is based on $a_1$, find <strong>other vectors related to $a_1$</strong> in this sequence. We use the “$\alpha$” to represent the <strong>similarity</strong> of each vector related to $a_1$.</p>
+</li>
+<li><p>It must be mentioned here that there are <strong>3 very important values in the Self-Attention mechanism</strong>: <strong>Query, Key, Value</strong>. Respectively represent <strong>the value used to match, the value to be matched, and the extracted information</strong>.</p>
+</li>
+<li><p>As for determining the <strong>correlation between two vectors</strong>, the most commonly used method is the <strong>dot product (here is scaled dot product)</strong>. It takes two vectors as input and multiplies them with two different matrices. The left vector is multiplied by the matrix $W^q$ (Query matrix), and the right vector is multiplied by the matrix $W^k$ (Key matrix). The values of $W^q$ and $W^k$ are both <strong>randomly initialized and obtained through training</strong>.</p>
+</li>
+<li><p>Next, after obtaining the two vectors, $q$, $k$, the <strong>dot product is computed between them</strong>. After summing up all the dot products, a <strong>scalar (magnitude)</strong> is obtained. This scalar is represented as $\alpha$, which we consider as <strong>the degree of correlation between the two vectors.</strong></p>
+</li>
 </ol>
-<h1 id="Configure-Git-type-commands-in-your-shell"><a href="#Configure-Git-type-commands-in-your-shell" class="headerlink" title="Configure Git (type commands in your shell)"></a>Configure Git (type commands in your shell)</h1><ol>
-<li><p>Set your user name by running the following command:</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Set your email address by running the following command:</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.email youremail@example.com</span><br></pre></td></tr></table></figure></li>
-<li><p>Set up SSH key (for remote repository access. e.g. GitHub)</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure></li>
-</ol>
-<ul>
-<li><p>Press Enter to accept the default file location and passphrase (or set your own if desired).<br>Once the key is generated, run the following command to add it to the SSH agent</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-add ~/.ssh/id_rsa</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Copy the public key to your clipboard by running the following command</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Add the copied public key to your Git hosting platform account (e.g., GitHub, GitLab) by following their documentation.</p>
-</li>
-<li><p>View your ssh keys</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd ~/.ssh</span><br></pre></td></tr></table></figure>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ls</span><br></pre></td></tr></table></figure>
-<ul>
-<li>Use a text editor or command-line tools (such as cat or less) to view the contents of the .pub files and see the public key information: <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat id_rsa.pub</span><br></pre></td></tr></table></figure></li>
+<p><img data-src="/images/posts/NLP-series/transformer-6.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<p>Next, we apply what was just introduced to Self-Attention.</p>
+<ol>
+<li>First, we calculate the relationships “$\alpha$” between $a_1$ and $a_2$, $a_3$, $a_4$ individually. <ul>
+<li>We multiply $a_1$ by $W^q$ to obtain $q_1$. </li>
+<li>Then, we multiply $a_2$, $a_3$, $a_4$ by $W^k$ respectively and compute the inner products to determine the relationship “$\alpha$” between $a_1$ and each vector. </li>
+<li>Applying the Softmax function yields $\alpha’$. </li>
+<li>With this $\alpha’$, we can extract crucial information from this sequence!</li>
 </ul>
 </li>
-</ul>
-<ol start="4">
-<li>You can see your configuration by typing the following commands:<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --list</span><br></pre></td></tr></table></figure></li>
 </ol>
-<h1 id="Recommended-GUI-tools"><a href="#Recommended-GUI-tools" class="headerlink" title="Recommended GUI tools"></a>Recommended GUI tools</h1><p>Both commands and GUI tools are important to Git manupulation.<br>And Here are some recommended Git GUI tools that you can use.</p>
+<hr>
+<p><img data-src="/images/posts/NLP-series/transformer-7.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<ol start="2">
+<li>How to extract important information using $\alpha’$? The steps are as follows:</li>
+</ol>
 <ul>
-<li><a href="%22https://www.sourcetreeapp.com/%22">Sourcetree</a></li>
-<li><a href="%22https://www.gitkraken.com/%22">GitKraken</a></li>
+<li>First, multiply $a_1$ ~ $a_4$ by $W^v$ to obtain new vectors, denoted as $v_1$, $v_2$, $v_3$ and $v_4$, respectively (where $W^v$ is the Value matrix).</li>
+<li>Next, multiply each vector here, $v_1$ ~ $v_4$, by $\alpha’$, and then sum them to obtain the output $b_1$ (formula written in the top-right corner of the image).</li>
+</ul>
+<p>If a certain vector receives a higher score - for instance, if the relationship between $a_1$ and $a_2$ is strong, leading to a large value for $\alpha_{1,2}’$ - then after performing the weighted sum, the value of $b_1$ obtained could be very close to $v_2$.</p>
+<p>Now that we know how to compute $b_1$, it naturally follows that we can deduce $b_1$, $b_2$, $b_3$, and $b_4$ using the same method. With this, we have completed the explanation of the internal computation process of Self-Attention.</p>
+<p>Last but not least, the <strong>similarity matrix($\alpha_{i,j}$)</strong> is just the <strong>attention</strong> in the self-attention layer, i.e. importance or relevance to other elements in the same sequence..</p>
+<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><h2 id="Attention-Score-Weight-and-Output"><a href="#Attention-Score-Weight-and-Output" class="headerlink" title="Attention (Score, Weight and Output)"></a>Attention (Score, Weight and Output)</h2><ul>
+<li>$ Attention Score &#x3D; QK^T $</li>
+<li>$ Attention Weights &#x3D; Softmax(\frac{Attention Score}{\sqrt{d_k}}) $</li>
+<li>$ Attention Output &#x3D; (Attention Weights)V $</li>
+</ul>
+<h2 id="Key-Components-of-Transformers"><a href="#Key-Components-of-Transformers" class="headerlink" title="Key Components of Transformers"></a>Key Components of Transformers</h2><ol>
+<li><p>Self-Attention Mechanism:<br>The core innovation of the Transformer is the self-attention mechanism, which allows the model to <strong>weigh the importance of different words in a sequence relative to each other</strong>. It computes attention scores for each word by considering its <strong>relationships with all other words</strong> in the same sequence. Self-attention enables capturing context and dependencies between words <strong>regardless of their distance</strong>.</p>
+</li>
+<li><p>Multi-Head Attention:<br>To capture different types of relationships, the Transformer employs multi-head attention. <strong>Multiple sets of self-attention mechanisms (attention heads) run in parallel</strong>, and their outputs are concatenated and linearly transformed to create a more comprehensive representation.</p>
+</li>
+<li><p>Positional Encodings:<br>Since the Transformer does not inherently understand <strong>the order of words in a sequence</strong> (unlike recurrent networks(RNN)), positional encodings are added to the input embeddings. These encodings provide <strong>information about the positions of words within the sequence</strong>.</p>
+</li>
+<li><p>Encoder-Decoder Architecture:<br>The Transformer’s architecture is divided into an <strong>encoder and a decoder</strong>. The <strong>encoder processes the input sequence, capturing its contextual information</strong>, while the <strong>decoder generates the output sequence</strong>. This architecture is widely used in tasks like machine translation.</p>
+</li>
+<li><p>Residual Connections and Layer Normalization:<br>To address the <strong>vanishing gradient problem</strong>, residual connections (skip connections) are used around each sub-layer in the encoder and decoder. Layer normalization is also applied to <strong>stabilize</strong> the training process.</p>
+</li>
+<li><p>Position-wise Feed-Forward Networks:<br>After the self-attention layers, each position’s representation is passed through a position-wise feed-forward neural network, which <strong>adds non-linearity to the model</strong>.</p>
+</li>
+<li><p>Scaled Dot-Product Attention:<br>The self-attention mechanism involves computing the <strong>dot product of query, key, and value vectors</strong>. To control the scale of the dot products and <strong>avoid large gradients</strong>, the dot products are divided by the <strong>square root of the dimension of the key vectors</strong>.</p>
+</li>
+<li><p>Masked Self-Attention in Decoding:<br>During decoding, the self-attention mechanism is modified to <strong>ensure that each position can only attend to previous positions</strong>. This masking <strong>prevents the model from “cheating” by looking ahead in the output sequence</strong>.</p>
+</li>
+<li><p>Transformer Variants:<br> The original Transformer model has inspired various extensions and improvements, such as BERT, GPT, and more. BERT focuses on pretraining language representations, while GPT is designed for autoregressive text generation.</p>
+</li>
+</ol>
+<p>The Transformer architecture has become the foundation for many state-of-the-art NLP models due to its ability to <strong>capture context, parallelize computations, and handle long-range dependencies effectively</strong>. It has led to significant advancements in machine translation, text generation, sentiment analysis, and various other NLP tasks.</p>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1lTWx4NWZGTm9ZYw==">3Blue1Brown<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MDM5Mg==">iThome - Day 27 Transformer (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MTI0Mg==">iThome - Day 28 Self-Attention (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9oYWNrbWQuaW8vQGFibGl1L0JrWG16REJtcg==">Transformer 李宏毅深度學習 (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9zcGVlY2guZWUubnR1LmVkdS50dy9+aHlsZWUvbWwvbWwyMDIxLWNvdXJzZS1kYXRhL3NlcTJzZXFfdjkucGRm">Transformer 李宏毅老師簡報<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQzJnZ2p0dXVXdnhySEhIaWFESDFkbFE=">李宏毅老師YouTube channel<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzE3MDYuMDM3NjI=">Attention is all you need (paper)<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
 ]]></content>
-      <categories>
-        <category>Git 系列文</category>
-      </categories>
       <tags>
-        <tag>Git</tag>
-        <tag>Version Control</tag>
+        <tag>ML</tag>
+        <tag>AI</tag>
+        <tag>NLP</tag>
       </tags>
   </entry>
   <entry>
@@ -932,271 +930,97 @@ style="width: 70%; margin: 15px auto;"></p>
       </tags>
   </entry>
   <entry>
-    <title>DataLake vs. Data Warehouse vs. Data Mart</title>
-    <url>/posts/970127527/</url>
-    <content><![CDATA[<h1 id="Understanding-the-Differences-Data-Lake-Data-Warehouse-and-Data-Mart"><a href="#Understanding-the-Differences-Data-Lake-Data-Warehouse-and-Data-Mart" class="headerlink" title="Understanding the Differences: Data Lake, Data Warehouse, and Data Mart"></a>Understanding the Differences: Data Lake, Data Warehouse, and Data Mart</h1><p>In today’s data-driven world, organizations leverage various data management systems to harness their data effectively. Among these systems, Data Lakes, Data Warehouses, and Data Marts are pivotal in supporting data storage, processing, and analysis. This article explores the key differences among these three systems, helping you understand their unique roles in data management.</p>
+    <title>[Git][Version Control] Git - Introduction</title>
+    <url>/posts/2571684277/</url>
+    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Here is the series of Git full tutorial. I will cover the important and advanced topics that you should know in git. By reading this series, you are able to know the basic(but important) concept of Git and the technique of using git. Hope you can gain a lot ! </p>
 <span id="more"></span>
 
-<p><img data-src="/images/posts/datascience/relation.png"></img><br>source: <span class="exturl" data-url="aHR0cHM6Ly9tZWRpdW0uY29tL0BkYXZpZC5hbHZhcmVzLjYyL2RhdGFsYWtlLWRhdGF3YXJlaG91c2UtZGF0YW1hcnQtd2l0aC1iaWdxdWVyeS0zMmY2YzM3MzVhOWQ=">https://medium.com/@david.alvares.62/datalake-datawarehouse-datamart-with-bigquery-32f6c3735a9d<i class="fa fa-external-link-alt"></i></span></p>
-<h2 id="What-is-a-Data-Lake"><a href="#What-is-a-Data-Lake" class="headerlink" title="What is a Data Lake?"></a>What is a Data Lake?</h2><p>A Data Lake is a centralized repository designed to store a vast amount of raw data in its native format, including structured, semi-structured, and unstructured data. Data Lakes support high-scale elasticity and massive processing power, making them ideal for big data analytics where data exploration and discovery are required.</p>
-<h3 id="Characteristics-of-a-Data-Lake"><a href="#Characteristics-of-a-Data-Lake" class="headerlink" title="Characteristics of a Data Lake:"></a>Characteristics of a Data Lake:</h3><ul>
-<li><strong>Data Types:</strong> Supports all types of data (structured, semi-structured, unstructured).</li>
-<li><strong>Processing:</strong> Data is kept in its raw form, and transformation occurs when needed (schema-on-read).</li>
-<li><strong>Flexibility:</strong> Highly adaptable to changes and capable of storing vast amounts of data.</li>
-<li><strong>Use Cases:</strong> Big data processing, real-time analytics, machine learning.</li>
-</ul>
-<h2 id="What-is-a-Data-Warehouse"><a href="#What-is-a-Data-Warehouse" class="headerlink" title="What is a Data Warehouse?"></a>What is a Data Warehouse?</h2><p>A Data Warehouse is a system used for reporting and data analysis. It is a central repository for integrated data from one or more disparate sources. Data Warehouses store current and historical data in one single place, which is used for creating analytical reports for knowledge workers throughout the enterprise.</p>
-<h3 id="Characteristics-of-a-Data-Warehouse"><a href="#Characteristics-of-a-Data-Warehouse" class="headerlink" title="Characteristics of a Data Warehouse:"></a>Characteristics of a Data Warehouse:</h3><ul>
-<li><strong>Data Types:</strong> Primarily structured data.</li>
-<li><strong>Processing:</strong> Data is processed (ETL - Extract, Transform, Load) before entering the warehouse.</li>
-<li><strong>Performance:</strong> Optimized for fast query performance and complex analytical queries.</li>
-<li><strong>Use Cases:</strong> Business intelligence, reporting, complex queries.</li>
-</ul>
-<h2 id="What-is-a-Data-Mart"><a href="#What-is-a-Data-Mart" class="headerlink" title="What is a Data Mart?"></a>What is a Data Mart?</h2><p>A Data Mart is a subset of a data warehouse and is oriented to a specific business line or team. Unlike a data warehouse, which covers the entire organization, a data mart is limited to certain aspects.</p>
-<h3 id="Characteristics-of-a-Data-Mart"><a href="#Characteristics-of-a-Data-Mart" class="headerlink" title="Characteristics of a Data Mart:"></a>Characteristics of a Data Mart:</h3><ul>
-<li><strong>Data Types:</strong> Structured data.</li>
-<li><strong>Scope:</strong> Focused on a specific department or business area.</li>
-<li><strong>Performance:</strong> Optimized for quick response times on specific queries.</li>
-<li><strong>Use Cases:</strong> Department-specific reporting and analysis.</li>
-</ul>
-<h2 id="Comparative-Analysis"><a href="#Comparative-Analysis" class="headerlink" title="Comparative Analysis"></a>Comparative Analysis</h2><p>The table below provides a comparison to help delineate the differences among these three data architectures:</p>
-<table>
-<thead>
-<tr>
-<th>Feature</th>
-<th>Data Lake</th>
-<th>Data Warehouse</th>
-<th>Data Mart</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>Purpose</strong></td>
-<td>Data exploration and large-scale analytics</td>
-<td>Structured data analysis and reporting</td>
-<td>Specific business function analysis</td>
-</tr>
-<tr>
-<td><strong>Data Types</strong></td>
-<td>All types (structured, semi, unstructured)</td>
-<td>Primarily structured data</td>
-<td>Structured data</td>
-</tr>
-<tr>
-<td><strong>Processing</strong></td>
-<td>Schema-on-read (transform on demand)</td>
-<td>Schema-on-write (pre-transformed)</td>
-<td>Typically pre-transformed data from a data warehouse</td>
-</tr>
-<tr>
-<td><strong>Scope</strong></td>
-<td>Enterprise-wide</td>
-<td>Enterprise-wide</td>
-<td>Department-specific</td>
-</tr>
-<tr>
-<td><strong>Storage Cost</strong></td>
-<td>Low</td>
-<td>High</td>
-<td>Moderate</td>
-</tr>
-<tr>
-<td><strong>Complexity</strong></td>
-<td>High (due to diverse data types)</td>
-<td>Moderate</td>
-<td>Low</td>
-</tr>
-<tr>
-<td><strong>Best For</strong></td>
-<td>Big data projects, ML, real-time analytics</td>
-<td>Historical data analysis, BI</td>
-<td>Focused BI tasks within departments</td>
-</tr>
-</tbody></table>
-<h2 id="Relationships-Among-Data-Lakes-Data-Warehouses-and-Data-Marts"><a href="#Relationships-Among-Data-Lakes-Data-Warehouses-and-Data-Marts" class="headerlink" title="Relationships Among Data Lakes, Data Warehouses, and Data Marts"></a>Relationships Among Data Lakes, Data Warehouses, and Data Marts</h2><p>Understanding the relationships among Data Lakes, Data Warehouses, and Data Marts is crucial for structuring an effective data strategy.</p>
-<h3 id="Hierarchical-Relationship"><a href="#Hierarchical-Relationship" class="headerlink" title="Hierarchical Relationship"></a>Hierarchical Relationship</h3><ol>
-<li><p><strong>Data Lake to Data Warehouse</strong>:</p>
+<h1 id="Series-Outline"><a href="#Series-Outline" class="headerlink" title="Series Outline"></a>Series Outline</h1><p>I will follow the outline below in this series.</p>
 <ul>
-<li>A <strong>Data Lake</strong> stores all raw data, both structured and unstructured. It is the initial repository for all incoming data.</li>
-<li>A <strong>Data Warehouse</strong> is curated from the data lake. Data here is cleaned and structured, optimized for efficient querying and analysis.</li>
+<li>Introduction (this post)</li>
+<li>Setup</li>
+<li>Version Control &amp; Commands (Basics)</li>
+<li>Branching &amp; Merging</li>
+<li>Conflict</li>
+<li>Collaboration &amp; GitHub</li>
+<li>Advanced Topics</li>
 </ul>
-</li>
-<li><p><strong>Data Warehouse to Data Mart</strong>:</p>
-<ul>
-<li>A <strong>Data Warehouse</strong> contains integrated data from multiple sources for the entire organization.</li>
-<li><strong>Data Marts</strong> are subsets of data warehouses tailored to specific departments, facilitating faster and more relevant data access.</li>
-</ul>
-</li>
-</ol>
-<h3 id="Use-Case-Relationship"><a href="#Use-Case-Relationship" class="headerlink" title="Use Case Relationship"></a>Use Case Relationship</h3><ul>
-<li><strong>Data Lake</strong>: Ideal for massive, raw datasets used in data exploration and big data projects.</li>
-<li><strong>Data Warehouse</strong>: Best for regular, consistent reporting and structured data analysis across the organization.</li>
-<li><strong>Data Mart</strong>: Suited for targeted, department-specific analysis, enabling quick access to relevant data.</li>
-</ul>
-<h3 id="Operational-Efficiency"><a href="#Operational-Efficiency" class="headerlink" title="Operational Efficiency"></a>Operational Efficiency</h3><ul>
-<li>Using all three—Data Lakes, Data Warehouses, and Data Marts—enhances data management across different levels, from raw data collection to specific business analytics.</li>
-</ul>
-<p>This structure ensures organizations can manage vast data efficiently, supporting diverse business needs from exploratory analytics to precise departmental reporting.</p>
-<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>Each of these systems serves distinct purposes and is best suited for different aspects of data management. A Data Lake is ideal for raw, large-scale data exploration, a Data Warehouse is suited for enterprise-wide insights from structured data, and a Data Mart is optimal for department-specific analysis. Understanding these differences can help organizations choose the right architecture to meet their data management and analytical needs.</p>
-]]></content>
-      <tags>
-        <tag>datascience</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Understanding 3 types of t-Tests</title>
-    <url>/posts/1220979308/</url>
-    <content><![CDATA[<h1 id="Understanding-3-types-of-t-Tests"><a href="#Understanding-3-types-of-t-Tests" class="headerlink" title="Understanding 3 types of t-Tests"></a>Understanding 3 types of t-Tests</h1><p>When it comes to determining the significance of findings in data science, t-tests are a commonly used statistical method. They help compare means and assess whether the differences between groups or conditions are statistically significant. In this article, we’ll explore the three main types of t-tests: independent (two-sample), single-sample, and paired-sample t-tests. We’ll delve into their concepts, hypotheses, and mathematical representations to provide a clear understanding of when and how to use each type.</p>
-<span id="more"></span>
-
-<h2 id="The-Concept-of-t-Tests"><a href="#The-Concept-of-t-Tests" class="headerlink" title="The Concept of t-Tests"></a>The Concept of t-Tests</h2><p>A t-test is a statistical hypothesis test that follows a Student’s t-distribution under the null hypothesis. The primary goal is to determine <strong>if there is a significant difference between the means of two groups or between a sample mean and a known value</strong>. The t-test relies on several key concepts:</p>
-<h3 id="Central-Limit-Theorem"><a href="#Central-Limit-Theorem" class="headerlink" title="Central Limit Theorem"></a>Central Limit Theorem</h3><p>The Central Limit Theorem (CLT) is a fundamental principle in statistics that states that <strong>the distribution of the sample mean will approximate a normal distribution as the sample size becomes large, regardless of the shape of the population distribution</strong>. This property allows us to make inferences about population parameters using sample data. In the context of t-tests, the CLT justifies using the t-distribution when sample sizes are <strong>relatively small</strong> and the <strong>population standard deviation is unknown</strong>. (because of CLT, we can use confidence interval to justify t-test)</p>
-<h3 id="Student’s-t-Distribution"><a href="#Student’s-t-Distribution" class="headerlink" title="Student’s t-Distribution"></a>Student’s t-Distribution</h3><p>The t-distribution is similar to the normal distribution but has heavier tails, which means it is more prone to producing values that fall far from its mean. This characteristic makes it particularly useful for small sample sizes. As the sample size increases, the t-distribution approaches the normal distribution.</p>
-<h3 id="Degrees-of-Freedom"><a href="#Degrees-of-Freedom" class="headerlink" title="Degrees of Freedom"></a>Degrees of Freedom</h3><p>Degrees of freedom (df) refer to <strong>the number of independent values in a calculation that are free to vary</strong>. In a t-test, the degrees of freedom <strong>depend on the sample size(s)</strong> and are used to determine the critical value from the t-distribution.</p>
-<h2 id="1-Independent-Two-Sample-t-Test"><a href="#1-Independent-Two-Sample-t-Test" class="headerlink" title="1. Independent (Two-Sample) t-Test"></a>1. Independent (Two-Sample) t-Test</h2><h3 id="Concept"><a href="#Concept" class="headerlink" title="Concept"></a>Concept</h3><p>The independent t-test, also known as the two-sample t-test, is used to compare the means of <strong>two independent groups</strong>. This test determines whether the means of the two groups are significantly different from each other.</p>
-<h3 id="Hypothesis"><a href="#Hypothesis" class="headerlink" title="Hypothesis"></a>Hypothesis</h3><ul>
-<li><strong>Null Hypothesis ($H_0$)</strong>: The means of the two groups are equal ($\mu_1 &#x3D; \mu_2$).</li>
-<li><strong>Alternative Hypothesis ($H_A$)</strong>: The means of the two groups are not equal ($\mu_1 \neq \mu_2$).</li>
-</ul>
-<h3 id="Mathematical-Representation"><a href="#Mathematical-Representation" class="headerlink" title="Mathematical Representation"></a>Mathematical Representation</h3><p>The formula for the independent t-test is:</p>
-<p>$$ t &#x3D; \frac{\bar{X}_1 - \bar{X}_2}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}} $$</p>
-<p>Where:</p>
-<ul>
-<li>$\bar{X}_1$ and $\bar{X}_2$ are the sample means of groups 1 and 2.</li>
-<li>$s_1^2$ and $s_2^2$ are the sample variances of groups 1 and 2.</li>
-<li>$n_1$ and $n_2$ are the sample sizes of groups 1 and 2.</li>
-</ul>
-<h2 id="2-Single-Sample-t-Test"><a href="#2-Single-Sample-t-Test" class="headerlink" title="2. Single-Sample t-Test"></a>2. Single-Sample t-Test</h2><h3 id="Concept-1"><a href="#Concept-1" class="headerlink" title="Concept"></a>Concept</h3><p>The single-sample t-test is used to compare the mean of <strong>a single sample to a known value or a theoretical mean</strong>. This test assesses whether the sample mean significantly differs from the hypothesized population mean.</p>
-<h3 id="Hypothesis-1"><a href="#Hypothesis-1" class="headerlink" title="Hypothesis"></a>Hypothesis</h3><ul>
-<li><strong>Null Hypothesis ($H_0$)</strong>: The sample mean is equal to the population mean ($\mu &#x3D; \mu_0$).</li>
-<li><strong>Alternative Hypothesis ($H_A$)</strong>: The sample mean is not equal to the population mean ($\mu \neq \mu_0$).</li>
-</ul>
-<h3 id="Mathematical-Representation-1"><a href="#Mathematical-Representation-1" class="headerlink" title="Mathematical Representation"></a>Mathematical Representation</h3><p>The formula for the single-sample t-test is:</p>
-<p>$$ t &#x3D; \frac{\bar{X} - \mu_0}{\frac{s}{\sqrt{n}}} $$</p>
-<p>Where:</p>
-<ul>
-<li>$\bar{X}$ is the sample mean.</li>
-<li>$\mu_0$ is the hypothesized population mean.</li>
-<li>$s$ is the sample standard deviation.</li>
-<li>$n$ is the sample size.</li>
-</ul>
-<h2 id="3-Paired-Sample-t-Test"><a href="#3-Paired-Sample-t-Test" class="headerlink" title="3. Paired-Sample t-Test"></a>3. Paired-Sample t-Test</h2><h3 id="Concept-2"><a href="#Concept-2" class="headerlink" title="Concept"></a>Concept</h3><p>The paired-sample t-test, also known as the dependent t-test, is used to <strong>compare the means of two related groups</strong>. This test is often used in pre-test&#x2F;post-test scenarios or when comparing measurements taken on the <strong>same subjects under different conditions</strong>.</p>
-<h3 id="Hypothesis-2"><a href="#Hypothesis-2" class="headerlink" title="Hypothesis"></a>Hypothesis</h3><ul>
-<li><strong>Null Hypothesis ($H_0$)</strong>: The mean difference between the paired observations is zero ($\mu_D &#x3D; 0 $).</li>
-<li><strong>Alternative Hypothesis ($H_A$)</strong>: The mean difference between the paired observations is not zero ($\mu_D \neq 0$).</li>
-<li>$\mu_D &#x3D; \mu_1 - \mu_2$</li>
-</ul>
-<h3 id="Mathematical-Representation-2"><a href="#Mathematical-Representation-2" class="headerlink" title="Mathematical Representation"></a>Mathematical Representation</h3><p>The formula for the paired-sample t-test is:</p>
-<p>$$ t &#x3D; \frac{\bar{D}}{\frac{s_D}{\sqrt{n}}} $$</p>
-<p>Where:</p>
-<ul>
-<li>$\bar{D}$ is the mean of the differences between paired observations.</li>
-<li>$s_D$ is the standard deviation of the differences.</li>
-<li>$n$ is the number of paired observations.</li>
-</ul>
-<h2 id="Python-Code-for-t-Tests"><a href="#Python-Code-for-t-Tests" class="headerlink" title="Python Code for t-Tests"></a>Python Code for t-Tests</h2><p>To perform these t-tests in Python, you can use the <code>scipy.stats</code> library, which provides convenient functions for each type of t-test. Below is the sample code for each t-test:</p>
-<h3 id="Independent-Two-Sample-t-Test"><a href="#Independent-Two-Sample-t-Test" class="headerlink" title="Independent (Two-Sample) t-Test"></a>Independent (Two-Sample) t-Test</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> scipy <span class="keyword">import</span> stats</span><br><span class="line"></span><br><span class="line"><span class="comment"># Sample data for two independent groups</span></span><br><span class="line">group1 = np.array([<span class="number">12</span>, <span class="number">14</span>, <span class="number">16</span>, <span class="number">18</span>, <span class="number">20</span>])</span><br><span class="line">group2 = np.array([<span class="number">22</span>, <span class="number">24</span>, <span class="number">26</span>, <span class="number">28</span>, <span class="number">30</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># Perform independent (two-sample) t-test</span></span><br><span class="line">t_stat, p_value = stats.ttest_ind(group1, group2)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;Independent t-test: t-statistic = <span class="subst">&#123;t_stat&#125;</span>, p-value = <span class="subst">&#123;p_value&#125;</span>&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-<h3 id="Single-Sample-t-Test"><a href="#Single-Sample-t-Test" class="headerlink" title="Single-Sample t-Test"></a>Single-Sample t-Test</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> scipy <span class="keyword">import</span> stats</span><br><span class="line"></span><br><span class="line"><span class="comment"># Sample data</span></span><br><span class="line">data = np.array([<span class="number">12</span>, <span class="number">14</span>, <span class="number">16</span>, <span class="number">18</span>, <span class="number">20</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># Population mean to compare against</span></span><br><span class="line">population_mean = <span class="number">15</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Perform single-sample t-test</span></span><br><span class="line">t_stat, p_value = stats.ttest_1samp(data, population_mean)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;Single-sample t-test: t-statistic = <span class="subst">&#123;t_stat&#125;</span>, p-value = <span class="subst">&#123;p_value&#125;</span>&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-<h3 id="Paired-Sample-t-Test"><a href="#Paired-Sample-t-Test" class="headerlink" title="Paired-Sample t-Test"></a>Paired-Sample t-Test</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> scipy <span class="keyword">import</span> stats</span><br><span class="line"></span><br><span class="line"><span class="comment"># Sample data for paired observations</span></span><br><span class="line">before_treatment = np.array([<span class="number">12</span>, <span class="number">14</span>, <span class="number">16</span>, <span class="number">18</span>, <span class="number">20</span>])</span><br><span class="line">after_treatment = np.array([<span class="number">22</span>, <span class="number">24</span>, <span class="number">26</span>, <span class="number">28</span>, <span class="number">30</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># Perform paired-sample t-test</span></span><br><span class="line">t_stat, p_value = stats.ttest_rel(before_treatment, after_treatment)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;Paired-sample t-test: t-statistic = <span class="subst">&#123;t_stat&#125;</span>, p-value = <span class="subst">&#123;p_value&#125;</span>&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>Each type of t-test serves a specific purpose and is suited for different kinds of data and hypotheses. By understanding the concepts, hypotheses, and mathematical representations of the independent t-test, single-sample t-test, and paired-sample t-test, you can choose the appropriate test for your data analysis project. Using these tests effectively will enable you to draw meaningful conclusions and validate your findings with statistical significance.</p>
-]]></content>
-      <tags>
-        <tag>datascience</tag>
-        <tag>statistic</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>[NLP][ML] Transformer (2) - Attention &amp; Summary</title>
-    <url>/posts/2443192075/</url>
-    <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>Self-attention allows the model to <strong>weigh the importance of different parts of an input sequence against each other</strong>, capturing <strong>relationships</strong> and dependencies between elements within the sequence. This is particularly powerful for tasks involving sequential or contextual information, such as language translation, text generation, and more.</p>
-<p>What Self-Attention wants to do is to replace what RNN can do<br>Its output&#x2F;input is the same as RNN, and its biggest advantages are:</p>
-<ul>
-<li>Can parallelize operations</li>
-<li>Each output vector has seen the entire input sequence. So there is no need to stack several layers like CNN.</li>
-</ul>
-<span id="more"></span>
-<h1 id="Difference-between-attention-and-self-attention"><a href="#Difference-between-attention-and-self-attention" class="headerlink" title="Difference between attention and self-attention"></a>Difference between attention and self-attention</h1><p><strong>attention is a broader concept of selectively focusing on information</strong>, while <strong>self-attention is a specific implementation of this concept</strong> where elements within the same sequence are attended to. Self-attention is a fundamental building block of the Transformer architecture, allowing it to capture relationships and dependencies within sequences effectively.</p>
-<h1 id="Attention-Machanism"><a href="#Attention-Machanism" class="headerlink" title="Attention (Machanism)"></a>Attention (Machanism)</h1><p>main idea:<br>use <strong>triples</strong><br>$$&lt;Q,K,V&gt;$$</p>
-<p>Represents the <strong>attention mechanism</strong>, expresses the <strong>similarity between Query and Key</strong>, and then assigns the value of <strong>Value according to the similarity</strong><br><strong>formula</strong>:<br>$$Attention(Q,K,V) &#x3D; softmax(\frac{QK^T}{\sqrt{d_k}})V$$</p>
-<h1 id="Self-Attention-Layer-Key"><a href="#Self-Attention-Layer-Key" class="headerlink" title="Self-Attention(Layer) (Key)"></a>Self-Attention(Layer) (<strong>Key</strong>)</h1><h2 id="Computing-process"><a href="#Computing-process" class="headerlink" title="Computing process"></a>Computing process</h2><ol>
-<li><p>Now we suppose to enter $a_1$~$a_4$ Four vector, and Self-Attention needs to output another row of $b$ vectors, and each $b$ is generated after considering all $a$</p>
-</li>
-<li><p>To figure out $b_1$, the first step is based on $a_1$, find <strong>other vectors related to $a_1$</strong> in this sequence. We use the “$\alpha$” to represent the <strong>similarity</strong> of each vector related to $a_1$.</p>
-</li>
-<li><p>It must be mentioned here that there are <strong>3 very important values in the Self-Attention mechanism</strong>: <strong>Query, Key, Value</strong>. Respectively represent <strong>the value used to match, the value to be matched, and the extracted information</strong>.</p>
-</li>
-<li><p>As for determining the <strong>correlation between two vectors</strong>, the most commonly used method is the <strong>dot product (here is scaled dot product)</strong>. It takes two vectors as input and multiplies them with two different matrices. The left vector is multiplied by the matrix $W^q$ (Query matrix), and the right vector is multiplied by the matrix $W^k$ (Key matrix). The values of $W^q$ and $W^k$ are both <strong>randomly initialized and obtained through training</strong>.</p>
-</li>
-<li><p>Next, after obtaining the two vectors, $q$, $k$, the <strong>dot product is computed between them</strong>. After summing up all the dot products, a <strong>scalar (magnitude)</strong> is obtained. This scalar is represented as $\alpha$, which we consider as <strong>the degree of correlation between the two vectors.</strong></p>
-</li>
-</ol>
-<p><img data-src="/images/posts/NLP-series/transformer-6.png" 
-style="width: 70%; margin: 15px auto;"></p>
-<p>Next, we apply what was just introduced to Self-Attention.</p>
-<ol>
-<li>First, we calculate the relationships “$\alpha$” between $a_1$ and $a_2$, $a_3$, $a_4$ individually. <ul>
-<li>We multiply $a_1$ by $W^q$ to obtain $q_1$. </li>
-<li>Then, we multiply $a_2$, $a_3$, $a_4$ by $W^k$ respectively and compute the inner products to determine the relationship “$\alpha$” between $a_1$ and each vector. </li>
-<li>Applying the Softmax function yields $\alpha’$. </li>
-<li>With this $\alpha’$, we can extract crucial information from this sequence!</li>
-</ul>
-</li>
-</ol>
 <hr>
-<p><img data-src="/images/posts/NLP-series/transformer-7.png" 
+<h1 id="Introduction-to-Git-A-Distributed-Version-Control-System"><a href="#Introduction-to-Git-A-Distributed-Version-Control-System" class="headerlink" title="Introduction to Git: A Distributed Version Control System"></a>Introduction to Git: A Distributed Version Control System</h1><p>Git is a powerful and widely used distributed version control system designed to track changes in software development projects. It provides developers with the ability to collaborate on projects efficiently, manage codebases effectively, and easily track and revert changes.</p>
+<h2 id="Distributed-Version-Control-System"><a href="#Distributed-Version-Control-System" class="headerlink" title="Distributed Version Control System"></a>Distributed Version Control System</h2><p>In traditional software development, changes to a codebase were often managed through file-based systems or centralized version control systems. However, these approaches had limitations in terms of collaboration, scalability, and flexibility. Git emerged as a solution to these challenges, offering a distributed and decentralized approach to version control.</p>
+<p>The special point of Git is that it supports distributed version control and can also easily share codes among multiple nodes.</p>
+<p><img data-src="/images/posts/Git-Series/dist-ver-ctr.png" 
 style="width: 70%; margin: 15px auto;"></p>
-<ol start="2">
-<li>How to extract important information using $\alpha’$? The steps are as follows:</li>
+<h2 id="Branch"><a href="#Branch" class="headerlink" title="Branch"></a>Branch</h2><p>Git manages code based on a tree structure, allowing branches to be created, merged, and deleted, and code versions to be saved at any time.</p>
+<p><img data-src="/images/posts/Git-Series/branch.png" 
+style="width: 70%; margin: 15px auto;"></p>
+<h2 id="Snapshot"><a href="#Snapshot" class="headerlink" title="Snapshot"></a>Snapshot</h2><p>Git saves full snapshots of files, rather than differences, making it easy to restore all historical versions of files.</p>
+<p><img data-src="/images/posts/Git-Series/snapshot.jpeg" 
+style="width: 70%; margin: 15px auto;"></p>
+<hr>
+<h1 id="Recommended-Resources"><a href="#Recommended-Resources" class="headerlink" title="Recommended Resources"></a>Recommended Resources</h1><p><a href="%22https://www.youtube.com/watch?v=8JJ101D3knE%22">Mosh Git Tutorail</a></p>
+]]></content>
+      <categories>
+        <category>Git 系列文</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>Version Control</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[Git][Version Control] Git - Setup</title>
+    <url>/posts/731175240/</url>
+    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><p>Setting up the environment of Git and some recommended GUI tools.</p>
+<span id="more"></span>
+
+<h1 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h1><ol>
+<li><p>Install Git with the link below: (with your OS)<br><a href="%22https://git-scm.com/%22">Git official website</a></p>
+</li>
+<li><p>Type this command to check if it is installed successfully:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h1 id="Configure-Git-type-commands-in-your-shell"><a href="#Configure-Git-type-commands-in-your-shell" class="headerlink" title="Configure Git (type commands in your shell)"></a>Configure Git (type commands in your shell)</h1><ol>
+<li><p>Set your user name by running the following command:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Set your email address by running the following command:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.email youremail@example.com</span><br></pre></td></tr></table></figure></li>
+<li><p>Set up SSH key (for remote repository access. e.g. GitHub)</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure></li>
 </ol>
 <ul>
-<li>First, multiply $a_1$ ~ $a_4$ by $W^v$ to obtain new vectors, denoted as $v_1$, $v_2$, $v_3$ and $v_4$, respectively (where $W^v$ is the Value matrix).</li>
-<li>Next, multiply each vector here, $v_1$ ~ $v_4$, by $\alpha’$, and then sum them to obtain the output $b_1$ (formula written in the top-right corner of the image).</li>
+<li><p>Press Enter to accept the default file location and passphrase (or set your own if desired).<br>Once the key is generated, run the following command to add it to the SSH agent</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-add ~/.ssh/id_rsa</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Copy the public key to your clipboard by running the following command</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Add the copied public key to your Git hosting platform account (e.g., GitHub, GitLab) by following their documentation.</p>
+</li>
+<li><p>View your ssh keys</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd ~/.ssh</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ls</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Use a text editor or command-line tools (such as cat or less) to view the contents of the .pub files and see the public key information: <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat id_rsa.pub</span><br></pre></td></tr></table></figure></li>
 </ul>
-<p>If a certain vector receives a higher score - for instance, if the relationship between $a_1$ and $a_2$ is strong, leading to a large value for $\alpha_{1,2}’$ - then after performing the weighted sum, the value of $b_1$ obtained could be very close to $v_2$.</p>
-<p>Now that we know how to compute $b_1$, it naturally follows that we can deduce $b_1$, $b_2$, $b_3$, and $b_4$ using the same method. With this, we have completed the explanation of the internal computation process of Self-Attention.</p>
-<p>Last but not least, the <strong>similarity matrix($\alpha_{i,j}$)</strong> is just the <strong>attention</strong> in the self-attention layer, i.e. importance or relevance to other elements in the same sequence..</p>
-<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><h2 id="Attention-Score-Weight-and-Output"><a href="#Attention-Score-Weight-and-Output" class="headerlink" title="Attention (Score, Weight and Output)"></a>Attention (Score, Weight and Output)</h2><ul>
-<li>$ Attention Score &#x3D; QK^T $</li>
-<li>$ Attention Weights &#x3D; Softmax(\frac{Attention Score}{\sqrt{d_k}}) $</li>
-<li>$ Attention Output &#x3D; (Attention Weights)V $</li>
+</li>
 </ul>
-<h2 id="Key-Components-of-Transformers"><a href="#Key-Components-of-Transformers" class="headerlink" title="Key Components of Transformers"></a>Key Components of Transformers</h2><ol>
-<li><p>Self-Attention Mechanism:<br>The core innovation of the Transformer is the self-attention mechanism, which allows the model to <strong>weigh the importance of different words in a sequence relative to each other</strong>. It computes attention scores for each word by considering its <strong>relationships with all other words</strong> in the same sequence. Self-attention enables capturing context and dependencies between words <strong>regardless of their distance</strong>.</p>
-</li>
-<li><p>Multi-Head Attention:<br>To capture different types of relationships, the Transformer employs multi-head attention. <strong>Multiple sets of self-attention mechanisms (attention heads) run in parallel</strong>, and their outputs are concatenated and linearly transformed to create a more comprehensive representation.</p>
-</li>
-<li><p>Positional Encodings:<br>Since the Transformer does not inherently understand <strong>the order of words in a sequence</strong> (unlike recurrent networks(RNN)), positional encodings are added to the input embeddings. These encodings provide <strong>information about the positions of words within the sequence</strong>.</p>
-</li>
-<li><p>Encoder-Decoder Architecture:<br>The Transformer’s architecture is divided into an <strong>encoder and a decoder</strong>. The <strong>encoder processes the input sequence, capturing its contextual information</strong>, while the <strong>decoder generates the output sequence</strong>. This architecture is widely used in tasks like machine translation.</p>
-</li>
-<li><p>Residual Connections and Layer Normalization:<br>To address the <strong>vanishing gradient problem</strong>, residual connections (skip connections) are used around each sub-layer in the encoder and decoder. Layer normalization is also applied to <strong>stabilize</strong> the training process.</p>
-</li>
-<li><p>Position-wise Feed-Forward Networks:<br>After the self-attention layers, each position’s representation is passed through a position-wise feed-forward neural network, which <strong>adds non-linearity to the model</strong>.</p>
-</li>
-<li><p>Scaled Dot-Product Attention:<br>The self-attention mechanism involves computing the <strong>dot product of query, key, and value vectors</strong>. To control the scale of the dot products and <strong>avoid large gradients</strong>, the dot products are divided by the <strong>square root of the dimension of the key vectors</strong>.</p>
-</li>
-<li><p>Masked Self-Attention in Decoding:<br>During decoding, the self-attention mechanism is modified to <strong>ensure that each position can only attend to previous positions</strong>. This masking <strong>prevents the model from “cheating” by looking ahead in the output sequence</strong>.</p>
-</li>
-<li><p>Transformer Variants:<br> The original Transformer model has inspired various extensions and improvements, such as BERT, GPT, and more. BERT focuses on pretraining language representations, while GPT is designed for autoregressive text generation.</p>
-</li>
+<ol start="4">
+<li>You can see your configuration by typing the following commands:<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --list</span><br></pre></td></tr></table></figure></li>
 </ol>
-<p>The Transformer architecture has become the foundation for many state-of-the-art NLP models due to its ability to <strong>capture context, parallelize computations, and handle long-range dependencies effectively</strong>. It has led to significant advancements in machine translation, text generation, sentiment analysis, and various other NLP tasks.</p>
-<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1lTWx4NWZGTm9ZYw==">3Blue1Brown<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MDM5Mg==">iThome - Day 27 Transformer (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9pdGhlbHAuaXRob21lLmNvbS50dy9hcnRpY2xlcy8xMDI4MTI0Mg==">iThome - Day 28 Self-Attention (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9oYWNrbWQuaW8vQGFibGl1L0JrWG16REJtcg==">Transformer 李宏毅深度學習 (Recommend)<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9zcGVlY2guZWUubnR1LmVkdS50dy9+aHlsZWUvbWwvbWwyMDIxLWNvdXJzZS1kYXRhL3NlcTJzZXFfdjkucGRm">Transformer 李宏毅老師簡報<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQzJnZ2p0dXVXdnhySEhIaWFESDFkbFE=">李宏毅老師YouTube channel<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzE3MDYuMDM3NjI=">Attention is all you need (paper)<i class="fa fa-external-link-alt"></i></span></li>
+<h1 id="Recommended-GUI-tools"><a href="#Recommended-GUI-tools" class="headerlink" title="Recommended GUI tools"></a>Recommended GUI tools</h1><p>Both commands and GUI tools are important to Git manupulation.<br>And Here are some recommended Git GUI tools that you can use.</p>
+<ul>
+<li><a href="%22https://www.sourcetreeapp.com/%22">Sourcetree</a></li>
+<li><a href="%22https://www.gitkraken.com/%22">GitKraken</a></li>
 </ul>
 ]]></content>
+      <categories>
+        <category>Git 系列文</category>
+      </categories>
       <tags>
-        <tag>ML</tag>
-        <tag>AI</tag>
-        <tag>NLP</tag>
+        <tag>Git</tag>
+        <tag>Version Control</tag>
       </tags>
   </entry>
   <entry>
@@ -1930,6 +1754,157 @@ style="width: 70%; margin: 15px auto;"></p>
       </tags>
   </entry>
   <entry>
+    <title>Understanding Cloud Computing - Public, Private, and Hybrid Clouds</title>
+    <url>/posts/3108822142/</url>
+    <content><![CDATA[<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Cloud computing has become a cornerstone for deploying modern IT solutions, offering scalable, efficient, and versatile options for businesses and individuals alike. With the evolution of cloud technology, three primary deployment models have emerged: public, private, and hybrid clouds. Each model offers distinct features, benefits, and considerations, making it crucial to understand their differences to choose the most suitable option for your needs. In this article, we’ll delve into the nuances of public, private, and hybrid clouds, helping you navigate the cloud landscape.</p>
+<span id="more"></span>
+
+<h1 id="Public-Cloud"><a href="#Public-Cloud" class="headerlink" title="Public Cloud"></a>Public Cloud</h1><p>The public cloud is a model where computing services are <strong>offered by third-party providers</strong> over the Internet, making them available to anyone who wants to use or purchase them. This model is characterized by its scalability, reliability, and flexibility, allowing users to access a wide range of resources and services on a pay-as-you-go basis. Public clouds are ideal for businesses that need to <strong>scale their computing resources up or down quickly</strong> or that do not want to invest in heavy upfront costs for infrastructure.</p>
+<p>Below are the features of public cloud:</p>
+<ul>
+<li>Characteristics<ul>
+<li>Multi-tenancy: Shared resources among multiple users.</li>
+<li>Scalability: Easily adjusts to demand.</li>
+<li>Cost-Effectiveness: Pay-as-you-go model reduces upfront investments.</li>
+<li>Maintenance: Handled by the provider, reducing the workload on users.</li>
+</ul>
+</li>
+<li>Benefits<ul>
+<li>Quick, easy setup and scalability.</li>
+<li>Access to a broad range of services and applications.</li>
+<li>No need for physical hardware investments.</li>
+</ul>
+</li>
+<li>Challenges<ul>
+<li>Lesser control over security and privacy.</li>
+<li>Performance may vary due to the shared resource model.</li>
+</ul>
+</li>
+<li>Examples:<ul>
+<li>Amazon Web Services (AWS)</li>
+<li>Microsoft Azure</li>
+<li>Google Cloud Platform (GCP)</li>
+</ul>
+</li>
+</ul>
+<h1 id="Private-Cloud"><a href="#Private-Cloud" class="headerlink" title="Private Cloud"></a>Private Cloud</h1><p>Private cloud refers to cloud computing resources used <strong>exclusively by a single business or organization.</strong> The private cloud can be hosted on the <strong>organization’s own premises or by a third-party service provider but remains within the control of the organization it serves.</strong> This model offers enhanced security and control, making it suitable for businesses with <strong>strict regulatory compliance requirements or those that handle sensitive data.</strong></p>
+<p>Below are the features of private cloud:</p>
+<ul>
+<li>Characteristics<ul>
+<li>Single-tenancy: Dedicated resources for a single organization.</li>
+<li>Customization: Tailorable to specific business needs.</li>
+<li>Control: More direct oversight over security and compliance.</li>
+</ul>
+</li>
+<li>Benefits<ul>
+<li>Enhanced security and privacy.</li>
+<li>Full control over the cloud environment.</li>
+<li>Potentially more cost-effective for steady, predictable workloads.</li>
+</ul>
+</li>
+<li>Challenges<ul>
+<li>Requires more significant initial investment and expertise.</li>
+<li>Maintenance and management can be resource-intensive.</li>
+</ul>
+</li>
+<li>Examples:<ul>
+<li>VMware vSphere</li>
+<li>OpenStack</li>
+<li>Microsoft Azure Stack</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Note: The distinction between private cloud hosted by a third-party provider and public cloud lies in <strong>the architecture, resource allocation, and control</strong> rather than the physical location or ownership of the infrastructure. </p>
+</blockquote>
+<h1 id="Hybrid-Cloud"><a href="#Hybrid-Cloud" class="headerlink" title="Hybrid Cloud"></a>Hybrid Cloud</h1><p>Hybrid cloud combines public and private cloud elements, with technology enabling data and applications to be shared between them. This approach allows businesses to <strong>keep critical applications and sensitive data in a private cloud for security while leveraging the robust scalability and cost-efficiency of the public cloud for less sensitive operations.</strong> Hybrid cloud is ideal for organizations looking for flexibility, more deployment options, and optimization of their workloads across different environments.</p>
+<p>Below are the features of hybrid cloud:</p>
+<ul>
+<li>Characteristics<ul>
+<li>Interoperability: Smooth integration between public and private sectors.</li>
+<li>Flexibility: Workloads are movable based on needs and costs.</li>
+<li>Optimization: Places workloads in the best environment for performance, cost, and compliance.</li>
+</ul>
+</li>
+<li>Benefits<ul>
+<li>Merges the scalability of public clouds with the security of private clouds.</li>
+<li>Supports dynamic or fluctuating workloads effectively.</li>
+<li>Ideal for meeting both operational flexibility and compliance requirements.</li>
+</ul>
+</li>
+<li>Challenges<ul>
+<li>Complexity in setup and ongoing management.</li>
+<li>Necessitates strategic planning for seamless operation across environments.</li>
+</ul>
+</li>
+<li>Examples:<ul>
+<li>IBM Cloud</li>
+<li>Oracle Cloud at Customer</li>
+<li>AWS Outposts</li>
+</ul>
+</li>
+</ul>
+<h1 id="Comparison"><a href="#Comparison" class="headerlink" title="Comparison"></a>Comparison</h1><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Public Cloud</th>
+<th>Private Cloud</th>
+<th>Hybrid Cloud</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Accessibility</strong></td>
+<td>Over the Internet, available to all</td>
+<td>Restricted to a single organization</td>
+<td>Combination, with controlled access</td>
+</tr>
+<tr>
+<td><strong>Cost</strong></td>
+<td>Pay-as-you-go, less upfront cost</td>
+<td>Higher initial cost and maintenance</td>
+<td>Varies, can optimize cost based on usage</td>
+</tr>
+<tr>
+<td><strong>Control</strong></td>
+<td>Limited control over infrastructure</td>
+<td>High control over resources</td>
+<td>Balances control and flexibility</td>
+</tr>
+<tr>
+<td><strong>Security</strong></td>
+<td>Good, but shared with other tenants</td>
+<td>Enhanced, as resources are not shared</td>
+<td>Customizable, can be tailored for each part</td>
+</tr>
+<tr>
+<td><strong>Scalability</strong></td>
+<td>Highly scalable, on-demand resources</td>
+<td>Scalable, but within private resources</td>
+<td>Highly scalable, leverages both models</td>
+</tr>
+<tr>
+<td><strong>Suitability</strong></td>
+<td>Small to large businesses needing scalability</td>
+<td>Businesses with strict data control needs</td>
+<td>Businesses requiring flexibility and control</td>
+</tr>
+<tr>
+<td><strong>Maintenance</strong></td>
+<td>Managed by the provider</td>
+<td>Managed by the organization or provider</td>
+<td>Combination, depending on where hosted</td>
+</tr>
+</tbody></table>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuYnVzaW5lc3N0ZWNod2Vla2x5LmNvbS9vcGVyYXRpb25hbC1lZmZpY2llbmN5L2Nsb3VkLWNvbXB1dGluZy9wcml2YXRlLWNsb3VkLXZzLXB1YmxpYy1jbG91ZC8=">Private Cloud vs Public Cloud: Which Cloud Computing deployment model is best for your business?<i class="fa fa-external-link-alt"></i></span></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>cloud computing</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Understanding AWS Networking: VGW, VPC Endpoints, and Security Groups</title>
     <url>/posts/3294285798/</url>
     <content><![CDATA[<h1 id="Understanding-AWS-Networking-VGW-VPC-Endpoints-and-Security-Groups"><a href="#Understanding-AWS-Networking-VGW-VPC-Endpoints-and-Security-Groups" class="headerlink" title="Understanding AWS Networking: VGW, VPC Endpoints, and Security Groups"></a>Understanding AWS Networking: VGW, VPC Endpoints, and Security Groups</h1><p>When working with Amazon Web Services (AWS), understanding the various networking components is crucial for designing secure and efficient architectures. In this article, we will explore three key concepts: Virtual Private Gateway (VGW), VPC Endpoints, and Security Groups.</p>
@@ -2364,157 +2339,6 @@ style="width: 70%; margin: 15px auto;"><br>這裡主要是以書本和作者為�
       </tags>
   </entry>
   <entry>
-    <title>Understanding Cloud Computing - Public, Private, and Hybrid Clouds</title>
-    <url>/posts/3108822142/</url>
-    <content><![CDATA[<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Cloud computing has become a cornerstone for deploying modern IT solutions, offering scalable, efficient, and versatile options for businesses and individuals alike. With the evolution of cloud technology, three primary deployment models have emerged: public, private, and hybrid clouds. Each model offers distinct features, benefits, and considerations, making it crucial to understand their differences to choose the most suitable option for your needs. In this article, we’ll delve into the nuances of public, private, and hybrid clouds, helping you navigate the cloud landscape.</p>
-<span id="more"></span>
-
-<h1 id="Public-Cloud"><a href="#Public-Cloud" class="headerlink" title="Public Cloud"></a>Public Cloud</h1><p>The public cloud is a model where computing services are <strong>offered by third-party providers</strong> over the Internet, making them available to anyone who wants to use or purchase them. This model is characterized by its scalability, reliability, and flexibility, allowing users to access a wide range of resources and services on a pay-as-you-go basis. Public clouds are ideal for businesses that need to <strong>scale their computing resources up or down quickly</strong> or that do not want to invest in heavy upfront costs for infrastructure.</p>
-<p>Below are the features of public cloud:</p>
-<ul>
-<li>Characteristics<ul>
-<li>Multi-tenancy: Shared resources among multiple users.</li>
-<li>Scalability: Easily adjusts to demand.</li>
-<li>Cost-Effectiveness: Pay-as-you-go model reduces upfront investments.</li>
-<li>Maintenance: Handled by the provider, reducing the workload on users.</li>
-</ul>
-</li>
-<li>Benefits<ul>
-<li>Quick, easy setup and scalability.</li>
-<li>Access to a broad range of services and applications.</li>
-<li>No need for physical hardware investments.</li>
-</ul>
-</li>
-<li>Challenges<ul>
-<li>Lesser control over security and privacy.</li>
-<li>Performance may vary due to the shared resource model.</li>
-</ul>
-</li>
-<li>Examples:<ul>
-<li>Amazon Web Services (AWS)</li>
-<li>Microsoft Azure</li>
-<li>Google Cloud Platform (GCP)</li>
-</ul>
-</li>
-</ul>
-<h1 id="Private-Cloud"><a href="#Private-Cloud" class="headerlink" title="Private Cloud"></a>Private Cloud</h1><p>Private cloud refers to cloud computing resources used <strong>exclusively by a single business or organization.</strong> The private cloud can be hosted on the <strong>organization’s own premises or by a third-party service provider but remains within the control of the organization it serves.</strong> This model offers enhanced security and control, making it suitable for businesses with <strong>strict regulatory compliance requirements or those that handle sensitive data.</strong></p>
-<p>Below are the features of private cloud:</p>
-<ul>
-<li>Characteristics<ul>
-<li>Single-tenancy: Dedicated resources for a single organization.</li>
-<li>Customization: Tailorable to specific business needs.</li>
-<li>Control: More direct oversight over security and compliance.</li>
-</ul>
-</li>
-<li>Benefits<ul>
-<li>Enhanced security and privacy.</li>
-<li>Full control over the cloud environment.</li>
-<li>Potentially more cost-effective for steady, predictable workloads.</li>
-</ul>
-</li>
-<li>Challenges<ul>
-<li>Requires more significant initial investment and expertise.</li>
-<li>Maintenance and management can be resource-intensive.</li>
-</ul>
-</li>
-<li>Examples:<ul>
-<li>VMware vSphere</li>
-<li>OpenStack</li>
-<li>Microsoft Azure Stack</li>
-</ul>
-</li>
-</ul>
-<blockquote>
-<p>Note: The distinction between private cloud hosted by a third-party provider and public cloud lies in <strong>the architecture, resource allocation, and control</strong> rather than the physical location or ownership of the infrastructure. </p>
-</blockquote>
-<h1 id="Hybrid-Cloud"><a href="#Hybrid-Cloud" class="headerlink" title="Hybrid Cloud"></a>Hybrid Cloud</h1><p>Hybrid cloud combines public and private cloud elements, with technology enabling data and applications to be shared between them. This approach allows businesses to <strong>keep critical applications and sensitive data in a private cloud for security while leveraging the robust scalability and cost-efficiency of the public cloud for less sensitive operations.</strong> Hybrid cloud is ideal for organizations looking for flexibility, more deployment options, and optimization of their workloads across different environments.</p>
-<p>Below are the features of hybrid cloud:</p>
-<ul>
-<li>Characteristics<ul>
-<li>Interoperability: Smooth integration between public and private sectors.</li>
-<li>Flexibility: Workloads are movable based on needs and costs.</li>
-<li>Optimization: Places workloads in the best environment for performance, cost, and compliance.</li>
-</ul>
-</li>
-<li>Benefits<ul>
-<li>Merges the scalability of public clouds with the security of private clouds.</li>
-<li>Supports dynamic or fluctuating workloads effectively.</li>
-<li>Ideal for meeting both operational flexibility and compliance requirements.</li>
-</ul>
-</li>
-<li>Challenges<ul>
-<li>Complexity in setup and ongoing management.</li>
-<li>Necessitates strategic planning for seamless operation across environments.</li>
-</ul>
-</li>
-<li>Examples:<ul>
-<li>IBM Cloud</li>
-<li>Oracle Cloud at Customer</li>
-<li>AWS Outposts</li>
-</ul>
-</li>
-</ul>
-<h1 id="Comparison"><a href="#Comparison" class="headerlink" title="Comparison"></a>Comparison</h1><table>
-<thead>
-<tr>
-<th>Feature</th>
-<th>Public Cloud</th>
-<th>Private Cloud</th>
-<th>Hybrid Cloud</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>Accessibility</strong></td>
-<td>Over the Internet, available to all</td>
-<td>Restricted to a single organization</td>
-<td>Combination, with controlled access</td>
-</tr>
-<tr>
-<td><strong>Cost</strong></td>
-<td>Pay-as-you-go, less upfront cost</td>
-<td>Higher initial cost and maintenance</td>
-<td>Varies, can optimize cost based on usage</td>
-</tr>
-<tr>
-<td><strong>Control</strong></td>
-<td>Limited control over infrastructure</td>
-<td>High control over resources</td>
-<td>Balances control and flexibility</td>
-</tr>
-<tr>
-<td><strong>Security</strong></td>
-<td>Good, but shared with other tenants</td>
-<td>Enhanced, as resources are not shared</td>
-<td>Customizable, can be tailored for each part</td>
-</tr>
-<tr>
-<td><strong>Scalability</strong></td>
-<td>Highly scalable, on-demand resources</td>
-<td>Scalable, but within private resources</td>
-<td>Highly scalable, leverages both models</td>
-</tr>
-<tr>
-<td><strong>Suitability</strong></td>
-<td>Small to large businesses needing scalability</td>
-<td>Businesses with strict data control needs</td>
-<td>Businesses requiring flexibility and control</td>
-</tr>
-<tr>
-<td><strong>Maintenance</strong></td>
-<td>Managed by the provider</td>
-<td>Managed by the organization or provider</td>
-<td>Combination, depending on where hosted</td>
-</tr>
-</tbody></table>
-<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuYnVzaW5lc3N0ZWNod2Vla2x5LmNvbS9vcGVyYXRpb25hbC1lZmZpY2llbmN5L2Nsb3VkLWNvbXB1dGluZy9wcml2YXRlLWNsb3VkLXZzLXB1YmxpYy1jbG91ZC8=">Private Cloud vs Public Cloud: Which Cloud Computing deployment model is best for your business?<i class="fa fa-external-link-alt"></i></span></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>cloud computing</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>[SD][ML] ControlNet in StableDiffusion: A Comprehensive Guide</title>
     <url>/posts/2736514643/</url>
     <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>ControlNet is an innovative addition to the StableDiffusion model that enhances the model’s ability to generate high-quality images with <strong>specific control over the content and structure</strong>. This guide delves into the fundamentals of ControlNet, how it works, implementation details, and training your own ControlNet. The following sections provide an in-depth look at each aspect of this powerful tool.</p>
@@ -2593,6 +2417,182 @@ source: https://arxiv.org/pdf/2302.05543
         <tag>ML</tag>
         <tag>AI</tag>
         <tag>StableDiffusion</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>DataLake vs. Data Warehouse vs. Data Mart</title>
+    <url>/posts/970127527/</url>
+    <content><![CDATA[<h1 id="Understanding-the-Differences-Data-Lake-Data-Warehouse-and-Data-Mart"><a href="#Understanding-the-Differences-Data-Lake-Data-Warehouse-and-Data-Mart" class="headerlink" title="Understanding the Differences: Data Lake, Data Warehouse, and Data Mart"></a>Understanding the Differences: Data Lake, Data Warehouse, and Data Mart</h1><p>In today’s data-driven world, organizations leverage various data management systems to harness their data effectively. Among these systems, Data Lakes, Data Warehouses, and Data Marts are pivotal in supporting data storage, processing, and analysis. This article explores the key differences among these three systems, helping you understand their unique roles in data management.</p>
+<span id="more"></span>
+
+<p><img data-src="/images/posts/datascience/relation.png"></img><br>source: <span class="exturl" data-url="aHR0cHM6Ly9tZWRpdW0uY29tL0BkYXZpZC5hbHZhcmVzLjYyL2RhdGFsYWtlLWRhdGF3YXJlaG91c2UtZGF0YW1hcnQtd2l0aC1iaWdxdWVyeS0zMmY2YzM3MzVhOWQ=">https://medium.com/@david.alvares.62/datalake-datawarehouse-datamart-with-bigquery-32f6c3735a9d<i class="fa fa-external-link-alt"></i></span></p>
+<h2 id="What-is-a-Data-Lake"><a href="#What-is-a-Data-Lake" class="headerlink" title="What is a Data Lake?"></a>What is a Data Lake?</h2><p>A Data Lake is a centralized repository designed to store a vast amount of raw data in its native format, including structured, semi-structured, and unstructured data. Data Lakes support high-scale elasticity and massive processing power, making them ideal for big data analytics where data exploration and discovery are required.</p>
+<h3 id="Characteristics-of-a-Data-Lake"><a href="#Characteristics-of-a-Data-Lake" class="headerlink" title="Characteristics of a Data Lake:"></a>Characteristics of a Data Lake:</h3><ul>
+<li><strong>Data Types:</strong> Supports all types of data (structured, semi-structured, unstructured).</li>
+<li><strong>Processing:</strong> Data is kept in its raw form, and transformation occurs when needed (schema-on-read).</li>
+<li><strong>Flexibility:</strong> Highly adaptable to changes and capable of storing vast amounts of data.</li>
+<li><strong>Use Cases:</strong> Big data processing, real-time analytics, machine learning.</li>
+</ul>
+<h2 id="What-is-a-Data-Warehouse"><a href="#What-is-a-Data-Warehouse" class="headerlink" title="What is a Data Warehouse?"></a>What is a Data Warehouse?</h2><p>A Data Warehouse is a system used for reporting and data analysis. It is a central repository for integrated data from one or more disparate sources. Data Warehouses store current and historical data in one single place, which is used for creating analytical reports for knowledge workers throughout the enterprise.</p>
+<h3 id="Characteristics-of-a-Data-Warehouse"><a href="#Characteristics-of-a-Data-Warehouse" class="headerlink" title="Characteristics of a Data Warehouse:"></a>Characteristics of a Data Warehouse:</h3><ul>
+<li><strong>Data Types:</strong> Primarily structured data.</li>
+<li><strong>Processing:</strong> Data is processed (ETL - Extract, Transform, Load) before entering the warehouse.</li>
+<li><strong>Performance:</strong> Optimized for fast query performance and complex analytical queries.</li>
+<li><strong>Use Cases:</strong> Business intelligence, reporting, complex queries.</li>
+</ul>
+<h2 id="What-is-a-Data-Mart"><a href="#What-is-a-Data-Mart" class="headerlink" title="What is a Data Mart?"></a>What is a Data Mart?</h2><p>A Data Mart is a subset of a data warehouse and is oriented to a specific business line or team. Unlike a data warehouse, which covers the entire organization, a data mart is limited to certain aspects.</p>
+<h3 id="Characteristics-of-a-Data-Mart"><a href="#Characteristics-of-a-Data-Mart" class="headerlink" title="Characteristics of a Data Mart:"></a>Characteristics of a Data Mart:</h3><ul>
+<li><strong>Data Types:</strong> Structured data.</li>
+<li><strong>Scope:</strong> Focused on a specific department or business area.</li>
+<li><strong>Performance:</strong> Optimized for quick response times on specific queries.</li>
+<li><strong>Use Cases:</strong> Department-specific reporting and analysis.</li>
+</ul>
+<h2 id="Comparative-Analysis"><a href="#Comparative-Analysis" class="headerlink" title="Comparative Analysis"></a>Comparative Analysis</h2><p>The table below provides a comparison to help delineate the differences among these three data architectures:</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Data Lake</th>
+<th>Data Warehouse</th>
+<th>Data Mart</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Purpose</strong></td>
+<td>Data exploration and large-scale analytics</td>
+<td>Structured data analysis and reporting</td>
+<td>Specific business function analysis</td>
+</tr>
+<tr>
+<td><strong>Data Types</strong></td>
+<td>All types (structured, semi, unstructured)</td>
+<td>Primarily structured data</td>
+<td>Structured data</td>
+</tr>
+<tr>
+<td><strong>Processing</strong></td>
+<td>Schema-on-read (transform on demand)</td>
+<td>Schema-on-write (pre-transformed)</td>
+<td>Typically pre-transformed data from a data warehouse</td>
+</tr>
+<tr>
+<td><strong>Scope</strong></td>
+<td>Enterprise-wide</td>
+<td>Enterprise-wide</td>
+<td>Department-specific</td>
+</tr>
+<tr>
+<td><strong>Storage Cost</strong></td>
+<td>Low</td>
+<td>High</td>
+<td>Moderate</td>
+</tr>
+<tr>
+<td><strong>Complexity</strong></td>
+<td>High (due to diverse data types)</td>
+<td>Moderate</td>
+<td>Low</td>
+</tr>
+<tr>
+<td><strong>Best For</strong></td>
+<td>Big data projects, ML, real-time analytics</td>
+<td>Historical data analysis, BI</td>
+<td>Focused BI tasks within departments</td>
+</tr>
+</tbody></table>
+<h2 id="Relationships-Among-Data-Lakes-Data-Warehouses-and-Data-Marts"><a href="#Relationships-Among-Data-Lakes-Data-Warehouses-and-Data-Marts" class="headerlink" title="Relationships Among Data Lakes, Data Warehouses, and Data Marts"></a>Relationships Among Data Lakes, Data Warehouses, and Data Marts</h2><p>Understanding the relationships among Data Lakes, Data Warehouses, and Data Marts is crucial for structuring an effective data strategy.</p>
+<h3 id="Hierarchical-Relationship"><a href="#Hierarchical-Relationship" class="headerlink" title="Hierarchical Relationship"></a>Hierarchical Relationship</h3><ol>
+<li><p><strong>Data Lake to Data Warehouse</strong>:</p>
+<ul>
+<li>A <strong>Data Lake</strong> stores all raw data, both structured and unstructured. It is the initial repository for all incoming data.</li>
+<li>A <strong>Data Warehouse</strong> is curated from the data lake. Data here is cleaned and structured, optimized for efficient querying and analysis.</li>
+</ul>
+</li>
+<li><p><strong>Data Warehouse to Data Mart</strong>:</p>
+<ul>
+<li>A <strong>Data Warehouse</strong> contains integrated data from multiple sources for the entire organization.</li>
+<li><strong>Data Marts</strong> are subsets of data warehouses tailored to specific departments, facilitating faster and more relevant data access.</li>
+</ul>
+</li>
+</ol>
+<h3 id="Use-Case-Relationship"><a href="#Use-Case-Relationship" class="headerlink" title="Use Case Relationship"></a>Use Case Relationship</h3><ul>
+<li><strong>Data Lake</strong>: Ideal for massive, raw datasets used in data exploration and big data projects.</li>
+<li><strong>Data Warehouse</strong>: Best for regular, consistent reporting and structured data analysis across the organization.</li>
+<li><strong>Data Mart</strong>: Suited for targeted, department-specific analysis, enabling quick access to relevant data.</li>
+</ul>
+<h3 id="Operational-Efficiency"><a href="#Operational-Efficiency" class="headerlink" title="Operational Efficiency"></a>Operational Efficiency</h3><ul>
+<li>Using all three—Data Lakes, Data Warehouses, and Data Marts—enhances data management across different levels, from raw data collection to specific business analytics.</li>
+</ul>
+<p>This structure ensures organizations can manage vast data efficiently, supporting diverse business needs from exploratory analytics to precise departmental reporting.</p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>Each of these systems serves distinct purposes and is best suited for different aspects of data management. A Data Lake is ideal for raw, large-scale data exploration, a Data Warehouse is suited for enterprise-wide insights from structured data, and a Data Mart is optimal for department-specific analysis. Understanding these differences can help organizations choose the right architecture to meet their data management and analytical needs.</p>
+]]></content>
+      <tags>
+        <tag>datascience</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Understanding 3 types of t-Tests</title>
+    <url>/posts/1220979308/</url>
+    <content><![CDATA[<h1 id="Understanding-3-types-of-t-Tests"><a href="#Understanding-3-types-of-t-Tests" class="headerlink" title="Understanding 3 types of t-Tests"></a>Understanding 3 types of t-Tests</h1><p>When it comes to determining the significance of findings in data science, t-tests are a commonly used statistical method. They help compare means and assess whether the differences between groups or conditions are statistically significant. In this article, we’ll explore the three main types of t-tests: independent (two-sample), single-sample, and paired-sample t-tests. We’ll delve into their concepts, hypotheses, and mathematical representations to provide a clear understanding of when and how to use each type.</p>
+<span id="more"></span>
+
+<h2 id="The-Concept-of-t-Tests"><a href="#The-Concept-of-t-Tests" class="headerlink" title="The Concept of t-Tests"></a>The Concept of t-Tests</h2><p>A t-test is a statistical hypothesis test that follows a Student’s t-distribution under the null hypothesis. The primary goal is to determine <strong>if there is a significant difference between the means of two groups or between a sample mean and a known value</strong>. The t-test relies on several key concepts:</p>
+<h3 id="Central-Limit-Theorem"><a href="#Central-Limit-Theorem" class="headerlink" title="Central Limit Theorem"></a>Central Limit Theorem</h3><p>The Central Limit Theorem (CLT) is a fundamental principle in statistics that states that <strong>the distribution of the sample mean will approximate a normal distribution as the sample size becomes large, regardless of the shape of the population distribution</strong>. This property allows us to make inferences about population parameters using sample data. In the context of t-tests, the CLT justifies using the t-distribution when sample sizes are <strong>relatively small</strong> and the <strong>population standard deviation is unknown</strong>. (because of CLT, we can use confidence interval to justify t-test)</p>
+<h3 id="Student’s-t-Distribution"><a href="#Student’s-t-Distribution" class="headerlink" title="Student’s t-Distribution"></a>Student’s t-Distribution</h3><p>The t-distribution is similar to the normal distribution but has heavier tails, which means it is more prone to producing values that fall far from its mean. This characteristic makes it particularly useful for small sample sizes. As the sample size increases, the t-distribution approaches the normal distribution.</p>
+<h3 id="Degrees-of-Freedom"><a href="#Degrees-of-Freedom" class="headerlink" title="Degrees of Freedom"></a>Degrees of Freedom</h3><p>Degrees of freedom (df) refer to <strong>the number of independent values in a calculation that are free to vary</strong>. In a t-test, the degrees of freedom <strong>depend on the sample size(s)</strong> and are used to determine the critical value from the t-distribution.</p>
+<h2 id="1-Independent-Two-Sample-t-Test"><a href="#1-Independent-Two-Sample-t-Test" class="headerlink" title="1. Independent (Two-Sample) t-Test"></a>1. Independent (Two-Sample) t-Test</h2><h3 id="Concept"><a href="#Concept" class="headerlink" title="Concept"></a>Concept</h3><p>The independent t-test, also known as the two-sample t-test, is used to compare the means of <strong>two independent groups</strong>. This test determines whether the means of the two groups are significantly different from each other.</p>
+<h3 id="Hypothesis"><a href="#Hypothesis" class="headerlink" title="Hypothesis"></a>Hypothesis</h3><ul>
+<li><strong>Null Hypothesis ($H_0$)</strong>: The means of the two groups are equal ($\mu_1 &#x3D; \mu_2$).</li>
+<li><strong>Alternative Hypothesis ($H_A$)</strong>: The means of the two groups are not equal ($\mu_1 \neq \mu_2$).</li>
+</ul>
+<h3 id="Mathematical-Representation"><a href="#Mathematical-Representation" class="headerlink" title="Mathematical Representation"></a>Mathematical Representation</h3><p>The formula for the independent t-test is:</p>
+<p>$$ t &#x3D; \frac{\bar{X}_1 - \bar{X}_2}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}} $$</p>
+<p>Where:</p>
+<ul>
+<li>$\bar{X}_1$ and $\bar{X}_2$ are the sample means of groups 1 and 2.</li>
+<li>$s_1^2$ and $s_2^2$ are the sample variances of groups 1 and 2.</li>
+<li>$n_1$ and $n_2$ are the sample sizes of groups 1 and 2.</li>
+</ul>
+<h2 id="2-Single-Sample-t-Test"><a href="#2-Single-Sample-t-Test" class="headerlink" title="2. Single-Sample t-Test"></a>2. Single-Sample t-Test</h2><h3 id="Concept-1"><a href="#Concept-1" class="headerlink" title="Concept"></a>Concept</h3><p>The single-sample t-test is used to compare the mean of <strong>a single sample to a known value or a theoretical mean</strong>. This test assesses whether the sample mean significantly differs from the hypothesized population mean.</p>
+<h3 id="Hypothesis-1"><a href="#Hypothesis-1" class="headerlink" title="Hypothesis"></a>Hypothesis</h3><ul>
+<li><strong>Null Hypothesis ($H_0$)</strong>: The sample mean is equal to the population mean ($\mu &#x3D; \mu_0$).</li>
+<li><strong>Alternative Hypothesis ($H_A$)</strong>: The sample mean is not equal to the population mean ($\mu \neq \mu_0$).</li>
+</ul>
+<h3 id="Mathematical-Representation-1"><a href="#Mathematical-Representation-1" class="headerlink" title="Mathematical Representation"></a>Mathematical Representation</h3><p>The formula for the single-sample t-test is:</p>
+<p>$$ t &#x3D; \frac{\bar{X} - \mu_0}{\frac{s}{\sqrt{n}}} $$</p>
+<p>Where:</p>
+<ul>
+<li>$\bar{X}$ is the sample mean.</li>
+<li>$\mu_0$ is the hypothesized population mean.</li>
+<li>$s$ is the sample standard deviation.</li>
+<li>$n$ is the sample size.</li>
+</ul>
+<h2 id="3-Paired-Sample-t-Test"><a href="#3-Paired-Sample-t-Test" class="headerlink" title="3. Paired-Sample t-Test"></a>3. Paired-Sample t-Test</h2><h3 id="Concept-2"><a href="#Concept-2" class="headerlink" title="Concept"></a>Concept</h3><p>The paired-sample t-test, also known as the dependent t-test, is used to <strong>compare the means of two related groups</strong>. This test is often used in pre-test&#x2F;post-test scenarios or when comparing measurements taken on the <strong>same subjects under different conditions</strong>.</p>
+<h3 id="Hypothesis-2"><a href="#Hypothesis-2" class="headerlink" title="Hypothesis"></a>Hypothesis</h3><ul>
+<li><strong>Null Hypothesis ($H_0$)</strong>: The mean difference between the paired observations is zero ($\mu_D &#x3D; 0 $).</li>
+<li><strong>Alternative Hypothesis ($H_A$)</strong>: The mean difference between the paired observations is not zero ($\mu_D \neq 0$).</li>
+<li>$\mu_D &#x3D; \mu_1 - \mu_2$</li>
+</ul>
+<h3 id="Mathematical-Representation-2"><a href="#Mathematical-Representation-2" class="headerlink" title="Mathematical Representation"></a>Mathematical Representation</h3><p>The formula for the paired-sample t-test is:</p>
+<p>$$ t &#x3D; \frac{\bar{D}}{\frac{s_D}{\sqrt{n}}} $$</p>
+<p>Where:</p>
+<ul>
+<li>$\bar{D}$ is the mean of the differences between paired observations.</li>
+<li>$s_D$ is the standard deviation of the differences.</li>
+<li>$n$ is the number of paired observations.</li>
+</ul>
+<h2 id="Python-Code-for-t-Tests"><a href="#Python-Code-for-t-Tests" class="headerlink" title="Python Code for t-Tests"></a>Python Code for t-Tests</h2><p>To perform these t-tests in Python, you can use the <code>scipy.stats</code> library, which provides convenient functions for each type of t-test. Below is the sample code for each t-test:</p>
+<h3 id="Independent-Two-Sample-t-Test"><a href="#Independent-Two-Sample-t-Test" class="headerlink" title="Independent (Two-Sample) t-Test"></a>Independent (Two-Sample) t-Test</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> scipy <span class="keyword">import</span> stats</span><br><span class="line"></span><br><span class="line"><span class="comment"># Sample data for two independent groups</span></span><br><span class="line">group1 = np.array([<span class="number">12</span>, <span class="number">14</span>, <span class="number">16</span>, <span class="number">18</span>, <span class="number">20</span>])</span><br><span class="line">group2 = np.array([<span class="number">22</span>, <span class="number">24</span>, <span class="number">26</span>, <span class="number">28</span>, <span class="number">30</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># Perform independent (two-sample) t-test</span></span><br><span class="line">t_stat, p_value = stats.ttest_ind(group1, group2)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;Independent t-test: t-statistic = <span class="subst">&#123;t_stat&#125;</span>, p-value = <span class="subst">&#123;p_value&#125;</span>&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="Single-Sample-t-Test"><a href="#Single-Sample-t-Test" class="headerlink" title="Single-Sample t-Test"></a>Single-Sample t-Test</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> scipy <span class="keyword">import</span> stats</span><br><span class="line"></span><br><span class="line"><span class="comment"># Sample data</span></span><br><span class="line">data = np.array([<span class="number">12</span>, <span class="number">14</span>, <span class="number">16</span>, <span class="number">18</span>, <span class="number">20</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># Population mean to compare against</span></span><br><span class="line">population_mean = <span class="number">15</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Perform single-sample t-test</span></span><br><span class="line">t_stat, p_value = stats.ttest_1samp(data, population_mean)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;Single-sample t-test: t-statistic = <span class="subst">&#123;t_stat&#125;</span>, p-value = <span class="subst">&#123;p_value&#125;</span>&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="Paired-Sample-t-Test"><a href="#Paired-Sample-t-Test" class="headerlink" title="Paired-Sample t-Test"></a>Paired-Sample t-Test</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> scipy <span class="keyword">import</span> stats</span><br><span class="line"></span><br><span class="line"><span class="comment"># Sample data for paired observations</span></span><br><span class="line">before_treatment = np.array([<span class="number">12</span>, <span class="number">14</span>, <span class="number">16</span>, <span class="number">18</span>, <span class="number">20</span>])</span><br><span class="line">after_treatment = np.array([<span class="number">22</span>, <span class="number">24</span>, <span class="number">26</span>, <span class="number">28</span>, <span class="number">30</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># Perform paired-sample t-test</span></span><br><span class="line">t_stat, p_value = stats.ttest_rel(before_treatment, after_treatment)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;Paired-sample t-test: t-statistic = <span class="subst">&#123;t_stat&#125;</span>, p-value = <span class="subst">&#123;p_value&#125;</span>&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>Each type of t-test serves a specific purpose and is suited for different kinds of data and hypotheses. By understanding the concepts, hypotheses, and mathematical representations of the independent t-test, single-sample t-test, and paired-sample t-test, you can choose the appropriate test for your data analysis project. Using these tests effectively will enable you to draw meaningful conclusions and validate your findings with statistical significance.</p>
+]]></content>
+      <tags>
+        <tag>datascience</tag>
+        <tag>statistic</tag>
       </tags>
   </entry>
   <entry>
